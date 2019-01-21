@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Atividade **</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Atividade</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Traduzida</entry><entry>Nome</entry></row>
+<row><entry>es_CO</entry><entry>1000000</entry><entry> </entry><entry> </entry><entry>false</entry><entry>Padrão</entry></row>
+<row><entry>es_CO</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry>false</entry><entry>Industria</entry></row>
+<row><entry>es_CO</entry><entry>5000001</entry><entry> </entry><entry> </entry><entry>false</entry><entry>Comercial</entry></row>
+<row><entry>pt_BR</entry><entry>1000000</entry><entry> </entry><entry> </entry><entry>false</entry><entry>Padrão</entry></row>
+<row><entry>pt_BR</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry>false</entry><entry>Industria</entry></row>
+<row><entry>pt_BR</entry><entry>5000001</entry><entry> </entry><entry> </entry><entry>false</entry><entry>Comercial</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>CEST</title>
+<tgroup cols='4' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>CEST</entry><entry>Descrição</entry><entry>Nome</entry><entry>Chave de Busca</entry></row>
+<row><entry>1000013</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 2.0  |  NCM/SH: 3917</entry><entry>Tubos e seus acessórios (por exemplo, juntas, cotovelos, flanges, uniões), de plásticos</entry><entry>01.002.00</entry></row>
+<row><entry>1000014</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 3.0  |  NCM/SH: 3918.10.00</entry><entry>Protetores de caçamba</entry><entry>01.003.00</entry></row>
+<row><entry>1000015</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 4.0  |  NCM/SH: 3923.30.00</entry><entry>Reservatórios de óleo</entry><entry>01.004.00</entry></row>
+<row><entry>1000016</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 5.0  |  NCM/SH: 3926.30.00</entry><entry>Frisos, decalques, molduras e acabamentos</entry><entry>01.005.00</entry></row>
+<row><entry>1000019</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 8.0  |  NCM/SH: 4016.10.10</entry><entry>Partes de veículos automóveis, tratores e máquinas autopropulsadas</entry><entry>01.008.00</entry></row>
+<row><entry>1000018</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 7.0  |  NCM/SH: 4823.90.9</entry><entry>Juntas, gaxetas e outros elementos com função semelhante de vedação</entry><entry>01.007.00</entry></row>
+<row><entry>1000021</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 10.0  |  NCM/SH: 5903.90.00</entry><entry>Tecidos impregnados, revestidos, recobertos ou estratificados, com plástico</entry><entry>01.010.00</entry></row>
+<row><entry>1000020</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 9.0  |  NCM/SH: 5705.00.00</entry><entry>Tapetes, revestimentos, mesmo confeccionados, batentes, buchas e coxins</entry><entry>01.009.00</entry></row>
+<row><entry>1000022</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 11.0  |  NCM/SH: 5909.00.00</entry><entry>Mangueiras e tubos semelhantes, de matérias têxteis, mesmo com reforço ou acessórios de outras matérias</entry><entry>01.011.00</entry></row>
+<row><entry>1000023</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 12.0  |  NCM/SH: 6306.1</entry><entry>Encerados e toldos</entry><entry>01.012.00</entry></row>
+<row><entry>1000025</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 14.0  |  NCM/SH: 6813</entry><entry>Guarnições de fricção (por exemplo, placas, rolos, tiras, segmentos, discos, anéis, pastilhas), não montadas, para freios, embreagens ou qualquer outro mecanismo de fricção, à base de amianto, de outras substâncias minerais ou de celulose, mesmo combinada</entry><entry>01.014.00</entry></row>
+<row><entry>1000027</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 16.0  |  NCM/SH: 7009.10.00</entry><entry>Espelhos retrovisores</entry><entry>01.016.00</entry></row>
+<row><entry>1000026</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 15.0  |  NCM/SH: 7007.21.00</entry><entry>Vidros de dimensões e formatos que permitam aplicação automotiva</entry><entry>01.015.00</entry></row>
+<row><entry>1000028</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 17.0  |  NCM/SH: 7014.00.00</entry><entry>Lentes de faróis, lanternas e outros utensílios</entry><entry>01.017.00</entry></row>
+<row><entry>1000029</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 18.0  |  NCM/SH: 7311.00.00</entry><entry>Cilindro de aço para GNV (gás natural veicular)</entry><entry>01.018.00</entry></row>
+<row><entry>1000031</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 20.0  |  NCM/SH: 7320</entry><entry>Molas e folhas de molas, de ferro ou aço</entry><entry>01.020.00</entry></row>
+<row><entry>1000032</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 21.0  |  NCM/SH: 7325</entry><entry>Obras moldadas, de ferro fundido, ferro ou aço, exceto as do código 7325.91.00</entry><entry>01.021.00</entry></row>
+<row><entry>1000033</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 22.0  |  NCM/SH: 7806.00</entry><entry>Peso de chumbo para balanceamento de roda</entry><entry>01.022.00</entry></row>
+<row><entry>1000034</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 23.0  |  NCM/SH: 8007.00.90</entry><entry>Peso para balanceamento de roda e outros utensílios de estanho</entry><entry>01.023.00</entry></row>
+<row><entry>1000036</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 25.0  |  NCM/SH: 8301.70</entry><entry>Chaves apresentadas isoladamente</entry><entry>01.025.00</entry></row>
+<row><entry>1000038</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 27.0  |  NCM/SH: 8310.00</entry><entry>Triângulo de segurança</entry><entry>01.027.00</entry></row>
+<row><entry>1000037</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 26.0  |  NCM/SH: 8302.30.00</entry><entry>Dobradiças, guarnições, ferragens e artigos semelhantes de metais comuns</entry><entry>01.026.00</entry></row>
+<row><entry>1000040</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 29.0  |  NCM/SH: 8408.20</entry><entry>Motores dos tipos utilizados para propulsão de veículos automotores</entry><entry>01.029.00</entry></row>
+<row><entry>1000041</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 30.0  |  NCM/SH: 8409.9</entry><entry>Partes reconhecíveis como exclusiva ou principalmente destinadas aos motores das posições 8407 ou 8408</entry><entry>01.030.00</entry></row>
+<row><entry>1000042</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 31.0  |  NCM/SH: 8412.2</entry><entry>Motores hidráulicos</entry><entry>01.031.00</entry></row>
+<row><entry>1000044</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 33.0  |  NCM/SH: 8414.10.00</entry><entry>Bombas de vácuo</entry><entry>01.033.00</entry></row>
+<row><entry>1000047</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 36.0  |  NCM/SH: 8415.20</entry><entry>Máquinas e aparelhos de ar condicionado</entry><entry>01.036.00</entry></row>
+<row><entry>1000045</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 34.0  |  NCM/SH: 8414.80.2</entry><entry>Compressores e turbocompressores de ar</entry><entry>01.034.00</entry></row>
+<row><entry>1000046</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 35.0  |  NCM/SH: 8414.90.39</entry><entry>Partes das bombas, compressores e turbocompressores dos itens 32.0, 33.0 e 34.0</entry><entry>01.035.00</entry></row>
+<row><entry>1000184</entry><entry>Segmento: 6  |  Anexo: 7  |  Item: 2.0  |  NCM/SH: 2710.12.59</entry><entry>Gasolinas, exceto de aviação</entry><entry>06.002.00</entry></row>
+<row><entry>1000286</entry><entry>Segmento: 10  |  Anexo: 11  |  Item: 62.0  |  NCM/SH: 7326</entry><entry>Abraçadeiras</entry><entry>10.062.00</entry></row>
+<row><entry>1000049</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 38.0  |  NCM/SH: 8421.29.90</entry><entry>Filtros a vácuo</entry><entry>01.038.00</entry></row>
+<row><entry>1000051</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 40.0  |  NCM/SH: 8424.10.00</entry><entry>Extintores, mesmo carregados</entry><entry>01.040.00</entry></row>
+<row><entry>1000052</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 41.0  |  NCM/SH: 8421.31.00</entry><entry>Filtros de entrada de ar para motores de ignição por centelha ou por compressão</entry><entry>01.041.00</entry></row>
+<row><entry>1000053</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 42.0  |  NCM/SH: 8421.39.20</entry><entry>Depuradores por conversão catalítica de gases de escape</entry><entry>01.042.00</entry></row>
+<row><entry>1000054</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 43.0  |  NCM/SH: 8425.42.00</entry><entry>Macacos</entry><entry>01.043.00</entry></row>
+<row><entry>1000057</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 46.0  |  NCM/SH: 8481.10.00</entry><entry>Válvulas redutoras de pressão</entry><entry>01.046.00</entry></row>
+<row><entry>1000056</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 45.0  |  NCM/SH: 8433.90.90</entry><entry>Partes reconhecíveis como exclusiva ou principalmente destinadas às máquinas agrícolas ou rodoviárias</entry><entry>01.045.00</entry></row>
+<row><entry>1000059</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 48.0  |  NCM/SH: 8481.80.92</entry><entry>Válvulas solenóides</entry><entry>01.048.00</entry></row>
+<row><entry>1000060</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 49.0  |  NCM/SH: 8482</entry><entry>Rolamentos</entry><entry>01.049.00</entry></row>
+<row><entry>1000062</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 51.0  |  NCM/SH: 8484</entry><entry>Juntas metaloplásticas;
+ jogos ou sortidos de juntas de composições diferentes, apresentados em bolsas, envelopes ou embalagens semelhantes;
+ juntas de vedação mecânicas (selos mecânicos)</entry><entry>01.051.00</entry></row>
+<row><entry>1000063</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 52.0  |  NCM/SH: 8505.20</entry><entry>Acoplamentos, embreagens, variadores de velocidade e freios, eletromagnéticos</entry><entry>01.052.00</entry></row>
+<row><entry>1000064</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 53.0  |  NCM/SH: 8507.10</entry><entry>Acumuladores elétricos de chumbo, do tipo utilizado para o arranque dos motores de pistão</entry><entry>01.053.00</entry></row>
+<row><entry>1000065</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 54.0  |  NCM/SH: 8511</entry><entry>Aparelhos e dispositivos elétricos de ignição ou de arranque para motores de ignição por centelha ou por compressão (por exemplo, magnetos, dínamos-magnetos, bobinas de ignição, velas de ignição ou de aquecimento, motores de arranque);
+ geradores (dínamos </entry><entry>01.054.00</entry></row>
+<row><entry>1000066</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 55.0  |  NCM/SH: 8512.90.00</entry><entry>Aparelhos elétricos de iluminação ou de sinalização (exceto os da posição 8539), limpadores de para-brisas, degeladores e desembaçadores (desembaciadores) elétricos e suas partes</entry><entry>01.055.00</entry></row>
+<row><entry>1000067</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 56.0  |  NCM/SH: 8517.12.13</entry><entry>Telefones móveis do tipo dos utilizados em veículos automóveis.</entry><entry>01.056.00</entry></row>
+<row><entry>1000068</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 57.0  |  NCM/SH: 8518</entry><entry>Alto-falantes, amplificadores elétricos de audiofrequência e partes</entry><entry>01.057.00</entry></row>
+<row><entry>1000069</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 58.0  |  NCM/SH: 8518.50.00</entry><entry>Aparelhos elétricos de amplificação de som para veículos automotores</entry><entry>01.058.00</entry></row>
+<row><entry>1000070</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 59.0  |  NCM/SH: 8519.81</entry><entry>Aparelhos de reprodução de som</entry><entry>01.059.00</entry></row>
+<row><entry>1000072</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 61.0  |  NCM/SH: 8527.2</entry><entry>Aparelhos receptores de radiodifusão que só funcionam com fonte externa de energia, exceto os classificados na posição 8527.21.90</entry><entry>01.061.00</entry></row>
+<row><entry>1000071</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 60.0  |  NCM/SH: 8525.60.10</entry><entry>Aparelhos transmissores (emissores) de radiotelefonia ou radiotelegrafia (rádio receptor/transmissor)</entry><entry>01.060.00</entry></row>
+<row><entry>1000074</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 63.0  |  NCM/SH: 8529.10.90</entry><entry>Antenas</entry><entry>01.063.00</entry></row>
+<row><entry>1000075</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 64.0  |  NCM/SH: 8534.00.00</entry><entry>Circuitos impressos</entry><entry>01.064.00</entry></row>
+<row><entry>1000077</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 66.0  |  NCM/SH: 8536.10.00</entry><entry>Fusíveis e corta-circuitos de fusíveis</entry><entry>01.066.00</entry></row>
+<row><entry>1000076</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 65.0  |  NCM/SH: 8536.50</entry><entry>Interruptores e seccionadores e comutadores</entry><entry>01.065.00</entry></row>
+<row><entry>1000078</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 67.0  |  NCM/SH: 8536.20.00</entry><entry>Disjuntores</entry><entry>01.067.00</entry></row>
+<row><entry>1000079</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 68.0  |  NCM/SH: 8536.4</entry><entry>Relés</entry><entry>01.068.00</entry></row>
+<row><entry>1000080</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 69.0  |  NCM/SH: 8538</entry><entry>Partes reconhecíveis como exclusivas ou principalmente destinados aos aparelhos dos itens 65.0, 66.0, 67.0 e 68.0</entry><entry>01.069.00</entry></row>
+<row><entry>1000081</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 70.0  |  NCM/SH: 8539.10</entry><entry>Faróis e projetores, em unidades seladas</entry><entry>01.070.00</entry></row>
+<row><entry>1000082</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 71.0  |  NCM/SH: 8539.2</entry><entry>Lâmpadas e tubos de incandescência, exceto de raios ultravioleta ou infravermelhos</entry><entry>01.071.00</entry></row>
+<row><entry>1000133</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 122.0  |  NCM/SH: 9025.90.10</entry><entry>Partes de indicadores de temperatura</entry><entry>01.122.00</entry></row>
+<row><entry>1000084</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 73.0  |  NCM/SH: 8544.30.00</entry><entry>Jogos de fios para velas de ignição e outros jogos de fios</entry><entry>01.073.00</entry></row>
+<row><entry>1000139</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 128.0  |  NCM/SH: 7322.90.10</entry><entry>Geradores de ar quente a combustível líquido, com capacidade superior ou igual a 1.500 kcal/h, mas inferior ou igual a 10.400 kcal/h, do tipo dos utilizados em veículos automóveis</entry><entry>01.128.00</entry></row>
+<row><entry>1000116</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 105.0  |  NCM/SH: 5703.20.00</entry><entry>Tapetes/carpetes - nailón</entry><entry>01.105.00</entry></row>
+<row><entry>1000207</entry><entry>Segmento: 8  |  Anexo: 9  |  Item: 12.0  |  NCM/SH: 8207.70</entry><entry>Ferramentas de roscar interior ou exteriormente;
+ de mandrilar ou de brochar;
+ e de fresar</entry><entry>08.012.00</entry></row>
+<row><entry>1000322</entry><entry>Segmento: 12  |  Anexo: 13  |  Item: 8.0  |  NCM/SH: 8546</entry><entry>Isoladores de qualquer matéria, para usos elétricos</entry><entry>12.008.00</entry></row>
+<row><entry>1000340</entry><entry>Segmento: 13  |  Anexo: 14  |  Item: 9.0  |  NCM/SH: 3002</entry><entry>Vacinas e produtos semelhantes, exceto para uso veterinário - positiva;
+</entry><entry>13.009.00</entry></row>
+<row><entry>1000341</entry><entry>Segmento: 13  |  Anexo: 14  |  Item: 10.0  |  NCM/SH: 3005</entry><entry>Algodão, atadura, esparadrapo, haste flexível ou não, com uma ou ambas extremidades de algodão, gazes, pensos, sinapismos, e outros, impregnados ou recobertos de substâncias farmacêuticas ou acondicionados para venda a retalho para usos medicinais, cirúrg</entry><entry>13.010.00</entry></row>
+<row><entry>1000342</entry><entry>Segmento: 13  |  Anexo: 14  |  Item: 11.0  |  NCM/SH: 3005.10.90</entry><entry>Algodão, atadura, esparadrapo, haste flexível ou não, com uma ou ambas extremidades de algodão, gazes, pensos, sinapismos, e outros, não impregnados ou recobertos de substâncias farmacêuticas</entry><entry>13.011.00</entry></row>
+<row><entry>1000344</entry><entry>Segmento: 13  |  Anexo: 14  |  Item: 13.0  |  NCM/SH: 4014.10.00</entry><entry>Preservativo - neutra</entry><entry>13.013.00</entry></row>
+<row><entry>1000343</entry><entry>Segmento: 13  |  Anexo: 14  |  Item: 12.0  |  NCM/SH: 4015.19.00</entry><entry>Luvas cirúrgicas e luvas de procedimento - neutra</entry><entry>13.012.00</entry></row>
+<row><entry>1000345</entry><entry>Segmento: 13  |  Anexo: 14  |  Item: 14.0  |  NCM/SH: 9018.31</entry><entry>Seringas, mesmo com agulhas - neutra</entry><entry>13.014.00</entry></row>
+<row><entry>1000346</entry><entry>Segmento: 14  |  Anexo: 15  |  Item: 1.0  |  NCM/SH: 4823.20.9</entry><entry>Filtros descartáveis para coar café ou chá</entry><entry>14.001.00</entry></row>
+<row><entry>1000347</entry><entry>Segmento: 14  |  Anexo: 15  |  Item: 2.0  |  NCM/SH: 4823.6</entry><entry>Bandejas, travessas, pratos, xícaras ou chávenas, taças, copos e artigos semelhantes, de papel ou cartão</entry><entry>14.002.00</entry></row>
+<row><entry>1000348</entry><entry>Segmento: 14  |  Anexo: 15  |  Item: 3.0  |  NCM/SH: 4813.10.00</entry><entry>Papel para cigarro</entry><entry>14.003.00</entry></row>
+<row><entry>1000350</entry><entry>Segmento: 15  |  Anexo: 16  |  Item: 2.0  |  NCM/SH: 3924</entry><entry>Artefatos de higiene/toucador de plástico, exceto os para uso na construção</entry><entry>15.002.00</entry></row>
+<row><entry>1000351</entry><entry>Segmento: 15  |  Anexo: 16  |  Item: 3.0  |  NCM/SH: 3924.10.00</entry><entry>Serviços de mesa e outros utensílios de mesa ou de cozinha, de plástico, inclusive os descartáveis</entry><entry>15.003.00</entry></row>
+<row><entry>1000353</entry><entry>Segmento: 16  |  Anexo: 17  |  Item: 2.0  |  NCM/SH: 4011</entry><entry>Pneus novos, dos tipos utilizados em caminhões (inclusive para os fora-de-estrada), ônibus, aviões, máquinas de terraplenagem, de construção e conservação de estradas, máquinas e tratores agrícolas, pá-carregadeira</entry><entry>16.002.00</entry></row>
+<row><entry>1000354</entry><entry>Segmento: 16  |  Anexo: 17  |  Item: 3.0  |  NCM/SH: 4011.40.00</entry><entry>Pneus novos para motocicletas</entry><entry>16.003.00</entry></row>
+<row><entry>1000355</entry><entry>Segmento: 16  |  Anexo: 17  |  Item: 4.0  |  NCM/SH: 4011</entry><entry>Outros tipos de pneus novos, exceto para bicicletas</entry><entry>16.004.00</entry></row>
+<row><entry>1000356</entry><entry>Segmento: 16  |  Anexo: 17  |  Item: 5.0  |  NCM/SH: 4011.50.00</entry><entry>Pneus novos de borracha dos tipos utilizados em bicicletas</entry><entry>16.005.00</entry></row>
+<row><entry>1000357</entry><entry>Segmento: 16  |  Anexo: 17  |  Item: 6.0  |  NCM/SH: 4012.1</entry><entry>Pneus recauchutados</entry><entry>16.006.00</entry></row>
+<row><entry>1000358</entry><entry>Segmento: 16  |  Anexo: 17  |  Item: 7.0  |  NCM/SH: 4012.90</entry><entry>Protetores de borracha, exceto para bicicletas</entry><entry>16.007.00</entry></row>
+<row><entry>1000359</entry><entry>Segmento: 16  |  Anexo: 17  |  Item: 7.1  |  NCM/SH: 4012.90</entry><entry>Protetores de borracha para bicicletas</entry><entry>16.007.01</entry></row>
+<row><entry>1000361</entry><entry>Segmento: 16  |  Anexo: 17  |  Item: 9.0  |  NCM/SH: 4013.20.00</entry><entry>Câmaras de ar de borracha dos tipos utilizados em bicicletas</entry><entry>16.009.00</entry></row>
+<row><entry>1000365</entry><entry>Segmento: 17  |  Anexo: 18  |  Item: 4.0  |  NCM/SH: 1806.90.00</entry><entry>Chocolates e outras preparações alimentícias contendo cacau, em embalagens de conteúdo inferior ou igual a 1 kg, excluídos os achocolatados em pó e ovos de páscoa de chocolate.</entry><entry>17.004.00</entry></row>
+<row><entry>1000363</entry><entry>Segmento: 17  |  Anexo: 18  |  Item: 2.0  |  NCM/SH: 1806.31.20</entry><entry>Chocolates contendo cacau, em embalagens de conteúdo inferior ou igual a 1 kg</entry><entry>17.002.00</entry></row>
+<row><entry>1000367</entry><entry>Segmento: 17  |  Anexo: 18  |  Item: 6.0  |  NCM/SH: 1806.90.00</entry><entry>Achocolatados em pó, em embalagens de conteúdo inferior ou igual a 1 kg</entry><entry>17.006.00</entry></row>
+<row><entry>1000366</entry><entry>Segmento: 17  |  Anexo: 18  |  Item: 5.0  |  NCM/SH: 1806.90.00</entry><entry>Ovos de páscoa de chocolate</entry><entry>17.005.00</entry></row>
+<row><entry>1000400</entry><entry>4051000</entry><entry>Manteiga, em embalagem de conteúdo superior a 1 kg</entry><entry>17.030.01</entry></row>
+<row><entry>1000088</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 77.0  |  NCM/SH: 8716.90.90</entry><entry>Engates para reboques e semi-reboques</entry><entry>01.077.00</entry></row>
+<row><entry>1000090</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 79.0  |  NCM/SH: 9026.20</entry><entry>Aparelhos para medida ou controle da pressão</entry><entry>01.079.00</entry></row>
+<row><entry>1000091</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 80.0  |  NCM/SH: 9029</entry><entry>Contadores, indicadores de velocidade e tacômetros, suas partes e acessórios</entry><entry>01.080.00</entry></row>
+<row><entry>1000092</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 81.0  |  NCM/SH: 9030.33.21</entry><entry>Amperímetros</entry><entry>01.081.00</entry></row>
+<row><entry>1000094</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 83.0  |  NCM/SH: 9032.89.2</entry><entry>Controladores eletrônicos</entry><entry>01.083.00</entry></row>
+<row><entry>1000095</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 84.0  |  NCM/SH: 9104.00.00</entry><entry>Relógios para painéis de instrumentos e relógios semelhantes</entry><entry>01.084.00</entry></row>
+<row><entry>1000097</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 86.0  |  NCM/SH: 9613.80.00</entry><entry>Acendedores</entry><entry>01.086.00</entry></row>
+<row><entry>1000096</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 85.0  |  NCM/SH: 9401.90.90</entry><entry>Assentos e partes de assentos</entry><entry>01.085.00</entry></row>
+<row><entry>1000098</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 87.0  |  NCM/SH: 4009</entry><entry>Tubos de borracha vulcanizada não endurecida, mesmo providos de seus acessórios</entry><entry>01.087.00</entry></row>
+<row><entry>1000100</entry><entry>Segmento: 1  |  Anexo: 2  |  Item: 89.0  |  NCM/SH: 4823.40.00</entry><entry>Papel-diagrama para tacógrafo, em disco</entry><entry>01.089.00</entry></row></tbody>
+</tgroup>
+</table>

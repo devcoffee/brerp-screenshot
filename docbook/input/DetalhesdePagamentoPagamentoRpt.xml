@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2016-09-29 14:32:32.0</para><para> <emphasis>Atualizado:</emphasis>2017-11-08 08:55:50.0</para>
+ 
+ <title>Relatório:  Detalhes de Pagamento - Pagamento</title> 
+ <para><emphasis> Descrição: </emphasis>Detalhes de Pagamento - Pagamento</para><para><emphasis> Comentário/Ajuda: </emphasis>Lista os pagamentos ou recebimento efetuados em um determinado período</para>
+<para><emphasis> ReportView: </emphasis>RV_Payment - Payment</para><table> 
+ <title>Payment_Details Parâmetros </title> 
+ <tgroup cols='6' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome</entry><entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores(Padrão)</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row> 
+</thead><tbody><row> 
+ <entry>Organização</entry><entry> AD_Org_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> (@#AD_Org_ID@)</entry> 
+<entry>Entidade organizacional dentro da Empresa</entry> 
+<entry>Uma "Organização" é uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos são loja, departamento. Você pode compartilhar dados entre organizações.</entry> 
+</row> 
+<row> 
+ <entry>Conta Bancária</entry><entry> C_BankAccount_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Conta no Banco</entry> 
+<entry>A "Conta Bancária" identifica uma conta neste Banco.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry> C_BPartner_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Identifica um Parceiro de Negócios.</entry> 
+<entry>Um "Parceiro de Negócios" é qualquer um com quem você transaciona.  Isto pode incluir Fornecedores, Clientes, Funcionários, Vendedores, Representantes de Venda, etc.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Documento</entry><entry> C_DocType_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Tipo de Documento ou regras</entry> 
+<entry>O "Tipo de Documento" determina a seqüência do documento e as regras de processamento</entry> 
+</row> 
+<row> 
+ <entry>Alocado</entry><entry> IsAllocated</entry> 
+<entry>Lista</entry> 
+ <entry>Não
+Sim
+</entry> 
+<entry>Indica se o pagamento foi alocado</entry> 
+<entry>A caixa de verificação "Alocado" indica se um pagamento foi alocado ou associado com uma fatura ou grupo de faturas.</entry> 
+</row> 
+<row> 
+ <entry>Estado do Documento</entry><entry> DocStatus</entry> 
+<entry>Lista</entry> 
+ <entry>Desconhecido
+Aprovado
+Fechado
+Completado
+Esboçado
+Inválido
+Em Progresso
+Não Aprovado
+Estornado
+Anulado
+Aguardando Confirmação
+Esperando pagamento
+</entry> 
+<entry>O estado atual do documento</entry> 
+<entry>O "Estado do Documento" indica o estado de um documento neste momento.  Se você deseja alterar o Estado do Documento, use o campo "Ação do Documento"</entry> 
+</row> 
+<row> 
+ <entry>Representante de Vendas</entry><entry> SalesRep_ID</entry> 
+<entry>Tabela</entry> 
+ <entry>AD_User - SalesRep</entry> 
+<entry>Representante de Vendas ou Promotor de Vendas da Companhia</entry> 
+<entry>O campo "Representante de Vendas" indica o representante de vendas para esta região.  Qualquer Representante de Vendas tem que ser um usuário interno válido.</entry> 
+</row> 
+<row> 
+ <entry>Atividade</entry><entry> C_Activity_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Atividade de Negócio</entry> 
+<entry>"Atividade" indica tarefas que são executadas e utilizadas para Cálculo de Custo Baseado em Atividade</entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo</entry><entry> User1_ID</entry> 
+<entry>Tabela</entry> 
+ <entry>Account_ID - User1</entry> 
+<entry>Centro de Custo</entry> 
+<entry>O "Centro de Custo" exibe os elementos opcionais que tenham sido definidos para esta combinação de contas.</entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo 2</entry><entry> User2_ID</entry> 
+<entry>Tabela</entry> 
+ <entry>Account_ID - User2</entry> 
+<entry>Centro de Custo #2</entry> 
+<entry>O "Centro de Custo" exibe os elementos opcionais que tenham sido definidos para esta combinação de contas.</entry> 
+</row> 
+<row> 
+ <entry>Finalidade</entry><entry> C_Charge_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Finalidade do lançamento</entry> 
+<entry>O campo "Finalidade" indica a finalidade do lançamento, ou o tipo de despesa/receita (Manipulação, Despacho, Re-estocagem)</entry> 
+</row> 
+<row> 
+ <entry>Plano Financeiro</entry><entry> COF_C_PlanoFinanceiro_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Primary Key : Plano Financeiro</entry> 
+<entry>Primary Key : Plano Financeiro</entry> 
+</row> 
+<row> 
+ <entry>Data da Transação</entry><entry> DateTrx</entry> 
+<entry>Data</entry> 
+ <entry> (@SQL=SELECT TO_DATE( '01/'||TO_CHAR(SYSDATE, 'mm/yyyy')   , 'dd/mm/yyyy'))</entry> 
+<entry>Data da Transação</entry> 
+<entry>A "Data da Transação" indica a data da transação comercial.</entry> 
+</row> 
+<row> 
+ <entry>Data de Crédito</entry><entry> cof_CreditDate</entry> 
+<entry>Data</entry> 
+ <entry> </entry> 
+<entry>Utilizado para informar a data em que a operadora irá efetuar o crédito em conta corrente</entry> 
+<entry>null</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<table> 
+ <title>RV_Payment - Payment - Colunas</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="1*"/><colspec colname='c7'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores padrão</entry><entry>Valor de restrição</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Núm. Conta</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Account Number</entry> 
+<entry>The Account Number indicates the Number assigned to this bank account. </entry> 
+</row> 
+<row> 
+ <entry>Cidade da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>City or the Credit Card or Account Holder</entry> 
+<entry>The Account City indicates the City of the Credit Card or Account holder</entry> 
+</row> 
+<row> 
+ <entry>País da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Country</entry> 
+<entry>Account Country Name</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização de Transação (Trx)</entry><entry>Tabela</entry> 
+<entry>AD_Org (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Performing or initiating organization</entry> 
+<entry>The organization which performs or initiates this transaction (for another organization).  The owning Organization may not be the transaction organization in a service bureau environment, with centralized services, and inter-organization transactions.</entry> 
+</row> 
+<row> 
+ <entry>Email da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Email Address</entry> 
+<entry>The EMail Address indicates the EMail address off the Credit Card or Account holder.</entry> 
+</row> 
+<row> 
+ <entry>Carteira de Motorista</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment Identification - Driver License</entry> 
+<entry>The Driver's License being used as identification.</entry> 
+</row> 
+<row> 
+ <entry>Núm.de Seguridade Social (INSS)</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment Identification - Social Security No</entry> 
+<entry>The Social Security number being used as identification.</entry> 
+</row> 
+<row> 
+ <entry>Valor Alocado</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Amount allocated to this document</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nome da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Name on Credit Card or Account holder</entry> 
+<entry>The Name of the Credit Card or Account holder.</entry> 
+</row> 
+<row> 
+ <entry>Estado da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>State of the Credit Card or Account holder</entry> 
+<entry>The State of the Credit Card or Account holder</entry> 
+</row> 
+<row> 
+ <entry>Rua da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Street address of the Credit Card or Account holder</entry> 
+<entry>The Street Address of the Credit Card or Account holder.</entry> 
+</row> 
+<row> 
+ <entry>Valor Disponível</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Amount available for allocation for this document</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>CEP da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Zip Code of the Credit Card or Account Holder</entry> 
+<entry>The Zip Code of the Credit Card or Account Holder.</entry> 
+</row> 
+<row> 
+ <entry>Atividade</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Activity</entry> 
+<entry>Activities indicate tasks that are performed and used to utilize Activity based Costing</entry> 
+</row> 
+<row> 
+ <entry>Conta Bancária</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Account at the Bank</entry> 
+<entry>The Bank Account identifies an account at this Bank.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Conta Bancária de Parceiro</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Bank Account of the Business Partner</entry> 
+<entry>The Partner Bank Account identifies the bank account to be used for this Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Campanha</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Marketing Campaign</entry> 
+<entry>The Campaign defines a unique marketing program.  Projects can be associated with a pre defined Marketing Campaign.  You can then report based on a specific Campaign.</entry> 
+</row> 
+<row> 
+ <entry>Finalidade</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Additional document charges</entry> 
+<entry>The Charge indicates a type of Charge (Handling, Shipping, Restocking)</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Conversão</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Currency Conversion Rate Type</entry> 
+<entry>The Currency Conversion Rate Type lets you define different type of rates, e.g. Spot, Corporate and/or Sell/Buy rates.</entry> 
+</row> 
+<row> 
+ <entry>Moeda De</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The Currency for this record</entry> 
+<entry>Indicates the Currency to be used when processing or reporting on this record</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Documento</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Document type or rules</entry> 
+<entry>The Document Type determines document sequence and processing rules</entry> 
+</row> 
+<row> 
+ <entry>Valor da Despesa</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Charge Amount</entry> 
+<entry>The Charge Amount indicates the amount for an additional charge.</entry> 
+</row> 
+<row> 
+ <entry>Núm.Cheque</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Check Number</entry> 
+<entry>The Check Number indicates the number on the check.</entry> 
+</row> 
+<row> 
+ <entry>Fatura</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Invoice Identifier</entry> 
+<entry>The Invoice Document.</entry> 
+</row> 
+<row> 
+ <entry>Operadora de Cartão de Cédito</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>They handle the worldwide processing of credit card transactions, acting as a gateway between merchants and credit card companies for authorizing and processing each transaction as well as setting the terms of those transactions</entry> 
+</row> 
+<row> 
+ <entry>Plano Financeiro</entry><entry>Procurar</entry> 
+<entry>COF_C_PlanoFinanceiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Primary Key : Plano Financeiro</entry> 
+<entry>Primary Key : Plano Financeiro</entry> 
+</row> 
+<row> 
+ <entry>Data de Crédito</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Used to enter the date on which the operator will make the credit on current account</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Pedido</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Order</entry> 
+<entry>The Order is a control document.  The  Order is complete when the quantity ordered is the same as the quantity shipped and invoiced.  When you close an order, unshipped (backordered) quantities are cancelled.</entry> 
+</row> 
+<row> 
+ <entry>Lote de Pagamento</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment batch for EFT</entry> 
+<entry>Electronic Fund Transfer Payment Batch.</entry> 
+</row> 
+<row> 
+ <entry>Pagamento</entry><entry>ID</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment identifier</entry> 
+<entry>The Payment is a unique identifier of this payment.</entry> 
+</row> 
+<row> 
+ <entry>Projeto</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Financial Project</entry> 
+<entry>A Project allows you to track and control internal or external activities.</entry> 
+</row> 
+<row> 
+ <entry>Criado</entry><entry>Data+Hora</entry> 
+<entry> (SYSDATE)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date this record was created</entry> 
+<entry>The Created field indicates the date that this record was created.</entry> 
+</row> 
+<row> 
+ <entry>Criado por</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User who created this records</entry> 
+<entry>The Created By field indicates the user who created this record.</entry> 
+</row> 
+<row> 
+ <entry>Validade Mês</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Expiry Month</entry> 
+<entry>The Expiry Month indicates the expiry month for this credit card.</entry> 
+</row> 
+<row> 
+ <entry>Validade Ano</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Expiry Year</entry> 
+<entry>The Expiry Year indicates the expiry year for this credit card.</entry> 
+</row> 
+<row> 
+ <entry>Cartão de Crédito</entry><entry>Lista</entry> 
+<entry>Amex
+Cabal
+ATM
+Diners
+Elo
+Hipercard
+MasterCard
+Discover
+Outros
+Cartão de Compras
+Sorocred
+Aura
+Visa
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Credit Card (Visa, MC, AmEx)</entry> 
+<entry>The Credit Card drop down list box is used for selecting the type of Credit Card presented for payment.</entry> 
+</row> 
+<row> 
+ <entry>Data da Conta</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Accounting Date</entry> 
+<entry>The Accounting Date indicates the date to be used on the General Ledger account entries generated from this document. It is also used for any currency conversion.</entry> 
+</row> 
+<row> 
+ <entry>Data da Transação</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Transaction Date</entry> 
+<entry>The Transaction Date indicates the date of the transaction.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Valor do Desconto</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Calculated amount of discount</entry> 
+<entry>The Discount Amount indicates the discount amount for a document or line.</entry> 
+</row> 
+<row> 
+ <entry>Ação do Documento</entry><entry>Lista</entry> 
+<entry>&lt;
+Nenhum&gt;
+
+Aprovar
+Fechar
+Completo
+Invalidar
+Lançar
+Preparar
+Estornar - Provisão
+Estornar - Corrigir
+Reativar
+Rejeitar
+Anulado
+Espere Completar
+Destravar
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The targeted status of the document</entry> 
+<entry>You find the current status in the Document Status field. The options are listed in a popup</entry> 
+</row> 
+<row> 
+ <entry>Estado do Documento</entry><entry>Lista</entry> 
+<entry>Desconhecido
+Aprovado
+Fechado
+Completado
+Esboçado
+Inválido
+Em Progresso
+Não Aprovado
+Estornado
+Anulado
+Aguardando Confirmação
+Esperando pagamento
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The current status of the document</entry> 
+<entry>The Document Status indicates the status of a document at this time.  If you want to change the document status, use the Document Action field</entry> 
+</row> 
+<row> 
+ <entry>Número do Documento</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Document sequence number of the document</entry> 
+<entry>The document number is usually automatically generated by the system and determined by the document type of the document. If the document is not saved, the preliminary number is displayed in "&lt;
+&gt;
+".
+
+If the document type of your document has no automatic document sequence defined, the field is empty if you create a new document. This is for documents which usually have an external number (like vendor invoice).  If you leave the field empty, the system will generate a document number for you. The document sequence used for this fallback number is defined in the "Maintain Sequence" window with the name "DocumentNo_&lt;
+TableName&gt;
+", where TableName is the actual name of the table (e.g. C_Order).</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry> (Y)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Alocado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if the payment has been allocated</entry> 
+<entry>The Allocated checkbox indicates if a payment has been allocated or associated with an invoice or invoices.</entry> 
+</row> 
+<row> 
+ <entry>Aprovado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if this document requires approval</entry> 
+<entry>The Approved checkbox indicates if this document requires approval before it can be processed.</entry> 
+</row> 
+<row> 
+ <entry>Captação Postergada</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Charge after Shipment</entry> 
+<entry>Delayed Capture is required, if you ship products.  The first credit card transaction is the Authorization, the second is the actual transaction after the shipment of the product.</entry> 
+</row> 
+<row> 
+ <entry>Acesso Online</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Can be accessed online </entry> 
+<entry>The Online Access check box indicates if the application can be accessed via the web. </entry> 
+</row> 
+<row> 
+ <entry>Pagamento a Maior/Menor</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Over-Payment (unallocated) or Under-Payment (partial payment)</entry> 
+<entry>Overpayments (negative) are unallocated amounts and allow you to receive money for more than the particular invoice. 
+Underpayments (positive) is a partial payment for the invoice. You do not write off the unpaid amount.</entry> 
+</row> 
+<row> 
+ <entry>Pagamento Antecipado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The Payment/Receipt is a Prepayment</entry> 
+<entry>Payments not allocated to an invoice with a charge are posted to Unallocated Payments. When setting this flag, the payment is posted to the Customer or Vendor Prepayment account.</entry> 
+</row> 
+<row> 
+ <entry>Recibo</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>This is a sales transaction (receipt)</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Reconciliado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment is reconciled with bank statement</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Auto-Serviço</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>This is a Self-Service entry or this entry can be changed via Self-Service</entry> 
+<entry>Self-Service allows users to enter data or update their data.  The flag indicates, that this record was entered or created via Self-Service or that the user can change it via the Self-Service functionality.</entry> 
+</row> 
+<row> 
+ <entry>Micr</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Combination of routing no, account and check no</entry> 
+<entry>The Micr number is the combination of the bank routing number, account number and check number</entry> 
+</row> 
+<row> 
+ <entry>Multiplicador CAP</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payables Multiplier</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ID da Transação Original</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Original Transaction ID</entry> 
+<entry>The Original Transaction ID is used for reversing transactions and indicates the transaction that has been reversed.</entry> 
+</row> 
+<row> 
+ <entry>Pagamento a Maior/Menor</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Over-Payment (unallocated) or Under-Payment (partial payment) Amount</entry> 
+<entry>Overpayments (negative) are unallocated amounts and allow you to receive money for more than the particular invoice. 
+Underpayments (positive) is a partial payment for the invoice. You do not write off the unpaid amount.</entry> 
+</row> 
+<row> 
+ <entry>Valor do Pagamento</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Amount being paid</entry> 
+<entry>Indicates the amount this payment is for.  The payment amount can be for single or multiple invoices or a partial payment for an invoice.</entry> 
+</row> 
+<row> 
+ <entry>Número PC</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Purchase Order Number</entry> 
+<entry>The PO Number indicates the number assigned to a purchase order</entry> 
+</row> 
+<row> 
+ <entry>Lançado</entry><entry>Lista</entry> 
+<entry>Não Balanceado
+Não Conversível (sem taxa de conversão)
+Erro de Contabilização
+Conta Inválida
+Não Lançado
+Período Fechado
+Lançamento Preparado
+Lançado
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Posting status</entry> 
+<entry>The Posted field indicates the status of the Generation of General Ledger Accounting Lines </entry> 
+</row> 
+<row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Processado Em</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The date+time (expressed in decimal format) when the document has been processed</entry> 
+<entry>The ProcessedOn Date+Time save the exact moment (nanoseconds precision if allowed by the DB) when a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Código de Autorização</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Authorization Code returned</entry> 
+<entry>The Authorization Code indicates the code returned from the electronic transmission.</entry> 
+</row> 
+<row> 
+ <entry>Código de Autorização (CP)</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Authorization Code Delayed Capture returned</entry> 
+<entry>The Authorization Code indicates the code returned from the electronic transmission.</entry> 
+</row> 
+<row> 
+ <entry>Endereço Verificado</entry><entry>Lista</entry> 
+<entry>Não Coincide
+Indisponível
+Confrontar
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>This address has been verified</entry> 
+<entry>The Address Verified indicates if the address has been verified by the Credit Card Company.</entry> 
+</row> 
+<row> 
+ <entry>CEP Verificado</entry><entry>Lista</entry> 
+<entry>Não Coincide
+Indisponível
+Confrontar
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The Zip Code has been verified</entry> 
+<entry>The Zip Verified indicates if the zip code has been verified by the Credit Card Company.</entry> 
+</row> 
+<row> 
+ <entry>Confirmação de CVCC</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Credit Card Verification Code Match</entry> 
+<entry>The Credit Card Verification Code was matched</entry> 
+</row> 
+<row> 
+ <entry>Pagamento Referenciado</entry><entry>Tabela</entry> 
+<entry>C_Payment</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ID de Reversão</entry><entry>Tabela</entry> 
+<entry>C_Payment</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>ID of document reversal</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Informação</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Response info</entry> 
+<entry>The Info indicates any response information returned from the Credit Card Company.</entry> 
+</row> 
+<row> 
+ <entry>Número de Rastreio</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Bank Routing Number</entry> 
+<entry>The Bank Routing Number (ABA Number) identifies a legal Bank.  It is used in routing checks and electronic transactions.</entry> 
+</row> 
+<row> 
+ <entry>Referência</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment reference</entry> 
+<entry>The Payment Reference indicates the reference returned from the Credit Card Company for a payment</entry> 
+</row> 
+<row> 
+ <entry>Referência (CP)</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment Reference Delayed Capture</entry> 
+<entry>The Payment Reference indicates the reference returned from the Credit Card Company for a payment</entry> 
+</row> 
+<row> 
+ <entry>Mensagem de Resposta</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Response message</entry> 
+<entry>The Response Message indicates the message returned from the Credit Card Company as the result of a transmission</entry> 
+</row> 
+<row> 
+ <entry>Resultado</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Result of transmission</entry> 
+<entry>The Response Result indicates the result of the transmission to the Credit Card Company.</entry> 
+</row> 
+<row> 
+ <entry>Representante de Vendas</entry><entry>Tabela</entry> 
+<entry>AD_User - SalesRep</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Sales Representative or Company Agent</entry> 
+<entry>The Sales Representative indicates the Sales Rep for this Region.  Any Sales Rep must be a valid internal user.</entry> 
+</row> 
+<row> 
+ <entry>Passar o Cartão</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Track 1 and 2 of the Credit Card</entry> 
+<entry>Swiped information for Credit Card Presence Transactions</entry> 
+</row> 
+<row> 
+ <entry>Valor do Imposto</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Tax Amount for a document</entry> 
+<entry>The Tax Amount displays the total tax amount for a document.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Pagamento</entry><entry>Lista</entry> 
+<entry>Depósito Direto
+Cartão de Crédito
+Débito Direto
+Cheque
+Conta Bancária
+Dinheiro
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Method of Payment</entry> 
+<entry>The Tender Type indicates the method of payment (ACH or Direct Deposit, Credit Card, Check, Direct Debit)</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Transação</entry><entry>Lista</entry> 
+<entry>Autorização
+Crédito (Pagamento)
+Captação Postergada
+Autorização Verbal
+Vendas
+Anulado
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Type of credit card transaction</entry> 
+<entry>The Transaction Type indicates the type of transaction to be submitted to the Credit Card Company.</entry> 
+</row> 
+<row> 
+ <entry>Atualizado</entry><entry>Data+Hora</entry> 
+<entry> (SYSDATE)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date this record was updated</entry> 
+<entry>The Updated field indicates the date that this record was updated.</entry> 
+</row> 
+<row> 
+ <entry>Atualizado por</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User who updated this records</entry> 
+<entry>The Updated By field indicates the user who updated this record.</entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo</entry><entry>Tabela</entry> 
+<entry>Account_ID - User1</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User defined list element #1</entry> 
+<entry>The user defined element displays the optional elements that have been defined for this account combination.</entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo 2</entry><entry>Tabela</entry> 
+<entry>Account_ID - User2</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User defined list element #2</entry> 
+<entry>The user defined element displays the optional elements that have been defined for this account combination.</entry> 
+</row> 
+<row> 
+ <entry>Código de Autorização Verbal</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Voice Authorization Code from credit card company</entry> 
+<entry>The Voice Authorization Code indicates the code received from the Credit Card Company.</entry> 
+</row> 
+<row> 
+ <entry>Valor da Baixa</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Amount to write-off</entry> 
+<entry>The Write Off Amount indicates the amount to be written off as uncollectible.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

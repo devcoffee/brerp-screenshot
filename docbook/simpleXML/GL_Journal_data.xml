@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Diário</title>
+<tgroup cols='28' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Esquema Contábil</entry><entry>Tipo de Conversão</entry><entry>Moeda De</entry><entry>Tipo de Documento</entry><entry>Valor de Controle</entry><entry>Copiar de</entry><entry>Período (Ano Fiscal)</entry><entry>Taxa</entry><entry>Data da Conta</entry><entry>Data do Documento</entry><entry>Descrição</entry><entry>Ação do Documento</entry><entry>Estado do Documento</entry><entry>Número do Documento</entry><entry>Orçamento</entry><entry>Categoria de Razão Geral</entry><entry>Lote Diário</entry><entry>Diário</entry><entry>Aprovado</entry><entry>Impresso</entry><entry>Lançado</entry><entry>Tipo de Lançamento</entry><entry>Processado</entry><entry>Processado Em</entry><entry>Processar Agora</entry><entry>ID de Reversão</entry><entry>Crédito Total</entry><entry>Débito Total</entry></row>
+<row><entry>101</entry><entry>114</entry><entry>100</entry><entry>115</entry><entry>0</entry><entry> </entry><entry>155</entry><entry>1</entry><entry>2002-08-10 00:00:00.0</entry><entry>2002-08-10 00:00:00.0</entry><entry>Intercompany</entry><entry>--</entry><entry>CO</entry><entry>1001</entry><entry> </entry><entry>108</entry><entry>100</entry><entry>100</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>A</entry><entry>true</entry><entry>1029022829000</entry><entry>false</entry><entry> </entry><entry>100</entry><entry>100</entry></row>
+<row><entry>1000001</entry><entry>114</entry><entry>297</entry><entry>1000040</entry><entry>0.0</entry><entry> </entry><entry>5000024</entry><entry>1.0</entry><entry>2018-01-31 00:00:00.0</entry><entry>2018-01-31 00:00:00.0</entry><entry>teste</entry><entry>CO</entry><entry>IP</entry><entry>1</entry><entry> </entry><entry>0</entry><entry> </entry><entry>5000000</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>C</entry><entry>false</entry><entry>1518443833960.961</entry><entry>false</entry><entry> </entry><entry>72.3700000000</entry><entry>72.3700000000</entry></row></tbody>
+</tgroup>
+</table>

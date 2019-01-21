@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Production Line MA</title>
+<tgroup cols='4' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Data da Política de Materiais</entry><entry>Instância do Conjunto de Atributos</entry><entry>Quantidade Movimentada</entry><entry>Linha de Produção</entry></row>
+<row><entry>2018-01-09 00:00:00.0</entry><entry>0</entry><entry>-20.0</entry><entry>5000001</entry></row>
+<row><entry>2018-01-24 00:00:00.0</entry><entry>0</entry><entry>10</entry><entry>5000000</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>-6.00</entry><entry>5000003</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>-3.00</entry><entry>5000004</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>3.00</entry><entry>5000002</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>-40.0</entry><entry>5000006</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>-20.0</entry><entry>5000007</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>20</entry><entry>5000005</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>-20.0</entry><entry>5000009</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>10</entry><entry>5000008</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>-20.0</entry><entry>5000011</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>10</entry><entry>5000010</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>-10</entry><entry>5000013</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>40.0</entry><entry>5000012</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>10</entry><entry>5000014</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>-20.0</entry><entry>5000015</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>-20.0</entry><entry>5000017</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>0</entry><entry>10</entry><entry>5000016</entry></row>
+<row><entry>2018-01-09 00:00:00.0</entry><entry>0</entry><entry>-10.0</entry><entry>5000019</entry></row>
+<row><entry>2018-01-06 00:00:00.0</entry><entry>0</entry><entry>-3.0</entry><entry>5000020</entry></row>
+<row><entry>2018-02-19 00:00:00.0</entry><entry>0</entry><entry>1</entry><entry>5000018</entry></row>
+<row><entry>2018-02-14 00:00:00.0</entry><entry>0</entry><entry>-8.0</entry><entry>5000022</entry></row>
+<row><entry>2018-02-15 00:00:00.0</entry><entry>0</entry><entry>-192.0</entry><entry>5000022</entry></row>
+<row><entry>2018-02-19 00:00:00.0</entry><entry>0</entry><entry>20</entry><entry>5000021</entry></row>
+<row><entry>2018-02-28 00:00:00.0</entry><entry>0</entry><entry>-200.0</entry><entry>5000028</entry></row>
+<row><entry>2018-01-06 00:00:00.0</entry><entry>0</entry><entry>-60.0</entry><entry>5000029</entry></row>
+<row><entry>2018-02-28 00:00:00.0</entry><entry>0</entry><entry>20</entry><entry>5000027</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Informações de CFOP</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'> 
+
+ <tbody><row><entry>Empresa</entry><entry>Organização</entry><entry>Chave de Busca</entry><entry>Descrição</entry><entry>Tipo de Movimento</entry><entry>Tipo de Classificação</entry></row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.113</entry><entry>COMPRA PARA COMERCIALIZAÇÃO, DE MERCADORIA RECEBIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.251</entry><entry>COMPRA DE ENERGIA ELÉTRICA PARA DISTRIBUIÇÃO OU COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.552</entry><entry>TRANSFERÊNCIA DE BEM DO ATIVO IMOBILIZADO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.920</entry><entry>ENTRADA DE VASILHAME OU SACARIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.252</entry><entry>COMPRA DE ENERGIA ELÉTRICA POR ESTABELECIMENTO INDUSTRIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.253</entry><entry>COMPRA DE ENERGIA ELÉTRICA POR ESTABELECIMENTO COMERCIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.557</entry><entry>TRANSFERÊNCIA DE MATERIAL PARA USO OU CONSUMO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.652</entry><entry>COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE PARA COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.202</entry><entry>DEVOLUÇÃO DE VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.101</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.120</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS ENTREGUE AO DESTINATÁRIO PELO VENDEDOR REMETENTE, EM VENDA À ORDEM</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.356</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.654</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO OU RECEBIDO DE TERCEIROS DESTINADO À INDUSTRIALIZAÇÃO SUBSEQÜENTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.927</entry><entry>LANÇAMENTO EFETUADO A TÍTULO DE BAIXA DE ESTOQUE DECORRENTE DE PERDA, ROUBO OU DETERIORAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.933</entry><entry>PRESTAÇÃO DE SERVIÇO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.151</entry><entry>TRANSFERÊNCIA DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.152</entry><entry>TRANSFERÊNCIA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.404</entry><entry>VENDA DE MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA, CUJO IMPOSTO JÁ TENHA SIDO RETIDO ANTERIORMENTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.664</entry><entry>RETORNO DE COMBUSTÍVEL OU LUBRIFICANTE RECEBIDO PARA ARMAZENAGEM</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.901</entry><entry>REMESSA PARA INDUSTRIALIZAÇÃO POR ENCOMENDA</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>Z.ZZZ</entry><entry>NÃO APLICÁVEL</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.205</entry><entry>ANULAÇÃO DE VALOR RELATIVO À AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.551</entry><entry>VENDA DE BEM DO ATIVO IMOBILIZADO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.257</entry><entry>COMPRA DE ENERGIA ELÉTRICA PARA CONSUMO POR DEMANDA CONTRATADA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.352</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO INDUSTRIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.301</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO PARA EXECUÇÃO DE SERVIÇO DA MESMA NATUREZA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.254</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA ESTABELECIMENTO PRESTADOR DE SERVIÇO DE TRANSPORTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.652</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DE PRODUÇÃO DO ESTABELECIMENTO DESTINADO À COMERCIALIZAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.660</entry><entry>DEVOLUÇÃO DE COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO PARA INDUSTRIALIZAÇÃO SUBSEQÜENTE</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.912</entry><entry>REMESSA DE MERCADORIA OU BEM PARA DEMONSTRAÇÃO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.931</entry><entry>LANÇAMENTO EFETUADO EM DECORRÊNCIA DA RESPONSABILIDADE DE RETENÇÃO DO IMPOSTO POR SUBSTITUIÇÃO TRIBUTÁRIA, ATRIBUÍDA AO REMETENTE OU ALIENANTE DA MERCADORIA, PELO SERVIÇO DE TRANSPORTE REALIZADO POR TRANSPORTADOR AUTÔNOMO OU POR TRANSPORTADOR NÃO INSCRITO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.202</entry><entry>DEVOLUÇÃO DE COMPRA PARA COMERCIALIZAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.102</entry><entry>COMPRA PARA COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.121</entry><entry>COMPRA PARA COMERCIALIZAÇÃO, EM VENDA À ORDEM, JÁ RECEBIDA DO VENDEDOR REMETENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.125</entry><entry>INDUSTRIALIZAÇÃO EFETUADA POR OUTRA EMPRESA QUANDO A MERCADORIA REMETIDA PARA UTILIZAÇÃO NO PROCESSO DE INDUSTRIALIZAÇÃO NÃO TRANSITOU PELO ESTABELECIMENTO ADQUIRENTE DA MERCADORIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.251</entry><entry>COMPRA DE ENERGIA ELÉTRICA PARA DISTRIBUIÇÃO OU COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.303</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO POR ESTABELECIMENTO COMERCIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.306</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO POR ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.355</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO DE GERADORA OU DE DISTRIBUIDORA DE ENERGIA ELÉTRICA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.504</entry><entry>ENTRADA DECORRENTE DE DEVOLUÇÃO DE MERCADORIA REMETIDA COM FIM ESPECÍFICO DE EXPORTAÇÃO, ADQUIRIDA OU RECEBIDA DE TERCEIROS</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.905</entry><entry>ENTRADA DE MERCADORIA RECEBIDA PARA DEPÓSITO EM DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.909</entry><entry>RETORNO DE BEM REMETIDO POR CONTA DE CONTRATO DE COMODATO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.503</entry><entry>ENTRADA DECORRENTE DE DEVOLUÇÃO DE PRODUTO REMETIDO COM FIM ESPECÍFICO DE EXPORTAÇÃO, DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.919</entry><entry>DEVOLUÇÃO SIMBÓLICA DE MERCADORIA VENDIDA OU UTILIZADA EM PROCESSO INDUSTRIAL, REMETIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.118</entry><entry>COMPRA DE MERCADORIA PARA COMERCIALIZAÇÃO PELO ADQUIRENTE ORIGINÁRIO, ENTREGUE PELO VENDEDOR REMETENTE AO DESTINATÁRIO, EM VENDA À ORDEM</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.121</entry><entry>COMPRA PARA COMERCIALIZAÇÃO, EM VENDA À ORDEM, JÁ RECEBIDA DO VENDEDOR REMETENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.212</entry><entry>DEVOLUÇÃO DE VENDA NO MERCADO INTERNO DE MERCADORIA INDUSTRIALIZADA E INSUMO IMPORTADO SOB O REGIME ADUANEIRO ESPECIAL DE ENTREPOSTO INDUSTRIAL (RECOF-SPED)</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.255</entry><entry>COMPRA DE ENERGIA ELÉTRICA POR ESTABELECIMENTO PRESTADOR DE SERVIÇO DE COMUNICAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.402</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO DE PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA, EM OPERAÇÃO ENTRE CONTRIBUINTES SUBSTITUTOS DO MESMO PRODUTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.202</entry><entry>DEVOLUÇÃO DE VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.408</entry><entry>TRANSFERÊNCIA DE PRODUÇÃO DO ESTABELECIMENTO EM OPERAÇÃO COM PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.412</entry><entry>DEVOLUÇÃO DE BEM DO ATIVO IMOBILIZADO, EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.414</entry><entry>REMESSA DE PRODUÇÃO DO ESTABELECIMENTO PARA VENDA FORA DO ESTABELECIMENTO EM OPERAÇÃO COM PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.554</entry><entry>REMESSA DE BEM DO ATIVO IMOBILIZADO PARA USO FORA DO ESTABELECIMENTO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.907</entry><entry>RETORNO SIMBÓLICO DE MERCADORIA DEPOSITADA EM DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.110</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, DESTINADA À ZONA FRANCA DE MANAUS OU ÁREAS DE LIVRE COMÉRCIO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.354</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A ESTABELECIMENTO DE PRESTADOR DE SERVIÇO DE COMUNICAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.357</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A NÃO CONTRIBUINTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.401</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO EM OPERAÇÃO COM PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA, NA CONDIÇÃO DE CONTRIBUINTE SUBSTITUTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.413</entry><entry>DEVOLUÇÃO DE MERCADORIA DESTINADA AO USO OU CONSUMO, EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.403</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA, NA CONDIÇÃO DE CONTRIBUINTE SUBSTITUTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.410</entry><entry>DEVOLUÇÃO DE COMPRA PARA INDUSTRIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.116</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO ORIGINADA DE ENCOMENDA PARA RECEBIMENTO FUTURO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.118</entry><entry>COMPRA DE MERCADORIA PARA COMERCIALIZAÇÃO PELO ADQUIRENTE ORIGINÁRIO, ENTREGUE PELO VENDEDOR REMETENTE AO DESTINATÁRIO, EM VENDA À ORDEM</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.120</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO, EM VENDA À ORDEM, JÁ RECEBIDA DO VENDEDOR REMETENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.124</entry><entry>INDUSTRIALIZAÇÃO EFETUADA POR OUTRA EMPRESA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.921</entry><entry>RETORNO DE VASILHAME OU SACARIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.125</entry><entry>INDUSTRIALIZAÇÃO EFETUADA POR OUTRA EMPRESA QUANDO A MERCADORIA REMETIDA PARA UTILIZAÇÃO NO PROCESSO DE INDUSTRIALIZAÇÃO NÃO TRANSITOU PELO ESTABELECIMENTO ADQUIRENTE DA MERCADORIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.126</entry><entry>COMPRA PARA UTILIZAÇÃO NA PRESTAÇÃO DE SERVIÇO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.151</entry><entry>TRANSFERÊNCIA PARA INDUSTRIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.152</entry><entry>TRANSFERÊNCIA PARA COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.154</entry><entry>TRANSFERÊNCIA PARA UTILIZAÇÃO NA PRESTAÇÃO DE SERVIÇO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.201</entry><entry>DEVOLUÇÃO DE VENDA DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.205</entry><entry>ANULAÇÃO DE VALOR RELATIVO À PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.206</entry><entry>ANULAÇÃO DE VALOR RELATIVO À PRESTAÇÃO DE SERVIÇO DE TRANSPORTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.207</entry><entry>ANULAÇÃO DE VALOR RELATIVO À VENDA DE ENERGIA ELÉTRICA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.551</entry><entry>COMPRA DE BEM PARA O ATIVO IMOBILIZADO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.556</entry><entry>COMPRA DE MATERIAL PARA USO OU CONSUMO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.910</entry><entry>ENTRADA DE BONIFICAÇÃO, DOAÇÃO OU BRINDE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.129</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO SOB O REGIME ADUANEIRO ESPECIAL DE ENTREPOSTO INDUSTRIAL (RECOF-SPED)</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.212</entry><entry>DEVOLUÇÃO DE VENDA NO MERCADO EXTERNO DE MERCADORIA INDUSTRIALIZADA E INSUMO IMPORTADO SOB O REGIME ADUANEIRO ESPECIAL DE ENTREPOSTO INDUSTRIAL (RECOF-SPED)</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.551</entry><entry>COMPRA DE BEM PARA O ATIVO IMOBILIZADO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.129</entry><entry>VENDA DE INSUMO IMPORTADO E DE MERCADORIA INDUSTRIALIZADA SOB O AMPARO DO REGIME ADUANEIRO ESPECIAL DE ENTREPOSTO INDUSTRIAL (RECOF-SPED)</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.933</entry><entry>PRESTAÇÃO DE SERVIÇO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.212</entry><entry>DEVOLUÇÃO DE COMPRAS PARA INDUSTRIALIZAÇÃO SOB O REGIME ADUANEIRO ESPECIAL DE ENTREPOSTO INDUSTRIAL (RECOF-SPED)</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.102</entry><entry>COMPRA PARA COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.252</entry><entry>COMPRA DE ENERGIA ELÉTRICA POR ESTABELECIMENTO INDUSTRIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.253</entry><entry>COMPRA DE ENERGIA ELÉTRICA POR ESTABELECIMENTO COMERCIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.256</entry><entry>COMPRA DE ENERGIA ELÉTRICA POR ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.257</entry><entry>COMPRA DE ENERGIA ELÉTRICA PARA CONSUMO POR DEMANDA CONTRATADA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.302</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO POR ESTABELECIMENTO INDUSTRIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.303</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO POR ESTABELECIMENTO COMERCIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.304</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO POR ESTABELECIMENTO DE PRESTADOR DE SERVIÇO DE TRANSPORTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.306</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO POR ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.351</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE PARA EXECUÇÃO DE SERVIÇO DA MESMA NATUREZA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.352</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO INDUSTRIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.354</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO DE PRESTADOR DE SERVIÇO DE COMUNICAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.356</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.401</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.201</entry><entry>DEVOLUÇÃO DE VENDA DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.406</entry><entry>COMPRA DE BEM PARA O ATIVO IMOBILIZADO CUJA MERCADORIA ESTÁ SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.407</entry><entry>COMPRA DE MERCADORIA PARA USO OU CONSUMO CUJA MERCADORIA ESTÁ SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.410</entry><entry>DEVOLUÇÃO DE VENDA DE PRODUÇÃO DO ESTABELECIMENTO EM OPERAÇÃO COM PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.411</entry><entry>DEVOLUÇÃO DE VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.415</entry><entry>RETORNO DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, REMETIDA PARA VENDA FORA DO ESTABELECIMENTO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.451</entry><entry>RETORNO DE ANIMAL DO ESTABELECIMENTO PRODUTOR</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.452</entry><entry>RETORNO DE INSUMO NÃO UTILIZADO NA PRODUÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.501</entry><entry>ENTRADA DE MERCADORIA RECEBIDA COM FIM ESPECÍFICO DE EXPORTAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.917</entry><entry>ENTRADA DE MERCADORIA RECEBIDA EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.553</entry><entry>DEVOLUÇÃO DE VENDA DE BEM DO ATIVO IMOBILIZADO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.555</entry><entry>ENTRADA DE BEM DO ATIVO IMOBILIZADO DE TERCEIRO, REMETIDO PARA USO NO ESTABELECIMENTO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.556</entry><entry>COMPRA DE MATERIAL PARA USO OU CONSUMO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.557</entry><entry>TRANSFERÊNCIA DE MATERIAL PARA USO OU CONSUMO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.601</entry><entry>RECEBIMENTO, POR TRANSFERÊNCIA, DE CRÉDITO DE ICMS</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.603</entry><entry>RESSARCIMENTO DE ICMS RETIDO POR SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.604</entry><entry>LANÇAMENTO DO CRÉDITO RELATIVO À COMPRA DE BEM PARA O ATIVO IMOBILIZADO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.650</entry><entry>ENTRADAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO E LUBRIFICANTES</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.651</entry><entry>COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE PARA INDUSTRIALIZAÇÃO SUBSEQÜENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.658</entry><entry>TRANSFERÊNCIA DE COMBUSTÍVEL E LUBRIFICANTE PARA INDUSTRIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.659</entry><entry>TRANSFERÊNCIA DE COMBUSTÍVEL E LUBRIFICANTE PARA COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.660</entry><entry>DEVOLUÇÃO DE VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DESTINADO À INDUSTRIALIZAÇÃO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.662</entry><entry>DEVOLUÇÃO DE VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DESTINADO A CONSUMIDOR OU USUÁRIO FINAL</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.663</entry><entry>ENTRADA DE COMBUSTÍVEL OU LUBRIFICANTE PARA ARMAZENAGEM</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.664</entry><entry>RETORNO DE COMBUSTÍVEL OU LUBRIFICANTE REMETIDO PARA ARMAZENAGEM</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.901</entry><entry>ENTRADA PARA INDUSTRIALIZAÇÃO POR ENCOMENDA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.904</entry><entry>RETORNO DE REMESSA PARA VENDA FORA DO ESTABELECIMENTO</entry><entry>E</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.905</entry><entry>ENTRADA DE MERCADORIA RECEBIDA PARA DEPÓSITO EM DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.906</entry><entry>RETORNO DE MERCADORIA REMETIDA PARA DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.908</entry><entry>ENTRADA DE BEM POR CONTA DE CONTRATO DE COMODATO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.909</entry><entry>RETORNO DE BEM REMETIDO POR CONTA DE CONTRATO DE COMODATO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.910</entry><entry>ENTRADA DE BONIFICAÇÃO, DOAÇÃO OU BRINDE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.911</entry><entry>ENTRADA DE AMOSTRA GRÁTIS</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.912</entry><entry>ENTRADA DE MERCADORIA OU BEM RECEBIDO PARA DEMONSTRAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.913</entry><entry>RETORNO DE MERCADORIA OU BEM REMETIDO PARA DEMONSTRAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.101</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.551</entry><entry>COMPRA DE BEM PARA O ATIVO IMOBILIZADO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.921</entry><entry>RETORNO DE VASILHAME OU SACARIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.922</entry><entry>LANÇAMENTO EFETUADO A TÍTULO DE SIMPLES FATURAMENTO DECORRENTE DE COMPRA PARA RECEBIMENTO FUTURO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.923</entry><entry>ENTRADA DE MERCADORIA RECEBIDA DO VENDEDOR REMETENTE, EM VENDA À ORDEM</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.926</entry><entry>LANÇAMENTO EFETUADO A TÍTULO DE RECLASSIFICAÇÃO DE MERCADORIA DECORRENTE DE FORMAÇÃO DE KIT OU DE SUA DESAGREGAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.933</entry><entry>PRESTAÇÃO DE SERVIÇO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.949</entry><entry>OUTRA ENTRADA DE MERCADORIA OU PRESTAÇÃO DE SERVIÇO NÃO ESPECIFICADA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.101</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.102</entry><entry>COMPRA PARA COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.111</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO DE MERCADORIA RECEBIDA ANTERIORMENTE EM CONSIGNAÇÃO INDUSTRIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.113</entry><entry>COMPRA PARA COMERCIALIZAÇÃO, DE MERCADORIA RECEBIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.117</entry><entry>COMPRA PARA COMERCIALIZAÇÃO ORIGINADA DE ENCOMENDA PARA RECEBIMENTO FUTURO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.120</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO, EM VENDA À ORDEM, JÁ RECEBIDA DO VENDEDOR REMETENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.122</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO EM QUE A MERCADORIA FOI REMETIDA PELO FORNECEDOR AO INDUSTRIALIZADOR SEM TRANSITAR PELO ESTABELECIMENTO ADQUIRENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.124</entry><entry>INDUSTRIALIZAÇÃO EFETUADA POR OUTRA EMPRESA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.126</entry><entry>COMPRA PARA UTILIZAÇÃO NA PRESTAÇÃO DE SERVIÇO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.151</entry><entry>TRANSFERÊNCIA PARA INDUSTRIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.152</entry><entry>TRANSFERÊNCIA PARA COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.153</entry><entry>TRANSFERÊNCIA DE ENERGIA ELÉTRICA PARA DISTRIBUIÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.154</entry><entry>TRANSFERÊNCIA PARA UTILIZAÇÃO NA PRESTAÇÃO DE SERVIÇO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.202</entry><entry>DEVOLUÇÃO DE VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.205</entry><entry>ANULAÇÃO DE VALOR RELATIVO À PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.206</entry><entry>ANULAÇÃO DE VALOR RELATIVO À PRESTAÇÃO DE SERVIÇO DE TRANSPORTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.207</entry><entry>ANULAÇÃO DE VALOR RELATIVO À VENDA DE ENERGIA ELÉTRICA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.208</entry><entry>DEVOLUÇÃO DE PRODUÇÃO DO ESTABELECIMENTO, REMETIDA EM TRANSFERÊNCIA</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.556</entry><entry>COMPRA DE MATERIAL PARA USO OU CONSUMO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.254</entry><entry>COMPRA DE ENERGIA ELÉTRICA POR ESTABELECIMENTO PRESTADOR DE SERVIÇO DE TRANSPORTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.256</entry><entry>COMPRA DE ENERGIA ELÉTRICA POR ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.301</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO PARA EXECUÇÃO DE SERVIÇO DA MESMA NATUREZA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.302</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO POR ESTABELECIMENTO INDUSTRIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.304</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO POR ESTABELECIMENTO DE PRESTADOR DE SERVIÇO DE TRANSPORTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.305</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO POR ESTABELECIMENTO DE GERADORA OU DE DISTRIBUIDORA DE ENERGIA ELÉTRICA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.351</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE PARA EXECUÇÃO DE SERVIÇO DA MESMA NATUREZA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.353</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO COMERCIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.354</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO DE PRESTADOR DE SERVIÇO DE COMUNICAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.356</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.401</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.406</entry><entry>COMPRA DE BEM PARA O ATIVO IMOBILIZADO CUJA MERCADORIA ESTÁ SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.258</entry><entry>VENDA DE ENERGIA ELÉTRICA A NÃO CONTRIBUINTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.407</entry><entry>COMPRA DE MERCADORIA PARA USO OU CONSUMO CUJA MERCADORIA ESTÁ SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.409</entry><entry>TRANSFERÊNCIA PARA COMERCIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.411</entry><entry>DEVOLUÇÃO DE VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.415</entry><entry>RETORNO DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, REMETIDA PARA VENDA FORA DO ESTABELECIMENTO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.501</entry><entry>ENTRADA DE MERCADORIA RECEBIDA COM FIM ESPECÍFICO DE EXPORTAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.358</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.503</entry><entry>ENTRADA DECORRENTE DE DEVOLUÇÃO DE PRODUTO REMETIDO COM FIM ESPECÍFICO DE EXPORTAÇÃO, DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.552</entry><entry>TRANSFERÊNCIA DE BEM DO ATIVO IMOBILIZADO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.553</entry><entry>DEVOLUÇÃO DE VENDA DE BEM DO ATIVO IMOBILIZADO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.653</entry><entry>COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE POR CONSUMIDOR OU USUÁRIO FINAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.658</entry><entry>TRANSFERÊNCIA DE COMBUSTÍVEL E LUBRIFICANTE PARA INDUSTRIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.660</entry><entry>DEVOLUÇÃO DE VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DESTINADO À INDUSTRIALIZAÇÃO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.661</entry><entry>DEVOLUÇÃO DE VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DESTINADO À COMERCIALIZAÇÃO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.663</entry><entry>ENTRADA DE COMBUSTÍVEL OU LUBRIFICANTE PARA ARMAZENAGEM</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.901</entry><entry>ENTRADA PARA INDUSTRIALIZAÇÃO POR ENCOMENDA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.902</entry><entry>RETORNO DE MERCADORIA REMETIDA PARA INDUSTRIALIZAÇÃO POR ENCOMENDA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.903</entry><entry>ENTRADA DE MERCADORIA REMETIDA PARA INDUSTRIALIZAÇÃO E NÃO APLICADA NO REFERIDO PROCESSO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.904</entry><entry>RETORNO DE REMESSA PARA VENDA FORA DO ESTABELECIMENTO</entry><entry>E</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.906</entry><entry>RETORNO DE MERCADORIA REMETIDA PARA DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.907</entry><entry>RETORNO SIMBÓLICO DE MERCADORIA REMETIDA PARA DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.908</entry><entry>ENTRADA DE BEM POR CONTA DE CONTRATO DE COMODATO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.911</entry><entry>ENTRADA DE AMOSTRA GRÁTIS</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.914</entry><entry>RETORNO DE MERCADORIA OU BEM REMETIDO PARA EXPOSIÇÃO OU FEIRA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.915</entry><entry>ENTRADA DE MERCADORIA OU BEM RECEBIDO PARA CONSERTO OU REPARO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.916</entry><entry>RETORNO DE MERCADORIA OU BEM REMETIDO PARA CONSERTO OU REPARO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.918</entry><entry>DEVOLUÇÃO DE MERCADORIA REMETIDA EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.920</entry><entry>ENTRADA DE VASILHAME OU SACARIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.923</entry><entry>ENTRADA DE MERCADORIA RECEBIDA DO VENDEDOR REMETENTE, EM VENDA À ORDEM</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.924</entry><entry>ENTRADA PARA INDUSTRIALIZAÇÃO POR CONTA E ORDEM DO ADQUIRENTE DA MERCADORIA, QUANDO ESTA NÃO TRANSITAR PELO ESTABELECIMENTO DO ADQUIRENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.933</entry><entry>PRESTAÇÃO DE SERVIÇO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.949</entry><entry>OUTRA ENTRADA DE MERCADORIA OU PRESTAÇÃO DE SERVIÇO NÃO ESPECIFICADO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.555</entry><entry>ENTRADA DE BEM DO ATIVO IMOBILIZADO DE TERCEIRO, REMETIDO PARA USO NO ESTABELECIMENTO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.205</entry><entry>ANULAÇÃO DE VALOR RELATIVO À PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.207</entry><entry>ANULAÇÃO DE VALOR RELATIVO À VENDA DE ENERGIA ELÉTRICA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.211</entry><entry>DEVOLUÇÃO DE VENDA DE PRODUÇÃO DO ESTABELECIMENTO SOB O REGIME DE “DRAWBACK”</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.251</entry><entry>COMPRA DE ENERGIA ELÉTRICA PARA DISTRIBUIÇÃO OU COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.352</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO INDUSTRIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.353</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO COMERCIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.354</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO DE PRESTADOR DE SERVIÇO DE COMUNICAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.356</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.503</entry><entry>DEVOLUÇÃO DE MERCADORIA EXPORTADA QUE TENHA SIDO RECEBIDA COM FIM ESPECÍFICO DE EXPORTAÇÃO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.553</entry><entry>DEVOLUÇÃO DE VENDA DE BEM DO ATIVO IMOBILIZADO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.650</entry><entry>ENTRADAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO E LUBRIFICANTES</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.652</entry><entry>COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE PARA COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.930</entry><entry>LANÇAMENTO EFETUADO A TÍTULO DE ENTRADA DE BEM SOB AMPARO DE REGIME ESPECIAL ADUANEIRO DE ADMISSÃO TEMPORÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.949</entry><entry>OUTRA ENTRADA DE MERCADORIA OU PRESTAÇÃO DE SERVIÇO NÃO ESPECIFICADO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.103</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO, EFETUADA FORA DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.104</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, EFETUADA FORA DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.109</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO, DESTINADA À ZONA FRANCA DE MANAUS OU ÁREAS DE LIVRE COMÉRCIO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.111</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO REMETIDA ANTERIORMENTE EM CONSIGNAÇÃO INDUSTRIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.112</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS REMETIDA ANTERIORMENTE EM CONSIGNAÇÃO INDUSTRIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.113</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO REMETIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.357</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A NÃO CONTRIBUINTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.114</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS REMETIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.126</entry><entry>COMPRA PARA UTILIZAÇÃO NA PRESTAÇÃO DE SERVIÇO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.123</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS REMETIDA PARA INDUSTRIALIZAÇÃO, POR CONTA E ORDEM DO ADQUIRENTE, SEM TRANSITAR PELO ESTABELECIMENTO DO ADQUIRENTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.124</entry><entry>INDUSTRIALIZAÇÃO EFETUADA PARA OUTRA EMPRESA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.125</entry><entry>INDUSTRIALIZAÇÃO EFETUADA PARA OUTRA EMPRESA QUANDO A MERCADORIA RECEBIDA PARA UTILIZAÇÃO NO PROCESSO DE INDUSTRIALIZAÇÃO NÃO TRANSITAR PELO ESTABELECIMENTO ADQUIRENTE DA MERCADORIA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.151</entry><entry>TRANSFERÊNCIA DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.152</entry><entry>TRANSFERÊNCIA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.153</entry><entry>TRANSFERÊNCIA DE ENERGIA ELÉTRICA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.156</entry><entry>TRANSFERÊNCIA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, QUE NÃO DEVA POR ELE TRANSITAR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.201</entry><entry>DEVOLUÇÃO DE COMPRA PARA INDUSTRIALIZAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.202</entry><entry>DEVOLUÇÃO DE COMPRA PARA COMERCIALIZAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.207</entry><entry>ANULAÇÃO DE VALOR RELATIVO À COMPRA DE ENERGIA ELÉTRICA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.208</entry><entry>DEVOLUÇÃO DE MERCADORIA RECEBIDA EM TRANSFERÊNCIA PARA INDUSTRIALIZAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.209</entry><entry>DEVOLUÇÃO DE MERCADORIA RECEBIDA EM TRANSFERÊNCIA PARA COMERCIALIZAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.210</entry><entry>DEVOLUÇÃO DE COMPRA PARA UTILIZAÇÃO NA PRESTAÇÃO DE SERVIÇO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.252</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA ESTABELECIMENTO INDUSTRIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.253</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA ESTABELECIMENTO COMERCIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.255</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA ESTABELECIMENTO PRESTADOR DE SERVIÇO DE COMUNICAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.257</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA CONSUMO POR DEMANDA CONTRATADA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.258</entry><entry>VENDA DE ENERGIA ELÉTRICA A NÃO CONTRIBUINTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.301</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO PARA EXECUÇÃO DE SERVIÇO DA MESMA NATUREZA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.302</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A ESTABELECIMENTO INDUSTRIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.305</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A ESTABELECIMENTO DE GERADORA OU DE DISTRIBUIDORA DE ENERGIA ELÉTRICA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.306</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.117</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, ORIGINADA DE ENCOMENDA PARA ENTREGA FUTURA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.354</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A ESTABELECIMENTO DE PRESTADOR DE SERVIÇO DE COMUNICAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.403</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA, NA CONDIÇÃO DE CONTRIBUINTE SUBSTITUTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.405</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA, NA CONDIÇÃO DE CONTRIBUINTE SUBSTITUÍDO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.665</entry><entry>RETORNO SIMBÓLICO DE COMBUSTÍVEL OU LUBRIFICANTE RECEBIDO PARA ARMAZENAGEM</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.409</entry><entry>TRANSFERÊNCIA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.410</entry><entry>DEVOLUÇÃO DE COMPRA PARA INDUSTRIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.411</entry><entry>DEVOLUÇÃO DE COMPRA PARA COMERCIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.413</entry><entry>DEVOLUÇÃO DE MERCADORIA DESTINADA AO USO OU CONSUMO, EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.415</entry><entry>REMESSA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS PARA VENDA FORA DO ESTABELECIMENTO, EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.451</entry><entry>REMESSA DE ANIMAL E DE INSUMO PARA ESTABELECIMENTO PRODUTOR</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.501</entry><entry>REMESSA DE PRODUÇÃO DO ESTABELECIMENTO, COM FIM ESPECÍFICO DE EXPORTAÇÃO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.502</entry><entry>REMESSA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, COM FIM ESPECÍFICO DE EXPORTAÇÃO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.503</entry><entry>DEVOLUÇÃO DE MERCADORIA RECEBIDA COM FIM ESPECÍFICO DE EXPORTAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.551</entry><entry>VENDA DE BEM DO ATIVO IMOBILIZADO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.552</entry><entry>TRANSFERÊNCIA DE BEM DO ATIVO IMOBILIZADO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.555</entry><entry>DEVOLUÇÃO DE BEM DO ATIVO IMOBILIZADO DE TERCEIRO, RECEBIDO PARA USO NO ESTABELECIMENTO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.556</entry><entry>DEVOLUÇÃO DE COMPRA DE MATERIAL DE USO OU CONSUMO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.557</entry><entry>TRANSFERÊNCIA DE MATERIAL DE USO OU CONSUMO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.601</entry><entry>TRANSFERÊNCIA DE CRÉDITO DE ICMS ACUMULADO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.650</entry><entry>SAÍDAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO E LUBRIFICANTES</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.917</entry><entry>REMESSA DE MERCADORIA EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.352</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A ESTABELECIMENTO INDUSTRIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.655</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO OU RECEBIDO DE TERCEIROS DESTINADO À COMERCIALIZAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.656</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO OU RECEBIDO DE TERCEIROS DESTINADO A CONSUMIDOR OU USUÁRIO FINAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.658</entry><entry>TRANSFERÊNCIA DE COMBUSTÍVEL OU LUBRIFICANTE DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.660</entry><entry>DEVOLUÇÃO DE COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO PARA INDUSTRIALIZAÇÃO SUBSEQÜENTE</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.661</entry><entry>DEVOLUÇÃO DE COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO PARA COMERCIALIZAÇÃ</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.663</entry><entry>REMESSA PARA ARMAZENAGEM DE COMBUSTÍVEL OU LUBRIFICANTE</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.664</entry><entry>RETORNO DE COMBUSTÍVEL OU LUBRIFICANTE RECEBIDO PARA ARMAZENAGEM</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.666</entry><entry>REMESSA POR CONTA E ORDEM DE TERCEIROS DE COMBUSTÍVEL OU LUBRIFICANTE RECEBIDO PARA ARMAZENAGEM</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.901</entry><entry>REMESSA PARA INDUSTRIALIZAÇÃO POR ENCOMENDA</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.904</entry><entry>REMESSA PARA VENDA FORA DO ESTABELECIMENTO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.905</entry><entry>REMESSA PARA DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.906</entry><entry>RETORNO DE MERCADORIA DEPOSITADA EM DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.908</entry><entry>REMESSA DE BEM POR CONTA DE CONTRATO DE COMODATO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.909</entry><entry>RETORNO DE BEM RECEBIDO POR CONTA DE CONTRATO DE COMODATO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.910</entry><entry>REMESSA EM BONIFICAÇÃO, DOAÇÃO OU BRINDE</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.911</entry><entry>REMESSA DE AMOSTRA GRÁTIS</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.912</entry><entry>REMESSA DE MERCADORIA OU BEM PARA DEMONSTRAÇÃO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.913</entry><entry>RETORNO DE MERCADORIA OU BEM RECEBIDO PARA DEMONSTRAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.914</entry><entry>REMESSA DE MERCADORIA OU BEM PARA EXPOSIÇÃO OU FEIRA</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.917</entry><entry>REMESSA DE MERCADORIA EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.918</entry><entry>DEVOLUÇÃO DE MERCADORIA RECEBIDA EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.920</entry><entry>REMESSA DE VASILHAME OU SACARIA</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.921</entry><entry>DEVOLUÇÃO DE VASILHAME OU SACARIA</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.652</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DE PRODUÇÃO DO ESTABELECIMENTO DESTINADO À COMERCIALIZAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.928</entry><entry>LANÇAMENTO EFETUADO A TÍTULO DE BAIXA DE ESTOQUE DECORRENTE DO ENCERRAMENTO DA ATIVIDADE DA EMPRESA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.932</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE INICIADA EM UNIDADE DA FEDERAÇÃO DIVERSA DAQUELA ONDE INSCRITO O PRESTADOR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.949</entry><entry>OUTRA SAÍDA DE MERCADORIA OU PRESTAÇÃO DE SERVIÇO NÃO ESPECIFICADO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.101</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.102</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.103</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO, EFETUADA FORA DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.104</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, EFETUADA FORA DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.105</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO QUE NÃO DEVA POR ELE TRANSITAR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.106</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, QUE NÃO DEVA POR ELE TRANSITAR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.107</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO, DESTINADA A NÃO CONTRIBUINTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.109</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO, DESTINADA À ZONA FRANCA DE MANAUS OU ÁREAS DE LIVRE COMÉRCIO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.111</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO REMETIDA ANTERIORMENTE EM CONSIGNAÇÃO INDUSTRIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.112</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS REMETIDA ANTERIORMENTE EM CONSIGNAÇÃO INDUSTRIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.113</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO REMETIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.553</entry><entry>DEVOLUÇÃO DE COMPRA DE BEM PARA O ATIVO IMOBILIZADO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.115</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, RECEBIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.116</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO ORIGINADA DE ENCOMENDA PARA ENTREGA FUTURA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.119</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS ENTREGUE AO DESTINATÁRIO POR CONTA E ORDEM DO ADQUIRENTE ORIGINÁRIO, EM VENDA À ORDEM</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.120</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS ENTREGUE AO DESTINATÁRIO PELO VENDEDOR REMETENTE, EM VENDA À ORDEM</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.207</entry><entry>ANULAÇÃO DE VALOR RELATIVO À COMPRA DE ENERGIA ELÉTRICA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.353</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A ESTABELECIMENTO COMERCIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.924</entry><entry>REMESSA PARA INDUSTRIALIZAÇÃO POR CONTA E ORDEM DO ADQUIRENTE DA MERCADORIA, </entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.153</entry><entry>TRANSFERÊNCIA DE ENERGIA ELÉTRICA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.155</entry><entry>TRANSFERÊNCIA DE PRODUÇÃO DO ESTABELECIMENTO, QUE NÃO DEVA POR ELE TRANSITAR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.156</entry><entry>TRANSFERÊNCIA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, QUE NÃO DEVA POR ELE TRANSITAR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.201</entry><entry>DEVOLUÇÃO DE COMPRA PARA INDUSTRIALIZAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.202</entry><entry>DEVOLUÇÃO DE COMPRA PARA COMERCIALIZAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.206</entry><entry>ANULAÇÃO DE VALOR RELATIVO A AQUISIÇÃO DE SERVIÇO DE TRANSPORTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.208</entry><entry>DEVOLUÇÃO DE MERCADORIA RECEBIDA EM TRANSFERÊNCIA PARA INDUSTRIALIZAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.210</entry><entry>DEVOLUÇÃO DE COMPRA PARA UTILIZAÇÃO NA PRESTAÇÃO DE SERVIÇO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.251</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA DISTRIBUIÇÃO OU COMERCIALIZAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.253</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA ESTABELECIMENTO COMERCIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.254</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA ESTABELECIMENTO PRESTADOR DE SERVIÇO DE TRANSPORTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.256</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.257</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA CONSUMO POR DEMANDA CONTRATADA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.302</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A ESTABELECIMENTO INDUSTRIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.303</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A ESTABELECIMENTO COMERCIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.305</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A ESTABELECIMENTO DE GERADORA OU DE DISTRIBUIDORA DE ENERGIA ELÉTRICA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.306</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.307</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A NÃO CONTRIBUINTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.352</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A ESTABELECIMENTO INDUSTRIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.355</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A ESTABELECIMENTO DE GERADORA OU DE DISTRIBUIDORA DE ENERGIA ELÉTRICA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.356</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.124</entry><entry>INDUSTRIALIZAÇÃO EFETUADA PARA OUTRA EMPRESA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.408</entry><entry>TRANSFERÊNCIA DE PRODUÇÃO DO ESTABELECIMENTO EM OPERAÇÃO COM PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.409</entry><entry>TRANSFERÊNCIA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.411</entry><entry>DEVOLUÇÃO DE COMPRA PARA COMERCIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.412</entry><entry>DEVOLUÇÃO DE BEM DO ATIVO IMOBILIZADO, EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.415</entry><entry>REMESSA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS PARA VENDA FORA DO ESTABELECIMENTO, EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.501</entry><entry>REMESSA DE PRODUÇÃO DO ESTABELECIMENTO, COM FIM ESPECÍFICO DE EXPORTAÇÃO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.502</entry><entry>REMESSA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, COM FIM ESPECÍFICO DE EXPORTAÇÃO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.503</entry><entry>DEVOLUÇÃO DE MERCADORIA RECEBIDA COM FIM ESPECÍFICO DE EXPORTAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.551</entry><entry>VENDA DE BEM DO ATIVO IMOBILIZADO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.552</entry><entry>TRANSFERÊNCIA DE BEM DO ATIVO IMOBILIZADO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.554</entry><entry>REMESSA DE BEM DO ATIVO IMOBILIZADO PARA USO FORA DO ESTABELECIMENTO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.555</entry><entry>DEVOLUÇÃO DE BEM DO ATIVO IMOBILIZADO DE TERCEIRO, RECEBIDO PARA USO NO ESTABELECIMENTO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.556</entry><entry>DEVOLUÇÃO DE COMPRA DE MATERIAL DE USO OU CONSUMO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.557</entry><entry>TRANSFERÊNCIA DE MATERIAL DE USO OU CONSUMO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.651</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DE PRODUÇÃO DO ESTABELECIMENTO DESTINADO À INDUSTRIALIZAÇÃO SUBSEQÜENTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.653</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DE PRODUÇÃO DO ESTABELECIMENTO DESTINADO A CONSUMIDOR OU USUÁRIO FINAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.654</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO OU RECEBIDO DE TERCEIROS DESTINADO À INDUSTRIALIZAÇÃO SUBSEQÜENTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.656</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO OU RECEBIDO DE TERCEIROS DESTINADO A CONSUMIDOR OU USUÁRIO FINAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.657</entry><entry>REMESSA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO OU RECEBIDO DE TERCEIROS PARA VENDA FORA DO ESTABELECIMENTO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.658</entry><entry>TRANSFERÊNCIA DE COMBUSTÍVEL OU LUBRIFICANTE DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.661</entry><entry>DEVOLUÇÃO DE COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO PARA COMERCIALIZAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.666</entry><entry>REMESSA POR CONTA E ORDEM DE TERCEIROS DE COMBUSTÍVEL OU LUBRIFICANTE RECEBIDO PARA ARMAZENAGEM</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.902</entry><entry>RETORNO DE MERCADORIA UTILIZADA NA INDUSTRIALIZAÇÃO POR ENCOMENDA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.904</entry><entry>REMESSA PARA VENDA FORA DO ESTABELECIMENTO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.905</entry><entry>REMESSA PARA DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.906</entry><entry>RETORNO DE MERCADORIA DEPOSITADA EM DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.908</entry><entry>REMESSA DE BEM POR CONTA DE CONTRATO DE COMODATO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.909</entry><entry>RETORNO DE BEM RECEBIDO POR CONTA DE CONTRATO DE COMODATO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.910</entry><entry>REMESSA EM BONIFICAÇÃO, DOAÇÃO OU BRINDE</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.911</entry><entry>REMESSA DE AMOSTRA GRÁTIS</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.913</entry><entry>RETORNO DE MERCADORIA OU BEM RECEBIDO PARA DEMONSTRAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.914</entry><entry>REMESSA DE MERCADORIA OU BEM PARA EXPOSIÇÃO OU FEIRA</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.915</entry><entry>REMESSA DE MERCADORIA OU BEM PARA CONSERTO OU REPARO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.919</entry><entry>DEVOLUÇÃO SIMBÓLICA DE MERCADORIA VENDIDA OU UTILIZADA EM PROCESSO INDUSTRIAL, RECEBIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.920</entry><entry>REMESSA DE VASILHAME OU SACARIA</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.921</entry><entry>DEVOLUÇÃO DE VASILHAME OU SACARIA</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.923</entry><entry>REMESSA DE MERCADORIA POR CONTA E ORDEM DE TERCEIROS, EM VENDA À ORDEM</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.929</entry><entry>LANÇAMENTO EFETUADO EM DECORRÊNCIA DE EMISSÃO DE DOCUMENTO FISCAL RELATIVO A OPERAÇÃO OU PRESTAÇÃO TAMBÉM REGISTRADA EM EQUIPAMENTO EMISSOR DE CUPOM FISCAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.932</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE INICIADA EM UNIDADE DA FEDERAÇÃO DIVERSA DAQUELA ONDE INSCRITO O PRESTADOR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.949</entry><entry>OUTRA SAÍDA DE MERCADORIA OU PRESTAÇÃO DE SERVIÇO NÃO ESPECIFICADO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.101</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.102</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.105</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO, QUE NÃO DEVA POR ELE TRANSITAR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.106</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, QUE NÃO DEVA POR ELE TRANSITAR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.663</entry><entry>REMESSA PARA ARMAZENAGEM DE COMBUSTÍVEL OU LUBRIFICANTE</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.206</entry><entry>ANULAÇÃO DE VALOR RELATIVO A AQUISIÇÃO DE SERVIÇO DE TRANSPORTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.210</entry><entry>DEVOLUÇÃO DE COMPRA PARA UTILIZAÇÃO NA PRESTAÇÃO DE SERVIÇO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.211</entry><entry>DEVOLUÇÃO DE COMPRAS PARA INDUSTRIALIZAÇÃO SOB O REGIME DE DRAWBACK”</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.251</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA O EXTERIOR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.556</entry><entry>DEVOLUÇÃO DE COMPRA DE MATERIAL DE USO OU CONSUMO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.650</entry><entry>SAÍDAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO E LUBRIFICANTES</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.654</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO OU RECEBIDO DE TERCEIROS</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.949</entry><entry>REMESSA EM CORTESIA</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.101</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.204</entry><entry>DEVOLUÇÃO DE VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, DESTINADA À ZONA FRANCA DE MANAUS OU ÁREAS DE LIVRE COMÉRCIO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.208</entry><entry>DEVOLUÇÃO DE PRODUÇÃO DO ESTABELECIMENTO, REMETIDA EM TRANSFERÊNCIA</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.409</entry><entry>TRANSFERÊNCIA PARA COMERCIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.504</entry><entry>ENTRADA DECORRENTE DE DEVOLUÇÃO DE MERCADORIA REMETIDA COM FIM ESPECÍFICO DE EXPORTAÇÃO, ADQUIRIDA OU RECEBIDA DE TERCEIROS</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.653</entry><entry>COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE POR CONSUMIDOR OU USUÁRIO FINAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.903</entry><entry>ENTRADA DE MERCADORIA REMETIDA PARA INDUSTRIALIZAÇÃO E NÃO APLICADA NO REFERIDO PROCESSO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.914</entry><entry>RETORNO DE MERCADORIA OU BEM REMETIDO PARA EXPOSIÇÃO OU FEIRA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.924</entry><entry>ENTRADA PARA INDUSTRIALIZAÇÃO POR CONTA E ORDEM DO ADQUIRENTE DA MERCADORIA, QUANDO ESTA NÃO TRANSITAR PELO ESTABELECIMENTO DO ADQUIRENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.203</entry><entry>DEVOLUÇÃO DE VENDA DE PRODUÇÃO DO ESTABELECIMENTO, DESTINADA À ZONA FRANCA DE MANAUS OU ÁREAS DE LIVRE COMÉRCIO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.209</entry><entry>DEVOLUÇÃO DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, REMETIDA EM TRANSFERÊNCIA</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.201</entry><entry>DEVOLUÇÃO DE COMPRA PARA INDUSTRIALIZAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.111</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO DE MERCADORIA RECEBIDA ANTERIORMENTE EM CONSIGNAÇÃO INDUSTRIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.122</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO EM QUE A MERCADORIA FOI REMETIDA PELO FORNECEDOR AO INDUSTRIALIZADOR SEM TRANSITAR PELO ESTABELECIMENTO ADQUIRENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.153</entry><entry>TRANSFERÊNCIA DE ENERGIA ELÉTRICA PARA DISTRIBUIÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.209</entry><entry>DEVOLUÇÃO DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, REMETIDA EM TRANSFERÊNCIA</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.255</entry><entry>COMPRA DE ENERGIA ELÉTRICA POR ESTABELECIMENTO PRESTADOR DE SERVIÇO DE COMUNICAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.301</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO PARA EXECUÇÃO DE SERVIÇO DA MESMA NATUREZA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.305</entry><entry>AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO POR ESTABELECIMENTO DE GERADORA OU DE DISTRIBUIDORA DE ENERGIA ELÉTRICA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.353</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO COMERCIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.662</entry><entry>DEVOLUÇÃO DE VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DESTINADO A CONSUMIDOR OU USUÁRIO FINAL</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.355</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO DE GERADORA OU DE DISTRIBUIDORA DE ENERGIA ELÉTRICA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.403</entry><entry>COMPRA PARA COMERCIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.408</entry><entry>TRANSFERÊNCIA PARA INDUSTRIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.414</entry><entry>RETORNO DE PRODUÇÃO DO ESTABELECIMENTO, REMETIDA PARA VENDA FORA DO ESTABELECIMENTO EM OPERAÇÃO COM PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.554</entry><entry>RETORNO DE BEM DO ATIVO IMOBILIZADO REMETIDO PARA USO FORA DO ESTABELECIMENTO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.602</entry><entry>RECEBIMENTO, POR TRANSFERÊNCIA, DE SALDO CREDOR DE ICMS DE OUTRO ESTABELECIMENTO DA MESMA EMPRESA, PARA COMPENSAÇÃO DE SALDO DEVEDOR DE ICMS</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.916</entry><entry>RETORNO DE MERCADORIA OU BEM REMETIDO PARA CONSERTO OU REPARO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.116</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO ORIGINADA DE ENCOMENDA PARA RECEBIMENTO FUTURO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.651</entry><entry>ENTRADAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO E LUBRIFICANTES</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.353</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A ESTABELECIMENTO COMERCIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.659</entry><entry>TRANSFERÊNCIA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO OU RECEBIDO DE TERCEIRO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.918</entry><entry>DEVOLUÇÃO DE MERCADORIA RECEBIDA EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.924</entry><entry>REMESSA PARA INDUSTRIALIZAÇÃO POR CONTA E ORDEM DO ADQUIRENTE DA MERCADORIA, QUANDO ESTA NÃO TRANSITAR PELO ESTABELECIMENTO DO ADQUIRENTE</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.301</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO PARA EXECUÇÃO DE SERVIÇO DA MESMA NATUREZA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.664</entry><entry>RETORNO DE COMBUSTÍVEL OU LUBRIFICANTE REMETIDO PARA ARMAZENAGEM</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.651</entry><entry>COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE PARA INDUSTRIALIZAÇÃO SUBSEQÜENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.106</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, QUE NÃO DEVA POR ELE TRANSITAR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.661</entry><entry>DEVOLUÇÃO DE VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DESTINADO À COMERCIALIZAÇÃO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.307</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A NÃO CONTRIBUINTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.118</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO ENTREGUE AO DESTINATÁRIO POR CONTA E ORDEM DO ADQUIRENTE ORIGINÁRIO, EM VENDA À ORDEM</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.205</entry><entry>ANULAÇÃO DE VALOR RELATIVO A AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.351</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE PARA EXECUÇÃO DE SERVIÇO DA MESMA NATUREZA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.401</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO EM OPERAÇÃO COM PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA, NA CONDIÇÃO DE CONTRIBUINTE SUBSTITUTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.553</entry><entry>DEVOLUÇÃO DE COMPRA DE BEM PARA O ATIVO IMOBILIZADO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.651</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DE PRODUÇÃO DO ESTABELECIMENTO DESTINADO À INDUSTRIALIZAÇÃO SUBSEQÜENTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.903</entry><entry>RETORNO DE MERCADORIA RECEBIDA PARA INDUSTRIALIZAÇÃO E NÃO APLICADA NO REFERIDO PROCESSO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.915</entry><entry>REMESSA DE MERCADORIA OU BEM PARA CONSERTO OU REPARO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.923</entry><entry>REMESSA DE MERCADORIA POR CONTA E ORDEM DE TERCEIROS, EM VENDA À ORDEM</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.117</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, ORIGINADA DE ENCOMENDA PARA ENTREGA FUTURA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.123</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS REMETIDA PARA INDUSTRIALIZAÇÃO, POR CONTA E ORDEM DO ADQUIRENTE, SEM TRANSITAR PELO ESTABELECIMENTO DO ADQUIRENTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.209</entry><entry>DEVOLUÇÃO DE MERCADORIA RECEBIDA EM TRANSFERÊNCIA PARA COMERCIALIZAÇÃO</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.301</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO PARA EXECUÇÃO DE SERVIÇO DA MESMA NATUREZA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.402</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO DE PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA, EM OPERAÇÃO ENTRE CONTRIBUINTES SUBSTITUTOS DO MESMO PRODUTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.650</entry><entry>SAÍDAS DE COMBUSTÍVEIS, DERIVADOS OU NÃO DE PETRÓLEO E LUBRIFICANTES</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.659</entry><entry>TRANSFERÊNCIA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO OU RECEBIDO DE TERCEIRO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.662</entry><entry>DEVOLUÇÃO DE COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO POR CONSUMIDOR OU USUÁRIO FINAL</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.907</entry><entry>RETORNO SIMBÓLICO DE MERCADORIA DEPOSITADA EM DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.117</entry><entry>COMPRA PARA COMERCIALIZAÇÃO ORIGINADA DE ENCOMENDA PARA RECEBIMENTO FUTURO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.203</entry><entry>DEVOLUÇÃO DE VENDA DE PRODUÇÃO DO ESTABELECIMENTO, DESTINADA À ZONA FRANCA DE MANAUS OU ÁREAS DE LIVRE COMÉRCIO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.254</entry><entry>COMPRA DE ENERGIA ELÉTRICA POR ESTABELECIMENTO PRESTADOR DE SERVIÇO DE TRANSPORTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.652</entry><entry>COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE PARA COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.902</entry><entry>RETORNO DE MERCADORIA REMETIDA PARA INDUSTRIALIZAÇÃO POR ENCOMENDA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.907</entry><entry>RETORNO SIMBÓLICO DE MERCADORIA REMETIDA PARA DEPÓSITO FECHADO OU ARMAZÉM GERAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.915</entry><entry>ENTRADA DE MERCADORIA OU BEM RECEBIDO PARA CONSERTO OU REPARO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.918</entry><entry>DEVOLUÇÃO DE MERCADORIA REMETIDA EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.925</entry><entry>RETORNO DE MERCADORIA REMETIDA PARA INDUSTRIALIZAÇÃO POR CONTA E ORDEM DO ADQUIRENTE DA MERCADORIA, QUANDO ESTA NÃO TRANSITAR PELO ESTABELECIMENTO DO ADQUIRENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.403</entry><entry>COMPRA PARA COMERCIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.912</entry><entry>ENTRADA DE MERCADORIA OU BEM RECEBIDO PARA DEMONSTRAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.408</entry><entry>TRANSFERÊNCIA PARA INDUSTRIALIZAÇÃO EM OPERAÇÃO COM MERCADORIA SUJEITA AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.410</entry><entry>DEVOLUÇÃO DE VENDA DE PRODUÇÃO DO ESTABELECIMENTO EM OPERAÇÃO COM PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.655</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO OU RECEBIDO DE TERCEIROS DESTINADO À COMERCIALIZAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.127</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO SOB O REGIME DE “DRAWBACK”</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.129</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO AO MERCADO EXTERNO DE MERCADORIA INDUSTRIALIZADA SOB O AMPARO DO REGIME ADUANEIRO ESPECIAL DE ENTREPOSTO INDUSTRIAL (RECOF-SPED)</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.212</entry><entry>Devolução de venda no mercado interno de mercadoria industrializada e insumo importado sob o Regime Aduaneiro Especial de Entreposto Industrial (Recof-Sped)</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.505</entry><entry>Entrada decorrente de devolução simbólica de mercadoria remetida p/ formação de lote de exportação, de produto industrializado ou produzido pelo próprio estabelecimento.</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.605</entry><entry>Recebimento, por transferência, de saldo devedor do ICMS de outro estabelecimento da mesma empresa</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.932</entry><entry>Aquisição de serviço de transporte iniciado em UF diversa daquela onde esteja inscrito o prestador</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.506</entry><entry>Entrada decorrente de devolução simbólica de mercadoria, adquirida ou recebida de terceiros, remetida p/ formação de lote de exportação.</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.934</entry><entry>Entrada simbólica de mercadoria recebida p/ depósito fechado ou armazém geral</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.414</entry><entry>RETORNO DE PRODUÇÃO DO ESTABELECIMENTO, REMETIDA PARA VENDA FORA DO ESTABELECIMENTO EM OPERAÇÃO COM PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.554</entry><entry>RETORNO DE BEM DO ATIVO IMOBILIZADO REMETIDO PARA USO FORA DO ESTABELECIMENTO</entry><entry>E</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.603</entry><entry>RESSARCIMENTO DE ICMS RETIDO POR SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.659</entry><entry>TRANSFERÊNCIA DE COMBUSTÍVEL E LUBRIFICANTE PARA COMERCIALIZAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.665</entry><entry>RETORNO SIMBÓLICO DE COMBUSTÍVEL OU LUBRIFICANTE RECEBIDO PARA ARMAZENAGEM</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.903</entry><entry>RETORNO DE MERCADORIA RECEBIDA PARA INDUSTRIALIZAÇÃO E NÃO APLICADA NO REFERIDO PROCESSO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.925</entry><entry>RETORNO DE MERCADORIA RECEBIDA PARA INDUSTRIALIZAÇÃO POR CONTA E ORDEM DO ADQUIRENTE DA MERCADORIA, QUANDO AQUELA NÃO TRANSITAR PELO ESTABELECIMENTO DO ADQUIRENTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.651</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.506</entry><entry>Entrada decorrente de devolução simbólica de mercadoria, adquirida ou recebida de terceiros, remetida p/ formação de lote de exportação.</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.204</entry><entry>DEVOLUÇÃO DE VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, DESTINADA À ZONA FRANCA DE MANAUS OU ÁREAS DE LIVRE COMÉRCIO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.355</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE POR ESTABELECIMENTO DE GERADORA OU DE DISTRIBUIDORA DE ENERGIA ELÉTRICA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.102</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.116</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO ORIGINADA DE ENCOMENDA PARA ENTREGA FUTURA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.119</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS ENTREGUE AO DESTINATÁRIO POR CONTA E ORDEM DO ADQUIRENTE ORIGINÁRIO, EM VENDA À ORDEM</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.602</entry><entry>TRANSFERÊNCIA DE SALDO CREDOR DE ICMS PARA OUTRO ESTABELECIMENTO DA MESMA EMPRESA, DESTINADO À COMPENSAÇÃO DE SALDO DEVEDOR DE ICMS</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.603</entry><entry>RESSARCIMENTO DE ICMS RETIDO POR SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.653</entry><entry>VENDA DE COMBUSTÍVEL OU LUBRIFICANTE DE PRODUÇÃO DO ESTABELECIMENTO DESTINADO A CONSUMIDOR OU USUÁRIO FINAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.657</entry><entry>REMESSA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO OU RECEBIDO DE TERCEIROS PARA VENDA FORA DO ESTABELECIMENTO</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.662</entry><entry>DEVOLUÇÃO DE COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE ADQUIRIDO POR CONSUMIDOR OU USUÁRIO FINAL</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.902</entry><entry>RETORNO DE MERCADORIA UTILIZADA NA INDUSTRIALIZAÇÃO POR ENCOMENDA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.916</entry><entry>RETORNO DE MERCADORIA OU BEM RECEBIDO PARA CONSERTO OU REPARO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.919</entry><entry>DEVOLUÇÃO SIMBÓLICA DE MERCADORIA VENDIDA OU UTILIZADA EM PROCESSO INDUSTRIAL, RECEBIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.922</entry><entry>LANÇAMENTO EFETUADO A TÍTULO DE SIMPLES FATURAMENTO DECORRENTE DE VENDA PARA ENTREGA FUTURA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.926</entry><entry>LANÇAMENTO EFETUADO A TÍTULO DE RECLASSIFICAÇÃO DE MERCADORIA DECORRENTE DE FORMAÇÃO DE KIT OU DE SUA DESAGREGAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.114</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS REMETIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.118</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO ENTREGUE AO DESTINATÁRIO POR CONTA E ORDEM DO ADQUIRENTE ORIGINÁRIO, EM VENDA À ORDEM</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.304</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A ESTABELECIMENTO DE PRESTADOR DE SERVIÇO DE TRANSPORTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.122</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO REMETIDA PARA INDUSTRIALIZAÇÃO, POR CONTA E ORDEM DO ADQUIRENTE, SEM TRANSITAR PELO ESTABELECIMENTO DO ADQUIRENTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.125</entry><entry>INDUSTRIALIZAÇÃO EFETUADA PARA OUTRA EMPRESA QUANDO A MERCADORIA RECEBIDA PARA UTILIZAÇÃO NO PROCESSO DE INDUSTRIALIZAÇÃO NÃO TRANSITAR PELO ESTABELECIMENTO ADQUIRENTE DA MERCADORIA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.205</entry><entry>ANULAÇÃO DE VALOR RELATIVO A AQUISIÇÃO DE SERVIÇO DE COMUNICAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.913</entry><entry>RETORNO DE MERCADORIA OU BEM REMETIDO PARA DEMONSTRAÇÃO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.917</entry><entry>ENTRADA DE MERCADORIA RECEBIDA EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.919</entry><entry>DEVOLUÇÃO SIMBÓLICA DE MERCADORIA VENDIDA OU UTILIZADA EM PROCESSO INDUSTRIAL, REMETIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL OU INDUSTRIAL</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.922</entry><entry>LANÇAMENTO EFETUADO A TÍTULO DE SIMPLES FATURAMENTO DECORRENTE DE COMPRA PARA RECEBIMENTO FUTURO</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.925</entry><entry>RETORNO DE MERCADORIA REMETIDA PARA INDUSTRIALIZAÇÃO POR CONTA E ORDEM DO ADQUIRENTE DA MERCADORIA, QUANDO ESTA NÃO TRANSITAR PELO ESTABELECIMENTO DO ADQUIRENTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.127</entry><entry>COMPRA PARA INDUSTRIALIZAÇÃO SOB O REGIME DE “DRAWBACK”</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.201</entry><entry>DEVOLUÇÃO DE VENDA DE PRODUÇÃO DO ESTABELECIMENTO</entry><entry>E</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.206</entry><entry>ANULAÇÃO DE VALOR RELATIVO À PRESTAÇÃO DE SERVIÇO DE TRANSPORTE</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.351</entry><entry>AQUISIÇÃO DE SERVIÇO DE TRANSPORTE PARA EXECUÇÃO DE SERVIÇO DA MESMA NATUREZA</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.653</entry><entry>COMPRA DE COMBUSTÍVEL OU LUBRIFICANTE POR CONSUMIDOR OU USUÁRIO FINAL</entry><entry>E</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.105</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO QUE NÃO DEVA POR ELE TRANSITAR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.110</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, DESTINADA À ZONA FRANCA DE MANAUS OU ÁREAS DE LIVRE COMÉRCIO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.115</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, RECEBIDA ANTERIORMENTE EM CONSIGNAÇÃO MERCANTIL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.122</entry><entry>VENDA DE PRODUÇÃO DO ESTABELECIMENTO REMETIDA PARA INDUSTRIALIZAÇÃO, POR CONTA E ORDEM DO ADQUIRENTE, SEM TRANSITAR PELO ESTABELECIMENTO DO ADQUIRENTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.129</entry><entry>VENDA DE INSUMO IMPORTADO E DE MERCADORIA INDUSTRIALIZADA SOB O AMPARO DO REGIME ADUANEIRO ESPECIAL DE ENTREPOSTO INDUSTRIAL (RECOF-SPED)</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.155</entry><entry>TRANSFERÊNCIA DE PRODUÇÃO DO ESTABELECIMENTO, QUE NÃO DEVA POR ELE TRANSITAR</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.206</entry><entry>ANULAÇÃO DE VALOR RELATIVO A AQUISIÇÃO DE SERVIÇO DE TRANSPORTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.251</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA DISTRIBUIÇÃO OU COMERCIALIZAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.256</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA ESTABELECIMENTO DE PRODUTOR RURAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.303</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A ESTABELECIMENTO COMERCIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.355</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE A ESTABELECIMENTO DE GERADORA OU DE DISTRIBUIDORA DE ENERGIA ELÉTRICA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.304</entry><entry>PRESTAÇÃO DE SERVIÇO DE COMUNICAÇÃO A ESTABELECIMENTO DE PRESTADOR DE SERVIÇO DE TRANSPORTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.925</entry><entry>RETORNO DE MERCADORIA RECEBIDA PARA INDUSTRIALIZAÇÃO POR CONTA E ORDEM DO ADQUIRENTE DA MERCADORIA, QUANDO AQUELA NÃO TRANSITAR PELO ESTABELECIMENTO DO ADQUIRENTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.929</entry><entry>LANÇAMENTO EFETUADO EM DECORRÊNCIA DE EMISSÃO DE DOCUMENTO FISCAL RELATIVO A OPERAÇÃO OU PRESTAÇÃO TAMBÉM REGISTRADA EM EQUIPAMENTO EMISSOR DE CUPOM FISCAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>5.931</entry><entry>LANÇAMENTO EFETUADO EM DECORRÊNCIA DA RESPONSABILIDADE DE RETENÇÃO DO IMPOSTO POR SUBSTITUIÇÃO TRIBUTÁRIA, ATRIBUÍDA AO REMETENTE OU ALIENANTE DA MERCADORIA, PELO SERVIÇO DE TRANSPORTE REALIZADO POR TRANSPORTADOR AUTÔNOMO OU POR TRANSPORTADOR NÃO INSCRITO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.252</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA ESTABELECIMENTO INDUSTRIAL</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.255</entry><entry>VENDA DE ENERGIA ELÉTRICA PARA ESTABELECIMENTO PRESTADOR DE SERVIÇO DE COMUNICAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.351</entry><entry>PRESTAÇÃO DE SERVIÇO DE TRANSPORTE PARA EXECUÇÃO DE SERVIÇO DA MESMA NATUREZA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.414</entry><entry>REMESSA DE PRODUÇÃO DO ESTABELECIMENTO PARA VENDA FORA DO ESTABELECIMENTO EM OPERAÇÃO COM PRODUTO SUJEITO AO REGIME DE SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>R</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.553</entry><entry>DEVOLUÇÃO DE COMPRA DE BEM PARA O ATIVO IMOBILIZADO</entry><entry>S</entry><entry>I</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.603</entry><entry>RESSARCIMENTO DE ICMS RETIDO POR SUBSTITUIÇÃO TRIBUTÁRIA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.916</entry><entry>RETORNO DE MERCADORIA OU BEM RECEBIDO PARA CONSERTO OU REPARO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.922</entry><entry>LANÇAMENTO EFETUADO A TÍTULO DE SIMPLES FATURAMENTO DECORRENTE DE VENDA PARA ENTREGA FUTURA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.207</entry><entry>ANULAÇÃO DE VALOR RELATIVO À COMPRA DE ENERGIA ELÉTRICA</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.501</entry><entry>EXPORTAÇÃO DE MERCADORIAS RECEBIDAS COM FIM ESPECÍFICO DE EXPORTAÇÃO</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>7.930</entry><entry>LANÇAMENTO EFETUADO A TÍTULO DE DEVOLUÇÃO DE BEM CUJA ENTRADA TENHA OCORRIDO SOB AMPARO DE REGIME ESPECIAL ADUANEIRO DE ADMISSÃO TEMPORÁRIA</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>Z..ZZ</entry><entry>NÃO APLICÁVEL</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.128</entry><entry>Compra p/ utilização na prestação de serviço sujeita ao ISSQN</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.360</entry><entry>Aquisição de serviço de transporte por contribuinte-substituto em relação ao serviço de transporte</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.931</entry><entry>Lançamento efetuado pelo tomador do serviço de transporte, quando a responsabilidade de retenção do imposto for atribuída ao remetente ou alienante da mercadoria, pelo serviço de transporte realizado por transportador autônomo ou por transportador não-ins</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>1.934</entry><entry>Entrada simbólica de mercadoria recebida p/ depósito fechado ou armazém geral</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.128</entry><entry>Compra p/ utilização na prestação de serviço sujeita ao ISSQN</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.505</entry><entry>Entrada decorrente de devolução simbólica de mercadoria remetida p/ formação de lote de exportação, de produto industrializado ou produzido pelo próprio estabelecimento.</entry><entry>S</entry><entry>D</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.931</entry><entry>Lançamento efetuado pelo tomador do serviço de transporte, quando a responsabilidade de retenção do imposto for atribuída ao remetente ou alienante da mercadoria, pelo serviço de transporte realizado por transportador autônomo ou por transportador não-ins</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>2.932</entry><entry>Aquisição de serviço de transporte iniciado em UF diversa daquela onde esteja inscrito o prestador </entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>3.128</entry><entry>Compra p/ utilização na prestação de serviço sujeita ao ISSQN</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>6.108</entry><entry>VENDA DE MERCADORIA ADQUIRIDA OU RECEBIDA DE TERCEIROS, DESTINADA A NÃO CONTRIBUINTE</entry><entry>S</entry><entry>null</entry>
+</row>
+<row><entry>1000000</entry><entry>1000001</entry><entry>0000</entry><entry>null</entry><entry>E</entry><entry>null</entry>
+</row></tbody>
+</tgroup>
+</table>

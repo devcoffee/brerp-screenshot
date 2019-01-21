@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Atributo</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Tipo de Valor de Atributo</entry><entry>Descrição</entry><entry>Atributo de Instância</entry><entry>Obrigatório</entry><entry>Atributo</entry><entry>Procura de Atributo</entry><entry>Nome</entry></row>
+<row><entry>L</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>100</entry><entry>100</entry><entry>Size (S-M-L)</entry></row>
+<row><entry>L</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>101</entry><entry> </entry><entry>Color (R-G-B)</entry></row>
+<row><entry>L</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>102</entry><entry> </entry><entry>Use Factor</entry></row>
+<row><entry>S</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>103</entry><entry> </entry><entry>Use Description</entry></row>
+<row><entry>L</entry><entry> </entry><entry>false</entry><entry>true</entry><entry>1000000</entry><entry> </entry><entry>Região do Café</entry></row>
+<row><entry>L</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>1000001</entry><entry> </entry><entry>Tipo do Café</entry></row>
+<row><entry>L</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>1000002</entry><entry> </entry><entry>Modo de Preparo</entry></row>
+<row><entry>L</entry><entry> </entry><entry>false</entry><entry>true</entry><entry>1000003</entry><entry> </entry><entry>Voltagem</entry></row>
+<row><entry>L</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>1000004</entry><entry> </entry><entry>Tipo de Máquina</entry></row>
+<row><entry>L</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>1000005</entry><entry> </entry><entry>Tipo de Cafeteira</entry></row>
+<row><entry>L</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>1000006</entry><entry> </entry><entry>Capacidade</entry></row>
+<row><entry>S</entry><entry> </entry><entry>false</entry><entry>true</entry><entry>5000000</entry><entry> </entry><entry>ATRIBUTO PRODUTO TEXTO</entry></row>
+<row><entry>N</entry><entry> </entry><entry>false</entry><entry>true</entry><entry>5000001</entry><entry> </entry><entry>ATRIBUTO PRODUTO NÚMERO</entry></row>
+<row><entry>S</entry><entry> </entry><entry>true</entry><entry>true</entry><entry>5000002</entry><entry> </entry><entry>ATRIBUTO PRODUTO INSTÂNCIA</entry></row>
+<row><entry>L</entry><entry> </entry><entry>false</entry><entry>true</entry><entry>5000003</entry><entry> </entry><entry>ATRIBUTO PRODUTO LISTA</entry></row></tbody>
+</tgroup>
+</table>

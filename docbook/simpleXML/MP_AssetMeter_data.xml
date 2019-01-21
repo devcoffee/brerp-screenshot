@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Métrica de Prevenção</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Ativo</entry><entry>Valor</entry><entry>Data da Transação</entry><entry>Descrição</entry><entry>Métrica de Prevenção</entry><entry>Métrica de Prevenção</entry><entry>Nome</entry><entry>Valor Total</entry><entry>Chave de Busca</entry></row>
+<row><entry>5000000</entry><entry>0</entry><entry>2018-01-18 08:40:01.0</entry><entry> </entry><entry>5000000</entry><entry>5000001</entry><entry>1</entry><entry>42.00</entry><entry>1000000</entry></row></tbody>
+</tgroup>
+</table>

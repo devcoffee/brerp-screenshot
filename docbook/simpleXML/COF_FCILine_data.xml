@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>COF_FCILine_ID</title>
+<tgroup cols='19' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Conteúdo de Importação</entry><entry>FCI</entry><entry>COF_FCILine_ID</entry><entry>Número FCI</entry><entry>Origem Sugerida</entry><entry>Processar Agora</entry><entry>Tipo do Produto (Item, Serviço)</entry><entry>Valor de Parcela Importada</entry><entry>Valor de Saída Mercadoria</entry><entry>UDM</entry><entry>Produzido</entry><entry>Grupo de Tributação</entry><entry>NCM</entry><entry>Categoria do Produto (CFOP)</entry><entry>Origem do Produto</entry><entry>Produto</entry><entry>Nome</entry><entry>UPC/EAN</entry><entry>Chave de Busca</entry></row>
+<row><entry>0.00</entry><entry>5000008</entry><entry>5000005</entry><entry> </entry><entry>0</entry><entry>Y</entry><entry>01</entry><entry>0.00</entry><entry>88.00</entry><entry>100</entry><entry>false</entry><entry> </entry><entry>1009793</entry><entry> </entry><entry>5</entry><entry>5000002</entry><entry>Produto Padrão FCI|CEST - Importado</entry><entry>7894900300017</entry><entry>1000048</entry></row>
+<row><entry>0.00</entry><entry>5000008</entry><entry>5000006</entry><entry> </entry><entry>0</entry><entry>Y</entry><entry>04</entry><entry>0.00</entry><entry>880.00</entry><entry>100</entry><entry>true</entry><entry> </entry><entry>1009793</entry><entry> </entry><entry>0</entry><entry>5000012</entry><entry>Prod Produzido B – ZERO IPI/COM ST</entry><entry>7894900300017</entry><entry>1000055</entry></row>
+<row><entry>20.35</entry><entry>5000002</entry><entry>5000014</entry><entry> </entry><entry>5</entry><entry>Y</entry><entry>04</entry><entry>179.12</entry><entry>880.00</entry><entry>100</entry><entry>true</entry><entry> </entry><entry>1009793</entry><entry> </entry><entry>0</entry><entry>5000012</entry><entry>Prod Produzido B – ZERO IPI/COM ST</entry><entry>7894900300017</entry><entry>1000055</entry></row>
+<row><entry>203.55</entry><entry>5000002</entry><entry>5000013</entry><entry>1111111111111111111111</entry><entry>8</entry><entry>N</entry><entry>01</entry><entry>179.12</entry><entry>88.00</entry><entry>100</entry><entry>false</entry><entry> </entry><entry>1009793</entry><entry> </entry><entry>5</entry><entry>5000002</entry><entry>Produto Padrão FCI|CEST - Importado</entry><entry>7894900300017</entry><entry>1000048</entry></row></tbody>
+</tgroup>
+</table>

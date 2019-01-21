@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Informações de Usuário</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'> 
+
+ <tbody><row><entry>Nome do Contato</entry><entry>Parceiro de Negócios </entry><entry>Nome 2</entry><entry>Localização do Parceiro</entry><entry>Endereço de e-mail</entry><entry>Fone</entry><entry>2º Fone</entry><entry>Fax</entry><entry>Saudação</entry></row>
+<row><entry>Joe Sales</entry><entry>114</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Carl Boss</entry><entry>117</entry><entry>Unlimited Projects Corp.</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>100</entry>
+</row>
+<row><entry>Henry Seed</entry><entry>120</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Lucélia</entry><entry>1000005</entry><entry>null</entry><entry>null</entry><entry>lucelia@insumos.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Charlote</entry><entry>1000009</entry><entry>null</entry><entry>null</entry><entry>charlote@caioalimentos.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Zé</entry><entry>1000012</entry><entry>null</entry><entry>null</entry><entry>ze@bebidas.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Tonhão</entry><entry>1000010</entry><entry>Antonio e Elisa Doces %26 Salgados ME</entry><entry>null</entry><entry>null</entry><entry>(68) 3235-1040</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Walesca</entry><entry>1000014</entry><entry>null</entry><entry>null</entry><entry>walesca@propaganda.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Yohanna</entry><entry>1000015</entry><entry>null</entry><entry>null</entry><entry>yohanna@graos.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Driele</entry><entry>1000017</entry><entry>null</entry><entry>null</entry><entry>driele@kaiquecafe.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Sr. Luiz Ferreira</entry><entry>1000018</entry><entry>Atacado de Cereais Banze LTda</entry><entry>null</entry><entry>null</entry><entry>(19) 3567-7210</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Ludimila</entry><entry>1000019</entry><entry>null</entry><entry>null</entry><entry>ludimila@gmail.com</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Ludimila</entry><entry>1000004</entry><entry>Anthony</entry><entry>null</entry><entry>ludimila@henrycafe.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Rafaela Alves</entry><entry>1000003</entry><entry>Rafaela e Nicole Construções Ltda</entry><entry>null</entry><entry>null</entry><entry>11 4143-9900</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Tomás</entry><entry>1000020</entry><entry>null</entry><entry>null</entry><entry>tomas@ig.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Julio Dantas</entry><entry>1000021</entry><entry>Julio e Daniel Representações Comerciais Ltda</entry><entry>null</entry><entry>null</entry><entry>11 3333-5896</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Ricardo Cumieira</entry><entry>1000022</entry><entry>COMPlus Representações LTDA</entry><entry>null</entry><entry>null</entry><entry>(62) 3225-2500</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Ricão</entry><entry>1000023</entry><entry>Henrique e Catarina Alimenticia Ltda</entry><entry>null</entry><entry>null</entry><entry>(69) 3216-5782</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Clementine</entry><entry>1000011</entry><entry>null</entry><entry>null</entry><entry>clementine@milenaexpressas.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Paulo</entry><entry>1000026</entry><entry>Rodoviário So no Grão</entry><entry>null</entry><entry>paulo@rodoviario.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Gabrielly</entry><entry>1000008</entry><entry>Gabrielly Alana Stefany Almeida</entry><entry>null</entry><entry>null</entry><entry>16 98809-0306</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Popai</entry><entry>1000007</entry><entry>null</entry><entry>null</entry><entry>popai@olivia.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Vinão</entry><entry>1000013</entry><entry>Pé de Bode Lanchonete</entry><entry>null</entry><entry>null</entry><entry>11 3016-0500</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>ISS</entry><entry>5000015</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>PIS</entry><entry>5000016</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry> INSS</entry><entry>5000013</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>CSLL</entry><entry>5000011</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>COFINS</entry><entry>5000009</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>FORNECEDOR TRANSPORTADORA MODELO</entry><entry>5000004</entry><entry>FORNECEDOR TRANSPORTADORA MODELO</entry><entry>null</entry><entry>analista04@devcoffee.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>PJ Dentro do Estado Não Contribuinte</entry><entry>5000007</entry><entry>null</entry><entry>null</entry><entry>analista01@devcoffee.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>PF DENTRO DO ESTADO (REP. VENDAS)</entry><entry>5000003</entry><entry>PF DENTRO DO ESTADO (REP. VENDAS)</entry><entry>null</entry><entry>jonatas-roberto@hotmail.com</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>IR</entry><entry>5000014</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>PJ Dentro do Estado c/ CNPJ e IE Vinculados EVC</entry><entry>5000017</entry><entry>PJ Dentro do Estado c/ CNPJ e IE Vinculados EVC</entry><entry>null</entry><entry>analista01@devcoffee.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>PF Fora do Estado</entry><entry>5000001</entry><entry>PF FORA DO ESTADO</entry><entry>null</entry><entry>jonatas-roberto@hotmail.com</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Italiano</entry><entry>5000008</entry><entry>PJ Estrangeiro - Itália</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>TEste de Lead</entry><entry>5000027</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>35552816</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>lead teste</entry><entry>5000023</entry><entry>null</entry><entry>5000020</entry><entry>null</entry><entry>(19) 3454-3454</entry><entry>(19) 3454-3455</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>dsdsadsdsda</entry><entry>5000024</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Filial PR</entry><entry>5000018</entry><entry>null</entry><entry>null</entry><entry>analista04@devcoffee.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>PJ dentro do Estado Contribuinte</entry><entry>5000002</entry><entry>null</entry><entry>null</entry><entry>analista01@devcoffee.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>PJ Fora do Estado Não Contribuinte</entry><entry>5000006</entry><entry>null</entry><entry>null</entry><entry>analista01@devcoffee.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Filial SC</entry><entry>5000019</entry><entry>Filial SC</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>NEWAGE BEBIEDAS E ALIMENTOS LTDA</entry><entry>5000029</entry><entry>NEWAGE</entry><entry>5000027</entry><entry>sac@newagebebidas.com.br</entry><entry>0800 770 1739</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>ee</entry><entry>5000028</entry><entry>RODONAVES TRANSPORTES E ENCOMENDAS LTDA</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>PJ Fora do Estado Contribuinte</entry><entry>5000005</entry><entry>null</entry><entry>null</entry><entry>ANALISTA01@DEVCOFFEE.COM.BR</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Felipe</entry><entry>5000026</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Felipe</entry><entry>5000000</entry><entry>Mundo do Cafe S/A</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>FLAVIO DAMIAO ZULUM - ME</entry><entry>5000030</entry><entry>FLAVIO DAMIAO ZULUM - ME</entry><entry>null</entry><entry>contato@madenortesaocarlos.com.br</entry><entry>(16) 3368-5385</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Macunaima</entry><entry>1000025</entry><entry>Representante Recanto do Quixito  Ltda</entry><entry>null</entry><entry>macu@macu.com.br</entry><entry>(92) 9173-8655</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Fernandinho Beira Mar</entry><entry>1000024</entry><entry>Fuzil Comercial Ltda</entry><entry>null</entry><entry>analista01@devcoffee.com.br</entry><entry>(22)2724-4334</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>GardenUser</entry><entry>119</entry><entry>null</entry><entry>null</entry><entry>user @ gardenworld.com</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>WebService</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>webservice @ gardenworld.com</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>cafeUser</entry><entry>1000001</entry><entry>null</entry><entry>null</entry><entry>user@mundodocafe.org</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>System</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>system @ devcoffee.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>tradutor</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>tradutor@devcoffee.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Adamastor da Cunha</entry><entry>1000006</entry><entry>Coffee Shop Di Lucca ME</entry><entry>null</entry><entry>suporte01@devcoffee.com.br</entry><entry>(31) 3268-1800</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>GardenAdmin</entry><entry>113</entry><entry>null</entry><entry>null</entry><entry>admin @ gardenworld.com</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>cafeAdmin</entry><entry>1000002</entry><entry>null</entry><entry>null</entry><entry>admin@mundodocafe.org</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>Murilo/Bruno</entry><entry>5000000</entry><entry>Mundo do Cafe S/A</entry><entry>null</entry><entry>analista04@devcoffee.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>LEO</entry><entry>5000031</entry><entry>null</entry><entry>null</entry><entry>leo.marcos.fidelis@gmail.com</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row>
+<row><entry>SuperUser</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>superuser @ brerp.com.br</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry>
+</row></tbody>
+</tgroup>
+</table>

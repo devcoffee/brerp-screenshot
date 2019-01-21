@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>COF_PP_ConsumoMateriaPrima_ID</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Quantidade LDM</entry><entry>COF_PP_ConsumoMateriaPrima_ID</entry><entry>Plano Mestre de Produção</entry><entry>Quantidade Planejada</entry><entry>Quantidade Utilizada</entry><entry>Localizador</entry><entry>Produto</entry><entry>Linha de Produção</entry></row>
+<row><entry>1</entry><entry>5000001</entry><entry>5000000</entry><entry>20</entry><entry>3</entry><entry>5000008</entry><entry>5000055</entry><entry>5000004</entry></row>
+<row><entry>2</entry><entry>5000000</entry><entry>5000000</entry><entry>40</entry><entry>6</entry><entry>5000008</entry><entry>5000054</entry><entry>5000001</entry></row>
+<row><entry>2</entry><entry>5000002</entry><entry>5000000</entry><entry>54</entry><entry>40</entry><entry>5000008</entry><entry>5000054</entry><entry>5000001</entry></row>
+<row><entry>1</entry><entry>5000003</entry><entry>5000000</entry><entry>27</entry><entry>20</entry><entry>5000008</entry><entry>5000055</entry><entry>5000004</entry></row>
+<row><entry>1</entry><entry>5000004</entry><entry>5000001</entry><entry>60</entry><entry>20</entry><entry>5000009</entry><entry>5000058</entry><entry>5000009</entry></row>
+<row><entry>2</entry><entry>5000005</entry><entry>5000001</entry><entry>40.0</entry><entry>20</entry><entry>5000009</entry><entry>5000058</entry><entry>5000009</entry></row>
+<row><entry>2</entry><entry>5000007</entry><entry>5000001</entry><entry>20</entry><entry>20</entry><entry>5000009</entry><entry>5000058</entry><entry>5000011</entry></row></tbody>
+</tgroup>
+</table>

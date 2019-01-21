@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Oportunidade de Vendas</title>
+<tgroup cols='21' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Usuário/Contato</entry><entry>Parceiro de Negócios </entry><entry>Campanha</entry><entry>Moeda De</entry><entry>Data de Fechamento</entry><entry>Descrição do Encerramento</entry><entry>Processar Agora</entry><entry>Comentários</entry><entry>Oportunidade de Vendas</entry><entry>Pedido</entry><entry>Custo</entry><entry>Estágio de Vendas</entry><entry>Descrição</entry><entry>Número do Documento</entry><entry>Data de Fechamento Prevista</entry><entry>Estado de Fechamento</entry><entry>Valor da Oportunidade</entry><entry>Probabilidade</entry><entry>Processado</entry><entry>Representante de Vendas</entry><entry>Valor Ponderado</entry></row>
+<row><entry>5000018</entry><entry>5000023</entry><entry> </entry><entry>297</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>5000000</entry><entry> </entry><entry> </entry><entry>5000000</entry><entry> </entry><entry>1000000</entry><entry>2018-01-31 00:00:00.0</entry><entry>false</entry><entry>0.0</entry><entry>10.00</entry><entry>false</entry><entry>100</entry><entry>0E-20</entry></row>
+<row><entry>5000019</entry><entry>5000024</entry><entry> </entry><entry>297</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>5000001</entry><entry> </entry><entry> </entry><entry>5000000</entry><entry> </entry><entry>1000001</entry><entry>2018-01-18 00:00:00.0</entry><entry>false</entry><entry>0.0</entry><entry>10.00</entry><entry>false</entry><entry>100</entry><entry>0E-20</entry></row>
+<row><entry>5000021</entry><entry>5000027</entry><entry> </entry><entry>297</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>5000002</entry><entry> </entry><entry> </entry><entry>5000000</entry><entry>Orçamento de proposta</entry><entry>1000002</entry><entry>2018-02-09 00:00:00.0</entry><entry>false</entry><entry>50000</entry><entry>10.00</entry><entry>false</entry><entry>1000023</entry><entry>5000.0000000000000000</entry></row></tbody>
+</tgroup>
+</table>

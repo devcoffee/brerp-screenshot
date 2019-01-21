@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Loja de Web **</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Rodapé de email</entry><entry>Cabeçalho de email</entry><entry>Traduzida</entry><entry>Informação da Loja Web</entry><entry>Parâmetro Web 1</entry><entry>Parâmetro Web 2</entry><entry>Parâmetro Web 3</entry><entry>Parâmetro Web 4</entry><entry>Parâmetro Web 5</entry><entry>Parâmetro Web 6</entry><entry>Loja de Web</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry> </entry><entry>iDempiere120x60.png</entry><entry>&lt;
+h1&gt;
+Web Store&lt;
+/h1&gt;
+</entry><entry>Parameter3</entry><entry>Parameter4</entry><entry>Parameter5</entry><entry>Parameter6</entry><entry>11</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry> </entry><entry>iDempiere120x60.png</entry><entry>&lt;
+h1&gt;
+Tienda Web&lt;
+/h1&gt;
+</entry><entry>Parámetro3</entry><entry>Parámetro4</entry><entry>Parámetro5</entry><entry>Parámetro6</entry><entry>11</entry></row></tbody>
+</tgroup>
+</table>

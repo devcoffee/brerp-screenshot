@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Tarefa SO</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Nível de Acesso de Dados</entry><entry>Ajuda de Contexto</entry><entry>Tarefa SO</entry><entry>Descrição</entry><entry>Tipo de Entidade</entry><entry>Comentário/Ajuda</entry><entry>Processar no Servidor</entry><entry>Nome</entry><entry>Comando SO</entry></row>
+<row><entry>4</entry><entry> </entry><entry>102</entry><entry>Displays the version of the default Java VM</entry><entry>D</entry><entry>The java version used by the application might be different.</entry><entry>false</entry><entry>Java Version</entry><entry>java -version</entry></row>
+<row><entry>4</entry><entry> </entry><entry>103</entry><entry>Export (save) the database</entry><entry>D</entry><entry>Run this command from the server</entry><entry>false</entry><entry>Database export</entry><entry>@BRERP_HOME@@/@utils@/@RUN_DBExport.@sh@</entry></row>
+<row><entry>4</entry><entry> </entry><entry>104</entry><entry>Transfer the database</entry><entry>D</entry><entry>Run this command from the server</entry><entry>false</entry><entry>Database transfer</entry><entry>@BRERP_HOME@@/@utils@/@RUN_ExampleTransfer.@sh@</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Condição de Transição</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Coluna</entry><entry>Condição de Transição</entry><entry>Transição de Nó</entry><entry>E/Ou</entry><entry>Tipo de Entidade</entry><entry>Operação</entry><entry>Seqüência</entry><entry>Chave de Busca</entry><entry>Valor Para</entry></row>
+<row><entry>11487</entry><entry>102</entry><entry>100</entry><entry>O</entry><entry>D</entry><entry>&gt;
+&gt;
+</entry><entry>10</entry><entry>100</entry><entry> </entry></row>
+<row><entry>2175</entry><entry>1500344</entry><entry>1500380</entry><entry>O</entry><entry>U</entry><entry>==</entry><entry>10</entry><entry>Y</entry><entry> </entry></row>
+<row><entry>3718</entry><entry>1500345</entry><entry>1500381</entry><entry>O</entry><entry>U</entry><entry>==</entry><entry>10</entry><entry>Y</entry><entry> </entry></row>
+<row><entry>2172</entry><entry>1500346</entry><entry>1500381</entry><entry>O</entry><entry>U</entry><entry>==</entry><entry>20</entry><entry>1000072</entry><entry> </entry></row>
+<row><entry>3718</entry><entry>1500347</entry><entry>1500380</entry><entry>O</entry><entry>U</entry><entry>==</entry><entry>20</entry><entry>Y</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

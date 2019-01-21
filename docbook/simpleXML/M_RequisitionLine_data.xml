@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Linha de Requisição</title>
+<tgroup cols='13' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Parceiro de Negócios </entry><entry>Finalidade</entry><entry>Linha de Ordem de Vendas</entry><entry>UDM</entry><entry>Descrição</entry><entry>Linha Núm.</entry><entry>Valor da Linha</entry><entry>Instância do Conjunto de Atributos</entry><entry>Produto</entry><entry>Requisição</entry><entry>Linha de Requisição</entry><entry>Preço Unitário</entry><entry>Quantidade</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>100</entry><entry> </entry><entry>10</entry><entry>23.75</entry><entry> </entry><entry>128</entry><entry>100</entry><entry>100</entry><entry>23.75</entry><entry>1</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>100</entry><entry> </entry><entry>10</entry><entry>0.0</entry><entry> </entry><entry>1000000</entry><entry>5000001</entry><entry>5000000</entry><entry>0.0</entry><entry>50</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>100</entry><entry> </entry><entry>10</entry><entry>1127.70</entry><entry> </entry><entry>1000001</entry><entry>5000002</entry><entry>5000001</entry><entry>12.53</entry><entry>90</entry></row>
+<row><entry>5000026</entry><entry> </entry><entry> </entry><entry>1000033</entry><entry> </entry><entry>10</entry><entry>300</entry><entry> </entry><entry>5000003</entry><entry>5000003</entry><entry>5000002</entry><entry>15</entry><entry>20</entry></row>
+<row><entry>5000000</entry><entry> </entry><entry> </entry><entry>100</entry><entry> </entry><entry>10</entry><entry>10000</entry><entry> </entry><entry>1000001</entry><entry>5000004</entry><entry>5000003</entry><entry>100</entry><entry>100</entry></row></tbody>
+</tgroup>
+</table>

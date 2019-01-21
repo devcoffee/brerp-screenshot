@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Elemento de Custo</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Tipo de Elemento de Custo</entry><entry>Método de Formação de Custo</entry><entry>Descrição</entry><entry>Calculado</entry><entry>Elemento de Custo</entry><entry>Nome</entry></row>
+<row><entry>M</entry><entry> </entry><entry>Create additional Material Cost Elements for Landed Costs</entry><entry>false</entry><entry>101</entry><entry>Freight</entry></row>
+<row><entry>M</entry><entry>F</entry><entry> </entry><entry>true</entry><entry>102</entry><entry>Fifo</entry></row>
+<row><entry>M</entry><entry>A</entry><entry> </entry><entry>true</entry><entry>103</entry><entry>Average PO</entry></row>
+<row><entry>B</entry><entry>S</entry><entry>Standard Cost</entry><entry>false</entry><entry>50000</entry><entry>Burden</entry></row>
+<row><entry>R</entry><entry>S</entry><entry>Standard Cost</entry><entry>false</entry><entry>105</entry><entry>Labor</entry></row>
+<row><entry>O</entry><entry>S</entry><entry>Standard Cost</entry><entry>false</entry><entry>50001</entry><entry>Overhead</entry></row>
+<row><entry>X</entry><entry>S</entry><entry>Standard Cost</entry><entry>false</entry><entry>50002</entry><entry>Outside Processing</entry></row>
+<row><entry>M</entry><entry>S</entry><entry>Standard Cost 
+
+Note: Define additional (Material) Costing Method, if you want to maintain/calculate the costs.  For accounting, the costing method defined in the Accounting Schema or Product Category Acct is used.</entry><entry>false</entry><entry>100</entry><entry>Material</entry></row>
+<row><entry>M</entry><entry>S</entry><entry> </entry><entry>false</entry><entry>1000000</entry><entry>Custeio Padrão</entry></row>
+<row><entry>M</entry><entry>I</entry><entry> </entry><entry>false</entry><entry>5000000</entry><entry>Fatura Média</entry></row>
+<row><entry>M</entry><entry>I</entry><entry> </entry><entry>true</entry><entry>104</entry><entry>Average Invoice</entry></row>
+<row><entry>M</entry><entry>A</entry><entry> </entry><entry>false</entry><entry>5000001</entry><entry>PC Médio</entry></row>
+<row><entry>M</entry><entry> </entry><entry> </entry><entry>false</entry><entry>5000002</entry><entry>Custo Indireto</entry></row>
+<row><entry>M</entry><entry>p</entry><entry> </entry><entry>false</entry><entry>5000004</entry><entry>Ultimo Preco Compra</entry></row></tbody>
+</tgroup>
+</table>

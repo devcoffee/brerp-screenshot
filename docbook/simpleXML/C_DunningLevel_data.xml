@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Nível de Cobrança</title>
+<tgroup cols='20' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Cobrança</entry><entry>Nível de Cobrança</entry><entry>Cobrar Encargos de Mora</entry><entry>Cobrar Juros</entry><entry>Condição de Pagamento</entry><entry>Dias Após a Data do Vencimento</entry><entry>Dias entre Avisos de Cobrança</entry><entry>Descrição</entry><entry>Formato de Impressão de Cobrança</entry><entry>Valor de Encargo de Mora</entry><entry>Juros em %</entry><entry>Estado da Cobrança</entry><entry>Cancelar Crédito</entry><entry>Definir Prazo de Pagamento</entry><entry>Mostrar Todas Vencidas</entry><entry>Mostrar Não Vencido</entry><entry>É Declaração</entry><entry>Nome</entry><entry>Nota</entry><entry>Texto de Impressão</entry></row>
+<row><entry>100</entry><entry>100</entry><entry>false</entry><entry>false</entry><entry> </entry><entry>-9999</entry><entry>0</entry><entry>Include due an non-due invoices</entry><entry>151</entry><entry>0</entry><entry>0</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>Statement</entry><entry>Please review your statement and submit due payments.</entry><entry>Statement</entry></row>
+<row><entry>100</entry><entry>101</entry><entry>false</entry><entry>false</entry><entry> </entry><entry>0</entry><entry>0</entry><entry> </entry><entry>151</entry><entry>0</entry><entry>0</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>Dun all due invoices</entry><entry>Please pay the due invoices immediately</entry><entry>Dunning Letter</entry></row>
+<row><entry>5000000</entry><entry>5000000</entry><entry>true</entry><entry>false</entry><entry>1000000</entry><entry>2</entry><entry>2</entry><entry> </entry><entry>151</entry><entry>100.00</entry><entry>0</entry><entry>D</entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>2 Dias atraso</entry><entry> </entry><entry>Valores atrasado &gt;
+- 2 dias</entry></row></tbody>
+</tgroup>
+</table>

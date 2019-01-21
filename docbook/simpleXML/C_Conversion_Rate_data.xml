@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Taxa de Conversão</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Taxa de Conversão</entry><entry>Tipo de Conversão</entry><entry>Moeda De</entry><entry>Moeda para</entry><entry>Taxa Divisora</entry><entry>Taxa Multiplicadora</entry><entry>Válido desde</entry><entry>Válido até</entry></row>
+<row><entry>137</entry><entry>114</entry><entry>100</entry><entry>102</entry><entry>1.2489999999999998880895191177842207253</entry><entry>0.80064051240992794235388310648518815052</entry><entry>2003-12-29 00:00:00.0</entry><entry>2056-01-29 00:00:00.0</entry></row>
+<row><entry>138</entry><entry>114</entry><entry>102</entry><entry>100</entry><entry>0.800640512409927840309364910353906452656</entry><entry>1.249</entry><entry>2003-12-29 00:00:00.0</entry><entry>2056-01-29 00:00:00.0</entry></row>
+<row><entry>135</entry><entry>114</entry><entry>100</entry><entry>102</entry><entry>1.17647058823529415683140086912317201495</entry><entry>0.85</entry><entry>2003-11-26 00:00:00.0</entry><entry>2056-01-29 00:00:00.0</entry></row>
+<row><entry>136</entry><entry>114</entry><entry>102</entry><entry>100</entry><entry>0.849999999999999977795539507496869191527</entry><entry>1.17647058823529411764705882352941176471</entry><entry>2003-11-26 00:00:00.0</entry><entry>2056-01-29 00:00:00.0</entry></row>
+<row><entry>5000001</entry><entry>114</entry><entry>100</entry><entry>297</entry><entry>0.500000000000</entry><entry>2</entry><entry>2018-01-10 00:00:00.0</entry><entry>2018-01-10 00:00:00.0</entry></row>
+<row><entry>5000000</entry><entry>114</entry><entry>297</entry><entry>100</entry><entry>2</entry><entry>0.500000000000</entry><entry>2018-01-10 00:00:00.0</entry><entry>2018-01-10 00:00:00.0</entry></row>
+<row><entry>5000002</entry><entry>114</entry><entry>100</entry><entry>297</entry><entry>0.500000000000</entry><entry>2</entry><entry>2018-01-11 00:00:00.0</entry><entry>2018-01-11 00:00:00.0</entry></row>
+<row><entry>5000003</entry><entry>114</entry><entry>297</entry><entry>100</entry><entry>2</entry><entry>0.500000000000</entry><entry>2018-01-11 00:00:00.0</entry><entry>2018-01-11 00:00:00.0</entry></row>
+<row><entry>5000004</entry><entry>114</entry><entry>297</entry><entry>100</entry><entry>3</entry><entry>0.333333333333</entry><entry>2018-01-12 00:00:00.0</entry><entry>2018-01-12 00:00:00.0</entry></row>
+<row><entry>5000005</entry><entry>114</entry><entry>100</entry><entry>297</entry><entry>0.333333333333</entry><entry>3</entry><entry>2018-01-12 00:00:00.0</entry><entry>2018-01-12 00:00:00.0</entry></row>
+<row><entry>5000006</entry><entry>114</entry><entry>297</entry><entry>100</entry><entry>3.1730</entry><entry>0.3151591553734636</entry><entry>2018-02-01 00:00:00.0</entry><entry>2018-02-01 00:00:00.0</entry></row>
+<row><entry>5000007</entry><entry>114</entry><entry>100</entry><entry>297</entry><entry>0.3151591553734636</entry><entry>3.1730</entry><entry>2018-02-01 00:00:00.0</entry><entry>2018-02-01 00:00:00.0</entry></row>
+<row><entry>5000008</entry><entry>114</entry><entry>297</entry><entry>100</entry><entry>3.2060</entry><entry>0.3119151590767311</entry><entry>2018-02-02 00:00:00.0</entry><entry>2018-02-02 00:00:00.0</entry></row>
+<row><entry>5000009</entry><entry>114</entry><entry>100</entry><entry>297</entry><entry>0.3119151590767311</entry><entry>3.2060</entry><entry>2018-02-02 00:00:00.0</entry><entry>2018-02-02 00:00:00.0</entry></row>
+<row><entry>5000010</entry><entry>114</entry><entry>297</entry><entry>100</entry><entry>3.2355</entry><entry>0.3090712409210323</entry><entry>2018-02-05 00:00:00.0</entry><entry>2018-02-05 00:00:00.0</entry></row>
+<row><entry>5000011</entry><entry>114</entry><entry>100</entry><entry>297</entry><entry>0.3090712409210323</entry><entry>3.2355</entry><entry>2018-02-05 00:00:00.0</entry><entry>2018-02-05 00:00:00.0</entry></row>
+<row><entry>5000012</entry><entry>114</entry><entry>297</entry><entry>100</entry><entry>3.2613</entry><entry>0.30662619200932145</entry><entry>2018-02-06 00:00:00.0</entry><entry>2018-02-06 00:00:00.0</entry></row>
+<row><entry>5000013</entry><entry>114</entry><entry>100</entry><entry>297</entry><entry>0.30662619200932145</entry><entry>3.2613</entry><entry>2018-02-06 00:00:00.0</entry><entry>2018-02-06 00:00:00.0</entry></row>
+<row><entry>5000014</entry><entry>114</entry><entry>297</entry><entry>100</entry><entry>3.2467</entry><entry>0.308005051282841</entry><entry>2018-02-07 00:00:00.0</entry><entry>2018-02-07 00:00:00.0</entry></row>
+<row><entry>5000015</entry><entry>114</entry><entry>100</entry><entry>297</entry><entry>0.308005051282841</entry><entry>3.2467</entry><entry>2018-02-07 00:00:00.0</entry><entry>2018-02-07 00:00:00.0</entry></row></tbody>
+</tgroup>
+</table>

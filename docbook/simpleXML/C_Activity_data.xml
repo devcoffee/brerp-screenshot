@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Atividade</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Atividade</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Nível de Resumo</entry><entry>Nome</entry><entry>Chave de Busca</entry></row>
+<row><entry>1000000</entry><entry> </entry><entry> </entry><entry>false</entry><entry>Padrão</entry><entry>Padrão</entry></row>
+<row><entry>5000000</entry><entry> </entry><entry> </entry><entry>false</entry><entry>Industria</entry><entry>IND</entry></row>
+<row><entry>5000001</entry><entry> </entry><entry> </entry><entry>false</entry><entry>Comercial</entry><entry>COM</entry></row></tbody>
+</tgroup>
+</table>

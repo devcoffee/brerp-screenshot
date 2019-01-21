@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Alerta</title>
+<tgroup cols='11' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Alerta</entry><entry>Processador de Alertas</entry><entry>Mensagem de Alerta</entry><entry>Assunto de Alerta</entry><entry>Armazenamento em Nuvem</entry><entry>Descrição</entry><entry>Impor Segurança da Empresa</entry><entry>Impor Segurança de Função</entry><entry>Comentário/Ajuda</entry><entry>Válido</entry><entry>Nome</entry></row>
+<row><entry>100</entry><entry>100</entry><entry>Check that the iDempiere Database has sufficient space:
+</entry><entry>iDempiere Database Space</entry><entry> </entry><entry>Oracle specific</entry><entry>false</entry><entry>false</entry><entry> </entry><entry>true</entry><entry>Space in Database</entry></row>
+<row><entry>5000000</entry><entry>100</entry><entry>teste</entry><entry>teste</entry><entry> </entry><entry> </entry><entry>true</entry><entry>true</entry><entry> </entry><entry>true</entry><entry>TEste</entry></row></tbody>
+</tgroup>
+</table>

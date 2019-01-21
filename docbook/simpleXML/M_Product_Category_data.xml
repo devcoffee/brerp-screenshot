@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Categoria de Produto</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Grupo de Ativo</entry><entry>Cor de Impressão</entry><entry>Descrição</entry><entry>Padrão</entry><entry>Auto-Serviço</entry><entry>Conjunto de Atributos</entry><entry>Política de Materiais</entry><entry>Categoria de Produto</entry><entry>Categoria de Produto Pai</entry><entry>Nome</entry><entry>Margem Planejada %</entry><entry>Chave de Busca</entry></row>
+<row><entry>100</entry><entry>110</entry><entry>Documentation Download</entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>111</entry><entry> </entry><entry>Documentation</entry><entry>0</entry><entry>Doc</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>112</entry><entry> </entry><entry>Training</entry><entry>0</entry><entry>Training</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>105</entry><entry> </entry><entry>Standard</entry><entry>0</entry><entry>Standard</entry></row>
+<row><entry> </entry><entry>116</entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>106</entry><entry> </entry><entry>Trees</entry><entry>20</entry><entry>Tree</entry></row>
+<row><entry> </entry><entry>117</entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>107</entry><entry> </entry><entry>Bushes</entry><entry>30</entry><entry>Bush</entry></row>
+<row><entry> </entry><entry> </entry><entry>Garden Tools</entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>108</entry><entry> </entry><entry>Tools</entry><entry>0</entry><entry>Tools</entry></row>
+<row><entry> </entry><entry> </entry><entry>Lawn Chemicals</entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>109</entry><entry> </entry><entry>Chemicals</entry><entry>0</entry><entry>Chemicals</entry></row>
+<row><entry> </entry><entry> </entry><entry>Patio and Lawn Furniture</entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>110</entry><entry> </entry><entry>Patio </entry><entry>0</entry><entry>Patio</entry></row>
+<row><entry> </entry><entry>111</entry><entry> </entry><entry>false</entry><entry>false</entry><entry> </entry><entry>F</entry><entry>50000</entry><entry> </entry><entry>Assembly</entry><entry>0</entry><entry>Assembly</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>50001</entry><entry> </entry><entry>Raw Material</entry><entry>0</entry><entry>Raw Material</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>false</entry><entry>false</entry><entry> </entry><entry>F</entry><entry>50002</entry><entry> </entry><entry>Packing</entry><entry>0</entry><entry>Packing</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry> </entry><entry>F</entry><entry>50003</entry><entry> </entry><entry>Resources</entry><entry>0</entry><entry>Resources</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>1000000</entry><entry> </entry><entry>Padrão</entry><entry>0.0</entry><entry>Padrão</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>1000001</entry><entry> </entry><entry>Serviços</entry><entry>0</entry><entry>Serviços</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>1000002</entry><entry> </entry><entry>Matéria Prima</entry><entry>0</entry><entry>Matéria Prima</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>1000003</entry><entry> </entry><entry>Uso e Consumo</entry><entry>0</entry><entry>Uso e Consumo</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>1000005</entry><entry> </entry><entry>Grãos</entry><entry>0</entry><entry>Grãos</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>false</entry><entry>true</entry><entry>1000000</entry><entry>F</entry><entry>1000006</entry><entry> </entry><entry>Café Gourmet</entry><entry>0</entry><entry>Café Gourmet</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>false</entry><entry>true</entry><entry>1000001</entry><entry>F</entry><entry>1000007</entry><entry> </entry><entry>Máquinas de Expresso</entry><entry>0</entry><entry>Máquinas de Expresso</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>1000008</entry><entry> </entry><entry>Acessórios %26 Utensílios</entry><entry>0</entry><entry>Acessórios %26 Utensílios</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>1000009</entry><entry> </entry><entry>Acompanhamentos</entry><entry>0</entry><entry>Acompanhamentos</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>1000010</entry><entry> </entry><entry>Presentes</entry><entry>0</entry><entry>Presentes</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>5000002</entry><entry> </entry><entry>GERAL TESTES - PRODUTOS</entry><entry>0.0</entry><entry>GERAL TESTES - PRODUTOS</entry></row>
+<row><entry>5000000</entry><entry> </entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry>F</entry><entry>1000004</entry><entry> </entry><entry>GERAL TESTES - ATIVO</entry><entry>0</entry><entry>GERAL TESTES - ATIVO</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Relatório Financeiro</title>
+<tgroup cols='15' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Formato de Impressão</entry><entry>Esquema Contábil</entry><entry>Calendário</entry><entry>Descrição</entry><entry>Jasper Process</entry><entry>Jasper Process Now</entry><entry>Listar Origens</entry><entry>Incluir contas de origem sem nenhuma transação</entry><entry>Listar Transações</entry><entry>Nome</entry><entry>Conjunto de Colunas de Relatórios</entry><entry>Report Cube</entry><entry>Relatório Financeiro</entry><entry>Conjunto de Linhas de Relatório</entry><entry>Processar Agora</entry></row>
+<row><entry> </entry><entry>101</entry><entry>102</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>Income Statement Current Month</entry><entry>101</entry><entry> </entry><entry>101</entry><entry>102</entry><entry>false</entry></row>
+<row><entry> </entry><entry>101</entry><entry>102</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>Balance Sheet Current Month</entry><entry>100</entry><entry> </entry><entry>100</entry><entry>100</entry><entry>false</entry></row>
+<row><entry> </entry><entry>101</entry><entry>102</entry><entry>Statement of Cash Flows</entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>false</entry><entry>Statement of Cash Flows</entry><entry>102</entry><entry> </entry><entry>102</entry><entry>104</entry><entry>false</entry></row>
+<row><entry>5000088</entry><entry>1000001</entry><entry>1000000</entry><entry>Balancete Comparativo 12 Meses</entry><entry> </entry><entry>N</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>Balancete Comparativo 12 Meses</entry><entry>5000000</entry><entry> </entry><entry>5000000</entry><entry>5000000</entry><entry>false</entry></row>
+<row><entry>5000088</entry><entry>1000001</entry><entry>1000000</entry><entry>CUSTOS/ DESPESAS - Comparativo 12 Meses</entry><entry> </entry><entry>N</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>CUSTOS/ DESPESAS - Comparativo 12 Meses</entry><entry>5000000</entry><entry> </entry><entry>5000001</entry><entry>5000001</entry><entry>false</entry></row></tbody>
+</tgroup>
+</table>

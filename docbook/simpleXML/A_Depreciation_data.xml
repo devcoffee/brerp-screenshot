@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Tipo de Depreciação</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Tipo de Depreciação</entry><entry>Tipo de Depreciação</entry><entry>Descrição</entry><entry>Nome</entry><entry>Processado</entry><entry>Texto</entry></row>
+<row><entry>50003</entry><entry>SL</entry><entry>Straight Line Depreciation</entry><entry>Straight Line</entry><entry>false</entry><entry>Test</entry></row>
+<row><entry>50000</entry><entry>DB200</entry><entry>Declining Balance 200% (DB) Depreciation</entry><entry>200% Declining Balance</entry><entry>false</entry><entry>Test</entry></row>
+<row><entry>50001</entry><entry>DB150</entry><entry>Declining Balance 150% (DB) Depreciation</entry><entry>150% Declining Balance</entry><entry>false</entry><entry>Test</entry></row>
+<row><entry>50002</entry><entry>SYD</entry><entry>Sum of Year Digits Depreciation</entry><entry>Sum of Years Digit</entry><entry>false</entry><entry>Test</entry></row>
+<row><entry>50004</entry><entry>UOP</entry><entry>Units of Production Depreciation</entry><entry>Units of Production</entry><entry>false</entry><entry>Test</entry></row>
+<row><entry>50005</entry><entry>ARH_VAR</entry><entry>Variable Accelerated</entry><entry>Variable Accelerated</entry><entry>false</entry><entry>Test</entry></row>
+<row><entry>50006</entry><entry>MAN</entry><entry>Manual Depreciation</entry><entry>Manual</entry><entry>false</entry><entry>Test</entry></row>
+<row><entry>50008</entry><entry>DB2SL</entry><entry>Declining Balance 200% (DB) Depreciation with a switch to Straight Line</entry><entry>200% DB to SL</entry><entry>false</entry><entry>Test</entry></row>
+<row><entry>50007</entry><entry>TAB</entry><entry>Depreciate asset by use of depreciation table</entry><entry>Table</entry><entry>false</entry><entry>Test</entry></row>
+<row><entry>50009</entry><entry>DB1SL</entry><entry>Declining Balance 150% (DB) Depreciation with a switch to Straight Line</entry><entry>150% DB to SL</entry><entry>false</entry><entry>Test</entry></row>
+<row><entry>50010</entry><entry>VARSL</entry><entry>Variable Accelerated with a switch to Straight Line</entry><entry>Variable Accelerated to SL</entry><entry>false</entry><entry>Test</entry></row>
+<row><entry>5000000</entry><entry>SL</entry><entry>DEPRECIAÇÃO</entry><entry>DEPRECIAÇÃO</entry><entry>false</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

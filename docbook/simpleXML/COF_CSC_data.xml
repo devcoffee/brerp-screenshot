@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Código de Segurança do Contribuinte </title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Código de Segurança do Contribuinte </entry><entry>Descrição</entry><entry>Padrão</entry><entry>Ambiente NFe</entry><entry>Nome</entry><entry>Chave de Busca</entry></row>
+<row><entry>5000000</entry><entry>891521cf-00f1-4a83-aa2d-1321685803cc</entry><entry>false</entry><entry>2</entry><entry>CSC Homologação</entry><entry>000001</entry></row>
+<row><entry>5000001</entry><entry>YBTBSL1NZFTYISXHGJRDTV3VGXCNN7T9OWW5</entry><entry>false</entry><entry>2</entry><entry>CSC Homologação</entry><entry>000001</entry></row></tbody>
+</tgroup>
+</table>

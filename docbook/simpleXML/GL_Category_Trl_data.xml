@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Categoria de Razão Geral **</title>
+<tgroup cols='4' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Categoria de Razão Geral</entry><entry>Traduzida</entry><entry>Nome</entry></row>
+<row><entry>pt_BR</entry><entry>108</entry><entry>false</entry><entry>Manual</entry></row>
+<row><entry>pt_BR</entry><entry>109</entry><entry>false</entry><entry>AR Invoice</entry></row>
+<row><entry>pt_BR</entry><entry>110</entry><entry>false</entry><entry>AR Receipt</entry></row>
+<row><entry>pt_BR</entry><entry>111</entry><entry>false</entry><entry>Material Management</entry></row>
+<row><entry>pt_BR</entry><entry>112</entry><entry>false</entry><entry>AP Invoice</entry></row>
+<row><entry>pt_BR</entry><entry>113</entry><entry>false</entry><entry>AP Payment</entry></row>
+<row><entry>pt_BR</entry><entry>50000</entry><entry>false</entry><entry>Payroll</entry></row>
+<row><entry>pt_BR</entry><entry>50001</entry><entry>false</entry><entry>Manufacturing</entry></row>
+<row><entry>pt_BR</entry><entry>50002</entry><entry>false</entry><entry>Distribution</entry></row>
+<row><entry>es_CO</entry><entry>0</entry><entry>true</entry><entry>Ninguna</entry></row>
+<row><entry>es_CO</entry><entry>108</entry><entry>false</entry><entry>Manual</entry></row>
+<row><entry>es_CO</entry><entry>109</entry><entry>false</entry><entry>AR Invoice</entry></row>
+<row><entry>es_CO</entry><entry>110</entry><entry>false</entry><entry>AR Receipt</entry></row>
+<row><entry>es_CO</entry><entry>111</entry><entry>false</entry><entry>Material Management</entry></row>
+<row><entry>es_CO</entry><entry>112</entry><entry>false</entry><entry>AP Invoice</entry></row>
+<row><entry>es_CO</entry><entry>113</entry><entry>false</entry><entry>AP Payment</entry></row>
+<row><entry>es_CO</entry><entry>50000</entry><entry>false</entry><entry>Payroll</entry></row>
+<row><entry>es_CO</entry><entry>50001</entry><entry>false</entry><entry>Manufacturing</entry></row>
+<row><entry>es_CO</entry><entry>50002</entry><entry>false</entry><entry>Distribution</entry></row>
+<row><entry>pt_BR</entry><entry>0</entry><entry>false</entry><entry>None</entry></row>
+<row><entry>es_CO</entry><entry>1000003</entry><entry>true</entry><entry>Fatura a Receber </entry></row>
+<row><entry>pt_BR</entry><entry>1000003</entry><entry>true</entry><entry>Fatura a Receber </entry></row>
+<row><entry>es_CO</entry><entry>1000011</entry><entry>true</entry><entry>Folha de Pagamento</entry></row>
+<row><entry>es_CO</entry><entry>1000005</entry><entry>true</entry><entry>Devolução de Fornecedor</entry></row>
+<row><entry>pt_BR</entry><entry>1000005</entry><entry>true</entry><entry>Devolução de Fornecedor</entry></row>
+<row><entry>pt_BR</entry><entry>5000004</entry><entry>false</entry><entry>Fatura a Pagar Guias e Boletos</entry></row>
+<row><entry>pt_BR</entry><entry>1000011</entry><entry>true</entry><entry>Folha de Pagamento</entry></row>
+<row><entry>pt_BR</entry><entry>5000001</entry><entry>false</entry><entry>Devolução de Cliente</entry></row>
+<row><entry>es_CO</entry><entry>1000004</entry><entry>true</entry><entry>Expedição de Materiais</entry></row>
+<row><entry>es_CO</entry><entry>5000001</entry><entry>false</entry><entry>Devolução de Cliente</entry></row>
+<row><entry>pt_BR</entry><entry>1000004</entry><entry>true</entry><entry>Expedição de Materiais</entry></row>
+<row><entry>es_CO</entry><entry>1000006</entry><entry>true</entry><entry>Fatura a Pagar</entry></row>
+<row><entry>pt_BR</entry><entry>1000006</entry><entry>true</entry><entry>Fatura a Pagar</entry></row>
+<row><entry>es_CO</entry><entry>1000008</entry><entry>true</entry><entry>Caixa</entry></row>
+<row><entry>es_CO</entry><entry>1000000</entry><entry>true</entry><entry>Padrão</entry></row>
+<row><entry>pt_BR</entry><entry>1000000</entry><entry>true</entry><entry>Padrão</entry></row>
+<row><entry>es_CO</entry><entry>1000001</entry><entry>true</entry><entry>Sem Classificação</entry></row>
+<row><entry>pt_BR</entry><entry>1000001</entry><entry>true</entry><entry>Sem Classificação</entry></row>
+<row><entry>es_CO</entry><entry>1000009</entry><entry>true</entry><entry>Produção Simplicada</entry></row>
+<row><entry>es_CO</entry><entry>1000010</entry><entry>true</entry><entry>Distribuição</entry></row>
+<row><entry>pt_BR</entry><entry>1000010</entry><entry>true</entry><entry>Distribuição</entry></row>
+<row><entry>pt_BR</entry><entry>5000002</entry><entry>false</entry><entry>Gerenciamento de Estoque</entry></row>
+<row><entry>es_CO</entry><entry>5000002</entry><entry>false</entry><entry>Gerenciamento de Estoque</entry></row>
+<row><entry>pt_BR</entry><entry>5000003</entry><entry>false</entry><entry>Fatura a Pagar Uso e Consumo</entry></row>
+<row><entry>es_CO</entry><entry>5000003</entry><entry>false</entry><entry>Fatura a Pagar Uso e Consumo</entry></row>
+<row><entry>es_CO</entry><entry>5000004</entry><entry>false</entry><entry>Fatura a Pagar Guias e Boletos</entry></row>
+<row><entry>pt_BR</entry><entry>5000005</entry><entry>false</entry><entry>Remessas de Entrada</entry></row>
+<row><entry>es_CO</entry><entry>5000005</entry><entry>false</entry><entry>Remessas de Entrada</entry></row>
+<row><entry>es_CO</entry><entry>1000007</entry><entry>true</entry><entry>Pagamento(Saída de Caixa)</entry></row>
+<row><entry>pt_BR</entry><entry>1000007</entry><entry>true</entry><entry>Pagamento(Saída de Caixa)</entry></row>
+<row><entry>pt_BR</entry><entry>1000008</entry><entry>true</entry><entry>Caixa</entry></row>
+<row><entry>pt_BR</entry><entry>5000028</entry><entry>false</entry><entry>Confronto de Faturas</entry></row>
+<row><entry>es_CO</entry><entry>5000028</entry><entry>false</entry><entry>Confronto de Faturas</entry></row>
+<row><entry>pt_BR</entry><entry>5000009</entry><entry>false</entry><entry>Abatimento Financeiro Cliente</entry></row>
+<row><entry>es_CO</entry><entry>5000009</entry><entry>false</entry><entry>Abatimento Financeiro Cliente</entry></row>
+<row><entry>pt_BR</entry><entry>5000011</entry><entry>false</entry><entry>Remessa de Saída</entry></row>
+<row><entry>es_CO</entry><entry>5000011</entry><entry>false</entry><entry>Remessa de Saída</entry></row>
+<row><entry>pt_BR</entry><entry>5000012</entry><entry>false</entry><entry>Recebimento (Entrada Caixa Antecipado)</entry></row>
+<row><entry>es_CO</entry><entry>5000012</entry><entry>false</entry><entry>Recebimento (Entrada Caixa Antecipado)</entry></row>
+<row><entry>pt_BR</entry><entry>5000008</entry><entry>true</entry><entry>Transferência entre Caixas</entry></row>
+<row><entry>es_CO</entry><entry>5000008</entry><entry>true</entry><entry>Transferência entre Caixas</entry></row>
+<row><entry>pt_BR</entry><entry>5000013</entry><entry>false</entry><entry>Alocação(Amortizações)</entry></row>
+<row><entry>es_CO</entry><entry>5000013</entry><entry>false</entry><entry>Alocação(Amortizações)</entry></row>
+<row><entry>pt_BR</entry><entry>5000014</entry><entry>false</entry><entry>Extrato Bancário (Conciliação)</entry></row>
+<row><entry>es_CO</entry><entry>5000014</entry><entry>false</entry><entry>Extrato Bancário (Conciliação)</entry></row>
+<row><entry>pt_BR</entry><entry>5000015</entry><entry>false</entry><entry>Entrada de Ativo</entry></row>
+<row><entry>es_CO</entry><entry>5000015</entry><entry>false</entry><entry>Entrada de Ativo</entry></row>
+<row><entry>pt_BR</entry><entry>5000016</entry><entry>false</entry><entry>Baixa de Ativo (Desimobilização)</entry></row>
+<row><entry>es_CO</entry><entry>5000016</entry><entry>false</entry><entry>Baixa de Ativo (Desimobilização)</entry></row>
+<row><entry>pt_BR</entry><entry>5000017</entry><entry>false</entry><entry>Despesas com Depreciação</entry></row>
+<row><entry>es_CO</entry><entry>5000017</entry><entry>false</entry><entry>Despesas com Depreciação</entry></row>
+<row><entry>pt_BR</entry><entry>5000018</entry><entry>true</entry><entry>Lançamento Contábil</entry></row>
+<row><entry>es_CO</entry><entry>5000018</entry><entry>true</entry><entry>Lançamento Contábil</entry></row>
+<row><entry>pt_BR</entry><entry>5000020</entry><entry>true</entry><entry>Lançamento Contábil Manual</entry></row>
+<row><entry>es_CO</entry><entry>5000020</entry><entry>true</entry><entry>Lançamento Contábil Manual</entry></row>
+<row><entry>pt_BR</entry><entry>5000021</entry><entry>false</entry><entry>Ajustes de Estoque/Inventário</entry></row>
+<row><entry>es_CO</entry><entry>5000021</entry><entry>false</entry><entry>Ajustes de Estoque/Inventário</entry></row>
+<row><entry>pt_BR</entry><entry>5000022</entry><entry>false</entry><entry>Baixa Material Estocado(Uso e Consumo)</entry></row>
+<row><entry>es_CO</entry><entry>5000022</entry><entry>false</entry><entry>Baixa Material Estocado(Uso e Consumo)</entry></row>
+<row><entry>pt_BR</entry><entry>1000009</entry><entry>true</entry><entry>Produção Simplicada</entry></row>
+<row><entry>pt_BR</entry><entry>5000023</entry><entry>true</entry><entry>Entrada Devolução Material (Orig.Saída)</entry></row>
+<row><entry>es_CO</entry><entry>5000023</entry><entry>true</entry><entry>Entrada Devolução Material (Orig.Saída)</entry></row>
+<row><entry>pt_BR</entry><entry>5000024</entry><entry>false</entry><entry>Entrada de Produto</entry></row>
+<row><entry>es_CO</entry><entry>5000024</entry><entry>false</entry><entry>Entrada de Produto</entry></row>
+<row><entry>pt_BR</entry><entry>5000025</entry><entry>false</entry><entry>Saída p/ Devolução Material (Orig Entrada)</entry></row>
+<row><entry>es_CO</entry><entry>5000025</entry><entry>false</entry><entry>Saída p/ Devolução Material (Orig Entrada)</entry></row>
+<row><entry>pt_BR</entry><entry>5000026</entry><entry>false</entry><entry>Despesas de Manutenção</entry></row>
+<row><entry>es_CO</entry><entry>5000026</entry><entry>false</entry><entry>Despesas de Manutenção</entry></row>
+<row><entry>pt_BR</entry><entry>5000027</entry><entry>false</entry><entry>Inspeção de Qualidade</entry></row>
+<row><entry>es_CO</entry><entry>5000027</entry><entry>false</entry><entry>Inspeção de Qualidade</entry></row>
+<row><entry>pt_BR</entry><entry>5000029</entry><entry>false</entry><entry>Confronto de Pedido de Compras</entry></row>
+<row><entry>es_CO</entry><entry>5000029</entry><entry>false</entry><entry>Confronto de Pedido de Compras</entry></row>
+<row><entry>pt_BR</entry><entry>5000030</entry><entry>false</entry><entry>Projetos</entry></row>
+<row><entry>es_CO</entry><entry>5000030</entry><entry>false</entry><entry>Projetos</entry></row>
+<row><entry>pt_BR</entry><entry>5000031</entry><entry>false</entry><entry>Expedição de Mercadoria de Cliente</entry></row>
+<row><entry>es_CO</entry><entry>5000031</entry><entry>false</entry><entry>Expedição de Mercadoria de Cliente</entry></row>
+<row><entry>pt_BR</entry><entry>5000032</entry><entry>false</entry><entry>Devolução p/ Fornecedor</entry></row>
+<row><entry>es_CO</entry><entry>5000032</entry><entry>false</entry><entry>Devolução p/ Fornecedor</entry></row>
+<row><entry>pt_BR</entry><entry>5000033</entry><entry>false</entry><entry>Abatimento Financeiro Fornecedor</entry></row>
+<row><entry>es_CO</entry><entry>5000033</entry><entry>false</entry><entry>Abatimento Financeiro Fornecedor</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Empresa</title>
+<tgroup cols='24' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Políticas de Senha</entry><entry>Estratégia de Replicação</entry><entry>Auto Arquivar</entry><entry>Descrição</entry><entry>Diretório de Documentos</entry><entry>Teste de email</entry><entry>Documentos Multi-Idiomas</entry><entry>Lançar Imediatamente</entry><entry>SMTP SSL/TLS</entry><entry>Servidor de email</entry><entry>Autenticação SMTP</entry><entry>Utiliza SaaS</entry><entry>Use Funções Beta</entry><entry>Política de Materiais</entry><entry>Model Validator</entry><entry>Nome</entry><entry>E-mail</entry><entry>Pasta de Solicitação</entry><entry>Usuário da Solicitação</entry><entry>Senha do Usuário de Solicitação</entry><entry>Servidor de Email</entry><entry>Porta SMTP</entry><entry>Chave de Busca</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>N</entry><entry>GardenWorld</entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>F</entry><entry> </entry><entry>GardenWorld</entry><entry>dev@devcoffee.com.br</entry><entry>request</entry><entry>brerp</entry><entry>SeHZScBw4777</entry><entry>smtplw.com.br</entry><entry>587</entry><entry>GardenWorld</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>N</entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>F</entry><entry> </entry><entry>Mundo do Café S/A</entry><entry>dev@devcoffee.com.br</entry><entry> </entry><entry>brerp</entry><entry>SeHZScBw4777</entry><entry>smtplw.com.br</entry><entry>587</entry><entry>Mundo do Café S/A</entry></row>
+<row><entry>en_US</entry><entry> </entry><entry> </entry><entry>N</entry><entry>System Client</entry><entry> </entry><entry> </entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>F</entry><entry> </entry><entry>System</entry><entry>dev@devcoffee.com.br</entry><entry> </entry><entry>brerp</entry><entry>SeHZScBw4777</entry><entry>smtplw.com.br</entry><entry>587</entry><entry>SYSTEM</entry></row></tbody>
+</tgroup>
+</table>

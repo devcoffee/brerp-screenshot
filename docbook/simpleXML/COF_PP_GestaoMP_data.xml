@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Linha de Gestão de MP</title>
+<tgroup cols='10' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Quantidade LDM</entry><entry>Linha de Gestão de MP</entry><entry>Plano Mestre de Produção</entry><entry>Quantidade a Requisitar</entry><entry>Quantidade Requisitada</entry><entry>Localizador</entry><entry>Localizador de Destino</entry><entry>Linha de Movimento</entry><entry>Produto</entry><entry>Descrição de Produto</entry></row>
+<row><entry>2</entry><entry>5000015</entry><entry>5000001</entry><entry>20.0</entry><entry>20</entry><entry>5000008</entry><entry>5000009</entry><entry>5000019</entry><entry>5000058</entry><entry> </entry></row>
+<row><entry>2</entry><entry>5000002</entry><entry>5000000</entry><entry>60</entry><entry>40</entry><entry>5000008</entry><entry>5000009</entry><entry>5000000</entry><entry>5000054</entry><entry> </entry></row>
+<row><entry>1</entry><entry>5000003</entry><entry>5000000</entry><entry>30</entry><entry>20</entry><entry>5000008</entry><entry>5000009</entry><entry>5000001</entry><entry>5000055</entry><entry> </entry></row>
+<row><entry>1</entry><entry>5000018</entry><entry>5000002</entry><entry>30.0</entry><entry> </entry><entry>5000008</entry><entry>5000008</entry><entry> </entry><entry>5000060</entry><entry> </entry></row>
+<row><entry>2</entry><entry>5000017</entry><entry>5000002</entry><entry>60.0</entry><entry> </entry><entry>5000008</entry><entry>5000008</entry><entry> </entry><entry>5000058</entry><entry> </entry></row>
+<row><entry>2</entry><entry>5000004</entry><entry>5000000</entry><entry>54.00</entry><entry>54</entry><entry>5000008</entry><entry>5000009</entry><entry>5000008</entry><entry>5000054</entry><entry> </entry></row>
+<row><entry>1</entry><entry>5000005</entry><entry>5000000</entry><entry>27.00</entry><entry>27</entry><entry>5000008</entry><entry>5000009</entry><entry>5000009</entry><entry>5000055</entry><entry> </entry></row>
+<row><entry>1</entry><entry>5000006</entry><entry>5000000</entry><entry>-48</entry><entry>-48</entry><entry>5000009</entry><entry>5000008</entry><entry>5000010</entry><entry>5000054</entry><entry> </entry></row>
+<row><entry>1</entry><entry>5000008</entry><entry>5000000</entry><entry>48</entry><entry>48</entry><entry>5000009</entry><entry>5000008</entry><entry>5000010</entry><entry>5000054</entry><entry> </entry></row>
+<row><entry>1</entry><entry>5000007</entry><entry>5000000</entry><entry>-24</entry><entry>-24</entry><entry>5000009</entry><entry>5000008</entry><entry>5000011</entry><entry>5000055</entry><entry> </entry></row>
+<row><entry>1</entry><entry>5000009</entry><entry>5000000</entry><entry>24</entry><entry>24</entry><entry>5000009</entry><entry>5000008</entry><entry>5000011</entry><entry>5000055</entry><entry> </entry></row>
+<row><entry>2</entry><entry>5000011</entry><entry>5000001</entry><entry>60.0</entry><entry>60</entry><entry>5000008</entry><entry>5000009</entry><entry>5000014</entry><entry>5000058</entry><entry> </entry></row>
+<row><entry>1</entry><entry>5000012</entry><entry>5000001</entry><entry>-40</entry><entry>-40</entry><entry>5000009</entry><entry>5000008</entry><entry>5000015</entry><entry>5000058</entry><entry> </entry></row>
+<row><entry>2</entry><entry>5000013</entry><entry>5000001</entry><entry>40.0</entry><entry>40</entry><entry>5000008</entry><entry>5000009</entry><entry>5000016</entry><entry>5000058</entry><entry> </entry></row>
+<row><entry>1</entry><entry>5000014</entry><entry>5000001</entry><entry>-20</entry><entry>-20</entry><entry>5000009</entry><entry>5000008</entry><entry>5000018</entry><entry>5000058</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

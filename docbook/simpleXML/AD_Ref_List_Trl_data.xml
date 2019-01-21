@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Lista de Referência **</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Lista de Referência</entry><entry>Checked</entry><entry>Pré Traduzido</entry><entry>Descrição</entry><entry>Traduzida</entry><entry>Nome</entry></row>
+<row><entry>es_CO</entry><entry>104</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Tarea</entry></row>
+<row><entry>es_CO</entry><entry>105</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Flujo de Trabajo</entry></row>
+<row><entry>es_CO</entry><entry>106</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Proceso</entry></row>
+<row><entry>es_CO</entry><entry>107</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Error</entry></row>
+<row><entry>es_CO</entry><entry>110</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Mostrar solo un Registro</entry></row>
+<row><entry>es_CO</entry><entry>111</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Mantenimiento</entry></row>
+<row><entry>es_CO</entry><entry>113</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Sólo Consulta</entry></row>
+<row><entry>es_CO</entry><entry>114</entry><entry> </entry><entry> </entry><entry>Tipo de Tasa de Conversión TRM</entry><entry>true</entry><entry>TRM</entry></row>
+<row><entry>es_CO</entry><entry>165</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Completo</entry></row>
+<row><entry>es_CO</entry><entry>166</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Aprobado</entry></row>
+<row><entry>es_CO</entry><entry>168</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>No Aprobado</entry></row>
+<row><entry>es_CO</entry><entry>177</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Cerrado</entry></row>
+<row><entry>es_CO</entry><entry>189</entry><entry> </entry><entry> </entry><entry>Sin acción</entry><entry>true</entry><entry>&lt;
+Ninguno&gt;
+</entry></row>
+<row><entry>es_CO</entry><entry>194</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Sistema+Grupo Empresarial</entry></row>
+<row><entry>es_CO</entry><entry>217</entry><entry> </entry><entry> </entry><entry>Después del cobro</entry><entry>true</entry><entry>Después del cobro</entry></row>
+<row><entry>es_CO</entry><entry>229</entry><entry> </entry><entry> </entry><entry>Prioridad Alta</entry><entry>true</entry><entry>Alta</entry></row>
+<row><entry>es_CO</entry><entry>252</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Diariamente</entry></row>
+<row><entry>es_CO</entry><entry>268</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Error</entry></row>
+<row><entry>es_CO</entry><entry>270</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Información</entry></row>
+<row><entry>es_CO</entry><entry>271</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>&lt;
+Sin Acción&gt;
+</entry></row>
+<row><entry>es_CO</entry><entry>273</entry><entry> </entry><entry> </entry><entry>Cuenta Natural</entry><entry>true</entry><entry>Cuenta</entry></row>
+<row><entry>es_CO</entry><entry>276</entry><entry> </entry><entry> </entry><entry>Transacción de la Organización</entry><entry>true</entry><entry>Org. Transacción</entry></row>
+<row><entry>es_CO</entry><entry>277</entry><entry> </entry><entry> </entry><entry>Localización Desde</entry><entry>true</entry><entry>Dirección Desde</entry></row>
+<row><entry>es_CO</entry><entry>280</entry><entry> </entry><entry> </entry><entry>Proyecto</entry><entry>true</entry><entry>Proyecto</entry></row>
+<row><entry>es_CO</entry><entry>281</entry><entry> </entry><entry> </entry><entry>Campaña de Mercadotecnia</entry><entry>true</entry><entry>Campaña</entry></row>
+<row><entry>es_CO</entry><entry>282</entry><entry> </entry><entry> </entry><entry>Lista Elemento 1</entry><entry>true</entry><entry>Lista Elemento 1</entry></row>
+<row><entry>es_CO</entry><entry>302</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Nota de Contabilidad</entry></row>
+<row><entry>es_CO</entry><entry>331</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Orden prepagada</entry></row>
+<row><entry>es_CO</entry><entry>338</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Mes</entry></row>
+<row><entry>es_CO</entry><entry>339</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Trimestre</entry></row>
+<row><entry>es_CO</entry><entry>340</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Año</entry></row>
+<row><entry>es_CO</entry><entry>377</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Producto</entry></row>
+<row><entry>es_CO</entry><entry>815</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry> 0% No Iniciado</entry></row>
+<row><entry>es_CO</entry><entry>825</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Trimestre</entry></row>
+<row><entry>es_CO</entry><entry>875</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Codigo 39 USD3 con suma de chequeo</entry></row>
+<row><entry>es_CO</entry><entry>893</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Cantidad Comprometida</entry></row>
+<row><entry>es_CO</entry><entry>53230</entry><entry> </entry><entry> </entry><entry>Permite configuración del sistema, grupo empresarial y organización</entry><entry>true</entry><entry>Organización</entry></row>
+<row><entry>es_CO</entry><entry>53240</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Nómina</entry></row>
+<row><entry>es_CO</entry><entry>53265</entry><entry> </entry><entry> </entry><entry>Componentes que se emiten en forma manual</entry><entry>true</entry><entry>Emisión</entry></row>
+<row><entry>es_CO</entry><entry>53271</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Reemplazar y Expirar</entry></row>
+<row><entry>es_CO</entry><entry>53315</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Documento - Despues de cerrar</entry></row>
+<row><entry>es_CO</entry><entry>53335</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Formato Exportación Embebido</entry></row>
+<row><entry>es_CO</entry><entry>53364</entry><entry> </entry><entry> </entry><entry>Entradas de División para Activos Fijos</entry><entry>true</entry><entry>Divisiones</entry></row>
+<row><entry>es_CO</entry><entry>53389</entry><entry> </entry><entry> </entry><entry>Negociado con efectivo</entry><entry>true</entry><entry>Negociado con efectivo</entry></row>
+<row><entry>es_CO</entry><entry>53399</entry><entry> </entry><entry> </entry><entry>Transacción acumulando el costo o saldo depreciación acumulada</entry><entry>true</entry><entry>Saldo</entry></row>
+<row><entry>es_CO</entry><entry>53407</entry><entry> </entry><entry> </entry><entry>Configuración de Contabilidad de activo modificada</entry><entry>true</entry><entry>Configuración</entry></row>
+<row><entry>es_CO</entry><entry>53428</entry><entry> </entry><entry> </entry><entry>Sub Cuenta para Valor del Elemento</entry><entry>true</entry><entry>Sub Cuenta</entry></row>
+<row><entry>es_CO</entry><entry>53540</entry><entry> </entry><entry> </entry><entry>Año para cuentas de P%26G, Total para cuentas de balance</entry><entry>true</entry><entry>Natural</entry></row>
+<row><entry>es_CO</entry><entry>53574</entry><entry> </entry><entry> </entry><entry>Utilice patrón de agendamiento estilo crontab</entry><entry>true</entry><entry>Patrón Agendamiento Crontab</entry></row>
+<row><entry>es_CO</entry><entry>225</entry><entry> </entry><entry> </entry><entry>Costo de flete incluido</entry><entry>true</entry><entry>Flete Incluido</entry></row>
+<row><entry>es_CO</entry><entry>226</entry><entry> </entry><entry> </entry><entry>Precio fijo de flete</entry><entry>true</entry><entry>Precio Fijo</entry></row>
+<row><entry>es_CO</entry><entry>233</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>No Redondear</entry></row>
+<row><entry>es_CO</entry><entry>237</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Decenas 10.00;
+ 20.00;
+ ..</entry></row>
+<row><entry>es_CO</entry><entry>245</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Domingo</entry></row>
+<row><entry>es_CO</entry><entry>246</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Lunes</entry></row>
+<row><entry>es_CO</entry><entry>248</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Miércoles</entry></row>
+<row><entry>es_CO</entry><entry>249</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Jueves</entry></row>
+<row><entry>es_CO</entry><entry>343</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Lista de conteo (con cantidad en libros)</entry></row>
+<row><entry>es_CO</entry><entry>344</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Lista de control</entry></row>
+<row><entry>es_CO</entry><entry>356</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Enviado</entry></row>
+<row><entry>es_CO</entry><entry>357</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Con acuse de recibo</entry></row>
+<row><entry>es_CO</entry><entry>358</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Contestado (completo)</entry></row>
+<row><entry>es_CO</entry><entry>360</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Orden de Compra</entry></row>
+<row><entry>es_CO</entry><entry>363</entry><entry> </entry><entry> </entry><entry>Formas Especiales</entry><entry>true</entry><entry>Forma</entry></row>
+<row><entry>es_CO</entry><entry>374</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Manual</entry></row>
+<row><entry>es_CO</entry><entry>378</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Tercero</entry></row>
+<row><entry>es_CO</entry><entry>381</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Tasas de Cambio</entry></row>
+<row><entry>es_CO</entry><entry>383</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Posición Fija</entry></row>
+<row><entry>es_CO</entry><entry>385</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Separado por Tabuladores</entry></row>
+<row><entry>es_CO</entry><entry>386</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>XML</entry></row>
+<row><entry>es_CO</entry><entry>388</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Número</entry></row>
+<row><entry>es_CO</entry><entry>389</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Fecha</entry></row>
+<row><entry>es_CO</entry><entry>390</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Constante</entry></row>
+<row><entry>es_CO</entry><entry>394</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>= 0</entry></row>
+<row><entry>es_CO</entry><entry>395</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>&lt;
+ 0</entry></row>
+<row><entry>es_CO</entry><entry>403</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Ventas</entry></row>
+<row><entry>es_CO</entry><entry>406</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Autorización Verbal</entry></row>
+<row><entry>es_CO</entry><entry>407</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Autorización</entry></row>
+<row><entry>es_CO</entry><entry>408</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Anular</entry></row>
+<row><entry>es_CO</entry><entry>411</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Transferencia hacia/desde cuenta banco/caja</entry></row>
+<row><entry>es_CO</entry><entry>412</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Factura</entry></row>
+<row><entry>es_CO</entry><entry>413</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Gasto General</entry></row>
+<row><entry>es_CO</entry><entry>415</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Cargos</entry></row>
+<row><entry>es_CO</entry><entry>416</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Diferencia</entry></row>
+<row><entry>es_CO</entry><entry>422</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Información</entry></row>
+<row><entry>es_CO</entry><entry>423</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Servicio</entry></row>
+<row><entry>es_CO</entry><entry>424</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Cargo</entry></row>
+<row><entry>es_CO</entry><entry>425</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Cuenta</entry></row>
+<row><entry>es_CO</entry><entry>428</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Garantía</entry></row>
+<row><entry>es_CO</entry><entry>429</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Otro</entry></row>
+<row><entry>es_CO</entry><entry>456</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Calculado</entry></row>
+<row><entry>es_CO</entry><entry>457</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Logros</entry></row>
+<row><entry>es_CO</entry><entry>469</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Sólo Total de Créditos</entry></row>
+<row><entry>es_CO</entry><entry>553</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Grupo Alternativo 1</entry></row>
+<row><entry>es_CO</entry><entry>580</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Sin Verificación de Crédito</entry></row>
+<row><entry>es_CO</entry><entry>640</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>En Grupo Alternativo 6</entry></row>
+<row><entry>es_CO</entry><entry>690</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Valor de Documento</entry></row>
+<row><entry>es_CO</entry><entry>695</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Grupo Empresarial</entry></row>
+<row><entry>es_CO</entry><entry>726</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Confidencial Tercero</entry></row>
+<row><entry>es_CO</entry><entry>775</entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Batch/Lote</entry></row></tbody>
+</tgroup>
+</table>

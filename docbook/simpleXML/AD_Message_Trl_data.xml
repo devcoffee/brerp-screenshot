@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Mensagem **</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Mensagem</entry><entry>Checked</entry><entry>Pré Traduzido</entry><entry>Traduzida</entry><entry>Texto de Mensagem</entry><entry>Dicas de Mensagem</entry></row>
+<row><entry>es_CO</entry><entry>131</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Visor de Contabilidad</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>143</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Cantidad desde</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>144</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Cantidad hasta</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>145</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Aplicación</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>146</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Aplicado</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>154</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Ajuste automático</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>155</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Guardar automáticamente</entry><entry>Guarda automáticamente los datos</entry></row>
+<row><entry>es_CO</entry><entry>157</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Selecciones disponibles</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>167</entry><entry> </entry><entry> </entry><entry>true</entry><entry>%26Cancelar Consulta</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>172</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Cargo creado</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>173</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Crear cargo desde cuenta contable</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>177</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Ciudad</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>181</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Combinación</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>191</entry><entry> </entry><entry> </entry><entry>true</entry><entry>País</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>192</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Crear</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>195</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Fecha de expiración de la tarjeta de crédito debe estar en formato "MMAA"</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>196</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Fecha de expiración de la tarjeta de crédito tiene mes no válido</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>217</entry><entry> </entry><entry> </entry><entry>true</entry><entry>¿Desea borrar éste registro?</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>219</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Descripción</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>229</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Copiar</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>230</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Entrar en detalle</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>258</entry><entry> </entry><entry> </entry><entry>true</entry><entry>&lt;
+Seleccionar Archivos a Cargar&gt;
+</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>266</entry><entry> </entry><entry> </entry><entry>true</entry><entry>txt - Archivo de texto delimitado por tabuladores</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>340</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Cambiar mono/multi registro</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>379</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Otro proceso para éste registro está activo, reintente más tarde</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>532</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Mover columnas deseadas hacia el cuadro seleccionado y ponga secuencia a su orden</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>555</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Proceso completado exitosamente</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>573</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Actualice datos para registro copiado y guardar o ignorar</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>589</entry><entry> </entry><entry> </entry><entry>true</entry><entry>¿Imprimir/exportar pagos generados?</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>590</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Definición Inicial de Grupo Empresarial</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>592</entry><entry> </entry><entry> </entry><entry>true</entry><entry>%26Código</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>593</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Valor de preferencia</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>594</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Valor de preferencia borrado</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>764</entry><entry> </entry><entry> </entry><entry>true</entry><entry>La cuenta usada es controlada por documentos - no la utilice para notas de contabilidad manuales.</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>829</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Presione OK para iniciar 'Despues de la Migración, El proceso ........ tomará unos minutos</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>850</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Usted esta suscrito a esta Area de interes. Para desinscribirse, ingrese al sistema, vaya a Area de interes y de click en Des-Incribirse  
+</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52014</entry><entry> </entry><entry> </entry><entry>true</entry><entry>20 dólares</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52033</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Añadir Cliente para la tarjeta de fidelidad</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52040</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Un error ha ocurrido mientras se intentaba comunicación con el servidor. Por favor, inténtelo de nuevo.</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52049</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Nombre de Aplicación</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52064</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Cálculo de periodo y Curr.</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52081</entry><entry> </entry><entry> </entry><entry>true</entry><entry>La Caja PDV ha sido ajustada.</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52083</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Historia de Caja PDV</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52096</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Monto del cheque ofertado.</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52110</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Completado</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52111</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Continuar</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>203</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Conversión de moneda</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>231</entry><entry> </entry><entry> </entry><entry>true</entry><entry>TEF</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>233</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Email a soporte</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>234</entry><entry> </entry><entry> </entry><entry>true</entry><entry>%26Editar</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>237</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Entrar consulta</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>239</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Ambiente</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>240</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Error: </entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>278</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Primer registro</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>280</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Desde</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>281</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Función Callout no se encontró</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>282</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Función Callout tiene error</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>283</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Generado</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>284</entry><entry> </entry><entry> </entry><entry>true</entry><entry>%26Ir</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>595</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Valor de preferencia ajustado</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>597</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Valor de preferencia no fue ajustado</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>598</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Para nivel</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>610</entry><entry> </entry><entry> </entry><entry>true</entry><entry>La base de datos no está disponible en estos momentos</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52118</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Nota Crédito</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52125</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Monto actual de caja registradora</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52132</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Información del Cliente</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52150</entry><entry> </entry><entry> </entry><entry>true</entry><entry>¿Desea mostrar todos los registros?</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52166</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Habilitar Impresión</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52180</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Plantilla de vestido</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52181</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Generar Comisión</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52229</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Valor de nuevo atributo</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52240</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Ningun proveedor fue encontrado por</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52247</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Valor viejo del atributo.</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52257</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Detalles de Pago</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52269</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Inventario</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52272</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Información PDV (Personalizada)</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52292</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Información de Producto</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52300</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Cantidad devuelta al proveedor</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52306</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Remover cliente para carta de fidelidad</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52317</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Buscar</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52320</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Buscar Producto</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52332</entry><entry> </entry><entry> </entry><entry>true</entry><entry>NOTA: - Los pagos en efectivo tendrán efecto solo cuando la caja PDV se cierre.</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52338</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Artículos de bajo movimiento</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52356</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Historia de Ventas a crédito</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52370</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Historia Nota de bienes devueltos</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52385</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Reporte de ventas por terminal</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52399</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Reporte de Moviemiento de inventario</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52414</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Hoy</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52418</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Pagos no asignados</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52429</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Vista por</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52444</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Precio Estándar</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>52453</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Terminales</entry><entry>Mantener Terminales PDV</entry></row>
+<row><entry>es_CO</entry><entry>52475</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Reporte de Existencias de Ventas</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>53001</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Disponibilidad de artículos en otros almacenes</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>53120</entry><entry> </entry><entry> </entry><entry>true</entry><entry>b</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>222</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Descuentos</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>225</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Desplegar información de documento</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>226</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Desplegar cantidad</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>285</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Ir a Página</entry><entry> </entry></row>
+<row><entry>es_CO</entry><entry>287</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Saludo</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

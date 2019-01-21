@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Saudação **</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Saudação</entry><entry>Saudação</entry><entry>Traduzida</entry><entry>Nome</entry></row>
+<row><entry>pt_BR</entry><entry>100</entry><entry>Mr</entry><entry>true</entry><entry>Mr</entry></row>
+<row><entry>es_CO</entry><entry>100</entry><entry>Sr</entry><entry>true</entry><entry>Sr</entry></row></tbody>
+</tgroup>
+</table>

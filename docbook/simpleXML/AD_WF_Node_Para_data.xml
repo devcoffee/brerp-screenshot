@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Parâmetro de Nó de Fluxo de Trabalho</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Parâmetro de Processo</entry><entry>Nó</entry><entry>Parâmetro de Nó de Fluxo de Trabalho</entry><entry>Nome do Atributo</entry><entry>Valor de Atributo</entry><entry>Descrição</entry><entry>Tipo de Entidade</entry></row>
+<row><entry>479</entry><entry>179</entry><entry>100</entry><entry>M_Warehouse_ID</entry><entry>@#M_Warehouse_ID@</entry><entry> </entry><entry>D</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2002-02-08 20:38:26.0</para><para> <emphasis>Atualizado:</emphasis>2000-01-02 00:00:00.0</para>
+<title>Formulário: Confrontando Pedido de Compra-Recibo-Fatura</title> 
+ <para><emphasis> Descrição: </emphasis>Confrontar Pedidos de Compra, Recibos, Notas Fiscais de Fornecedores</para><para><emphasis>Comentário/Ajuda:</emphasis>Certifique-se que os Recibos e Faturas sejam processados. Se você deseja confrontar entregas parciais, Certifique-se que "Mesma Quantidade" não esteja selecionado.</para>
+ </chapter>

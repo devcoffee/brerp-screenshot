@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Área de Interesse</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Descrição</entry><entry>Auto-Serviço</entry><entry>Nome</entry><entry>Área de Interesse</entry><entry>Chave de Busca</entry></row>
+<row><entry> </entry><entry>true</entry><entry>Tree Planting</entry><entry>100</entry><entry>TreePanting</entry></row>
+<row><entry> </entry><entry>true</entry><entry>Lawn Care</entry><entry>101</entry><entry>LawnCare</entry></row></tbody>
+</tgroup>
+</table>

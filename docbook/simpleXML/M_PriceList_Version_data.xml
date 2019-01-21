@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Versão da Lista de Preço</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Descrição</entry><entry>Esquema de Descontos</entry><entry>Lista de Preço</entry><entry>Lista de Preços Base</entry><entry>Versão da Lista de Preço</entry><entry>Nome</entry><entry>Criar</entry><entry>Válido desde</entry></row>
+<row><entry> </entry><entry>100</entry><entry>103</entry><entry>103</entry><entry>105</entry><entry>Export 2003</entry><entry>N</entry><entry>2003-01-01 00:00:00.0</entry></row>
+<row><entry>Current price list - we buy with 30% from TreeFarm and 40% from SeedFarm - Will get another 10% at the end of the year</entry><entry>101</entry><entry>102</entry><entry> </entry><entry>102</entry><entry>Purchase 2001</entry><entry>N</entry><entry>2001-05-21 00:00:00.0</entry></row>
+<row><entry>Our Standard price is 5% below list - the Limit price 10% - for all products - We add $5 on oak trees</entry><entry>100</entry><entry>101</entry><entry>102</entry><entry>101</entry><entry>Standard 2001</entry><entry> </entry><entry>2001-01-01 00:00:00.0</entry></row>
+<row><entry>Current price list - we buy with 30% from TreeFarm and 40% from SeedFarm, 10% on Chemicals, 20% tools and 10% on patio</entry><entry>101</entry><entry>102</entry><entry> </entry><entry>103</entry><entry>Purchase 2003</entry><entry>N</entry><entry>2003-01-21 00:00:00.0</entry></row>
+<row><entry>Price list for customers</entry><entry>100</entry><entry>101</entry><entry>103</entry><entry>104</entry><entry>Standard 2003</entry><entry>N</entry><entry>2003-01-21 00:00:00.0</entry></row>
+<row><entry> </entry><entry>100</entry><entry>1000002</entry><entry> </entry><entry>1000000</entry><entry>Vendas BRL</entry><entry>N</entry><entry>2014-01-01 00:00:00.0</entry></row>
+<row><entry> </entry><entry>101</entry><entry>1000003</entry><entry>103</entry><entry>1000001</entry><entry>Compras BRL</entry><entry>N</entry><entry>2014-01-01 00:00:00.0</entry></row>
+<row><entry> </entry><entry>1000000</entry><entry>1000005</entry><entry> </entry><entry>1000003</entry><entry>VENDA</entry><entry>N</entry><entry>2000-01-01 00:00:00.0</entry></row>
+<row><entry> </entry><entry>1000000</entry><entry>1000004</entry><entry> </entry><entry>1000002</entry><entry>Padrão</entry><entry> </entry><entry>2000-01-01 00:00:00.0</entry></row>
+<row><entry> </entry><entry>1000000</entry><entry>1000006</entry><entry> </entry><entry>1000004</entry><entry>COMPRA</entry><entry>N</entry><entry>2000-01-01 00:00:00.0</entry></row>
+<row><entry> </entry><entry>1000000</entry><entry>5000000</entry><entry>1000004</entry><entry>5000000</entry><entry>COMPRA $$</entry><entry>N</entry><entry>2018-01-01 00:00:00.0</entry></row>
+<row><entry> </entry><entry>1000000</entry><entry>5000001</entry><entry>1000003</entry><entry>5000001</entry><entry>2018-01-11 15:03:07</entry><entry>N</entry><entry>2018-01-11 00:00:00.0</entry></row>
+<row><entry> </entry><entry>1000000</entry><entry>5000002</entry><entry> </entry><entry>5000002</entry><entry>VENDA MARKUP</entry><entry>N</entry><entry>2018-03-01 00:00:00.0</entry></row></tbody>
+</tgroup>
+</table>

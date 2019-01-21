@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Processo de Fluxo de Trabalho</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Mensagem</entry><entry>Tabela</entry><entry>Usuário/Contato</entry><entry>Processo de Fluxo de Trabalho</entry><entry>Responsável pelo Fluxo de Trabalho</entry><entry>Fluxo de Trabalho</entry><entry>Prioridade</entry><entry>Processado</entry><entry>Processar Agora</entry><entry>ID do Registro</entry><entry>Texto de Mensagem</entry><entry>Estado do Fluxo de Trabalho</entry></row>
+<row><entry> </entry><entry>291</entry><entry>100</entry><entry>50000</entry><entry>101</entry><entry>131</entry><entry>0</entry><entry>false</entry><entry>false</entry><entry>50000</entry><entry> </entry><entry>OS</entry></row>
+<row><entry> </entry><entry>291</entry><entry>100</entry><entry>50001</entry><entry>101</entry><entry>131</entry><entry>0</entry><entry>false</entry><entry>false</entry><entry>50001</entry><entry> </entry><entry>OS</entry></row>
+<row><entry> </entry><entry>291</entry><entry>100</entry><entry>50002</entry><entry>101</entry><entry>131</entry><entry>0</entry><entry>false</entry><entry>false</entry><entry>50002</entry><entry> </entry><entry>OS</entry></row>
+<row><entry> </entry><entry>291</entry><entry>100</entry><entry>50003</entry><entry>101</entry><entry>131</entry><entry>0</entry><entry>false</entry><entry>false</entry><entry>50003</entry><entry> </entry><entry>OS</entry></row>
+<row><entry> </entry><entry>291</entry><entry>100</entry><entry>50004</entry><entry>101</entry><entry>131</entry><entry>0</entry><entry>false</entry><entry>false</entry><entry>50004</entry><entry> </entry><entry>OS</entry></row>
+<row><entry> </entry><entry>291</entry><entry>100</entry><entry>50005</entry><entry>101</entry><entry>131</entry><entry>0</entry><entry>false</entry><entry>false</entry><entry>50005</entry><entry> </entry><entry>OS</entry></row>
+<row><entry> </entry><entry>291</entry><entry>100</entry><entry>50007</entry><entry>101</entry><entry>131</entry><entry>0</entry><entry>false</entry><entry>false</entry><entry>50007</entry><entry> </entry><entry>OS</entry></row>
+<row><entry> </entry><entry>291</entry><entry>100</entry><entry>50008</entry><entry>101</entry><entry>131</entry><entry>0</entry><entry>false</entry><entry>false</entry><entry>50008</entry><entry> </entry><entry>OS</entry></row>
+<row><entry> </entry><entry>291</entry><entry>100</entry><entry>50009</entry><entry>101</entry><entry>131</entry><entry>0</entry><entry>false</entry><entry>false</entry><entry>50009</entry><entry> </entry><entry>OS</entry></row>
+<row><entry> </entry><entry>321</entry><entry>100</entry><entry>1000000</entry><entry>101</entry><entry>127</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>1000002</entry><entry>620000: Valor da Aprovação=0.0 (#47) - I 1000002 2015-02-28 00:00:00.0</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000020</entry><entry>1000001</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>1000000</entry><entry>800000: Total Geral=1727.11
+ - Lista de Preço Diferente da configuração do Tipo de Documento
+ - 800000: Total Geral=1727.11 (#2)
+ - Lista de Preço Diferente da configuração do Tipo de Documento</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000020</entry><entry>1000002</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>1000000</entry><entry>800000: Total Geral=1727.11</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000020</entry><entry>1000003</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>1000000</entry><entry>800000: Total Geral=1813.46</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000020</entry><entry>1000004</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>1000000</entry><entry>800000: Total Geral=1813.46</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>100</entry><entry>1000005</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>1000000</entry><entry>1000000: Total Geral=1813.46 (#2)
+ - @M_MatchPO_ID@#2</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>100</entry><entry>1000006</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>1000000</entry><entry>1000000: (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>100</entry><entry>5000010</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000001</entry><entry>500001: (#1)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>321</entry><entry>100</entry><entry>5000000</entry><entry>101</entry><entry>127</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000000</entry><entry>660000: Valor da Aprovação=0 (#1)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000019</entry><entry>5000006</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000000</entry><entry>50000: Total Geral=45975.60
+ - @M_AttributeSet_ID@ @IsMandatory@ (@Line@ #10, @M_Product_ID@=1000011)
+ - 50000: Total Geral=45975.60 (#1)
+ - @M_AttributeSet_ID@ @IsMandatory@ (@Line@ #10, @M_Product_ID@=1000011)</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>321</entry><entry>100</entry><entry>5000001</entry><entry>101</entry><entry>127</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000001</entry><entry>660001: Valor da Aprovação=0 (#1)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>321</entry><entry>100</entry><entry>5000002</entry><entry>101</entry><entry>127</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000002</entry><entry>660002: Valor da Aprovação=0 (#47)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>321</entry><entry>100</entry><entry>5000003</entry><entry>101</entry><entry>127</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000003</entry><entry>660003: Valor da Aprovação=0 (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000019</entry><entry>5000007</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000000</entry><entry>50000: Total Geral=45975.60</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>321</entry><entry>100</entry><entry>5000004</entry><entry>101</entry><entry>127</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000004</entry><entry>660004: Valor da Aprovação=0 (#7)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>335</entry><entry>100</entry><entry>5000013</entry><entry>101</entry><entry>120</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000000</entry><entry>1000000: Valor do Pagamento=0,Valor da Baixa=0.0 - Cheque recebido de cliente</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000019</entry><entry>5000005</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000000</entry><entry>50000: Total Geral=45975.60
+ - @PeriodClosed@
+ - 50000: Total Geral=45975.60
+ - @PeriodClosed@</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000023</entry><entry>5000011</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000002</entry><entry>800001: Total Geral=5596.50</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>1000019</entry><entry>5000008</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000000</entry><entry>500000: (#1)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>100</entry><entry>5000009</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000001</entry><entry>50001: Total Geral=30000</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>335</entry><entry>100</entry><entry>5000015</entry><entry>101</entry><entry>120</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000003</entry><entry>1000002: Valor do Pagamento=50000,Valor da Baixa=0.0 - Cheque recebido de cliente Correto</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>1000023</entry><entry>5000012</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000002</entry><entry>1000001: (#1)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>335</entry><entry>100</entry><entry>5000014</entry><entry>101</entry><entry>120</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000000</entry><entry>1000000: Valor do Pagamento=0,Valor da Baixa=0.0 - Cheque recebido de cliente
+ - 1000000^ - @C_AllocationHdr_ID@: 490000</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>335</entry><entry>100</entry><entry>5000016</entry><entry>101</entry><entry>120</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000004</entry><entry>1000003: Valor do Pagamento=50000.00,Valor da Baixa=0</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>5000003</entry><entry>5000017</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000005</entry><entry>800003: Total Geral=33944.00
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000023</entry><entry>5000163</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000024</entry><entry>800020: Total Geral=1060.00</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000023</entry><entry>5000165</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000045</entry><entry>1000041: Total Geral=1060.00 (#1)
+ - @M_MatchInv_ID@#1  @M_MatchPO_ID@#1</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>5000003</entry><entry>5000018</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000005</entry><entry>800003: Total Geral=33944.00
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000026</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000003</entry><entry>1000002: Total Geral=45916.00 (#2) - 23969257000151
+ - Validate: Indicador de Escala Relevante - det_prod_indEscala Invalid value -  - Reference_ID=1500566 - N - S
+ - 1000002: Total Geral=45916.00 (#2) - 23969257000151
+ - Validate: Indicador de Escala Relevante - det_prod_indEscala Invalid value -  - Reference_ID=1500566 - N - S</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>259</entry><entry>5000003</entry><entry>5000019</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000005</entry><entry>800003: Total Geral=45916.00
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000027</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000003</entry><entry>1000002: Total Geral=45916.00 (#2) - 23969257000151
+ - @M_MatchInv_ID@#2  @M_MatchPO_ID@#2</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>5000003</entry><entry>5000020</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000005</entry><entry>800003: Total Geral=45916.00
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>1120289</entry><entry>100</entry><entry>5000032</entry><entry>101</entry><entry>1120008</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000005</entry><entry>1999020: Total Geral=42916.00 (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>5000003</entry><entry>5000021</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000006</entry><entry>800004: Total Geral=100000.00
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>259</entry><entry>5000003</entry><entry>5000028</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000006</entry><entry>800004: Total Geral=129900.00</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>5000003</entry><entry>5000022</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000006</entry><entry>800004: Total Geral=120900.00
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297
+ - org.postgresql.util.PSQLException: ERRO: coluna "pag_card_tband" não existe
+  Posição: 297</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>259</entry><entry>5000003</entry><entry>5000023</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000005</entry><entry>800003: Total Geral=45916.00</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>1120289</entry><entry>100</entry><entry>5000029</entry><entry>101</entry><entry>1120008</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000004</entry><entry>1999020: Total Geral=42916.00 (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>5000003</entry><entry>5000024</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000005</entry><entry>1000002: (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>5000003</entry><entry>5000036</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000007</entry><entry>1000003: (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000025</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000003</entry><entry>1000002: Total Geral=45916.00 (#2)
+ - CNPJ da chave difere com o CNPJ do parceiro
+ - 1000002: Total Geral=45916.00 (#2)
+ - CNPJ da chave difere com o CNPJ do parceiro</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000033</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000005</entry><entry>1000004: Total Geral=45916.00 (#2)
+ - 1000005</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000030</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000003</entry><entry>1000002: Total Geral=45916.00 (#2) - 23969257000151
+ - 1000003</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000031</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000005</entry><entry>1000004: Total Geral=45916.00 (#2)
+ - @M_MatchInv_ID@#2  @M_MatchPO_ID@#2</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000038</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000008</entry><entry>1000007: Total Geral=129900.00 (#2)
+ - Validate: Indicador de Escala Relevante - det_prod_indEscala Invalid value -  - Reference_ID=1500566 - N - S
+ - 1000007: Total Geral=129900.00 (#2)
+ - Validate: Indicador de Escala Relevante - det_prod_indEscala Invalid value -  - Reference_ID=1500566 - N - S</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000034</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000007</entry><entry>1000006: Total Geral=45916.00 (#2)
+ - Necessário preencher o campo Modelo da NF
+ - 1000006: Total Geral=45916.00 (#2)
+ - Necessário preencher o campo Modelo da NF</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000035</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000007</entry><entry>1000006: Total Geral=45916.00 (#2)
+ - @M_MatchInv_ID@#2  @M_MatchPO_ID@#2</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000037</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000008</entry><entry>1000007: Total Geral=129900.00 (#2)
+ - Outra Fatura (Fornecedor) com o mesmo Número e Série já existe para este Parceiro de Negócios
+ - 1000007: Total Geral=129900.00 (#2)
+ - Outra Fatura (Fornecedor) com o mesmo Número e Série já existe para este Parceiro de Negócios</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000040</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000008</entry><entry>1000007: Total Geral=129900.00 (#2)
+ - @M_MatchInv_ID@#2  @M_MatchPO_ID@#2</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>5000003</entry><entry>5000039</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000008</entry><entry>1000007: Total Geral=129900.00 (#2)
+ - CST/CSOSN não preenchido na Linha.: 0, Imposto:ICMSPROD
+ - 1000007: Total Geral=129900.00 (#2)
+ - CST/CSOSN não preenchido na Linha.: 0, Imposto:ICMSPROD</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000022</entry><entry>5000041</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000007</entry><entry>800005: Total Geral=2946.00</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>1000022</entry><entry>5000042</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000009</entry><entry>1000004: (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>1000023</entry><entry>5000164</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000033</entry><entry>1000022: (#1)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000043</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000009</entry><entry>1000008: Total Geral=3054.00 (#2)
+ - Necessário preencher o campo Modelo da NF
+ - 1000008: Total Geral=2946.00 (#2)
+ - Necessário preencher o campo Modelo da NF</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>319</entry><entry>1000022</entry><entry>5000065</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000013</entry><entry>1000005: (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>1000022</entry><entry>5000125</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000024</entry><entry>1000014: (#1) - Teste controlado com pc medio primeiro produto</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000023</entry><entry>5000159</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000023</entry><entry>800019: Total Geral=2356.00</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000044</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000009</entry><entry>1000008: Total Geral=3054.00 (#2)
+ - Validate: Indicador de Escala Relevante - det_prod_indEscala Invalid value -  - Reference_ID=1500566 - N - S
+ - 1000008: Total Geral=2946.00 (#2)
+ - Validate: Indicador de Escala Relevante - det_prod_indEscala Invalid value -  - Reference_ID=1500566 - N - S</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000045</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000009</entry><entry>1000008: Total Geral=2946.00 (#2)
+ - @M_MatchInv_ID@#2  @M_MatchPO_ID@#2</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>335</entry><entry>5000000</entry><entry>5000046</entry><entry>101</entry><entry>120</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000005</entry><entry>1000004: Valor do Pagamento=100,Valor da Baixa=0</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000067</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000015</entry><entry>1000011: Total Geral=3054.00 (#2)
+ - @M_MatchInv_ID@#2  @M_MatchPO_ID@#2</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>1120289</entry><entry>100</entry><entry>5000047</entry><entry>101</entry><entry>1120008</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000011</entry><entry>1999320: Total Geral=3000.00 (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000048</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000009</entry><entry>1000008: Total Geral=2946.00 (#2)
+ - 1000009</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000051</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000011</entry><entry>1000010: Total Geral=3054.00 (#2)
+ - @M_MatchInv_ID@#2  @M_MatchPO_ID@#2</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000023</entry><entry>5000059</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000010</entry><entry>50004: Total Geral=1446.00</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000023</entry><entry>5000060</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000010</entry><entry>50004: Total Geral=0.00</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>1000023</entry><entry>5000062</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000012</entry><entry>500004: (#1)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000022</entry><entry>5000064</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000011</entry><entry>800007: Total Geral=2946.00</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>335</entry><entry>5000000</entry><entry>5000049</entry><entry>101</entry><entry>120</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000006</entry><entry>1000005: Valor do Pagamento=100,Valor da Baixa=0</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000071</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000016</entry><entry>1000012: Total Geral=1451.56 (#2)
+ - Falha ao validar arquivo XML: &lt;
+hr/&gt;
+ ERRO: cvc-complex-type.2.4.a: Foi detectado um conteúdo inválido começando com o elemento vBC. Era esperado um dos 
+{
+"http://www.portalfiscal.inf.br/nfe":modBC}
+.&lt;
+hr/&gt;
+ ERRO: cvc-complex-type.2.4.a: Foi detectado um conteúdo inválido começando com o elemento vBC. Era esperado um dos 
+{
+"http://www.portalfiscal.inf.br/nfe":modBC}
+.
+ - 1000012: Total Geral=1451.56 (#2)
+ - Falha ao validar arquivo XML: &lt;
+hr/&gt;
+ ERRO: cvc-complex-type.2.4.a: Foi detectado um conteúdo inválido começando com o elemento vBC. Era esperado um dos 
+{
+"http://www.portalfiscal.inf.br/nfe":modBC}
+.&lt;
+hr/&gt;
+ ERRO: cvc-complex-type.2.4.a: Foi detectado um conteúdo inválido começando com o elemento vBC. Era esperado um dos 
+{
+"http://www.portalfiscal.inf.br/nfe":modBC}
+.</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000023</entry><entry>5000063</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000014</entry><entry>100004: Total Geral=1554.00 (#3)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000050</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000011</entry><entry>1000010: Total Geral=3054.00 (#2)
+ - Necessário preencher o campo Modelo da NF
+ - 1000010: Total Geral=2946.00 (#2)
+ - Necessário preencher o campo Modelo da NF</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000023</entry><entry>5000052</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000009</entry><entry>50003: Total Geral=1446.00</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>1000023</entry><entry>5000053</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000010</entry><entry>500002: (#1)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000066</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000015</entry><entry>1000011: Total Geral=3054.00 (#2)
+ - Necessário preencher o campo Modelo da NF
+ - 1000011: Total Geral=2946.00 (#2)
+ - Necessário preencher o campo Modelo da NF</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000023</entry><entry>5000054</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000012</entry><entry>100002: Total Geral=1446.00 (#3)
+ - Linha.: 0: CSOSN Invalido
+ - 100002: Total Geral=1446.00 (#3)
+ - Linha.: 0: CSOSN Invalido</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000072</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000016</entry><entry>1000012: Total Geral=1451.56 (#2)
+ - @M_MatchInv_ID@#2  @M_MatchPO_ID@#2</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000023</entry><entry>5000055</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000012</entry><entry>100002: Total Geral=1554.00 (#3)
+ - Linha.: 0: CSOSN Invalido
+ - 100002: Total Geral=1446.00 (#3)
+ - Linha.: 0: CSOSN Invalido</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000022</entry><entry>5000068</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000012</entry><entry>800008: Total Geral=1451.56</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000023</entry><entry>5000056</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000012</entry><entry>100002: Total Geral=1554.00 (#3)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000023</entry><entry>5000057</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000010</entry><entry>50004: Total Geral=1446.00</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>1000022</entry><entry>5000069</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000015</entry><entry>1000006: (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>319</entry><entry>1000023</entry><entry>5000058</entry><entry>101</entry><entry>117</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000011</entry><entry>500003: (#1)
+ - Linha Núm. 10: The Padrão warehouse does not allow negative inventory for Product = 1000066_Produto Rev Nacional – Deson. ICMS 30%, ASI = 0, Locator = Padrão (Shortage of 30)
+
+ - 500003: (#1)
+ - Linha Núm. 10: The Padrão warehouse does not allow negative inventory for Product = 1000066_Produto Rev Nacional – Deson. ICMS 30%, ASI = 0, Locator = Padrão (Shortage of 30)
+</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>259</entry><entry>1000023</entry><entry>5000061</entry><entry>101</entry><entry>116</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000010</entry><entry>50004: Total Geral=1446.00</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>1120289</entry><entry>100</entry><entry>5000074</entry><entry>101</entry><entry>1120008</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000020</entry><entry>1: Total Geral=1451.55 (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>1120289</entry><entry>100</entry><entry>5000073</entry><entry>101</entry><entry>1120008</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000020</entry><entry>1: Total Geral=1111.66 (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000126</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000032</entry><entry>1000028: Total Geral=21.20 (#1) - Teste controlado com pc medio primeiro produto
+ - @M_MatchInv_ID@#1  @M_MatchPO_ID@#1</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>318</entry><entry>1000022</entry><entry>5000070</entry><entry>101</entry><entry>118</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000016</entry><entry>1000012: Total Geral=1451.56 (#2)
+ - Validate: Indicador de Escala Relevante - det_prod_indEscala Invalid value -  - Reference_ID=1500566 - N - S
+ - 1000012: Total Geral=1451.56 (#2)
+ - Validate: Indicador de Escala Relevante - det_prod_indEscala Invalid value -  - Reference_ID=1500566 - N - S</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>1120289</entry><entry>100</entry><entry>5000077</entry><entry>101</entry><entry>1120008</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000020</entry><entry>1: Total Geral=1451.55 (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>1120289</entry><entry>100</entry><entry>5000075</entry><entry>101</entry><entry>1120008</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000020</entry><entry>1: Total Geral=1451.55 (#2)</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>1120289</entry><entry>100</entry><entry>5000076</entry><entry>101</entry><entry>1120008</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>5000020</entry><entry>1: Total Geral=1451.55 (#2)</entry><entry>CC</entry></row></tbody>
+</tgroup>
+</table>

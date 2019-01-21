@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2008-09-08 22:22:38.0</para><para> <emphasis>Atualizado:</emphasis>2008-09-08 22:22:38.0</para>
+ 
+ <title>Processo:  Habilitar Seqüencia Nativa</title> 
+ <para><emphasis> Descrição: </emphasis>Habilitar Seqüencia Nativa</para><para><emphasis> Comentário/Ajuda: </emphasis>Este processo permite habilitar sequencias nativas baseadas nos valores atuais da AD_Sequence.
+
+Este processo deve ser executado quando os usuários não estiverem conectados.</para>
+<para> SEM PARÂMETROS </para>
+ </chapter>

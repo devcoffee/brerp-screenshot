@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Configuração de Exportação de Movimentos Contábeis</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Elemento</entry><entry>Formato do Arquivo</entry><entry>Configuração de Exportação de Movimentos Contábeis</entry><entry>Elemento</entry><entry>Processar Agora</entry><entry>Tipo do Arquivo</entry><entry>Descrição</entry><entry>Caracter Separador</entry><entry>Chave de Busca</entry></row>
+<row><entry>1000000</entry><entry>UTF-8</entry><entry>5000000</entry><entry>1000000</entry><entry>N</entry><entry>PF</entry><entry> </entry><entry> </entry><entry>1000001</entry></row>
+<row><entry>1000000</entry><entry>UTF-8</entry><entry>5000001</entry><entry>1000000</entry><entry>N</entry><entry>PF</entry><entry> </entry><entry> </entry><entry>1000002</entry></row>
+<row><entry>1000000</entry><entry>UTF-8</entry><entry>5000002</entry><entry>1000000</entry><entry>N</entry><entry>SE</entry><entry> </entry><entry>-</entry><entry>1000003</entry></row></tbody>
+</tgroup>
+</table>

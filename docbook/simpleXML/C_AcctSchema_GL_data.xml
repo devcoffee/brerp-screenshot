@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>C_AcctSchema_GL</title>
+<tgroup cols='11' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Esquema Contábil</entry><entry>Ajuste de Comprometimento</entry><entry>Commitment Offset Sales</entry><entry>Conta de Contrapartida Cambial</entry><entry>Conta de Devido de coligadas</entry><entry>Conta de Devido a coligadas</entry><entry>Ajuste de VPC</entry><entry>Conta de Contrapartidas Suspensas</entry><entry>Use Contrapartida cambial</entry><entry>Use Contrapartida suspensa</entry><entry>Use Erro Suspenso</entry></row>
+<row><entry>101</entry><entry>300</entry><entry>50000</entry><entry>221</entry><entry>225</entry><entry>224</entry><entry>291</entry><entry>219</entry><entry>true</entry><entry>true</entry><entry>true</entry></row>
+<row><entry>1000001</entry><entry>5000462</entry><entry>5000462</entry><entry>5000247</entry><entry>1000004</entry><entry>1000005</entry><entry>1000006</entry><entry>5000462</entry><entry>true</entry><entry>true</entry><entry>true</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Coluna **</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Coluna</entry><entry>Idioma</entry><entry>Traduzida</entry><entry>Nome</entry><entry>Placeholder</entry></row>
+<row><entry>57396</entry><entry>es_CO</entry><entry>false</entry><entry>Característica</entry><entry> </entry></row>
+<row><entry>57423</entry><entry>es_CO</entry><entry>false</entry><entry>Cantidad Desperdicio</entry><entry> </entry></row>
+<row><entry>57448</entry><entry>es_CO</entry><entry>false</entry><entry>Fecha Inicio</entry><entry> </entry></row>
+<row><entry>57449</entry><entry>es_CO</entry><entry>false</entry><entry>Fecha Inicio Programa</entry><entry> </entry></row>
+<row><entry>5794</entry><entry>es_CO</entry><entry>false</entry><entry>Referencia de Orden de Tercero</entry><entry> </entry></row>
+<row><entry>13624</entry><entry>es_CO</entry><entry>false</entry><entry>Parámetro Web 5</entry><entry> </entry></row>
+<row><entry>13625</entry><entry>es_CO</entry><entry>false</entry><entry>Parámetro Web 6</entry><entry> </entry></row>
+<row><entry>14484</entry><entry>es_CO</entry><entry>false</entry><entry>Fecha Contable</entry><entry> </entry></row>
+<row><entry>5552</entry><entry>es_CO</entry><entry>false</entry><entry>Grupo de Tercero</entry><entry> </entry></row>
+<row><entry>6854</entry><entry>es_CO</entry><entry>false</entry><entry>Código</entry><entry> </entry></row>
+<row><entry>5544</entry><entry>es_CO</entry><entry>false</entry><entry>Aprobado</entry><entry> </entry></row>
+<row><entry>4649</entry><entry>es_CO</entry><entry>false</entry><entry>Contabilizado</entry><entry> </entry></row>
+<row><entry>2754</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>2581</entry><entry>es_CO</entry><entry>false</entry><entry>Fecha Inicio</entry><entry> </entry></row>
+<row><entry>5259</entry><entry>es_CO</entry><entry>false</entry><entry>Contabilizado</entry><entry> </entry></row>
+<row><entry>7794</entry><entry>es_CO</entry><entry>false</entry><entry>Contraseña Usuario EMail</entry><entry> </entry></row>
+<row><entry>7962</entry><entry>es_CO</entry><entry>false</entry><entry>Dirección Web Imagen</entry><entry> </entry></row>
+<row><entry>6558</entry><entry>es_CO</entry><entry>false</entry><entry>Carpeta Solicitudes</entry><entry> </entry></row>
+<row><entry>7061</entry><entry>es_CO</entry><entry>false</entry><entry>Calcular Promedio (μ)</entry><entry> </entry></row>
+<row><entry>1226</entry><entry>es_CO</entry><entry>false</entry><entry>Formato Teléfono</entry><entry> </entry></row>
+<row><entry>14725</entry><entry>es_CO</entry><entry>false</entry><entry>Estado Tarea</entry><entry> </entry></row>
+<row><entry>15335</entry><entry>es_CO</entry><entry>false</entry><entry>Plantilla</entry><entry> </entry></row>
+<row><entry>10242</entry><entry>es_CO</entry><entry>false</entry><entry>Instancia Conjunto de Atributos</entry><entry> </entry></row>
+<row><entry>10683</entry><entry>es_CO</entry><entry>false</entry><entry>Crédito Fuente</entry><entry> </entry></row>
+<row><entry>10901</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>11379</entry><entry>es_CO</entry><entry>false</entry><entry>Siguiente Fecha de Ejecución</entry><entry> </entry></row>
+<row><entry>9545</entry><entry>es_CO</entry><entry>false</entry><entry>Actividad</entry><entry> </entry></row>
+<row><entry>4922</entry><entry>es_CO</entry><entry>false</entry><entry>Diferencia Edo. De Cuenta</entry><entry> </entry></row>
+<row><entry>9229</entry><entry>es_CO</entry><entry>false</entry><entry>Débito Fuente</entry><entry> </entry></row>
+<row><entry>8248</entry><entry>es_CO</entry><entry>false</entry><entry>Actividad</entry><entry> </entry></row>
+<row><entry>8251</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>7815</entry><entry>es_CO</entry><entry>false</entry><entry>Código ISO Moneda</entry><entry> </entry></row>
+<row><entry>14546</entry><entry>es_CO</entry><entry>false</entry><entry>Fondos de la contabilidad general</entry><entry> </entry></row>
+<row><entry>12557</entry><entry>es_CO</entry><entry>false</entry><entry>Monto</entry><entry> </entry></row>
+<row><entry>13700</entry><entry>es_CO</entry><entry>false</entry><entry>Mensaje Correo</entry><entry> </entry></row>
+<row><entry>13651</entry><entry>es_CO</entry><entry>false</entry><entry>Parámetro Web 1</entry><entry> </entry></row>
+<row><entry>13652</entry><entry>es_CO</entry><entry>false</entry><entry>Parámetro Web 2</entry><entry> </entry></row>
+<row><entry>10831</entry><entry>es_CO</entry><entry>false</entry><entry>Línea Autorización Devolución</entry><entry> </entry></row>
+<row><entry>6491</entry><entry>es_CO</entry><entry>false</entry><entry>Pagos sin Asignar</entry><entry> </entry></row>
+<row><entry>7647</entry><entry>es_CO</entry><entry>false</entry><entry>Código Tercero</entry><entry> </entry></row>
+<row><entry>4423</entry><entry>es_CO</entry><entry>false</entry><entry>Instancia de Proceso</entry><entry> </entry></row>
+<row><entry>455</entry><entry>es_CO</entry><entry>false</entry><entry>Factor de Base a Destino</entry><entry> </entry></row>
+<row><entry>5752</entry><entry>es_CO</entry><entry>false</entry><entry>Representante Comercial</entry><entry> </entry></row>
+<row><entry>11774</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>12006</entry><entry>es_CO</entry><entry>false</entry><entry>Código ISO Moneda</entry><entry> </entry></row>
+<row><entry>12182</entry><entry>es_CO</entry><entry>false</entry><entry>Aprobado</entry><entry> </entry></row>
+<row><entry>7453</entry><entry>es_CO</entry><entry>false</entry><entry>Saludo contacto del tercero</entry><entry> </entry></row>
+<row><entry>14780</entry><entry>es_CO</entry><entry>false</entry><entry>Columna Clave</entry><entry> </entry></row>
+<row><entry>3094</entry><entry>es_CO</entry><entry>false</entry><entry>Cuenta Bancaria Tercero</entry><entry> </entry></row>
+<row><entry>7739</entry><entry>es_CO</entry><entry>false</entry><entry>Representante Comercial</entry><entry> </entry></row>
+<row><entry>3902</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>12746</entry><entry>es_CO</entry><entry>false</entry><entry>Disposición Teclado PDV</entry><entry> </entry></row>
+<row><entry>12748</entry><entry>es_CO</entry><entry>false</entry><entry>Representante Comercial</entry><entry> </entry></row>
+<row><entry>14077</entry><entry>es_CO</entry><entry>false</entry><entry>Instancia de Proceso</entry><entry> </entry></row>
+<row><entry>13166</entry><entry>es_CO</entry><entry>false</entry><entry>Instancia Conjunto de Atributos</entry><entry> </entry></row>
+<row><entry>9884</entry><entry>es_CO</entry><entry>false</entry><entry>Info Verificación</entry><entry> </entry></row>
+<row><entry>12528</entry><entry>es_CO</entry><entry>false</entry><entry>No. Orden Registro</entry><entry> </entry></row>
+<row><entry>15407</entry><entry>es_CO</entry><entry>false</entry><entry>Proyecto web</entry><entry> </entry></row>
+<row><entry>15166</entry><entry>es_CO</entry><entry>false</entry><entry>Indexado</entry><entry> </entry></row>
+<row><entry>15169</entry><entry>es_CO</entry><entry>false</entry><entry>Meta Autor</entry><entry> </entry></row>
+<row><entry>15517</entry><entry>es_CO</entry><entry>false</entry><entry>Entrada de chat</entry><entry> </entry></row>
+<row><entry>15216</entry><entry>es_CO</entry><entry>false</entry><entry>Marco de objetivo</entry><entry> </entry></row>
+<row><entry>14414</entry><entry>es_CO</entry><entry>false</entry><entry>Instancia Conjunto de Atributos</entry><entry> </entry></row>
+<row><entry>13054</entry><entry>es_CO</entry><entry>false</entry><entry>Llenar Forma</entry><entry> </entry></row>
+<row><entry>14777</entry><entry>es_CO</entry><entry>false</entry><entry>Grupo de Tercero</entry><entry> </entry></row>
+<row><entry>15726</entry><entry>es_CO</entry><entry>false</entry><entry>Servidor de trasmisión</entry><entry> </entry></row>
+<row><entry>15727</entry><entry>es_CO</entry><entry>false</entry><entry>Tipo de solicitud</entry><entry> </entry></row>
+<row><entry>15735</entry><entry>es_CO</entry><entry>false</entry><entry>Guion (-)</entry><entry> </entry></row>
+<row><entry>15736</entry><entry>es_CO</entry><entry>false</entry><entry>Protocolo</entry><entry> </entry></row>
+<row><entry>15737</entry><entry>es_CO</entry><entry>false</entry><entry>Codigo de estado</entry><entry> </entry></row>
+<row><entry>12976</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>787</entry><entry>es_CO</entry><entry>false</entry><entry>Moneda Hacia</entry><entry> </entry></row>
+<row><entry>2175</entry><entry>es_CO</entry><entry>false</entry><entry>Aprobado</entry><entry> </entry></row>
+<row><entry>3499</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>10163</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>10051</entry><entry>es_CO</entry><entry>false</entry><entry>Número de Referencia (SKU)</entry><entry> </entry></row>
+<row><entry>11738</entry><entry>es_CO</entry><entry>false</entry><entry>Línea SCP (RfQ)</entry><entry> </entry></row>
+<row><entry>6623</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>7940</entry><entry>es_CO</entry><entry>false</entry><entry>Mensaje Error Importación</entry><entry> </entry></row>
+<row><entry>1667</entry><entry>es_CO</entry><entry>false</entry><entry>Nota Contable</entry><entry> </entry></row>
+<row><entry>1680</entry><entry>es_CO</entry><entry>false</entry><entry>Crédito Fuente</entry><entry> </entry></row>
+<row><entry>2958</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>489</entry><entry>es_CO</entry><entry>false</entry><entry>Precisión del Costo</entry><entry> </entry></row>
+<row><entry>11814</entry><entry>es_CO</entry><entry>false</entry><entry>Dirección del Tercero</entry><entry> </entry></row>
+<row><entry>11815</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>4974</entry><entry>es_CO</entry><entry>false</entry><entry>Grupo de Tercero</entry><entry> </entry></row>
+<row><entry>5941</entry><entry>es_CO</entry><entry>false</entry><entry>Columna Tercero</entry><entry> </entry></row>
+<row><entry>1790</entry><entry>es_CO</entry><entry>false</entry><entry>Aprobado</entry><entry> </entry></row>
+<row><entry>3512</entry><entry>es_CO</entry><entry>false</entry><entry>Representante Comercial</entry><entry> </entry></row>
+<row><entry>7963</entry><entry>es_CO</entry><entry>false</entry><entry>Dirección Web Descripción</entry><entry> </entry></row>
+<row><entry>2724</entry><entry>es_CO</entry><entry>false</entry><entry>Arbol de Proyecto</entry><entry> </entry></row>
+<row><entry>12982</entry><entry>es_CO</entry><entry>false</entry><entry>Crédito Fuente</entry><entry> </entry></row>
+<row><entry>12831</entry><entry>es_CO</entry><entry>false</entry><entry>Cantidad Desperdicio</entry><entry> </entry></row>
+<row><entry>13153</entry><entry>es_CO</entry><entry>false</entry><entry>Código Verificación</entry><entry> </entry></row>
+<row><entry>13205</entry><entry>es_CO</entry><entry>false</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>14435</entry><entry>es_CO</entry><entry>false</entry><entry>Conciliación de Inventario</entry><entry> </entry></row>
+<row><entry>15159</entry><entry>es_CO</entry><entry>false</entry><entry>Plantilla</entry><entry> </entry></row>
+<row><entry>15425</entry><entry>es_CO</entry><entry>false</entry><entry>Plantilla</entry><entry> </entry></row>
+<row><entry>15454</entry><entry>es_CO</entry><entry>false</entry><entry>Reglas de factura</entry><entry> </entry></row>
+<row><entry>12530</entry><entry>es_CO</entry><entry>false</entry><entry>Dirección 3</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

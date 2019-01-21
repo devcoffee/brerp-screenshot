@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Responsável pelo Fluxo de Trabalho</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Perfil</entry><entry>Usuário/Contato</entry><entry>Responsável pelo Fluxo de Trabalho</entry><entry>Descrição</entry><entry>Tipo de Entidade</entry><entry>Nome</entry><entry>Tipo de Responsabilidade</entry><entry>Roteiro (Script)</entry></row>
+<row><entry>0</entry><entry>100</entry><entry>100</entry><entry>Supervisor of the Organization starting the Workflow</entry><entry>D</entry><entry>Organization</entry><entry>O</entry><entry> </entry></row>
+<row><entry>0</entry><entry> </entry><entry>101</entry><entry>The person stating the Workflow (do not select a specific user)</entry><entry>D</entry><entry>Invoker</entry><entry>H</entry><entry> </entry></row>
+<row><entry>0</entry><entry>1000022</entry><entry>1500086</entry><entry> </entry><entry>U</entry><entry>respons.</entry><entry>H</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

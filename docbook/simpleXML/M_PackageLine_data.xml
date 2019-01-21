@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Linha de Embalagem</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Descrição</entry><entry>Linha de Remessa/Recebimento</entry><entry>Embalagem</entry><entry>Linha de Embalagem</entry><entry>Package MPS</entry><entry>Produto</entry><entry>Quantidade</entry></row>
+<row><entry> </entry><entry>126</entry><entry>100</entry><entry>100</entry><entry> </entry><entry> </entry><entry>10</entry></row></tbody>
+</tgroup>
+</table>

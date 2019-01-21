@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2003-06-16 00:09:07.0</para><para> <emphasis>Atualizado:</emphasis>2006-08-06 22:14:24.0</para>
+ 
+ <title>Processo:  Reiniciar Cache de Memória (Reset)</title> 
+ <para><emphasis> Descrição: </emphasis>Reiniciar Cache do Sistema ** Feche todas as Janelas antes de Prosseguir **</para><para><emphasis> Comentário/Ajuda: </emphasis>Para aumentar o desempenho, o Adempiere guarda dados utilizados repetidamente na memória cache. Este processo limpa a memória cache local.</para>
+<para> SEM PARÂMETROS </para>
+ </chapter>

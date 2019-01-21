@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Seleção de Pagamento</title>
+<tgroup cols='10' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Conta Bancária</entry><entry>Seleção de Pagamento</entry><entry>Criar linhas a partir de</entry><entry>Descrição</entry><entry>Aprovado</entry><entry>Nome</entry><entry>Data do Pagamento</entry><entry>Processado</entry><entry>Processar Agora</entry><entry>Valor Total</entry></row>
+<row><entry>100</entry><entry>100</entry><entry>N</entry><entry> </entry><entry>true</entry><entry>Payment selection (manual) - 2002-09-07 20:18:51.041</entry><entry>2002-09-07 00:00:00.0</entry><entry>true</entry><entry>false</entry><entry>352.8</entry></row>
+<row><entry>5000005</entry><entry>5000000</entry><entry>N</entry><entry> </entry><entry>false</entry><entry>2018-02-15 09:59:45</entry><entry>2018-02-15 00:00:00.0</entry><entry>true</entry><entry>false</entry><entry>25993.25</entry></row>
+<row><entry>5000000</entry><entry>5000001</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Pagamento: 237053100180001085262500075363</entry><entry>2018-02-16 00:00:00.0</entry><entry>true</entry><entry>false</entry><entry>1000</entry></row>
+<row><entry>5000005</entry><entry>5000002</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Pagamento: 1000058</entry><entry>2018-03-01 00:00:00.0</entry><entry>true</entry><entry>false</entry><entry>100</entry></row></tbody>
+</tgroup>
+</table>

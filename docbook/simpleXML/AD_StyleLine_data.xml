@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Style Line</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Style</entry><entry>Style Line</entry><entry>Style Line</entry><entry>Lógica de Visualização</entry><entry>Inline Style</entry><entry>Linha Núm.</entry><entry>Theme</entry></row>
+<row><entry>5000005</entry><entry>5000026</entry><entry>e8aefd42-fc3c-45c1-820b-18f2212ae7a7</entry><entry>@COF_DivergenciaQtdPrevista@=Y</entry><entry>@sclass=cof-status-verde</entry><entry>20</entry><entry> </entry></row>
+<row><entry>5000005</entry><entry>5000025</entry><entry>c1a6a2c9-e552-4634-9c10-9f378390a59a</entry><entry>@COF_DivergenciaQtdPrevista@=N</entry><entry>@sclass=cof-status-vermelho</entry><entry>10</entry><entry> </entry></row>
+<row><entry>5000004</entry><entry>5000038</entry><entry>2c97b8c9-7391-4d42-ab39-79e406b6ffc4</entry><entry>@cof_sitDFe@ = 3</entry><entry>@sclass=cof-status-vermelho</entry><entry>30</entry><entry> </entry></row>
+<row><entry>200000</entry><entry>200000</entry><entry>ed12951e-c319-4242-9f76-e53709e1d53b</entry><entry>@_Editor_IsGridView@=N</entry><entry>width: 320px;
+ height: 240px;
+ position: absolute;
+ right: 0;
+</entry><entry>10</entry><entry> </entry></row>
+<row><entry>5000001</entry><entry>5000015</entry><entry>2fcdd415-db47-4c30-8d20-987e2a17ff76</entry><entry>@COF_SituacaoComercial@ = 'PP'</entry><entry>@sclass=cof-status-azul</entry><entry>50</entry><entry> </entry></row>
+<row><entry>5000002</entry><entry>5000018</entry><entry>fce0fd8f-8212-48e2-bda8-cc65441a7fef</entry><entry>@COF_SituacaoComercial@ = 'PA'</entry><entry>@sclass=cof-status-verde</entry><entry>10</entry><entry> </entry></row>
+<row><entry>5000002</entry><entry>5000019</entry><entry>c0c686d6-ff55-4275-bf58-cd17c5a4b8e3</entry><entry>@COF_SituacaoComercial@ = 'PBCO'</entry><entry>@sclass=cof-status-laranja</entry><entry>20</entry><entry> </entry></row>
+<row><entry>5000002</entry><entry>5000020</entry><entry>7255cd73-af1d-47bd-9b89-a526e3225bbf</entry><entry>@COF_SituacaoComercial@ = 'PBCR'</entry><entry>@sclass=cof-status-amarelo</entry><entry>30</entry><entry> </entry></row>
+<row><entry>5000002</entry><entry>5000021</entry><entry>d27a6144-3182-4b91-8c56-fdc46e7191e8</entry><entry>@COF_SituacaoComercial@ = 'PE'</entry><entry>@sclass=cof-status-vermelho</entry><entry>40</entry><entry> </entry></row>
+<row><entry>5000002</entry><entry>5000022</entry><entry>48a0ae54-3f3b-48d8-884e-51ac1ac8ce09</entry><entry>@COF_SituacaoComercial@ = 'PIC'</entry><entry>@sclass=cof-status-cinza</entry><entry>50</entry><entry> </entry></row>
+<row><entry>5000002</entry><entry>5000023</entry><entry>ae5c88aa-6929-4758-8b07-fa6d09656c95</entry><entry>@COF_SituacaoComercial@ = 'PPA'</entry><entry>@sclass=cof-status-roxo</entry><entry>60</entry><entry> </entry></row>
+<row><entry>5000002</entry><entry>5000024</entry><entry>498952a5-efd2-42f8-b1f6-964a0e92d3f4</entry><entry>@COF_SituacaoComercial@ = 'PR'</entry><entry>@sclass=cof-status-azul</entry><entry>70</entry><entry> </entry></row>
+<row><entry>5000001</entry><entry>5000011</entry><entry>42aa048c-df79-4f6d-9840-80d4f094c9a5</entry><entry>@COF_SituacaoComercial@ = 'PB'</entry><entry>@sclass=cof-status-vermelho</entry><entry>10</entry><entry> </entry></row>
+<row><entry>5000001</entry><entry>5000012</entry><entry>c85c6588-b299-47ef-8f3f-13fb4aa812ed</entry><entry>@COF_SituacaoComercial@ = 'PD'</entry><entry>@sclass=cof-status-cinza</entry><entry>20</entry><entry> </entry></row>
+<row><entry>5000001</entry><entry>5000013</entry><entry>b8e45755-c0d6-4677-9d03-e3aba339e639</entry><entry>@COF_SituacaoComercial@ = 'PE'</entry><entry>@sclass=cof-satus-laranja</entry><entry>30</entry><entry> </entry></row>
+<row><entry>5000001</entry><entry>5000014</entry><entry>cd7ad654-2e4e-42ec-8ccd-851a6bb6a3cc</entry><entry>@COF_SituacaoComercial@ = 'PL'</entry><entry>@sclass=cof-status-verde</entry><entry>40</entry><entry> </entry></row>
+<row><entry>5000001</entry><entry>5000016</entry><entry>0c61a60f-55f2-4973-994f-51db2569b3d3</entry><entry>@COF_SituacaoComercial@ = 'PPE'</entry><entry>@sclass=cof-status-amarelo</entry><entry>60</entry><entry> </entry></row>
+<row><entry>5000001</entry><entry>5000017</entry><entry>2a2c187d-9a26-45c8-a502-a2db9e8be5c5</entry><entry>@COF_SituacaoComercial@ = 'PS'</entry><entry>@sclass=cof-status-roxo</entry><entry>70</entry><entry> </entry></row>
+<row><entry>5000000</entry><entry>5000001</entry><entry>2afca93a-8182-4ea3-955a-d42413328495</entry><entry>@DocStatus@='CL'</entry><entry>@sclass=cof-status-cinza</entry><entry>20</entry><entry> </entry></row>
+<row><entry>5000000</entry><entry>5000006</entry><entry>fa6886df-7f29-4d0e-b737-fb2e8e17773b</entry><entry>@DocStatus@='NA'</entry><entry>@sclass=cof-status-vermelho</entry><entry>70</entry><entry> </entry></row>
+<row><entry>5000000</entry><entry>5000007</entry><entry>3edcfbf2-e76f-484d-8267-b219d418db95</entry><entry>@DocStatus@='RE'</entry><entry>@sclass=cof-status-amarelo</entry><entry>80</entry><entry> </entry></row>
+<row><entry>5000000</entry><entry>5000009</entry><entry>3552eabd-3076-4574-bf0b-9e84995c5f67</entry><entry>@DocStatus@='WC'</entry><entry>@sclass=cof-status-azul</entry><entry>100</entry><entry> </entry></row>
+<row><entry>5000000</entry><entry>5000004</entry><entry>3f844407-012c-4887-a9e4-5312bcdc0325</entry><entry>@DocStatus@='IN'</entry><entry>@sclass=cof-status-laranja</entry><entry>50</entry><entry> </entry></row>
+<row><entry>5000000</entry><entry>5000000</entry><entry>10d4f73c-8f03-47c8-9163-7cd8a8f100cf</entry><entry>@DocStatus@='AP' | @DocStatus@='IP'</entry><entry>@sclass=cof-status-verde-claro</entry><entry>10</entry><entry> </entry></row>
+<row><entry>5000000</entry><entry>5000002</entry><entry>d4478977-cc3b-4bd6-ad35-6a5275a97e79</entry><entry>@DocStatus@='CO'</entry><entry>@sclass=cof-status-verde</entry><entry>30</entry><entry> </entry></row>
+<row><entry>5000000</entry><entry>5000008</entry><entry>a7c287dc-dc99-4d29-93eb-a67e294218c7</entry><entry>@DocStatus@='VO'</entry><entry>@sclass=cof-status-cinza-claro</entry><entry>90</entry><entry> </entry></row>
+<row><entry>5000000</entry><entry>5000010</entry><entry>13203610-e2cb-412e-953e-5d3cd5f2b5bf</entry><entry>@DocStatus@='WP'</entry><entry>@sclass=cof-status-azul-claro</entry><entry>110</entry><entry> </entry></row>
+<row><entry>5000003</entry><entry>5000028</entry><entry>eff3fb24-3078-46b7-b052-9b768c393b4c</entry><entry>@cof_IsChangeCheck@ = 'Y'</entry><entry>@sclass=cof-status-cinza</entry><entry>20</entry><entry> </entry></row>
+<row><entry>5000003</entry><entry>5000030</entry><entry>0305b069-e775-4cfc-84ca-28f2bc8ef800</entry><entry>@cof_IsClearedCheck@ = 'Y' %26 @IsReconciled@ = 'Y'</entry><entry>@sclass=cof-status-azul</entry><entry>40</entry><entry> </entry></row>
+<row><entry>5000003</entry><entry>5000031</entry><entry>4680077a-34da-42bc-b8d0-6f0c54a7fb52</entry><entry>@IsReconciled@ = 'N' %26 @cof_IsClearedCheck@ = 'Y'</entry><entry>@sclass=cof-status-roxo</entry><entry>50</entry><entry> </entry></row>
+<row><entry>5000004</entry><entry>5000039</entry><entry>eb25b1ad-0d60-4671-8ba2-e77ce6c37712</entry><entry>@Processed@ =Y</entry><entry>@sclass=cof-status-cinza</entry><entry>40</entry><entry> </entry></row>
+<row><entry>5000004</entry><entry>5000040</entry><entry>11f3796d-7999-4684-91d0-81a9ae03e6b8</entry><entry>@cof_xmlvalido@ = Y</entry><entry>@sclass=cof-status-azul</entry><entry>50</entry><entry> </entry></row>
+<row><entry>5000003</entry><entry>5000027</entry><entry>1e827f01-6f8f-4e38-a807-d2bfb5f93594</entry><entry>@cof_IsClearedCheck@ = 'N' %26 @cof_IsChangeCheck@ = 'N' %26 @COF_Payment_ID@ &gt;
+ 0 %26 @C_Payment_ID@ &gt;
+ 0 </entry><entry>@sclass=cof-status-verde</entry><entry>10</entry><entry> </entry></row>
+<row><entry>5000003</entry><entry>5000034</entry><entry>1cf225ca-2bde-4f67-a02a-7f45cdde90df</entry><entry>@cof_IsClearedCheck@ = 'N' %26 @cof_IsChangeCheck@ = 'N' %26 @COF_Payment_ID@ &gt;
+ 0 %26 @C_Payment_ID@ &lt;
+ 1 </entry><entry>@sclass=cof-status-verde</entry><entry>80</entry><entry> </entry></row>
+<row><entry>5000003</entry><entry>5000035</entry><entry>31bba825-da54-4327-a1cf-9fafbd711c0d</entry><entry>@cof_IsClearedCheck@ = 'N' %26 @cof_IsChangeCheck@ = 'N' %26 @COF_Payment_ID@ &lt;
+ 1 %26 @C_Payment_ID@ &gt;
+ 0</entry><entry>@sclass=cof-status-verde</entry><entry>90</entry><entry> </entry></row>
+<row><entry>5000003</entry><entry>5000029</entry><entry>0cb82a9b-9128-4c9d-bced-fc17066a63a7</entry><entry>@cof_IsClearedCheck@ = 'N'  %26 @COF_Payment_ID@ &lt;
+  1 %26 @C_Payment_ID@ &lt;
+ 1 %26  @COF_C_Alinea_ID@ &gt;
+ 0 %26 @COF_C_Alinea2_ID@ &lt;
+ 1</entry><entry>@sclass=cof-status-vermelho</entry><entry>30</entry><entry> </entry></row>
+<row><entry>5000003</entry><entry>5000033</entry><entry>d903d272-838b-4a05-8cac-7f7e31a2d882</entry><entry>@cof_IsClearedCheck@ = 'N'  %26 @COF_Payment_ID@ &lt;
+  1 %26 @C_Payment_ID@ &lt;
+ 1 %26  @COF_C_Alinea_ID@ &gt;
+ 0 %26 @COF_C_Alinea2_ID@ &gt;
+ 0</entry><entry>@sclass=cof-status-vermelho</entry><entry>70</entry><entry> </entry></row>
+<row><entry>5000003</entry><entry>5000032</entry><entry>93470049-68b6-419d-8003-abf98ecb871e</entry><entry>@cof_IsClearedCheck@ = 'N'  %26 @COF_Payment_ID@ &lt;
+  1 %26 @C_Payment_ID@ &lt;
+ 1 %26  @COF_C_Alinea_ID@ &lt;
+ 1 %26 @COF_C_Alinea2_ID@ &gt;
+ 0</entry><entry>@sclass=cof-status-vermelho</entry><entry>60</entry><entry> </entry></row>
+<row><entry>5000004</entry><entry>5000036</entry><entry>e56a7bd4-bca2-4f34-96f4-b63933875387</entry><entry>@COF_Lancado@ = Y </entry><entry>@sclass=cof-status-verde</entry><entry>10</entry><entry> </entry></row>
+<row><entry>5000004</entry><entry>5000037</entry><entry>254b3008-c4a8-4f1a-8364-38ca00f0f3f0</entry><entry>@cof_manifestado@  = Y</entry><entry>@sclass=cof-status-amarelo</entry><entry>20</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

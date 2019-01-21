@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>COF_PP_RecursosConfig_ID</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Ferramenta</entry><entry>Instruções</entry><entry>COF_PP_RecursosConfig_ID</entry><entry>Recursos</entry><entry>Classe do Produto</entry><entry>Grupo do Produto</entry><entry>Tipo do Produto</entry><entry>Linha Núm.</entry><entry>Produto</entry></row>
+<row><entry>5000000</entry><entry> </entry><entry>5000000</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry><entry>10</entry><entry> </entry></row>
+<row><entry>5000000</entry><entry> </entry><entry>5000001</entry><entry>5000001</entry><entry> </entry><entry> </entry><entry> </entry><entry>10</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

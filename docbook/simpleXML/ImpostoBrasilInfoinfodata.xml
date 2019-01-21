@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Informações de Impostos</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'> 
+
+ <tbody><row><entry>Empresa</entry><entry>Organização</entry><entry>Nome</entry><entry>Descrição</entry><entry>Tipo de Imposto</entry><entry>Possui Modalidade de BC</entry><entry>Possui CST</entry></row>
+<row><entry>1000000</entry><entry>0</entry><entry>COFINSPROD</entry><entry>Contribuição para o Financiamento da Seguridade Social (COFINS) é uma contribuição federal, de natureza tributária, incidente sobre a receita bruta das empresas em geral, destinada a financiar a seguridade social.</entry><entry>P</entry><entry>Y</entry><entry>Y</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>PISDESP</entry><entry>Utilizado para despesas que não possuem retenção de PIS mas que podem gerar crédito do imposto</entry><entry>S</entry><entry>N</entry><entry>Y</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>COFINSDESP</entry><entry>Utilizado para despesas que não possuem retenção de COFINS mas que podem gerar crédito do imposto</entry><entry>S</entry><entry>N</entry><entry>Y</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>FCP</entry><entry>Fundo de Combate a Pobreza</entry><entry>P</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>II</entry><entry>Imposto de Importação</entry><entry>P</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>IPI</entry><entry>Imposto sobre produtos industrializados</entry><entry>P</entry><entry>Y</entry><entry>Y</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>PISPROD</entry><entry>Programa de Integração Social, mais conhecido como PIS/PASEP ou PIS, é uma contribuição social de natureza tributária, devida pelas pessoas jurídicas, com objetivo de financiar o pagamento do seguro-desemprego e do abono.</entry><entry>P</entry><entry>Y</entry><entry>Y</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>ISS</entry><entry>Imposto Sobre Serviços</entry><entry>S</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>ICMSST</entry><entry>O Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS) é um imposto estadual. Para operações de Substituição Tributária</entry><entry>T</entry><entry>Y</entry><entry>N</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>ICMSDIFAL</entry><entry>ICMS Diferencial de Alíquota</entry><entry>P</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>IR</entry><entry>Imposto de Renda</entry><entry>S</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>CSLL</entry><entry>Contribuição Social sobre o Lucro Líquido</entry><entry>S</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>INSS</entry><entry>Instituto Nacional de Seguro Social</entry><entry>S</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>ISSRT</entry><entry>Imposto Sobre Serviços (Retenção)</entry><entry>S</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>ICMSPROD</entry><entry>O Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS) é um imposto estadual.</entry><entry>P</entry><entry>Y</entry><entry>Y</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>PISSERV </entry><entry>Programa de Integração Social, mais conhecido como PIS/PASEP ou PIS, é uma contribuição social de natureza tributária, devida pelas pessoas jurídicas, com objetivo de financiar o pagamento do seguro-desemprego e do abono.</entry><entry>S</entry><entry>N</entry><entry>Y</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>COFINSSERV</entry><entry>Contribuição para o Financiamento da Seguridade Social (COFINS) é uma contribuição federal, de natureza tributária, incidente sobre a receita bruta das empresas em geral, destinada a financiar a seguridade social.</entry><entry>S</entry><entry>N</entry><entry>Y</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>ICMSSERV</entry><entry>O Imposto sobre Operações relativas à Circulação de Mercadorias e Prestação de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação (ICMS) é um imposto estadual.</entry><entry>S</entry><entry>N</entry><entry>Y</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>FCPST</entry><entry>Reflexo de substituição tributária sobre FCP</entry><entry>T</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000000</entry><entry>0</entry><entry>PCREDSN</entry><entry>Credito do Simples Nacional -  terá por definição receber alíquotas para calcular o valor do credito do simples nacional a qual concede credito.</entry><entry>P</entry><entry>N</entry><entry>N</entry>
+</row></tbody>
+</tgroup>
+</table>

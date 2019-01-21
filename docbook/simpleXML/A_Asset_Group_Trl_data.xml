@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Grupo de Ativo **</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Grupo de Ativo</entry><entry>Idioma</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Traduzida</entry><entry>Nome</entry></row>
+<row><entry>100</entry><entry>pt_BR</entry><entry>Download Documentation</entry><entry> </entry><entry>false</entry><entry>Documentation</entry></row>
+<row><entry>50000</entry><entry>pt_BR</entry><entry>Buildings</entry><entry>All Buildings</entry><entry>false</entry><entry>Buildings</entry></row>
+<row><entry>50001</entry><entry>pt_BR</entry><entry>Software</entry><entry>Software</entry><entry>false</entry><entry>Software</entry></row>
+<row><entry>50002</entry><entry>pt_BR</entry><entry>Download Documentation</entry><entry> </entry><entry>false</entry><entry>Documentation</entry></row>
+<row><entry>50003</entry><entry>pt_BR</entry><entry>Data Processing Equipment</entry><entry>Group defines Data Processing Equipment</entry><entry>false</entry><entry>Data Processing Equipment</entry></row>
+<row><entry>50004</entry><entry>pt_BR</entry><entry>Furniture</entry><entry>Office furniture including office and shop</entry><entry>false</entry><entry>Furniture</entry></row>
+<row><entry>50005</entry><entry>pt_BR</entry><entry>Fixtures</entry><entry>Fixtures including tools %26 dies</entry><entry>false</entry><entry>Fixtures</entry></row>
+<row><entry>50006</entry><entry>pt_BR</entry><entry>Trucks Cars Vans Forklifts</entry><entry>All vehicles</entry><entry>false</entry><entry>Vehicles</entry></row>
+<row><entry>50007</entry><entry>pt_BR</entry><entry>Equipment</entry><entry>Light equipment including  test equipment and computers</entry><entry>false</entry><entry>Equipment</entry></row>
+<row><entry>100</entry><entry>es_CO</entry><entry>Download Documentation</entry><entry> </entry><entry>false</entry><entry>Documentation</entry></row>
+<row><entry>50000</entry><entry>es_CO</entry><entry>Buildings</entry><entry>All Buildings</entry><entry>false</entry><entry>Buildings</entry></row>
+<row><entry>50001</entry><entry>es_CO</entry><entry>Software</entry><entry>Software</entry><entry>false</entry><entry>Software</entry></row>
+<row><entry>50002</entry><entry>es_CO</entry><entry>Download Documentation</entry><entry> </entry><entry>false</entry><entry>Documentation</entry></row>
+<row><entry>50003</entry><entry>es_CO</entry><entry>Data Processing Equipment</entry><entry>Group defines Data Processing Equipment</entry><entry>false</entry><entry>Data Processing Equipment</entry></row>
+<row><entry>50004</entry><entry>es_CO</entry><entry>Furniture</entry><entry>Office furniture including office and shop</entry><entry>false</entry><entry>Furniture</entry></row>
+<row><entry>50005</entry><entry>es_CO</entry><entry>Fixtures</entry><entry>Fixtures including tools %26 dies</entry><entry>false</entry><entry>Fixtures</entry></row>
+<row><entry>50006</entry><entry>es_CO</entry><entry>Trucks Cars Vans Forklifts</entry><entry>All vehicles</entry><entry>false</entry><entry>Vehicles</entry></row>
+<row><entry>50007</entry><entry>es_CO</entry><entry>Equipment</entry><entry>Light equipment including  test equipment and computers</entry><entry>false</entry><entry>Equipment</entry></row>
+<row><entry>5000000</entry><entry>pt_BR</entry><entry>G-at</entry><entry> </entry><entry>false</entry><entry>G-at</entry></row>
+<row><entry>5000000</entry><entry>es_CO</entry><entry>G-at</entry><entry> </entry><entry>false</entry><entry>G-at</entry></row>
+<row><entry>5000001</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>false</entry><entry>maquinas e equipamentos</entry></row>
+<row><entry>5000001</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>false</entry><entry>maquinas e equipamentos</entry></row></tbody>
+</tgroup>
+</table>

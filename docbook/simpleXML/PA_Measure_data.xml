@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Medida</title>
+<tgroup cols='14' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Calculation Class</entry><entry>Tipo de Projeto</entry><entry>Descrição</entry><entry>Real Manual</entry><entry>Nota</entry><entry>Measure Data Type</entry><entry>Tipo de Medida</entry><entry>Nome</entry><entry>Benchmark</entry><entry>Hierarquia de Relatórios</entry><entry>Cálculo de Medição</entry><entry>Medida</entry><entry>Razão</entry><entry>Tipo de Solicitação</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>0</entry><entry> </entry><entry>S</entry><entry>C</entry><entry>Open Invoice Amount</entry><entry> </entry><entry> </entry><entry>105</entry><entry>102</entry><entry> </entry><entry> </entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>0</entry><entry> </entry><entry>T</entry><entry>Q</entry><entry>Service Requests (Time)</entry><entry> </entry><entry> </entry><entry> </entry><entry>103</entry><entry> </entry><entry>101</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>0</entry><entry> </entry><entry>S</entry><entry>Q</entry><entry>Service Requests (Status)</entry><entry> </entry><entry> </entry><entry> </entry><entry>104</entry><entry> </entry><entry>101</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>0</entry><entry> </entry><entry>T</entry><entry>C</entry><entry>Invoices Gross Revenue</entry><entry> </entry><entry> </entry><entry>101</entry><entry>101</entry><entry> </entry><entry> </entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>0</entry><entry> </entry><entry>S</entry><entry>C</entry><entry>Contas Receber</entry><entry> </entry><entry> </entry><entry>105</entry><entry>5000000</entry><entry> </entry><entry> </entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>0</entry><entry> </entry><entry>S</entry><entry>C</entry><entry>Numero de Clientes</entry><entry> </entry><entry> </entry><entry>103</entry><entry>5000001</entry><entry> </entry><entry> </entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>0</entry><entry> </entry><entry>S</entry><entry>C</entry><entry>Margem</entry><entry> </entry><entry> </entry><entry>102</entry><entry>5000002</entry><entry> </entry><entry> </entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>0</entry><entry> </entry><entry>S</entry><entry>C</entry><entry>Meta de Faturamento</entry><entry> </entry><entry> </entry><entry>1500027</entry><entry>5000003</entry><entry> </entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

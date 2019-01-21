@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Tabela **</title>
+<tgroup cols='4' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Tabela</entry><entry>Traduzida</entry><entry>Nome</entry></row>
+<row><entry>es_CO</entry><entry>894</entry><entry>false</entry><entry>Bitácora de acceso Web</entry></row>
+<row><entry>es_CO</entry><entry>459</entry><entry>true</entry><entry>Escritorio Mesa Trabajo</entry></row>
+<row><entry>es_CO</entry><entry>523</entry><entry>true</entry><entry>Formato Impresión Grilla</entry></row>
+<row><entry>es_CO</entry><entry>468</entry><entry>true</entry><entry>Mesa Trabajo</entry></row>
+<row><entry>es_CO</entry><entry>831</entry><entry>false</entry><entry>Esquema de Color</entry></row>
+<row><entry>es_CO</entry><entry>853</entry><entry>false</entry><entry>Proyecto web</entry></row>
+<row><entry>es_CO</entry><entry>50002</entry><entry>false</entry><entry>Copia de seguridad de objetos</entry></row>
+<row><entry>es_CO</entry><entry>50006</entry><entry>false</entry><entry>Detalle Paquete Exportado</entry></row>
+<row><entry>es_CO</entry><entry>50007</entry><entry>false</entry><entry>Paquete Común Exportar</entry></row>
+<row><entry>es_CO</entry><entry>902</entry><entry>false</entry><entry>Procesador LDAP</entry></row>
+<row><entry>es_CO</entry><entry>903</entry><entry>false</entry><entry>Bitácora de procesador LDAP</entry></row>
+<row><entry>es_CO</entry><entry>904</entry><entry>false</entry><entry>Acceso LDAP</entry></row>
+<row><entry>es_CO</entry><entry>580</entry><entry>true</entry><entry>Bitácora Cambios</entry></row>
+<row><entry>es_CO</entry><entry>585</entry><entry>true</entry><entry>Organización Asignado</entry></row>
+<row><entry>es_CO</entry><entry>749</entry><entry>true</entry><entry>Disposición Teclado PDV</entry></row>
+<row><entry>es_CO</entry><entry>750</entry><entry>true</entry><entry>Tecla PDV</entry></row>
+<row><entry>es_CO</entry><entry>316</entry><entry>true</entry><entry>Actividad</entry></row>
+<row><entry>es_CO</entry><entry>368</entry><entry>true</entry><entry>Bitácora EDI</entry></row>
+<row><entry>es_CO</entry><entry>383</entry><entry>true</entry><entry>Línea LDM</entry></row>
+<row><entry>es_CO</entry><entry>402</entry><entry>true</entry><entry>Carrito</entry></row>
+<row><entry>es_CO</entry><entry>53299</entry><entry>false</entry><entry>Flujo Caja</entry></row>
+<row><entry>es_CO</entry><entry>838</entry><entry>false</entry><entry>Estado de Edición</entry></row>
+<row><entry>es_CO</entry><entry>768</entry><entry>false</entry><entry>Línea Lote de Facturas</entry></row>
+<row><entry>es_CO</entry><entry>823</entry><entry>false</entry><entry>Fondos de la contabilidad general</entry></row>
+<row><entry>es_CO</entry><entry>824</entry><entry>false</entry><entry>Restricción de fondos</entry></row>
+<row><entry>es_CO</entry><entry>743</entry><entry>true</entry><entry>Medida SLA</entry></row>
+<row><entry>es_CO</entry><entry>254</entry><entry>true</entry><entry>Adjunto</entry></row>
+<row><entry>es_CO</entry><entry>293</entry><entry>true</entry><entry>Dirección del Tercero</entry></row>
+<row><entry>es_CO</entry><entry>855</entry><entry>false</entry><entry>Contenedor Web</entry></row>
+<row><entry>es_CO</entry><entry>854</entry><entry>false</entry><entry>Plantilla</entry></row>
+<row><entry>es_CO</entry><entry>870</entry><entry>false</entry><entry>Canal de noticas</entry></row>
+<row><entry>es_CO</entry><entry>469</entry><entry>true</entry><entry>Ventana Mesa Trabajo</entry></row>
+<row><entry>es_CO</entry><entry>637</entry><entry>true</entry><entry>Tipo de Conversión</entry></row>
+<row><entry>es_CO</entry><entry>640</entry><entry>true</entry><entry>Cargador de Estado de Cuenta</entry></row>
+<row><entry>es_CO</entry><entry>659</entry><entry>true</entry><entry>Bitácora Procesador de Solicitudes</entry></row>
+<row><entry>es_CO</entry><entry>660</entry><entry>true</entry><entry>Línea Autorización Devolución</entry></row>
+<row><entry>es_CO</entry><entry>603</entry><entry>true</entry><entry>Ejecución de Replicación</entry></row>
+<row><entry>es_CO</entry><entry>573</entry><entry>true</entry><entry>Ejecución de Recurrencias</entry></row>
+<row><entry>es_CO</entry><entry>597</entry><entry>true</entry><entry>Importar Pagos/Recaudos</entry></row>
+<row><entry>es_CO</entry><entry>780</entry><entry>false</entry><entry>Mensaje Correo</entry></row>
+<row><entry>es_CO</entry><entry>282</entry><entry>true</entry><entry>Instancia de Proceso</entry></row>
+<row><entry>es_CO</entry><entry>285</entry><entry>true</entry><entry>Parámetro de Proceso</entry></row>
+<row><entry>es_CO</entry><entry>288</entry><entry>true</entry><entry>Arbol</entry></row>
+<row><entry>es_CO</entry><entry>291</entry><entry>true</entry><entry>Tercero</entry></row>
+<row><entry>es_CO</entry><entry>276</entry><entry>true</entry><entry>Elemento del Sistema</entry></row>
+<row><entry>es_CO</entry><entry>599</entry><entry>true</entry><entry>Importar Nota de Contabilidad</entry></row>
+<row><entry>es_CO</entry><entry>846</entry><entry>false</entry><entry>Tree Node CM Media</entry></row>
+<row><entry>es_CO</entry><entry>604</entry><entry>true</entry><entry>Bitácora Replicación</entry></row>
+<row><entry>es_CO</entry><entry>707</entry><entry>true</entry><entry>Línea Distribución Contabilidad</entry></row>
+<row><entry>es_CO</entry><entry>50005</entry><entry>false</entry><entry>Paquete Exportado</entry></row>
+<row><entry>es_CO</entry><entry>407</entry><entry>true</entry><entry>Diario Caja PDV</entry></row>
+<row><entry>es_CO</entry><entry>224</entry><entry>true</entry><entry>Nota Contable</entry></row>
+<row><entry>es_CO</entry><entry>226</entry><entry>true</entry><entry>Línea de Nota Contable</entry></row>
+<row><entry>es_CO</entry><entry>533</entry><entry>true</entry><entry>Importar Terceros</entry></row>
+<row><entry>es_CO</entry><entry>708</entry><entry>true</entry><entry>Distribución Contabilidad</entry></row>
+<row><entry>es_CO</entry><entry>873</entry><entry>false</entry><entry>Dominio del proyecto Web</entry></row>
+<row><entry>es_CO</entry><entry>365</entry><entry>true</entry><entry>T_Spool</entry></row>
+<row><entry>es_CO</entry><entry>667</entry><entry>true</entry><entry>Liberación de Suscripción</entry></row>
+<row><entry>es_CO</entry><entry>673</entry><entry>true</entry><entry>Línea Respuesta SCP (RfQ)</entry></row>
+<row><entry>es_CO</entry><entry>675</entry><entry>true</entry><entry>Cantidad Línea SCP (RfQ)</entry></row>
+<row><entry>es_CO</entry><entry>676</entry><entry>true</entry><entry>Línea SCP (RfQ)</entry></row>
+<row><entry>es_CO</entry><entry>678</entry><entry>true</entry><entry>Relación con Terceros</entry></row>
+<row><entry>es_CO</entry><entry>813</entry><entry>false</entry><entry>Acceso Usuario Tercero</entry></row>
+<row><entry>es_CO</entry><entry>828</entry><entry>false</entry><entry>Problema Sistema</entry></row>
+<row><entry>es_CO</entry><entry>877</entry><entry>false</entry><entry>Entrada de chat</entry></row>
+<row><entry>es_CO</entry><entry>879</entry><entry>false</entry><entry>Tabla plantilla</entry></row>
+<row><entry>es_CO</entry><entry>881</entry><entry>false</entry><entry>Tabla plantilla Temporal</entry></row>
+<row><entry>es_CO</entry><entry>882</entry><entry>false</entry><entry>Tipo de entidad</entry></row>
+<row><entry>es_CO</entry><entry>883</entry><entry>false</entry><entry>Modificación</entry></row>
+<row><entry>es_CO</entry><entry>885</entry><entry>false</entry><entry>Perfil de acceso Web</entry></row>
+<row><entry>es_CO</entry><entry>559</entry><entry>true</entry><entry>Instancia Conjunto de Atributos</entry></row>
+<row><entry>es_CO</entry><entry>555</entry><entry>true</entry><entry>Control de número de Serie</entry></row>
+<row><entry>es_CO</entry><entry>866</entry><entry>false</entry><entry>Contenedor Web de pruebas</entry></row>
+<row><entry>es_CO</entry><entry>860</entry><entry>false</entry><entry>Elemento contenedor</entry></row>
+<row><entry>es_CO</entry><entry>859</entry><entry>false</entry><entry>Servidor media</entry></row>
+<row><entry>es_CO</entry><entry>871</entry><entry>false</entry><entry>Noticias / Artículo</entry></row>
+<row><entry>es_CO</entry><entry>118</entry><entry>true</entry><entry>Tarea SO</entry></row>
+<row><entry>es_CO</entry><entry>899</entry><entry>false</entry><entry>Indice de Bitácora</entry></row>
+<row><entry>es_CO</entry><entry>858</entry><entry>false</entry><entry>Aviso publicitario</entry></row>
+<row><entry>es_CO</entry><entry>694</entry><entry>true</entry><entry>Bitácora de Procesador Contable</entry></row>
+<row><entry>es_CO</entry><entry>696</entry><entry>true</entry><entry>Bitácora Procesador de Flujo de Trabajo</entry></row>
+<row><entry>es_CO</entry><entry>699</entry><entry>true</entry><entry>Bitácora Procesador de Alertas</entry></row>
+<row><entry>es_CO</entry><entry>53046</entry><entry>false</entry><entry>Ventana SaaS</entry></row>
+<row><entry>es_CO</entry><entry>53047</entry><entry>false</entry><entry>Pestaña SaaS</entry></row>
+<row><entry>es_CO</entry><entry>53048</entry><entry>false</entry><entry>Campo SaaS</entry></row>
+<row><entry>es_CO</entry><entry>53049</entry><entry>false</entry><entry>Proceso SaaS</entry></row>
+<row><entry>es_CO</entry><entry>53051</entry><entry>false</entry><entry>Forma SaaS</entry></row>
+<row><entry>es_CO</entry><entry>53052</entry><entry>false</entry><entry>Tarea SaaS</entry></row>
+<row><entry>es_CO</entry><entry>53053</entry><entry>false</entry><entry>Flujo Trabajo SaaS</entry></row>
+<row><entry>es_CO</entry><entry>53058</entry><entry>false</entry><entry>Regla</entry></row>
+<row><entry>es_CO</entry><entry>53064</entry><entry>false</entry><entry>Script de migración</entry></row>
+<row><entry>es_CO</entry><entry>50009</entry><entry>false</entry><entry>Configurador del Sistema.</entry></row>
+<row><entry>es_CO</entry><entry>53014</entry><entry>false</entry><entry>Validador de modelo</entry></row>
+<row><entry>es_CO</entry><entry>52000</entry><entry>false</entry><entry>Cheque Lista Negra</entry></row>
+<row><entry>es_CO</entry><entry>52002</entry><entry>false</entry><entry>Menú Rol</entry></row>
+<row><entry>es_CO</entry><entry>52001</entry><entry>false</entry><entry>Propiedades Web</entry></row>
+<row><entry>es_CO</entry><entry>53054</entry><entry>false</entry><entry>Módulo SaaS</entry></row>
+<row><entry>es_CO</entry><entry>53055</entry><entry>false</entry><entry>Nivel SaaS</entry></row>
+<row><entry>es_CO</entry><entry>53018</entry><entry>false</entry><entry>LDM y Fórmula</entry></row>
+<row><entry>es_CO</entry><entry>53037</entry><entry>false</entry><entry>Orden Distribución</entry></row></tbody>
+</tgroup>
+</table>

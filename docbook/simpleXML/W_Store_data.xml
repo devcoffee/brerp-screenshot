@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Loja de Web</title>
+<tgroup cols='35' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Condição de Pagamento</entry><entry>Descrição</entry><entry>Rodapé de email</entry><entry>Cabeçalho de email</entry><entry>Comentário/Ajuda</entry><entry>Padrão</entry><entry>Menu de Ativos</entry><entry>Menu de Contatos</entry><entry>Menu de Juros</entry><entry>Menu de Faturas</entry><entry>Menu de Pedidos</entry><entry>Menu de Pagamentos</entry><entry>Menu de Registros</entry><entry>Menu de Solicitações</entry><entry>Menu de RdCs</entry><entry>Menu de Entregas</entry><entry>Lista de Preço</entry><entry>Armazém</entry><entry>Nome</entry><entry>Representante de Vendas</entry><entry>Stylesheet</entry><entry>URL</entry><entry>Contexto Web</entry><entry>Informação da Loja Web</entry><entry>Email de Pedido Web</entry><entry>Parâmetro Web 1</entry><entry>Parâmetro Web 2</entry><entry>Parâmetro Web 3</entry><entry>Parâmetro Web 4</entry><entry>Parâmetro Web 5</entry><entry>Parâmetro Web 6</entry><entry>Email da Loja Virtual</entry><entry>Loja de Web</entry><entry>Usuário da Loja Virtual</entry><entry>Senha da Loja Virtual</entry></row>
+<row><entry>105</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>101</entry><entry>103</entry><entry>GardenWorld</entry><entry>101</entry><entry>gardenworld.css</entry><entry>http://localhost</entry><entry>/wstore</entry><entry> </entry><entry> </entry><entry>iDempiere120x60.png</entry><entry>&lt;
+h1&gt;
+Web Store&lt;
+/h1&gt;
+</entry><entry>Parameter3</entry><entry>Parameter4</entry><entry>Parameter5</entry><entry>Parameter6</entry><entry> </entry><entry>11</entry><entry> </entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

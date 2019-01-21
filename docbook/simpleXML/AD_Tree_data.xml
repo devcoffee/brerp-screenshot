@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Árvore</title>
+<tgroup cols='10' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Tabela</entry><entry>Árvore</entry><entry>Descrição</entry><entry>Todos os Nós</entry><entry>Padrão</entry><entry>Loads directly all nodes</entry><entry>Driven by Search Key</entry><entry>Nome</entry><entry>Processar Agora</entry><entry>Tipo | Área</entry></row>
+<row><entry> </entry><entry>10</entry><entry>Primary Menu</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Menu</entry><entry> </entry><entry>MM</entry></row>
+<row><entry> </entry><entry>20</entry><entry>DO NOT USE</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>(Primary Account Element Value)</entry><entry> </entry><entry>EV</entry></row>
+<row><entry> </entry><entry>30</entry><entry>DO NOT USE</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>(Primary Product)</entry><entry> </entry><entry>PR</entry></row>
+<row><entry> </entry><entry>40</entry><entry>DO NOT USE</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>(Primary Business Partner)</entry><entry> </entry><entry>BP</entry></row>
+<row><entry> </entry><entry>50</entry><entry>DO NOT USE</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>(Primary Organization)</entry><entry> </entry><entry>OO</entry></row>
+<row><entry> </entry><entry>60</entry><entry>DO NOT USE</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>(Primary Project)</entry><entry> </entry><entry>PJ</entry></row>
+<row><entry> </entry><entry>100</entry><entry>DO NOT USE</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>(Primary Sales Region)</entry><entry> </entry><entry>SR</entry></row>
+<row><entry> </entry><entry>101</entry><entry>GardenWorld ElementValue (Account, etc.)</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld ElementValue (Account, etc.)</entry><entry> </entry><entry>EV</entry></row>
+<row><entry> </entry><entry>102</entry><entry>GardenWorld Product</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld Product</entry><entry> </entry><entry>PR</entry></row>
+<row><entry> </entry><entry>103</entry><entry>GardenWorld Bus Partner</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld Bus Partner</entry><entry> </entry><entry>BP</entry></row>
+<row><entry> </entry><entry>104</entry><entry>GardenWorld Organization</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld Organization</entry><entry> </entry><entry>OO</entry></row>
+<row><entry> </entry><entry>105</entry><entry>GardenWorld Project</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld Project</entry><entry> </entry><entry>PJ</entry></row>
+<row><entry> </entry><entry>108</entry><entry>GardenWorld Sales Region</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld Sales Region</entry><entry> </entry><entry>SR</entry></row>
+<row><entry> </entry><entry>109</entry><entry>GardenWorld Campaign</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld Campaign</entry><entry> </entry><entry>MC</entry></row>
+<row><entry> </entry><entry>110</entry><entry>GardenWorld Activity</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld Activity</entry><entry> </entry><entry>AY</entry></row>
+<row><entry> </entry><entry>111</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>CM Container Stage</entry><entry>false</entry><entry>CS</entry></row>
+<row><entry> </entry><entry>112</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>CM Container</entry><entry>false</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>113</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>CM Media</entry><entry>false</entry><entry>CM</entry></row>
+<row><entry> </entry><entry>114</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>CM Template</entry><entry>false</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>1000000</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A Usuário 2</entry><entry>false</entry><entry>U2</entry></row>
+<row><entry> </entry><entry>1000001</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A Usuário 3</entry><entry>false</entry><entry>U3</entry></row>
+<row><entry> </entry><entry>1000002</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A Usuário 4</entry><entry>false</entry><entry>U4</entry></row>
+<row><entry> </entry><entry>1000003</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A CM Container Stage</entry><entry>false</entry><entry>CS</entry></row>
+<row><entry> </entry><entry>1000004</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A CM Template</entry><entry>false</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>1000005</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A CM Media</entry><entry>false</entry><entry>CM</entry></row>
+<row><entry> </entry><entry>1000006</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A Produto</entry><entry>false</entry><entry>PR</entry></row>
+<row><entry> </entry><entry>1000007</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A Parceiro</entry><entry>false</entry><entry>BP</entry></row>
+<row><entry> </entry><entry>1000008</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A Organização</entry><entry>false</entry><entry>OO</entry></row>
+<row><entry> </entry><entry>1000009</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A Região de Vendas</entry><entry>false</entry><entry>SR</entry></row>
+<row><entry> </entry><entry>1000010</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A Campanha</entry><entry>false</entry><entry>MC</entry></row>
+<row><entry> </entry><entry>1000011</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A Atividade</entry><entry>false</entry><entry>AY</entry></row>
+<row><entry> </entry><entry>1000012</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A Usuário 1</entry><entry>false</entry><entry>U1</entry></row>
+<row><entry> </entry><entry>1000013</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A CM Container</entry><entry>false</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>1000015</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>Mundo do Café S/A Projeto</entry><entry>false</entry><entry>PJ</entry></row>
+<row><entry> </entry><entry>115</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld SiteCC</entry><entry>false</entry><entry>CC</entry></row>
+<row><entry> </entry><entry>118</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld SiteCM</entry><entry>false</entry><entry>CM</entry></row>
+<row><entry> </entry><entry>116</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld SiteCS</entry><entry>false</entry><entry>CS</entry></row>
+<row><entry> </entry><entry>117</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>GardenWorld SiteCT</entry><entry>false</entry><entry>CT</entry></row>
+<row><entry> </entry><entry>5000000</entry><entry>Centro Custo</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>true</entry><entry>Centro Custo</entry><entry>false</entry><entry>EV</entry></row>
+<row><entry> </entry><entry>5000001</entry><entry>Metodo de Contabilização</entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>true</entry><entry>Metodo de Contabilização</entry><entry>false</entry><entry>EV</entry></row>
+<row><entry> </entry><entry>1000014</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>true</entry><entry>Plano de Contas</entry><entry>false</entry><entry>EV</entry></row>
+<row><entry>1500570</entry><entry>5000002</entry><entry> </entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>COF_PlanoFinanceiro</entry><entry>false</entry><entry>TL</entry></row>
+<row><entry>1500570</entry><entry>5000003</entry><entry> </entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>COF_PlanoFinanceiro</entry><entry>false</entry><entry>TL</entry></row></tbody>
+</tgroup>
+</table>

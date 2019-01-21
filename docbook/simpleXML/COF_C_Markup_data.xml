@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Markup</title>
+<tgroup cols='11' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Permitir Informações do Produto</entry><entry>Parceiro de Negócios </entry><entry>Tipo de Documento</entry><entry>Markup</entry><entry>Margem Máxima %</entry><entry>Margem Mínima %</entry><entry>Categoria de Produto</entry><entry>Produto</entry><entry>Prioridade Relativa</entry><entry>Válido desde</entry><entry>Válido até</entry></row>
+<row><entry>true</entry><entry> </entry><entry> </entry><entry>5000000</entry><entry>30</entry><entry>20</entry><entry> </entry><entry>5000022</entry><entry>15</entry><entry>2018-03-01 00:00:00.0</entry><entry>2018-03-01 00:00:00.0</entry></row></tbody>
+</tgroup>
+</table>

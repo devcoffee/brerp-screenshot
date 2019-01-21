@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>AD_Package_Exp_Detail_ID</title>
+<tgroup cols='34' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Tipo de Entidade</entry><entry>Formulário Especial</entry><entry>Formato de Importação</entry><entry>Menu</entry><entry>Mensagem</entry><entry>Model Validator</entry><entry>Novo código do pacote</entry><entry>Código do Pacote Anterior</entry><entry>AD_Package_Exp_Detail_ID</entry><entry>AD_Package_Exp_ID</entry><entry>Formato de Impressão</entry><entry>Processo</entry><entry>Referência</entry><entry>Visualização de Relatório</entry><entry>Perfil</entry><entry>Tabela</entry><entry>Validação Dinâmica</entry><entry>Janela</entry><entry>Bancada de Trabalho</entry><entry>Fluxo de Trabalho</entry><entry>DBType</entry><entry>Descrição</entry><entry>Destination_Directory</entry><entry>Destination_FileName</entry><entry>Diretório</entry><entry>Nome do Arquivo</entry><entry>Linha Núm.</entry><entry>Nome 2</entry><entry>Processado</entry><entry>Processar Agora</entry><entry>Núm. Liberação</entry><entry>SQLStatement</entry><entry>Target_Directory</entry><entry>Tipo</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>1000000</entry><entry>1000000</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>102</entry><entry>260</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>ALL</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>10</entry><entry> </entry><entry>false</entry><entry>false</entry><entry> </entry><entry> </entry><entry> </entry><entry>D</entry></row></tbody>
+</tgroup>
+</table>

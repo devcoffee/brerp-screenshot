@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Controle de Lote</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Próximo Número</entry><entry>Descrição</entry><entry>Incremento</entry><entry>Controle de Lote</entry><entry>Nome</entry><entry>Prefixo</entry><entry>Núm. Inicial</entry><entry>Sufixo</entry></row>
+<row><entry>100</entry><entry> </entry><entry>1</entry><entry>100</entry><entry>Lot Example</entry><entry> </entry><entry>100</entry><entry> </entry></row>
+<row><entry>100</entry><entry>GARANTIA DE PRODUTO</entry><entry>1</entry><entry>5000000</entry><entry>GARANTIA DE PRODUTO</entry><entry>GRT</entry><entry>100</entry><entry>00</entry></row></tbody>
+</tgroup>
+</table>

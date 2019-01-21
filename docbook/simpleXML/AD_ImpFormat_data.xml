@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Formato de Importação</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Formato de Importação</entry><entry>Tabela</entry><entry>Descrição</entry><entry>Formato</entry><entry>Nome</entry><entry>Processar Agora</entry><entry>Caracter Separador</entry></row>
+<row><entry>50005</entry><entry>598</entry><entry>Example Invoice for Garden World</entry><entry>C</entry><entry>Example Invoice</entry><entry>false</entry><entry> </entry></row>
+<row><entry>103</entry><entry>535</entry><entry>US Balance Sheet info in the format of AccountingUS.cvs</entry><entry>C</entry><entry>Accounting - Balance Sheet</entry><entry>false</entry><entry> </entry></row>
+<row><entry>104</entry><entry>535</entry><entry>US Tax (1120) Balance Sheet info in the format of AccountingUS.cvs</entry><entry>C</entry><entry>Accounting - Tax  Balance Sheet</entry><entry>false</entry><entry> </entry></row>
+<row><entry>105</entry><entry>535</entry><entry>US Profit %26 Loss Statement info in the format of AccountingUS.cvs</entry><entry>C</entry><entry>Accounting - Profit%26Loss Statement</entry><entry>false</entry><entry> </entry></row>
+<row><entry>106</entry><entry>535</entry><entry>US Tax (1120) Profit %26 Loss Statement info in the format of AccountingUS.cvs</entry><entry>C</entry><entry>Accounting - Tax Profit%26Loss Statement</entry><entry>false</entry><entry> </entry></row>
+<row><entry>100</entry><entry>532</entry><entry>GardenWorld Furniture Products from Patio Fun Example</entry><entry>C</entry><entry>Example Product</entry><entry>false</entry><entry> </entry></row>
+<row><entry>101</entry><entry>533</entry><entry>GardenWorld Business Partners Example</entry><entry>C</entry><entry>Example BPartner</entry><entry>false</entry><entry> </entry></row>
+<row><entry>102</entry><entry>534</entry><entry>Based on the format of AccountingUS.cvs import natural Accounts</entry><entry>C</entry><entry>Accounting - Accounts</entry><entry>false</entry><entry> </entry></row>
+<row><entry>109</entry><entry>599</entry><entry>GeradenWorld GL Journal Example</entry><entry>C</entry><entry>Example Journal</entry><entry>false</entry><entry> </entry></row>
+<row><entry>50004</entry><entry>591</entry><entry>Garden World Example Order</entry><entry>C</entry><entry>Example Order</entry><entry>false</entry><entry> </entry></row>
+<row><entry>50000</entry><entry>53139</entry><entry>Based on format Assets.csv</entry><entry>C</entry><entry>Assets - Import Asset</entry><entry>false</entry><entry> </entry></row>
+<row><entry>50001</entry><entry>53173</entry><entry>GardenWorld Price Lists</entry><entry>C</entry><entry>Example Price List</entry><entry>false</entry><entry> </entry></row>
+<row><entry>50002</entry><entry>53259</entry><entry> </entry><entry>C</entry><entry>Payroll Movement</entry><entry>false</entry><entry> </entry></row>
+<row><entry>50003</entry><entry>53278</entry><entry>GardenWorld Inventory Movements</entry><entry>C</entry><entry>Example Inventory Move</entry><entry>false</entry><entry> </entry></row>
+<row><entry>200000</entry><entry>572</entry><entry>Example Inventory for Garden World</entry><entry>C</entry><entry>Example Inventory</entry><entry>false</entry><entry> </entry></row>
+<row><entry>1000002</entry><entry>1500069</entry><entry> </entry><entry>C</entry><entry>Importar Taxa (Imposto)</entry><entry>false</entry><entry> </entry></row>
+<row><entry>4000014</entry><entry>1500069</entry><entry> </entry><entry>U</entry><entry>Importação NCM - IBPTax</entry><entry>false</entry><entry>;
+</entry></row>
+<row><entry>4000016</entry><entry>572</entry><entry>Formato de Importação para Estoque Físico</entry><entry>C</entry><entry>Importar Estoque</entry><entry>false</entry><entry> </entry></row>
+<row><entry>4000018</entry><entry>1500145</entry><entry> </entry><entry>C</entry><entry>Import InOut</entry><entry>false</entry><entry> </entry></row>
+<row><entry>4000019</entry><entry>591</entry><entry> </entry><entry>C</entry><entry>Importar Pedido</entry><entry>false</entry><entry> </entry></row>
+<row><entry>4000022</entry><entry>532</entry><entry>Utilizado para realizar importação de produtos conforme planilha FR #2052 </entry><entry>C</entry><entry>Cadastro de Produto</entry><entry>false</entry><entry> </entry></row>
+<row><entry>4000021</entry><entry>533</entry><entry>Utilizado para realizar importação de produtos conforme planilha FR #2053</entry><entry>C</entry><entry>Cadastro de Parceiro de Negócios</entry><entry>false</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

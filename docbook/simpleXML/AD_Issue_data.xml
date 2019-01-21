@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Emissão de Sistema</title>
+<tgroup cols='42' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Ativo</entry><entry>Formulário Especial</entry><entry>Emissão de Sistema</entry><entry>Processo</entry><entry>Janela</entry><entry>Comentários</entry><entry>Banco de Dados</entry><entry>Endereço BD</entry><entry>Error Trace</entry><entry>Reproduzível</entry><entry>Origem</entry><entry>Issue Summary</entry><entry>Vanilla System</entry><entry>Java Info</entry><entry>Linha</entry><entry>Local Host</entry><entry>Logger</entry><entry>Nome</entry><entry>Operating System</entry><entry>Processado</entry><entry>Processar Agora</entry><entry>Profile</entry><entry>ID do Registro</entry><entry>Núm. Liberação</entry><entry>Release Tag</entry><entry>End.Remoto</entry><entry>Hospedeiro Remoto</entry><entry>Solicitar Documento No</entry><entry>Texto de Resposta</entry><entry>Known Issue</entry><entry>Issue Project</entry><entry>Issue System</entry><entry>IssueUser</entry><entry>Solicitação</entry><entry>Source Class</entry><entry>Source Method</entry><entry>Stack Trace</entry><entry>Estatísticas</entry><entry>Support EMail</entry><entry>System Status</entry><entry>Email Registrado</entry><entry>Versão</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000000</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.webui.panel.LoginPanel$1.onEvent(LoginPanel.java:153)
+</entry><entry>N</entry><entry> </entry><entry>Exception NO Data found for AD_Session_ID=1000127</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>153</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MSession</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.webui.panel.LoginPanel$1.onEvent</entry><entry>load</entry><entry>Exception
+	at org.compiere.model.PO.load(PO.java:1346)
+	at org.compiere.model.PO.load(PO.java:1286)
+	at org.compiere.model.PO.&lt;
+init&gt;
+(PO.java:204)
+	at org.compiere.model.PO.&lt;
+init&gt;
+(PO.java:152)
+	at org.compiere.model.X_AD_Session.&lt;
+init&gt;
+(X_AD_Session.java:39)
+	at org.compiere.model.MSession.&lt;
+init&gt;
+(MSession.java:123)
+	at org.adempiere.webui.panel.LoginPanel$1.onEvent(LoginPanel.java:153)
+	at org.zkoss.zk.ui.AbstractComponent.onEvent(AbstractComponent.java:2742)
+	at org.zkoss.zk.ui.AbstractComponent.service(AbstractComponent.java:2713)
+	at org.zkoss.zk.ui.AbstractComponent.service(AbstractComponent.java:2654)
+	at org.zkoss.zk.ui.impl.EventProcessor.process(EventProcessor.java:136)
+	at org.zkoss.zk.ui.impl.UiEngineImpl.processEvent(UiEngineImpl.java:1717)
+	at org.zkoss.zk.ui.impl.UiEngineImpl.process(UiEngineImpl.java:1502)
+	at org.zkoss.zk.ui.impl.UiEngineImpl.execUpdate(UiEngineImpl.java:1212)
+	at org.zkoss.zk.au.http.DHtmlUpdateServlet.process(DHtmlUpdateServlet.java:600)
+	at org.zkoss.zk.au.http.DHtmlUpdateServlet.doGet(DHtmlUpdateServlet.java:482)
+	at org.zkoss.zk.au.http.DHtmlUpdateServlet.doPost(DHtmlUpdateServlet.java:491)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:755)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:304)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:224)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:185)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:151)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apach</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000001</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.webui.util.UserPreference.savePreference(UserPreference.java:124)
+org.adempiere.webui.panel.RolePanel.validateRoles(RolePanel.java:635)
+org.adempiere.webui.panel.RolePanel.onEvent(RolePanel.java:524)
+</entry><entry>N</entry><entry> </entry><entry>org.postgresql.util.PSQLException: ERRO: duplicar valor da chave viola a restrição de unicidade "ad_preference_pkey"
+  Detail: Chave (ad_preference_id)=(1000000) já existe. INSERT INTO AD_Preference (AD_Preference_ID,Attribute,AD_Preference_UU,IsActive,Value,CreatedBy,Created,UpdatedBy,Updated,AD_Client_ID,AD_Org_ID,AD_User_ID) VALUES (?,?,?,?,?,?,?,?,?,?,?,?) [POSaveAD_Preference_c5f7fcc4-a763-40db-b67c-aeadc077990e]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>124</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.util.DB</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.webui.util.UserPreference.savePreference</entry><entry>executeUpdate</entry><entry>org.postgresql.util.PSQLException: ERRO: duplicar valor da chave viola a restrição de unicidade "ad_preference_pkey"
+  Detail: Chave (ad_preference_id)=(1000000) já existe.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2157)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1886)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:559)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:417)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeUpdate(AbstractJdbc2Statement.java:363)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:147)
+	at sun.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at reflect.Method.invoke(Method.java:622)
+	at org.compiere.db.StatementProxy.invoke(StatementProxy.java:128)
+	at com.sun.proxy.$Proxy0.executeUpdate(Unknown Source)
+	at org.compiere.util.DB.executeUpdate(DB.java:1038)
+	at org.compiere.util.DB.executeUpdate(DB.java:1007)
+	at org.compiere.model.PO.doInsert(PO.java:2946)
+	at org.compiere.model.PO.saveNew(PO.java:2750)
+	at org.compiere.model.PO.save(PO.java:2109)
+	at org.compiere.model.PO.saveEx(PO.java:2197)
+	at org.adempiere.webui.util.UserPreference.savePreference(UserPreference.java:124)
+	at org.adempiere.webui.panel.RolePanel.validateRoles(RolePanel.java:635)
+	at org.adempiere.webui.panel.RolePanel.onEvent(RolePanel.java:524)
+	at org.zkoss.zk.ui.AbstractComponent.onEvent(AbstractComponent.java:2742)
+	at org.zkoss.zk.ui.AbstractComponent.service(AbstractComponent.java:2713)
+	at org.zkoss.zk.ui.AbstractComponent.service(AbstractComponent.java:2654)
+	at org.zkoss.zk.ui.impl.EventProcessor.process(EventProcessor.java:136)
+	at org.zkoss.zk.ui.impl.UiEngineI</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000002</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>&gt;
+&gt;
+org.adempiere.exceptions.AdempiereException: Could not save record - Require unique data:  
+&gt;
+&gt;
+
+&gt;
+&gt;
+Please change information.: ERRO: duplicar valor da chave viola a restrição de unicidade "ad_preference_pkey"
+&gt;
+&gt;
+  Detail: Chave (ad_preference_id)=(1000000) já existe.
+&gt;
+&gt;
+	at org.compiere.model.PO.saveEx(PO.java:2205)
+&gt;
+&gt;
+	at org.adempiere.webui.util.UserPreference.savePreference(UserPreference.java:124)
+&gt;
+&gt;
+	at org.adempiere.webui.panel.RolePanel.validateRoles(RolePanel.java:635)
+&gt;
+&gt;
+	at org.adempiere.webui.panel.RolePanel.onEvent(RolePanel.java:524)
+&gt;
+&gt;
+	at org.zkoss.zk.ui.AbstractComponent.onEvent(AbstractComponent.java:2742)
+&gt;
+&gt;
+	at org.zkoss.zk.ui.AbstractComponent.service(AbstractComponent.java:2713)
+&gt;
+&gt;
+	at org.zkoss.zk.ui.AbstractComponent.service(AbstractComponent.java:2654)
+&gt;
+&gt;
+	at org.zkoss.zk.ui.impl.EventProcessor.process(EventProcessor.java:136)
+&gt;
+&gt;
+	at org.zkoss.zk.ui.impl.UiEngineImpl.processEvent(UiEngineImpl.java:1717)
+&gt;
+&gt;
+	at org.zkoss.zk.ui.impl.UiEngineImpl.process(UiEngineImpl.java:1502)
+&gt;
+&gt;
+	at org.zkoss.zk.ui.impl.UiEngineImpl.execUpdate(UiEngineImpl.java:1212)
+&gt;
+&gt;
+	at org.zkoss.zk.au.http.DHtmlUpdateServlet.process(DHtmlUpdateServlet.java:600)
+&gt;
+&gt;
+	at org.zkoss.zk.au.http.DHtmlUpdateServlet.doGet(DHtmlUpdateServlet.java:482)
+&gt;
+&gt;
+	at org.zkoss.zk.au.http.DHtmlUpdateServlet.doPost(DHtmlUpdateServlet.java:491)
+&gt;
+&gt;
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:755)
+&gt;
+&gt;
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+&gt;
+&gt;
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:304)
+&gt;
+&gt;
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+&gt;
+&gt;
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:224)
+&gt;
+&gt;
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:185)
+&gt;
+&gt;
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+&gt;
+&gt;
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHost</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.zkoss</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.zkoss.zk.ui.impl.UiEngineImpl</entry><entry>handleError:1359</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000003</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000004</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000005</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000006</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000007</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000008</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000009</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000010</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000013</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000014</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000011</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000012</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000015</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000016</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000017</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000018</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>No Table Reference Table ID=1120125</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MLookupFactory</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MLookupFactory</entry><entry>getLookup_Table</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000019</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>No SQL - cof_Shipper_ID</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MLookupFactory</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MLookupFactory</entry><entry>getLookupInfo</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000020</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000021</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000022</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000023</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000024</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000025</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000026</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000027</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000028</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000029</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000030</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000031</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000032</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>ClientLanguageWarning</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.GridTab</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.GridTab</entry><entry>processCallout</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000033</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000034</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000035</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000036</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000037</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000038</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 23.25-b01</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000042</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000043</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000044</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000068</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000045</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000046</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000047</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000048</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000049</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000061</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000050</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000051</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000052</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000053</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000054</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000055</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000056</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000057</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000058</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000059</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000060</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000062</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000063</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000064</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000065</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000066</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000067</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000069</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000070</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000071</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000072</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOut</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>export</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000080</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOutProcess</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>process</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000073</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOutProcess</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>doIt</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000095</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.8;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://alecrim.devcoffee.com.br:5432/brerp_development?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.65-b04</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-2-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000097</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.8;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://alecrim.devcoffee.com.br:5432/brerp_development?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Refused: Não é permitido acessar o sistema utilizando a Organização ' * ' </entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.65-b04</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.util.Login</entry><entry>?</entry><entry>Linux 3.14-2-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.util.Login</entry><entry>validateLogin</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000074</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOutProcess</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>process</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000100</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.3.5;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://107.155.116.108:5432/brerp_development?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Refused: Não é permitido acessar o sistema utilizando a Organização ' * ' </entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.65-b04</entry><entry>0</entry><entry>tomilho/107.155.116.115</entry><entry>org.compiere.util.Login</entry><entry>iDempiere</entry><entry>Linux 2.6.32-042stab102.9 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.1</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.util.Login</entry><entry>validateLogin</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2014-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000075</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOut</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>export</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000076</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOutProcess</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>doIt</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000077</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOutProcess</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>process</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000078</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOut</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>export</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000079</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOutProcess</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>doIt</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000081</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOut</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>export</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000082</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOutProcess</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>doIt</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000084</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOut</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>export</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000083</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOutProcess</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>process</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000085</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOutProcess</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>doIt</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000086</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+</entry><entry>N</entry><entry> </entry><entry>NullPointerException NullPointerException</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>245</entry><entry>shoryuken/127.0.1.1</entry><entry>org.adempiere.pipo2.PackOutProcess</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ServerContextPropertiesWrapper.put</entry><entry>process</entry><entry>NullPointerException
+	at java.util.Hashtable.put(Hashtable.java:514)
+	at org.adempiere.util.ServerContextPropertiesWrapper.put(ServerContextPropertiesWrapper.java:245)
+	at org.adempiere.pipo2.handler.GenericPOElementHandler.packOut(GenericPOElementHandler.java:259)
+	at org.adempiere.pipo2.PackOut.export(PackOut.java:144)
+	at org.adempiere.pipo2.PackOutProcess.doIt(PackOutProcess.java:140)
+	at org.compiere.process.SvrProcess.process(SvrProcess.java:198)
+	at org.compiere.process.SvrProcess.startProcess(SvrProcess.java:144)
+	at org.adempiere.util.ProcessUtil.startJavaProcess(ProcessUtil.java:172)
+	at org.compiere.apps.AbstractProcessCtl.startProcess(AbstractProcessCtl.java:466)
+	at org.compiere.apps.AbstractProcessCtl.run(AbstractProcessCtl.java:234)
+	at org.adempiere.webui.apps.WProcessCtl.process(WProcessCtl.java:170)
+	at org.adempiere.webui.apps.AbstractProcessDialog$ProcessDialogRunnable.doRun(AbstractProcessDialog.java:628)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at org.adempiere.webui.apps.DesktopRunnable.run(DesktopRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000087</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000088</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000089</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management, Pick Cart Stop, Work Plan, Tool, PP Task, Workstation, Movement Pick List, Production Appointment, VWorkstationInventoryMonitor, VWorkplanMonitor, VMaterialShipmentMovement, VMaterialReceiptMovement]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000090</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+</entry><entry>N</entry><entry> </entry><entry>org.postgresql.util.PSQLException: ERRO: coluna "y" não existe
+  Position: 499 C_Tax.C_Tax_ID, 2235 : Loader - SELECT C_Tax.C_Tax_ID,NULL,NVL(C_Tax_Trl.Name,'-1'),C_Tax.IsActive FROM C_Tax INNER JOIN C_Tax_TRL ON (C_Tax.C_Tax_ID=C_Tax_Trl.C_Tax_ID AND C_Tax_Trl.AD_Language='pt_BR') WHERE C_Tax.AD_Client_ID IN(0,11) AND C_Tax.AD_Org_ID IN(50007,0,50004,50005,50006,1000000,50000,50001,50002,11,12) AND  (C_Tax.C_Tax_ID IS NULL OR C_Tax.C_Tax_ID NOT IN ( SELECT Record_ID FROM AD_Private_Access WHERE AD_Table_ID = 261 AND AD_User_ID &lt;
+&gt;
+ 100 AND IsActive = 'Y' ))  AND C_Tax.IsSummary = 'Y' AND ((CASE WHEN Y = 'Y' THEN C_Tax.SOPOType = 'S' ELSE C_Tax.SOPOType = 'P' END) OR C_Tax.SOPOType = 'B') ORDER BY 3</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>38</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MLookup</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ContextRunnable.run</entry><entry>doRun</entry><entry>org.postgresql.util.PSQLException: ERRO: coluna "y" não existe
+  Position: 499
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2157)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1886)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:559)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:417)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:302)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:116)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at reflect.Method.invoke(Method.java:606)
+	at org.compiere.db.StatementProxy.invoke(StatementProxy.java:128)
+	at com.sun.proxy.$Proxy0.executeQuery(Unknown Source)
+	at org.compiere.model.MLookup$MLoader.doRun(MLookup.java:799)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000096</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.8;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://alecrim.devcoffee.com.br:5432/brerp_development?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Nodes w/o parent - adding to root - [Formulários Operacionais, Workplan Management]</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.65-b04</entry><entry>0</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MTree</entry><entry>?</entry><entry>Linux 3.14-2-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MTree</entry><entry>loadNodes</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000101</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.3.5;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://107.155.116.108:5432/brerp_development?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>No NextID (-1)</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.65-b04</entry><entry>0</entry><entry>tomilho/107.155.116.115</entry><entry>org.compiere.model.MSequence</entry><entry>iDempiere</entry><entry>Linux 2.6.32-042stab102.9 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.1</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.PO</entry><entry>saveNew</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2014-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000102</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.3.5;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://107.155.116.108:5432/brerp_development?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Not created - AD_Client_ID=0 - COF_C_Alinea</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.65-b04</entry><entry>0</entry><entry>tomilho/107.155.116.115</entry><entry>org.compiere.model.MSequence</entry><entry>iDempiere</entry><entry>Linux 2.6.32-042stab102.9 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.1</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MSequence</entry><entry>checkClientSequences</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2014-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000103</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.3.5;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://107.155.116.108:5432/brerp_development?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>No NextID (-1)</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.65-b04</entry><entry>0</entry><entry>tomilho/107.155.116.115</entry><entry>org.compiere.model.MSequence</entry><entry>iDempiere</entry><entry>Linux 2.6.32-042stab102.9 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.1</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.PO</entry><entry>saveNew</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2014-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000091</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+</entry><entry>N</entry><entry> </entry><entry>org.postgresql.util.PSQLException: ERRO: coluna "y" não existe
+  Position: 499 C_Tax.C_Tax_ID, 2235 : Loader - SELECT C_Tax.C_Tax_ID,NULL,NVL(C_Tax_Trl.Name,'-1'),C_Tax.IsActive FROM C_Tax INNER JOIN C_Tax_TRL ON (C_Tax.C_Tax_ID=C_Tax_Trl.C_Tax_ID AND C_Tax_Trl.AD_Language='pt_BR') WHERE C_Tax.AD_Client_ID IN(0,11) AND C_Tax.AD_Org_ID IN(50007,0,50004,50005,50006,1000000,50000,50001,50002,11,12) AND  (C_Tax.C_Tax_ID IS NULL OR C_Tax.C_Tax_ID NOT IN ( SELECT Record_ID FROM AD_Private_Access WHERE AD_Table_ID = 261 AND AD_User_ID &lt;
+&gt;
+ 100 AND IsActive = 'Y' ))  AND C_Tax.IsSummary = 'Y' AND ((CASE WHEN Y = 'Y' THEN C_Tax.SOPOType = 'S' ELSE C_Tax.SOPOType = 'P' END) OR C_Tax.SOPOType = 'B') ORDER BY 3</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>38</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MLookup</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ContextRunnable.run</entry><entry>doRun</entry><entry>org.postgresql.util.PSQLException: ERRO: coluna "y" não existe
+  Position: 499
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2157)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1886)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:559)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:417)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:302)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:116)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at reflect.Method.invoke(Method.java:606)
+	at org.compiere.db.StatementProxy.invoke(StatementProxy.java:128)
+	at com.sun.proxy.$Proxy0.executeQuery(Unknown Source)
+	at org.compiere.model.MLookup$MLoader.doRun(MLookup.java:799)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000092</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+</entry><entry>N</entry><entry> </entry><entry>org.postgresql.util.PSQLException: ERRO: coluna "y" não existe
+  Position: 499 C_Tax.C_Tax_ID, 2235 : Loader - SELECT C_Tax.C_Tax_ID,NULL,NVL(C_Tax_Trl.Name,'-1'),C_Tax.IsActive FROM C_Tax INNER JOIN C_Tax_TRL ON (C_Tax.C_Tax_ID=C_Tax_Trl.C_Tax_ID AND C_Tax_Trl.AD_Language='pt_BR') WHERE C_Tax.AD_Client_ID IN(0,11) AND C_Tax.AD_Org_ID IN(50007,0,50004,50005,50006,1000000,50000,50001,50002,11,12) AND  (C_Tax.C_Tax_ID IS NULL OR C_Tax.C_Tax_ID NOT IN ( SELECT Record_ID FROM AD_Private_Access WHERE AD_Table_ID = 261 AND AD_User_ID &lt;
+&gt;
+ 100 AND IsActive = 'Y' ))  AND C_Tax.IsSummary = 'Y' AND ((CASE WHEN Y = 'Y' THEN C_Tax.SOPOType = 'S' ELSE C_Tax.SOPOType = 'P' END) OR C_Tax.SOPOType = 'B') ORDER BY 3</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>38</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MLookup</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ContextRunnable.run</entry><entry>doRun</entry><entry>org.postgresql.util.PSQLException: ERRO: coluna "y" não existe
+  Position: 499
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2157)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1886)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:559)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:417)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:302)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:116)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at reflect.Method.invoke(Method.java:606)
+	at org.compiere.db.StatementProxy.invoke(StatementProxy.java:128)
+	at com.sun.proxy.$Proxy0.executeQuery(Unknown Source)
+	at org.compiere.model.MLookup$MLoader.doRun(MLookup.java:799)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000094</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+</entry><entry>N</entry><entry> </entry><entry>org.postgresql.util.PSQLException: ERRO: coluna "y" não existe
+  Position: 499 C_Tax.C_Tax_ID, 2235 : Loader - SELECT C_Tax.C_Tax_ID,NULL,NVL(C_Tax_Trl.Name,'-1'),C_Tax.IsActive FROM C_Tax INNER JOIN C_Tax_TRL ON (C_Tax.C_Tax_ID=C_Tax_Trl.C_Tax_ID AND C_Tax_Trl.AD_Language='pt_BR') WHERE C_Tax.AD_Client_ID IN(0,11) AND C_Tax.AD_Org_ID IN(50007,0,50004,50005,50006,1000000,50000,50001,50002,11,12) AND  (C_Tax.C_Tax_ID IS NULL OR C_Tax.C_Tax_ID NOT IN ( SELECT Record_ID FROM AD_Private_Access WHERE AD_Table_ID = 261 AND AD_User_ID &lt;
+&gt;
+ 100 AND IsActive = 'Y' ))  AND C_Tax.IsSummary = 'Y' AND ((CASE WHEN Y = 'Y' THEN C_Tax.SOPOType = 'S' ELSE C_Tax.SOPOType = 'P' END) OR C_Tax.SOPOType = 'B') ORDER BY 3</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>38</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MLookup</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ContextRunnable.run</entry><entry>doRun</entry><entry>org.postgresql.util.PSQLException: ERRO: coluna "y" não existe
+  Position: 499
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2157)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1886)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:559)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:417)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:302)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:116)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at reflect.Method.invoke(Method.java:606)
+	at org.compiere.db.StatementProxy.invoke(StatementProxy.java:128)
+	at com.sun.proxy.$Proxy0.executeQuery(Unknown Source)
+	at org.compiere.model.MLookup$MLoader.doRun(MLookup.java:799)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000093</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.2.3;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://postgresql-92:5432/brerp_release?encoding=unicode</entry><entry>org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+</entry><entry>N</entry><entry> </entry><entry>org.postgresql.util.PSQLException: ERRO: coluna "y" não existe
+  Position: 499 C_Tax.C_Tax_ID, 2235 : Loader - SELECT C_Tax.C_Tax_ID,NULL,NVL(C_Tax_Trl.Name,'-1'),C_Tax.IsActive FROM C_Tax INNER JOIN C_Tax_TRL ON (C_Tax.C_Tax_ID=C_Tax_Trl.C_Tax_ID AND C_Tax_Trl.AD_Language='pt_BR') WHERE C_Tax.AD_Client_ID IN(0,11) AND C_Tax.AD_Org_ID IN(50007,0,50004,50005,50006,1000000,50000,50001,50002,11,12) AND  (C_Tax.C_Tax_ID IS NULL OR C_Tax.C_Tax_ID NOT IN ( SELECT Record_ID FROM AD_Private_Access WHERE AD_Table_ID = 261 AND AD_User_ID &lt;
+&gt;
+ 100 AND IsActive = 'Y' ))  AND C_Tax.IsSummary = 'Y' AND ((CASE WHEN Y = 'Y' THEN C_Tax.SOPOType = 'S' ELSE C_Tax.SOPOType = 'P' END) OR C_Tax.SOPOType = 'B') ORDER BY 3</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.51-b03</entry><entry>38</entry><entry>shoryuken/127.0.1.1</entry><entry>org.compiere.model.MLookup</entry><entry>?</entry><entry>Linux 3.14-1-amd64 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.0</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.adempiere.util.ContextRunnable.run</entry><entry>doRun</entry><entry>org.postgresql.util.PSQLException: ERRO: coluna "y" não existe
+  Position: 499
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2157)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1886)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:559)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:417)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeQuery(AbstractJdbc2Statement.java:302)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:116)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at reflect.Method.invoke(Method.java:606)
+	at org.compiere.db.StatementProxy.invoke(StatementProxy.java:128)
+	at com.sun.proxy.$Proxy0.executeQuery(Unknown Source)
+	at org.compiere.model.MLookup$MLoader.doRun(MLookup.java:799)
+	at org.adempiere.util.ContextRunnable.run(ContextRunnable.java:38)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at Thread.run(Thread.java:744)
+</entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2013-10-31</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000104</entry><entry> </entry><entry> </entry><entry> </entry><entry>9.3.5;
+PostgreSQL 9.2 JDBC4 (build 1003)</entry><entry>jdbc:postgresql://107.155.116.108:5432/brerp_development?encoding=unicode</entry><entry> </entry><entry>N</entry><entry> </entry><entry>Not created - AD_Client_ID=11 - COF_C_Alinea</entry><entry>N</entry><entry>OpenJDK 64-Bit Server VM 24.65-b04</entry><entry>0</entry><entry>tomilho/107.155.116.115</entry><entry>org.compiere.model.MSequence</entry><entry>iDempiere</entry><entry>Linux 2.6.32-042stab102.9 unknown</entry><entry>false</entry><entry>false</entry><entry>GardenWorld|SYSTEM|</entry><entry>1</entry><entry>2.1</entry><entry>BRERP</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>org.compiere.model.MSequence</entry><entry>checkClientSequences</entry><entry> </entry><entry>C2U8B17P53I8L24M28</entry><entry> </entry><entry>E</entry><entry>?</entry><entry>2014-10-31</entry></row></tbody>
+</tgroup>
+</table>

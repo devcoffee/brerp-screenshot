@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Regra de Alerta</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Alerta</entry><entry>Regra de Alerta</entry><entry>Tabela</entry><entry>Msg de Erro</entry><entry>Sql FROM</entry><entry>Válido</entry><entry>Nome</entry><entry>Outra Cláusula SQL</entry><entry>Pós Processamento</entry><entry>Pré Processamento</entry><entry>Sql SELECT</entry><entry>Sql WHERE</entry></row>
+<row><entry>100</entry><entry>100</entry><entry> </entry><entry> </entry><entry>DBA_Free_Space</entry><entry>true</entry><entry>Space Info</entry><entry>GROUP BY Tablespace_Name</entry><entry> </entry><entry> </entry><entry>Tablespace_Name, 
+COUNT (*) AS Pieces, 
+SUM (bytes)/1024/1024 Free_MB, 
+MAX (bytes)/1024 Largest_kB, 
+ROUND(MAX (bytes) / SUM (bytes),2) * 100 Ratio,
+SUM (blocks) Free_Blocks,
+MAX (blocks) Largest_Blocks,
+ROUND(SQRT (MAX (blocks) / SUM (blocks)) * (100 / SQRT (SQRT (COUNT (blocks)))),2) Fragmentation_Index</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

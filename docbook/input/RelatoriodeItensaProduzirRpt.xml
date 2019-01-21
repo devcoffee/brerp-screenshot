@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2017-03-20 15:18:14.0</para><para> <emphasis>Atualizado:</emphasis>2017-03-22 11:34:39.0</para>
+ 
+ <title>Relatório:  Relatório de Itens a Produzir</title> 
+ <para><emphasis> ReportView: </emphasis>RV_COF_T_ItensAProduzir</para><table> 
+ <title>Relatório_de_Itens_a_Produzir Parâmetros </title> 
+ <tgroup cols='6' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome</entry><entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores(Padrão)</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row> 
+</thead><tbody><row> 
+ <entry>Somente Itens Produzidos</entry><entry> COF_isOnlyProductionIten</entry> 
+<entry>Lista</entry> 
+ <entry>Não
+Sim
+</entry> 
+<entry>null</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry> AD_Org_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Entidade organizacional dentro da Empresa</entry> 
+<entry>Uma "Organização" é uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos são loja, departamento. Você pode compartilhar dados entre organizações.</entry> 
+</row> 
+<row> 
+ <entry>Armazém</entry><entry> M_Warehouse_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Armazém de estocagem e Ponto de Serviço</entry> 
+<entry>O "Armazém" identifica um armazém ou local em particular onde os produtos são armazenados ou são prestados serviços.</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry> M_Product_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Produto, Serviço, Item</entry> 
+<entry>Identifica um item que é ou comprado ou vendido por esta organização.</entry> 
+</row> 
+<row> 
+ <entry>Vendido</entry><entry> IsSold</entry> 
+<entry>Lista</entry> 
+ <entry>Não
+Sim
+</entry> 
+<entry>A Organização vende este produto</entry> 
+<entry>A caixa de verificação "Vendido" indica se este produto é vendido por esta organização.</entry> 
+</row> 
+<row> 
+ <entry>Produzido</entry><entry> IsManufactured</entry> 
+<entry>Lista</entry> 
+ <entry>Não
+Sim
+</entry> 
+<entry>O produto é produzido</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Grupo do Produto</entry><entry> COF_ValueProductGroup</entry> 
+<entry>Texto Curto (String)</entry> 
+ <entry> </entry> 
+<entry>null</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Classe do Produto</entry><entry> COF_ValueProductClass</entry> 
+<entry>Texto Curto (String)</entry> 
+ <entry> </entry> 
+<entry>null</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Data do Pedido</entry><entry> DateOrdered</entry> 
+<entry>Data</entry> 
+ <entry> </entry> 
+<entry>Data do Pedido</entry> 
+<entry>Indica a Data que um item foi pedido.</entry> 
+</row> 
+<row> 
+ <entry>Data Prometida</entry><entry> DatePromised</entry> 
+<entry>Data</entry> 
+ <entry> </entry> 
+<entry>Data que o Pedido foi prometido</entry> 
+<entry>A "Data Prometida" indica a data, se existir, que um Pedido foi prometido.</entry> 
+</row> 
+<row> 
+ <entry>Tipo do Produto</entry><entry> COF_ValueProductType</entry> 
+<entry>Texto Curto (String)</entry> 
+ <entry> </entry> 
+<entry>null</entry> 
+<entry>null</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<table> 
+ <title>RV_COF_T_ItensAProduzir - Colunas</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="1*"/><colspec colname='c7'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores padrão</entry><entry>Valor de restrição</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry> (@#AD_Client_ID@)</entry> 
+<entry> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry> (@#AD_Org_ID@)</entry> 
+<entry> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Instância de Processo</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry>ADPInstance_COFTItensAProduzir</entry> 
+<entry> </entry> 
+<entry>Instance of the process</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Fator de conversão (divisão)</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Somente Itens Produzidos</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Estoque Máximo Convertido</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Estoque Mínimo Convertido</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Lote Minimo</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Quantidade mpinima a ser produzida no roteiro</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Lote Minimo Convertido</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>A Produzir X Estoque Mínimo</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>A Produzir X Estoque Mínimo Fator</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>A Produzir X OP/Estoque Mínimo</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>A Produzir X OP/Estoque Mínimo</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>A produzir X OP/PMP</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>A produzir X OP/PMP Fator</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Classe do Produto</entry><entry>Tabela</entry> 
+<entry>COF_ProductClass Value Name</entry> 
+<entry>COFProductClass_COFTItensAProd</entry> 
+<entry> </entry> 
+<entry>Primary Key : Product Class</entry> 
+<entry>Primary Key : Product Class</entry> 
+</row> 
+<row> 
+ <entry>Grupo do Produto</entry><entry>Tabela</entry> 
+<entry>COF_ProductGroup Value Name</entry> 
+<entry>COFProductGroup_COFTItensAProd</entry> 
+<entry> </entry> 
+<entry>Primary Key : Product Group</entry> 
+<entry>Primary Key : Product Group</entry> 
+</row> 
+<row> 
+ <entry>Tipo do Produto</entry><entry>Procurar</entry> 
+<entry>COF_ProductType_ID</entry> 
+<entry>COFProductType_COFTItensAProdu</entry> 
+<entry>COF_ProductType.AD_Org_ID = @AD_Org_ID@ OR COF_ProductType.AD_Org_ID= 0 </entry> 
+<entry>Primary Key : Product Type</entry> 
+<entry>Primary Key : Product Type</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Comprada</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade a Entregar</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry>COFQtyDelivery_COFTItensAProdu</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade a Entregar Convertida</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade de Etiquetas de Entrada</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade Mínima Comercial</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade Minima Comercial Convertida</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade em OP</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade em OP Convertida</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade em PMP</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade em PMP Convertida</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Situação Comercial</entry><entry>Lista</entry> 
+<entry>Produto Bloqueado
+Produto Descontinuado
+Produto Especial
+Produto Linha
+Produto Promocional
+Produto Ponta de Estoque
+Produto Sazonal
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade em Estoque</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade em Estoque Convertida</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Classe do Produto</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Grupo do Produto</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo do Produto</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Roteiro</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>UDM</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry>CUOM_COFTItensAProduzir</entry> 
+<entry> </entry> 
+<entry>Unit of Measure</entry> 
+<entry>The UOM defines a unique non monetary Unit of Measure</entry> 
+</row> 
+<row> 
+ <entry>Data do Pedido</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date of Order</entry> 
+<entry>Indicates the Date an item was ordered.</entry> 
+</row> 
+<row> 
+ <entry>Data Prometida</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date Order was promised</entry> 
+<entry>The Date Promised indicates the date, if any, that an Order was promised for.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Nível Máximo</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Maximum Inventory level for this product</entry> 
+<entry>Indicates the maximum quantity of this product to be stocked in inventory.</entry> 
+</row> 
+<row> 
+ <entry>Nível Mínimo</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Minimum Inventory level for this product</entry> 
+<entry>Indicates the minimum quantity of this product to be stocked in inventory.
+</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry>MProduct_COFTItensAProduzir</entry> 
+<entry>M_Product.IsSummary='N' AND M_Product.IsActive='Y' AND (M_Product.Discontinued = 'N' OR (M_Product.Discontinued = 'Y'  AND M_Product.DiscontinuedAt &gt;
+ SYSDATE))	 </entry> 
+<entry>Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Armazém</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry>MWarehouse_COFTItensAProduzir</entry> 
+<entry> </entry> 
+<entry>Storage Warehouse and Service Point</entry> 
+<entry>The Warehouse identifies a unique Warehouse where products are stored or Services are provided.</entry> 
+</row> 
+<row> 
+ <entry>T_ItensAProduzir_UU</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Chave de Busca</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(ver acima)</entry> 
+<entry>A search key allows you a fast method of finding a particular record.
+If you leave the search key empty, the system automatically creates a numeric number.  The document sequence used for this fallback number is defined in the "Maintain Sequence" window with the name "DocumentNo_&lt;
+TableName&gt;
+", where TableName is the actual name of the table (e.g. C_Order).</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

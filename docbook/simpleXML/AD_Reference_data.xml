@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Referência</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Referência</entry><entry>Descrição</entry><entry>Tipo de Entidade</entry><entry>Comentário/Ajuda</entry><entry>Ordenar por Valor</entry><entry>Nome</entry><entry>Tipo de Validação</entry><entry>Formato do Valor</entry></row>
+<row><entry>1500092</entry><entry> </entry><entry>BRERP0100</entry><entry> </entry><entry>false</entry><entry>COF_C_CNABConfig - cof_OperationType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>200074</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>TreeDisplayedOn</entry><entry>L</entry><entry> </entry></row>
+<row><entry>353</entry><entry>BP SalesRep selection</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_BPartner SalesRep</entry><entry>T</entry><entry> </entry></row>
+<row><entry>356</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_Greeting</entry><entry>T</entry><entry> </entry></row>
+<row><entry>350</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_BP_Group PriorityBase</entry><entry>L</entry><entry> </entry></row>
+<row><entry>362</entry><entry>Element Values</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_ElementValue (trx)</entry><entry>T</entry><entry> </entry></row>
+<row><entry>383</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_Project InvoiceRule</entry><entry>L</entry><entry> </entry></row>
+<row><entry>384</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_Project LineLevel</entry><entry>L</entry><entry> </entry></row>
+<row><entry>349</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_BOMProduct Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>369</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_Measure DataType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>370</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_Benschmark Accumulation Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>371</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_Ratio</entry><entry>T</entry><entry> </entry></row>
+<row><entry>26</entry><entry>Row ID Data Type</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>RowID</entry><entry>D</entry><entry> </entry></row>
+<row><entry>27</entry><entry>Color element</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>Color</entry><entry>D</entry><entry> </entry></row>
+<row><entry>399</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>CM_ChatEntry</entry><entry>T</entry><entry> </entry></row>
+<row><entry>395</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>CM_Chat ModerationType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>396</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>CM_ChatEntry ModeratorStatus</entry><entry>L</entry><entry> </entry></row>
+<row><entry>398</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>CM_Chat EntryType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>50001</entry><entry>Defines the type of packages available</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Package_Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>50004</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Package_Build_Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>50005</entry><entry>List of package source types</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Package_Source_Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>373</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_Ratio Operand</entry><entry>L</entry><entry> </entry></row>
+<row><entry>360</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_Invoice MatchRequirement</entry><entry>L</entry><entry> </entry></row>
+<row><entry>206</entry><entry>Posting Tables</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Table Posting</entry><entry>T</entry><entry> </entry></row>
+<row><entry>209</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_ImpFormat FormatType</entry><entry>L</entry><entry>L</entry></row>
+<row><entry>210</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_ImpFormat_Row Type</entry><entry>L</entry><entry>L</entry></row>
+<row><entry>212</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_InventoryCount QtyRange</entry><entry>L</entry><entry>c</entry></row>
+<row><entry>215</entry><entry>CC Trx Type</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_Payment Trx Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>217</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_Cash Trx Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>218</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>R_Request Request Type</entry><entry>L</entry><entry>L</entry></row>
+<row><entry>224</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_Commission DocBasis</entry><entry>L</entry><entry>A</entry></row>
+<row><entry>225</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_Commission Frequency</entry><entry>L</entry><entry>A</entry></row>
+<row><entry>226</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Role User Level</entry><entry>L</entry><entry> </entry></row>
+<row><entry>228</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_Goal</entry><entry>T</entry><entry> </entry></row>
+<row><entry>230</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_Goal Parent</entry><entry>T</entry><entry> </entry></row>
+<row><entry>231</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_Measure Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>236</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_Report CalculationType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>237</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_Report ColumnType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>238</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_Report CurrencyType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>239</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_ReportColumn</entry><entry>T</entry><entry> </entry></row>
+<row><entry>240</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_ReportLine</entry><entry>T</entry><entry> </entry></row>
+<row><entry>242</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>PA_ReportLine Parent</entry><entry>T</entry><entry> </entry></row>
+<row><entry>243</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Color Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>400</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Process_JasperReports</entry><entry>T</entry><entry> </entry></row>
+<row><entry>167</entry><entry>List of days</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>Weekdays</entry><entry>L</entry><entry> </entry></row>
+<row><entry>168</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_InvoiceSchedule InvoiceFrequency</entry><entry>L</entry><entry> </entry></row>
+<row><entry>172</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_DocType SO</entry><entry>T</entry><entry> </entry></row>
+<row><entry>175</entry><entry>Valid Account combinations</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_ValidCombination</entry><entry>T</entry><entry> </entry></row>
+<row><entry>207</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>GL Category Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>343</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_Payment</entry><entry>T</entry><entry> </entry></row>
+<row><entry>176</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_PeriodControl Action</entry><entry>L</entry><entry>L</entry></row>
+<row><entry>178</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>GL_Budget Status</entry><entry>L</entry><entry>L</entry></row>
+<row><entry>179</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_SalesRegion Parent</entry><entry>T</entry><entry> </entry></row>
+<row><entry>1500093</entry><entry> </entry><entry>BRERP0100</entry><entry> </entry><entry>false</entry><entry>COF_C_CNABConfig_Line - cof_CNABLineType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>182</entry><entry>Element Values</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_ElementValue (all)</entry><entry>T</entry><entry> </entry></row>
+<row><entry>184</entry><entry>Tree selection</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Tree</entry><entry>T</entry><entry> </entry></row>
+<row><entry>188</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_PriceList Version</entry><entry>T</entry><entry> </entry></row>
+<row><entry>193</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_BankAccount for Credit Card</entry><entry>T</entry><entry> </entry></row>
+<row><entry>194</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_DiscountPriceList Base</entry><entry>L</entry><entry> </entry></row>
+<row><entry>198</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_Inventory ReportType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>33</entry><entry>Resource Assignment</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>Assignment</entry><entry>D</entry><entry> </entry></row>
+<row><entry>323</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_Allocation</entry><entry>T</entry><entry> </entry></row>
+<row><entry>252</entry><entry>Business Partners who are Employee</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_BPartner Employee</entry><entry>T</entry><entry> </entry></row>
+<row><entry>253</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Print Field Alignment</entry><entry>L</entry><entry> </entry></row>
+<row><entry>255</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Print Format Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>256</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Print Area</entry><entry>L</entry><entry> </entry></row>
+<row><entry>257</entry><entry>Integer Type only (Name)</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Column Integer</entry><entry>T</entry><entry> </entry></row>
+<row><entry>259</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_PrintFormat</entry><entry>T</entry><entry> </entry></row>
+<row><entry>262</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_PrintFormat Order</entry><entry>T</entry><entry> </entry></row>
+<row><entry>263</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_PrintFormat Shipment</entry><entry>T</entry><entry> </entry></row>
+<row><entry>201</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_BP_EDI EDI Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>202</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_EDI Status</entry><entry>L</entry><entry> </entry></row>
+<row><entry>203</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_EDI Trx Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>300</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>WF_Transition Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>305</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>WF_Instance State</entry><entry>L</entry><entry> </entry></row>
+<row><entry>306</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>WF_EventType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>311</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Language Maintenance</entry><entry>L</entry><entry> </entry></row>
+<row><entry>312</entry><entry>Stroke Type</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_PrintTableFormat Stroke</entry><entry>L</entry><entry> </entry></row>
+<row><entry>313</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_RelatedProduct Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>315</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>B_TopicType AuctionType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>316</entry><entry>Employee or SalesRep - or System</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_User - Supervisor</entry><entry>T</entry><entry> </entry></row>
+<row><entry>318</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Scheduler Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>324</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_AttributeSet MandatoryType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>326</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_Attribute Value Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>330</entry><entry>Preference Type</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Role PreferenceType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>332</entry><entry>AP and/or AR</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>APAR</entry><entry>L</entry><entry> </entry></row>
+<row><entry>245</entry><entry>Entity Type (Dictionary, ..)</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>_Entity Type</entry><entry>L</entry><entry>AAAA</entry></row>
+<row><entry>50007</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>ShowHelp List</entry><entry>L</entry><entry> </entry></row>
+<row><entry>247</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_Discount Type</entry><entry>L</entry><entry>L</entry></row>
+<row><entry>248</entry><entry>Nord-West-..</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Color StartPoint</entry><entry>L</entry><entry>0</entry></row>
+<row><entry>250</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>CostUpdate Source</entry><entry>L</entry><entry> </entry></row>
+<row><entry>290</entry><entry>Order</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_Order</entry><entry>T</entry><entry> </entry></row>
+<row><entry>291</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Field ObscureType</entry><entry>L</entry><entry> </entry></row>
+<row><entry>294</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_TransactionAllocation Type</entry><entry>L</entry><entry> </entry></row>
+<row><entry>295</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_InOutLine</entry><entry>T</entry><entry> </entry></row>
+<row><entry>298</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>M_Transaction</entry><entry>T</entry><entry> </entry></row>
+<row><entry>288</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_ProjectType Category</entry><entry>L</entry><entry> </entry></row>
+<row><entry>2</entry><entry>Reference Validation Type list</entry><entry>D</entry><entry>e.g. I - Independent </entry><entry>false</entry><entry>AD_Reference Validation Types</entry><entry>L</entry><entry>L</entry></row>
+<row><entry>3</entry><entry>Column selection</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>AD_Column ColumName</entry><entry>T</entry><entry> </entry></row>
+<row><entry>321</entry><entry> </entry><entry>D</entry><entry> </entry><entry>false</entry><entry>C_DocType RMA</entry><entry>T</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

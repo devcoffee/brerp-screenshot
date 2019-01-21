@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Registro (log) do Processador de Fluxo de Trabalho</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Processador de Fluxo de Trabalho</entry><entry>Registro (log) do Processador de Fluxo de Trabalho</entry><entry>Dados Binários</entry><entry>Descrição</entry><entry>Erro</entry><entry>Referência</entry><entry>Resumo</entry><entry>Texto de Mensagem</entry></row>
+<row><entry>100</entry><entry>5004405</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#0 - 00.53</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004406</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#1 - 00.35</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004407</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#2 - 00.25</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004408</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#3 - 00.33</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004409</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#4 - 00.22</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004410</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#5 - 00.20</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004411</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#6 - 00.24</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004412</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#7 - 00.24</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004413</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#8 - 00.22</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004414</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#9 - 00.15</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004415</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#10 - 00.21</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004416</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#0 - 00.49</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=2</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004417</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#1 - 00.64</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004418</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#2 - 00.39</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004419</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#3 - 00.18</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004420</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#4 - 00.23</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004421</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#5 - 00.19</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=1</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004422</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#6 - 00.25</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004423</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#7 - 00.23</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004424</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#8 - 00.29</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5004425</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#9 - 00.18</entry><entry>Wakeup #0 - DynPriority #0 - EndWaitTime #0 - Logs deleted=0</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

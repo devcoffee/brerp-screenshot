@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Cheque alocados na Fatura</title>
+<tgroup cols='3' align='center' colsep='1' rowsep='1'> 
+
+ <tbody><row><entry>ChequeNo</entry><entry>Ao dia</entry><entry>Valor</entry></row>
+<row><entry>23231</entry><entry>2018-02-15 00:00:00</entry><entry>1000</entry>
+</row>
+<row><entry>666</entry><entry>2018-02-15 00:00:00</entry><entry>447.50</entry>
+</row>
+<row><entry>386</entry><entry>2018-02-15 00:00:00</entry><entry>4</entry>
+</row>
+<row><entry>4444</entry><entry>2018-02-28 00:00:00</entry><entry>32.37</entry>
+</row>
+<row><entry>4444</entry><entry>2018-02-28 00:00:00</entry><entry>906.73</entry>
+</row>
+<row><entry>386</entry><entry>2018-02-15 00:00:00</entry><entry>1000</entry>
+</row>
+<row><entry>108</entry><entry>2018-02-17 00:00:00</entry><entry>10000</entry>
+</row>
+<row><entry>5432</entry><entry>2018-02-15 00:00:00</entry><entry>-107.40</entry>
+</row>
+<row><entry>7777</entry><entry>2016-10-05 00:00:00</entry><entry>30000.00</entry>
+</row></tbody>
+</tgroup>
+</table>

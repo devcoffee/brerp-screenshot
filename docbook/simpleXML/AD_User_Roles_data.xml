@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>AD_User_Roles</title>
+<tgroup cols='2' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Perfil</entry><entry>Usuário/Contato</entry></row>
+<row><entry>0</entry><entry>100</entry></row>
+<row><entry>102</entry><entry>100</entry></row>
+<row><entry>103</entry><entry>100</entry></row>
+<row><entry>0</entry><entry>0</entry></row>
+<row><entry>102</entry><entry>101</entry></row>
+<row><entry>103</entry><entry>101</entry></row>
+<row><entry>103</entry><entry>102</entry></row>
+<row><entry>50004</entry><entry>100</entry></row>
+<row><entry>50004</entry><entry>50001</entry></row>
+<row><entry>1000001</entry><entry>1000001</entry></row>
+<row><entry>1000002</entry><entry>100</entry></row>
+<row><entry>1000002</entry><entry>1000026</entry></row>
+<row><entry>1000000</entry><entry>100</entry></row>
+<row><entry>1000001</entry><entry>100</entry></row>
+<row><entry>5000011</entry><entry>100</entry></row>
+<row><entry>5000015</entry><entry>100</entry></row>
+<row><entry>5000016</entry><entry>100</entry></row>
+<row><entry>5000017</entry><entry>100</entry></row>
+<row><entry>5000018</entry><entry>100</entry></row>
+<row><entry>5000019</entry><entry>100</entry></row>
+<row><entry>5000020</entry><entry>100</entry></row>
+<row><entry>5000021</entry><entry>100</entry></row>
+<row><entry>5000023</entry><entry>100</entry></row>
+<row><entry>1000000</entry><entry>5000000</entry></row>
+<row><entry>1000001</entry><entry>1000000</entry></row>
+<row><entry>1000000</entry><entry>1000000</entry></row>
+<row><entry>5000011</entry><entry>1000023</entry></row>
+<row><entry>5000018</entry><entry>1000005</entry></row>
+<row><entry>1000000</entry><entry>1000022</entry></row></tbody>
+</tgroup>
+</table>

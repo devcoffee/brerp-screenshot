@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>RMA Tax</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Taxa</entry><entry>Provedor de Impostos</entry><entry>Preço Inclui Imposto</entry><entry>ARM</entry><entry>Processado</entry><entry>Valor do Imposto</entry><entry>Valor da Base de Imposto</entry></row>
+<row><entry>1000028</entry><entry> </entry><entry>true</entry><entry>5000000</entry><entry>false</entry><entry>198.00</entry><entry>3100.00</entry></row>
+<row><entry>1000026</entry><entry> </entry><entry>true</entry><entry>5000000</entry><entry>false</entry><entry>228.00</entry><entry>3000.00</entry></row>
+<row><entry>1000024</entry><entry> </entry><entry>true</entry><entry>5000000</entry><entry>false</entry><entry>49.50</entry><entry>3000.00</entry></row>
+<row><entry>1000022</entry><entry> </entry><entry>true</entry><entry>5000000</entry><entry>false</entry><entry>100.00</entry><entry>1000.00</entry></row>
+<row><entry>1000021</entry><entry> </entry><entry>true</entry><entry>5000000</entry><entry>false</entry><entry>360.00</entry><entry>3000.00</entry></row>
+<row><entry>1000028</entry><entry> </entry><entry>true</entry><entry>5000001</entry><entry>false</entry><entry>402.00</entry><entry>6600.00</entry></row>
+<row><entry>1000026</entry><entry> </entry><entry>true</entry><entry>5000001</entry><entry>false</entry><entry>456.00</entry><entry>6000.00</entry></row>
+<row><entry>1000024</entry><entry> </entry><entry>true</entry><entry>5000001</entry><entry>false</entry><entry>99.00</entry><entry>6000.00</entry></row>
+<row><entry>1000022</entry><entry> </entry><entry>true</entry><entry>5000001</entry><entry>false</entry><entry>600.00</entry><entry>6000.00</entry></row>
+<row><entry>1000021</entry><entry> </entry><entry>true</entry><entry>5000001</entry><entry>false</entry><entry>720.00</entry><entry>6000.00</entry></row>
+<row><entry>1000013</entry><entry> </entry><entry>true</entry><entry>5000002</entry><entry>false</entry><entry>0.0</entry><entry>0.0</entry></row>
+<row><entry>1000011</entry><entry> </entry><entry>true</entry><entry>5000002</entry><entry>false</entry><entry>0.0</entry><entry>0.0</entry></row>
+<row><entry>1000009</entry><entry> </entry><entry>true</entry><entry>5000002</entry><entry>false</entry><entry>0.0</entry><entry>0.0</entry></row>
+<row><entry>1000006</entry><entry> </entry><entry>true</entry><entry>5000002</entry><entry>false</entry><entry>0.0</entry><entry>0.0</entry></row>
+<row><entry>1000016</entry><entry> </entry><entry>true</entry><entry>5000002</entry><entry>false</entry><entry>0.0</entry><entry>0.0</entry></row>
+<row><entry>1000013</entry><entry> </entry><entry>true</entry><entry>5000004</entry><entry>false</entry><entry>114.00</entry><entry>1500.00</entry></row>
+<row><entry>1000011</entry><entry> </entry><entry>true</entry><entry>5000004</entry><entry>false</entry><entry>24.75</entry><entry>1500.00</entry></row>
+<row><entry>1000009</entry><entry> </entry><entry>true</entry><entry>5000004</entry><entry>false</entry><entry>50.00</entry><entry>500.00</entry></row>
+<row><entry>1000006</entry><entry> </entry><entry>true</entry><entry>5000004</entry><entry>false</entry><entry>270.00</entry><entry>1500.00</entry></row>
+<row><entry>1000016</entry><entry> </entry><entry>true</entry><entry>5000004</entry><entry>false</entry><entry>53.55</entry><entry>797.50</entry></row>
+<row><entry>1000028</entry><entry> </entry><entry>true</entry><entry>5000005</entry><entry>false</entry><entry>50.00</entry><entry>1000.00</entry></row>
+<row><entry>1000021</entry><entry> </entry><entry>true</entry><entry>5000005</entry><entry>false</entry><entry>120.00</entry><entry>1000.00</entry></row>
+<row><entry>1000013</entry><entry> </entry><entry>true</entry><entry>5000007</entry><entry>false</entry><entry>167.20</entry><entry>2200.00</entry></row>
+<row><entry>1000011</entry><entry> </entry><entry>true</entry><entry>5000007</entry><entry>false</entry><entry>36.30</entry><entry>2200.00</entry></row>
+<row><entry>1000006</entry><entry> </entry><entry>true</entry><entry>5000007</entry><entry>false</entry><entry>261.36</entry><entry>1540.00</entry></row>
+<row><entry>1000013</entry><entry> </entry><entry>true</entry><entry>5000008</entry><entry>false</entry><entry>7.60</entry><entry>100.00</entry></row>
+<row><entry>1000011</entry><entry> </entry><entry>true</entry><entry>5000008</entry><entry>false</entry><entry>1.65</entry><entry>100.00</entry></row>
+<row><entry>1000009</entry><entry> </entry><entry>true</entry><entry>5000008</entry><entry>false</entry><entry>10.00</entry><entry>100.00</entry></row>
+<row><entry>1000006</entry><entry> </entry><entry>true</entry><entry>5000008</entry><entry>false</entry><entry>18.00</entry><entry>100.00</entry></row>
+<row><entry>1000016</entry><entry> </entry><entry>true</entry><entry>5000008</entry><entry>false</entry><entry>10.71</entry><entry>159.50</entry></row>
+<row><entry>1000013</entry><entry> </entry><entry>true</entry><entry>5000009</entry><entry>false</entry><entry>1.07</entry><entry>14.00</entry></row>
+<row><entry>1000011</entry><entry> </entry><entry>true</entry><entry>5000009</entry><entry>false</entry><entry>0.23</entry><entry>14.00</entry></row>
+<row><entry>1000006</entry><entry> </entry><entry>true</entry><entry>5000009</entry><entry>false</entry><entry>2.52</entry><entry>14.00</entry></row>
+<row><entry>1000016</entry><entry> </entry><entry>true</entry><entry>5000009</entry><entry>false</entry><entry>0.65</entry><entry>11.60</entry></row>
+<row><entry>1000028</entry><entry> </entry><entry>true</entry><entry>5000012</entry><entry>false</entry><entry>60.00</entry><entry>1000.00</entry></row>
+<row><entry>1000026</entry><entry> </entry><entry>true</entry><entry>5000012</entry><entry>false</entry><entry>76.00</entry><entry>1000.00</entry></row>
+<row><entry>1000024</entry><entry> </entry><entry>true</entry><entry>5000012</entry><entry>false</entry><entry>16.50</entry><entry>1000.00</entry></row>
+<row><entry>1000021</entry><entry> </entry><entry>true</entry><entry>5000012</entry><entry>false</entry><entry>120.00</entry><entry>1000.00</entry></row>
+<row><entry>5000000</entry><entry> </entry><entry>true</entry><entry>5000013</entry><entry>false</entry><entry>79.20</entry><entry>1320.00</entry></row>
+<row><entry>1000016</entry><entry> </entry><entry>true</entry><entry>5000013</entry><entry>false</entry><entry>237.60</entry><entry>1320.00</entry></row>
+<row><entry>1000026</entry><entry> </entry><entry>true</entry><entry>5000017</entry><entry>false</entry><entry>15.96</entry><entry>210.00</entry></row>
+<row><entry>1000024</entry><entry> </entry><entry>true</entry><entry>5000017</entry><entry>false</entry><entry>3.47</entry><entry>210.00</entry></row>
+<row><entry>1000021</entry><entry> </entry><entry>true</entry><entry>5000017</entry><entry>false</entry><entry>37.80</entry><entry>210.00</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>COF_PreferenciaXML_ID</title>
+<tgroup cols='36' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Endereço</entry><entry>Número</entry><entry>Bairro</entry><entry>Complemento</entry><entry>Endereço do PN</entry><entry>Nome do PN</entry><entry>Nome2 do PN</entry><entry>Atividade</entry><entry>Parceiro de Negócios </entry><entry>Campanha</entry><entry>Cidade</entry><entry>CFOP XML</entry><entry>CNPJ do Adquirente/Encomendante</entry><entry>CST COFINS</entry><entry>CST COFINS XML</entry><entry>CST ICMS</entry><entry>CST ICMS XML</entry><entry>CST IPI</entry><entry>CST IPI XML</entry><entry>CST PIS</entry><entry>CST PIS XML</entry><entry>COF_PreferenciaXML_ID</entry><entry>Cod. Regime Trib.</entry><entry>Condição de Pagamento</entry><entry>Projeto</entry><entry>Região</entry><entry>Descrição</entry><entry>CFOP</entry><entry>CNAE</entry><entry>IE</entry><entry>Produto</entry><entry>Chave da LDM(BOM) do Produto</entry><entry>Nome do Produto</entry><entry>Chave de Produto</entry><entry>Centro de Custo</entry><entry>Centro de Custo 2</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>5000000</entry><entry>Mundo do Cafe S/A</entry><entry>Mundo do Cafe S/A</entry><entry> </entry><entry>5000000</entry><entry> </entry><entry>1005026</entry><entry> </entry><entry>13823508000131</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>5000000</entry><entry>3</entry><entry>1000000</entry><entry> </entry><entry>465</entry><entry> </entry><entry> </entry><entry>1081302</entry><entry>415092169117</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Contra Documento</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Contra Documento</entry><entry>Tipo de Documento</entry><entry>Tipo de Contra-Documento</entry><entry>Descrição</entry><entry>Ação do Documento</entry><entry>Criar Contra-Documento</entry><entry>Válido</entry><entry>Nome</entry><entry>Processar Agora</entry></row>
+<row><entry>100</entry><entry>126</entry><entry>132</entry><entry> </entry><entry> </entry><entry>true</entry><entry>true</entry><entry>PO-&gt;
+SO</entry><entry>false</entry></row></tbody>
+</tgroup>
+</table>

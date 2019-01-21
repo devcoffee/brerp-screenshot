@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>COF_OSServico_ID</title>
+<tgroup cols='10' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Faturado</entry><entry>Motivo</entry><entry>Ordem de Serviço</entry><entry>COF_OSServico_ID</entry><entry>Serviço</entry><entry>Valor Unitário</entry><entry>Descrição</entry><entry>Total Geral</entry><entry>Lista de Preço</entry><entry>Quantidade</entry></row>
+<row><entry>true</entry><entry> </entry><entry>5000000</entry><entry>5000000</entry><entry>5000026</entry><entry>155</entry><entry> </entry><entry>155</entry><entry>1000005</entry><entry>1</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Configuração de Provedor de Impostos</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Configuração de Provedor de Impostos</entry><entry>Descrição</entry><entry>Nome</entry><entry>Classe de Provedor de Impostos</entry><entry>URL</entry></row>
+<row><entry>1000001</entry><entry>Utilizado para realizar os cálculos de impostos de acordo com a legislação brasileira</entry><entry>BrERP Tax Provider</entry><entry>org.brerp.base.component.BrERPTaxProvider</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

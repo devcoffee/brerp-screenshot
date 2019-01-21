@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>AD_UserPreference_ID</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Usuário/Contato</entry><entry>AD_UserPreference_ID</entry><entry>Salvar Automáticamente</entry><entry>Casas Decimais Automáticas para Valores</entry><entry>Novo Registro Automático</entry><entry>Detailed Zoom Across</entry><entry>Use Similar To</entry><entry>Toggle on Double Click</entry></row>
+<row><entry>100</entry><entry>1000000</entry><entry>true</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>false</entry></row>
+<row><entry>100</entry><entry>1000002</entry><entry>true</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>false</entry></row>
+<row><entry>5000000</entry><entry>5000000</entry><entry>true</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>false</entry></row>
+<row><entry>1000000</entry><entry>5000001</entry><entry>true</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>false</entry></row>
+<row><entry>1000023</entry><entry>5000002</entry><entry>true</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>false</entry></row>
+<row><entry>1000005</entry><entry>5000003</entry><entry>true</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>false</entry></row>
+<row><entry>1000022</entry><entry>5000004</entry><entry>true</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>false</entry></row>
+<row><entry>100</entry><entry>1000001</entry><entry>true</entry><entry>0</entry><entry>true</entry><entry>true</entry><entry>false</entry><entry>false</entry></row>
+<row><entry>1000026</entry><entry>5000005</entry><entry>true</entry><entry>0</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>false</entry></row></tbody>
+</tgroup>
+</table>

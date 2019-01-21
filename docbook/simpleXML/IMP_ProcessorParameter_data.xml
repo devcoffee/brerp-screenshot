@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Importar os Paramêtros do Processo</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Importar Processo</entry><entry>Importar os Paramêtros do Processo</entry><entry>Nome</entry><entry>Valor de Parâmetro</entry><entry>Chave de Busca</entry></row>
+<row><entry>Import Processor Parameter Description</entry><entry>HDD Import Processor Parameter Help</entry><entry>50000</entry><entry>50000</entry><entry>Name of file from where xml will be imported</entry><entry>C_Order</entry><entry>fileName</entry></row>
+<row><entry>Import Processor Parameter Description</entry><entry>JMS Topic Import Processor Parameter Help</entry><entry>50001</entry><entry>50001</entry><entry>Name of JMS Topic from where xml will be Imported</entry><entry>ExampleTopic</entry><entry>topicName</entry></row>
+<row><entry>Import Processor Parameter Description</entry><entry>JMS Topic Import Processor Parameter Help</entry><entry>50001</entry><entry>50002</entry><entry>protocol which will be used for JMS connection</entry><entry>tcp</entry><entry>protocol</entry></row>
+<row><entry>Import Processor Parameter Description</entry><entry>JMS Topic Import Processor Parameter Help</entry><entry>50001</entry><entry>50003</entry><entry>Durable Subscription</entry><entry>true</entry><entry>isDurableSubscription</entry></row>
+<row><entry>Import Processor Parameter Description</entry><entry>JMS Topic Import Processor Parameter Help</entry><entry>50001</entry><entry>50004</entry><entry>Subscription Name</entry><entry>exampleSubName</entry><entry>subscriptionName</entry></row>
+<row><entry>Import Processor Parameter Description</entry><entry>JMS Topic Import Processor Parameter Help</entry><entry>50001</entry><entry>50005</entry><entry>JMS Connection Client ID</entry><entry>ImpClientID</entry><entry>clientID</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Campo **</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Campo</entry><entry>Idioma</entry><entry>Checked</entry><entry>Pré Traduzido</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Traduzida</entry><entry>Nome</entry><entry>Placeholder</entry></row>
+<row><entry>10307</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Pronóstico de material</entry><entry>Pronóstico de material</entry><entry>true</entry><entry>Pronóstico</entry><entry> </entry></row>
+<row><entry>5907</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Dirección Web Descripción</entry><entry> </entry><entry>true</entry><entry>Dirección Web Descripción</entry><entry> </entry></row>
+<row><entry>663</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Código para el registro en el formato requerido;
+ debe ser único</entry><entry>Un código le permite a usted un método rápido de encontrar un registro en particular</entry><entry>true</entry><entry>Código</entry><entry> </entry></row>
+<row><entry>2363</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Producto;
+ servicio o artículo.</entry><entry>Identifica un artículo que puede ser comprado o vendido es esta organización.</entry><entry>true</entry><entry>Producto</entry><entry> </entry></row>
+<row><entry>5734</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Precio unitario para ser facturado</entry><entry>Precio unitario en la moneda del tercero</entry><entry>true</entry><entry>Precio de Factura</entry><entry> </entry></row>
+<row><entry>5753</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Lenguaje para esta entidad</entry><entry>El lenguaje identifica el lenguaje a usar para el despliegue</entry><entry>true</entry><entry>Lenguaje</entry><entry> </entry></row>
+<row><entry>5500</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Producto;
+ servicio o artículo.</entry><entry>Identifica un artículo que puede ser comprado o vendido es esta organización.</entry><entry>true</entry><entry>Producto</entry><entry> </entry></row>
+<row><entry>3569</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Fecha Entrega Solicitada</entry><entry> </entry></row>
+<row><entry>10652</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Número de Identificación Tributaria</entry><entry>Número de Identificación Tributaria es el número de identificación gubernamental de esta entidad</entry><entry>true</entry><entry>Número Identificación</entry><entry> </entry></row>
+<row><entry>5919</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Saludo para el contacto del tercero (BP)</entry><entry> </entry><entry>true</entry><entry>Saludo contacto del tercero</entry><entry> </entry></row>
+<row><entry>10176</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Entidad organizacional dentro del grupo empresarial</entry><entry>Una organización es una unidad del grupo empresarial o entidad legal - Ej. Tiendas y departamentos. Es posible compartir datos entre organizaciones.</entry><entry>true</entry><entry>Organización</entry><entry> </entry></row>
+<row><entry>10177</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Grupo Empresarial para esta instalación</entry><entry>Grupo Empresarial. No se pueden compartir datos entre diferentes grupos empresariales.</entry><entry>true</entry><entry>Grupo Empresarial</entry><entry> </entry></row>
+<row><entry>10136</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Distribución de contabilidad general</entry><entry>Si los criterios de combinación de la cuenta de distribución se resuelven, la fijación a la combinación de la cuenta es substituida por las combinaciones de la cuenta de líneas de distribución. La distribución está prorrateada basada en el cociente de las líneas. La distribución debe ser válida para ser utilizada.</entry><entry>true</entry><entry>Distribución Contabilidad</entry><entry> </entry></row>
+<row><entry>212</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Lenguaje para esta entidad</entry><entry>El lenguaje identifica el lenguaje a usar para el despliegue</entry><entry>true</entry><entry>Lenguaje</entry><entry> </entry></row>
+<row><entry>386</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Flujo de trabajo o combinación de tareas</entry><entry>El campo flujo de trabajo identifica un flujo de trabajo único en el sistema.</entry><entry>true</entry><entry>Flujo de Trabajo</entry><entry> </entry></row>
+<row><entry>1516668</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Additional document charges</entry><entry>The Charge indicates a type of Charge (Handling, Shipping, Restocking)</entry><entry>false</entry><entry>Charge</entry><entry> </entry></row>
+<row><entry>2944</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Almacén y punto de servicio</entry><entry>El almacén identifica un punto único donde los productos son almacenados</entry><entry>true</entry><entry>Almacén</entry><entry> </entry></row>
+<row><entry>4810</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Actividad de Negocio</entry><entry>Las actividades indican tareas que son ejecutadas en el curso de un negocio;
+ las actividades son usadas para el costeo por actividad (ABC)</entry><entry>true</entry><entry>Actividad</entry><entry> </entry></row>
+<row><entry>10097</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Valor de la Condición</entry><entry> </entry><entry>true</entry><entry>Valor</entry><entry> </entry></row>
+<row><entry>13179</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Nombre de usuario / Login a usar para el ingreso.</entry><entry>Nombre de usuario / Login a usar para el ingreso.
+Email de la persona responsable del sistema (Registrado en la tienda Web)</entry><entry>true</entry><entry>Nombre Usuario.</entry><entry> </entry></row>
+<row><entry>13424</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Sobreescribe la definición de obligatorio de la columna</entry><entry>El campo debe tener un valor para que el registro sea guardado en la base de datos.</entry><entry>true</entry><entry>Obligatorio (sobreescribe)</entry><entry> </entry></row>
+<row><entry>13425</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Referencia del sistema - sobreescribe la definida en la columna</entry><entry>Usted puede sobreescribir el tipo de presentación, utilícelo solo si está consciente de las consecuencias.</entry><entry>true</entry><entry>Referencia (sobreescribe)</entry><entry> </entry></row>
+<row><entry>13755</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Código del registro en el formato requerido.</entry><entry>7 bit minúscula alfa numérico - máx longitud 8 - puede ser usado para los nombres del sistema operativo.</entry><entry>true</entry><entry>Código</entry><entry> </entry></row>
+<row><entry>50066</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Paquete Exportado</entry><entry> </entry></row>
+<row><entry>50070</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Organización</entry><entry> </entry></row>
+<row><entry>50081</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Fecha cuando el paquete fue procesado</entry><entry> </entry><entry>true</entry><entry>Fecha Procesado</entry><entry> </entry></row>
+<row><entry>50091</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Identificación Versión Paquete</entry><entry> </entry></row>
+<row><entry>50093</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Organización</entry><entry> </entry></row>
+<row><entry>50096</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Tipo</entry><entry> </entry></row>
+<row><entry>50109</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Proceso</entry><entry> </entry></row>
+<row><entry>50110</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Flujo de Trabajo</entry><entry> </entry></row>
+<row><entry>50112</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Colección de grupo de ventanas</entry><entry> </entry></row>
+<row><entry>50117</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Notas</entry><entry> </entry></row>
+<row><entry>53360</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Valor Condición</entry><entry> </entry><entry>true</entry><entry>Valor</entry><entry> </entry></row>
+<row><entry>7141</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Nombre del esquema de cuentas</entry><entry> </entry><entry>true</entry><entry>Nombre del Esquema de Cuentas</entry><entry> </entry></row>
+<row><entry>55433</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Permitir Información MRP</entry><entry> </entry></row>
+<row><entry>10218</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Producto;
+ servicio o artículo.</entry><entry>Identifica un artículo que puede ser comprado o vendido es esta organización.</entry><entry>true</entry><entry>Producto</entry><entry> </entry></row>
+<row><entry>230</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Identificador alfanumérico de la entidad.</entry><entry>El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional al código. El nombre es de hasta 60 caracteres de longitud.</entry><entry>true</entry><entry>Nombre</entry><entry> </entry></row>
+<row><entry>233</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Pestaña dentro de una ventana.</entry><entry>La pestaña indica una pestaña que se despliega dentro de una ventana</entry><entry>true</entry><entry>Pestaña</entry><entry> </entry></row>
+<row><entry>8588</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Línea de entrega o documento de recibo.</entry><entry>La línea de Entrega / Recibo indica una línea única en un documento de entrega / recibo</entry><entry>true</entry><entry>Línea Entrega / Recibo</entry><entry> </entry></row>
+<row><entry>3354</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Cargos adicionales del documento</entry><entry>El cargo indica un tipo de cargo (manejo, embalaje, reposición)</entry><entry>true</entry><entry>Cargo</entry><entry> </entry></row>
+<row><entry>384</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Nodo de flujo de trabajo;
+ paso o proceso</entry><entry>El nodo de flujo de trabajo indica un paso o proceso único en este flujo de trabajo.</entry><entry>true</entry><entry>Nodo</entry><entry> </entry></row>
+<row><entry>3158</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Para cartas;
+ Ej. "Querido 
+{
+0}
+" o "Querido Mr. 
+{
+0}
+" - En el timpo pasado;
+ "
+{
+0}
+" es substituido por el nombre.</entry><entry>Los saludos serán impresos en cartas enviadas a terceros.</entry><entry>true</entry><entry>Saludo</entry><entry> </entry></row>
+<row><entry>5914</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Dirección web de la imagen</entry><entry>Dirección web de la imagen, la imagen no se almacena en la base de datos;
+</entry><entry>true</entry><entry>Dirección Web Imagen</entry><entry> </entry></row>
+<row><entry>1203</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Frecuencia con que las facturas serán generadas</entry><entry>La frecuencia de facturación indica la frecuencia de generación de facturas para un tercero</entry><entry>true</entry><entry>Frecuencia de Factura</entry><entry> </entry></row>
+<row><entry>1370</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Usar Cuenta Puente Error</entry><entry> </entry></row>
+<row><entry>7549</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Pestaña dentro de una ventana.</entry><entry>La pestaña indica una pestaña que se despliega dentro de una ventana</entry><entry>true</entry><entry>Pestaña</entry><entry> </entry></row>
+<row><entry>2260</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Lenguaje para esta entidad</entry><entry>El lenguaje identifica el lenguaje a usar para el despliegue</entry><entry>true</entry><entry>Lenguaje</entry><entry> </entry></row>
+<row><entry>939</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Código para el registro en el formato requerido;
+ debe ser único</entry><entry>Un código le permite a usted un método rápido de encontrar un registro en particular</entry><entry>true</entry><entry>Código</entry><entry> </entry></row>
+<row><entry>711</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Total de Débitos en la moneda del negocio</entry><entry>El Débito total indica el total de débito para una nota contable o lote de notas contables en la moneda fuente</entry><entry>true</entry><entry>Total Débito</entry><entry> </entry></row>
+<row><entry>8583</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Producto;
+ servicio o artículo.</entry><entry>Identifica un artículo que puede ser comprado o vendido es esta organización.</entry><entry>true</entry><entry>Producto</entry><entry> </entry></row>
+<row><entry>2930</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Cargos adicionales del documento</entry><entry>El cargo indica un tipo de cargo (manejo, embalaje, reposición)</entry><entry>true</entry><entry>Cargo</entry><entry> </entry></row>
+<row><entry>3538</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Contraseña de la dirección de correo electrónico que envía</entry><entry> </entry><entry>true</entry><entry>Contraseña del Correo Electrónico desde</entry><entry> </entry></row>
+<row><entry>55817</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Moneda para este registro</entry><entry>Indica la moneda a ser usada cuando se procese o Informe este registro</entry><entry>true</entry><entry>Moneda</entry><entry> </entry></row>
+<row><entry>609</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Siguiente nodo en el flujo de trabajo.</entry><entry>El nodo siguiente indica el siguiente paso o tarea en este flujo de trabajo.</entry><entry>true</entry><entry>Nodo Siguiente</entry><entry> </entry></row>
+<row><entry>504</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Identificador alfanumérico de la entidad.</entry><entry>El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional al código. El nombre es de hasta 60 caracteres de longitud.</entry><entry>true</entry><entry>Nombre</entry><entry> </entry></row>
+<row><entry>2777</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Procesar Factura</entry><entry> </entry></row>
+<row><entry>5654</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Gerenciamento das Fontes de Impressão</entry><entry>Fonte utilizada para impressão</entry><entry>true</entry><entry>Fonte de Impressão</entry><entry> </entry></row>
+<row><entry>53742</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Cantidad Total</entry><entry>Suma de las cantidades
+
+Este campo muestra la suma de las cantidades del producto que ha tenido movimientos.</entry><entry>true</entry><entry>Cantidad Acumulada</entry><entry> </entry></row>
+<row><entry>54035</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Cantidad Ordenada</entry><entry>La Cantidad Ordenada indica la cantidad de un producto que fue ordenada</entry><entry>true</entry><entry>Cantidad Ordenada</entry><entry> </entry></row>
+<row><entry>54133</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Recurso/Planta</entry><entry> </entry><entry>true</entry><entry>Recurso/Planta</entry><entry> </entry></row>
+<row><entry>54139</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Fecha de la orden</entry><entry>Indica la fecha en que un artículo fue ordenada</entry><entry>true</entry><entry>Fecha de la Orden</entry><entry> </entry></row>
+<row><entry>54196</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Representante Compañía</entry><entry>Representante Compañía para la orden de distribución</entry><entry>true</entry><entry>Representante Compañía</entry><entry> </entry></row>
+<row><entry>56190</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Período 1 %</entry><entry> </entry></row>
+<row><entry>56191</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Período 2 %</entry><entry> </entry></row>
+<row><entry>56195</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Período 6 %</entry><entry> </entry></row>
+<row><entry>56198</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Período 9 %</entry><entry> </entry></row>
+<row><entry>56202</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Período 13 %</entry><entry> </entry></row>
+<row><entry>58771</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Importa Datos Planeación Producto</entry><entry> </entry></row>
+<row><entry>4185</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Identificador alfanumérico de la entidad.</entry><entry>El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional al código. El nombre es de hasta 60 caracteres de longitud.</entry><entry>true</entry><entry>Nombre</entry><entry> </entry></row>
+<row><entry>1509264</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>CEP</entry><entry> </entry></row>
+<row><entry>4505</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Identificador de este ciclo del proyecto</entry><entry>Identifica un ciclo del proyecto que se pueda componer de uno o más pasos o estados.</entry><entry>true</entry><entry>Ciclo del Proyecto</entry><entry> </entry></row>
+<row><entry>3746</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>La configuración de LDM ha sido verificada</entry><entry>El cuadro de verificación verificado indica si la configuración de este producto ha sido verificada. Este es usado para productos que constan de una lista de materiales.</entry><entry>true</entry><entry>Verificado</entry><entry> </entry></row>
+<row><entry>2984</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Cargos adicionales del documento</entry><entry>El cargo indica un tipo de cargo (manejo, embalaje, reposición)</entry><entry>true</entry><entry>Cargo</entry><entry> </entry></row>
+<row><entry>4534</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Producto;
+ servicio o artículo.</entry><entry>Identifica un artículo que puede ser comprado o vendido es esta organización.</entry><entry>true</entry><entry>Producto</entry><entry> </entry></row>
+<row><entry>5146</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Las transacciones de contabilidad general han sido procesadas.</entry><entry>El campo contabilizado indica el estado de la generación de las Líneas contables a la contabilidad general.</entry><entry>true</entry><entry>Contabilizado</entry><entry> </entry></row>
+<row><entry>7981</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Identifica un Tercero</entry><entry>Un tercero es cualquiera con quien usted realiza transacciones. Este puede incluir Proveedores, Clientes, Empleados o Vendedores.</entry><entry>true</entry><entry>Tercero</entry><entry> </entry></row>
+<row><entry>3806</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Producto;
+ servicio o artículo.</entry><entry>Identifica un artículo que puede ser comprado o vendido es esta organización.</entry><entry>true</entry><entry>Producto</entry><entry> </entry></row>
+<row><entry>5925</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>DUNS (del inglés Data Universal Numbering System o Sistema Universal de Numeración de Datos)</entry><entry>Usado por EDI - para detalles ver www.dnb.com/dunsno/list.htm</entry><entry>true</entry><entry>DUNS</entry><entry> </entry></row>
+<row><entry>5926</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Importar Terceros</entry><entry> </entry></row>
+<row><entry>4343</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Identificador alfanumérico de la entidad.</entry><entry>El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional al código. El nombre es de hasta 60 caracteres de longitud.</entry><entry>true</entry><entry>Nombre</entry><entry> </entry></row>
+<row><entry>424</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Monto</entry><entry> </entry></row>
+<row><entry>4128</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Cuenta bancaria del tercero</entry><entry>La cuenta bancaria del tercero identifica la cuenta bancaria a ser usada por este tercero</entry><entry>true</entry><entry>Cuenta Bancaria Tercero</entry><entry> </entry></row>
+<row><entry>3832</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Cuenta de ganancia realizada</entry><entry>La cuenta de ganancia realizada indica la cuenta a ser usada cuando se registran ganancias realizadas por revaluación de moneda</entry><entry>true</entry><entry>Cta. Ganancia Realizada</entry><entry> </entry></row>
+<row><entry>194</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Identificador alfanumérico de la entidad.</entry><entry>El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional al código. El nombre es de hasta 60 caracteres de longitud.</entry><entry>true</entry><entry>Nombre</entry><entry> </entry></row>
+<row><entry>6566</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Instancia de conjunto de atributos del producto</entry><entry>Valor actual de Instancia del conjunto de atributos del producto</entry><entry>true</entry><entry>Instancia Conjunto de Atributos</entry><entry> </entry></row>
+<row><entry>3210</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Producto;
+ servicio o artículo.</entry><entry>Identifica un artículo que puede ser comprado o vendido es esta organización.</entry><entry>true</entry><entry>Producto</entry><entry> </entry></row>
+<row><entry>5772</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Identificador alfanumérico de la entidad.</entry><entry>El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional al código. El nombre es de hasta 60 caracteres de longitud.</entry><entry>true</entry><entry>Nombre</entry><entry> </entry></row>
+<row><entry>7984</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Tipo de documento o reglas</entry><entry>El tipo de documento determina la secuencia del documento y las reglas de proceso</entry><entry>true</entry><entry>Tipo de Documento</entry><entry> </entry></row>
+<row><entry>7986</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Moneda para este registro</entry><entry>Indica la moneda a ser usada cuando se procese o Informe este registro</entry><entry>true</entry><entry>Moneda</entry><entry> </entry></row>
+<row><entry>53300</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Tipo Recurso Manufactura</entry><entry> </entry></row>
+<row><entry>1173</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Identificador único de mi lista de precios</entry><entry>Listas de precios son usadas para determinar el precio;
+ margen y costo de artículos comprados o vendidos.</entry><entry>true</entry><entry>Lista de Precios</entry><entry> </entry></row>
+<row><entry>4470</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Fecha en que el proceso fue corrido por última vez</entry><entry>La fecha de última ejecución indica la última vez que se ejecutó un proceso</entry><entry>true</entry><entry>Ultima Fecha de Ejecución</entry><entry> </entry></row>
+<row><entry>12016</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>Procesar Ahora</entry><entry> </entry></row>
+<row><entry>2575</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Proceso o Informe</entry><entry>El campo proceso identifica un proceso o informe único en el sistema.</entry><entry>true</entry><entry>Proceso</entry><entry> </entry></row>
+<row><entry>8389</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Código de producto del tercero</entry><entry>El código de producto del proveedor identifica el código usado por el proveedor para este producto.</entry><entry>true</entry><entry>Código Producto Tercero</entry><entry> </entry></row>
+<row><entry>3305</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Línea de entrega o documento de recibo.</entry><entry>La línea de Entrega / Recibo indica una línea única en un documento de entrega / recibo</entry><entry>true</entry><entry>Línea Entrega / Recibo</entry><entry> </entry></row>
+<row><entry>3092</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Moneda para este registro</entry><entry>Indica la moneda a ser usada cuando se procese o Informe este registro</entry><entry>true</entry><entry>Moneda</entry><entry> </entry></row>
+<row><entry>4356</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Solicitud de un tercero o prospecto.</entry><entry>La solicitud identifica un requerimiento único de un tercero o prospecto.</entry><entry>true</entry><entry>Solicitud</entry><entry> </entry></row>
+<row><entry>239</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Lenguaje para esta entidad</entry><entry>El lenguaje identifica el lenguaje a usar para el despliegue</entry><entry>true</entry><entry>Lenguaje</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

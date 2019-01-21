@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>AD_Role_OrgAccess</title>
+<tgroup cols='2' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Perfil</entry><entry>Somente Leitura</entry></row>
+<row><entry>0</entry><entry>false</entry></row>
+<row><entry>102</entry><entry>false</entry></row>
+<row><entry>102</entry><entry>false</entry></row>
+<row><entry>102</entry><entry>false</entry></row>
+<row><entry>103</entry><entry>false</entry></row>
+<row><entry>102</entry><entry>false</entry></row>
+<row><entry>103</entry><entry>false</entry></row>
+<row><entry>102</entry><entry>false</entry></row>
+<row><entry>103</entry><entry>false</entry></row>
+<row><entry>102</entry><entry>false</entry></row>
+<row><entry>102</entry><entry>false</entry></row>
+<row><entry>102</entry><entry>false</entry></row>
+<row><entry>102</entry><entry>false</entry></row>
+<row><entry>102</entry><entry>false</entry></row>
+<row><entry>103</entry><entry>false</entry></row>
+<row><entry>50004</entry><entry>false</entry></row>
+<row><entry>50004</entry><entry>false</entry></row>
+<row><entry>50004</entry><entry>false</entry></row>
+<row><entry>1000000</entry><entry>false</entry></row>
+<row><entry>1000000</entry><entry>false</entry></row>
+<row><entry>1000001</entry><entry>false</entry></row>
+<row><entry>1000002</entry><entry>false</entry></row>
+<row><entry>5000011</entry><entry>false</entry></row>
+<row><entry>5000015</entry><entry>true</entry></row>
+<row><entry>5000015</entry><entry>false</entry></row>
+<row><entry>5000016</entry><entry>true</entry></row>
+<row><entry>5000016</entry><entry>false</entry></row>
+<row><entry>5000017</entry><entry>true</entry></row>
+<row><entry>5000017</entry><entry>false</entry></row>
+<row><entry>5000019</entry><entry>true</entry></row>
+<row><entry>5000019</entry><entry>false</entry></row>
+<row><entry>5000020</entry><entry>true</entry></row>
+<row><entry>5000020</entry><entry>false</entry></row>
+<row><entry>5000021</entry><entry>true</entry></row>
+<row><entry>5000021</entry><entry>false</entry></row>
+<row><entry>5000023</entry><entry>true</entry></row>
+<row><entry>5000023</entry><entry>false</entry></row>
+<row><entry>1000000</entry><entry>false</entry></row>
+<row><entry>1000001</entry><entry>false</entry></row>
+<row><entry>1000000</entry><entry>false</entry></row>
+<row><entry>1000001</entry><entry>false</entry></row>
+<row><entry>1000000</entry><entry>false</entry></row>
+<row><entry>1000001</entry><entry>false</entry></row>
+<row><entry>1000000</entry><entry>false</entry></row>
+<row><entry>1000001</entry><entry>false</entry></row>
+<row><entry>5000018</entry><entry>false</entry></row>
+<row><entry>5000018</entry><entry>false</entry></row>
+<row><entry>5000018</entry><entry>false</entry></row></tbody>
+</tgroup>
+</table>

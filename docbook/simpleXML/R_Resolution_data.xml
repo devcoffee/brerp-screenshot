@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Resolução</title>
+<tgroup cols='4' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Nome</entry><entry>Resolução</entry></row>
+<row><entry> </entry><entry> </entry><entry>Solved</entry><entry>100</entry></row>
+<row><entry> </entry><entry> </entry><entry>Delayed</entry><entry>101</entry></row>
+<row><entry> </entry><entry> </entry><entry>Dropped</entry><entry>102</entry></row></tbody>
+</tgroup>
+</table>

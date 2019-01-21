@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Auditoria de Sessão</title> 
+ <para> <emphasis>Descrição: </emphasis>  Auditoria de Sessões de Usuários</para><para> <emphasis>Comentário/Ajuda: </emphasis>Histórico de Sessões Online ou Web</para><para><emphasis> Criado em: </emphasis>2003-05-28 21:55:18.0
+</para><para><emphasis>Atualizado em: </emphasis>2000-01-02 00:00:00.0</para>
+<section> 
+ <title>Tabela: Auditoria de Sessão - AD_Session</title> 
+ 
+<ulink url="data/AD_Session_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Lista de Sessões de Usuários</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Histórico de Sessões Online ou Web</para> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Session Audit Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Sessão</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">User Session Online or Web</entry> 
+<entry>Online or Web Session Information</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Criado</entry><entry>Data+Hora</entry> 
+<entry>(SYSDATE)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date this record was created</entry> 
+<entry>The Created field indicates the date that this record was created.</entry> 
+</row> 
+<row> 
+ <entry>Criado por</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">User who created this records</entry> 
+<entry>The Created By field indicates the user who created this record.</entry> 
+</row> 
+<row> 
+ <entry>Atualizado</entry><entry>Data+Hora</entry> 
+<entry>(SYSDATE)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date this record was updated</entry> 
+<entry>The Updated field indicates the date that this record was updated.</entry> 
+</row> 
+<row> 
+ <entry>End.Remoto</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Remote Address</entry> 
+<entry>The Remote Address indicates an alternative or external address.</entry> 
+</row> 
+<row> 
+ <entry>Hospedeiro Remoto</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Remote host Info</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nome do Servidor</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Node instance name</entry> 
+</row> 
+<row> 
+ <entry>Sessão Web</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Web Session ID</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Perfil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adrole_adsession</entry> 
+<entry> </entry> 
+<entry valign="middle">Responsibility Role</entry> 
+<entry>The Role determines security and access a user who has this Role will have in the System.</entry> 
+</row> 
+<row> 
+ <entry>Data de Login</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Auditoria de Alterações - AD_ChangeLog</title> 
+ 
+<ulink url="data/AD_ChangeLog_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Alterações de Dados</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Registro de alterações de dados</para> 
+<para><emphasis>Coluna linkada: </emphasis> Session</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Change Audit Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Sessão</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adsession_adchangelog</entry> 
+<entry> </entry> 
+<entry valign="middle">User Session Online or Web</entry> 
+<entry>Online or Web Session Information</entry> 
+</row> 
+<row> 
+ <entry>Transação</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Name of the transaction</entry> 
+<entry>Internal name of the transaction</entry> 
+</row> 
+<row> 
+ <entry>Registro de Alteração</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Log of data changes</entry> 
+<entry>Log of data changes</entry> 
+</row> 
+<row> 
+ <entry>Atualizado</entry><entry>Data+Hora</entry> 
+<entry>(SYSDATE)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date this record was updated</entry> 
+<entry>The Updated field indicates the date that this record was updated.</entry> 
+</row> 
+<row> 
+ <entry>Atualizado por</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">User who updated this records</entry> 
+<entry>The Updated By field indicates the user who updated this record.</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtable_adchangelog</entry> 
+<entry> </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>ID do Registro</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Direct internal record ID</entry> 
+<entry>The Record ID is the internal unique identifier of a record. Please note that zooming to the record may not be successful for Orders, Invoices and Shipment/Receipts as sometimes the Sales Order type is not known.</entry> 
+</row> 
+<row> 
+ <entry>Coluna</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">adcolumn_adchangelog</entry> 
+<entry> </entry> 
+<entry valign="middle">Column in the table</entry> 
+<entry>Link to the database column of the table</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Personalização</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The change is a customization of the data dictionary and can be applied after Migration</entry> 
+<entry>The migration "resets" the system to the current/original setting.  If selected you can save the customization and re-apply it.  Please note that you need to check, if your customization has no negative side effect in the new release.</entry> 
+</row> 
+<row> 
+ <entry>Evento no Log de Alteraçoes</entry><entry>Lista</entry> 
+<entry>Delete
+Insert
+Update</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Type of Event in Change Log</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor Antigo</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The old file data</entry> 
+<entry>Old data overwritten in the field</entry> 
+</row> 
+<row> 
+ <entry>Novo Valor</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">New field value</entry> 
+<entry>New data entered in the field</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Desfazer Alterações</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Refazer Alterações</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>AD_ChangeLog_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Indisponibilidade de Recurso</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Do dia</entry><entry>Ao dia</entry><entry>Descrição</entry><entry>Recurso</entry><entry>Indisponibilidade de Recurso</entry></row>
+<row><entry>2002-07-01 00:00:00.0</entry><entry>2002-07-01 00:00:00.0</entry><entry>Training class</entry><entry>100</entry><entry>100</entry></row>
+<row><entry>2002-07-05 00:00:00.0</entry><entry>2002-07-12 00:00:00.0</entry><entry>Vacation</entry><entry>100</entry><entry>101</entry></row></tbody>
+</tgroup>
+</table>

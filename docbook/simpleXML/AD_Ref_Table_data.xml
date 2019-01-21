@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>AD_Ref_Table</title>
+<tgroup cols='10' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Mostra Coluna</entry><entry>Info Window</entry><entry>Coluna Chave</entry><entry>Referência</entry><entry>Tabela</entry><entry>Janela</entry><entry>Tipo de Entidade</entry><entry>Mostrar Valor</entry><entry>Sql ORDER BY</entry><entry>Sql WHERE</entry></row>
+<row><entry>15752</entry><entry> </entry><entry>15744</entry><entry>200071</entry><entry>895</entry><entry>385</entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>6940</entry><entry> </entry><entry>6954</entry><entry>264</entry><entry>489</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>6979</entry><entry> </entry><entry>6975</entry><entry>266</entry><entry>490</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>6983</entry><entry> </entry><entry>6989</entry><entry>267</entry><entry>491</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>5411</entry><entry> </entry><entry>5403</entry><entry>274</entry><entry>416</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>161</entry><entry> </entry><entry>160</entry><entry>278</entry><entry>106</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>2169</entry><entry> </entry><entry>2161</entry><entry>290</entry><entry>259</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>C_Order.DocumentNo</entry><entry> </entry></row>
+<row><entry>3810</entry><entry> </entry><entry>3529</entry><entry>295</entry><entry>320</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>3819</entry><entry> </entry><entry>3555</entry><entry>296</entry><entry>322</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>4768</entry><entry> </entry><entry>3611</entry><entry>297</entry><entry>326</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>3669</entry><entry> </entry><entry>3658</entry><entry>298</entry><entry>329</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>522</entry><entry> </entry><entry>528</entry><entry>322</entry><entry>155</entry><entry> </entry><entry>D</entry><entry>true</entry><entry> </entry><entry>AD_Org.AD_Org_ID&lt;
+&gt;
+0</entry></row>
+<row><entry>12323</entry><entry> </entry><entry>12310</entry><entry>323</entry><entry>735</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>3791</entry><entry> </entry><entry>3521</entry><entry>337</entry><entry>319</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>M_InOut.DocumentNo</entry><entry> </entry></row>
+<row><entry>5401</entry><entry> </entry><entry>5043</entry><entry>343</entry><entry>335</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>15001</entry><entry> </entry><entry>13562</entry><entry>345</entry><entry>776</entry><entry> </entry><entry>D</entry><entry>true</entry><entry> </entry><entry> </entry></row>
+<row><entry>2902</entry><entry> </entry><entry>2893</entry><entry>353</entry><entry>291</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>C_BPartner.Value</entry><entry>C_BPartner.IsSalesRep='Y'</entry></row>
+<row><entry>15983</entry><entry> </entry><entry>15517</entry><entry>399</entry><entry>877</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>4078</entry><entry> </entry><entry>4069</entry><entry>356</entry><entry>346</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>15155</entry><entry> </entry><entry>15147</entry><entry>386</entry><entry>855</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>15331</entry><entry> </entry><entry>15323</entry><entry>387</entry><entry>866</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>1135</entry><entry> </entry><entry>1125</entry><entry>362</entry><entry>188</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>C_ElementValue.Value</entry><entry>C_ElementValue.IsSummary&lt;
+&gt;
+'Y'</entry></row>
+<row><entry>14821</entry><entry> </entry><entry>14813</entry><entry>371</entry><entry>835</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>10267</entry><entry> </entry><entry>10269</entry><entry>352</entry><entry>637</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>9491</entry><entry> </entry><entry>9498</entry><entry>285</entry><entry>612</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>2214</entry><entry> </entry><entry>2205</entry><entry>271</entry><entry>260</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>7019</entry><entry> </entry><entry>7026</entry><entry>268</entry><entry>493</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>AD_PrintFormat.AD_Table_ID=498</entry></row>
+<row><entry>7019</entry><entry> </entry><entry>7026</entry><entry>262</entry><entry>493</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>AD_PrintFormat.AD_Table_ID=496</entry></row>
+<row><entry>7019</entry><entry> </entry><entry>7026</entry><entry>263</entry><entry>493</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>AD_PrintFormat.AD_Table_ID=500
+</entry></row>
+<row><entry>130</entry><entry> </entry><entry>129</entry><entry>4</entry><entry>102</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>AD_Reference.ValidationType, AD_Reference.Name</entry><entry>AD_Reference.ValidationType in ('T','L')</entry></row>
+<row><entry>188</entry><entry> </entry><entry>187</entry><entry>100</entry><entry>108</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>AD_Val_Rule.Name</entry><entry> </entry></row>
+<row><entry>229</entry><entry> </entry><entry>228</entry><entry>105</entry><entry>116</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>AD_Menu.IsSummary='Y'</entry></row>
+<row><entry>486</entry><entry> </entry><entry>485</entry><entry>114</entry><entry>146</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>2902</entry><entry> </entry><entry>2893</entry><entry>124</entry><entry>291</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>C_BPartner.IsSummary='Y'</entry></row>
+<row><entry>216</entry><entry> </entry><entry>1186</entry><entry>128</entry><entry>115</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>AD_Sequence.Name</entry><entry>AD_Sequence.IsTableID='N'</entry></row>
+<row><entry>819</entry><entry> </entry><entry>808</entry><entry>133</entry><entry>162</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>1356</entry><entry> </entry><entry>1349</entry><entry>141</entry><entry>203</entry><entry> </entry><entry>D</entry><entry>true</entry><entry> </entry><entry>C_Project.IsSummary='N'</entry></row>
+<row><entry>3465</entry><entry> </entry><entry>3457</entry><entry>142</entry><entry>316</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>C_Activity.IsSummary='N'</entry></row>
+<row><entry>2578</entry><entry> </entry><entry>2570</entry><entry>143</entry><entry>274</entry><entry> </entry><entry>D</entry><entry>true</entry><entry> </entry><entry>C_Campaign.IsSummary='N'</entry></row>
+<row><entry>1509</entry><entry> </entry><entry>1501</entry><entry>172</entry><entry>217</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>C_DocType.DocBaseType='SOO' AND C_DocType.AD_Client_ID=@#AD_Client_ID@</entry></row>
+<row><entry>2471</entry><entry> </entry><entry>2463</entry><entry>136</entry><entry>265</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>2902</entry><entry> </entry><entry>2893</entry><entry>173</entry><entry>291</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>C_BPartner.IsCustomer='Y'</entry></row>
+<row><entry>1831</entry><entry> </entry><entry>1823</entry><entry>179</entry><entry>230</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>C_SalesRegion.IsSummary='Y'</entry></row>
+<row><entry>2864</entry><entry> </entry><entry>2856</entry><entry>184</entry><entry>288</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>2995</entry><entry> </entry><entry>2987</entry><entry>188</entry><entry>295</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>2995</entry><entry> </entry><entry>2987</entry><entry>199</entry><entry>295</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>M_PriceList_Version.AD_Client_ID=@#AD_Client_ID@</entry></row>
+<row><entry>532</entry><entry> </entry><entry>531</entry><entry>53317</entry><entry>156</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>15781</entry><entry> </entry><entry>15773</entry><entry>200072</entry><entry>897</entry><entry>385</entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>5892</entry><entry> </entry><entry>5884</entry><entry>228</entry><entry>440</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>5864</entry><entry> </entry><entry>5856</entry><entry>229</entry><entry>438</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>PA_Achievement.IsSummary='Y'</entry></row>
+<row><entry>5892</entry><entry> </entry><entry>5884</entry><entry>230</entry><entry>440</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>PA_Goal.IsSummary='Y'</entry></row>
+<row><entry>6008</entry><entry> </entry><entry>5999</entry><entry>239</entry><entry>446</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>6054</entry><entry> </entry><entry>6045</entry><entry>242</entry><entry>448</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>PA_ReportLine.IsSummary='Y' </entry></row>
+<row><entry>116</entry><entry> </entry><entry>109</entry><entry>244</entry><entry>101</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>AD_Column.ColumnName</entry><entry>AD_Column.IsKey='Y'</entry></row>
+<row><entry>6589</entry><entry> </entry><entry>6581</entry><entry>249</entry><entry>475</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>2902</entry><entry> </entry><entry>2893</entry><entry>252</entry><entry>291</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>C_BPartner.IsEmployee='Y'</entry></row>
+<row><entry>2809</entry><entry> </entry><entry>2801</entry><entry>400</entry><entry>284</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>AD_Process.JasperReport IS NOT NULL</entry></row>
+<row><entry>52049</entry><entry> </entry><entry>52041</entry><entry>52000</entry><entry>52003</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>13932</entry><entry> </entry><entry>13924</entry><entry>351</entry><entry>799</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>5423</entry><entry> </entry><entry>5415</entry><entry>341</entry><entry>417</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>3492</entry><entry> </entry><entry>3484</entry><entry>336</entry><entry>318</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>C_Invoice.DocumentNo</entry><entry> </entry></row>
+<row><entry>236</entry><entry> </entry><entry>351</entry><entry>174</entry><entry>117</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>294</entry><entry> </entry><entry>293</entry><entry>109</entry><entry>129</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>53445</entry><entry> </entry><entry>53486</entry><entry>53232</entry><entry>53022</entry><entry> </entry><entry>EE01</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>3341</entry><entry> </entry><entry>3333</entry><entry>200</entry><entry>313</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>C_Charge.AD_Client_ID=@#AD_Client_ID@</entry></row>
+<row><entry>3012</entry><entry> </entry><entry>1389</entry><entry>191</entry><entry>207</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>1152</entry><entry> </entry><entry>1151</entry><entry>197</entry><entry>190</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>M_Warehouse.AD_Client_ID=@#AD_Client_ID@</entry></row>
+<row><entry>2246</entry><entry> </entry><entry>2240</entry><entry>158</entry><entry>261</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>864</entry><entry> </entry><entry>856</entry><entry>157</entry><entry>164</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>15601</entry><entry> </entry><entry>15592</entry><entry>389</entry><entry>882</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>7019</entry><entry> </entry><entry>7026</entry><entry>261</entry><entry>493</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>AD_PrintFormat.AD_Table_ID=516</entry></row>
+<row><entry>6589</entry><entry> </entry><entry>6581</entry><entry>325</entry><entry>475</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>M_DiscountSchema.DiscountType&lt;
+&gt;
+'P'</entry></row>
+<row><entry>2035</entry><entry> </entry><entry>2027</entry><entry>227</entry><entry>113</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>2108</entry><entry> </entry><entry>2100</entry><entry>166</entry><entry>255</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>54798</entry><entry> </entry><entry>54804</entry><entry>53244</entry><entry>53089</entry><entry> </entry><entry>EE02</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>2902</entry><entry> </entry><entry>2893</entry><entry>192</entry><entry>291</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>C_BPartner.IsVendor='Y'</entry></row>
+<row><entry>208</entry><entry> </entry><entry>207</entry><entry>129</entry><entry>112</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>AD_Client.Name</entry><entry> </entry></row>
+<row><entry>522</entry><entry> </entry><entry>528</entry><entry>276</entry><entry>155</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>AD_Org.Value</entry><entry> </entry></row>
+<row><entry>522</entry><entry> </entry><entry>528</entry><entry>130</entry><entry>155</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>AD_Org.Name</entry><entry>AD_Org.IsSummary='N' AND AD_Org_ID &lt;
+&gt;
+ 0</entry></row>
+<row><entry>1746</entry><entry> </entry><entry>1014</entry><entry>175</entry><entry>176</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>1509</entry><entry> </entry><entry>1501</entry><entry>170</entry><entry>217</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>C_DocType.AD_Client_ID=@#AD_Client_ID@</entry></row>
+<row><entry>54980</entry><entry> </entry><entry>54988</entry><entry>53246</entry><entry>53099</entry><entry> </entry><entry>EE02</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>3550</entry><entry> </entry><entry>3542</entry><entry>53249</entry><entry>321</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>1626</entry><entry> </entry><entry>1617</entry><entry>53250</entry><entry>224</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>1650</entry><entry> </entry><entry>1641</entry><entry>53251</entry><entry>225</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>54870</entry><entry> </entry><entry>54860</entry><entry>53253</entry><entry>53092</entry><entry> </entry><entry>EE02</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>53830</entry><entry> </entry><entry>53828</entry><entry>53254</entry><entry>53035</entry><entry> </entry><entry>EE01</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>3484</entry><entry> </entry><entry>3484</entry><entry>53275</entry><entry>318</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>C_Invoice.C_Invoice_ID</entry><entry> </entry></row>
+<row><entry>7019</entry><entry> </entry><entry>7026</entry><entry>53282</entry><entry>493</entry><entry> </entry><entry>EE01</entry><entry>false</entry><entry> </entry><entry>AD_PrintFormat.AD_Table_ID=53039</entry></row>
+<row><entry>213</entry><entry> </entry><entry>212</entry><entry>190</entry><entry>114</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>EXISTS (SELECT * FROM C_BPartner bp WHERE AD_User.C_BPartner_ID=bp.C_BPartner_ID AND bp.IsSalesRep='Y')
+</entry></row>
+<row><entry>3820</entry><entry> </entry><entry>3582</entry><entry>53284</entry><entry>324</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>202146</entry><entry> </entry><entry>201018</entry><entry>200038</entry><entry>200039</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>5268</entry><entry> </entry><entry>5260</entry><entry>52004</entry><entry>408</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry>C_CashBook.IsActive='Y'</entry></row>
+<row><entry>107</entry><entry> </entry><entry>100</entry><entry>53290</entry><entry>100</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>10841</entry><entry> </entry><entry>10847</entry><entry>53306</entry><entry>661</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>M_RMA.DocumentNo</entry><entry> </entry></row>
+<row><entry>52004</entry><entry> </entry><entry>10831</entry><entry>53307</entry><entry>660</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>57102</entry><entry> </entry><entry>57098</entry><entry>53297</entry><entry>53181</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>198</entry><entry> </entry><entry>6765</entry><entry>102</entry><entry>109</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>949</entry><entry> </entry><entry>941</entry><entry>156</entry><entry>170</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row>
+<row><entry>57563</entry><entry> </entry><entry>57562</entry><entry>53299</entry><entry>53202</entry><entry> </entry><entry>D</entry><entry>false</entry><entry> </entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

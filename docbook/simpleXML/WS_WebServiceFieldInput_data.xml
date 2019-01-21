@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Campo de Entrada de Serviço Web</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Coluna</entry><entry>Referência</entry><entry>Chave de Referência</entry><entry>Nome da Coluna BD</entry><entry>Identificador Lógico</entry><entry>Identificador</entry><entry>Permitir Valor Nulo</entry><entry>Campo de Entrada de Serviço Web</entry><entry>Tipo de Serviço Web</entry></row>
+<row><entry>2901</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>50000</entry><entry>50001</entry></row>
+<row><entry>2902</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>50001</entry><entry>50001</entry></row>
+<row><entry>2909</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>50002</entry><entry>50001</entry></row>
+<row><entry>2915</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>50003</entry><entry>50001</entry></row>
+<row><entry>2916</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>50004</entry><entry>50001</entry></row>
+<row><entry>3082</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>50005</entry><entry>50001</entry></row>
+<row><entry>4216</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>50006</entry><entry>50001</entry></row>
+<row><entry>4940</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>50007</entry><entry>50001</entry></row>
+<row><entry>2893</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000000</entry><entry>5000000</entry></row>
+<row><entry>4216</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000001</entry><entry>5000000</entry></row>
+<row><entry>2903</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000002</entry><entry>5000000</entry></row>
+<row><entry>2902</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000003</entry><entry>5000000</entry></row>
+<row><entry>2901</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000004</entry><entry>5000000</entry></row>
+<row><entry>2909</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000005</entry><entry>5000000</entry></row>
+<row><entry>58113</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000006</entry><entry>5000000</entry></row>
+<row><entry>2901</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000007</entry><entry>5000001</entry></row>
+<row><entry>6287</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000008</entry><entry>5000002</entry></row>
+<row><entry>6295</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000009</entry><entry>5000004</entry></row>
+<row><entry>10573</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000010</entry><entry>5000004</entry></row>
+<row><entry>6296</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000011</entry><entry>5000004</entry></row>
+<row><entry>212770</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000012</entry><entry>5000005</entry></row>
+<row><entry>212781</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000013</entry><entry>5000005</entry></row>
+<row><entry>212782</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000014</entry><entry>5000005</entry></row>
+<row><entry>212771</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000015</entry><entry>5000005</entry></row>
+<row><entry>212779</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000017</entry><entry>5000005</entry></row>
+<row><entry>212780</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000018</entry><entry>5000005</entry></row>
+<row><entry>212784</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000019</entry><entry>5000005</entry></row>
+<row><entry>212785</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000020</entry><entry>5000005</entry></row>
+<row><entry>212786</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000021</entry><entry>5000005</entry></row>
+<row><entry>212783</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000022</entry><entry>5000005</entry></row>
+<row><entry>212787</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>5000025</entry><entry>5000005</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Moeda De **</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Moeda De</entry><entry>Símbolo</entry><entry>Descrição</entry><entry>Traduzida</entry></row>
+<row><entry>es_CO</entry><entry>102</entry><entry>€</entry><entry>Euro</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>103</entry><entry>DM</entry><entry>Marco Alemán</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>104</entry><entry>Sch</entry><entry>Chelín Austriaco</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>105</entry><entry>BFr</entry><entry>Franco Belga</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>106</entry><entry>FM</entry><entry>Marco Finlandés</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>107</entry><entry>I£</entry><entry>Libra Irlandesa</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>108</entry><entry>L</entry><entry>Lira Italiana</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>109</entry><entry>Fl</entry><entry>Florín Neerlandés</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>110</entry><entry>Es</entry><entry>Escudo Portugués</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>115</entry><entry>SFr</entry><entry>Franco Suizo (Código no válido - use CHF)</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>116</entry><entry>C$</entry><entry>Dólar Canadiense</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>118</entry><entry>$</entry><entry>Peso Argentino</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>120</entry><entry>$</entry><entry>Dólar Australiano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>121</entry><entry>$</entry><entry>Dólar de Nueva Zelanda</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>127</entry><entry>$</entry><entry>Dólar Liberiano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>130</entry><entry>$</entry><entry>Peso Mexicano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>142</entry><entry>$U</entry><entry>Peso Uruguayo</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>143</entry><entry> </entry><entry>Dram Armenio</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>144</entry><entry> </entry><entry>Kwanza</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>145</entry><entry> </entry><entry>Azerbaijanian Manat</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>146</entry><entry> </entry><entry>Boliviano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>147</entry><entry> </entry><entry>Franco Congoleño</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>148</entry><entry> </entry><entry>Corona Checa</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>149</entry><entry> </entry><entry>Lari</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>150</entry><entry> </entry><entry>Rial Iraní</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>152</entry><entry> </entry><entry>Leu Moldavo</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>153</entry><entry> </entry><entry>Peso Filipino</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>154</entry><entry> </entry><entry>Złoty</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>155</entry><entry> </entry><entry>Rublo Ruso</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>157</entry><entry> </entry><entry>Somoni Tayiko</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>158</entry><entry> </entry><entry>Manat Turkmeno</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>159</entry><entry> </entry><entry>Escudo Timor</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>160</entry><entry> </entry><entry>Grivnia Ucraniana</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>161</entry><entry> </entry><entry>Som Uzbeko</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>163</entry><entry>£C</entry><entry>Libra Chipriota</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>165</entry><entry>£F</entry><entry>Libra Malvinense</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>166</entry><entry>£G</entry><entry>Libra Gibraltareña</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>167</entry><entry>£S</entry><entry>Libra de Santa Helena</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>168</entry><entry>£S</entry><entry>Libra Siria</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>170</entry><entry>¢</entry><entry>Cedi</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>171</entry><entry>¢</entry><entry>Colón Salvadoreño</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>195</entry><entry>Af</entry><entry>Afgani Afgano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>201</entry><entry>Bd$</entry><entry>Dólar Bermudeño</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>207</entry><entry>BZ$</entry><entry>Dólar Beliceño</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>239</entry><entry>DH</entry><entry>Dirham Marroquí</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>244</entry><entry>EC$</entry><entry>Dólar del Caribe Oriental</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>309</entry><entry>Sf.</entry><entry>Florín de Surinam</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>311</entry><entry>Sk</entry><entry>Corona Sueca</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>312</entry><entry>Sk</entry><entry>Corona Eslovaca</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>313</entry><entry>SLRs</entry><entry>Rupia de Sri Lanka</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>314</entry><entry>SlT</entry><entry>Tolar</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>315</entry><entry>So. Sh.</entry><entry>Chelín Somalí</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>317</entry><entry>SRls</entry><entry>Rial Saudí</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>318</entry><entry>SFr</entry><entry>Franco Suizo</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>112</entry><entry>Fr</entry><entry>Franco Francés</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>113</entry><entry>¥</entry><entry>Yen Japonés</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>114</entry><entry>£</entry><entry>Libra Esterlina</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>156</entry><entry> </entry><entry>Dinar Sudanés</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>164</entry><entry>£E</entry><entry>Libra Egipcia</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>196</entry><entry>Af.</entry><entry>Florín Arubeño</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>197</entry><entry>B</entry><entry>Balboa</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>198</entry><entry>B$</entry><entry>Dólar de Brunéi</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>199</entry><entry>B$</entry><entry>Dólar Bahameño</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>200</entry><entry>BD</entry><entry>Dinar Bahreiní</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>202</entry><entry>Bds$</entry><entry>Dólar de Barbados</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>203</entry><entry>BR</entry><entry>Rublo Bielorruso</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>204</entry><entry>Br</entry><entry>Birr</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>205</entry><entry>Bs</entry><entry>Bolívar</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>206</entry><entry>Bt</entry><entry>Baht</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>209</entry><entry>C$</entry><entry>Córdoba de Oro</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>210</entry><entry>C.V.Esc.</entry><entry>Escudo Caboverdiano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>211</entry><entry>CF</entry><entry>Franco Comorano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>212</entry><entry>CFAF</entry><entry>Franco CFA UEMOA</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>214</entry><entry>CFAF</entry><entry>Franco CFA CEMAC</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>225</entry><entry>CFPF</entry><entry>Franco CFP</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>228</entry><entry>Ch$</entry><entry>Peso Chileno</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>229</entry><entry>CI$</entry><entry>Dólar de las Islas Caimán</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>230</entry><entry>$</entry><entry>Peso Colombiano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>231</entry><entry>CR</entry><entry>Riel</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>232</entry><entry>Cu$</entry><entry>Peso Cubano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>233</entry><entry>D</entry><entry>Dalasi</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>234</entry><entry>D</entry><entry>Đong</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>235</entry><entry>DA</entry><entry>Dinar Argelino</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>236</entry><entry>Db</entry><entry>Dobra</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>237</entry><entry>DF</entry><entry>Franco Yibutiano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>240</entry><entry>Din</entry><entry>Dinar Yugoslavo</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>241</entry><entry>Dkr</entry><entry>Corona Danesa</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>252</entry><entry>F$</entry><entry>Dólar Fiyiano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>253</entry><entry>FBu</entry><entry>Franco de Burundi</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>254</entry><entry>FMG</entry><entry>Franco Malgache</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>255</entry><entry>Ft</entry><entry>Florín</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>256</entry><entry>G</entry><entry>Gourde</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>257</entry><entry>G$</entry><entry>Dólar Guyanés</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>258</entry><entry>HK$</entry><entry>Dólar de Hong Kong</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>259</entry><entry>HRK</entry><entry>Kuna Croata</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>260</entry><entry>ID</entry><entry>Dinar Iraquí</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>261</entry><entry>IKr</entry><entry>Corona Islandesa</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>262</entry><entry>J$</entry><entry>Dólar Jamaiquino</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>263</entry><entry>JD</entry><entry>Dinar Jordano</entry><entry>true</entry></row>
+<row><entry>es_CO</entry><entry>264</entry><entry>K</entry><entry>Kyat</entry><entry>true</entry></row></tbody>
+</tgroup>
+</table>

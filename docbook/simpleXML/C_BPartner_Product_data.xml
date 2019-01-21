@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Product Business Partner</title>
+<tgroup cols='10' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Parceiro de Negócios </entry><entry>Descrição</entry><entry>Fabricante</entry><entry>Fabricante</entry><entry>Produto</entry><entry>Classificação de Qualidade</entry><entry>Mín. Vida de Prateleira em Dias</entry><entry>Mín. Vida de Prateleira %</entry><entry>Categoria do Parceiro</entry><entry>Chave de Produto de Parceiro</entry></row>
+<row><entry>118</entry><entry> </entry><entry>false</entry><entry> </entry><entry>128</entry><entry>0</entry><entry>0</entry><entry>0</entry><entry> </entry><entry> </entry></row>
+<row><entry>5000026</entry><entry> </entry><entry>false</entry><entry> </entry><entry>1000001</entry><entry>0</entry><entry>0</entry><entry>0</entry><entry> </entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

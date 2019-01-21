@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Adição</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Adição</entry><entry>Declaração de Importação</entry><entry>Código do fabricante estrangeiro</entry><entry>Numero da Adição</entry><entry>Número do ato concessório de Drawback</entry><entry>Numero sequencial do item dentro da Adição</entry><entry>Valor do desconto do item da DI – Adição</entry></row>
+<row><entry>5000000</entry><entry>5000000</entry><entry>999600173</entry><entry>1</entry><entry>0</entry><entry>1</entry><entry>0</entry></row>
+<row><entry>5000001</entry><entry>5000000</entry><entry>999600154</entry><entry>2</entry><entry>0</entry><entry>2</entry><entry>0</entry></row>
+<row><entry>5000002</entry><entry>5000000</entry><entry>999600065</entry><entry>3</entry><entry>0</entry><entry>3</entry><entry>0</entry></row>
+<row><entry>5000003</entry><entry>5000000</entry><entry>002438</entry><entry>4</entry><entry>0</entry><entry>4</entry><entry>0</entry></row></tbody>
+</tgroup>
+</table>

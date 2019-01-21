@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Grupo de Apuração</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Classificação</entry><entry>Grupo de Apuração</entry><entry>Código da Impreesão</entry><entry>Descrição da Impressão</entry><entry>Imposto</entry></row>
+<row><entry>EES</entry><entry>5000000</entry><entry>1.1</entry><entry>Entrada para Revenda</entry><entry>1106000</entry></row></tbody>
+</tgroup>
+</table>

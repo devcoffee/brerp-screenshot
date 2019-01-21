@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Preferência</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Info Window</entry><entry>Preferência</entry><entry>Processo</entry><entry>Usuário/Contato</entry><entry>Janela</entry><entry>Atributo</entry><entry>Preference For</entry><entry>Chave de Busca</entry></row>
+<row><entry> </entry><entry>112</entry><entry> </entry><entry> </entry><entry>132</entry><entry>GL_Category_ID</entry><entry>W</entry><entry>108</entry></row>
+<row><entry> </entry><entry>102</entry><entry> </entry><entry> </entry><entry> </entry><entry>C_Country_ID</entry><entry>W</entry><entry>100</entry></row>
+<row><entry> </entry><entry>103</entry><entry> </entry><entry> </entry><entry> </entry><entry>C_ProjectStatus_ID</entry><entry>W</entry><entry>100</entry></row>
+<row><entry> </entry><entry>106</entry><entry> </entry><entry> </entry><entry>184</entry><entry>C_DocType_ID</entry><entry>W</entry><entry>122</entry></row>
+<row><entry> </entry><entry>107</entry><entry> </entry><entry> </entry><entry>183</entry><entry>C_DocTypeTarget_ID</entry><entry>W</entry><entry>123</entry></row>
+<row><entry> </entry><entry>108</entry><entry> </entry><entry> </entry><entry>167</entry><entry>C_DocTypeTarget_ID</entry><entry>W</entry><entry>116</entry></row>
+<row><entry> </entry><entry>109</entry><entry> </entry><entry> </entry><entry>195</entry><entry>C_DocType_ID</entry><entry>W</entry><entry>119</entry></row>
+<row><entry> </entry><entry>110</entry><entry> </entry><entry> </entry><entry>194</entry><entry>C_Charge_ID</entry><entry>W</entry><entry>100</entry></row>
+<row><entry> </entry><entry>111</entry><entry> </entry><entry> </entry><entry>181</entry><entry>C_DocTypeTarget_ID</entry><entry>W</entry><entry>126</entry></row>
+<row><entry> </entry><entry>113</entry><entry> </entry><entry> </entry><entry>103</entry><entry>Type</entry><entry>W</entry><entry>S</entry></row>
+<row><entry> </entry><entry>114</entry><entry> </entry><entry> </entry><entry>189</entry><entry>DataType</entry><entry>W</entry><entry>S</entry></row>
+<row><entry> </entry><entry>116</entry><entry> </entry><entry> </entry><entry>143</entry><entry>C_DocTypeTarget_ID</entry><entry>W</entry><entry>135</entry></row>
+<row><entry> </entry><entry>50000</entry><entry> </entry><entry> </entry><entry>53004</entry><entry>AD_Org_ID</entry><entry>W</entry><entry>0</entry></row>
+<row><entry> </entry><entry>50001</entry><entry> </entry><entry> </entry><entry>53005</entry><entry>Action</entry><entry>W</entry><entry>C</entry></row>
+<row><entry> </entry><entry>50002</entry><entry> </entry><entry> </entry><entry>53032</entry><entry>AD_Org_ID</entry><entry>W</entry><entry>0</entry></row>
+<row><entry> </entry><entry>50003</entry><entry> </entry><entry> </entry><entry>53034</entry><entry>AD_Org_ID</entry><entry>W</entry><entry>0</entry></row>
+<row><entry> </entry><entry>50004</entry><entry> </entry><entry> </entry><entry>53035</entry><entry>AD_Org_ID</entry><entry>W</entry><entry>0</entry></row>
+<row><entry> </entry><entry>1000000</entry><entry> </entry><entry> </entry><entry>1120058</entry><entry>C_DocTypeTarget_ID</entry><entry>W</entry><entry>9000031</entry></row>
+<row><entry> </entry><entry>1000001</entry><entry> </entry><entry> </entry><entry>1120058</entry><entry>lbr_TransactionType</entry><entry>W</entry><entry>END</entry></row>
+<row><entry> </entry><entry>1000002</entry><entry> </entry><entry> </entry><entry>1120058</entry><entry>ide_tpNF</entry><entry>W</entry><entry>0</entry></row>
+<row><entry> </entry><entry>1000013</entry><entry> </entry><entry>100</entry><entry> </entry><entry>EntityType</entry><entry>W</entry><entry>COFF</entry></row>
+<row><entry> </entry><entry>1000019</entry><entry> </entry><entry>100</entry><entry> </entry><entry>AutoCommit</entry><entry>W</entry><entry>Y</entry></row>
+<row><entry> </entry><entry>1000020</entry><entry> </entry><entry>100</entry><entry> </entry><entry>AutoNew</entry><entry>W</entry><entry>Y</entry></row>
+<row><entry> </entry><entry>1000024</entry><entry> </entry><entry> </entry><entry>143</entry><entry>C_DocTypeTarget_ID</entry><entry>W</entry><entry>1000081</entry></row>
+<row><entry> </entry><entry>1000025</entry><entry> </entry><entry> </entry><entry>143</entry><entry>C_BPartner_ID</entry><entry>W</entry><entry>1000000</entry></row>
+<row><entry> </entry><entry>1000026</entry><entry> </entry><entry> </entry><entry> </entry><entry>C_Country_ID</entry><entry>W</entry><entry>139</entry></row>
+<row><entry> </entry><entry>1000032</entry><entry> </entry><entry>1000026</entry><entry> </entry><entry>Organization</entry><entry>W</entry><entry>0</entry></row>
+<row><entry> </entry><entry>1000033</entry><entry> </entry><entry>1000026</entry><entry> </entry><entry>Warehouse</entry><entry>W</entry><entry>0</entry></row>
+<row><entry> </entry><entry>1000034</entry><entry> </entry><entry>1000026</entry><entry> </entry><entry>AutoCommit</entry><entry>W</entry><entry>Y</entry></row>
+<row><entry> </entry><entry>1000035</entry><entry> </entry><entry>1000026</entry><entry> </entry><entry>AutoNew</entry><entry>W</entry><entry>Y</entry></row>
+<row><entry> </entry><entry>1000036</entry><entry> </entry><entry>1000026</entry><entry> </entry><entry>MenuCollapsed</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>1000037</entry><entry> </entry><entry>1000026</entry><entry> </entry><entry>HelpCollapsed</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>1000038</entry><entry> </entry><entry>1000026</entry><entry> </entry><entry>HeaderCollapsed</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>1000029</entry><entry> </entry><entry>1000026</entry><entry> </entry><entry>Language</entry><entry>W</entry><entry>Portuguese (BR)</entry></row>
+<row><entry> </entry><entry>1000030</entry><entry> </entry><entry>1000026</entry><entry> </entry><entry>Role</entry><entry>W</entry><entry>1000002</entry></row>
+<row><entry> </entry><entry>1000031</entry><entry> </entry><entry>1000026</entry><entry> </entry><entry>Client</entry><entry>W</entry><entry>0</entry></row>
+<row><entry> </entry><entry>1000041</entry><entry> </entry><entry>100</entry><entry>105</entry><entry>110|TreePanel.Width</entry><entry>W</entry><entry>300px</entry></row>
+<row><entry> </entry><entry>1000045</entry><entry> </entry><entry>100</entry><entry>101</entry><entry>104|DetailPane.Height</entry><entry>W</entry><entry>400px</entry></row>
+<row><entry> </entry><entry>1000044</entry><entry> </entry><entry>100</entry><entry>101</entry><entry>102|DetailPane.Height</entry><entry>W</entry><entry>495px</entry></row>
+<row><entry> </entry><entry>1000049</entry><entry> </entry><entry>100</entry><entry>53026</entry><entry>53087|DetailPane.Height</entry><entry>W</entry><entry>397px</entry></row>
+<row><entry> </entry><entry>1000014</entry><entry> </entry><entry>100</entry><entry> </entry><entry>Language</entry><entry>W</entry><entry>Portuguese (BR)</entry></row>
+<row><entry> </entry><entry>1000050</entry><entry> </entry><entry>100</entry><entry>285</entry><entry>524|DetailPane.Height</entry><entry>W</entry><entry>220px</entry></row>
+<row><entry> </entry><entry>1000051</entry><entry> </entry><entry>100</entry><entry>1000003</entry><entry>1000005|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>1000040</entry><entry> </entry><entry>100</entry><entry>250</entry><entry>445|DetailPane.Height</entry><entry>W</entry><entry>527px</entry></row>
+<row><entry> </entry><entry>1000052</entry><entry> </entry><entry>100</entry><entry>1500100</entry><entry>1500272|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>1000046</entry><entry> </entry><entry>100</entry><entry>102</entry><entry>107|DetailPane.Height</entry><entry>W</entry><entry>244px</entry></row>
+<row><entry> </entry><entry>5000001</entry><entry> </entry><entry>100</entry><entry>104</entry><entry>109|DetailPane.Height</entry><entry>W</entry><entry>376px</entry></row>
+<row><entry> </entry><entry>1000022</entry><entry> </entry><entry>100</entry><entry> </entry><entry>HelpCollapsed</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>5000002</entry><entry> </entry><entry>100</entry><entry>110</entry><entry>143|TreePanel.Width</entry><entry>W</entry><entry>300px</entry></row>
+<row><entry> </entry><entry>1000047</entry><entry> </entry><entry>100</entry><entry>151</entry><entry>203|DetailPane.Height</entry><entry>W</entry><entry>197px</entry></row>
+<row><entry> </entry><entry>1000042</entry><entry> </entry><entry>100</entry><entry>102</entry><entry>105|DetailPane.Height</entry><entry>W</entry><entry>360px</entry></row>
+<row><entry> </entry><entry>5000003</entry><entry> </entry><entry>100</entry><entry>118</entry><entry>153|DetailPane.Height</entry><entry>W</entry><entry>298px</entry></row>
+<row><entry> </entry><entry>5000005</entry><entry> </entry><entry>100</entry><entry>200043</entry><entry>200102|DetailPane.Height</entry><entry>W</entry><entry>197px</entry></row>
+<row><entry> </entry><entry>5000007</entry><entry> </entry><entry>100</entry><entry>1500044</entry><entry>1500173|DetailPane.Height</entry><entry>W</entry><entry>201px</entry></row>
+<row><entry> </entry><entry>5000023</entry><entry> </entry><entry>100</entry><entry>158</entry><entry>227|DetailPane.Height</entry><entry>W</entry><entry>262px</entry></row>
+<row><entry> </entry><entry>5000026</entry><entry> </entry><entry>100</entry><entry>50007</entry><entry>50010|DetailPane.Height</entry><entry>W</entry><entry>310px</entry></row>
+<row><entry> </entry><entry>5000008</entry><entry> </entry><entry>100</entry><entry>1500032</entry><entry>1500107|DetailPane.Height</entry><entry>W</entry><entry>436px</entry></row>
+<row><entry> </entry><entry>5000009</entry><entry> </entry><entry>100</entry><entry>50005</entry><entry>50008|DetailPane.Height</entry><entry>W</entry><entry>424px</entry></row>
+<row><entry> </entry><entry>5000024</entry><entry> </entry><entry>100</entry><entry>110</entry><entry>143|DetailPane.Height</entry><entry>W</entry><entry>201px</entry></row>
+<row><entry> </entry><entry>5000013</entry><entry> </entry><entry>100</entry><entry>344</entry><entry>700|DetailPane.Height</entry><entry>W</entry><entry>478px</entry></row>
+<row><entry> </entry><entry>5000014</entry><entry> </entry><entry>100</entry><entry>344</entry><entry>701|DetailPane.Height</entry><entry>W</entry><entry>284px</entry></row>
+<row><entry> </entry><entry>5000016</entry><entry> </entry><entry>100</entry><entry>152</entry><entry>206|TreePanel.Width</entry><entry>W</entry><entry>300px</entry></row>
+<row><entry> </entry><entry>5000017</entry><entry> </entry><entry>100</entry><entry>118</entry><entry>132|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>5000004</entry><entry> </entry><entry>100</entry><entry>118</entry><entry>132|TreePanel.Width</entry><entry>W</entry><entry>636px</entry></row>
+<row><entry> </entry><entry>5000018</entry><entry> </entry><entry>100</entry><entry>117</entry><entry>129|DetailPane.Height</entry><entry>W</entry><entry>440px</entry></row>
+<row><entry> </entry><entry>5000019</entry><entry> </entry><entry>100</entry><entry>117</entry><entry>130|DetailPane.Height</entry><entry>W</entry><entry>303px</entry></row>
+<row><entry> </entry><entry>5000025</entry><entry> </entry><entry>100</entry><entry>53124</entry><entry>53339|DetailPane.Height</entry><entry>W</entry><entry>408px</entry></row>
+<row><entry> </entry><entry>5000027</entry><entry> </entry><entry>100</entry><entry>1500032</entry><entry>1500107|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>5000030</entry><entry> </entry><entry>100</entry><entry>268</entry><entry>485|DetailPane.IsOpen</entry><entry>W</entry><entry>Y</entry></row>
+<row><entry> </entry><entry>5000031</entry><entry> </entry><entry>100</entry><entry>276</entry><entry>504|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>5000033</entry><entry> </entry><entry>100</entry><entry>200090</entry><entry>200222|DetailPane.Height</entry><entry>W</entry><entry>321px</entry></row>
+<row><entry> </entry><entry>5000028</entry><entry> </entry><entry>100</entry><entry>250</entry><entry>445|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>5000038</entry><entry> </entry><entry>100</entry><entry>123</entry><entry>220|DetailPane.Height</entry><entry>W</entry><entry>215px</entry></row>
+<row><entry> </entry><entry>5000036</entry><entry> </entry><entry>100</entry><entry>305</entry><entry>589|DetailPane.Height</entry><entry>W</entry><entry>316px</entry></row>
+<row><entry> </entry><entry>5000039</entry><entry> </entry><entry>100</entry><entry>110</entry><entry>170|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>5000021</entry><entry> </entry><entry>100</entry><entry>1000014</entry><entry>1000018|DetailPane.IsOpen</entry><entry>W</entry><entry>Y</entry></row>
+<row><entry> </entry><entry>5000037</entry><entry> </entry><entry>100</entry><entry>305</entry><entry>589|DetailPane.Height</entry><entry>W</entry><entry>259px</entry></row>
+<row><entry> </entry><entry>5000034</entry><entry> </entry><entry>100</entry><entry>110</entry><entry>170|DetailPane.Height</entry><entry>W</entry><entry>213px</entry></row>
+<row><entry> </entry><entry>5000042</entry><entry> </entry><entry>100</entry><entry>112</entry><entry>146|DetailPane.Height</entry><entry>W</entry><entry>141px</entry></row>
+<row><entry> </entry><entry>5000012</entry><entry> </entry><entry>100</entry><entry>344</entry><entry>701|DetailPane.Height</entry><entry>W</entry><entry>294px</entry></row>
+<row><entry> </entry><entry>5000032</entry><entry> </entry><entry>100</entry><entry>305</entry><entry>589|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>5000011</entry><entry> </entry><entry>100</entry><entry>344</entry><entry>700|DetailPane.Height</entry><entry>W</entry><entry>231px</entry></row>
+<row><entry> </entry><entry>5000043</entry><entry> </entry><entry>5000000</entry><entry> </entry><entry>Language</entry><entry>W</entry><entry>Portuguese (BR)</entry></row>
+<row><entry> </entry><entry>5000044</entry><entry> </entry><entry>5000000</entry><entry> </entry><entry>Role</entry><entry>W</entry><entry>1000000</entry></row>
+<row><entry> </entry><entry>5000045</entry><entry> </entry><entry>5000000</entry><entry> </entry><entry>Client</entry><entry>W</entry><entry>1000000</entry></row>
+<row><entry> </entry><entry>5000050</entry><entry> </entry><entry>5000000</entry><entry> </entry><entry>HeaderCollapsed</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>5000069</entry><entry> </entry><entry>100</entry><entry>1500185</entry><entry>1500496|DetailPane.Height</entry><entry>W</entry><entry>250px</entry></row>
+<row><entry> </entry><entry>5000062</entry><entry> </entry><entry>5000000</entry><entry>1500081</entry><entry>1500236|DetailPane.Height</entry><entry>W</entry><entry>278px</entry></row>
+<row><entry> </entry><entry>5000035</entry><entry> </entry><entry>100</entry><entry> </entry><entry>HelpController.Width</entry><entry>W</entry><entry>184px</entry></row>
+<row><entry> </entry><entry>5000029</entry><entry> </entry><entry>100</entry><entry>104</entry><entry>109|DetailPane.IsOpen</entry><entry>W</entry><entry>Y</entry></row>
+<row><entry> </entry><entry>5000040</entry><entry> </entry><entry>100</entry><entry>135</entry><entry>167|DetailPane.Height</entry><entry>W</entry><entry>187px</entry></row>
+<row><entry> </entry><entry>5000015</entry><entry> </entry><entry>100</entry><entry>118</entry><entry>153|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>5000006</entry><entry> </entry><entry>100</entry><entry>135</entry><entry>167|DetailPane.IsOpen</entry><entry>W</entry><entry>Y</entry></row>
+<row><entry> </entry><entry>5000022</entry><entry> </entry><entry>100</entry><entry>137</entry><entry>174|DetailPane.IsOpen</entry><entry>W</entry><entry>Y</entry></row>
+<row><entry> </entry><entry>5000041</entry><entry> </entry><entry>100</entry><entry>139</entry><entry>177|DetailPane.Height</entry><entry>W</entry><entry>141px</entry></row>
+<row><entry> </entry><entry>5000020</entry><entry> </entry><entry>100</entry><entry>111</entry><entry>119|DetailPane.Height</entry><entry>W</entry><entry>183px</entry></row>
+<row><entry> </entry><entry>5000074</entry><entry> </entry><entry>100</entry><entry>183</entry><entry>290|DetailPane.IsOpen</entry><entry>W</entry><entry>Y</entry></row>
+<row><entry> </entry><entry>5000072</entry><entry> </entry><entry>100</entry><entry>344</entry><entry>700|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
+<row><entry> </entry><entry>5000000</entry><entry> </entry><entry>100</entry><entry>100</entry><entry>101|DetailPane.Height</entry><entry>W</entry><entry>296px</entry></row>
+<row><entry> </entry><entry>5000055</entry><entry> </entry><entry>100</entry><entry>181</entry><entry>293|DetailPane.Height</entry><entry>W</entry><entry>322px</entry></row></tbody>
+</tgroup>
+</table>

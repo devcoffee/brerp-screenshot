@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Menssagem de ajuda de contexto</title>
+<tgroup cols='3' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Ajuda de Contexto</entry><entry>Menssagem de ajuda de contexto</entry><entry>Texto de Mensagem</entry></row>
+<row><entry>5000000</entry><entry>5000000</entry><entry>Temos diversas varíaveis disponíveis para o uso dentro das instruções, que são elas:
+@JUROS@ - Exibe o valor dos juros, 
+@CONDPAG@ - Exibe a condição de pagamento, 
+@NOTAFISCAL@ - Exibe o número da nota fiscal, 
+@MULTA@ - Exibe a quantidade de dias de atraso permitidos.</entry></row></tbody>
+</tgroup>
+</table>

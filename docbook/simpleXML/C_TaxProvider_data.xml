@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Provedor de Impostos</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Conta</entry><entry>Código da Empresa</entry><entry>Configuração de Provedor de Impostos</entry><entry>Provedor de Impostos</entry><entry>Licença</entry><entry>Nome</entry><entry>Seqüência</entry><entry>Validar Conexão</entry></row>
+<row><entry> </entry><entry> </entry><entry>1000001</entry><entry>1000001</entry><entry> </entry><entry>BrERP Tax Provider</entry><entry>0</entry><entry>N</entry></row></tbody>
+</tgroup>
+</table>

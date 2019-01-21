@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>C_Project_Acct</title>
+<tgroup cols='4' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Esquema Contábil</entry><entry>Projeto</entry><entry>Patrimônio de Projeto</entry><entry>Trabalho em Andamento</entry></row>
+<row><entry>101</entry><entry>101</entry><entry>250</entry><entry>251</entry></row>
+<row><entry>101</entry><entry>100</entry><entry>250</entry><entry>250</entry></row>
+<row><entry>1000001</entry><entry>1000000</entry><entry>1000024</entry><entry>1000024</entry></row></tbody>
+</tgroup>
+</table>

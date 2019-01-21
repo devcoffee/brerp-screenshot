@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Instância do Conjunto de Atributos</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Descrição</entry><entry>Vencimento da Garantia</entry><entry>Lote Núm.</entry><entry>Conjunto de Atributos</entry><entry>Instância do Conjunto de Atributos</entry><entry>Lote</entry><entry>Núm. Série</entry></row>
+<row><entry>---</entry><entry> </entry><entry> </entry><entry>0</entry><entry>0</entry><entry> </entry><entry> </entry></row>
+<row><entry>Medium_-</entry><entry> </entry><entry> </entry><entry>102</entry><entry>100</entry><entry> </entry><entry> </entry></row>
+<row><entry>Red-Large</entry><entry> </entry><entry> </entry><entry>100</entry><entry>101</entry><entry> </entry><entry> </entry></row>
+<row><entry>Green-Large</entry><entry> </entry><entry> </entry><entry>100</entry><entry>102</entry><entry> </entry><entry> </entry></row>
+<row><entry>Sul de Minas_Moído para Italiana_Aromatizado</entry><entry> </entry><entry> </entry><entry>1000000</entry><entry>1000007</entry><entry> </entry><entry> </entry></row>
+<row><entry>127v_Superautomática</entry><entry> </entry><entry> </entry><entry>1000001</entry><entry>1000014</entry><entry> </entry><entry> </entry></row>
+<row><entry>#1231</entry><entry> </entry><entry> </entry><entry>1000001</entry><entry>1000018</entry><entry> </entry><entry>1231</entry></row>
+<row><entry>#1421412541</entry><entry> </entry><entry> </entry><entry>1000001</entry><entry>1000019</entry><entry> </entry><entry>1421412541</entry></row>
+<row><entry>#1232131</entry><entry> </entry><entry> </entry><entry>1000001</entry><entry>1000020</entry><entry> </entry><entry>1232131</entry></row>
+<row><entry>#432131adg</entry><entry> </entry><entry> </entry><entry>1000001</entry><entry>1000021</entry><entry> </entry><entry>432131adg</entry></row>
+<row><entry>#123wra3</entry><entry> </entry><entry> </entry><entry>1000001</entry><entry>1000022</entry><entry> </entry><entry>123wra3</entry></row>
+<row><entry>#2343ADER3</entry><entry> </entry><entry> </entry><entry>1000001</entry><entry>1000023</entry><entry> </entry><entry>2343ADER3</entry></row>
+<row><entry>#GTY6WG</entry><entry> </entry><entry> </entry><entry>1000001</entry><entry>1000024</entry><entry> </entry><entry>GTY6WG</entry></row>
+<row><entry>5000000</entry><entry> </entry><entry> </entry><entry>0</entry><entry>5000000</entry><entry> </entry><entry> </entry></row>
+<row><entry>5000001</entry><entry> </entry><entry> </entry><entry>0</entry><entry>5000001</entry><entry> </entry><entry> </entry></row>
+<row><entry>5000004</entry><entry> </entry><entry> </entry><entry>0</entry><entry>5000004</entry><entry> </entry><entry> </entry></row>
+<row><entry>5000005</entry><entry> </entry><entry> </entry><entry>0</entry><entry>5000005</entry><entry> </entry><entry> </entry></row>
+<row><entry>5000006</entry><entry> </entry><entry> </entry><entry>0</entry><entry>5000006</entry><entry> </entry><entry> </entry></row>
+<row><entry>5000007</entry><entry> </entry><entry> </entry><entry>0</entry><entry>5000007</entry><entry> </entry><entry> </entry></row>
+<row><entry>5000008</entry><entry> </entry><entry> </entry><entry>0</entry><entry>5000008</entry><entry> </entry><entry> </entry></row>
+<row><entry>#10000</entry><entry> </entry><entry> </entry><entry>1000001</entry><entry>5000009</entry><entry> </entry><entry>10000</entry></row></tbody>
+</tgroup>
+</table>

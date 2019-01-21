@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Tipo de Recurso</title>
+<tgroup cols='21' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Permitir Frações de UDM</entry><entry>Quantidade Debitável</entry><entry>Categoria de Imposto</entry><entry>UDM</entry><entry>Descrição</entry><entry>Faixa de Dias</entry><entry>Somente Tarefa Única</entry><entry>Faixa de Horário</entry><entry>Categoria de Produto</entry><entry>Nome</entry><entry>Sexta-feira</entry><entry>Segunda-feira</entry><entry>Sábado</entry><entry>Domingo</entry><entry>Quinta-feira</entry><entry>Terça-feira</entry><entry>Quarta-feira</entry><entry>Tipo de Recurso</entry><entry>Horário Final</entry><entry>Horário Inicial</entry><entry>Chave de Busca</entry></row>
+<row><entry>false</entry><entry>0</entry><entry>107</entry><entry>101</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>105</entry><entry>Consultant</entry><entry>true</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>100</entry><entry>1970-01-01 18:00:00.0</entry><entry>1970-01-01 09:00:00.0</entry><entry>Consultant</entry></row>
+<row><entry>false</entry><entry>0</entry><entry>107</entry><entry>101</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>50003</entry><entry>Plants</entry><entry>true</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>50000</entry><entry> </entry><entry> </entry><entry>Plants</entry></row>
+<row><entry>false</entry><entry>0</entry><entry>107</entry><entry>101</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>50003</entry><entry>Work Center</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>true</entry><entry>true</entry><entry>50001</entry><entry> </entry><entry> </entry><entry>WC</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Transportadora</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Parceiro de Negócios </entry><entry>Criar linhas a partir de</entry><entry>Configuração do Remetente</entry><entry>Transportadora</entry><entry>Processo do Remetente</entry><entry>Nome</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>100</entry><entry> </entry><entry>UPS</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>50002</entry><entry> </entry><entry>Furniture Internal Shipper</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>50001</entry><entry> </entry><entry>Fertilizer Internal Shipper</entry></row>
+<row><entry>1000026</entry><entry>N</entry><entry> </entry><entry>1000000</entry><entry> </entry><entry>Rodoviário So no Grão</entry></row>
+<row><entry>5000004</entry><entry>N</entry><entry> </entry><entry>5000000</entry><entry> </entry><entry>TRANSPORTADORA MODELO </entry></row></tbody>
+</tgroup>
+</table>

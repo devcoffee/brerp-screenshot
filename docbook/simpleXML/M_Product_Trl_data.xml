@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Produto **</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Descrição</entry><entry>Nota de Documento</entry><entry>Traduzida</entry><entry>Produto</entry><entry>Nome</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>122</entry><entry>Estándar</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>124</entry><entry>Olmo (Arbol)</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>125</entry><entry>Contenedor de Semillas de Césped</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>126</entry><entry>Servicio de Plantación</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>127</entry><entry>Rosal (Arbusto)</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>128</entry><entry>Azalea (Arbusto)</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>129</entry><entry>Acebo (Arbusto)</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>130</entry><entry>Ciruelo (Arbol)</entry></row>
+<row><entry>es_CO</entry><entry>Costos relacionados con viajes</entry><entry> </entry><entry>true</entry><entry>131</entry><entry>Costos de Viaje</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>132</entry><entry>María (Consultora)</entry></row>
+<row><entry>es_CO</entry><entry>Bonita silla para exteriores</entry><entry> </entry><entry>true</entry><entry>133</entry><entry>Silla para patio</entry></row>
+<row><entry>es_CO</entry><entry>Bonita mesa para exteriores</entry><entry> </entry><entry>true</entry><entry>134</entry><entry>Mesa para patio</entry></row>
+<row><entry>es_CO</entry><entry>Protege de los rayos UV</entry><entry> </entry><entry>true</entry><entry>135</entry><entry>Parasol para patio</entry></row>
+<row><entry>es_CO</entry><entry>50 # Bolsa de fertilizante para césped</entry><entry> </entry><entry>true</entry><entry>136</entry><entry>Fertilizante #50</entry></row>
+<row><entry>es_CO</entry><entry>10# Bolsa de acolchado</entry><entry> </entry><entry>true</entry><entry>137</entry><entry>Acolchado 10#</entry></row>
+<row><entry>es_CO</entry><entry>Azadón metálico de 122cm</entry><entry> </entry><entry>true</entry><entry>138</entry><entry>Azadón 122cm</entry></row>
+<row><entry>es_CO</entry><entry>Rastrillo de Bambú de 122cm</entry><entry> </entry><entry>true</entry><entry>139</entry><entry>Rastrillo de Bambú</entry></row>
+<row><entry>es_CO</entry><entry>Rastrillo metálico de 122cm Rake</entry><entry> </entry><entry>true</entry><entry>140</entry><entry>Rastrillo Metálico</entry></row>
+<row><entry>es_CO</entry><entry>Desmalezadora manual</entry><entry> </entry><entry>true</entry><entry>141</entry><entry>Desmalezadora</entry></row>
+<row><entry>es_CO</entry><entry>Transplantadora manual</entry><entry> </entry><entry>true</entry><entry>142</entry><entry>Transplantadora</entry></row>
+<row><entry>es_CO</entry><entry>Sembradora de césped manual</entry><entry> </entry><entry>true</entry><entry>143</entry><entry>Sembradora de Césped</entry></row>
+<row><entry>es_CO</entry><entry>Cultivador de césped manual</entry><entry> </entry><entry>true</entry><entry>144</entry><entry>Cultivador de Césped</entry></row>
+<row><entry>es_CO</entry><entry>1 mesa, 4 sillas y 1 parasol</entry><entry>	</entry><entry>true</entry><entry>145</entry><entry>Juego de Muebles de Patio</entry></row>
+<row><entry>es_CO</entry><entry>Información acerca de cómo plantar mejor su futuro.</entry><entry> </entry><entry>true</entry><entry>146</entry><entry>Cómo plantar</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>147</entry><entry>Camiseta - Rojo Grande</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>148</entry><entry>Camiseta - Verde Grande</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50000</entry><entry>Pata Trasera para Ensamble</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50001</entry><entry>Pata Delantera para Ensamble</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50002</entry><entry>#6-32 x 3/8 Tornillo Cabeza Allen</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50003</entry><entry>Pegamento Ultra</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50004</entry><entry>Silla</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50005</entry><entry>Espaldar</entry></row>
+<row><entry>es_CO</entry><entry>70 # Bolsa de fertilizante para césped</entry><entry> </entry><entry>true</entry><entry>50007</entry><entry>Fertilizante #70</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50008</entry><entry>Fertilizante para Césped</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50009</entry><entry>Nitrógeno</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50010</entry><entry>Fósforo</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50012</entry><entry>Potasio</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50013</entry><entry>Bolsa 50 Kg</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50014</entry><entry>Bolsa 70 Kg</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50015</entry><entry>Pata Frontal</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50016</entry><entry>Pata Trasera</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50017</entry><entry>Agua</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50019</entry><entry>Area de Ensamble</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50020</entry><entry>Area de Pintado</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50022</entry><entry>Area de Inspección</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50023</entry><entry>Planta de Muebles</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50024</entry><entry>Línea de Producción de Empaque</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50025</entry><entry>Area Mixta</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>124</entry><entry>Elm Tree</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>125</entry><entry>Grass Seed Container</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>126</entry><entry>Planting Service</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>127</entry><entry>Rose Bush</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>128</entry><entry>Azalea Bush</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>129</entry><entry>Holly Bush</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>130</entry><entry>Plum Tree</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>132</entry><entry>Mary Consultant</entry></row>
+<row><entry>pt_BR</entry><entry>Nice Chair for outdoors</entry><entry> </entry><entry>true</entry><entry>133</entry><entry>Patio Chair</entry></row>
+<row><entry>pt_BR</entry><entry>Nice Table for outdoors</entry><entry> </entry><entry>true</entry><entry>134</entry><entry>Patio Table</entry></row>
+<row><entry>pt_BR</entry><entry>Protect from UV</entry><entry> </entry><entry>true</entry><entry>135</entry><entry>Patio Sun Screen</entry></row>
+<row><entry>pt_BR</entry><entry>50 # Bag of Lawn Fertilizer</entry><entry> </entry><entry>true</entry><entry>136</entry><entry>Fertilizer #50</entry></row>
+<row><entry>pt_BR</entry><entry>10# Bag of Mulch</entry><entry> </entry><entry>true</entry><entry>137</entry><entry>Mulch 10#</entry></row>
+<row><entry>pt_BR</entry><entry>4 Foot Metal Hoe</entry><entry> </entry><entry>true</entry><entry>138</entry><entry>Hoe 4 ft</entry></row>
+<row><entry>pt_BR</entry><entry>4 Foot Bamboo Rake</entry><entry> </entry><entry>true</entry><entry>139</entry><entry>Rake Bamboo</entry></row>
+<row><entry>pt_BR</entry><entry>4 Foot Metal Rake</entry><entry> </entry><entry>true</entry><entry>140</entry><entry>Rake Metal</entry></row>
+<row><entry>pt_BR</entry><entry>Hand Weeder</entry><entry> </entry><entry>true</entry><entry>141</entry><entry>Weeder</entry></row>
+<row><entry>pt_BR</entry><entry>Hand Transplanter</entry><entry> </entry><entry>true</entry><entry>142</entry><entry>Transplanter</entry></row>
+<row><entry>pt_BR</entry><entry>Manual Grass Seeder</entry><entry> </entry><entry>true</entry><entry>143</entry><entry>Grass Seeder</entry></row>
+<row><entry>pt_BR</entry><entry>Manual Lawn Tiller</entry><entry> </entry><entry>true</entry><entry>144</entry><entry>Lawn Tiller</entry></row>
+<row><entry>pt_BR</entry><entry>1 table, 4 Chairs and 1 Sun Screen</entry><entry>	</entry><entry>true</entry><entry>145</entry><entry>Patio Furniture Set</entry></row>
+<row><entry>pt_BR</entry><entry>Information on how to best to plant your future.</entry><entry> </entry><entry>true</entry><entry>146</entry><entry>How To Plant</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>147</entry><entry>TShirt - Red Large</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>148</entry><entry>TShirt - Green Large</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50000</entry><entry>Assembly Back Leg</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50001</entry><entry>Assembly Front Leg</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50002</entry><entry>#6-32 x 3/8 Socket Head Cap Screw</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50003</entry><entry>Ultra Glue</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50004</entry><entry>Seat</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50005</entry><entry>Back Support</entry></row>
+<row><entry>pt_BR</entry><entry>70 # Bag of Lawn Fertilizer</entry><entry> </entry><entry>true</entry><entry>50007</entry><entry>Fertilizer #70</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50008</entry><entry>Lawn Fertilizer</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50009</entry><entry>Nitrogen</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50010</entry><entry>Phosphorus</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50012</entry><entry>Potassium</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50013</entry><entry>Bag 50 Kg</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50014</entry><entry>Bag 70 Kg</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50015</entry><entry>Front Leg</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50016</entry><entry>Back Leg</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50017</entry><entry>Water</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50018</entry><entry>Fertilizer Plant</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50019</entry><entry>Assembly Area</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50020</entry><entry>Paint Area</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50021</entry><entry>Chrome Subcontract Area</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50022</entry><entry>Inspection Area</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50023</entry><entry>Furniture Plant</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry>Oak Trees may grow quite a bit.</entry><entry>true</entry><entry>123</entry><entry>Oak Tree</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>122</entry><entry>Standard</entry></row>
+<row><entry>pt_BR</entry><entry>Travel related costs</entry><entry> </entry><entry>true</entry><entry>131</entry><entry>Travel cost</entry></row>
+<row><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50024</entry><entry>Packing Production Line</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50026</entry><entry>Area de Secado</entry></row>
+<row><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>50027</entry><entry>Area de Inspección de Fertilizante</entry></row></tbody>
+</tgroup>
+</table>

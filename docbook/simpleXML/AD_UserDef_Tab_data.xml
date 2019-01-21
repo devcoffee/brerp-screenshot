@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Aba Definida pelo Usuário</title>
+<tgroup cols='11' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Aba</entry><entry>Aba Definida pelo Usuário</entry><entry>Janela Definida pelo Usuário</entry><entry>Observações</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Só Multi Linhas</entry><entry>Somente Leitura</entry><entry>Layout em Linha Única</entry><entry>Nome</entry><entry>Lógica Somente de Leitura</entry></row>
+<row><entry>186</entry><entry>5000000</entry><entry>5000000</entry><entry> </entry><entry>Cabeçalho de Pedido</entry><entry>A Aba "Cabeçalho de Pedido" define os parâmetros de um Pedido. Alterar a Organização, Parceiro de Negócios, Armazém, Data Prometida, etc. atualiza estes valores em todas as linhas. </entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>Pedido</entry><entry> </entry></row>
+<row><entry>263</entry><entry>5000001</entry><entry>5000002</entry><entry> </entry><entry>Fatura de Cliente</entry><entry>A Aba "Fatura" define os parâmetros de uma Fatura gerada para um Parceiro de Negócios.  Ela se constitue em contas a receber.</entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>Fatura</entry><entry> </entry></row>
+<row><entry>290</entry><entry>5000002</entry><entry>5000003</entry><entry> </entry><entry>Fatura de Fornecedor</entry><entry>A Aba "Fatura" define os parâmetros de uma Fatura gerada por um Parceiro de Negócios.  Ela se constitue em contas a pagar.  When generating a Receipt, the receipt document type of the purchase is used - or if not used/defined the default Material Receipt Document type.</entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>Fatura</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

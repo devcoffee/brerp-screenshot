@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Referência **</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Referência</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Traduzida</entry><entry>Nome</entry></row>
+<row><entry>es_CO</entry><entry>21</entry><entry>Localización/Dirección</entry><entry> </entry><entry>true</entry><entry>Localización (Dirección)</entry></row>
+<row><entry>es_CO</entry><entry>25</entry><entry>Elemento Contable</entry><entry> </entry><entry>true</entry><entry>Combinación Contable</entry></row>
+<row><entry>es_CO</entry><entry>27</entry><entry>Elemento de Color</entry><entry> </entry><entry>true</entry><entry>Color</entry></row>
+<row><entry>es_CO</entry><entry>33</entry><entry>Asignación de Recursos</entry><entry> </entry><entry>true</entry><entry>Asignación Recurso</entry></row>
+<row><entry>es_CO</entry><entry>34</entry><entry>Texto largo - Cadena de hasta 2000 caracteres</entry><entry> </entry><entry>true</entry><entry>Memo</entry></row>
+<row><entry>es_CO</entry><entry>38</entry><entry>Ruta de Archivo Local</entry><entry> </entry><entry>true</entry><entry>Ruta de Archivo</entry></row>
+<row><entry>es_CO</entry><entry>39</entry><entry>Archivo Local</entry><entry> </entry><entry>true</entry><entry>Nombre de Archivo</entry></row>
+<row><entry>es_CO</entry><entry>40</entry><entry>Dirección Web</entry><entry> </entry><entry>true</entry><entry>Dirección Web</entry></row>
+<row><entry>es_CO</entry><entry>101</entry><entry>Lista de Tipos de Reglas de Validación</entry><entry>ej: S-SQL</entry><entry>true</entry><entry>AD_Validation Rule Types</entry></row>
+<row><entry>es_CO</entry><entry>103</entry><entry>Lista de Tipo de Mensajes</entry><entry> </entry><entry>true</entry><entry>AD_Message Type</entry></row>
+<row><entry>es_CO</entry><entry>104</entry><entry>Lista de acción de Menú</entry><entry> </entry><entry>true</entry><entry>AD_Menu Action</entry></row>
+<row><entry>es_CO</entry><entry>105</entry><entry>Selección Maestra de Menú</entry><entry> </entry><entry>true</entry><entry>AD_Menu Parent</entry></row>
+<row><entry>es_CO</entry><entry>111</entry><entry>Lista de tipos de tasas de cambio</entry><entry> </entry><entry>true</entry><entry>C_Conversion_Rate Types</entry></row>
+<row><entry>es_CO</entry><entry>112</entry><entry>Selección de monedas con tasas de cambio dinámicas</entry><entry> </entry><entry>true</entry><entry>C_Currencies</entry></row>
+<row><entry>es_CO</entry><entry>113</entry><entry>Selección de organización padre</entry><entry> </entry><entry>true</entry><entry>AD_Org Parent</entry></row>
+<row><entry>es_CO</entry><entry>114</entry><entry>Selección de Unidad de Medida</entry><entry> </entry><entry>true</entry><entry>C_UOM</entry></row>
+<row><entry>es_CO</entry><entry>118</entry><entry>Lista de signos de cuenta</entry><entry> </entry><entry>true</entry><entry>C_ElementValue Account Sign</entry></row>
+<row><entry>es_CO</entry><entry>136</entry><entry>Selección de esquema contable</entry><entry> </entry><entry>true</entry><entry>C_AcctSchema</entry></row>
+<row><entry>es_CO</entry><entry>138</entry><entry>Selección de Terceros (no resumen)</entry><entry> </entry><entry>true</entry><entry>C_BPartner (Trx)</entry></row>
+<row><entry>es_CO</entry><entry>141</entry><entry>Selección de Proyecto</entry><entry> </entry><entry>true</entry><entry>C_Project (No summary)</entry></row>
+<row><entry>es_CO</entry><entry>155</entry><entry>Lista de reglas de redondeo de precio</entry><entry> </entry><entry>true</entry><entry>M_DiscountPriceList RoundingRule</entry></row>
+<row><entry>es_CO</entry><entry>159</entry><entry>Direcciones de un tercero</entry><entry> </entry><entry>true</entry><entry>C_BPartner Location</entry></row>
+<row><entry>es_CO</entry><entry>161</entry><entry> </entry><entry> </entry><entry>true</entry><entry>M_Product Parent</entry></row>
+<row><entry>es_CO</entry><entry>168</entry><entry> </entry><entry> </entry><entry>true</entry><entry>C_InvoiceSchedule InvoiceFrequency</entry></row>
+<row><entry>es_CO</entry><entry>169</entry><entry> </entry><entry> </entry><entry>true</entry><entry>C_Project Parent</entry></row>
+<row><entry>es_CO</entry><entry>172</entry><entry> </entry><entry> </entry><entry>true</entry><entry>C_DocType SO</entry></row>
+<row><entry>es_CO</entry><entry>175</entry><entry>Combinaciones de Cuenta Válida</entry><entry> </entry><entry>true</entry><entry>C_ValidCombination</entry></row>
+<row><entry>es_CO</entry><entry>176</entry><entry> </entry><entry> </entry><entry>true</entry><entry>C_PeriodControl Action</entry></row>
+<row><entry>es_CO</entry><entry>177</entry><entry> </entry><entry> </entry><entry>true</entry><entry>C_PeriodControl Status</entry></row>
+<row><entry>es_CO</entry><entry>179</entry><entry> </entry><entry> </entry><entry>true</entry><entry>C_SalesRegion Parent</entry></row>
+<row><entry>es_CO</entry><entry>180</entry><entry>Lista de tipo de errores</entry><entry> </entry><entry>true</entry><entry>_ErrorType</entry></row>
+<row><entry>es_CO</entry><entry>184</entry><entry>Selección de árbol</entry><entry> </entry><entry>true</entry><entry>AD_Tree</entry></row>
+<row><entry>es_CO</entry><entry>188</entry><entry> </entry><entry> </entry><entry>true</entry><entry>M_PriceList Version</entry></row>
+<row><entry>es_CO</entry><entry>233</entry><entry>Períodos ordenados por fecha</entry><entry> </entry><entry>true</entry><entry>C_Period (Open)</entry></row>
+<row><entry>es_CO</entry><entry>271</entry><entry>Línea de la Orden</entry><entry> </entry><entry>true</entry><entry>C_OrderLine</entry></row>
+<row><entry>es_CO</entry><entry>282</entry><entry> </entry><entry> </entry><entry>true</entry><entry>C_Recurring Type</entry></row>
+<row><entry>es_CO</entry><entry>284</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_Window</entry></row>
+<row><entry>es_CO</entry><entry>310</entry><entry>Estado de publicación</entry><entry> </entry><entry>true</entry><entry>_PublishStatus</entry></row>
+<row><entry>es_CO</entry><entry>386</entry><entry> </entry><entry> </entry><entry>true</entry><entry>CM_Container</entry></row>
+<row><entry>es_CO</entry><entry>387</entry><entry> </entry><entry> </entry><entry>true</entry><entry>CM_CStage</entry></row>
+<row><entry>es_CO</entry><entry>388</entry><entry> </entry><entry> </entry><entry>true</entry><entry>CM_Media Media Type</entry></row>
+<row><entry>es_CO</entry><entry>390</entry><entry> </entry><entry> </entry><entry>true</entry><entry>CM_WebAccessLog Type</entry></row>
+<row><entry>es_CO</entry><entry>392</entry><entry> </entry><entry> </entry><entry>true</entry><entry>C_AcctSchema TaxCorrectionType</entry></row>
+<row><entry>es_CO</entry><entry>53285</entry><entry>Factores de escalamiento para los resultados de reportes financieros</entry><entry>Actualmente soportados: mil, millón</entry><entry>true</entry><entry>Scaling Factors</entry></row>
+<row><entry>es_CO</entry><entry>53331</entry><entry>Defines the possible "roles" a the records of a relation can have</entry><entry> </entry><entry>true</entry><entry>AD_RelationType Role</entry></row>
+<row><entry>es_CO</entry><entry>116</entry><entry>Tipos de elementos contables</entry><entry> </entry><entry>true</entry><entry>C_Element Type</entry></row>
+<row><entry>es_CO</entry><entry>123</entry><entry>Lista de Principios de contabilidad generalmente aceptados</entry><entry> </entry><entry>true</entry><entry>C_AcctSchema GAAP</entry></row>
+<row><entry>es_CO</entry><entry>124</entry><entry>Selección de Tercero Padre</entry><entry> </entry><entry>true</entry><entry>C_BPartner Parent</entry></row>
+<row><entry>es_CO</entry><entry>129</entry><entry>Selección de Grupo Empresarial</entry><entry> </entry><entry>true</entry><entry>AD_Client</entry></row>
+<row><entry>es_CO</entry><entry>132</entry><entry>Selección de Cuenta</entry><entry> </entry><entry>true</entry><entry>Account_ID (Trx)</entry></row>
+<row><entry>es_CO</entry><entry>133</entry><entry>Selección de Localización</entry><entry> </entry><entry>true</entry><entry>C_Location</entry></row>
+<row><entry>es_CO</entry><entry>134</entry><entry>Selección de Usuario1</entry><entry> </entry><entry>true</entry><entry>Account_ID - User1</entry></row>
+<row><entry>es_CO</entry><entry>137</entry><entry>Selección Usuario 2</entry><entry> </entry><entry>true</entry><entry>Account_ID - User2</entry></row>
+<row><entry>es_CO</entry><entry>143</entry><entry>Selección de Campaña</entry><entry> </entry><entry>true</entry><entry>C_Campaign (No summary)</entry></row>
+<row><entry>es_CO</entry><entry>144</entry><entry>Selección de Región de Ventas</entry><entry> </entry><entry>true</entry><entry>C_Sales Region (No summary)</entry></row>
+<row><entry>es_CO</entry><entry>145</entry><entry>Selección de Elemento</entry><entry> </entry><entry>true</entry><entry>C_Element</entry></row>
+<row><entry>es_CO</entry><entry>152</entry><entry>Lista de Reglas de vías de envío</entry><entry> </entry><entry>true</entry><entry>C_Order DeliveryViaRule</entry></row>
+<row><entry>es_CO</entry><entry>193</entry><entry> </entry><entry> </entry><entry>true</entry><entry>C_BankAccount for Credit Card</entry></row>
+<row><entry>es_CO</entry><entry>196</entry><entry>Frecuencia de Reconocimiento de Ingresos</entry><entry> </entry><entry>true</entry><entry>C_RevenueRecognition Frequency</entry></row>
+<row><entry>es_CO</entry><entry>198</entry><entry> </entry><entry> </entry><entry>true</entry><entry>M_Inventory ReportType</entry></row>
+<row><entry>es_CO</entry><entry>199</entry><entry> </entry><entry> </entry><entry>true</entry><entry>M_PriceList_Version for Client</entry></row>
+<row><entry>es_CO</entry><entry>201</entry><entry> </entry><entry> </entry><entry>true</entry><entry>C_BP_EDI EDI Type</entry></row>
+<row><entry>es_CO</entry><entry>202</entry><entry> </entry><entry> </entry><entry>true</entry><entry>M_EDI Status</entry></row>
+<row><entry>es_CO</entry><entry>207</entry><entry> </entry><entry> </entry><entry>true</entry><entry>GL Category Type</entry></row>
+<row><entry>es_CO</entry><entry>208</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_ImpFormat Type</entry></row>
+<row><entry>es_CO</entry><entry>236</entry><entry> </entry><entry> </entry><entry>true</entry><entry>PA_Report CalculationType</entry></row>
+<row><entry>es_CO</entry><entry>237</entry><entry> </entry><entry> </entry><entry>true</entry><entry>PA_Report ColumnType</entry></row>
+<row><entry>es_CO</entry><entry>238</entry><entry> </entry><entry> </entry><entry>true</entry><entry>PA_Report CurrencyType</entry></row>
+<row><entry>es_CO</entry><entry>240</entry><entry> </entry><entry> </entry><entry>true</entry><entry>PA_ReportLine</entry></row>
+<row><entry>es_CO</entry><entry>241</entry><entry> </entry><entry> </entry><entry>true</entry><entry>PA_Report LineType</entry></row>
+<row><entry>es_CO</entry><entry>242</entry><entry> </entry><entry> </entry><entry>true</entry><entry>PA_ReportLine Parent</entry></row>
+<row><entry>es_CO</entry><entry>244</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_Column Key ColumnNames</entry></row>
+<row><entry>es_CO</entry><entry>245</entry><entry>Tipo de Entidad (Diccionario;
+...)</entry><entry> </entry><entry>true</entry><entry>_Entity Type</entry></row>
+<row><entry>es_CO</entry><entry>246</entry><entry> </entry><entry> </entry><entry>true</entry><entry>M_Discount CumulativeLevel</entry></row>
+<row><entry>es_CO</entry><entry>248</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_Color StartPoint</entry></row>
+<row><entry>es_CO</entry><entry>249</entry><entry> </entry><entry> </entry><entry>true</entry><entry>M_DiscountSchema</entry></row>
+<row><entry>es_CO</entry><entry>250</entry><entry> </entry><entry> </entry><entry>true</entry><entry>CostUpdate Source</entry></row>
+<row><entry>es_CO</entry><entry>253</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_Print Field Alignment</entry></row>
+<row><entry>es_CO</entry><entry>254</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_Print Line Alignment</entry></row>
+<row><entry>es_CO</entry><entry>255</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_Print Format Type</entry></row>
+<row><entry>es_CO</entry><entry>256</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_Print Area</entry></row>
+<row><entry>es_CO</entry><entry>258</entry><entry>Columna Si/No (Nombre)</entry><entry> </entry><entry>true</entry><entry>AD_Column YesNo</entry></row>
+<row><entry>es_CO</entry><entry>259</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_PrintFormat</entry></row>
+<row><entry>es_CO</entry><entry>262</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_PrintFormat Order</entry></row>
+<row><entry>es_CO</entry><entry>264</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_PrintFormatItem</entry></row>
+<row><entry>es_CO</entry><entry>265</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_Print Graph Type</entry></row>
+<row><entry>es_CO</entry><entry>266</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_PrintColor</entry></row>
+<row><entry>es_CO</entry><entry>267</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_PrintFont</entry></row>
+<row><entry>es_CO</entry><entry>278</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_Tab</entry></row>
+<row><entry>es_CO</entry><entry>279</entry><entry> </entry><entry> </entry><entry>true</entry><entry>M_Product BOM Product TypeX</entry></row>
+<row><entry>es_CO</entry><entry>291</entry><entry> </entry><entry> </entry><entry>true</entry><entry>AD_Field ObscureType</entry></row>
+<row><entry>es_CO</entry><entry>294</entry><entry> </entry><entry> </entry><entry>true</entry><entry>M_TransactionAllocation Type</entry></row>
+<row><entry>es_CO</entry><entry>323</entry><entry> </entry><entry> </entry><entry>true</entry><entry>C_Allocation</entry></row>
+<row><entry>es_CO</entry><entry>126</entry><entry>Lista de estrategia de Replicación</entry><entry> </entry><entry>true</entry><entry>AD_Table Replication Type</entry></row>
+<row><entry>es_CO</entry><entry>135</entry><entry>Lista de acción en Documentos</entry><entry> </entry><entry>true</entry><entry>_Document Action</entry></row>
+<row><entry>es_CO</entry><entry>148</entry><entry>Lista de Tipos de Órdenes</entry><entry> </entry><entry>true</entry><entry>C_DocType SubTypeSO</entry></row>
+<row><entry>es_CO</entry><entry>150</entry><entry>Lista de Reglas de Facturación</entry><entry> </entry><entry>true</entry><entry>C_Order InvoiceRule</entry></row>
+<row><entry>es_CO</entry><entry>156</entry><entry>Selección de País</entry><entry> </entry><entry>true</entry><entry>C_Country</entry></row>
+<row><entry>es_CO</entry><entry>158</entry><entry>Selección de Impuesto</entry><entry> </entry><entry>true</entry><entry>C_Tax</entry></row>
+<row><entry>es_CO</entry><entry>162</entry><entry>Selección de Producto;
+ no resumen</entry><entry> </entry><entry>true</entry><entry>M_Product (no summary)</entry></row></tbody>
+</tgroup>
+</table>

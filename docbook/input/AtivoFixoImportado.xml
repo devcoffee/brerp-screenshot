@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Ativo Fixo Importado</title> 
+ <para> <emphasis>Descrição: </emphasis>  null</para><para> <emphasis>Comentário/Ajuda: </emphasis>null</para><para><emphasis> Criado em: </emphasis>2010-06-20 15:50:46.0
+</para><para><emphasis>Atualizado em: </emphasis>2010-06-20 15:50:46.0</para>
+<section> 
+ <title>Tabela: Ativo Fixo - I_FixedAsset</title> 
+ <para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Fixed Asset Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Data da Depreciação do Ativo</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date of last depreciation</entry> 
+<entry>Date of the last deprecation, if the asset is used internally and depreciated.</entry> 
+</row> 
+<row> 
+ <entry>Processed</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Remanescente do Período</entry><entry>Inteiro</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>('Y')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Depreciação Valor/Período</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Applies to Straight Line depreciation</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Importar Ativo Fixo</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor do Tipo de Ativo</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo do Ativo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">aassettype_ifixedasset</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Classe do Ativo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">aassetclass_ifixedasset</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Chave da Classe do Ativo</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cidade</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">ccity_ifixedasset</entry> 
+<entry> </entry> 
+<entry valign="middle">City</entry> 
+<entry>City in a country</entry> 
+</row> 
+<row> 
+ <entry>Seqüência</entry><entry>Inteiro</entry> 
+<entry>(1)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method of ordering records;
+ lowest number comes first</entry> 
+<entry>The Sequence indicates the order of records</entry> 
+</row> 
+<row> 
+ <entry>Cidade Valor</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Importado</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Has this import been processed</entry> 
+<entry>The Imported check box indicates if this import has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Mensagem de Erro de Importação</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Messages generated from import process</entry> 
+<entry>The Import Error Message displays any error messages generated during the import process.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">aasset_ifixedasset</entry> 
+<entry> </entry> 
+<entry valign="middle">Asset used internally or by customers</entry> 
+<entry>An asset is either created by purchasing or by delivering a product.  An asset can be used internally or be a customer asset.</entry> 
+</row> 
+<row> 
+ <entry>No do Inventário</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Data de Entrada em Serviço</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date when Asset was put into service</entry> 
+<entry>The date when the asset was put into service - usually used as start date for depreciation.</entry> 
+</row> 
+<row> 
+ <entry>Data da Conta</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Accounting Date</entry> 
+<entry>The Accounting Date indicates the date to be used on the General Ledger account entries generated from this document. It is also used for any currency conversion.</entry> 
+</row> 
+<row> 
+ <entry>Grupo de Ativo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">aassetgroup_ifixedasset</entry> 
+<entry> </entry> 
+<entry valign="middle">Group of Assets</entry> 
+<entry>The group of assets determines default accounts.  If an asset group is selected in the product category, assets are created when delivering the asset.</entry> 
+</row> 
+<row> 
+ <entry>Grupo Chave do Ativo</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>P.Negócios (Representante)</entry><entry>Procurar</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry valign="middle">cbpartnersr_ifixedasset</entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner (Agent or Sales Rep)</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Chave de Parceiro de Negócios</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The Key of the Business Partner</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">mproduct_ifixedasset</entry> 
+<entry> </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Chave de Produto</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Key of the Product</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>UDM</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cuom_ifixedasset</entry> 
+<entry> </entry> 
+<entry valign="middle">Unit of Measure</entry> 
+<entry>The UOM defines a unique non monetary Unit of Measure</entry> 
+</row> 
+<row> 
+ <entry>Símbolo</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Symbol for a Unit of Measure</entry> 
+<entry>The Symbol identifies the Symbol to be displayed and printed for a Unit of Measure</entry> 
+</row> 
+<row> 
+ <entry>Localizador</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mlocator_ifixedasset</entry> 
+<entry> </entry> 
+<entry valign="middle">Warehouse Locator</entry> 
+<entry>The Locator indicates where in a Warehouse a product is located.</entry> 
+</row> 
+<row> 
+ <entry>Chave de Localização</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Key of the Warehouse Locator</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade</entry><entry>Quantidade</entry> 
+<entry>(1)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Quantity</entry> 
+<entry>The Quantity indicates the number of a specific product or item for this document.</entry> 
+</row> 
+<row> 
+ <entry>Custo do Ativo</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor Salvo</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Vida Útil - Meses</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Months of the usable life of the asset</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Use Vida - Meses (fiscal)</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Período Atual</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Depreciação Acumulada</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Depreciação Acumulada (fiscal)</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ação do Documento</entry><entry>Lista</entry> 
+<entry>&lt;
+Nenhum&gt;
+
+Aprovar
+Fechar
+Completo
+Invalidar
+Lançar
+Preparar
+Estornar - Provisão
+Estornar - Corrigir
+Reativar
+Rejeitar
+Anulado
+Espere Completar
+Destravar
+('CO')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The targeted status of the document</entry> 
+<entry>You find the current status in the Document Status field. The options are listed in a popup</entry> 
+</row> 
+<row> 
+ <entry>Import Fixed Asset</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>I_FixedAsset_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

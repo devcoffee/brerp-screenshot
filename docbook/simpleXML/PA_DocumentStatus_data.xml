@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Document Status</title>
+<tgroup cols='15' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Formulário Especial</entry><entry>Perfil</entry><entry>Tabela</entry><entry>Usuário/Contato</entry><entry>Janela</entry><entry>Projeto</entry><entry>Descrição</entry><entry>Nome</entry><entry>Cor Para Titulo</entry><entry>Fonte Para Titulo</entry><entry>Cor para Valor</entry><entry>Fonte para Valor</entry><entry>Document Status</entry><entry>Seqüência</entry><entry>Sql WHERE</entry></row>
+<row><entry> </entry><entry> </entry><entry>259</entry><entry> </entry><entry>143</entry><entry> </entry><entry> </entry><entry>Sales Orders received today</entry><entry>100</entry><entry>129</entry><entry>102</entry><entry>129</entry><entry>200000</entry><entry>50</entry><entry>C_Order.IsSoTrx='Y' and c_Order.DateOrdered &gt;
+ SYSDATE-1</entry></row>
+<row><entry> </entry><entry> </entry><entry>319</entry><entry> </entry><entry>169</entry><entry> </entry><entry> </entry><entry>Pending Customer Shipments</entry><entry>100</entry><entry>129</entry><entry>102</entry><entry>129</entry><entry>200001</entry><entry>60</entry><entry>M_InOut.IsSOTrx='Y' AND M_InOut.Processed='N' AND M_InOut.MovementType IN ('C-')</entry></row>
+<row><entry> </entry><entry> </entry><entry>389</entry><entry> </entry><entry>193</entry><entry> </entry><entry> </entry><entry>Notice</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>200002</entry><entry>10</entry><entry>AD_Client_ID=@#AD_Client_ID@ AND AD_User_ID IN (0,@#AD_User_ID@) AND Processed='N' AND AD_BroadcastMessage_ID IS NULL</entry></row>
+<row><entry> </entry><entry> </entry><entry>417</entry><entry> </entry><entry>201</entry><entry> </entry><entry> </entry><entry>Request</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>200003</entry><entry>20</entry><entry>(SalesRep_ID=@#AD_User_ID@ OR AD_Role_ID=@#AD_Role_ID@) AND Processed='N' AND (DateNextAction IS NULL OR TRUNC(DateNextAction) &lt;
+= TRUNC(SysDate)) AND (R_Status_ID IS NULL OR R_Status_ID IN (SELECT R_Status_ID FROM R_Status WHERE IsClosed='N'))</entry></row>
+<row><entry> </entry><entry> </entry><entry>53221</entry><entry> </entry><entry>53086</entry><entry> </entry><entry> </entry><entry>Unprocessed Documents</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>200005</entry><entry>40</entry><entry>AD_Client_ID=@#AD_Client_ID@ AND CreatedBy=@#AD_User_ID@</entry></row>
+<row><entry>117</entry><entry> </entry><entry>644</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>Workflow Activities</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>200004</entry><entry>30</entry><entry>AD_WF_Activity.Processed='N' AND AD_WF_Activity.WFState='OS' AND (
+/* Owner of Activity */
+AD_WF_Activity.AD_User_ID=@#AD_User_ID@
+/* Invoker (if no invoker = all) */
+OR EXISTS (SELECT * FROM AD_WF_Responsible r WHERE AD_WF_Activity.AD_WF_Responsible_ID=r.AD_WF_Responsible_ID
+AND r.ResponsibleType='H' AND COALESCE(r.AD_User_ID,0)=0 AND COALESCE(r.AD_Role_ID,0)=0 AND (AD_WF_Activity.AD_User_ID=@#AD_User_ID@ OR AD_WF_Activity.AD_User_ID IS NULL))
+/* Responsible User */
+OR EXISTS (SELECT * FROM AD_WF_Responsible r WHERE AD_WF_Activity.AD_WF_Responsible_ID=r.AD_WF_Responsible_ID
+AND r.ResponsibleType='H' AND r.AD_User_ID=@#AD_User_ID@)
+/* Responsible Role */
+OR EXISTS (SELECT * FROM AD_WF_Responsible r INNER JOIN AD_User_Roles ur ON ((r.AD_Role_ID=ur.AD_Role_ID AND COALESCE(AD_WF_Activity.AD_Role_ID, 0)= 0) OR AD_WF_Activity.AD_Role_ID=ur.AD_Role_ID ) 
+WHERE AD_WF_Activity.AD_WF_Responsible_ID=r.AD_WF_Responsible_ID AND r.ResponsibleType='R' AND ur.AD_User_ID=@#AD_User_ID@ AND ur.isActive='Y')
+/* Manual Responsible */
+OR EXISTS (SELECT * FROM AD_WF_ActivityApprover r WHERE AD_WF_Activity.AD_WF_Activity_ID=r.AD_WF_Activity_ID AND r.AD_User_ID=@#AD_User_ID@ AND r.isActive='Y')
+) AND AD_WF_Activity.AD_Client_ID=@#AD_Client_ID@</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Programação de Faturamento</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Valor</entry><entry>Programação de Faturamento</entry><entry>Descrição</entry><entry>Faturar nas Semanas Pares</entry><entry>Dia da Fatura</entry><entry>Último dia p/ Faturamento</entry><entry>Freqüência da Fatura</entry><entry>Dia de Semana para Faturar</entry><entry>Último dia da semana p/ Faturamento</entry><entry>Valor Limite</entry><entry>Padrão</entry><entry>Nome</entry></row>
+<row><entry>0</entry><entry>100</entry><entry> </entry><entry>false</entry><entry>30</entry><entry>0</entry><entry>M</entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry>Monthly</entry></row></tbody>
+</tgroup>
+</table>

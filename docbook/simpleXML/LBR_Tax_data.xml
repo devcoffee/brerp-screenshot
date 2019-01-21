@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Imposto Brasileiro</title>
+<tgroup cols='4' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Tabela</entry><entry>Descrição</entry><entry>Imposto Brasileiro</entry><entry>ID do Registro</entry></row>
+<row><entry> </entry><entry>ICMSST-18,00, ICMSDIFAL-5,00, ICMSPROD-12,00</entry><entry>1000081</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSDIFAL-6,00, ICMSPROD-12,00, ICMSST-18,00</entry><entry>1000009</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-18,00</entry><entry>1000532</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-18,00, ICMSPROD-12,00, PISPROD-1,65, COFINSPROD-7,60</entry><entry>5000000</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000057</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000006</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000058</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000009</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000059</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000010</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000017</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000018</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000019</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-18,00, ICMSPROD-0,00</entry><entry>5000020</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000021</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000022</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000023</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000024</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000025</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-18,00, PISPROD-0,00, COFINSPROD-0,00</entry><entry>1000730</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-18,00, PISPROD-0,00, COFINSPROD-0,00</entry><entry>1000731</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-18,00, PISPROD-0,00, COFINSPROD-0,00</entry><entry>1000732</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-18,00, PISPROD-0,00, COFINSPROD-0,00</entry><entry>1000734</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-18,00, PISPROD-1,65, COFINSPROD-7,60, IPI-5,00</entry><entry>1000736</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-18,00, PISPROD-1,65, COFINSPROD-7,60, IPI-5,00</entry><entry>1000735</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-18,00, PISPROD-1,65, COFINSPROD-7,60, IPI-5,00</entry><entry>1000733</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-18,00, PISPROD-1,65, COFINSPROD-7,60, IPI-5,00</entry><entry>1000737</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000026</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000027</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000028</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000060</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000049</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000050</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000051</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-18,00, ICMSPROD-0,00</entry><entry>5000052</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000053</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000054</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000055</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000056</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSDIFAL-6,00, ICMSST-18,00, ICMSPROD-12,00</entry><entry>1000003</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSDIFAL-6,00, ICMSPROD-12,00, ICMSST-18,00</entry><entry>1000014</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-18,00, ICMSPROD-12,00, PISPROD-1,65, COFINSPROD-7,60</entry><entry>5000001</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000086</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000004</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000087</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-18,00, ICMSPROD-0,00</entry><entry>5000005</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-18,00, ICMSPROD-0,00</entry><entry>5000088</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000089</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000090</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000007</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSDIFAL-6,00</entry><entry>5000008</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-18,00, ICMSPROD-12,00, PISPROD-1,65, COFINSPROD-7,60, IPI-10,00</entry><entry>5000031</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000061</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000062</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000063</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-18,00, ICMSPROD-0,00</entry><entry>5000064</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000065</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000066</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000067</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000068</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000069</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000070</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000071</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000072</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000073</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000074</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000075</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-18,00, ICMSPROD-0,00</entry><entry>5000076</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000077</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000078</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000079</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000080</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000081</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000082</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000083</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000084</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000085</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000091</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000092</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000093</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000094</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000095</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000096</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSDIFAL-6,00, ICMSPROD-12,00, ICMSST-18,00</entry><entry>1000273</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSDIFAL-6,00, ICMSPROD-12,00, ICMSST-18,00</entry><entry>1000581</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000117</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000002</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000118</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000012</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000119</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000013</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000120</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000015</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000034</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000035</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-18,00</entry><entry>5000036</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-18,00, ICMSPROD-0,00</entry><entry>5000037</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000038</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSST-0,00, ICMSPROD-0,00</entry><entry>5000039</entry><entry> </entry></row>
+<row><entry> </entry><entry>ICMSPROD-0,00, ICMSST-0,00</entry><entry>5000040</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

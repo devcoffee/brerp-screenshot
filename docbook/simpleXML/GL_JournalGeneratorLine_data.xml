@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Gerador de Linha</title>
+<tgroup cols='14' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Valor Multiplicador</entry><entry>Coluna do BP</entry><entry>Type of BP Dimension</entry><entry>Parceiro de Negócios </entry><entry>Conta CR</entry><entry>Conta DR</entry><entry>Descrição</entry><entry>Gerador de Razão</entry><entry>Gerador de Linha</entry><entry>Comentário/Ajuda</entry><entry>Copie Todas as Dimensões</entry><entry>Mesmo Produto</entry><entry>Fator de Arredondamento</entry><entry>Seqüência</entry></row>
+<row><entry>-1.000000000000</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>Close (4) Sales and (80) Other Income</entry><entry>200000</entry><entry>200000</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>2</entry><entry>10</entry></row>
+<row><entry>-1.000000000000</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>Close (5) Cost of Goods Sold</entry><entry>200000</entry><entry>200001</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>2</entry><entry>20</entry></row>
+<row><entry>-1.000000000000</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>Close (6) Expenses</entry><entry>200000</entry><entry>200002</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>2</entry><entry>30</entry></row>
+<row><entry>-1.000000000000</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>Close (7) Expenses</entry><entry>200000</entry><entry>200003</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>2</entry><entry>40</entry></row>
+<row><entry>-1.000000000000</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>Close (82) Other Expense and (83) Expense (Absorbed)</entry><entry>200000</entry><entry>200004</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>2</entry><entry>50</entry></row>
+<row><entry>1</entry><entry> </entry><entry> </entry><entry> </entry><entry>771</entry><entry> </entry><entry>Move Income Summary to Retained Earnings</entry><entry>200001</entry><entry>200005</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>2</entry><entry>10</entry></row>
+<row><entry>-1.0</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>5000000</entry><entry>5000001</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>10</entry><entry>10</entry></row></tbody>
+</tgroup>
+</table>

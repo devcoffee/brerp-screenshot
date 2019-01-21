@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Controle de Períodos</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Controle de Períodos</entry><entry>Período (Ano Fiscal)</entry><entry>Tipo de Base de Documento</entry><entry>Atividade no Período</entry><entry>Estado do Período</entry><entry>Processar Agora</entry></row>
+<row><entry>280</entry><entry>147</entry><entry>ARF</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>282</entry><entry>147</entry><entry>ARR</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>283</entry><entry>147</entry><entry>GLD</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>285</entry><entry>147</entry><entry>MMI</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>286</entry><entry>147</entry><entry>MMM</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>287</entry><entry>147</entry><entry>MMR</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>289</entry><entry>147</entry><entry>POO</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>290</entry><entry>147</entry><entry>POR</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>292</entry><entry>136</entry><entry>CMA</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>293</entry><entry>136</entry><entry>CMB</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>294</entry><entry>136</entry><entry>CMC</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>296</entry><entry>137</entry><entry>CMB</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>297</entry><entry>137</entry><entry>CMC</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>299</entry><entry>138</entry><entry>CMB</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>300</entry><entry>138</entry><entry>CMC</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>302</entry><entry>139</entry><entry>CMB</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>303</entry><entry>139</entry><entry>CMC</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>304</entry><entry>140</entry><entry>CMA</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>306</entry><entry>140</entry><entry>CMC</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>307</entry><entry>141</entry><entry>CMA</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>309</entry><entry>141</entry><entry>CMC</entry><entry>N</entry><entry>C</entry><entry> </entry></row>
+<row><entry>310</entry><entry>142</entry><entry>CMA</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>312</entry><entry>142</entry><entry>CMC</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>313</entry><entry>143</entry><entry>CMA</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>314</entry><entry>143</entry><entry>CMB</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>316</entry><entry>144</entry><entry>CMA</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>317</entry><entry>144</entry><entry>CMB</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>319</entry><entry>145</entry><entry>CMA</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>320</entry><entry>145</entry><entry>CMB</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>322</entry><entry>146</entry><entry>CMA</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>323</entry><entry>146</entry><entry>CMB</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>324</entry><entry>146</entry><entry>CMC</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>326</entry><entry>147</entry><entry>CMB</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>327</entry><entry>147</entry><entry>CMC</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>329</entry><entry>148</entry><entry>API</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>330</entry><entry>148</entry><entry>APP</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>331</entry><entry>148</entry><entry>ARC</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>333</entry><entry>148</entry><entry>ARI</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>334</entry><entry>148</entry><entry>ARR</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>336</entry><entry>148</entry><entry>CMB</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>337</entry><entry>148</entry><entry>CMC</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>715</entry><entry>165</entry><entry>MMM</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>716</entry><entry>165</entry><entry>MMP</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>717</entry><entry>165</entry><entry>MMR</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>719</entry><entry>165</entry><entry>MXI</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>720</entry><entry>165</entry><entry>MXP</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>722</entry><entry>165</entry><entry>POR</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1175</entry><entry>182</entry><entry>MXI</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1177</entry><entry>182</entry><entry>PJI</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1178</entry><entry>182</entry><entry>POO</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1179</entry><entry>182</entry><entry>POR</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1181</entry><entry>183</entry><entry>APC</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1183</entry><entry>183</entry><entry>APP</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1185</entry><entry>183</entry><entry>ARF</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1186</entry><entry>183</entry><entry>ARI</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1188</entry><entry>183</entry><entry>CMA</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1189</entry><entry>183</entry><entry>CMB</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1190</entry><entry>183</entry><entry>CMC</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1192</entry><entry>183</entry><entry>GLJ</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1193</entry><entry>183</entry><entry>MMI</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1195</entry><entry>183</entry><entry>MMP</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1196</entry><entry>183</entry><entry>MMR</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1197</entry><entry>183</entry><entry>MMS</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1199</entry><entry>183</entry><entry>MXP</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1200</entry><entry>183</entry><entry>PJI</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1202</entry><entry>183</entry><entry>POR</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1203</entry><entry>183</entry><entry>SOO</entry><entry>N</entry><entry>O</entry><entry> </entry></row>
+<row><entry>1481</entry><entry>196</entry><entry>MMS</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1482</entry><entry>196</entry><entry>PJI</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1483</entry><entry>196</entry><entry>CMA</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1485</entry><entry>196</entry><entry>MMP</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1486</entry><entry>196</entry><entry>GLD</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1487</entry><entry>196</entry><entry>CMC</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1489</entry><entry>196</entry><entry>MMM</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1490</entry><entry>196</entry><entry>MMI</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1491</entry><entry>196</entry><entry>ARF</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1494</entry><entry>196</entry><entry>API</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1495</entry><entry>196</entry><entry>APC</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1496</entry><entry>196</entry><entry>GLJ</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1499</entry><entry>196</entry><entry>ARC</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1500</entry><entry>196</entry><entry>ARR</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1503</entry><entry>196</entry><entry>APP</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1505</entry><entry>196</entry><entry>POR</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1506</entry><entry>196</entry><entry>SOO</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1515</entry><entry>197</entry><entry>MMR</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1517</entry><entry>197</entry><entry>PJI</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1518</entry><entry>197</entry><entry>CMA</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1519</entry><entry>197</entry><entry>MXI</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1521</entry><entry>197</entry><entry>GLD</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1522</entry><entry>197</entry><entry>CMC</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1523</entry><entry>197</entry><entry>MXP</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1525</entry><entry>197</entry><entry>MMI</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1526</entry><entry>197</entry><entry>ARF</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1529</entry><entry>197</entry><entry>API</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1530</entry><entry>197</entry><entry>APC</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1531</entry><entry>197</entry><entry>GLJ</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1534</entry><entry>197</entry><entry>ARC</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1535</entry><entry>197</entry><entry>ARR</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1538</entry><entry>197</entry><entry>APP</entry><entry>N</entry><entry>O</entry><entry>false</entry></row>
+<row><entry>1540</entry><entry>197</entry><entry>POR</entry><entry>N</entry><entry>O</entry><entry>false</entry></row></tbody>
+</tgroup>
+</table>

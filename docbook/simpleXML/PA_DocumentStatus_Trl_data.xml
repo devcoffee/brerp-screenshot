@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Document Status **</title>
+<tgroup cols='4' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Idioma</entry><entry>Traduzida</entry><entry>Nome</entry><entry>Document Status</entry></row>
+<row><entry>es_CO</entry><entry>false</entry><entry>Unprocessed Documents</entry><entry>200005</entry></row>
+<row><entry>es_CO</entry><entry>false</entry><entry>Workflow Activities</entry><entry>200004</entry></row>
+<row><entry>es_CO</entry><entry>false</entry><entry>Request</entry><entry>200003</entry></row>
+<row><entry>es_CO</entry><entry>false</entry><entry>Notice</entry><entry>200002</entry></row>
+<row><entry>es_CO</entry><entry>false</entry><entry>Pending Customer Shipments</entry><entry>200001</entry></row>
+<row><entry>pt_BR</entry><entry>false</entry><entry>Pending Customer Shipments</entry><entry>200001</entry></row>
+<row><entry>es_CO</entry><entry>false</entry><entry>Sales Orders received today</entry><entry>200000</entry></row>
+<row><entry>pt_BR</entry><entry>false</entry><entry>Sales Orders received today</entry><entry>200000</entry></row>
+<row><entry>pt_BR</entry><entry>true</entry><entry>Atividades de Fluxos de Trabalho</entry><entry>200004</entry></row>
+<row><entry>pt_BR</entry><entry>true</entry><entry>Documentos Não Processados</entry><entry>200005</entry></row>
+<row><entry>pt_BR</entry><entry>true</entry><entry>Solicitação</entry><entry>200003</entry></row>
+<row><entry>pt_BR</entry><entry>true</entry><entry>Aviso</entry><entry>200002</entry></row></tbody>
+</tgroup>
+</table>

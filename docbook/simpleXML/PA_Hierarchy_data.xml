@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Hierarquia de Relatórios</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Árvore de Contas</entry><entry>Árvore de Atividade</entry><entry>Árvore Parc.Negócios</entry><entry>Árvore de Campanha</entry><entry>Árvore da Organização</entry><entry>Árvore de Produto</entry><entry>Árvore de Projeto</entry><entry>Árvore de Região de Vendas</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Nome</entry><entry>Hierarquia de Relatórios</entry></row>
+<row><entry>1000014</entry><entry>1000011</entry><entry>1000007</entry><entry>1000010</entry><entry>1000008</entry><entry>1000006</entry><entry>1000015</entry><entry>1000009</entry><entry>Relatorio Sem Consoliação</entry><entry>Relatorio Sem Consoliação</entry><entry>Relatorio Sem Consoliação</entry><entry>5000000</entry></row></tbody>
+</tgroup>
+</table>

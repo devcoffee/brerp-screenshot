@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Elemento de Relação</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Conta</entry><entry>Valor Constante</entry><entry>Descrição</entry><entry>Nome</entry><entry>Cálculo de Medição</entry><entry>Elemento de Relação</entry><entry>Razão</entry><entry>Razão Usada</entry><entry>Tipo de Lançamento</entry><entry>Element Type</entry><entry>Operand</entry><entry>Seqüência</entry></row>
+<row><entry>537</entry><entry>0</entry><entry> </entry><entry>Long Term Investments</entry><entry> </entry><entry>100</entry><entry>100</entry><entry> </entry><entry>A</entry><entry>A</entry><entry>P</entry><entry>10</entry></row>
+<row><entry>541</entry><entry>0</entry><entry> </entry><entry>Inventory</entry><entry> </entry><entry>101</entry><entry>100</entry><entry> </entry><entry>A</entry><entry>A</entry><entry>P</entry><entry>0</entry></row>
+<row><entry>554</entry><entry>0</entry><entry> </entry><entry>Land and Building</entry><entry> </entry><entry>102</entry><entry>100</entry><entry> </entry><entry> </entry><entry>A</entry><entry>P</entry><entry>0</entry></row></tbody>
+</tgroup>
+</table>

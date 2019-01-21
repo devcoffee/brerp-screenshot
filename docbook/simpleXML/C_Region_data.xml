@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Região</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>País</entry><entry>Região</entry><entry>Descrição</entry><entry>Padrão</entry><entry>Código da UF</entry><entry>Nome</entry></row>
+<row><entry>106</entry><entry>235</entry><entry>Albacete</entry><entry>false</entry><entry> </entry><entry>Albacete</entry></row>
+<row><entry>216</entry><entry>419</entry><entry>京都府(Kyoto)</entry><entry>false</entry><entry> </entry><entry>京都府</entry></row>
+<row><entry>216</entry><entry>420</entry><entry>大阪府(Osaka)</entry><entry>false</entry><entry> </entry><entry>大阪府</entry></row>
+<row><entry>216</entry><entry>422</entry><entry>奈良県(Nara)</entry><entry>false</entry><entry> </entry><entry>奈良県</entry></row>
+<row><entry>216</entry><entry>423</entry><entry>和歌山県(Wakayama)</entry><entry>false</entry><entry> </entry><entry>和歌山県</entry></row>
+<row><entry>216</entry><entry>424</entry><entry>鳥取県(Tottori)</entry><entry>false</entry><entry> </entry><entry>鳥取県</entry></row>
+<row><entry>216</entry><entry>425</entry><entry>島根県(Shimane)</entry><entry>false</entry><entry> </entry><entry>島根県</entry></row>
+<row><entry>216</entry><entry>427</entry><entry>広島県(Hiroshima)</entry><entry>false</entry><entry> </entry><entry>広島県</entry></row>
+<row><entry>216</entry><entry>428</entry><entry>山口県(Yamaguchi)</entry><entry>false</entry><entry> </entry><entry>山口県</entry></row>
+<row><entry>216</entry><entry>429</entry><entry>徳島県(Tokushima)</entry><entry>false</entry><entry> </entry><entry>徳島県</entry></row>
+<row><entry>216</entry><entry>430</entry><entry>香川県(Kagawa)</entry><entry>false</entry><entry> </entry><entry>香川県</entry></row>
+<row><entry>216</entry><entry>432</entry><entry>高知県(Kouchi)</entry><entry>false</entry><entry> </entry><entry>高知県</entry></row>
+<row><entry>216</entry><entry>433</entry><entry>福岡県(Fukuoka)</entry><entry>false</entry><entry> </entry><entry>福岡県</entry></row>
+<row><entry>216</entry><entry>434</entry><entry>佐賀県(Saga)</entry><entry>false</entry><entry> </entry><entry>佐賀県</entry></row>
+<row><entry>216</entry><entry>435</entry><entry>長崎県(Nagasaki)</entry><entry>false</entry><entry> </entry><entry>長崎県</entry></row>
+<row><entry>216</entry><entry>437</entry><entry>大分県(Ohita)</entry><entry>false</entry><entry> </entry><entry>大分県</entry></row>
+<row><entry>216</entry><entry>438</entry><entry>宮崎県(Miyasaki)</entry><entry>false</entry><entry> </entry><entry>宮崎県</entry></row>
+<row><entry>216</entry><entry>439</entry><entry>鹿児島県(Kagoshima)</entry><entry>false</entry><entry> </entry><entry>鹿児島県</entry></row>
+<row><entry>216</entry><entry>440</entry><entry>沖縄県(Okinawa)</entry><entry>false</entry><entry> </entry><entry>沖縄県</entry></row>
+<row><entry>109</entry><entry>156</entry><entry>Alberta</entry><entry>false</entry><entry> </entry><entry>Alberta</entry></row>
+<row><entry>100</entry><entry>102</entry><entry>Connecticut</entry><entry>false</entry><entry> </entry><entry>CT</entry></row>
+<row><entry>100</entry><entry>103</entry><entry>California</entry><entry>false</entry><entry> </entry><entry>CA</entry></row>
+<row><entry>100</entry><entry>104</entry><entry>Massachusetts</entry><entry>false</entry><entry> </entry><entry>MA</entry></row>
+<row><entry>100</entry><entry>106</entry><entry>New Hampshire</entry><entry>false</entry><entry> </entry><entry>NH</entry></row>
+<row><entry>100</entry><entry>107</entry><entry>Rhode Island</entry><entry>false</entry><entry> </entry><entry>RI</entry></row>
+<row><entry>100</entry><entry>108</entry><entry>New York</entry><entry>false</entry><entry> </entry><entry>NY</entry></row>
+<row><entry>100</entry><entry>110</entry><entry>Pennsylvania</entry><entry>false</entry><entry> </entry><entry>PA</entry></row>
+<row><entry>100</entry><entry>111</entry><entry>Virginia</entry><entry>false</entry><entry> </entry><entry>VA</entry></row>
+<row><entry>100</entry><entry>112</entry><entry>West Virginia</entry><entry>false</entry><entry> </entry><entry>WV</entry></row>
+<row><entry>100</entry><entry>113</entry><entry>Florida</entry><entry>false</entry><entry> </entry><entry>FL</entry></row>
+<row><entry>100</entry><entry>115</entry><entry>Deleware</entry><entry>false</entry><entry> </entry><entry>DE</entry></row>
+<row><entry>100</entry><entry>116</entry><entry>Washington</entry><entry>false</entry><entry> </entry><entry>WA</entry></row>
+<row><entry>100</entry><entry>119</entry><entry>Tennessee</entry><entry>false</entry><entry> </entry><entry>TN</entry></row>
+<row><entry>100</entry><entry>120</entry><entry>Georgia</entry><entry>false</entry><entry> </entry><entry>GA</entry></row>
+<row><entry>100</entry><entry>122</entry><entry>South Dakato</entry><entry>false</entry><entry> </entry><entry>SD</entry></row>
+<row><entry>100</entry><entry>123</entry><entry>Minnesota</entry><entry>false</entry><entry> </entry><entry>MN</entry></row>
+<row><entry>100</entry><entry>124</entry><entry>Iowa</entry><entry>false</entry><entry> </entry><entry>IA</entry></row>
+<row><entry>100</entry><entry>126</entry><entry>Ohio</entry><entry>false</entry><entry> </entry><entry>OH</entry></row>
+<row><entry>100</entry><entry>127</entry><entry>Illinois</entry><entry>false</entry><entry> </entry><entry>IL</entry></row>
+<row><entry>100</entry><entry>128</entry><entry>South Carolina</entry><entry>false</entry><entry> </entry><entry>SC</entry></row>
+<row><entry>100</entry><entry>130</entry><entry>Kentucky</entry><entry>false</entry><entry> </entry><entry>KY</entry></row>
+<row><entry>100</entry><entry>131</entry><entry>Lousiana</entry><entry>false</entry><entry> </entry><entry>LA</entry></row>
+<row><entry>100</entry><entry>132</entry><entry>Texas</entry><entry>false</entry><entry> </entry><entry>TX</entry></row>
+<row><entry>100</entry><entry>133</entry><entry>Oklahoma</entry><entry>false</entry><entry> </entry><entry>OK</entry></row>
+<row><entry>100</entry><entry>136</entry><entry>Montana</entry><entry>false</entry><entry> </entry><entry>MT</entry></row>
+<row><entry>100</entry><entry>137</entry><entry>Missouri</entry><entry>false</entry><entry> </entry><entry>MO</entry></row>
+<row><entry>100</entry><entry>138</entry><entry>Kansas</entry><entry>false</entry><entry> </entry><entry>KS</entry></row>
+<row><entry>100</entry><entry>139</entry><entry>Nebraska</entry><entry>false</entry><entry> </entry><entry>NE</entry></row>
+<row><entry>100</entry><entry>141</entry><entry>New Mexico</entry><entry>false</entry><entry> </entry><entry>NM</entry></row>
+<row><entry>100</entry><entry>142</entry><entry>Oregon</entry><entry>true</entry><entry> </entry><entry>OR</entry></row>
+<row><entry>100</entry><entry>144</entry><entry>Arkansas</entry><entry>false</entry><entry> </entry><entry>AR</entry></row>
+<row><entry>100</entry><entry>145</entry><entry>Arizona</entry><entry>false</entry><entry> </entry><entry>AZ</entry></row>
+<row><entry>100</entry><entry>147</entry><entry>Idaho</entry><entry>false</entry><entry> </entry><entry>ID</entry></row>
+<row><entry>106</entry><entry>236</entry><entry>Alicante</entry><entry>false</entry><entry> </entry><entry>Alicante</entry></row>
+<row><entry>106</entry><entry>237</entry><entry>Almería </entry><entry>false</entry><entry> </entry><entry>Almería </entry></row>
+<row><entry>106</entry><entry>238</entry><entry>Asturias </entry><entry>false</entry><entry> </entry><entry>Asturias </entry></row>
+<row><entry>106</entry><entry>248</entry><entry>Ceuta</entry><entry>false</entry><entry> </entry><entry>Ceuta</entry></row>
+<row><entry>106</entry><entry>249</entry><entry>Ciudad Real</entry><entry>false</entry><entry> </entry><entry>Ciudad Real</entry></row>
+<row><entry>106</entry><entry>250</entry><entry>Córdoba</entry><entry>false</entry><entry> </entry><entry>Córdoba</entry></row>
+<row><entry>100</entry><entry>149</entry><entry>Colorado</entry><entry>false</entry><entry> </entry><entry>CO</entry></row>
+<row><entry>100</entry><entry>150</entry><entry>Hawaii</entry><entry>false</entry><entry> </entry><entry>HI</entry></row>
+<row><entry>100</entry><entry>153</entry><entry>Wisconsin</entry><entry>false</entry><entry> </entry><entry>WI</entry></row>
+<row><entry>100</entry><entry>154</entry><entry>Maryland</entry><entry>false</entry><entry> </entry><entry>MD</entry></row>
+<row><entry>100</entry><entry>155</entry><entry>Vermont</entry><entry>false</entry><entry> </entry><entry>VT</entry></row>
+<row><entry>109</entry><entry>158</entry><entry>Manitoba</entry><entry>false</entry><entry> </entry><entry>Manitoba</entry></row>
+<row><entry>109</entry><entry>159</entry><entry>Nouveau-Brunswick</entry><entry>false</entry><entry> </entry><entry>New Brunswick</entry></row>
+<row><entry>247</entry><entry>177</entry><entry> </entry><entry>false</entry><entry> </entry><entry>AGS</entry></row>
+<row><entry>109</entry><entry>160</entry><entry>Terre-Neuve-et-Labrador</entry><entry>false</entry><entry> </entry><entry>Newfoundland and Labrador</entry></row>
+<row><entry>109</entry><entry>162</entry><entry>Territoires du Nord-Ouest</entry><entry>false</entry><entry> </entry><entry>Northwest Territories</entry></row>
+<row><entry>109</entry><entry>163</entry><entry>Nunavut</entry><entry>false</entry><entry> </entry><entry>Nunavut</entry></row>
+<row><entry>109</entry><entry>164</entry><entry>Ontario</entry><entry>false</entry><entry> </entry><entry>Ontario</entry></row>
+<row><entry>109</entry><entry>165</entry><entry>Île-du-Prince-Édouard</entry><entry>false</entry><entry> </entry><entry>Prince Edward Island</entry></row>
+<row><entry>109</entry><entry>167</entry><entry>Saskatchewan</entry><entry>false</entry><entry> </entry><entry>Saskatchewan</entry></row>
+<row><entry>109</entry><entry>168</entry><entry>Yukon</entry><entry>false</entry><entry> </entry><entry>Yukon</entry></row>
+<row><entry>122</entry><entry>176</entry><entry>Australian Capital Territory</entry><entry>false</entry><entry> </entry><entry>ACT</entry></row>
+<row><entry>247</entry><entry>178</entry><entry> </entry><entry>false</entry><entry> </entry><entry>B.C.</entry></row>
+<row><entry>247</entry><entry>180</entry><entry> </entry><entry>false</entry><entry> </entry><entry>CAMP</entry></row>
+<row><entry>247</entry><entry>181</entry><entry> </entry><entry>false</entry><entry> </entry><entry>COL</entry></row>
+<row><entry>247</entry><entry>183</entry><entry> </entry><entry>false</entry><entry> </entry><entry>CHIH</entry></row>
+<row><entry>247</entry><entry>184</entry><entry> </entry><entry>false</entry><entry> </entry><entry>D.F.</entry></row>
+<row><entry>247</entry><entry>185</entry><entry> </entry><entry>false</entry><entry> </entry><entry>DGO</entry></row>
+<row><entry>247</entry><entry>187</entry><entry> </entry><entry>false</entry><entry> </entry><entry>GRO</entry></row>
+<row><entry>247</entry><entry>188</entry><entry> </entry><entry>false</entry><entry> </entry><entry>HGO</entry></row>
+<row><entry>247</entry><entry>190</entry><entry> </entry><entry>false</entry><entry> </entry><entry>MEX</entry></row>
+<row><entry>247</entry><entry>191</entry><entry> </entry><entry>false</entry><entry> </entry><entry>MICH</entry></row>
+<row><entry>247</entry><entry>193</entry><entry> </entry><entry>false</entry><entry> </entry><entry>NAY</entry></row>
+<row><entry>247</entry><entry>194</entry><entry> </entry><entry>false</entry><entry> </entry><entry>N.L.</entry></row>
+<row><entry>247</entry><entry>195</entry><entry> </entry><entry>false</entry><entry> </entry><entry>OAX</entry></row>
+<row><entry>247</entry><entry>197</entry><entry> </entry><entry>false</entry><entry> </entry><entry>QRO</entry></row>
+<row><entry>247</entry><entry>198</entry><entry> </entry><entry>false</entry><entry> </entry><entry>Q.ROO</entry></row>
+<row><entry>247</entry><entry>200</entry><entry> </entry><entry>false</entry><entry> </entry><entry>SIN</entry></row>
+<row><entry>247</entry><entry>201</entry><entry> </entry><entry>false</entry><entry> </entry><entry>SON</entry></row>
+<row><entry>247</entry><entry>203</entry><entry> </entry><entry>false</entry><entry> </entry><entry>TAMPS</entry></row>
+<row><entry>247</entry><entry>204</entry><entry> </entry><entry>false</entry><entry> </entry><entry>TLAX</entry></row>
+<row><entry>247</entry><entry>205</entry><entry> </entry><entry>false</entry><entry> </entry><entry>VER</entry></row>
+<row><entry>247</entry><entry>207</entry><entry> </entry><entry>false</entry><entry> </entry><entry>ZAC</entry></row>
+<row><entry>247</entry><entry>208</entry><entry> </entry><entry>false</entry><entry> </entry><entry>COAH</entry></row>
+<row><entry>119</entry><entry>210</entry><entry>Catamarca </entry><entry>false</entry><entry> </entry><entry>Catamarca </entry></row>
+<row><entry>119</entry><entry>211</entry><entry>Chaco </entry><entry>false</entry><entry> </entry><entry>Chaco </entry></row>
+<row><entry>119</entry><entry>212</entry><entry>Chubut </entry><entry>false</entry><entry> </entry><entry>Chubut </entry></row></tbody>
+</tgroup>
+</table>

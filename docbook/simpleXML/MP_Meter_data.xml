@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Métrica de Prevenção</title>
+<tgroup cols='3' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Day Maximum</entry><entry>Métrica de Prevenção</entry><entry>Nome</entry></row>
+<row><entry>0</entry><entry>5000000</entry><entry>ddd</entry></row>
+<row><entry>30</entry><entry>5000001</entry><entry>km</entry></row></tbody>
+</tgroup>
+</table>

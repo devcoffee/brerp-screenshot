@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Frete</title>
+<tgroup cols='10' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>País</entry><entry>Moeda De</entry><entry>Região</entry><entry>Valor do Frete</entry><entry>Categoria de Frete</entry><entry>Frete</entry><entry>Transportadora</entry><entry>Para</entry><entry>Para</entry><entry>Válido desde</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>20</entry><entry>100</entry><entry>100</entry><entry>100</entry><entry> </entry><entry> </entry><entry>2003-06-01 00:00:00.0</entry></row></tbody>
+</tgroup>
+</table>

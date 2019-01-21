@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>M_Substitute</title>
+<tgroup cols='4' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Descrição</entry><entry>Produto</entry><entry>Nome</entry><entry>Substituto</entry></row>
+<row><entry> </entry><entry>5000004</entry><entry>Prod Uso e Consumo – IPI/ST-Sem Crédito</entry><entry>5000003</entry></row>
+<row><entry> </entry><entry>5000017</entry><entry>Produto revenda importado – FCI/IPI</entry><entry>5000016</entry></row>
+<row><entry> </entry><entry>5000012</entry><entry>Produto Produzido A – IPI/NVE/SEM ST</entry><entry>5000006</entry></row>
+<row><entry> </entry><entry>5000019</entry><entry>Produto Revenda nacional – ST</entry><entry>5000018</entry></row>
+<row><entry> </entry><entry>5000020</entry><entry>Produto Revenda nacional – ST</entry><entry>5000018</entry></row>
+<row><entry> </entry><entry>5000022</entry><entry>Produto Revenda Nacional – Deson. ICMS 30%</entry><entry>5000021</entry></row>
+<row><entry> </entry><entry>5000023</entry><entry>Produto Rev Nacional – Deson. ICMS 30%</entry><entry>5000021</entry></row></tbody>
+</tgroup>
+</table>

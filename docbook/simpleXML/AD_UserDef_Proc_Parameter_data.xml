@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Parâmetro definido pelo Usuário</title>
+<tgroup cols='11' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Parâmetro de Processo</entry><entry>Janela definida pelo Usuário</entry><entry>Parâmetro definido pelo Usuário</entry><entry>Lógica Padrão</entry><entry>Descrição</entry><entry>Lógica de Visualização</entry><entry>Comentário/Ajuda</entry><entry>Mostrado</entry><entry>Lógica de Obrigatório</entry><entry>Nome</entry><entry>Lógica Somente de Leitura</entry></row>
+<row><entry>1501218</entry><entry>5000000</entry><entry>5000001</entry><entry>5000001</entry><entry>Centro de Custo</entry><entry> </entry><entry>O "Centro de Custo" exibe os elementos opcionais que tenham sido definidos para esta combinação de contas.</entry><entry>true</entry><entry> </entry><entry>Centro de Custo</entry><entry>1=1</entry></row>
+<row><entry>211</entry><entry>5000000</entry><entry>5000000</entry><entry>Y</entry><entry>Esta é uma Transação de Vendas</entry><entry> </entry><entry>A caixa de verificação "Transação de Vendas" indica se este item é uma Transação de Vendas.</entry><entry>true</entry><entry> </entry><entry>Transação de Vendas</entry><entry>1=1</entry></row></tbody>
+</tgroup>
+</table>

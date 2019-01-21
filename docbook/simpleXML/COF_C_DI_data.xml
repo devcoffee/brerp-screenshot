@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Declaração de Importação</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Declaração de Importação</entry><entry>Código do Exportador</entry><entry>CNPJ do Adquirente/Encomendante</entry><entry>Data do Desembaraço Aduaneiro</entry><entry>Data de Registro do documento</entry><entry>Número do Documento de Importação</entry><entry>Forma de Importação</entry><entry>Via de Transporte</entry><entry>UF Desembaraço</entry><entry>UF do Adquirente/Encomendante</entry><entry>AFRMM</entry><entry>Local de desembaraço</entry></row>
+<row><entry>5000000</entry><entry>1000024</entry><entry>13823508000131</entry><entry>2017-12-04 00:00:00.0</entry><entry>2017-12-04 00:00:00.0</entry><entry>1720879216</entry><entry>3</entry><entry>4</entry><entry>SP</entry><entry>SP</entry><entry>0</entry><entry>AEROPORTO INTERNACIONAL DE VIRACOPOS</entry></row></tbody>
+</tgroup>
+</table>

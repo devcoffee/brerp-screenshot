@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Mensagem</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Mensagem</entry><entry>Tipo de Entidade</entry><entry>Texto de Mensagem</entry><entry>Dicas de Mensagem</entry><entry>Tipo de Mensagem</entry><entry>Chave de Busca</entry></row>
+<row><entry>620</entry><entry>D</entry><entry>of</entry><entry> </entry><entry>I</entry><entry>of</entry></row>
+<row><entry>526</entry><entry>D</entry><entry>Select Document</entry><entry> </entry><entry>I</entry><entry>SelectDocument</entry></row>
+<row><entry>425</entry><entry>D</entry><entry>%26Print</entry><entry> </entry><entry>M</entry><entry>Print</entry></row>
+<row><entry>426</entry><entry>D</entry><entry>Customize Report</entry><entry> </entry><entry>M</entry><entry>PrintCustomize</entry></row>
+<row><entry>427</entry><entry>D</entry><entry>Defined [Displayed]</entry><entry> </entry><entry>I</entry><entry>PrintCustomizeDefined</entry></row>
+<row><entry>428</entry><entry>D</entry><entry>Print Invoices</entry><entry> </entry><entry>I</entry><entry>PrintInvoices</entry></row>
+<row><entry>545</entry><entry>D</entry><entry>Single-Record Display</entry><entry> </entry><entry>M</entry><entry>Single</entry></row>
+<row><entry>546</entry><entry>D</entry><entry>Sort by</entry><entry> </entry><entry>I</entry><entry>SortBy</entry></row>
+<row><entry>547</entry><entry>D</entry><entry>Sorted</entry><entry> </entry><entry>M</entry><entry>Sorted</entry></row>
+<row><entry>548</entry><entry>D</entry><entry>Standard</entry><entry> </entry><entry>I</entry><entry>Standard</entry></row>
+<row><entry>431</entry><entry>D</entry><entry>Page Setup</entry><entry> </entry><entry>M</entry><entry>PageSetup</entry></row>
+<row><entry>378</entry><entry>D</entry><entry>Org</entry><entry> </entry><entry>I</entry><entry>Organization</entry></row>
+<row><entry>379</entry><entry>D</entry><entry>Another Process for this record is active, retry later</entry><entry> </entry><entry>E</entry><entry>OtherProcessActive</entry></row>
+<row><entry>380</entry><entry>D</entry><entry>Page</entry><entry> </entry><entry>E</entry><entry>Page</entry></row>
+<row><entry>381</entry><entry>D</entry><entry>Page break</entry><entry> </entry><entry>E</entry><entry>PageBreak</entry></row>
+<row><entry>382</entry><entry>D</entry><entry>Page 
+{
+P}
+ of 
+{
+N}
+</entry><entry> </entry><entry>E</entry><entry>PageOf</entry></row>
+<row><entry>383</entry><entry>D</entry><entry>Two Pages</entry><entry> </entry><entry>E</entry><entry>PageTwo</entry></row>
+<row><entry>384</entry><entry>D</entry><entry>Whole Page</entry><entry> </entry><entry>E</entry><entry>PageWhole</entry></row>
+<row><entry>278</entry><entry>D</entry><entry>First record</entry><entry> </entry><entry>E</entry><entry>First</entry></row>
+<row><entry>279</entry><entry>D</entry><entry>First Page</entry><entry> </entry><entry>E</entry><entry>FirstPage</entry></row>
+<row><entry>280</entry><entry>D</entry><entry>From</entry><entry> </entry><entry>E</entry><entry>From</entry></row>
+<row><entry>327</entry><entry>D</entry><entry>Login (success)</entry><entry> </entry><entry>M</entry><entry>LoginSuccess</entry></row>
+<row><entry>394</entry><entry>D</entry><entry>Bank Routing Number is not valid</entry><entry> </entry><entry>E</entry><entry>PaymentBankRoutingNotValid</entry></row>
+<row><entry>490</entry><entry>D</entry><entry>Credit available</entry><entry> </entry><entry>E</entry><entry>SO_CreditAvailable</entry></row>
+<row><entry>492</entry><entry>D</entry><entry>Entry in a key field was not unique - a record with that value already exists.
+
+Details: </entry><entry> </entry><entry>E</entry><entry>SQLErrorNotUnique</entry></row>
+<row><entry>493</entry><entry>D</entry><entry>The record is referenced by other records.
+
+Details: </entry><entry> </entry><entry>E</entry><entry>SQLErrorReferenced</entry></row>
+<row><entry>495</entry><entry>D</entry><entry>Same Product</entry><entry> </entry><entry>M</entry><entry>SameProduct</entry></row>
+<row><entry>496</entry><entry>D</entry><entry>Same Quantity</entry><entry> </entry><entry>M</entry><entry>SameQty</entry></row>
+<row><entry>497</entry><entry>D</entry><entry>%26Save changes</entry><entry> </entry><entry>M</entry><entry>Save</entry></row>
+<row><entry>498</entry><entry>D</entry><entry>Do you want to save changes?</entry><entry> </entry><entry>M</entry><entry>SaveChanges?</entry></row>
+<row><entry>258</entry><entry>D</entry><entry>&lt;
+Select File to Load&gt;
+</entry><entry> </entry><entry>I</entry><entry>FileImportFile</entry></row>
+<row><entry>259</entry><entry>D</entry><entry>Select the file to load matching the Import Format</entry><entry> </entry><entry>I</entry><entry>FileImportFileInfo</entry></row>
+<row><entry>261</entry><entry>D</entry><entry>Rows in file / loaded and ready to import:</entry><entry> </entry><entry>M</entry><entry>FileImportR/I</entry></row>
+<row><entry>262</entry><entry>D</entry><entry>Invalid File Extension</entry><entry> </entry><entry>E</entry><entry>FileInvalidExtension</entry></row>
+<row><entry>263</entry><entry>D</entry><entry>pdf - Acrobat PDF file</entry><entry> </entry><entry>E</entry><entry>FilePDF</entry></row>
+<row><entry>264</entry><entry>D</entry><entry>ps - Postscript file</entry><entry> </entry><entry>E</entry><entry>FilePS</entry></row>
+<row><entry>266</entry><entry>D</entry><entry>txt - Tab delimited file</entry><entry> </entry><entry>E</entry><entry>FileTXT</entry></row>
+<row><entry>267</entry><entry>D</entry><entry>Error writing file</entry><entry> </entry><entry>E</entry><entry>FileWriteError</entry></row>
+<row><entry>268</entry><entry>D</entry><entry>xml - XML file</entry><entry> </entry><entry>E</entry><entry>FileXML</entry></row>
+<row><entry>270</entry><entry>D</entry><entry>%26Lookup Record</entry><entry> </entry><entry>M</entry><entry>Find</entry></row>
+<row><entry>271</entry><entry>D</entry><entry>Available Columns</entry><entry> </entry><entry>M</entry><entry>FindCustAvailable</entry></row>
+<row><entry>272</entry><entry>D</entry><entry>Select columns and order them</entry><entry> </entry><entry>M</entry><entry>FindCustHint</entry></row>
+<row><entry>274</entry><entry>D</entry><entry>Customize Find</entry><entry> </entry><entry>M</entry><entry>FindCustomize</entry></row>
+<row><entry>158</entry><entry>D</entry><entry>Business Partner not found</entry><entry> </entry><entry>E</entry><entry>BPartnerNotFound</entry></row>
+<row><entry>159</entry><entry>D</entry><entry>Business Partner not saved</entry><entry> </entry><entry>E</entry><entry>BPartnerNotSaved</entry></row>
+<row><entry>160</entry><entry>D</entry><entry>Add to Bar</entry><entry> </entry><entry>E</entry><entry>BarAdd</entry></row>
+<row><entry>162</entry><entry>D</entry><entry>Remove from Bar</entry><entry> </entry><entry>E</entry><entry>BarRemove</entry></row>
+<row><entry>163</entry><entry>D</entry><entry>Business Partner</entry><entry> </entry><entry>M</entry><entry>BusPartner</entry></row>
+<row><entry>164</entry><entry>D</entry><entry>Calculator</entry><entry> </entry><entry>I</entry><entry>Calculator</entry></row>
+<row><entry>400</entry><entry>D</entry><entry>Payment process failed</entry><entry> </entry><entry>E</entry><entry>PaymentNotProcessed</entry></row>
+<row><entry>430</entry><entry>D</entry><entry>Print Screen</entry><entry> </entry><entry>M</entry><entry>PrintScreen</entry></row>
+<row><entry>106</entry><entry>D</entry><entry>five</entry><entry> </entry><entry>I</entry><entry>5</entry></row>
+<row><entry>107</entry><entry>D</entry><entry>six</entry><entry> </entry><entry>I</entry><entry>6</entry></row>
+<row><entry>108</entry><entry>D</entry><entry>seven</entry><entry> </entry><entry>I</entry><entry>7</entry></row>
+<row><entry>109</entry><entry>D</entry><entry>eight</entry><entry> </entry><entry>I</entry><entry>8</entry></row>
+<row><entry>110</entry><entry>D</entry><entry>nine</entry><entry> </entry><entry>I</entry><entry>9</entry></row>
+<row><entry>112</entry><entry>D</entry><entry>Access</entry><entry> </entry><entry>I</entry><entry>Access</entry></row>
+<row><entry>114</entry><entry>D</entry><entry>You cannot delete this record</entry><entry>You don't have the privileges</entry><entry>E</entry><entry>AccessCannotDelete</entry></row>
+<row><entry>115</entry><entry>D</entry><entry>You cannot insert a record</entry><entry>You don't have the privileges</entry><entry>E</entry><entry>AccessCannotInsert</entry></row>
+<row><entry>116</entry><entry>D</entry><entry>You cannot update this record</entry><entry>You don't have the privileges</entry><entry>E</entry><entry>AccessCannotUpdate</entry></row>
+<row><entry>117</entry><entry>D</entry><entry>Client %26 Organization Data</entry><entry> </entry><entry>I</entry><entry>AccessClientOrg</entry></row>
+<row><entry>484</entry><entry>D</entry><entry>Alert: Request 
+{
+0}
+ overdue</entry><entry> </entry><entry>I</entry><entry>RequestAlert</entry></row>
+<row><entry>363</entry><entry>D</entry><entry>Not Matched</entry><entry> </entry><entry>M</entry><entry>NotMatched</entry></row>
+<row><entry>364</entry><entry>D</entry><entry>Not Unique:</entry><entry> </entry><entry>M</entry><entry>NotUnique</entry></row>
+<row><entry>365</entry><entry>D</entry><entry>Number of Rows x Columns</entry><entry> </entry><entry>E</entry><entry>NumberRowsColumns</entry></row>
+<row><entry>366</entry><entry>D</entry><entry>%26OK</entry><entry> </entry><entry>M</entry><entry>OK</entry></row>
+<row><entry>473</entry><entry>D</entry><entry>%26Report</entry><entry> </entry><entry>M</entry><entry>Report</entry></row>
+<row><entry>474</entry><entry>D</entry><entry>Report Find</entry><entry> </entry><entry>M</entry><entry>ReportFind</entry></row>
+<row><entry>476</entry><entry>D</entry><entry>Reports</entry><entry> </entry><entry>I</entry><entry>Reports</entry></row>
+<row><entry>477</entry><entry>D</entry><entry>Could not send EMail</entry><entry> </entry><entry>E</entry><entry>RequestActionEMailError</entry></row>
+<row><entry>478</entry><entry>D</entry><entry>EMail from 
+{
+0}
+ to 
+{
+1}
+</entry><entry> </entry><entry>I</entry><entry>RequestActionEMailInfo</entry></row>
+<row><entry>480</entry><entry>D</entry><entry>Cannot send EMail:
+No Mail Server (SMTP) found;
+ Check Client Info</entry><entry> </entry><entry>I</entry><entry>RequestActionEMailNoSMTP</entry></row>
+<row><entry>550</entry><entry>D</entry><entry>Do you want to start the Process?</entry><entry> </entry><entry>E</entry><entry>StartProcess?</entry></row>
+<row><entry>551</entry><entry>D</entry><entry>Start selected Report</entry><entry> </entry><entry>I</entry><entry>StartReport</entry></row>
+<row><entry>553</entry><entry>D</entry><entry>Start Search ...</entry><entry> </entry><entry>E</entry><entry>StartSearch</entry></row>
+<row><entry>329</entry><entry>D</entry><entry>Match From</entry><entry> </entry><entry>M</entry><entry>MatchFrom</entry></row>
+<row><entry>330</entry><entry>D</entry><entry>Search Mode</entry><entry> </entry><entry>M</entry><entry>MatchMode</entry></row>
+<row><entry>135</entry><entry>D</entry><entry>%26Advanced</entry><entry> </entry><entry>M</entry><entry>Advanced</entry></row>
+<row><entry>136</entry><entry>D</entry><entry>Alias</entry><entry> </entry><entry>M</entry><entry>Alias</entry></row>
+<row><entry>137</entry><entry>D</entry><entry>All records</entry><entry> </entry><entry>E</entry><entry>AllRecords</entry></row>
+<row><entry>139</entry><entry>D</entry><entry>Record cannot be changed</entry><entry> </entry><entry>E</entry><entry>AlreadyPosted</entry></row>
+<row><entry>140</entry><entry>D</entry><entry>Amount</entry><entry> </entry><entry>I</entry><entry>Amount</entry></row>
+<row><entry>141</entry><entry>D</entry><entry>Amount Due</entry><entry> </entry><entry>M</entry><entry>AmountDue</entry></row>
+<row><entry>142</entry><entry>D</entry><entry>Payment Amount</entry><entry> </entry><entry>M</entry><entry>AmountPay</entry></row>
+<row><entry>143</entry><entry>D</entry><entry>From Amount</entry><entry> </entry><entry>M</entry><entry>AmtFrom</entry></row>
+<row><entry>194</entry><entry>D</entry><entry>Created</entry><entry> </entry><entry>E</entry><entry>Created</entry></row>
+<row><entry>195</entry><entry>D</entry><entry>Credit Card Expiration Date Format must be "MMYY"</entry><entry> </entry><entry>E</entry><entry>CreditCardExpFormat</entry></row>
+<row><entry>387</entry><entry>D</entry><entry>Error:  Parameter missing</entry><entry> </entry><entry>E</entry><entry>ParameterMissing</entry></row>
+<row><entry>656</entry><entry>D</entry><entry>Store Password</entry><entry>Store Password for fast Login (security risk)</entry><entry>I</entry><entry>StorePassword</entry></row>
+<row><entry>282</entry><entry>D</entry><entry>Callout Function Error</entry><entry> </entry><entry>E</entry><entry>FunctionProblem</entry></row>
+<row><entry>283</entry><entry>D</entry><entry>Generate</entry><entry> </entry><entry>M</entry><entry>Generate</entry></row>
+<row><entry>284</entry><entry>D</entry><entry>%26Go</entry><entry> </entry><entry>M</entry><entry>Go</entry></row>
+<row><entry>367</entry><entry>D</entry><entry>Show old/completed Transactions</entry><entry> </entry><entry>E</entry><entry>OldTrx</entry></row>
+<row><entry>368</entry><entry>D</entry><entry>Old Value</entry><entry> </entry><entry>E</entry><entry>OldValue</entry></row>
+<row><entry>369</entry><entry>D</entry><entry>Online</entry><entry> </entry><entry>M</entry><entry>Online</entry></row>
+<row><entry>172</entry><entry>D</entry><entry>Charge created</entry><entry> </entry><entry>I</entry><entry>ChargeCreated</entry></row>
+<row><entry>652</entry><entry>D</entry><entry>All</entry><entry> </entry><entry>I</entry><entry>All</entry></row>
+<row><entry>653</entry><entry>D</entry><entry>Year</entry><entry> </entry><entry>I</entry><entry>Year</entry></row>
+<row><entry>654</entry><entry>D</entry><entry>How long back in History?</entry><entry>View history records back in time.</entry><entry>I</entry><entry>VOnlyCurrentDays</entry></row>
+<row><entry>658</entry><entry>D</entry><entry>Resource Info</entry><entry> </entry><entry>M</entry><entry>InfoAssignment</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Configuração de CNAB</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Configuração de CNAB</entry><entry>Formato do Arquivo</entry><entry>Tipo de Operação</entry><entry>Descrição</entry><entry>Transação de Vendas</entry><entry>Nível de Resumo</entry><entry>Processar Agora</entry></row>
+<row><entry>5000000</entry><entry>UTF-8</entry><entry>REM</entry><entry>Itaú - Remessa</entry><entry>true</entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000001</entry><entry>UTF-8</entry><entry>RET</entry><entry>Itaú - Retorno</entry><entry>true</entry><entry> </entry><entry>false</entry></row></tbody>
+</tgroup>
+</table>

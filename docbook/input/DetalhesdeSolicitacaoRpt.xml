@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2017-06-21 09:42:38.0</para><para> <emphasis>Atualizado:</emphasis>2017-06-21 10:12:38.0</para>
+ 
+ <title>Relatório:  Detalhes de Solicitação</title> 
+ <para><emphasis> ReportView: </emphasis>COF_RV_RequestPartner</para><table> 
+ <title>Detalhes_de_Solicitaçãos Parâmetros </title> 
+ <tgroup cols='6' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome</entry><entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores(Padrão)</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row> 
+</thead><tbody><row> 
+ <entry>Grupo de Parceiros</entry><entry> C_BP_Group_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Grupo de Parceiros de Negócios</entry> 
+<entry>O "Grupo de Parceiros de Negócios" oferece um método de definição dos padrões a serem usados por Parceiros de Negócios individuais.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry> C_BPartner_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Identifica um Parceiro de Negócios.</entry> 
+<entry>Um "Parceiro de Negócios" é qualquer um com quem você transaciona.  Isto pode incluir Fornecedores, Clientes, Funcionários, Vendedores, Representantes de Venda, etc.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Solicitação</entry><entry> R_RequestType_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Tipo de Solicitação (ex. Consulta, Reclamação, ..)</entry> 
+<entry>Os "Tipos de Solicitação" são usados para processar e categorizar as solicitações. As opções são Consulta de Conta, Emissão de Garantia, etc.</entry> 
+</row> 
+<row> 
+ <entry>Categoria</entry><entry> R_Category_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Categoria da Solicitação</entry> 
+<entry>Categoria ou Tópico da Solicitação </entry> 
+</row> 
+<row> 
+ <entry>Estado</entry><entry> R_Status_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Estado da Solicitação</entry> 
+<entry>Condição atual da Solicitação (aberta, fechada, investigando, ... )</entry> 
+</row> 
+<row> 
+ <entry>Representante de Vendas</entry><entry> SalesRep_ID</entry> 
+<entry>Procurar</entry> 
+ <entry>AD_User - SalesRep</entry> 
+<entry>Representante de Vendas ou Promotor de Vendas da Companhia</entry> 
+<entry>O campo "Representante de Vendas" indica o representante de vendas para esta região.  Qualquer Representante de Vendas tem que ser um usuário interno válido.</entry> 
+</row> 
+<row> 
+ <entry>Criado</entry><entry> Created</entry> 
+<entry>Data</entry> 
+ <entry> </entry> 
+<entry>Data de criação deste registro</entry> 
+<entry>O Campo "Criado" indica a data em que este registro foi criado.</entry> 
+</row> 
+<row> 
+ <entry>Atualizado</entry><entry> Updated</entry> 
+<entry>Data</entry> 
+ <entry> </entry> 
+<entry>Data em que este registro foi atualizado</entry> 
+<entry>O Campo "Atualizado" indica a data em que este registro foi atualizado.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<table> 
+ <title>COF_RV_RequestPartner - Colunas</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="1*"/><colspec colname='c7'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores padrão</entry><entry>Valor de restrição</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Ativo</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Asset used internally or by customers</entry> 
+<entry>An asset is either created by purchasing or by delivering a product.  An asset can be used internally or be a customer asset.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry> (@#AD_Client_ID@)</entry> 
+<entry> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry> (@#AD_Org_ID@)</entry> 
+<entry> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Perfil</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Responsibility Role</entry> 
+<entry>The Role determines security and access a user who has this Role will have in the System.</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>Usuário/Contato</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User within the system - Internal or Business Partner Contact</entry> 
+<entry>The User identifies a unique user in the system. This could be an internal user or a business partner contact</entry> 
+</row> 
+<row> 
+ <entry>bpartner_name</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>bpartner_name2</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Representante de Vendas do Parceiro</entry><entry>Tabela</entry> 
+<entry>AD_User - SalesRep</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Atividade</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Activity</entry> 
+<entry>Activities indicate tasks that are performed and used to utilize Activity based Costing</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Grupo de Parceiros</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner Group</entry> 
+<entry>The Business Partner Group provides a method of defining defaults to be used for individual Business Partners.</entry> 
+</row> 
+<row> 
+ <entry>Campanha</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Marketing Campaign</entry> 
+<entry>The Campaign defines a unique marketing program.  Projects can be associated with a pre defined Marketing Campaign.  You can then report based on a specific Campaign.</entry> 
+</row> 
+<row> 
+ <entry>Fatura</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Invoice Identifier</entry> 
+<entry>The Invoice Document.</entry> 
+</row> 
+<row> 
+ <entry>Fatura da Solicitação</entry><entry>Procurar</entry> 
+<entry>C_Invoice</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The generated invoice for this request</entry> 
+<entry>The optionally generated invoice for the request</entry> 
+</row> 
+<row> 
+ <entry>Data de Fechamento</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Close Date</entry> 
+<entry>The Start Date indicates the last or final date</entry> 
+</row> 
+<row> 
+ <entry>Confidencialidade</entry><entry>Lista</entry> 
+<entry>Informação Pública
+Confidencial
+Interno
+Informação Privada
+(C)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Type of Confidentiality</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Confidencialidade do Lançamento</entry><entry>Lista</entry> 
+<entry>Informação Pública
+Confidencial
+Interno
+Informação Privada
+(C)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Confidentiality of the individual entry</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Pedido</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Order</entry> 
+<entry>The Order is a control document.  The  Order is complete when the quantity ordered is the same as the quantity shipped and invoiced.  When you close an order, unshipped (backordered) quantities are cancelled.</entry> 
+</row> 
+<row> 
+ <entry>Pagamento</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment identifier</entry> 
+<entry>The Payment is a unique identifier of this payment.</entry> 
+</row> 
+<row> 
+ <entry>Projeto</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Financial Project</entry> 
+<entry>A Project allows you to track and control internal or external activities.</entry> 
+</row> 
+<row> 
+ <entry>Criado</entry><entry>Data+Hora</entry> 
+<entry> (SYSDATE)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date this record was created</entry> 
+<entry>The Created field indicates the date that this record was created.</entry> 
+</row> 
+<row> 
+ <entry>Criado por</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User who created this records</entry> 
+<entry>The Created By field indicates the user who created this record.</entry> 
+</row> 
+<row> 
+ <entry>Complete Plan</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Planned Completion Date</entry> 
+<entry>Date when the task is planned to be complete</entry> 
+</row> 
+<row> 
+ <entry>Data da última ação</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date this request was last acted on</entry> 
+<entry>The Date Last Action indicates that last time that the request was acted on.</entry> 
+</row> 
+<row> 
+ <entry>Último Alerta</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date when last alert were sent</entry> 
+<entry>The last alert date is updated when a reminder email is sent</entry> 
+</row> 
+<row> 
+ <entry>Data da próxima ação</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date that this request should be acted on</entry> 
+<entry>The Date Next Action indicates the next scheduled date for an action to occur for this request.</entry> 
+</row> 
+<row> 
+ <entry>Start Plan</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Planned Start Date</entry> 
+<entry>Date when you plan to start</entry> 
+</row> 
+<row> 
+ <entry>Número do Documento</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Document sequence number of the document</entry> 
+<entry>The document number is usually automatically generated by the system and determined by the document type of the document. If the document is not saved, the preliminary number is displayed in "&lt;
+&gt;
+".
+
+If the document type of your document has no automatic document sequence defined, the field is empty if you create a new document. This is for documents which usually have an external number (like vendor invoice).  If you leave the field empty, the system will generate a document number for you. The document sequence used for this fallback number is defined in the "Maintain Sequence" window with the name "DocumentNo_&lt;
+TableName&gt;
+", where TableName is the actual name of the table (e.g. C_Order).</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Vencimento</entry><entry>Lista</entry> 
+<entry>Em atraso
+Devido
+Programado
+(5)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Status of the next action for this Request</entry> 
+<entry>The Due Type indicates if this request is Due, Overdue or Scheduled.</entry> 
+</row> 
+<row> 
+ <entry>Horário Final</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>End of the time span</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry> (Y)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Cliente</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if this Business Partner is a Customer</entry> 
+<entry>The Customer checkbox indicates if this Business Partner is a customer.  If it is select additional fields will display which further define this customer.</entry> 
+</row> 
+<row> 
+ <entry>Elevado</entry><entry>Lista</entry> 
+<entry>Não
+Sim
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>This request has been escalated</entry> 
+<entry>The Escalated checkbox indicates that this request has been escalated or raised in importance.</entry> 
+</row> 
+<row> 
+ <entry>Faturado (Nota Emitida)</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Is this invoiced?</entry> 
+<entry>If selected, invoices are created</entry> 
+</row> 
+<row> 
+ <entry>Perspectiva</entry><entry>Sim-Não</entry> 
+<entry> (N)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates this is a Prospect</entry> 
+<entry>The Prospect checkbox indicates an entity that is an active prospect.</entry> 
+</row> 
+<row> 
+ <entry>Representante de Vendas</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if  the business partner is a sales representative or company agent</entry> 
+<entry>The Sales Rep checkbox indicates if this business partner is a sales representative. A sales representative may also be an employee, but does not need to be.</entry> 
+</row> 
+<row> 
+ <entry>Auto-Serviço</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>This is a Self-Service entry or this entry can be changed via Self-Service</entry> 
+<entry>Self-Service allows users to enter data or update their data.  The flag indicates, that this record was entered or created via Self-Service or that the user can change it via the Self-Service functionality.</entry> 
+</row> 
+<row> 
+ <entry>Fornecedor</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if this Business Partner is a Vendor</entry> 
+<entry>The Vendor checkbox indicates if this Business Partner is a Vendor.  If it is selected, additional fields will display which further identify this vendor.</entry> 
+</row> 
+<row> 
+ <entry>Último Resultado</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Result of last contact</entry> 
+<entry>The Last Result identifies the result of the last contact made.</entry> 
+</row> 
+<row> 
+ <entry>Solicitação de Alteração</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>BOM (Engineering) Change Request</entry> 
+<entry>Change requests for a Bill of Materials. They can be automatically created from Requests, if enabled in the Request Type and the Request Group refers to a Bill of Materials</entry> 
+</row> 
+<row> 
+ <entry>Corrigido em</entry><entry>Tabela</entry> 
+<entry>M_ChangeNotice</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Fixed in Change Notice</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Remessa/Recebimento</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Material Shipment Document</entry> 
+<entry>The Material Shipment / Receipt </entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>M_Product.IsSummary='N' AND M_Product.IsActive='Y' AND (M_Product.Discontinued = 'N' OR (M_Product.Discontinued = 'Y'  AND M_Product.DiscontinuedAt &gt;
+ SYSDATE))	 </entry> 
+<entry>Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Produto Utilizado</entry><entry>Tabela</entry> 
+<entry>M_Product (no summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Product/Resource/Service used in Request</entry> 
+<entry>Invoicing uses the Product used.</entry> 
+</row> 
+<row> 
+ <entry>ARM</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Return Material Authorization</entry> 
+<entry>A Return Material Authorization may be required to accept returns and to create Credit Memos</entry> 
+</row> 
+<row> 
+ <entry>Próxima Ação</entry><entry>Lista</entry> 
+<entry>Acompanhamento (Follow up)
+Nenhum
+(F)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Next Action to be taken</entry> 
+<entry>The Next Action indicates the next action to be taken on this request.</entry> 
+</row> 
+<row> 
+ <entry>Prioridade</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if this request is of a high, medium or low priority.</entry> 
+<entry>The Priority indicates the importance of this request.</entry> 
+</row> 
+<row> 
+ <entry>Importância do Usuário</entry><entry>Lista</entry> 
+<entry>Urgente
+Alta
+Média
+Baixa
+Menor Importância
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Priority of the issue for the User</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Faturada</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Invoiced Quantity</entry> 
+<entry>The Invoiced Quantity indicates the quantity of a product that have been invoiced.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Planejada</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Planned Quantity</entry> 
+<entry>Planned Quantity</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Utilizada</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Quantity used for this event</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Categoria</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Request Category</entry> 
+<entry>Category or Topic of the Request </entry> 
+</row> 
+<row> 
+ <entry>ID do Registro</entry><entry>Botão</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Direct internal record ID</entry> 
+<entry>The Record ID is the internal unique identifier of a record. Please note that zooming to the record may not be successful for Orders, Invoices and Shipment/Receipts as sometimes the Sales Order type is not known.</entry> 
+</row> 
+<row> 
+ <entry>Valor da Solicitação</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Amount associated with this request</entry> 
+<entry>The Request Amount indicates any amount that is associated with this request.  For example, a warranty amount or refund amount.</entry> 
+</row> 
+<row> 
+ <entry>Resultado</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Result of the action taken</entry> 
+<entry>The Result indicates the result of any action taken on this request.</entry> 
+</row> 
+<row> 
+ <entry>Grupo</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Request Group</entry> 
+<entry>Group of requests (e.g. version numbers, responsibility, ...)</entry> 
+</row> 
+<row> 
+ <entry>Modelo de Correspondência</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Text templates for mailings</entry> 
+<entry>The Mail Template indicates the mail template for return messages. Mail text can include variables.  The priority of parsing is User/Contact, Business Partner and then the underlying business object (like Request, Dunning, Workflow object).
+So, @Name@ would resolve into the User name (if user is defined defined), then Business Partner name (if business partner is defined) and then the Name of the business object if it has a Name.
+For Multi-Lingual systems, the template is translated based on the Business Partner's language selection.</entry> 
+</row> 
+<row> 
+ <entry>Solicitação</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Request from a Business Partner or Prospect</entry> 
+<entry>The Request identifies a unique request from a Business Partner or Prospect.</entry> 
+</row> 
+<row> 
+ <entry>Solicitação Relacionada</entry><entry>Procurar</entry> 
+<entry>R_Request</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Related Request (Master Issue, ..)</entry> 
+<entry>Request related to this request</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Solicitação</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Type of request (e.g. Inquiry, Complaint, ..)</entry> 
+<entry>Request Types are used for processing and categorizing requests. Options are Account Inquiry, Warranty Issue, etc.</entry> 
+</row> 
+<row> 
+ <entry>R_Request_UU</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Resolução</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Request Resolution</entry> 
+<entry>Resolution status (e.g. Fixed, Rejected, ..)</entry> 
+</row> 
+<row> 
+ <entry>Resposta padrão</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Request Standard Response </entry> 
+<entry>Text blocks to be copied into request response text</entry> 
+</row> 
+<row> 
+ <entry>Estado</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>EXISTS (SELECT * FROM R_RequestType rt 
+INNER JOIN R_StatusCategory sc ON (rt.R_StatusCategory_ID=sc.R_StatusCategory_ID)
+WHERE R_Status.R_StatusCategory_ID=sc.R_StatusCategory_ID
+AND rt.R_RequestType_ID=@R_RequestType_ID@) </entry> 
+<entry>Request Status</entry> 
+<entry>Status if the request (open, closed, investigating, ..)</entry> 
+</row> 
+<row> 
+ <entry>Representante de Vendas</entry><entry>Tabela</entry> 
+<entry>AD_User - SalesRep</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Sales Representative or Company Agent</entry> 
+<entry>The Sales Representative indicates the Sales Rep for this Region.  Any Sales Rep must be a valid internal user.</entry> 
+</row> 
+<row> 
+ <entry>Data de Início</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>First effective day (inclusive)</entry> 
+<entry>The Start Date indicates the first or starting date</entry> 
+</row> 
+<row> 
+ <entry>Horário Inicial</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Time started</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Resumo</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Textual summary of this request</entry> 
+<entry>The Summary allows free form text entry of a recap of this request.</entry> 
+</row> 
+<row> 
+ <entry>Estado da Tarefa</entry><entry>Lista</entry> 
+<entry> 0% Não Começado
+ 20% Iniciado
+ 40% Ocupado
+ 60% Bom Progresso
+ 80% Próximo de Concluir
+ 90% Finalizando
+ 95% Quase Feito
+ 99% Ajustes
+100% Completo
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Status of the Task</entry> 
+<entry>Completion Rate and Status of the Task</entry> 
+</row> 
+<row> 
+ <entry>Atualizado</entry><entry>Data+Hora</entry> 
+<entry> (SYSDATE)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date this record was updated</entry> 
+<entry>The Updated field indicates the date that this record was updated.</entry> 
+</row> 
+<row> 
+ <entry>Atualizado por</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User who updated this records</entry> 
+<entry>The Updated By field indicates the user who updated this record.</entry> 
+</row> 
+<row> 
+ <entry>Chave de Busca</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(ver acima)</entry> 
+<entry>A search key allows you a fast method of finding a particular record.
+If you leave the search key empty, the system automatically creates a numeric number.  The document sequence used for this fallback number is defined in the "Maintain Sequence" window with the name "DocumentNo_&lt;
+TableName&gt;
+", where TableName is the actual name of the table (e.g. C_Order).</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

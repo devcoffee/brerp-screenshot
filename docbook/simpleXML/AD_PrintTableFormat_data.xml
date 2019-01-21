@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Formato de Impressão de Tabela</title>
+<tgroup cols='31' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Imagem</entry><entry>Formato de Impressão de Tabela</entry><entry>Descrição</entry><entry>Centro do Rodapé</entry><entry>Esquerda do Rodapé</entry><entry>Direita do Rodapé</entry><entry>Cor de fundo da função</entry><entry>Cor da Função</entry><entry>Fonte da Função</entry><entry>Cor da Linha do Cabeçalho</entry><entry>Fonte da Linha de Cabeçalho</entry><entry>Espessura do Cabeçalho</entry><entry>Tipo da Espessura do Cabeçalho</entry><entry>Cor de Fundo da Linha do Cabeçalho</entry><entry>Cor da Linha do Cabeçalho</entry><entry>Centro do Cabeçalho</entry><entry>Esquerda do Cabeçalho</entry><entry>Direita do Cabeçalho</entry><entry>Imagem Anexada</entry><entry>URL da Imagem</entry><entry>Padrão</entry><entry>Cabeçalho Multi Linha</entry><entry>Pintar Linhas de Borda</entry><entry>Desenhar Linhas de Cabeçalho</entry><entry>Pintar Linhas Horizontais</entry><entry>Pintar Linhas Verticais</entry><entry>Imprimir Símbolos de Função</entry><entry>Cor da Linha</entry><entry>Espessura da Linha</entry><entry>Tipo de Espessura da Linha</entry><entry>Nome</entry></row>
+<row><entry> </entry><entry>101</entry><entry>No Table Lines;
+ Black;
+ Default Fonts</entry><entry> </entry><entry> </entry><entry> </entry><entry>108</entry><entry>100</entry><entry> </entry><entry>100</entry><entry> </entry><entry>2</entry><entry>S</entry><entry>108</entry><entry>100</entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry> </entry><entry>false</entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>false</entry><entry>107</entry><entry>1</entry><entry>S</entry><entry>Standard Document</entry></row>
+<row><entry> </entry><entry>100</entry><entry>With Lines;
+ Default Colors and Fonts</entry><entry> </entry><entry> </entry><entry> </entry><entry>115</entry><entry>100</entry><entry>155</entry><entry> </entry><entry>161</entry><entry>2</entry><entry>S</entry><entry>115</entry><entry>100</entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>true</entry><entry> </entry><entry>1</entry><entry>S</entry><entry>Default Report</entry></row></tbody>
+</tgroup>
+</table>

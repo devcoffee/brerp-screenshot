@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>InfoRelated</title>
+<tgroup cols='10' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>InfoRelated</entry><entry>Info Window</entry><entry>Descrição</entry><entry>Tipo de Entidade</entry><entry>Comentário/Ajuda</entry><entry>Nome</entry><entry>Parent Related Column</entry><entry>Coluna de Informações Relacionada</entry><entry>Janela de Informações Relacionada</entry><entry>Seqüência</entry></row>
+<row><entry>1500004</entry><entry>1500061</entry><entry> </entry><entry>BRERP0001</entry><entry> </entry><entry>Informações de Armazenagem</entry><entry>1500672</entry><entry>1501031</entry><entry>1500084</entry><entry>0</entry></row>
+<row><entry>1500005</entry><entry>200002</entry><entry> </entry><entry>BRERP0001</entry><entry> </entry><entry>Tracking de Pedidos</entry><entry>1501148</entry><entry>1501139</entry><entry>1500096</entry><entry>0</entry></row>
+<row><entry>1500006</entry><entry>1500109</entry><entry> </entry><entry>BRERP0001</entry><entry> </entry><entry>Processos da Janela</entry><entry>1501286</entry><entry>1501271</entry><entry>1500108</entry><entry>0</entry></row>
+<row><entry>1500007</entry><entry>200003</entry><entry> </entry><entry>BRERP0001</entry><entry> </entry><entry>Cheque alocados a Fatura</entry><entry>1501388</entry><entry>1501387</entry><entry>1500118</entry><entry>0</entry></row></tbody>
+</tgroup>
+</table>

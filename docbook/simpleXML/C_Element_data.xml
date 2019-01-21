@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Elemento</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Árvore</entry><entry>Elemento</entry><entry>Entidade</entry><entry>Referenciado</entry><entry>Válido Desde</entry><entry>Válido Até</entry><entry>Descrição</entry><entry>Tipo</entry><entry>Balanceando</entry><entry>Conta Natural</entry><entry>Nome</entry><entry>Formato do Valor</entry></row>
+<row><entry>101</entry><entry>105</entry><entry> </entry><entry>false</entry><entry> </entry><entry> </entry><entry>GardenWorld Account</entry><entry>A</entry><entry>false</entry><entry>true</entry><entry>GardenWorld Account</entry><entry> </entry></row>
+<row><entry>5000000</entry><entry>5000001</entry><entry> </entry><entry>false</entry><entry> </entry><entry> </entry><entry>Centro de Custo</entry><entry>A</entry><entry>false</entry><entry>false</entry><entry>Centro de Custo</entry><entry> </entry></row>
+<row><entry>5000001</entry><entry>5000003</entry><entry> </entry><entry>false</entry><entry> </entry><entry> </entry><entry>Metodo de Contabilização</entry><entry>A</entry><entry>false</entry><entry>true</entry><entry>Metodo de Contabilização</entry><entry> </entry></row>
+<row><entry>1000014</entry><entry>1000000</entry><entry> </entry><entry>false</entry><entry> </entry><entry> </entry><entry>Plano de Contas Contabil</entry><entry>A</entry><entry>false</entry><entry>true</entry><entry>Plano de Contas Contabil</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

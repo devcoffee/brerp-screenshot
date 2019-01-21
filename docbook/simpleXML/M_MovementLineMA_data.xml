@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>M_MovementLineMA</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Data da Política de Materiais</entry><entry>Gerado Automáticamente</entry><entry>Instância do Conjunto de Atributos</entry><entry>Linha de Movimento</entry><entry>Quantidade Movimentada</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000000</entry><entry>40.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000001</entry><entry>20.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000008</entry><entry>54.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000009</entry><entry>27.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000010</entry><entry>48.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000011</entry><entry>24.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000012</entry><entry>-48.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000013</entry><entry>-24.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000014</entry><entry>60.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000015</entry><entry>40.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000016</entry><entry>40.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000018</entry><entry>20.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000019</entry><entry>20.0</entry></row>
+<row><entry>2018-02-24 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000020</entry><entry>1.0</entry></row>
+<row><entry>2018-02-24 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000021</entry><entry>10.0</entry></row></tbody>
+</tgroup>
+</table>

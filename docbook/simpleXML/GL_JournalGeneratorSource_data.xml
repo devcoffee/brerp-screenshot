@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Gerador de Fonte</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Valor Multiplicador</entry><entry>Elemento de Contas</entry><entry>Categoria de Razão Geral</entry><entry>Gerador de Linha</entry><entry>Gerador de Fonte</entry><entry>Comentário/Ajuda</entry><entry>Fator de Arredondamento</entry></row>
+<row><entry>1</entry><entry>632</entry><entry> </entry><entry>200000</entry><entry>200000</entry><entry> </entry><entry>2</entry></row>
+<row><entry>1</entry><entry>704</entry><entry> </entry><entry>200000</entry><entry>200001</entry><entry> </entry><entry>2</entry></row>
+<row><entry>1</entry><entry>429</entry><entry> </entry><entry>200001</entry><entry>200002</entry><entry> </entry><entry>2</entry></row>
+<row><entry>1</entry><entry>449</entry><entry> </entry><entry>200002</entry><entry>200003</entry><entry> </entry><entry>2</entry></row>
+<row><entry>1</entry><entry>783</entry><entry> </entry><entry>200003</entry><entry>200004</entry><entry> </entry><entry>2</entry></row>
+<row><entry>1</entry><entry>716</entry><entry> </entry><entry>200004</entry><entry>200005</entry><entry> </entry><entry>2</entry></row>
+<row><entry>1</entry><entry>50008</entry><entry> </entry><entry>200004</entry><entry>200006</entry><entry> </entry><entry>2</entry></row>
+<row><entry>1</entry><entry>771</entry><entry> </entry><entry>200005</entry><entry>200008</entry><entry> </entry><entry>2</entry></row>
+<row><entry>1</entry><entry>1000702</entry><entry> </entry><entry>5000001</entry><entry>5000001</entry><entry> </entry><entry>10</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>M_InventoryLineMA</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Data da Política de Materiais</entry><entry>Gerado Automáticamente</entry><entry>Instância do Conjunto de Atributos</entry><entry>Linha de Estoque Físico</entry><entry>Quantidade Movimentada</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000019</entry><entry>-153.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000020</entry><entry>-1232.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000021</entry><entry>-9282.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000022</entry><entry>-932.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000023</entry><entry>-67.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000024</entry><entry>-12.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000025</entry><entry>-93.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000026</entry><entry>-218.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000027</entry><entry>-900.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000035</entry><entry>-99.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000036</entry><entry>-122.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000037</entry><entry>-343.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000038</entry><entry>-537.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000039</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000040</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000041</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000042</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000043</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000044</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000045</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000046</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000047</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000048</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000049</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000050</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000051</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000052</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000053</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000054</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000055</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000056</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000057</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000058</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000059</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000060</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000061</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000062</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000063</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000064</entry><entry>-8876.0</entry></row>
+<row><entry>2015-02-28 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>1000065</entry><entry>-8876.0</entry></row>
+<row><entry>2018-01-12 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000059</entry><entry>-100.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000060</entry><entry>-60.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000061</entry><entry>-60.0</entry></row>
+<row><entry>2018-01-29 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000062</entry><entry>-30.0</entry></row>
+<row><entry>2018-02-14 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000063</entry><entry>-180.0</entry></row>
+<row><entry>2018-01-06 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000064</entry><entry>2.00</entry></row>
+<row><entry>2018-02-24 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000069</entry><entry>-100.0</entry></row>
+<row><entry>2018-02-24 00:00:00.0</entry><entry>true</entry><entry>0</entry><entry>5000070</entry><entry>29.0</entry></row></tbody>
+</tgroup>
+</table>

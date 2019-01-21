@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Alocação de Custo Final</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Valor</entry><entry>Base</entry><entry>Linha de Fatura</entry><entry>Alocação de Custo Final</entry><entry>Instância do Conjunto de Atributos</entry><entry>Elemento de Custo</entry><entry>Linha de Remessa/Recebimento</entry><entry>Produto</entry><entry>Quantidade</entry></row>
+<row><entry>500.0</entry><entry>100.00</entry><entry>5000054</entry><entry>5000004</entry><entry>0</entry><entry>5000002</entry><entry>5000008</entry><entry>5000022</entry><entry>100.00</entry></row>
+<row><entry>500.0</entry><entry>100</entry><entry>5000054</entry><entry>5000005</entry><entry>0</entry><entry>5000002</entry><entry>5000007</entry><entry>5000021</entry><entry>100</entry></row>
+<row><entry>393.75</entry><entry>30.00</entry><entry>5000069</entry><entry>5000029</entry><entry>0</entry><entry>5000002</entry><entry>5000028</entry><entry>5000041</entry><entry>30.00</entry></row>
+<row><entry>227.50</entry><entry>100</entry><entry>5000055</entry><entry>5000013</entry><entry>0</entry><entry>5000002</entry><entry>5000012</entry><entry>5000021</entry><entry>100</entry></row>
+<row><entry>500.00</entry><entry>100.00</entry><entry>5000055</entry><entry>5000012</entry><entry>0</entry><entry>5000002</entry><entry>5000013</entry><entry>5000022</entry><entry>100.00</entry></row>
+<row><entry>143.75</entry><entry>100</entry><entry>5000065</entry><entry>5000017</entry><entry>0</entry><entry>5000002</entry><entry>5000007</entry><entry>5000021</entry><entry>100</entry></row>
+<row><entry>250.00</entry><entry>100.00</entry><entry>5000065</entry><entry>5000016</entry><entry>0</entry><entry>5000002</entry><entry>5000008</entry><entry>5000022</entry><entry>100.00</entry></row>
+<row><entry>-143.75</entry><entry>100</entry><entry>5000066</entry><entry>5000021</entry><entry>0</entry><entry>5000002</entry><entry>5000007</entry><entry>5000021</entry><entry>100</entry></row>
+<row><entry>-250.00</entry><entry>100.00</entry><entry>5000066</entry><entry>5000020</entry><entry>0</entry><entry>5000002</entry><entry>5000008</entry><entry>5000022</entry><entry>100.00</entry></row>
+<row><entry>473.75</entry><entry>30.00</entry><entry>5000347</entry><entry>5000045</entry><entry>0</entry><entry>5000002</entry><entry>5000028</entry><entry>5000041</entry><entry>30.00</entry></row>
+<row><entry>393.75</entry><entry>30.00</entry><entry>5000067</entry><entry>5000023</entry><entry>0</entry><entry>5000002</entry><entry>5000028</entry><entry>5000041</entry><entry>30.00</entry></row>
+<row><entry>393.75</entry><entry>30.00</entry><entry>5000068</entry><entry>5000026</entry><entry>0</entry><entry>5000002</entry><entry>5000028</entry><entry>5000041</entry><entry>30.00</entry></row>
+<row><entry>423.75</entry><entry>1</entry><entry>5000348</entry><entry>5000049</entry><entry> </entry><entry>5000002</entry><entry> </entry><entry>5000004</entry><entry>1</entry></row>
+<row><entry>473.75</entry><entry>30.00</entry><entry>5000086</entry><entry>5000035</entry><entry>0</entry><entry>5000002</entry><entry>5000028</entry><entry>5000041</entry><entry>30.00</entry></row>
+<row><entry>84.75</entry><entry>100</entry><entry>5000383</entry><entry>5000052</entry><entry>0</entry><entry>5000002</entry><entry>5000097</entry><entry>5000051</entry><entry>100</entry></row>
+<row><entry>482.75</entry><entry>30.00</entry><entry>5000087</entry><entry>5000044</entry><entry>0</entry><entry>5000002</entry><entry>5000028</entry><entry>5000041</entry><entry>30.00</entry></row>
+<row><entry>84.75</entry><entry>100</entry><entry>5000385</entry><entry>5000055</entry><entry>0</entry><entry>5000002</entry><entry>5000097</entry><entry>5000051</entry><entry>100</entry></row></tbody>
+</tgroup>
+</table>

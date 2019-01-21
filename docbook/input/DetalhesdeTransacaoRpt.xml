@@ -1,0 +1,1903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2003-12-04 23:51:08.0</para><para> <emphasis>Atualizado:</emphasis>2000-01-02 00:00:00.0</para>
+ 
+ <title>Relatório:  Detalhes de Transação</title> 
+ <para><emphasis> Descrição: </emphasis>Relatório de Detalhes de Transação</para><para><emphasis> Comentário/Ajuda: </emphasis>O relatório mostra detalhes de transações (Recebimentos, Entregas, Estoques, Movimentação, ...) incluindo informações de instância de produto (Lote, Núm.Série)</para>
+<para><emphasis> ReportView: </emphasis>RV_Transaction</para><table> 
+ <title>Transaction_Detail Parâmetros </title> 
+ <tgroup cols='6' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome</entry><entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores(Padrão)</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row> 
+</thead><tbody><row> 
+ <entry>Grupo de Fornecedores</entry><entry> COF_GrupoFornecedor_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Identifica um grupo de fornecedores</entry> 
+<entry>Grupo de Fornecedores</entry> 
+</row> 
+<row> 
+ <entry>Localizador</entry><entry> M_Locator_ID</entry> 
+<entry>Locator (Armazém)</entry> 
+ <entry> (0)</entry> 
+<entry>Localizador de Armazém</entry> 
+<entry>O "Localizador" indica onde um produto está localizado em um armazém.</entry> 
+</row> 
+<row> 
+ <entry>Lote Núm.</entry><entry> Lot</entry> 
+<entry>Texto Curto (String)</entry> 
+ <entry> </entry> 
+<entry>Número de Lote (alfanumérico)</entry> 
+<entry>O "Número de Lote" indica o lote específico de que um produto faz parte.</entry> 
+</row> 
+<row> 
+ <entry>Núm. Série</entry><entry> SerNo</entry> 
+<entry>Texto Curto (String)</entry> 
+ <entry> </entry> 
+<entry>Número de Série do Produto </entry> 
+<entry>O "Número de Série" identifica um produto garantido rastreado.  Ele só pode ser usado quando a quantidade for 1.</entry> 
+</row> 
+<row> 
+ <entry>Categoria de Produto</entry><entry> M_Product_Category_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> (-1)</entry> 
+<entry>Categoria de um Produto</entry> 
+<entry>Identifica a categoria à qual este produto pertence.  Categorias de Produto são usadas para formação de preços e seleção.</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry> M_Product_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Produto, Serviço, Item</entry> 
+<entry>Identifica um item que é ou comprado ou vendido por esta organização.</entry> 
+</row> 
+<row> 
+ <entry>Lote</entry><entry> M_Lot_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Definição de Lote de Produto</entry> 
+<entry>É o Lote individual de um Produto</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry> AD_Org_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Entidade organizacional dentro da Empresa</entry> 
+<entry>Uma "Organização" é uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos são loja, departamento. Você pode compartilhar dados entre organizações.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Movimentação</entry><entry> MovementType</entry> 
+<entry>Lista</entry> 
+ <entry>Saldo Inicial
+Entrega para Cliente
+Devolução de cliente
+Saída de Estoque
+Entrada de Estoque
+Movimento de
+Movimento para
+Produção -
+Produção +
+Devoluções a Fornecedor
+Recebimentos de Fornecedor
+Ordem de Serviço -
+Ordem de Serviço +
+</entry> 
+<entry>Método de Movimentação de Estoque</entry> 
+<entry>O "Tipo de Movimentação" indica o tipo de movimento (entrada, saída, para produção, etc)</entry> 
+</row> 
+<row> 
+ <entry>Grupo do Produto</entry><entry> COF_ValueProductGroup</entry> 
+<entry>Texto Curto (String)</entry> 
+ <entry> </entry> 
+<entry>null</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Data da Movimentação</entry><entry> MovementDate</entry> 
+<entry>Data</entry> 
+ <entry> </entry> 
+<entry>Data em que um produto foi movido para dentro ou para fora de um estoque</entry> 
+<entry>A "Data de Movimentação" indica a data em que um produto foi movido para dentro ou para fora de um estoque.  Este é o resultado de uma movimentação de estoque, de remessa ou recebimento.</entry> 
+</row> 
+<row> 
+ <entry>Classe do Produto</entry><entry> COF_ValueProductClass</entry> 
+<entry>Texto Curto (String)</entry> 
+ <entry> </entry> 
+<entry>null</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Tipo do Produto</entry><entry> COF_ValueProductType</entry> 
+<entry>Texto Curto (String)</entry> 
+ <entry> </entry> 
+<entry>null</entry> 
+<entry>null</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<table> 
+ <title>RV_Transaction - Colunas</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="1*"/><colspec colname='c7'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores padrão</entry><entry>Valor de restrição</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Classificação</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Classification for grouping</entry> 
+<entry>The Classification can be used to optionally group products.</entry> 
+</row> 
+<row> 
+ <entry>Grupo de Fornecedores</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Grupo de Fornecedores</entry> 
+<entry>Grupo de Fornecedores</entry> 
+</row> 
+<row> 
+ <entry>Classe do Produto</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Grupo do Produto</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo do Produto</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_c_projectissue_id</entry><entry>Tabela</entry> 
+<entry>C_ProjectIssue</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_m_attributesetinstance_id</entry><entry>Atributo de Produto</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_m_inoutline_id</entry><entry>Tabela</entry> 
+<entry>M_InOutLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_m_locator_id</entry><entry>Locator (Armazém)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_movementdate</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_movementqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_m_product_id</entry><entry>Tabela</entry> 
+<entry>M_Product (no summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_posted</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_processed</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_processedon</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_processing</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_s_timeexpenseline_id</entry><entry>Tabela</entry> 
+<entry>C_ProjectIssue</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_prjctissue_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Projeto</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Financial Project</entry> 
+<entry>A Project allows you to track and control internal or external activities.</entry> 
+</row> 
+<row> 
+ <entry>Emissão do Projeto</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Project Issues (Material, Labor)</entry> 
+<entry>Issues to the project initiated by the "Issue to Project" process. You can issue Receipts, Time and Expenses, or Stock.</entry> 
+</row> 
+<row> 
+ <entry>Fase de Projeto</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Phase of a Project</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tarefa de Projeto</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Actual Project Task in a Phase</entry> 
+<entry>A Project Task in a Project Phase represents the actual work.</entry> 
+</row> 
+<row> 
+ <entry>Reconhecimento de Receitas</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Method for recording revenue</entry> 
+<entry>The Revenue Recognition indicates how revenue will be recognized for this product</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Assinatura</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Type of subscription</entry> 
+<entry>Subscription type and renewal frequency</entry> 
+</row> 
+<row> 
+ <entry>Categoria de Imposto</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Tax Category</entry> 
+<entry>The Tax Category provides a method of grouping similar taxes.  For example, Sales Tax or Value Added Tax.</entry> 
+</row> 
+<row> 
+ <entry>UDM</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Unit of Measure</entry> 
+<entry>The UOM defines a unique non monetary Unit of Measure</entry> 
+</row> 
+<row> 
+ <entry>Linha de Ordem de Distribuição</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>URL da Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>URL for the description</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nota de Documento</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Additional information for a Document</entry> 
+<entry>The Document Note is used for recording any additional information regarding this product.</entry> 
+</row> 
+<row> 
+ <entry>Grupo 1</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Grupo 2</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Vencimento da Garantia</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date when guarantee expires</entry> 
+<entry>Date when the normal guarantee or availability expires</entry> 
+</row> 
+<row> 
+ <entry>Prazo de Validade</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Number of days the product is guaranteed or available</entry> 
+<entry>If the value is 0, there is no limit to the availability or guarantee, otherwise the guarantee date is calculated by adding the days to the delivery date.</entry> 
+</row> 
+<row> 
+ <entry>Prazo de Validade Mín.</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Minimum number of guarantee days</entry> 
+<entry>When selecting batch/products with a guarantee date, the minimum left guarantee days for automatic picking.  You can pick any batch/product manually. </entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>URL da Imagem</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>URL of  image</entry> 
+<entry>URL of image;
+ The image is not stored in the database, but retrieved at runtime. The image can be a gif, jpeg or png.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Estoque</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Type of inventory difference</entry> 
+<entry>The type of inventory difference determines which account is used. The default is the Inventory Difference account defined for the warehouse.  Alternatively, you could select any charge.  This allows you to account for Internal Use or extraordinary inventory losses.</entry> 
+</row> 
+<row> 
+ <entry>Lista de Materiais</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Bill of Materials</entry> 
+<entry>The Bill of Materials check box indicates if this product consists of a bill of materials.</entry> 
+</row> 
+<row> 
+ <entry>Padrão</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Default value</entry> 
+<entry>The Default Checkbox indicates if this record will be used as a default value.</entry> 
+</row> 
+<row> 
+ <entry>Somente Descrição</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>if true, the line is just description and no transaction</entry> 
+<entry>If a line is Description Only, e.g. Product Inventory is not corrected. No accounting transactions are created and the amount or totals are not included in the document.  This for including descriptive detail lines, e.g. for an Work Order.</entry> 
+</row> 
+<row> 
+ <entry>Entrega direta ao consumidor</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Drop Shipments are sent from the Vendor directly to the Customer</entry> 
+<entry>Drop Shipments do not cause any Inventory reservations or movements as the Shipment is from the Vendor's inventory. The Shipment of the Vendor to the Customer must be confirmed.</entry> 
+</row> 
+<row> 
+ <entry>Exclui Despacho Auto</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Exclude from automatic Delivery</entry> 
+<entry>The product is excluded from generating Shipments.  This allows manual creation of shipments for high demand items. If selected, you need to create the shipment manually.
+But, the item is always included, when the delivery rule of the Order is Force (e.g. for POS). 
+This allows finer granularity of the Delivery Rule Manual.</entry> 
+</row> 
+<row> 
+ <entry>Faturado (Nota Emitida)</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Is this invoiced?</entry> 
+<entry>If selected, invoices are created</entry> 
+</row> 
+<row> 
+ <entry>Imprimir Registros detalhados na Fatura </entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Print detail BOM elements on the invoice</entry> 
+<entry>The Print Details on Invoice indicates that the BOM element products will print on the Invoice as opposed to this product.</entry> 
+</row> 
+<row> 
+ <entry>Imprimir registros detalhados na Lista de Separação</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Print detail BOM elements on the pick list</entry> 
+<entry>The Print Details on Pick List indicates that the BOM element products will print on the Pick List as opposed to this product.</entry> 
+</row> 
+<row> 
+ <entry>Comprado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Organization purchases this product</entry> 
+<entry>The Purchased check box indicates if this product is purchased by this organization.</entry> 
+</row> 
+<row> 
+ <entry>Auto-Serviço</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>This is a Self-Service entry or this entry can be changed via Self-Service</entry> 
+<entry>Self-Service allows users to enter data or update their data.  The flag indicates, that this record was entered or created via Self-Service or that the user can change it via the Self-Service functionality.</entry> 
+</row> 
+<row> 
+ <entry>Vendido</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Organization sells this product</entry> 
+<entry>The Sold check box indicates if this product is sold by this organization.</entry> 
+</row> 
+<row> 
+ <entry>Estocado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Organization stocks this product</entry> 
+<entry>The Stocked check box indicates if this product is stocked by this Organization.</entry> 
+</row> 
+<row> 
+ <entry>Verificado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The BOM configuration has been verified</entry> 
+<entry>The Verified check box indicates if the configuration of this product has been verified.  This is used for products that consist of a bill of materials</entry> 
+</row> 
+<row> 
+ <entry>Promovido na Loja Virtual da Web</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>If selected, the product is displayed in the initial or any empty search</entry> 
+<entry>In the display of products in the Web Store, the product is displayed in the initial view or if no search criteria are entered. To be displayed, the product must be in the price list used.</entry> 
+</row> 
+<row> 
+ <entry>Linha Núm.</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Unique line for this document</entry> 
+<entry>Indicates the unique line for a document.  It will also control the display order of the lines within a document.</entry> 
+</row> 
+<row> 
+ <entry>Lote Núm.</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Lot number (alphanumeric)</entry> 
+<entry>The Lot Number indicates the specific lot that a product was part of.</entry> 
+</row> 
+<row> 
+ <entry>Nível Baixo</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The Low Level is used to calculate the material plan and determines if a net requirement should be exploited</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Conjunto de Atributos</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Product Attribute Set</entry> 
+<entry>Define Product Attribute Sets to add additional attributes and values to the product. You need to define a Attribute Set if you want to enable Serial and Lot Number tracking.</entry> 
+</row> 
+<row> 
+ <entry>Instância do Conjunto de Atributos</entry><entry>Atributo de Produto</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Product Attribute Set Instance</entry> 
+<entry>The values of the actual Product Attribute Instances.  The product level attributes are defined on Product level.</entry> 
+</row> 
+<row> 
+ <entry>Instância Alvo do Conjunto de Atributos</entry><entry>Atributo de Produto</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Target Product Attribute Set Instance</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Categoria de Frete</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Category of the Freight</entry> 
+<entry>Freight Categories are used to calculate the Freight for the Shipper selected</entry> 
+</row> 
+<row> 
+ <entry>Remessa/Recebimento</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Material Shipment Document</entry> 
+<entry>The Material Shipment / Receipt </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_ad_orgtrx_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_c_activity_id</entry><entry>Tabela</entry> 
+<entry>C_Activity (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_c_campaign_id</entry><entry>Tabela</entry> 
+<entry>C_Campaign (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_c_charge_id</entry><entry>Tabela</entry> 
+<entry>C_Charge</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_confirmedqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_c_orderline_id</entry><entry>Tabela</entry> 
+<entry>C_OrderLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_c_project_id</entry><entry>Tabela</entry> 
+<entry>C_Project (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_c_uom_id</entry><entry>Tabela</entry> 
+<entry>C_UOM</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Linha de Remessa/Recebimento</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Line on Shipment or Receipt document</entry> 
+<entry>The Shipment/Receipt Line indicates a unique line in a Shipment/Receipt document</entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_line</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_m_attributesetinstance_id</entry><entry>Atributo de Produto</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_m_inout_id</entry><entry>Tabela</entry> 
+<entry>M_InOut</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_movementqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_m_product_id</entry><entry>Tabela</entry> 
+<entry>M_Product (no summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_m_rmaline_id</entry><entry>Tabela</entry> 
+<entry>M_RMALine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_pickedqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_processed</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_qtyentered</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_reversalline_id</entry><entry>Tabela</entry> 
+<entry>M_InventoryLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_scrappedqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_targetqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_user1_id</entry><entry>Tabela</entry> 
+<entry>Account_ID - User1</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inoutline_user2_id</entry><entry>Tabela</entry> 
+<entry>Account_ID - User2</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Estoque Físico</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Parameters for a Physical Inventory</entry> 
+<entry>The Physical Inventory indicates a unique parameters for a physical inventory.</entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_c_charge_id</entry><entry>Tabela</entry> 
+<entry>C_Charge</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Linha de Estoque Físico</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Unique line in an Inventory document</entry> 
+<entry>The Physical Inventory Line indicates the inventory document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>M_InventoryLine_M_ASI_ID</entry><entry>Atributo de Produto</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_m_locator_id</entry><entry>Locator (Armazém)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_m_product_id</entry><entry>Tabela</entry> 
+<entry>M_Product (no summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_processed</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_revline_id</entry><entry>Tabela</entry> 
+<entry>M_InventoryLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_inventoryline_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_locator_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Localizador</entry><entry>Locator (Armazém)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Warehouse Locator</entry> 
+<entry>The Locator indicates where in a Warehouse a product is located.</entry> 
+</row> 
+<row> 
+ <entry>m_locator_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Localizador de Destino</entry><entry>Locator (Armazém)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Location inventory is moved to</entry> 
+<entry>The Locator To indicates the location where the inventory is being moved to.</entry> 
+</row> 
+<row> 
+ <entry>m_locator_value</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Lote</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Product Lot Definition</entry> 
+<entry>The individual Lot of a Product</entry> 
+</row> 
+<row> 
+ <entry>Movimentação de Estoque</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Movement of Inventory</entry> 
+<entry>The Inventory Movement uniquely identifies a group of movement lines.</entry> 
+</row> 
+<row> 
+ <entry>m_movementline_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_confirmedqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Linha de Movimento</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Inventory Move document Line</entry> 
+<entry>The Movement Line indicates the inventory movement document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>m_movementline_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_m_attributesetinstance_id</entry><entry>Atributo de Produto</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_m_locator_id</entry><entry>Locator (Armazém)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_movementqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_m_product_id</entry><entry>Tabela</entry> 
+<entry>M_Product (no summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_processed</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_reversalline_id</entry><entry>Tabela</entry> 
+<entry>M_MovementLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_scrappedqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_targetqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_movementline_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data da Movimentação</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date a product was moved in or out of inventory</entry> 
+<entry>The Movement Date indicates the date that a product moved in or out of inventory.  This is the result of a shipment, receipt or inventory movement.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Movimentada</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Quantity of a product moved.</entry> 
+<entry>The Movement Quantity indicates the quantity of a product that has been moved.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Movimentação</entry><entry>Lista</entry> 
+<entry>Saldo Inicial
+Entrega para Cliente
+Devolução de cliente
+Saída de Estoque
+Entrada de Estoque
+Movimento de
+Movimento para
+Produção -
+Produção +
+Devoluções a Fornecedor
+Recebimentos de Fornecedor
+Ordem de Serviço -
+Ordem de Serviço +
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Method of moving the inventory</entry> 
+<entry>The Movement Type indicates the type of movement (in, out, to production, etc)</entry> 
+</row> 
+<row> 
+ <entry>m_product_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Categoria de Produto</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Category of a Product</entry> 
+<entry>Identifies the category which this product belongs to.  Product categories are used for pricing and selection.</entry> 
+</row> 
+<row> 
+ <entry>m_product_copyfrom</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_discontinued</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_discontinuedat</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Produção</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Plan for producing a product</entry> 
+<entry>The Production uniquely identifies a Production Plan</entry> 
+</row> 
+<row> 
+ <entry>m_productionline_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionline_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionline_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionline_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Linha de Produção</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Document Line representing a production</entry> 
+<entry>The Production Line indicates the production document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>m_productionline_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionline_m_attributesetinstance_id</entry><entry>Atributo de Produto</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionline_m_locator_id</entry><entry>Locator (Armazém)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionline_movementqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionline_m_product_id</entry><entry>Tabela</entry> 
+<entry>M_Product (no summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionline_processed</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionline_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionline_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionl_m_productionl_id</entry><entry>Tabela</entry> 
+<entry>M_ProductionLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Plano de Produção</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Plan for how a product is produced</entry> 
+<entry>The Production Plan identifies the items and steps in generating a product.</entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_line</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_m_locator_id</entry><entry>Locator (Armazém)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_m_product_id</entry><entry>Tabela</entry> 
+<entry>M_Product (no summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_processed</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_productionqty</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_productionplan_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_issummary</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_m_attributesetinstance_id</entry><entry>Atributo de Produto</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_m_attributeset_id</entry><entry>Tabela</entry> 
+<entry>M_AttributeSet</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_m_locator_id</entry><entry>Locator (Armazém)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_processing</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_salesrep_id</entry><entry>Tabela</entry> 
+<entry>AD_User - SalesRep</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_product_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_transaction_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_transaction_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Transação de Estoque</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_transaction_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_transaction_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>m_transction_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Armazém</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Storage Warehouse and Service Point</entry> 
+<entry>The Warehouse identifies a unique Warehouse where products are stored or Services are provided.</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Coletor de Custos de Fabricação</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Prioridade Relativa</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Where inventory should be picked from first</entry> 
+<entry>The Relative Priority indicates the location to pick from first if an product is stored in more than one location.  (100 = highest priority, 0 = lowest).  For outgoing shipments, the location is picked with the highest priority where the entire quantity can be shipped from.  If there is no location, the location with the highest priority is used.
+The Priority is ignored for products with Guarantee Date (always the oldest first) or if a specific instance is selected.
+Incoming receipts are stored at the location with the highest priority, if not explicitly selected.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Produto</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Type of product</entry> 
+<entry>The type of product also determines accounting consequences.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Contábil</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Book Quantity</entry> 
+<entry>The Quantity Book indicates the line count stored in the system for a product in inventory</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Contada</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Counted Quantity</entry> 
+<entry>The Quantity Count indicates the actual inventory count taken for a product in inventory</entry> 
+</row> 
+<row> 
+ <entry>Quantidade CSV</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Qde de Uso Interno</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Internal Use Quantity removed from Inventory</entry> 
+<entry>Quantity of product inventory used internally (positive if taken out - negative if returned)</entry> 
+</row> 
+<row> 
+ <entry>Linha de Remessa Referenciada</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Modelo de Correspondência</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Text templates for mailings</entry> 
+<entry>The Mail Template indicates the mail template for return messages. Mail text can include variables.  The priority of parsing is User/Contact, Business Partner and then the underlying business object (like Request, Dunning, Workflow object).
+So, @Name@ would resolve into the User name (if user is defined defined), then Business Partner name (if business partner is defined) and then the Name of the business object if it has a Name.
+For Multi-Lingual systems, the template is translated based on the Business Partner's language selection.</entry> 
+</row> 
+<row> 
+ <entry>Núm. Série</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Product Serial Number </entry> 
+<entry>The Serial Number identifies a tracked, warranted product.  It can only be used when the quantity is 1.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Despesa</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Expense report type</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Profundidade da Prateleira</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Shelf depth required</entry> 
+<entry>The Shelf Depth indicates the depth dimension required on a shelf for a product </entry> 
+</row> 
+<row> 
+ <entry>Altura da Prateleira</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Shelf height required</entry> 
+<entry>The Shelf Height indicates the height dimension required on a shelf for a product</entry> 
+</row> 
+<row> 
+ <entry>Largura da Prateleira</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Shelf width required</entry> 
+<entry>The Shelf Width indicates the width dimension required on a shelf for a product</entry> 
+</row> 
+<row> 
+ <entry>UCE</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Stock Keeping Unit</entry> 
+<entry>The SKU indicates a user defined stock keeping unit.  It may be used for an additional bar code symbols or your own schema.</entry> 
+</row> 
+<row> 
+ <entry>Recurso</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Resource</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>UnidadePorPacote</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The Units Per Pack indicates the no of units of a product packed together.</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Unidades por Pallet</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Units Per Pallet</entry> 
+<entry>The Units per Pallet indicates the number of units of this product which fit on a pallet.</entry> 
+</row> 
+<row> 
+ <entry>UPC/EAN</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Bar Code (Universal Product Code or its superset European Article Number)</entry> 
+<entry>Use this field to enter the bar code for the product in any of the bar code symbologies (Codabar, Code 25, Code 39, Code 93, Code 128, UPC (A), UPC (E), EAN-13, EAN-8, ITF, ITF-14, ISBN, ISSN, JAN-13, JAN-8, POSTNET and FIM, MSI/Plessey, and Pharmacode) </entry> 
+</row> 
+<row> 
+ <entry>Chave de Busca</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(ver acima)</entry> 
+<entry>A search key allows you a fast method of finding a particular record.
+If you leave the search key empty, the system automatically creates a numeric number.  The document sequence used for this fallback number is defined in the "Maintain Sequence" window with the name "DocumentNo_&lt;
+TableName&gt;
+", where TableName is the actual name of the table (e.g. C_Order).</entry> 
+</row> 
+<row> 
+ <entry>Núm. da Versão</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Version Number</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Volume</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Volume of a product</entry> 
+<entry>The Volume indicates the volume of the product in the Volume UOM of the Client</entry> 
+</row> 
+<row> 
+ <entry>Peso</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Weight of a product</entry> 
+<entry>The Weight indicates the weight  of the product in the Weight UOM of the Client</entry> 
+</row> 
+<row> 
+ <entry>Corredor (X)</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>X dimension, e.g., Aisle</entry> 
+<entry>The X dimension indicates the Aisle a product is located in.</entry> 
+</row> 
+<row> 
+ <entry>Estante (Y)</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Y dimension, e.g., Bin</entry> 
+<entry>The Y dimension indicates the Bin a product is located in</entry> 
+</row> 
+<row> 
+ <entry>Nível (Z)</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Z dimension, e.g., Level</entry> 
+<entry>The Z dimension indicates the Level a product is located in.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

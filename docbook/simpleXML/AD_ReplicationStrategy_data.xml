@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Estratégia de Replicação</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Estratégia de Replicação</entry><entry>Descrição</entry><entry>Tipo de Entidade</entry><entry>Processador de Exportação</entry><entry>Comentário/Ajuda</entry><entry>Nome</entry><entry>Chave de Busca</entry></row>
+<row><entry>100</entry><entry>Point-of-Sales Synchronization</entry><entry>D</entry><entry> </entry><entry>Products are central, Business Partners, Orders, Shipments, Invoices, Cash Journal are local</entry><entry>POS</entry><entry>1000000</entry></row>
+<row><entry>50000</entry><entry>Example POS Replication Strategy - Description</entry><entry>D</entry><entry>50001</entry><entry>Example POS Replication Strategy - Help</entry><entry>Example POS Replication Strategy</entry><entry>Example POS</entry></row></tbody>
+</tgroup>
+</table>

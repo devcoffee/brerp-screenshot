@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Classe do Produto</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Classe do Produto</entry><entry>Tipo do Produto</entry><entry>Descrição</entry><entry>Nome</entry><entry>Chave de Busca</entry></row>
+<row><entry>5000001</entry><entry>5000000</entry><entry> </entry><entry>CLASSE</entry><entry>CLASSE</entry></row>
+<row><entry>5000002</entry><entry>5000001</entry><entry> </entry><entry>CON</entry><entry>CON</entry></row>
+<row><entry>5000003</entry><entry>5000003</entry><entry> </entry><entry>REV</entry><entry>REV</entry></row>
+<row><entry>5000004</entry><entry>5000002</entry><entry> </entry><entry>PROD</entry><entry>PROD</entry></row></tbody>
+</tgroup>
+</table>

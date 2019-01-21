@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Taxa Definição</title>
+<tgroup cols='30' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Parceiro de Negócios </entry><entry>Cidade</entry><entry>Tipo de Documento</entry><entry>Cidade de Destino</entry><entry>Indicador da IE</entry><entry>COF_TaxDefinition_Group_ID</entry><entry>Incentivos Fiscais</entry><entry>Cod. Regime Trib.</entry><entry>Cod. Regime Trib. (PN)</entry><entry>Região</entry><entry>Descrição</entry><entry>Manual</entry><entry>Transação de Vendas</entry><entry>Categoria do Parceiro (CFOP)</entry><entry>CFOP</entry><entry>Grupo de Tributação</entry><entry>Grupo de Tributação</entry><entry>Substituição Tributária</entry><entry>Mensagem Legal</entry><entry>NCM</entry><entry>Categoria do Produto (CFOP)</entry><entry>Origem do Produto</entry><entry>Taxa Definição</entry><entry>Imposto Brasileiro</entry><entry>Tipo de Transação</entry><entry>Produto</entry><entry>Prioridade Relativa</entry><entry>Para</entry><entry>Válido desde</entry><entry>Chave de Busca</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>9</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>465</entry><entry> </entry><entry>false</entry><entry>Y</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>B</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>5000000</entry><entry> </entry><entry>END</entry><entry> </entry><entry>80</entry><entry>453</entry><entry>2001-01-01 00:00:00.0</entry><entry>1000000</entry></row>
+<row><entry> </entry><entry> </entry><entry>5000061</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>Y</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>B</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry><entry>5000001</entry><entry> </entry><entry> </entry><entry> </entry><entry>1050</entry><entry> </entry><entry>2018-01-01 00:00:00.0</entry><entry>1000001</entry></row></tbody>
+</tgroup>
+</table>

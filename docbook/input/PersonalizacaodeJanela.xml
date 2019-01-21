@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Personalização de Janela</title> 
+ <para> <emphasis>Descrição: </emphasis>  Define Personalização de Janela para o Perfil/Usuário</para><para> <emphasis>Comentário/Ajuda: </emphasis>Os valores personalizados aqui sobrescrevem/substituem a definição padrão do sistema.</para><para><emphasis> Criado em: </emphasis>2001-09-05 21:59:41.0
+</para><para><emphasis>Atualizado em: </emphasis>2012-09-19 10:52:39.0</para>
+<section> 
+ <title>Tabela: Personalização de Janela - AD_UserDef_Win</title> 
+ 
+<ulink url="data/AD_UserDef_Win_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Window Customization Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Janela Definida pelo Usuário</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Perfil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adrole_aduserdefwin</entry> 
+<entry> </entry> 
+<entry valign="middle">Responsibility Role</entry> 
+<entry>The Role determines security and access a user who has this Role will have in the System.</entry> 
+</row> 
+<row> 
+ <entry>Usuário/Contato</entry><entry>Procurar</entry> 
+<entry>AD_User(-1)</entry> 
+<entry valign="middle">aduser_aduserdefwin</entry> 
+<entry> </entry> 
+<entry valign="middle">User within the system - Internal or Business Partner Contact</entry> 
+<entry>The User identifies a unique user in the system. This could be an internal user or a business partner contact</entry> 
+</row> 
+<row> 
+ <entry>Janela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adwindow_aduserdefwin</entry> 
+<entry>AD_Window.AD_Window_ID IN (SELECT AD_Window_Access.AD_Window_ID FROM AD_Window_Access WHERE AD_Window_Access.AD_Role_ID=@#AD_Role_ID@) </entry> 
+<entry valign="middle">Data entry or display window</entry> 
+<entry>The Window field identifies a unique Window in the system.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>Idioma</entry><entry>Tabela</entry> 
+<entry>AD_Language</entry> 
+<entry valign="middle">adlangu_aduserdefwin</entry> 
+<entry> </entry> 
+<entry valign="middle">Language for this entity</entry> 
+<entry>The Language identifies the language to use for display and formatting</entry> 
+</row> 
+<row> 
+ <entry>Padrão</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Default value</entry> 
+<entry>The Default Checkbox indicates if this record will be used as a default value.</entry> 
+</row> 
+<row> 
+ <entry>Somente Leitura</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Field is read only</entry> 
+<entry>The Read Only indicates that this field may only be Read.  It may not be updated.</entry> 
+</row> 
+<row> 
+ <entry>Atualizável pelo usuário</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The field can be updated by the user</entry> 
+<entry>The User Updatable checkbox indicate if the user can update  this field.</entry> 
+</row> 
+<row> 
+ <entry>Comentário / Descrição</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>AD_UserDef_Win_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Personalização de Aba - AD_UserDef_Tab</title> 
+ 
+<ulink url="data/AD_UserDef_Tab_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Tab Customization Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Aba Definida pelo Usuário</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Janela Definida pelo Usuário</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">aduserdefwin_aduserdeftab</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Aba</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtab_aduserdeftab</entry> 
+<entry>AD_Tab.AD_Window_ID=@AD_Window_ID@ </entry> 
+<entry valign="middle">Tab within a Window</entry> 
+<entry>The Tab indicates a tab that displays within a window.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Só Multi Linhas</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This applies to Multi-Row view only</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>Layout em Linha Única</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Default for toggle between Single- and Multi-Row (Grid) Layout</entry> 
+<entry>The Single Row Layout checkbox indicates if the default display type for this window is a single row as opposed to multi row.</entry> 
+</row> 
+<row> 
+ <entry>Somente Leitura</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Field is read only</entry> 
+<entry>The Read Only indicates that this field may only be Read.  It may not be updated.</entry> 
+</row> 
+<row> 
+ <entry>Lógica Somente de Leitura</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Logic to determine if field is read only (applies only when field is read-write)</entry> 
+<entry>format := 
+{
+expression}
+ [
+{
+logic}
+ 
+{
+expression}
+] 
+expression := @
+{
+context}
+@
+{
+operand}
+
+{
+value}
+ or @
+{
+context}
+@
+{
+operand}
+
+{
+value}
+ 
+logic := 
+{
+|}
+|
+{
+%26}
+
+context := any global or window context 
+value := strings or numbers
+logic operators	:= AND or OR with the previous result from left to right 
+operand := eq
+{
+=}
+, gt
+{
+%26gt;
+}
+, le
+{
+%26lt;
+}
+, not
+{
+~^!}
+ 
+Examples: 
+@AD_Table_ID@=14 | @Language@!GERGER 
+@PriceLimit@&gt;
+10 | @PriceList@&gt;
+@PriceActual@
+@Name@&gt;
+J
+Strings may be in single quotes (optional)</entry> 
+</row> 
+<row> 
+ <entry>Comentário / Descrição</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>AD_UserDef_Tab_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Personalização de Campo - AD_UserDef_Field</title> 
+ 
+<ulink url="data/AD_UserDef_Field_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>Field Customization Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Campo Definido pelo Usuário</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Aba Definida pelo Usuário</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">aduserdeftab_aduserdeffield</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Campo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adfield_aduserdeffield</entry> 
+<entry>AD_Field.AD_Tab_ID=@AD_Tab_ID@ </entry> 
+<entry valign="middle">Field on a database table</entry> 
+<entry>The Field identifies a field on a database table.</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>Placeholder</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Mostrado</entry><entry>Lista</entry> 
+<entry>Não
+Sim</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Determines, if this field is displayed</entry> 
+<entry>If the field is displayed, the field Display Logic will determine at runtime, if it is actually displayed</entry> 
+</row> 
+<row> 
+ <entry>Somente Leitura</entry><entry>Lista</entry> 
+<entry>Não
+Sim</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Field is read only</entry> 
+<entry>The Read Only indicates that this field may only be Read.  It may not be updated.</entry> 
+</row> 
+<row> 
+ <entry>Lógica de Visualização</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">If the Field is displayed, the result determines if the field is actually displayed</entry> 
+<entry>format := 
+{
+expression}
+ [
+{
+logic}
+ 
+{
+expression}
+] 
+expression := @
+{
+context}
+@
+{
+operand}
+
+{
+value}
+ or @
+{
+context}
+@
+{
+operand}
+
+{
+value}
+ 
+logic := 
+{
+|}
+|
+{
+%26}
+
+context := any global or window context 
+value := strings or numbers
+logic operators	:= AND or OR with the previous result from left to right 
+operand := eq
+{
+=}
+, gt
+{
+%26gt;
+}
+, le
+{
+%26lt;
+}
+, not
+{
+~^!}
+ 
+Examples: 
+@AD_Table_ID@=14 | @Language@!GERGER 
+@PriceLimit@&gt;
+10 | @PriceList@&gt;
+@PriceActual@
+@Name@&gt;
+J
+Strings may be in single quotes (optional)</entry> 
+</row> 
+<row> 
+ <entry>Seqüência</entry><entry>Inteiro</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method of ordering records;
+ lowest number comes first</entry> 
+<entry>The Sequence indicates the order of records</entry> 
+</row> 
+<row> 
+ <entry>Número de Classificação do Registro</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Determines in what order the records are displayed</entry> 
+<entry>The Record Sort No indicates the ascending sort sequence of the records. If the number is negative, the records are sorted descending. 
+Example: A tab with C_DocType_ID (1), DocumentNo (-2) will be sorted ascending by document type and descending by document number (SQL: ORDER BY C_DocType, DocumentNo DESC)</entry> 
+</row> 
+<row> 
+ <entry>Lógica Padrão</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Default value hierarchy, separated by ;
+</entry> 
+<entry>The defaults are evaluated in the order of definition, the first not null value becomes the default value of the column. The values are separated by comma or semicolon. a) Literals:. 'Text' or 123 b) Variables - in format @Variable@ - Login e.g. #Date, #AD_Org_ID, #AD_Client_ID - Accounting Schema: e.g. $C_AcctSchema_ID, $C_Calendar_ID - Global defaults: e.g. DateFormat - Window values (all Picks, CheckBoxes, RadioButtons, and DateDoc/DateAcct) c) SQL code with the tag: @SQL=SELECT something AS DefaultValue FROM ... The SQL statement can contain variables.  There can be no other value other than the SQL statement. The default is only evaluated, if no user preference is defined.  Default definitions are ignored for record columns as Key, Parent, Client as well as Buttons.</entry> 
+</row> 
+<row> 
+ <entry>Posição X</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Absolute X (horizontal) position in 1/72 of an inch</entry> 
+<entry>Absolute X (horizontal) position in 1/72 of an inch</entry> 
+</row> 
+<row> 
+ <entry>Culnas Recolhidas</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of column for a box of field</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Numero de Linhas</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of lines for a field</entry> 
+<entry>Number of lines for a field</entry> 
+</row> 
+<row> 
+ <entry>Label Style</entry><entry>Tabela</entry> 
+<entry>AD_Style</entry> 
+<entry valign="middle">ADLabelStyle_ADUserDefField</entry> 
+<entry> </entry> 
+<entry valign="middle">Label CSS Style</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Field Style</entry><entry>Tabela</entry> 
+<entry>AD_Style</entry> 
+<entry valign="middle">ADFieldStyle_ADUserDefField</entry> 
+<entry> </entry> 
+<entry valign="middle">Field CSS Style </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Validação Dinâmica</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ADValRule_ADUserDefField</entry> 
+<entry> </entry> 
+<entry valign="middle">Dynamic Validation Rule</entry> 
+<entry>These rules define how an entry is determined to valid. You can use variables for dynamic (context sensitive) validation.</entry> 
+</row> 
+<row> 
+ <entry>Reference Overwrite</entry><entry>Tabela</entry> 
+<entry>AD_Reference Data Types</entry> 
+<entry valign="middle">adreference_aduserdeffield</entry> 
+<entry> </entry> 
+<entry valign="middle">System Reference and Validation</entry> 
+<entry>The Reference could be a display type, list or table validation.</entry> 
+</row> 
+<row> 
+ <entry>Botão da Barra de Ferramentas</entry><entry>Lista</entry> 
+<entry>Both
+Window
+Toolbar</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Show the button on the toolbar, the window, or both</entry> 
+<entry>The IsToolbarButton field indicates if this button is part of the toolbar's process button popup list, or render as field in window, or both.</entry> 
+</row> 
+<row> 
+ <entry>Chave de Referência</entry><entry>Tabela</entry> 
+<entry>AD_Reference Values</entry> 
+<entry valign="middle">adreferencevalue_aduserdeffiel</entry> 
+<entry>AD_Reference.ValidationType=CASE WHEN  @AD_Reference_ID@ IN (17,28) THEN 'L' ELSE 'T' END </entry> 
+<entry valign="middle">Required to specify, if data type is Table or List</entry> 
+<entry>The Reference Value indicates where the reference values are stored.  It must be specified if the data type is Table or List.  </entry> 
+</row> 
+<row> 
+ <entry>PA_DashboardContent_ID</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">PADashboardContent_ADUserDefFi</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Atualizável</entry><entry>Lista</entry> 
+<entry>Não
+Sim</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Determines, if the field can be updated</entry> 
+<entry>The Updatable checkbox indicates if a field can be updated by the user.</entry> 
+</row> 
+<row> 
+ <entry>Sempre Atualizável</entry><entry>Lista</entry> 
+<entry>Não
+Sim</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The column is always updateable, even if the record is not active or processed</entry> 
+<entry>If selected and if the window / tab is not read only, you can always update the column.  This might be useful for comments, etc.</entry> 
+</row> 
+<row> 
+ <entry>Obrigatório</entry><entry>Lista</entry> 
+<entry>Não
+Sim</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Data entry is required in this column</entry> 
+<entry>The field must have a value for the record to be saved to the database.</entry> 
+</row> 
+<row> 
+ <entry>Lógica de Obrigatório</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Comentário / Descrição</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Formato do Valor</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Format of the value;
+ Can contain fixed format elements, Variables: "_lLoOaAcCa09"</entry> 
+<entry>&lt;
+B&gt;
+Validation elements:&lt;
+/B&gt;
+
+ 	(Space) any character
+_	Space (fixed character)
+l	any Letter a..Z NO space
+L	any Letter a..Z NO space converted to upper case
+o	any Letter a..Z or space
+O	any Letter a..Z or space converted to upper case
+a	any Letters %26 Digits NO space
+A	any Letters %26 Digits NO space converted to upper case
+c	any Letters %26 Digits or space
+C	any Letters %26 Digits or space converted to upper case
+0	Digits 0..9 NO space
+9	Digits 0..9 or space
+
+Example of format "(000)_000-0000"</entry> 
+</row> 
+<row> 
+ <entry>Lógica Somente de Leitura</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Logic to determine if field is read only (applies only when field is read-write)</entry> 
+<entry>format := 
+{
+expression}
+ [
+{
+logic}
+ 
+{
+expression}
+] 
+expression := @
+{
+context}
+@
+{
+operand}
+
+{
+value}
+ or @
+{
+context}
+@
+{
+operand}
+
+{
+value}
+ 
+logic := 
+{
+|}
+|
+{
+%26}
+
+context := any global or window context 
+value := strings or numbers
+logic operators	:= AND or OR with the previous result from left to right 
+operand := eq
+{
+=}
+, gt
+{
+%26gt;
+}
+, le
+{
+%26lt;
+}
+, not
+{
+~^!}
+ 
+Examples: 
+@AD_Table_ID@=14 | @Language@!GERGER 
+@PriceLimit@&gt;
+10 | @PriceList@&gt;
+@PriceActual@
+@Name@&gt;
+J
+Strings may be in single quotes (optional)</entry> 
+</row> 
+<row> 
+ <entry>Comprimento do Mostrador</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Length of the display in characters</entry> 
+<entry>The display length is mainly for String fields. The length has no impact, if the data type of the field is - Integer, Number, Amount	(length determined by the system) - YesNo	(Checkbox) - List, Table, TableDir	(length of combo boxes are determined by their content at runtime)</entry> 
+</row> 
+<row> 
+ <entry>Mesma Linha</entry><entry>Lista</entry> 
+<entry>Não
+Sim</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Displayed on same line as previous field</entry> 
+<entry>The Same Line checkbox indicates that the field will display on the same line as the previous field.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Atribuição de Recurso</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Atribuir desde</entry><entry>Atribuir até</entry><entry>Descrição</entry><entry>Confirmado</entry><entry>Nome</entry><entry>Quantidade</entry><entry>Atribuição de Recurso</entry><entry>Recurso</entry></row>
+<row><entry>2003-02-05 10:00:00.0</entry><entry>2003-02-05 13:00:00.0</entry><entry>Initial Discussion</entry><entry>false</entry><entry>Garden Layout</entry><entry>3</entry><entry>100</entry><entry>100</entry></row>
+<row><entry>2003-02-05 17:00:00.0</entry><entry>2003-02-05 18:00:00.0</entry><entry>Discuss Budget</entry><entry>false</entry><entry>Garden Layout</entry><entry>1</entry><entry>101</entry><entry>100</entry></row></tbody>
+</tgroup>
+</table>

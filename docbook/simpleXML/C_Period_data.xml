@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Período (Ano Fiscal)</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Período (Ano Fiscal)</entry><entry>Ano</entry><entry>Data Final</entry><entry>Nome</entry><entry>Núm.Período</entry><entry>Tipo de Período</entry><entry>Processar Agora</entry><entry>Data de Início</entry></row>
+<row><entry>185</entry><entry>111</entry><entry>2005-02-28 00:00:00.0</entry><entry>Feb-05</entry><entry>2</entry><entry>S</entry><entry> </entry><entry>2005-02-01 00:00:00.0</entry></row>
+<row><entry>187</entry><entry>111</entry><entry>2005-04-30 00:00:00.0</entry><entry>Apr-05</entry><entry>4</entry><entry>S</entry><entry> </entry><entry>2005-04-01 00:00:00.0</entry></row>
+<row><entry>188</entry><entry>111</entry><entry>2005-05-31 00:00:00.0</entry><entry>May-05</entry><entry>5</entry><entry>S</entry><entry> </entry><entry>2005-05-01 00:00:00.0</entry></row>
+<row><entry>189</entry><entry>111</entry><entry>2005-06-30 00:00:00.0</entry><entry>Jun-05</entry><entry>6</entry><entry>S</entry><entry> </entry><entry>2005-06-01 00:00:00.0</entry></row>
+<row><entry>190</entry><entry>111</entry><entry>2005-07-31 00:00:00.0</entry><entry>Jul-05</entry><entry>7</entry><entry>S</entry><entry> </entry><entry>2005-07-01 00:00:00.0</entry></row>
+<row><entry>192</entry><entry>111</entry><entry>2005-09-30 00:00:00.0</entry><entry>Sep-05</entry><entry>9</entry><entry>S</entry><entry> </entry><entry>2005-09-01 00:00:00.0</entry></row>
+<row><entry>193</entry><entry>111</entry><entry>2005-10-31 00:00:00.0</entry><entry>Oct-05</entry><entry>10</entry><entry>S</entry><entry> </entry><entry>2005-10-01 00:00:00.0</entry></row>
+<row><entry>194</entry><entry>111</entry><entry>2005-11-30 00:00:00.0</entry><entry>Nov-05</entry><entry>11</entry><entry>S</entry><entry> </entry><entry>2005-11-01 00:00:00.0</entry></row>
+<row><entry>172</entry><entry>110</entry><entry>2004-01-31 00:00:00.0</entry><entry>Jan-04</entry><entry>1</entry><entry>S</entry><entry> </entry><entry>2004-01-01 00:00:00.0</entry></row>
+<row><entry>173</entry><entry>110</entry><entry>2004-02-29 00:00:00.0</entry><entry>Feb-04</entry><entry>2</entry><entry>S</entry><entry> </entry><entry>2004-02-01 00:00:00.0</entry></row>
+<row><entry>174</entry><entry>110</entry><entry>2004-03-31 00:00:00.0</entry><entry>Mar-04</entry><entry>3</entry><entry>S</entry><entry> </entry><entry>2004-03-01 00:00:00.0</entry></row>
+<row><entry>175</entry><entry>110</entry><entry>2004-04-30 00:00:00.0</entry><entry>Apr-04</entry><entry>4</entry><entry>S</entry><entry> </entry><entry>2004-04-01 00:00:00.0</entry></row>
+<row><entry>177</entry><entry>110</entry><entry>2004-06-30 00:00:00.0</entry><entry>Jun-04</entry><entry>6</entry><entry>S</entry><entry> </entry><entry>2004-06-01 00:00:00.0</entry></row>
+<row><entry>178</entry><entry>110</entry><entry>2004-07-31 00:00:00.0</entry><entry>Jul-04</entry><entry>7</entry><entry>S</entry><entry> </entry><entry>2004-07-01 00:00:00.0</entry></row>
+<row><entry>179</entry><entry>110</entry><entry>2004-08-31 00:00:00.0</entry><entry>Aug-04</entry><entry>8</entry><entry>S</entry><entry> </entry><entry>2004-08-01 00:00:00.0</entry></row>
+<row><entry>180</entry><entry>110</entry><entry>2004-09-30 00:00:00.0</entry><entry>Sep-04</entry><entry>9</entry><entry>S</entry><entry> </entry><entry>2004-09-01 00:00:00.0</entry></row>
+<row><entry>182</entry><entry>110</entry><entry>2004-11-30 00:00:00.0</entry><entry>Nov-04</entry><entry>11</entry><entry>S</entry><entry> </entry><entry>2004-11-01 00:00:00.0</entry></row>
+<row><entry>183</entry><entry>110</entry><entry>2004-12-31 00:00:00.0</entry><entry>Dec-04</entry><entry>12</entry><entry>S</entry><entry> </entry><entry>2004-12-01 00:00:00.0</entry></row>
+<row><entry>136</entry><entry>106</entry><entry>2001-01-31 00:00:00.0</entry><entry>Jan-01</entry><entry>1</entry><entry>S</entry><entry> </entry><entry>2001-01-01 00:00:00.0</entry></row>
+<row><entry>137</entry><entry>106</entry><entry>2001-02-28 00:00:00.0</entry><entry>Feb-01</entry><entry>2</entry><entry>S</entry><entry> </entry><entry>2001-02-01 00:00:00.0</entry></row>
+<row><entry>139</entry><entry>106</entry><entry>2001-04-30 00:00:00.0</entry><entry>Apr-01</entry><entry>4</entry><entry>S</entry><entry> </entry><entry>2001-04-01 00:00:00.0</entry></row>
+<row><entry>140</entry><entry>106</entry><entry>2001-05-31 00:00:00.0</entry><entry>May-01</entry><entry>5</entry><entry>S</entry><entry> </entry><entry>2001-05-01 00:00:00.0</entry></row>
+<row><entry>141</entry><entry>106</entry><entry>2001-06-30 00:00:00.0</entry><entry>Jun-01</entry><entry>6</entry><entry>S</entry><entry> </entry><entry>2001-06-01 00:00:00.0</entry></row>
+<row><entry>142</entry><entry>106</entry><entry>2001-07-31 00:00:00.0</entry><entry>Jul-01</entry><entry>7</entry><entry>S</entry><entry> </entry><entry>2001-07-01 00:00:00.0</entry></row>
+<row><entry>144</entry><entry>106</entry><entry>2001-09-30 00:00:00.0</entry><entry>Sep-01</entry><entry>9</entry><entry>S</entry><entry> </entry><entry>2001-09-01 00:00:00.0</entry></row>
+<row><entry>145</entry><entry>106</entry><entry>2001-10-31 00:00:00.0</entry><entry>Oct-01</entry><entry>10</entry><entry>S</entry><entry> </entry><entry>2001-10-01 00:00:00.0</entry></row>
+<row><entry>146</entry><entry>106</entry><entry>2001-11-30 00:00:00.0</entry><entry>Nov-01</entry><entry>11</entry><entry>S</entry><entry> </entry><entry>2001-11-01 00:00:00.0</entry></row>
+<row><entry>148</entry><entry>107</entry><entry>2002-01-31 00:00:00.0</entry><entry>Jan-02</entry><entry>1</entry><entry>S</entry><entry> </entry><entry>2002-01-01 00:00:00.0</entry></row>
+<row><entry>149</entry><entry>107</entry><entry>2002-02-28 00:00:00.0</entry><entry>Feb-02</entry><entry>2</entry><entry>S</entry><entry> </entry><entry>2002-02-01 00:00:00.0</entry></row>
+<row><entry>150</entry><entry>107</entry><entry>2002-03-31 00:00:00.0</entry><entry>Mar-02</entry><entry>3</entry><entry>S</entry><entry> </entry><entry>2002-03-01 00:00:00.0</entry></row>
+<row><entry>151</entry><entry>107</entry><entry>2002-04-30 00:00:00.0</entry><entry>Apr-02</entry><entry>4</entry><entry>S</entry><entry> </entry><entry>2002-04-01 00:00:00.0</entry></row>
+<row><entry>153</entry><entry>107</entry><entry>2002-06-30 00:00:00.0</entry><entry>Jun-02</entry><entry>6</entry><entry>S</entry><entry> </entry><entry>2002-06-01 00:00:00.0</entry></row>
+<row><entry>154</entry><entry>107</entry><entry>2002-07-31 00:00:00.0</entry><entry>Jul-02</entry><entry>7</entry><entry>S</entry><entry> </entry><entry>2002-07-01 00:00:00.0</entry></row>
+<row><entry>155</entry><entry>107</entry><entry>2002-08-31 00:00:00.0</entry><entry>Aug-02</entry><entry>8</entry><entry>S</entry><entry> </entry><entry>2002-08-01 00:00:00.0</entry></row>
+<row><entry>156</entry><entry>107</entry><entry>2002-09-30 00:00:00.0</entry><entry>Sep-02</entry><entry>9</entry><entry>S</entry><entry> </entry><entry>2002-09-01 00:00:00.0</entry></row>
+<row><entry>158</entry><entry>107</entry><entry>2002-11-30 00:00:00.0</entry><entry>Nov-02</entry><entry>11</entry><entry>S</entry><entry> </entry><entry>2002-11-01 00:00:00.0</entry></row>
+<row><entry>159</entry><entry>107</entry><entry>2002-12-31 00:00:00.0</entry><entry>Dec-02</entry><entry>12</entry><entry>S</entry><entry> </entry><entry>2002-12-01 00:00:00.0</entry></row>
+<row><entry>160</entry><entry>109</entry><entry>2003-01-31 00:00:00.0</entry><entry>Jan-03</entry><entry>1</entry><entry>S</entry><entry> </entry><entry>2003-01-01 00:00:00.0</entry></row>
+<row><entry>161</entry><entry>109</entry><entry>2003-02-28 00:00:00.0</entry><entry>Feb-03</entry><entry>2</entry><entry>S</entry><entry> </entry><entry>2003-02-01 00:00:00.0</entry></row>
+<row><entry>163</entry><entry>109</entry><entry>2003-04-30 00:00:00.0</entry><entry>Apr-03</entry><entry>4</entry><entry>S</entry><entry> </entry><entry>2003-04-01 00:00:00.0</entry></row>
+<row><entry>164</entry><entry>109</entry><entry>2003-05-31 00:00:00.0</entry><entry>May-03</entry><entry>5</entry><entry>S</entry><entry> </entry><entry>2003-05-01 00:00:00.0</entry></row>
+<row><entry>165</entry><entry>109</entry><entry>2003-06-30 00:00:00.0</entry><entry>Jun-03</entry><entry>6</entry><entry>S</entry><entry> </entry><entry>2003-06-01 00:00:00.0</entry></row>
+<row><entry>167</entry><entry>109</entry><entry>2003-08-31 00:00:00.0</entry><entry>Aug-03</entry><entry>8</entry><entry>S</entry><entry> </entry><entry>2003-08-01 00:00:00.0</entry></row>
+<row><entry>168</entry><entry>109</entry><entry>2003-09-30 00:00:00.0</entry><entry>Sep-03</entry><entry>9</entry><entry>S</entry><entry> </entry><entry>2003-09-01 00:00:00.0</entry></row>
+<row><entry>169</entry><entry>109</entry><entry>2003-10-31 00:00:00.0</entry><entry>Oct-03</entry><entry>10</entry><entry>S</entry><entry> </entry><entry>2003-10-01 00:00:00.0</entry></row>
+<row><entry>171</entry><entry>109</entry><entry>2003-12-31 00:00:00.0</entry><entry>Dec-03</entry><entry>12</entry><entry>S</entry><entry> </entry><entry>2003-12-01 00:00:00.0</entry></row>
+<row><entry>197</entry><entry>112</entry><entry>2006-02-28 00:00:00.0</entry><entry>Feb-06</entry><entry>2</entry><entry>S</entry><entry>false</entry><entry>2006-02-01 00:00:00.0</entry></row>
+<row><entry>198</entry><entry>112</entry><entry>2006-03-31 00:00:00.0</entry><entry>Mar-06</entry><entry>3</entry><entry>S</entry><entry>false</entry><entry>2006-03-01 00:00:00.0</entry></row>
+<row><entry>199</entry><entry>112</entry><entry>2006-04-30 00:00:00.0</entry><entry>Apr-06</entry><entry>4</entry><entry>S</entry><entry>false</entry><entry>2006-04-01 00:00:00.0</entry></row>
+<row><entry>200</entry><entry>112</entry><entry>2006-05-31 00:00:00.0</entry><entry>May-06</entry><entry>5</entry><entry>S</entry><entry>false</entry><entry>2006-05-01 00:00:00.0</entry></row>
+<row><entry>202</entry><entry>112</entry><entry>2006-07-31 00:00:00.0</entry><entry>Jul-06</entry><entry>7</entry><entry>S</entry><entry>false</entry><entry>2006-07-01 00:00:00.0</entry></row>
+<row><entry>203</entry><entry>112</entry><entry>2006-08-31 00:00:00.0</entry><entry>Aug-06</entry><entry>8</entry><entry>S</entry><entry>false</entry><entry>2006-08-01 00:00:00.0</entry></row>
+<row><entry>204</entry><entry>112</entry><entry>2006-09-30 00:00:00.0</entry><entry>Sep-06</entry><entry>9</entry><entry>S</entry><entry>false</entry><entry>2006-09-01 00:00:00.0</entry></row>
+<row><entry>206</entry><entry>112</entry><entry>2006-11-30 00:00:00.0</entry><entry>Nov-06</entry><entry>11</entry><entry>S</entry><entry>false</entry><entry>2006-11-01 00:00:00.0</entry></row>
+<row><entry>207</entry><entry>112</entry><entry>2006-12-31 00:00:00.0</entry><entry>Dec-06</entry><entry>12</entry><entry>S</entry><entry>false</entry><entry>2006-12-01 00:00:00.0</entry></row>
+<row><entry>50000</entry><entry>50000</entry><entry>2007-01-31 00:00:00.0</entry><entry>Jan-07</entry><entry>1</entry><entry>S</entry><entry>false</entry><entry>2007-01-01 00:00:00.0</entry></row>
+<row><entry>50001</entry><entry>50000</entry><entry>2007-02-28 00:00:00.0</entry><entry>Feb-07</entry><entry>2</entry><entry>S</entry><entry>false</entry><entry>2007-02-01 00:00:00.0</entry></row>
+<row><entry>50003</entry><entry>50000</entry><entry>2007-04-30 00:00:00.0</entry><entry>Apr-07</entry><entry>4</entry><entry>S</entry><entry>false</entry><entry>2007-04-01 00:00:00.0</entry></row>
+<row><entry>50004</entry><entry>50000</entry><entry>2007-05-31 00:00:00.0</entry><entry>May-07</entry><entry>5</entry><entry>S</entry><entry>false</entry><entry>2007-05-01 00:00:00.0</entry></row>
+<row><entry>50005</entry><entry>50000</entry><entry>2007-06-30 00:00:00.0</entry><entry>Jun-07</entry><entry>6</entry><entry>S</entry><entry>false</entry><entry>2007-06-01 00:00:00.0</entry></row>
+<row><entry>50006</entry><entry>50000</entry><entry>2007-07-31 00:00:00.0</entry><entry>Jul-07</entry><entry>7</entry><entry>S</entry><entry>false</entry><entry>2007-07-01 00:00:00.0</entry></row>
+<row><entry>50008</entry><entry>50000</entry><entry>2007-09-30 00:00:00.0</entry><entry>Sep-07</entry><entry>9</entry><entry>S</entry><entry>false</entry><entry>2007-09-01 00:00:00.0</entry></row>
+<row><entry>50009</entry><entry>50000</entry><entry>2007-10-31 00:00:00.0</entry><entry>Oct-07</entry><entry>10</entry><entry>S</entry><entry>false</entry><entry>2007-10-01 00:00:00.0</entry></row>
+<row><entry>50010</entry><entry>50000</entry><entry>2007-11-30 00:00:00.0</entry><entry>Nov-07</entry><entry>11</entry><entry>S</entry><entry>false</entry><entry>2007-11-01 00:00:00.0</entry></row>
+<row><entry>50011</entry><entry>50000</entry><entry>2007-12-31 00:00:00.0</entry><entry>Dec-07</entry><entry>12</entry><entry>S</entry><entry>false</entry><entry>2007-12-01 00:00:00.0</entry></row>
+<row><entry>50013</entry><entry>50001</entry><entry>2008-02-29 00:00:00.0</entry><entry>Feb-08</entry><entry>2</entry><entry>S</entry><entry>false</entry><entry>2008-02-01 00:00:00.0</entry></row>
+<row><entry>50014</entry><entry>50001</entry><entry>2008-03-31 00:00:00.0</entry><entry>Mar-08</entry><entry>3</entry><entry>S</entry><entry>false</entry><entry>2008-03-01 00:00:00.0</entry></row>
+<row><entry>50015</entry><entry>50001</entry><entry>2008-04-30 00:00:00.0</entry><entry>Apr-08</entry><entry>4</entry><entry>S</entry><entry>false</entry><entry>2008-04-01 00:00:00.0</entry></row>
+<row><entry>50016</entry><entry>50001</entry><entry>2008-05-31 00:00:00.0</entry><entry>May-08</entry><entry>5</entry><entry>S</entry><entry>false</entry><entry>2008-05-01 00:00:00.0</entry></row>
+<row><entry>50018</entry><entry>50001</entry><entry>2008-07-31 00:00:00.0</entry><entry>Jul-08</entry><entry>7</entry><entry>S</entry><entry>false</entry><entry>2008-07-01 00:00:00.0</entry></row>
+<row><entry>50019</entry><entry>50001</entry><entry>2008-08-31 00:00:00.0</entry><entry>Aug-08</entry><entry>8</entry><entry>S</entry><entry>false</entry><entry>2008-08-01 00:00:00.0</entry></row>
+<row><entry>50020</entry><entry>50001</entry><entry>2008-09-30 00:00:00.0</entry><entry>Sep-08</entry><entry>9</entry><entry>S</entry><entry>false</entry><entry>2008-09-01 00:00:00.0</entry></row>
+<row><entry>50022</entry><entry>50001</entry><entry>2008-11-30 00:00:00.0</entry><entry>Nov-08</entry><entry>11</entry><entry>S</entry><entry>false</entry><entry>2008-11-01 00:00:00.0</entry></row>
+<row><entry>50023</entry><entry>50001</entry><entry>2008-12-31 00:00:00.0</entry><entry>Dec-08</entry><entry>12</entry><entry>S</entry><entry>false</entry><entry>2008-12-01 00:00:00.0</entry></row>
+<row><entry>50024</entry><entry>50002</entry><entry>2009-01-31 00:00:00.0</entry><entry>Jan-09</entry><entry>1</entry><entry>S</entry><entry>false</entry><entry>2009-01-01 00:00:00.0</entry></row>
+<row><entry>50025</entry><entry>50002</entry><entry>2009-02-28 00:00:00.0</entry><entry>Feb-09</entry><entry>2</entry><entry>S</entry><entry>false</entry><entry>2009-02-01 00:00:00.0</entry></row>
+<row><entry>50027</entry><entry>50002</entry><entry>2009-04-30 00:00:00.0</entry><entry>Apr-09</entry><entry>4</entry><entry>S</entry><entry>false</entry><entry>2009-04-01 00:00:00.0</entry></row>
+<row><entry>50028</entry><entry>50002</entry><entry>2009-05-31 00:00:00.0</entry><entry>May-09</entry><entry>5</entry><entry>S</entry><entry>false</entry><entry>2009-05-01 00:00:00.0</entry></row>
+<row><entry>50029</entry><entry>50002</entry><entry>2009-06-30 00:00:00.0</entry><entry>Jun-09</entry><entry>6</entry><entry>S</entry><entry>false</entry><entry>2009-06-01 00:00:00.0</entry></row>
+<row><entry>50030</entry><entry>50002</entry><entry>2009-07-31 00:00:00.0</entry><entry>Jul-09</entry><entry>7</entry><entry>S</entry><entry>false</entry><entry>2009-07-01 00:00:00.0</entry></row>
+<row><entry>50032</entry><entry>50002</entry><entry>2009-09-30 00:00:00.0</entry><entry>Sep-09</entry><entry>9</entry><entry>S</entry><entry>false</entry><entry>2009-09-01 00:00:00.0</entry></row>
+<row><entry>50033</entry><entry>50002</entry><entry>2009-10-31 00:00:00.0</entry><entry>Oct-09</entry><entry>10</entry><entry>S</entry><entry>false</entry><entry>2009-10-01 00:00:00.0</entry></row>
+<row><entry>50034</entry><entry>50002</entry><entry>2009-11-30 00:00:00.0</entry><entry>Nov-09</entry><entry>11</entry><entry>S</entry><entry>false</entry><entry>2009-11-01 00:00:00.0</entry></row>
+<row><entry>50035</entry><entry>50002</entry><entry>2009-12-31 00:00:00.0</entry><entry>Dec-09</entry><entry>12</entry><entry>S</entry><entry>false</entry><entry>2009-12-01 00:00:00.0</entry></row>
+<row><entry>50037</entry><entry>50003</entry><entry>2010-02-28 00:00:00.0</entry><entry>Feb-10</entry><entry>2</entry><entry>S</entry><entry>false</entry><entry>2010-02-01 00:00:00.0</entry></row>
+<row><entry>50038</entry><entry>50003</entry><entry>2010-03-31 00:00:00.0</entry><entry>Mar-10</entry><entry>3</entry><entry>S</entry><entry>false</entry><entry>2010-03-01 00:00:00.0</entry></row>
+<row><entry>50039</entry><entry>50003</entry><entry>2010-04-30 00:00:00.0</entry><entry>Apr-10</entry><entry>4</entry><entry>S</entry><entry>false</entry><entry>2010-04-01 00:00:00.0</entry></row>
+<row><entry>50041</entry><entry>50003</entry><entry>2010-06-30 00:00:00.0</entry><entry>Jun-10</entry><entry>6</entry><entry>S</entry><entry>false</entry><entry>2010-06-01 00:00:00.0</entry></row>
+<row><entry>50042</entry><entry>50003</entry><entry>2010-07-31 00:00:00.0</entry><entry>Jul-10</entry><entry>7</entry><entry>S</entry><entry>false</entry><entry>2010-07-01 00:00:00.0</entry></row>
+<row><entry>50043</entry><entry>50003</entry><entry>2010-08-31 00:00:00.0</entry><entry>Aug-10</entry><entry>8</entry><entry>S</entry><entry>false</entry><entry>2010-08-01 00:00:00.0</entry></row>
+<row><entry>184</entry><entry>111</entry><entry>2005-01-31 00:00:00.0</entry><entry>Jan-05</entry><entry>1</entry><entry>S</entry><entry> </entry><entry>2005-01-01 00:00:00.0</entry></row>
+<row><entry>186</entry><entry>111</entry><entry>2005-03-31 00:00:00.0</entry><entry>Mar-05</entry><entry>3</entry><entry>S</entry><entry> </entry><entry>2005-03-01 00:00:00.0</entry></row>
+<row><entry>191</entry><entry>111</entry><entry>2005-08-31 00:00:00.0</entry><entry>Aug-05</entry><entry>8</entry><entry>S</entry><entry> </entry><entry>2005-08-01 00:00:00.0</entry></row>
+<row><entry>195</entry><entry>111</entry><entry>2005-12-31 00:00:00.0</entry><entry>Dec-05</entry><entry>12</entry><entry>S</entry><entry> </entry><entry>2005-12-01 00:00:00.0</entry></row>
+<row><entry>176</entry><entry>110</entry><entry>2004-05-31 00:00:00.0</entry><entry>May-04</entry><entry>5</entry><entry>S</entry><entry> </entry><entry>2004-05-01 00:00:00.0</entry></row>
+<row><entry>181</entry><entry>110</entry><entry>2004-10-31 00:00:00.0</entry><entry>Oct-04</entry><entry>10</entry><entry>S</entry><entry> </entry><entry>2004-10-01 00:00:00.0</entry></row>
+<row><entry>138</entry><entry>106</entry><entry>2001-03-31 00:00:00.0</entry><entry>Mar-01</entry><entry>3</entry><entry>S</entry><entry> </entry><entry>2001-03-01 00:00:00.0</entry></row>
+<row><entry>143</entry><entry>106</entry><entry>2001-08-31 00:00:00.0</entry><entry>Aug-01</entry><entry>8</entry><entry>S</entry><entry> </entry><entry>2001-08-01 00:00:00.0</entry></row>
+<row><entry>147</entry><entry>106</entry><entry>2001-12-31 00:00:00.0</entry><entry>Dec-01</entry><entry>12</entry><entry>S</entry><entry> </entry><entry>2001-12-01 00:00:00.0</entry></row>
+<row><entry>152</entry><entry>107</entry><entry>2002-05-31 00:00:00.0</entry><entry>May-02</entry><entry>5</entry><entry>S</entry><entry> </entry><entry>2002-05-01 00:00:00.0</entry></row></tbody>
+</tgroup>
+</table>

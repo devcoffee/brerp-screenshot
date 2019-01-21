@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Gerador de Razão</title>
+<tgroup cols='11' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Esquema Contábil</entry><entry>Tipo de Documento</entry><entry>Ajustar Conta CR</entry><entry>Conta Ajuste DR</entry><entry>Descrição</entry><entry>Gerar Razão</entry><entry>Categoria de Razão Geral</entry><entry>Gerador de Razão</entry><entry>Comentário/Ajuda</entry><entry>Nome</entry><entry>Tipo de Lançamento</entry></row>
+<row><entry>101</entry><entry>115</entry><entry>771</entry><entry>771</entry><entry>Step 1 - close Revenue/Expense to Income Summary</entry><entry>N         </entry><entry>108</entry><entry>200000</entry><entry>Processing date start on 1900 - execute on adjustment period</entry><entry>Year-End Closing Sample - step 1</entry><entry>A</entry></row>
+<row><entry>101</entry><entry>115</entry><entry>631</entry><entry>631</entry><entry>Step 1 - close Income Summary to Retained Earnings</entry><entry>N         </entry><entry>108</entry><entry>200001</entry><entry>Executed on year-end - must be executed after -&gt;
+ Year-End Closing Sample - step 1</entry><entry>Year-End Closing Sample - step 2</entry><entry>A</entry></row>
+<row><entry>1000001</entry><entry>1000040</entry><entry>1000430</entry><entry>1000430</entry><entry>teste</entry><entry>N         </entry><entry> </entry><entry>5000000</entry><entry> </entry><entry>teste</entry><entry>C</entry></row></tbody>
+</tgroup>
+</table>

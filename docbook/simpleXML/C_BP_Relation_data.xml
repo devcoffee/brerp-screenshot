@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Relação com Parceiros</title>
+<tgroup cols='11' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Parceiro de Negócios </entry><entry>Localização do Parceiro</entry><entry>Parceiro Relacionado</entry><entry>Localização do Parceiro Relacionado</entry><entry>Relação com Parceiros</entry><entry>Descrição</entry><entry>Endereço de Fatura</entry><entry>Endereço de Cobrança</entry><entry>Endereço de Pagamento</entry><entry>Endereço de Entrega</entry><entry>Nome</entry></row>
+<row><entry>118</entry><entry> </entry><entry>117</entry><entry>112</entry><entry>100</entry><entry> </entry><entry>true</entry><entry>false</entry><entry>true</entry><entry>false</entry><entry>C%26W may pay invoices for Joe</entry></row></tbody>
+</tgroup>
+</table>

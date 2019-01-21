@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Formulário Especial **</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Formulário Especial</entry><entry>Idioma</entry><entry>Checked</entry><entry>Pré Traduzido</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Traduzida</entry><entry>Nome</entry></row>
+<row><entry>102</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Configuración Inicial Grupo Empresarial</entry><entry>Configurar un nuevo grupo empresarial del sistema</entry><entry>true</entry><entry>Configuración Inicial Grupo Empresarial</entry></row>
+<row><entry>103</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Transacciones de Materiales</entry><entry> </entry><entry>true</entry><entry>Transacciones de Materiales</entry></row>
+<row><entry>104</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Asignar facturas y pagos</entry><entry> </entry><entry>true</entry><entry>Asignación de Pagos</entry></row>
+<row><entry>105</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Generar cargos desde cuentas contables naturales</entry><entry>Use la porción superior para crear nuevos cargos usando las cuentas generales de cargos. Use la porción inferior para crear cargos basados en las cuentas naturales.</entry><entry>true</entry><entry>Generar Cargos</entry></row>
+<row><entry>106</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Imprimir o exportar sus pagos</entry><entry> </entry><entry>true</entry><entry>Imprimir/Exportar Pagos</entry></row>
+<row><entry>107</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Selección manual de pagos</entry><entry>Seleccione facturas de proveedor para pagar. Si no ve una factura, asegúrese de que no esté incluida ya en otra selección de pagos.</entry><entry>true</entry><entry>Selección de Pagos (manual)</entry></row>
+<row><entry>108</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Asignar Órdenes de Compra, Recibos de Producto, Facturas de Proveedores</entry><entry>Asegúrese que los recibos y facturas estén procesados. Si quiere un asignamiento parcial, asegúrese que "Misma Cantidad" no esté seleccionado.</entry><entry>true</entry><entry>Asignar OC-Recibo-Factura</entry></row>
+<row><entry>109</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Importar o Exportar Traducción de Lenguaje.</entry><entry>Importar/Exportar Traducción desde/hacia xml para traducir con una herramienta externa. Por favor note que el lenguaje DEBE estar habilitado y verificado en Lenguaje del Sistema</entry><entry>true</entry><entry>Importar/Exportar Traducción</entry></row>
+<row><entry>110</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Seleccionar y Generar Entregas</entry><entry>Generar Entregas a partir de Órdenes</entry><entry>true</entry><entry>Generar Entregas por Selección</entry></row>
+<row><entry>111</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Ejecutar comandos SQL</entry><entry>Procesar comandos SQL DDL</entry><entry>true</entry><entry>Proceso SQL</entry></row>
+<row><entry>113</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Terminal de Punto de Venta</entry><entry>Ingresar transacciones a través de una terminal de punto de venta. Automáticamente, tarjetas de crédito son reconocidas.</entry><entry>true</entry><entry>Punto de Venta</entry></row>
+<row><entry>114</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Expandir Listas de Materiales</entry><entry>Traer (expandir) la lista de materiales en una orden, factura, etc. Los documentos deben estar en un estado Borrador. Asegúrese de que los artículos incluidos en la LDM están en la lista de precios de la orden, factura, etc. de lo contrario el precio será cero!</entry><entry>true</entry><entry>Expansión LDM</entry></row>
+<row><entry>115</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Mantener árboles</entry><entry>Ver y modificar árboles. El mantenimiento de las entradas se realiza en la ventana específica.</entry><entry>true</entry><entry>Mantenimiento del Arbol</entry></row>
+<row><entry>116</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Editor de Flujos de Trabajo</entry><entry>Editar el esquema gráfico de los flujos de trabajo</entry><entry>true</entry><entry>Editor de Flujos de Trabajo</entry></row>
+<row><entry>117</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Actividades Flujo de Trabajo activas</entry><entry>Ver actividades de flujo de trabajo activas</entry><entry>true</entry><entry>Actividades Flujo de Trabajo</entry></row>
+<row><entry>118</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Visualiza automáticamente los documentos archivados</entry><entry>Dependiendo del nivel automático de archivos del grupo empresarial los documentos y reportes que son guardados y puestos a disposición para su visualización.</entry><entry>true</entry><entry>Visualizador de Archivo</entry></row>
+<row><entry>119</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Vista de Indicadores de Desempeño</entry><entry>Vista de todos los Indicadores de Desempeño y Metas</entry><entry>true</entry><entry>Indicadores de Desempeño</entry></row>
+<row><entry>120</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Grilla de mantenimiento de productos con sus atributos</entry><entry>Selecciona uno o dos atributos de un atributo de producto y muestra / mantiene productos en una fila o en una grilla.</entry><entry>true</entry><entry>Grilla de atributos de producto.</entry></row>
+<row><entry>53005</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Muestra gráficamente el requerimiento y disponibilidad en el tiempo de cada recurso de manufactura.</entry><entry>Muestra gráficamente el requerimiento y disponibilidad en el tiempo de cada recurso de manufactura.</entry><entry>true</entry><entry>Info CRP</entry></row>
+<row><entry>53006</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Muestra gráficamente el requerimiento y disponibilidad en el tiempo de cada recurso de manufactura.</entry><entry>Muestra gráficamente el requerimiento y disponibilidad en el tiempo de cada recurso de manufactura.</entry><entry>true</entry><entry>Vista Carga Recursos</entry></row>
+<row><entry>53008</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Generar Movimiento una Orden de Distribución</entry><entry> </entry><entry>true</entry><entry>Generar Movimiento Manual</entry></row>
+<row><entry>53016</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Conciliación Asientos Contables (manual)</entry></row>
+<row><entry>1000004</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>Generate CNAB</entry></row>
+<row><entry>104</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Alocar faturas e pagamentos</entry><entry> </entry><entry>true</entry><entry>Alocação de Pagamentos</entry></row>
+<row><entry>115</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Gerenciamento de Árvores</entry><entry>Visualiza e edita árvores. Gerenciamento de registros em suas janelas específicas.</entry><entry>true</entry><entry>Manutenção de Árvore</entry></row>
+<row><entry>116</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Edita Fluxos de Trabalho</entry><entry>Edita o layout gráfico dos fluxos de trabalho</entry><entry>true</entry><entry>Editor de Fluxo de Trabalho</entry></row>
+<row><entry>117</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Minhas atividades de fluxo de trabalho ativas</entry><entry>Visualização das atividades de fluxo de trabalho ativas</entry><entry>true</entry><entry>Atividades de Fluxo de Trabalho</entry></row>
+<row><entry>53016</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Reconciliação de Fatos Contábeis (manual)</entry></row>
+<row><entry>1000004</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Geração CNAB</entry></row>
+<row><entry>106</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Imprimir ou exportar seus pagamentos</entry><entry> </entry><entry>true</entry><entry>Imprimir/Exportar Pagamentos</entry></row>
+<row><entry>1500044</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>Cadastro de Parceiro por CNPJ</entry></row>
+<row><entry>53023</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>VMPRequestOT</entry></row>
+<row><entry>53002</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Esta forma permite crear la configuración de un producto con múltiples niveles usando opciones y variantes</entry><entry>Una Lista de Materiales (LDM) configurable es utilizada por las industrias que tienen múltiples opciones y productos altamente configurables.
+
+La configuración de LDM es utilizada para crear dinámicamente "items-finales" que la compañía vende.  El beneficio de utilizar estructuras de LDM configurables es que reduce el esfuerzo-trabajo requerido para mantener estructuras de producto.  La LDM configurable es manejada frecuentemente por un programa "configurador", sin embargo puede ser habilitada en forma manual (el mantenimiento manual es poco frecuente porque es complejo manejar el número de permutaciones y combinaciones de configuraciones posibles)</entry><entry>true</entry><entry>Configuración LDM Producto</entry></row>
+<row><entry>53003</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Muestra el detalle del cálculo de MRP (Planificación de requerimientos de materiales)</entry><entry>Muestra el detalle del cálculo de MRP (Planificación de requerimientos de materiales)</entry><entry>true</entry><entry>Info MRP</entry></row>
+<row><entry>53004</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Una orden de manufactura planeada es una orden de manufactura sugerida por el proceso MRP y contiene las cantidades y las fechas de entrega y promesa.</entry><entry>Una orden de manufactura planeada es una orden de manufactura sugerida por el proceso MRP y contiene las cantidades y las fechas de entrega y promesa.  Cuando aprueba una orden de manufactura planeada se convierte en una orden de manufactura con el estado En Proceso.
+
+Cuando aprueba una orden planeada le está diciendo al sistema que la orden de manufactura está lista para empezar su proceso, con la aprobación usted cambia el estado de la orden de Borrador a En Proceso.</entry><entry>true</entry><entry>Aprobación Orden Planeada</entry></row>
+<row><entry>53009</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Novedades de nómina permite ingresar los eventos que ocurrieron con los empleados</entry><entry> </entry><entry>true</entry><entry>Novedades de Nómina</entry></row>
+<row><entry>53010</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Seleccionar y generar entregas y facturas</entry><entry>Generar Entregas y Facturas a partir de órdenes.
+Seleccione las órdenes con las cuales desea generar entregas y facturas</entry><entry>true</entry><entry>Generar Entregas y Facturas por Selección</entry></row>
+<row><entry>53012</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Orden Distribución Recibo Materiales</entry><entry> </entry><entry>true</entry><entry>Orden Distribución Recibo Materiales</entry></row>
+<row><entry>53013</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Editor de Flujos de Trabajo de Manufactura</entry><entry>Edita el esquema gráfico de los flujos de trabajo de manufactura</entry><entry>true</entry><entry>Editor Flujo Trabajo Manufactura</entry></row>
+<row><entry>53017</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Muestra la relación de componentes padre con el producto ingresado.</entry><entry>Al seleccionar un producto mostrará la jerarquía de componentes para ese producto.
+
+Seleccionando "dónde es usado" mostrará las LDM que usan este producto.</entry><entry>true</entry><entry>Visor LDM</entry></row>
+<row><entry>200000</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Asistente de Configuración Inicial</entry></row>
+<row><entry>200001</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Reinicia Contraseña</entry><entry> </entry><entry>true</entry><entry>Reinicia Contraseña</entry></row>
+<row><entry>200002</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Asistente Reportes</entry><entry> </entry><entry>true</entry><entry>Asistente Reportes</entry></row>
+<row><entry>200005</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Editor de Pestañas</entry></row>
+<row><entry>200006</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Crear Estado Banco/Caja desde Lote</entry></row>
+<row><entry>200008</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Captura Parámetros Proceso</entry></row>
+<row><entry>119</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Visualizar os Indicadores de Desempenho</entry><entry>Visualizar todos os Indicadores de Desempenho e Metas</entry><entry>true</entry><entry>Indicadores de Desempenho</entry></row>
+<row><entry>120</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Gerenciamento de Produtos com Atributos em uma Grade de Tabela</entry><entry>Selecione um ou dois atributos de um Atributo de Produto e exiba/gerencie os produto em uma linha ou uma grade de tabela.</entry><entry>true</entry><entry>Grade de Atributo de Produto</entry></row>
+<row><entry>53003</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Show the detail of MRP calculation</entry><entry>Show the detail of MRP calculation</entry><entry>false</entry><entry>MRP Info</entry></row>
+<row><entry>53005</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>It shows graphically of the required and available time for each manufacturing resource.</entry><entry>It shows graphically of the required and available time for each manufacturing resource.</entry><entry>false</entry><entry>CRP Info</entry></row>
+<row><entry>53006</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>It shows graphically of the required and available time for each manufacturing resource.</entry><entry>It shows graphically of the required and available time for each manufacturing resource.</entry><entry>false</entry><entry>Resource Load View</entry></row>
+<row><entry>53008</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Generate Movement to a Order Distribution</entry><entry> </entry><entry>false</entry><entry>Generate Movement Manual</entry></row>
+<row><entry>53009</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Payroll Action Notice let entry the events that happend with any Employee</entry><entry> </entry><entry>false</entry><entry>Payroll Action Notice</entry></row>
+<row><entry>53010</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Selecionar e gerar expedições %26 faturas / notas fiscais</entry><entry>Gerar Expedições %26 Faturas / NF à partir de Pedidos.
+Selecione os pedidos para gerar as expedições %26 faturas / nf.</entry><entry>true</entry><entry>Gerar Expedições %26 Faturas / NF (manual)</entry></row>
+<row><entry>53012</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Material Receipt Distribution Order</entry><entry> </entry><entry>false</entry><entry>Material Receipt Distribution Order</entry></row>
+<row><entry>200000</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Assistente de Configuração</entry></row>
+<row><entry>101</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Carregar arquivos planos nas tabelas de importação</entry><entry>O Carregador de Arquivo de Importação analisa o conteúdo de um arquivo plano e o carrega nas tabelas de importação. Comentários começam com um '[' e terminam com um ']' e são ignorados;
+ exemplo: [Algum Título].</entry><entry>true</entry><entry>Carregador de Arquivo de Importação</entry></row>
+<row><entry>102</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Configuração Inicial da Empresa/Locador</entry><entry>Configure uma nova Empresa/Locatário do sistema</entry><entry>true</entry><entry>Configuração Inicial da Empresa</entry></row>
+<row><entry>107</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Seleção de Pagamento Manual</entry><entry>Selecione as Faturas de Fornecedor para pagamento. Se você não vir uma fatura, certifique-se que ela não esteja incluida em um Seleção de Pagamento diferente (nprocessed).</entry><entry>true</entry><entry>Seleção de Pagamento (manual)</entry></row>
+<row><entry>108</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Confrontar Pedidos de Compra, Recibos, Notas Fiscais de Fornecedores</entry><entry>Certifique-se que os Recibos e Faturas sejam processados. Se você deseja confrontar entregas parciais, Certifique-se que "Mesma Quantidade" não esteja selecionado.</entry><entry>true</entry><entry>Confrontando Pedido de Compra-Recibo-Fatura</entry></row>
+<row><entry>109</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Importar ou Exportar Traduções de Idiomas</entry><entry>Exportar/Importar Informações de Tradução de/para arquivos xml para tradução em uma ferramenta externa. Note que o Idioma TEM que ser um Idioma de Sistema liberado e verificado.</entry><entry>true</entry><entry>Importação/Exportação de Traduções</entry></row>
+<row><entry>110</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Selecionar e gerar remessas</entry><entry>Gerar Expedições a partir dos Pedidos. Selecione os pedidos para os quais devem ser geradas as expedições.</entry><entry>true</entry><entry>Gerar Remessas (manual)</entry></row>
+<row><entry>111</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Processar Declarações SQL</entry><entry>Processar Declarações SQL DDL</entry><entry>true</entry><entry>Processo SQL</entry></row>
+<row><entry>114</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Abrir (expandir) Lista de Materiais</entry><entry>Expandir a Lista de Materiais estendida em um Pedido, Fatura, etc.  Os documentos tem de estar em um estágio de rascunho.  Certifique-se que os itens incluídos na LDM estão na lista de preços do Pedido, Fatura, etc. já que de outro modo o preço será zero!</entry><entry>true</entry><entry>Abrir LDM</entry></row>
+<row><entry>118</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Visualizar automaticamente documentos arquivados</entry><entry>Dependendo do "Nível de Arquivamento Automático da Empresa" os documentos e relatórios são salvos e disponibilizados para visualização. No "Visualizador de Relatório" você pode arquivar manualmente documentos ou relatórios.  Você só pode visualizar arquivos, se você tiver acesso ao documento original.</entry><entry>true</entry><entry>Visualizador de Arquivos</entry></row>
+<row><entry>53001</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Shows in two different panels the parent-component relationship for the product entered in the Product field.</entry><entry>The BOM %26 Formula Review option menu shows in two different panels the parent-component relationship for the product entered in the Product field.
+
+You need to introduce the parent product you want to see its components then click the OK button, next drag the left margin of the panel to the right and you will have the two panels.
+
+When you need to consult an implosion, click the implosion check box and enter the component you wish to consult and tick the Implosion check box.
+
+You need to introduce the parent product you want to see its components then click the OK button, next drag the left margin of the panel to the right and you will have the two panels.
+
+The left panel shows the BOM hierarchies in a tree form. The right panel shows the information connected with the BOM for every product in it</entry><entry>false</entry><entry>BOM %26 Formula Info</entry></row>
+<row><entry>200001</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Trocar Senha</entry><entry> </entry><entry>true</entry><entry>Alterar Senha</entry></row>
+<row><entry>200002</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Assistente de Relatório</entry><entry> </entry><entry>true</entry><entry>Assistente de Relatório</entry></row>
+<row><entry>200005</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Editor de Abas</entry></row>
+<row><entry>200006</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Criar Extrato Bancário à Partir do Lote</entry></row>
+<row><entry>200008</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>Captured Process Parameter</entry></row>
+<row><entry>1000000</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Geração de Boletos</entry></row>
+<row><entry>1500025</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Gerar Embarque a partir da Expedição</entry><entry> </entry><entry>true</entry><entry>Gerar Embarque</entry></row>
+<row><entry>1500027</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Apontamento de Embarque</entry><entry> </entry><entry>true</entry><entry>Apontamento de Embarque</entry></row>
+<row><entry>1500032</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Importar XML de NFe</entry><entry>Cria um Pedido de Compra com base em um XML de NFe</entry><entry>false</entry><entry>Importar XML de NFe</entry></row>
+<row><entry>1000000</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>Generate Bills</entry></row>
+<row><entry>1500025</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Generate  Packing-List from Shipment</entry><entry> </entry><entry>false</entry><entry>Generate Packing-List</entry></row>
+<row><entry>1500027</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Packing-List Note</entry><entry> </entry><entry>false</entry><entry>Packing-List Note</entry></row>
+<row><entry>1500032</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Importar XML de NFe</entry><entry>Cria um Pedido de Compra com base em um XML de NFe</entry><entry>false</entry><entry>Importar XML de NFe</entry></row>
+<row><entry>1500033</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Product Disassembling</entry><entry> </entry><entry>false</entry><entry>Product Disassembling</entry></row>
+<row><entry>100</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Seleccionar y Generar Facturas</entry><entry>Generar Facturas a partir de Órdenes</entry><entry>true</entry><entry>Generar Facturas por Selección</entry></row>
+<row><entry>101</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Cargar archivos planos en las tablas de importación</entry><entry>El Cargador de Archivos parcela el contenido de un archivo plano y lo importa en tablas. Los comentarios comienzan con un '[' y terminan con un ']' y son ignorados;
+ ejemplo: [Un Encabezado].</entry><entry>true</entry><entry>Cargador de Archivos</entry></row>
+<row><entry>112</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Mezclar de Entidad Origen a Entidad Destino - Borrar Desde</entry><entry>&lt;
+i&gt;
+Peligroso - Por favor esté bien consciente de lo que está haciendo!&lt;
+/i&gt;
+
+Todos los registros relacionados con la entidad origen (ej. Cliente A) son cambiados hacia la entidad destino (ej. Cliente B). 
+&lt;
+p&gt;
+&lt;
+b&gt;
+No hay forma de deshacer esta operación! Por favor haga una copia de respaldo&lt;
+/b&gt;
+ Es importante anotar que puede estar cambiando datos históricos (ej. facturas, etc.)!
+&lt;
+p&gt;
+&lt;
+b&gt;
+Efectos Secundarios:&lt;
+/b&gt;
+ combinándose los productos es problable dañar costos del producto: La combinación de terceros puede dar lugar a un saldo incorrecto del tercero.</entry><entry>true</entry><entry>Mezclar Entidades</entry></row>
+<row><entry>53001</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Muestra en dos paneles la relación componente padre para el producto seleccionado.</entry><entry>La ventana Info LDM y Formula muestra en dos páneles diferentes la relación de padre-componentes para el producto que se ingresa en el campo de Producto.
+
+Necesita introducir el producto padre para ver sus componentes, luego dar click en el botón OK, luego mueva el márgen izquierdo del panel a la derecha y usted tendrá los dos páneles.
+
+Cuando necesite consultar una implosión, chequee el flag Implosión e ingrese el componente que desea consultar.
+
+El pánel de la izquierda muestra las jerarquías de la LDM en forma de árbol.  El pánel de la derecha muestra la información conectada con la LDM para cada producto en ella</entry><entry>true</entry><entry>Info LDM y Formula</entry></row>
+<row><entry>53002</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>This form let create a product configure with multy level using options and variants</entry><entry>A configurable Bill of Material (CBOM) is used by industries that have multiple options and highly configurable products.
+
+The CBOM is used to dynamically create "end-items" that a company sells. The benefit of using CBOM structure is it reduces the work-effort needed to maintain product structures. The configurable BOM is most frequently driven by "configurator" software, however it can be enabled manually (manual maintenance is infrequent because its unwieldy to manage the number of permutaions and combinations of possible configurations) The development of the CBOM is dependent on having a Modular BOM structure in place (see Modular BOM). The Modular BOM structure provides the assemblies/sub-systems that can be selected to "configure" an end-item.</entry><entry>false</entry><entry>Product Configuration BOM</entry></row>
+<row><entry>53013</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Edit Manufacturing Workflows</entry><entry>Edit the graphical layout of manufacturing workflows</entry><entry>false</entry><entry>Manufacturing Workflow Editor</entry></row>
+<row><entry>53017</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Mostra a lista de materiais de um produto</entry><entry>Ao selecionar um produto, irá exibir a hierarquia de componentes para o mesmo. Se selecionar "One é utilizado", irá mostrar as LDM que usam este produto.</entry><entry>true</entry><entry>Visualização de LdM</entry></row>
+<row><entry>53007</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Recibo Orden y Emisión</entry><entry>La forma muestra en la parte superior información estática acerca del producto y el recurso de manufactura donde debe ser hecho, también muestra un resumen de las cantidades a ser controladas en la Orden de Manufactura tal como las cantidades original y despachadas y la cantidad a despachar para la OM a la fecha.
+
+Si el proceso de producción requiere producción en lote, entonces las cantidades de lote muestran el número de lotes que el control de piso necesita hacer y el tamaño de la cantidad lote contiene el tamaño de cada lote a producir.
+
+Si desea emitir los componentes de la OM antes de recibir el producto terminado debe chequear el campo Es Entrega, este caso es recomendado cuando tiene un lead-time largo a mediano y quiere tener las cantidades de inventario tan confiables como sea posible a cada momento.
+
+Si desea lead-times pequeños y quiere que economicar tiempo de operario debe chequear el campo Es Flujo Inverso, y recibirá el producto terminado al mismo tiempo que emite automáticamente los componentes
+
+El campo Grupo de Flujo Inverso es utilizado cuando desa emitir solo componentes pertenecientes a este grupo.  (Esta caracteriística puede no estar incluida en la versión actual).
+
+En la parte baja de la ventana encontrará la lista de cada componente de la OM, este puede ser modificado de acuerdo con los productos y cantidades reales dadas al control de piso.
+
+Las cantidades a ser emitidas son seleccionadas con la bandera en la primera columna de la lista de componentes.  Si la cantidad actual es diferente de la cantidad estándar mostrada en la columna Cantidad a despachar, debe editar este campo para ingresar la cantidad correcta a ser emitida.
+
+Finalmente una caja de mensaje le preguntará si desea cerrar el documento de OM, debe oprimir el botón OK si esta OM no tiene más transacciones y debe ser cerrada.</entry><entry>true</entry><entry>Recibo Orden y Emisión</entry></row>
+<row><entry>103</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Transações de Materiais</entry><entry> </entry><entry>true</entry><entry>Transações de Materiais</entry></row>
+<row><entry>112</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Fundir "de Entidade" para "para Entidade" - Apagar "de"</entry><entry>&lt;
+i&gt;
+Perigoso - Tenha certeza do que você está fazendo!&lt;
+/i&gt;
+ Todas as instâncias da entidade de origem (ex. Cliente A) são alteradas para a entidade de destino (ex. Cliente B). A entidade de origem (ex. Cliente A) é apagada. &lt;
+p&gt;
+&lt;
+b&gt;
+ NÃO é possível desfazer, nem haverá registro de rastreamento !  Por favor, faça um backup antes&lt;
+/b&gt;
+ Por favor, esteja ciente que você pode estar alterando registros históricos (ex. faturas, etc.) ! &lt;
+/p&gt;
+ &lt;
+p&gt;
+&lt;
+b&gt;
+Efeitos colaterais:&lt;
+/b&gt;
+ Fundir Produtos poderá distorcer custos de produtos;
+ Fundir Parceiros de Negócios poderá resultar na abertura incorreta do balanço de um item. Confira com o suporte para remediar. &lt;
+p&gt;
+&lt;
+b&gt;
+Restrições:&lt;
+/b&gt;
+ Conflitos de Contabilidade e Estoque não estão resolvidos nesta versão.
+</entry><entry>true</entry><entry>Fundir Entidades</entry></row>
+<row><entry>113</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Terminal de Ponto de Vendas</entry><entry>Digitar Transações por meio de um Terminal de PDV.  Leituras de cartões de crédito são reconhecidas automaticamente.</entry><entry>true</entry><entry>PDV</entry></row>
+<row><entry>53004</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>A planned manufacturing order is a manufacturing order suggested by the MRP process and contains its quantity and its release and promise dates.</entry><entry>A planned manufacturing order is a manufacturing order suggested by the MRP process and contains its quantity and its release and promise dates. when you approve a manufacturing planned order you convert it in a manufacturing order with the status of In Process.
+
+When you approve a planned order you are telling the system that the manufacturing order is ready to start its process with the approval you change the order status from Draft to In Process.</entry><entry>false</entry><entry>Planned Order Approval </entry></row>
+<row><entry>53007</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Order Receipt %26 Issue</entry><entry>The form shows at the upper side static information around the product and the manufacturing resource where it has to be made, it also shows a summary of the quantities to be controlled in the MO such as the Original and delivered quantities and the Quantity to deliver for the MO up to date.
+
+If the production process requires production in batch, then the Qty Batchs shows the Number of batches the shop floor needs to do and the Qty Batch Size contains the size of every batch to be produced.
+
+
+If you want to issue the MO components before you receive the finished product you should tick the checkbox Is Delivery, this case is recommended when you have a long to medium lead time and you want to have the inventory quantities as reliable as possible at every moment.
+
+If you have small lead time and you wish to save clerk time then you must tick Is Backflush checkbox and you will receive the finished product at the same time you issue automatically the components
+
+The Backflush Group field is used when you want to issue just components belonging to this group. (This characteristic could not be included in the current version).
+
+At the lower part of the window you can find the list of every MO component, this can be modified according with the real products and quantities given to the shop floor.
+
+The quantities to be issued are selected with the checkbox at the first column of the list of components. If the actual quantity is different from the standard quantity showed in the column Qty to deliver you should edit this field to enter the right quantity to be issued.
+
+Finally a message box asks if you want to close the OM document, you should click the ok button if this MO does not have any more transactions and has to be closed.
+
+</entry><entry>false</entry><entry>Order Receipt %26 Issue</entry></row>
+<row><entry>1500041</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>Label Generator</entry></row>
+<row><entry>1500044</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>Cadastro de Parceiro por CNPJ</entry></row>
+<row><entry>53021</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>VMPGenerateOT</entry></row>
+<row><entry>53021</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Aprovação de Manutenção Preventiva</entry></row>
+<row><entry>53023</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>true</entry><entry>Aprovação de Requisição de OT</entry></row>
+<row><entry>1500048</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>Form personalizado que cria pedidos de compra com base em XML importado</entry><entry> </entry><entry>false</entry><entry>PedidoCompraXML</entry></row>
+<row><entry>1500048</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>Form personalizado que cria pedidos de compra com base em XML importado</entry><entry> </entry><entry>true</entry><entry>Importar Pedido por XML</entry></row></tbody>
+</tgroup>
+</table>

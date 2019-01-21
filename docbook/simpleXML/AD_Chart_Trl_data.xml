@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Gráfico **</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Gráfico</entry><entry>Idioma</entry><entry>Descrição</entry><entry>Domain Label</entry><entry>Traduzida</entry><entry>Nome</entry><entry>Range Label</entry></row>
+<row><entry>1500013</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>false</entry><entry>Estoque Por Categoria</entry><entry> </entry></row>
+<row><entry>50000</entry><entry>es_CO</entry><entry> </entry><entry>Etapa de Ventas</entry><entry>true</entry><entry>Mi Flujo de Ventas</entry><entry>Valor</entry></row>
+<row><entry>50001</entry><entry>es_CO</entry><entry> </entry><entry>Oportunidad</entry><entry>true</entry><entry>Mis Oportunidades por Campaña</entry><entry>Campaña</entry></row>
+<row><entry>50002</entry><entry>es_CO</entry><entry> </entry><entry>Mes</entry><entry>true</entry><entry>Ventas de este año</entry><entry>Valor</entry></row>
+<row><entry>50003</entry><entry>es_CO</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Mis Solicitudes Abiertas</entry><entry> </entry></row>
+<row><entry>1500044</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Fluxo de Caixa 30 Dias</entry><entry> </entry></row>
+<row><entry>1500045</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Vendas por Estado x Cidade</entry><entry> </entry></row>
+<row><entry>1500046</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Analise de Curvatura de Fluxo </entry><entry> </entry></row>
+<row><entry>1500042</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Clientes por Estado</entry><entry> </entry></row>
+<row><entry>1500039</entry><entry>es_CO</entry><entry>Top 5 por Categoria de Produto</entry><entry> </entry><entry>false</entry><entry>Top 5 por Categoria de Produto</entry><entry> </entry></row>
+<row><entry>1500047</entry><entry>pt_BR</entry><entry> </entry><entry>Domain</entry><entry>true</entry><entry>Maiores Pedidos Hora x Dia</entry><entry>Range</entry></row>
+<row><entry>1500040</entry><entry>es_CO</entry><entry>3 - Ranking de Vendedores (3D Bar Chart)</entry><entry> </entry><entry>true</entry><entry>3 - Ranking de Vendedores (3D Bar Chart)</entry><entry> </entry></row>
+<row><entry>1500042</entry><entry>es_CO</entry><entry>2 - Clientes por Estado (Ring Chart)</entry><entry> </entry><entry>false</entry><entry>2 - Clientes por Estado (Ring Chart)</entry><entry> </entry></row>
+<row><entry>1500039</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Top 5 por Categoria de Produto</entry><entry> </entry></row>
+<row><entry>1500043</entry><entry>es_CO</entry><entry>4 - Vendas Por Categoria 30 dias (Radar)</entry><entry> </entry><entry>false</entry><entry>4 - Vendas Por Categoria 30 dias (Radar)</entry><entry> </entry></row>
+<row><entry>1500044</entry><entry>es_CO</entry><entry>5 - Fluxo de Caixa 30 Dias (Line)</entry><entry> </entry><entry>false</entry><entry>5 - Fluxo de Caixa 30 Dias (Line)</entry><entry> </entry></row>
+<row><entry>1500045</entry><entry>es_CO</entry><entry>6 - Vendas por Estado x Cidade (Bubble)</entry><entry> </entry><entry>false</entry><entry>6 - Vendas por Estado x Cidade (Bubble)</entry><entry> </entry></row>
+<row><entry>1500046</entry><entry>es_CO</entry><entry>8 - Analise de Curvatura de Fluxo </entry><entry> </entry><entry>false</entry><entry>8 - Analise de Curvatura de Fluxo </entry><entry> </entry></row>
+<row><entry>1500047</entry><entry>es_CO</entry><entry>9 - Maiores Pedidos Hora x Dia(Bubble)</entry><entry>Domain</entry><entry>false</entry><entry>9 - Maiores Pedidos Hora x Dia(Bubble)</entry><entry>Range</entry></row>
+<row><entry>1500040</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Ranking de Vendedores</entry><entry> </entry></row>
+<row><entry>1500043</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>true</entry><entry>Vendas Por Categoria 30 dias</entry><entry> </entry></row>
+<row><entry>50000</entry><entry>pt_BR</entry><entry> </entry><entry>Sales Stage</entry><entry>false</entry><entry>My Sales Pipeline</entry><entry>Value</entry></row>
+<row><entry>50001</entry><entry>pt_BR</entry><entry> </entry><entry>Opportunity</entry><entry>false</entry><entry>My Opportunities by Campaign</entry><entry>Campaign</entry></row>
+<row><entry>50002</entry><entry>pt_BR</entry><entry> </entry><entry>Month</entry><entry>false</entry><entry>Sales YTD</entry><entry>Value</entry></row>
+<row><entry>50003</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>false</entry><entry>My Open Requests</entry><entry> </entry></row>
+<row><entry>1500013</entry><entry>pt_BR</entry><entry> </entry><entry> </entry><entry>false</entry><entry>Estoque Por Categoria</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

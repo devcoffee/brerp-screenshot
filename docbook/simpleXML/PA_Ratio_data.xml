@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Razão</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Esquema Contábil</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Nome</entry><entry>Razão</entry></row>
+<row><entry>101</entry><entry> </entry><entry> </entry><entry>Fxed Assets</entry><entry>100</entry></row></tbody>
+</tgroup>
+</table>

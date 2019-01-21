@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>COF_Nve_Product</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>COF_Nve</entry><entry>COF_Nve_Product</entry><entry>Descrição</entry><entry>NCM</entry><entry>Produto</entry></row>
+<row><entry>5000000</entry><entry>5000000</entry><entry> </entry><entry>1007094</entry><entry>5000006</entry></row>
+<row><entry>5000001</entry><entry>5000001</entry><entry> </entry><entry>1007094</entry><entry>5000006</entry></row>
+<row><entry>5000002</entry><entry>5000002</entry><entry> </entry><entry>1007094</entry><entry>5000006</entry></row></tbody>
+</tgroup>
+</table>

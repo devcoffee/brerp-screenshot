@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Imprimir Etiquetas da NFe (Volumes)</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'> 
+
+ <tbody><row><entry>Número do Documento</entry><entry>Data e Hora de Emissão</entry><entry>Parceiro de Negócios </entry><entry>Qtde. vol. transp.</entry><entry>Etiqueta Impressa</entry></row>
+<row><entry>1</entry><entry>2016-07-05 12:33:41.973</entry><entry>1000006</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>2</entry><entry>2016-07-05 12:41:25.763</entry><entry>1000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999020</entry><entry>2018-01-06 00:00:00</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999320</entry><entry>2018-01-08 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5000</entry><entry>2018-01-08 17:34:47.359</entry><entry>5000001</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5001</entry><entry>2018-01-08 17:49:28.931</entry><entry>5000001</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999322</entry><entry>2018-01-08 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1000</entry><entry>2018-01-09 10:41:30.544</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999324</entry><entry>2018-01-09 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1002</entry><entry>2018-01-09 17:03:29.935</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1003</entry><entry>2018-01-09 17:13:31.498</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999328</entry><entry>2018-01-10 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999329</entry><entry>2018-01-10 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999330</entry><entry>2018-01-10 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999331</entry><entry>2018-01-10 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999334</entry><entry>2018-01-10 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999335</entry><entry>2018-01-10 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999340</entry><entry>2018-01-10 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999341</entry><entry>2018-01-10 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>222222222</entry><entry>2018-01-10 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>0</entry><entry>2018-01-10 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1004</entry><entry>2018-01-10 18:56:20.668</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1005</entry><entry>2018-01-10 19:07:50.199</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1008</entry><entry>2018-01-11 09:32:03.865</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1009</entry><entry>2018-01-11 09:52:23.103</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1999500</entry><entry>2018-01-11 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5002</entry><entry>2018-01-11 10:35:47.748</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5003</entry><entry>2018-01-11 13:53:25.379</entry><entry>5000003</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5005</entry><entry>2018-01-11 14:51:57.536</entry><entry>5000003</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5006</entry><entry>2018-01-11 15:06:12.287</entry><entry>5000006</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5011</entry><entry>2018-01-11 16:28:27.522</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5013</entry><entry>2018-01-11 16:53:38.088</entry><entry>5000006</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5014</entry><entry>2018-01-11 17:15:52.436</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5015</entry><entry>2018-01-11 17:24:41.567</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5018</entry><entry>2018-01-11 17:58:35.795</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5019</entry><entry>2018-01-11 18:51:27.797</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5020</entry><entry>2018-01-11 19:04:04.161</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5021</entry><entry>2018-01-12 09:16:47.257</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5022</entry><entry>2018-01-12 09:38:35.32</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5023</entry><entry>2018-01-12 09:52:45.257</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>60</entry><entry>2018-01-12 00:00:00</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>62</entry><entry>2018-01-12 00:00:00</entry><entry>5000007</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5024</entry><entry>2018-01-12 10:37:08.917</entry><entry>5000017</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>39559</entry><entry>2018-01-12 00:00:00</entry><entry>1000007</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>39560</entry><entry>2018-01-12 00:00:00</entry><entry>1000007</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5025</entry><entry>2018-01-12 10:53:33.157</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5026</entry><entry>2018-01-12 11:09:07.137</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5026</entry><entry>2018-01-12 11:47:08.92</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5028</entry><entry>2018-01-12 11:52:04.69</entry><entry>5000019</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5028</entry><entry>2018-01-12 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5029</entry><entry>2018-01-12 12:06:40.59</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5027</entry><entry>2018-01-12 12:09:11.907</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1011</entry><entry>2018-01-12 12:39:12.602</entry><entry>5000017</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5029</entry><entry>2018-01-12 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10000</entry><entry>2018-01-12 14:29:01.797</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5028</entry><entry>2018-01-12 14:33:52.396</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10001</entry><entry>2018-01-12 15:13:17.447</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>200</entry><entry>2018-01-13 17:06:00.235</entry><entry>1000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10002</entry><entry>2018-01-12 15:47:30.933</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5032</entry><entry>2018-01-12 15:48:32.184</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5030</entry><entry>2018-01-12 15:56:04.284</entry><entry>5000017</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5034</entry><entry>2018-01-12 16:06:30.843</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1013</entry><entry>2018-01-12 16:25:35.036</entry><entry>5000017</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5035</entry><entry>2018-01-12 16:36:19.797</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5036</entry><entry>2018-01-12 16:39:11.843</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5037</entry><entry>2018-01-12 16:43:19.121</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5031</entry><entry>2018-01-12 16:48:21.339</entry><entry>5000017</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5038</entry><entry>2018-01-12 17:01:59.658</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5039</entry><entry>2018-01-12 17:15:28.057</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10005</entry><entry>2018-01-12 17:28:40.501</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5032</entry><entry>2018-01-12 17:30:39.655</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5040</entry><entry>2018-01-12 17:45:00.229</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5033</entry><entry>2018-01-12 18:46:30.342</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5034</entry><entry>2018-01-12 18:47:30.953</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5040</entry><entry>2018-01-15 14:03:05.35</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1014</entry><entry>2018-01-15 14:10:06.566</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5041</entry><entry>2018-01-15 14:25:39.454</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5044</entry><entry>2018-01-15 14:45:40.697</entry><entry>5000019</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5045</entry><entry>2018-01-17 08:33:10.875</entry><entry>5000019</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5046</entry><entry>2018-01-17 08:50:14.494</entry><entry>5000019</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5047</entry><entry>2018-01-17 08:54:16.982</entry><entry>5000019</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5048</entry><entry>2018-01-22 09:33:28.791</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5049</entry><entry>2018-01-22 09:55:45.736</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5050</entry><entry>2018-01-22 11:40:21.366</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>222222222</entry><entry>2018-01-23 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5051</entry><entry>2018-01-23 17:18:43.337</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5052</entry><entry>2018-01-24 11:31:59.66</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5053</entry><entry>2018-01-24 11:46:18.516</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5054</entry><entry>2018-01-24 11:56:28.657</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5055</entry><entry>2018-01-24 11:58:04.385</entry><entry>5000008</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>202</entry><entry>2018-01-24 14:29:50.797</entry><entry>1000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>203</entry><entry>2018-01-24 14:33:00.915</entry><entry>1000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>204</entry><entry>2018-01-24 14:40:07.729</entry><entry>1000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>206</entry><entry>2018-01-24 14:54:38.76</entry><entry>5000026</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>120</entry><entry>2018-01-24 15:35:00.494</entry><entry>1000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>121</entry><entry>2018-01-24 17:55:00.762</entry><entry>1000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>122</entry><entry>2018-01-24 18:11:39.431</entry><entry>5000026</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5057</entry><entry>2018-01-24 19:09:21.841</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5058</entry><entry>2018-01-24 19:20:13.424</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5059</entry><entry>2018-01-25 09:40:11.34</entry><entry>5000006</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>123</entry><entry>2018-01-25 10:10:38.435</entry><entry>5000026</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5060</entry><entry>2018-01-25 14:49:57.411</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5061</entry><entry>2018-01-25 15:08:03.946</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5062</entry><entry>2018-01-25 17:23:43.783</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1000</entry><entry>2018-01-26 15:03:34.232</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1001</entry><entry>2018-01-26 15:25:07.134</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5063</entry><entry>2018-01-30 10:24:44.393</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5064</entry><entry>2018-01-30 10:35:24.193</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5065</entry><entry>2018-02-01 13:45:09.909</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5066</entry><entry>2018-02-01 13:54:16.535</entry><entry>1000013</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5067</entry><entry>2018-02-01 15:07:23.437</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5068</entry><entry>2018-02-01 15:21:00.207</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5069</entry><entry>2018-02-01 15:28:22.959</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5070</entry><entry>2018-02-01 15:48:44.154</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5045</entry><entry>2018-02-01 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5046</entry><entry>2018-02-01 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5047</entry><entry>2018-02-01 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5055</entry><entry>2018-02-01 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5057</entry><entry>2018-02-02 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5058</entry><entry>2018-02-02 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5060</entry><entry>2018-02-02 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5063</entry><entry>2018-02-02 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5064</entry><entry>2018-02-02 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5065</entry><entry>2018-02-02 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5071</entry><entry>2018-02-02 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5078</entry><entry>2018-02-02 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5080</entry><entry>2018-02-02 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10007</entry><entry>2018-02-09 10:06:10.028</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5071</entry><entry>2018-02-12 13:31:53.808</entry><entry>5000006</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5090</entry><entry>2018-02-12 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5091</entry><entry>2018-02-12 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5050</entry><entry>2018-02-12 00:00:00</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5055</entry><entry>2018-02-12 00:00:00</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>16226</entry><entry>2018-02-12 00:00:00</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5072</entry><entry>2018-02-12 14:42:03.766</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5073</entry><entry>2018-02-12 15:06:49.689</entry><entry>5000019</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>207</entry><entry>2018-02-12 15:06:51.568</entry><entry>1000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5074</entry><entry>2018-02-14 09:14:46.054</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5075</entry><entry>2018-02-14 09:25:25.719</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5076</entry><entry>2018-02-14 09:36:56.869</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5077</entry><entry>2018-02-14 09:51:51.891</entry><entry>5000019</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10009</entry><entry>2018-02-14 10:12:15.191</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5100</entry><entry>2018-02-14 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5078</entry><entry>2018-02-14 11:05:05.142</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1002</entry><entry>2018-02-14 11:28:53.92</entry><entry>5000019</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10010</entry><entry>2018-02-14 11:42:18.038</entry><entry>5000019</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>16230</entry><entry>2018-02-14 00:00:00</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10012</entry><entry>2018-02-14 14:08:54.744</entry><entry>5000026</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5079</entry><entry>2018-02-14 14:18:50.976</entry><entry>5000019</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10013</entry><entry>2018-02-14 14:20:54.436</entry><entry>5000026</entry><entry>20</entry><entry>N</entry>
+</row>
+<row><entry>10014</entry><entry>2018-02-14 14:28:43.304</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5080</entry><entry>2018-02-14 14:34:41.023</entry><entry>5000018</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10015</entry><entry>2018-02-14 14:41:23.49</entry><entry>5000026</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5081</entry><entry>2018-02-15 10:09:12.69</entry><entry>5000019</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5082</entry><entry>2018-02-15 10:42:53.843</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5083</entry><entry>2018-02-15 11:02:05.537</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5159</entry><entry>2018-02-15 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5167</entry><entry>2018-02-15 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5084</entry><entry>2018-02-15 16:20:51.088</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5199</entry><entry>2018-02-15 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5198</entry><entry>2018-02-15 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5000</entry><entry>2018-02-16 09:02:38.874</entry><entry>5000026</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5261</entry><entry>2018-02-17 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5263</entry><entry>2018-02-17 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5600</entry><entry>2018-02-19 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5077</entry><entry>2018-02-23 00:00:00</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5085</entry><entry>2018-02-23 11:54:23.963</entry><entry>5000005</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10016</entry><entry>2018-02-23 14:13:59.339</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5086</entry><entry>2018-02-23 14:19:38.964</entry><entry>5000006</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10017</entry><entry>2018-02-24 10:18:57.143</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10018</entry><entry>2018-02-24 10:25:18.241</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5087</entry><entry>2018-02-28 14:37:02.607</entry><entry>5000002</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5088</entry><entry>2018-02-28 17:12:31.946</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5089</entry><entry>2018-02-28 17:20:37.638</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5090</entry><entry>2018-03-01 10:43:14.264</entry><entry>5000006</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>10019</entry><entry>2018-03-01 22:48:18.75</entry><entry>5000000</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>1645</entry><entry>2018-03-02 00:00:00</entry><entry>5000030</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5091</entry><entry>2018-03-02 11:11:41.589</entry><entry>5000030</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5092</entry><entry>2018-03-02 11:27:54.801</entry><entry>5000030</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>208</entry><entry>2018-03-02 13:58:50.6</entry><entry>5000030</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5093</entry><entry>2018-03-02 14:47:49.804</entry><entry>5000030</entry><entry>0</entry><entry>N</entry>
+</row>
+<row><entry>5094</entry><entry>2018-03-02 14:57:25.282</entry><entry>5000030</entry><entry>0</entry><entry>N</entry>
+</row></tbody>
+</tgroup>
+</table>

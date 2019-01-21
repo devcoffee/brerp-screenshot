@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Programação de Pagamentos</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Condição de Pagamento</entry><entry>Programação de Pagamentos</entry><entry>Desconto %</entry><entry>Dias de Desconto</entry><entry>Dias de Carência</entry><entry>Válido</entry><entry>Dia Líquido</entry><entry>Dias Líquidos</entry><entry>Porcentagem</entry></row>
+<row><entry>108</entry><entry>100</entry><entry>0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>0</entry><entry>50</entry></row>
+<row><entry>108</entry><entry>101</entry><entry>0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>30</entry><entry>50</entry></row>
+<row><entry>1000001</entry><entry>1000000</entry><entry>0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>30</entry><entry>50</entry></row>
+<row><entry>1000001</entry><entry>1000001</entry><entry>0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>60</entry><entry>50</entry></row>
+<row><entry>5000000</entry><entry>5000000</entry><entry>0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>30</entry><entry>100</entry></row>
+<row><entry>5000001</entry><entry>5000001</entry><entry>0.0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>30</entry><entry>10</entry></row>
+<row><entry>5000001</entry><entry>5000002</entry><entry>0.0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>60</entry><entry>10</entry></row>
+<row><entry>5000001</entry><entry>5000003</entry><entry>0.0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>90</entry><entry>10</entry></row>
+<row><entry>5000001</entry><entry>5000004</entry><entry>0.0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>120</entry><entry>10</entry></row>
+<row><entry>5000001</entry><entry>5000005</entry><entry>0.0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>150</entry><entry>10</entry></row>
+<row><entry>5000001</entry><entry>5000006</entry><entry>0.0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>180</entry><entry>10</entry></row>
+<row><entry>5000001</entry><entry>5000007</entry><entry>0.0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>210</entry><entry>10</entry></row>
+<row><entry>5000001</entry><entry>5000008</entry><entry>0.0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>240</entry><entry>10</entry></row>
+<row><entry>5000001</entry><entry>5000009</entry><entry>0.0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>270</entry><entry>10</entry></row>
+<row><entry>5000001</entry><entry>5000010</entry><entry>0.0</entry><entry>0</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>300</entry><entry>10</entry></row>
+<row><entry>5000002</entry><entry>5000011</entry><entry>0</entry><entry>25</entry><entry>0</entry><entry>true</entry><entry> </entry><entry>25</entry><entry>100.0</entry></row></tbody>
+</tgroup>
+</table>

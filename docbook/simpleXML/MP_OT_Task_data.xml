@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Tarefa da OT</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>UDM</entry><entry>Descrição</entry><entry>Duração</entry><entry>Cronograma de Manutenção Preventiva</entry><entry>Ordem de Trabalho</entry><entry>Tarefa da OT</entry><entry>Processado</entry><entry>Seqüência</entry><entry>Estado</entry></row>
+<row><entry>100</entry><entry>dddd</entry><entry>0</entry><entry> </entry><entry>5000000</entry><entry>5000000</entry><entry>false</entry><entry>10</entry><entry>NS</entry></row>
+<row><entry>100</entry><entry> </entry><entry>0</entry><entry> </entry><entry>5000017</entry><entry>5000001</entry><entry>false</entry><entry>10</entry><entry>NS</entry></row>
+<row><entry>100</entry><entry> </entry><entry>3</entry><entry> </entry><entry>5000018</entry><entry>5000002</entry><entry>true</entry><entry>10</entry><entry>CO</entry></row></tbody>
+</tgroup>
+</table>

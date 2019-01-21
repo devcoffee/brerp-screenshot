@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Fórmula</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Descrição</entry><entry>Preço Inclui Imposto</entry><entry>Fórmula</entry><entry>Fórmula</entry><entry>Nome</entry></row>
+<row><entry>Valor da Mercadoria</entry><entry> </entry><entry>(AMT)</entry><entry>1000018</entry><entry>Valor Mercadoria</entry></row>
+<row><entry>Báse de Cálculo - ICMSST</entry><entry> </entry><entry>(1*(1+IPI))*(1+ICMSSTMVA)</entry><entry>1000019</entry><entry>Báse de Cálculo - ICMSST</entry></row>
+<row><entry>Valor Mercadoria + Frete</entry><entry> </entry><entry>((AMT + FREIGHT + OTHER + INSURANCE))</entry><entry>1000014</entry><entry>Valor Mercadoria + Frete</entry></row>
+<row><entry>Base de Calculo ICMS Consumidor Final</entry><entry> </entry><entry>((IPI * (1-IPIREDBC)) * (AMT+FREIGHT+OTHER+INSURANCE) ) + (AMT+FREIGHT+OTHER+INSURANCE)</entry><entry>1000020</entry><entry>Base de Calculo ICMS Consumidor Final</entry></row>
+<row><entry>(ICMSDIFAL-ICMSPROD)/ICMSDIFAL</entry><entry>false</entry><entry>(ICMSDIFAL-ICMSPROD)/ICMSDIFAL</entry><entry>5000000</entry><entry>Fator Diferencial</entry></row>
+<row><entry>Base Zero (Exportação e Export/Exp Indi)</entry><entry> </entry><entry>(0.0)</entry><entry>1000017</entry><entry>Base Zero (Exportação e Export/Exp Indi)</entry></row>
+<row><entry>IPI Importação</entry><entry>false</entry><entry>((1-IPIREDBC) * ((AMT+FREIGHT+INSURANCE)+ ((AMT+FREIGHT+INSURANCE)*II)) )
+</entry><entry>5000002</entry><entry>IPI Importação</entry></row>
+<row><entry>Icms Iportação</entry><entry>false</entry><entry>((((AMT+FREIGHT+INSURANCE)+((AMT+FREIGHT+INSURANCE)*II) + ((((1-IPIREDBC)*(AMT+FREIGHT+INSURANCE))+((AMT+FREIGHT+INSURANCE)*II))*IPI)+	  ((AMT+FREIGHT+INSURANCE)*PISPROD)+	  ( (AMT+FREIGHT+INSURANCE)*COFINSPROD))+ICMSPRODSISCOMEX)/(1-ICMSPROD))</entry><entry>5000001</entry><entry>Icms Importacao</entry></row>
+<row><entry>PISCOFINSIMPORT</entry><entry>false</entry><entry>(AMT+FREIGHT+INSURANCE )</entry><entry>5000004</entry><entry>PISCOFINSIMPORT</entry></row>
+<row><entry>FORMII</entry><entry>false</entry><entry>(AMT+FREIGHT+INSURANCE)</entry><entry>5000003</entry><entry>FORMII</entry></row></tbody>
+</tgroup>
+</table>

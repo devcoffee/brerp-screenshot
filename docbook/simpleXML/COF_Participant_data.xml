@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>COF_Participant_ID</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Parceiro de Negócios </entry><entry>Cod. CVM</entry><entry>CRC</entry><entry>Data Vencimento</entry><entry>Auditor</entry><entry>Participante</entry><entry>COF_Participant_ID</entry><entry>Qualificação do Assinante</entry><entry>UF CRC</entry><entry>Tipo da Relação</entry><entry>Número Sequencial do CRC</entry><entry>Período (Ano Fiscal)</entry></row>
+<row><entry>5000001</entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>true</entry><entry>5000000</entry><entry>203</entry><entry> </entry><entry> </entry><entry> </entry><entry>5000024</entry></row>
+<row><entry>1000002</entry><entry> </entry><entry>SP-000032/O</entry><entry>2019-12-31 00:00:00.0</entry><entry>false</entry><entry>true</entry><entry>5000001</entry><entry>900</entry><entry>465</entry><entry> </entry><entry>123</entry><entry>5000024</entry></row></tbody>
+</tgroup>
+</table>

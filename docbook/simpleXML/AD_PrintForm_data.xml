@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Formulário de Impressão</title>
+<tgroup cols='17' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Formulário de Impressão</entry><entry>Descrição</entry><entry>Texto do Email de Distribuição de Ordem</entry><entry>Formato de Impressão para Distribuição</entry><entry>Texto de email de Fatura</entry><entry>Formato de Impressão de Fatura</entry><entry>Texto de E-mail para Ordem de Fabricação</entry><entry>Formato de Impressão da Ordem de Fabricação</entry><entry>Nome</entry><entry>Texto de email de Pedido</entry><entry>Formato de Impressão de Pedido</entry><entry>Texto de email de Projeto</entry><entry>Formato de Impressão de Projeto</entry><entry>Texto de email de Remessas</entry><entry>Formato de Impressão de Remessa de Valores</entry><entry>Texto de email de Entrega</entry><entry>Formato de Impressão de Entrega</entry></row>
+<row><entry>100</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>102</entry><entry> </entry><entry> </entry><entry>Standard</entry><entry> </entry><entry>100</entry><entry> </entry><entry> </entry><entry> </entry><entry>108</entry><entry> </entry><entry>104</entry></row>
+<row><entry>101</entry><entry> </entry><entry> </entry><entry>50011</entry><entry> </entry><entry>120</entry><entry> </entry><entry>50001</entry><entry>Standard</entry><entry> </entry><entry>118</entry><entry> </entry><entry>139</entry><entry> </entry><entry>126</entry><entry> </entry><entry>122</entry></row>
+<row><entry>1000000</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>1000002</entry><entry> </entry><entry> </entry><entry>Padrão</entry><entry> </entry><entry>1000000</entry><entry> </entry><entry> </entry><entry> </entry><entry>1000008</entry><entry> </entry><entry>1000004</entry></row></tbody>
+</tgroup>
+</table>

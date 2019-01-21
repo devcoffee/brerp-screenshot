@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Canal</title>
+<tgroup cols='4' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Cor de Impressão</entry><entry>Canal</entry><entry>Descrição</entry><entry>Nome</entry></row>
+<row><entry> </entry><entry>103</entry><entry>Brochure mailing</entry><entry>Mailer</entry></row>
+<row><entry> </entry><entry>101</entry><entry> </entry><entry>Standard</entry></row>
+<row><entry> </entry><entry>1000000</entry><entry> </entry><entry>Padrão</entry></row></tbody>
+</tgroup>
+</table>

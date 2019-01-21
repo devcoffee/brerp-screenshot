@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Importe o Tipo do Processo</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Importe o Tipo do Processo</entry><entry>Classe Java</entry><entry>Nome</entry><entry>Chave de Busca</entry></row>
+<row><entry>Adempiere HDD Import Processor Type</entry><entry>HDD Import Processor Type</entry><entry>50000</entry><entry>org.adempiere.server.rpl.imp.FileImportProcessor</entry><entry>HDD Import Processor Type</entry><entry>HDD Import Processor Type</entry></row>
+<row><entry>Adempiere JMS Topic Import Processor Type</entry><entry>JMS Topic Import Processor Type</entry><entry>50001</entry><entry>org.adempiere.server.rpl.imp.TopicImportProcessor</entry><entry>Human Readable name for - JMS Topic Import Processor Type</entry><entry>JMS Topic Import Processor Type</entry></row></tbody>
+</tgroup>
+</table>

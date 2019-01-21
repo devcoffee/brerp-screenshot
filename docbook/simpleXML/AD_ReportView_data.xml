@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Visualização de Relatório</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Visualização de Relatório</entry><entry>Tabela</entry><entry>Descrição</entry><entry>Tipo de Entidade</entry><entry>Nome</entry><entry>Sql ORDER BY</entry><entry>Sql WHERE</entry></row>
+<row><entry>160</entry><entry>804</entry><entry> </entry><entry>D</entry><entry>T_InvoiceGL</entry><entry> </entry><entry> </entry></row>
+<row><entry>131</entry><entry>657</entry><entry> </entry><entry>D</entry><entry>RV_Fact_Acct</entry><entry> </entry><entry> </entry></row>
+<row><entry>137</entry><entry>631</entry><entry> </entry><entry>D</entry><entry>T_Aging</entry><entry> </entry><entry> </entry></row>
+<row><entry>135</entry><entry>630</entry><entry> </entry><entry>D</entry><entry>RV_Storage</entry><entry> </entry><entry> </entry></row>
+<row><entry>136</entry><entry>629</entry><entry> </entry><entry>D</entry><entry>RV_Transaction</entry><entry> </entry><entry> </entry></row>
+<row><entry>138</entry><entry>634</entry><entry> </entry><entry>D</entry><entry>RV_Click_Month</entry><entry> </entry><entry> </entry></row>
+<row><entry>139</entry><entry>633</entry><entry> </entry><entry>D</entry><entry>RV_Click_Unprocessed</entry><entry> </entry><entry> </entry></row>
+<row><entry>0</entry><entry>100</entry><entry>Do not change</entry><entry>D</entry><entry>*None*</entry><entry> </entry><entry> </entry></row>
+<row><entry>100</entry><entry>259</entry><entry> </entry><entry>D</entry><entry>RV_Order</entry><entry> </entry><entry> </entry></row>
+<row><entry>105</entry><entry>363</entry><entry> </entry><entry>D</entry><entry>RV_M_Transaction_Sum</entry><entry> </entry><entry> </entry></row>
+<row><entry>107</entry><entry>365</entry><entry> </entry><entry>D</entry><entry>T_Spool</entry><entry> </entry><entry> </entry></row>
+<row><entry>108</entry><entry>369</entry><entry> </entry><entry>D</entry><entry>RV_C_Invoice_Day</entry><entry> </entry><entry> </entry></row>
+<row><entry>109</entry><entry>370</entry><entry> </entry><entry>D</entry><entry>RV_C_Invoice_Month</entry><entry> </entry><entry> </entry></row>
+<row><entry>110</entry><entry>371</entry><entry> </entry><entry>D</entry><entry>RV_C_Invoice_ProdMonth</entry><entry> </entry><entry> </entry></row>
+<row><entry>112</entry><entry>373</entry><entry> </entry><entry>D</entry><entry>RV_C_Invoice_VendorMonth</entry><entry> </entry><entry> </entry></row>
+<row><entry>113</entry><entry>374</entry><entry> </entry><entry>D</entry><entry>RV_C_Invoice_Week</entry><entry> </entry><entry> </entry></row>
+<row><entry>114</entry><entry>387</entry><entry> </entry><entry>D</entry><entry>RV_C_Invoice_CustomerProdQtr</entry><entry> </entry><entry> </entry></row>
+<row><entry>116</entry><entry>736</entry><entry> </entry><entry>D</entry><entry>RV_Allocation</entry><entry> </entry><entry> </entry></row>
+<row><entry>117</entry><entry>413</entry><entry> </entry><entry>D</entry><entry>RV_OpenItem</entry><entry> </entry><entry> </entry></row>
+<row><entry>118</entry><entry>423</entry><entry> </entry><entry>D</entry><entry>RV_C_Invoice</entry><entry> </entry><entry> </entry></row>
+<row><entry>120</entry><entry>318</entry><entry> </entry><entry>D</entry><entry>X_DunningLetter</entry><entry> </entry><entry> </entry></row>
+<row><entry>122</entry><entry>425</entry><entry> </entry><entry>D</entry><entry>RV_M_Transaction</entry><entry> </entry><entry> </entry></row>
+<row><entry>123</entry><entry>471</entry><entry> </entry><entry>D</entry><entry>RV_Cash_Detail</entry><entry> </entry><entry> </entry></row>
+<row><entry>126</entry><entry>544</entry><entry> </entry><entry>D</entry><entry>T_Report</entry><entry> </entry><entry> </entry></row>
+<row><entry>144</entry><entry>709</entry><entry> </entry><entry>D</entry><entry>RV_C_RfQ_UnAnswered</entry><entry> </entry><entry> </entry></row>
+<row><entry>133</entry><entry>434</entry><entry>ProjectLine - No Issue</entry><entry>D</entry><entry>C_ProjectLine Not Issued</entry><entry> </entry><entry>C_ProjectLine.C_ProjectIssue_ID IS NULL</entry></row>
+<row><entry>134</entry><entry>628</entry><entry> </entry><entry>D</entry><entry>RV_ProjectLineIssue</entry><entry> </entry><entry> </entry></row>
+<row><entry>128</entry><entry>620</entry><entry> </entry><entry>D</entry><entry>RV_ProjectCycle</entry><entry> </entry><entry> </entry></row>
+<row><entry>145</entry><entry>710</entry><entry> </entry><entry>D</entry><entry>RV_C_RfQResponse</entry><entry> </entry><entry> </entry></row>
+<row><entry>148</entry><entry>730</entry><entry> </entry><entry>D</entry><entry>RV_InOutConfirm Open</entry><entry> </entry><entry>RV_InOutConfirm.Processed='N'</entry></row>
+<row><entry>153</entry><entry>753</entry><entry> </entry><entry>D</entry><entry>T_TrialBalance</entry><entry> </entry><entry> </entry></row>
+<row><entry>157</entry><entry>756</entry><entry> </entry><entry>D</entry><entry>RV_BPartnerOpen</entry><entry> </entry><entry> </entry></row>
+<row><entry>161</entry><entry>805</entry><entry> </entry><entry>D</entry><entry>RV_Cost</entry><entry> </entry><entry> </entry></row>
+<row><entry>162</entry><entry>806</entry><entry> </entry><entry>D</entry><entry>RV_CostSummary</entry><entry> </entry><entry> </entry></row>
+<row><entry>163</entry><entry>807</entry><entry> </entry><entry>D</entry><entry>RV_CostDetail</entry><entry> </entry><entry> </entry></row>
+<row><entry>167</entry><entry>829</entry><entry> </entry><entry>D</entry><entry>RV_C_Invoice_ProductQtr</entry><entry> </entry><entry> </entry></row>
+<row><entry>158</entry><entry>757</entry><entry> </entry><entry>D</entry><entry>RV_CommissionRunDetail</entry><entry> </entry><entry> </entry></row>
+<row><entry>150</entry><entry>739</entry><entry> </entry><entry>D</entry><entry>RV_PrintFormatDetail</entry><entry> </entry><entry> </entry></row>
+<row><entry>164</entry><entry>360</entry><entry> </entry><entry>D</entry><entry>RV_OrderDetail</entry><entry> </entry><entry> </entry></row>
+<row><entry>53000</entry><entry>53021</entry><entry> </entry><entry>EE01</entry><entry>RV_PP_MRP</entry><entry> </entry><entry> </entry></row>
+<row><entry>159</entry><entry>758</entry><entry> </entry><entry>D</entry><entry>T_Transaction</entry><entry> </entry><entry> </entry></row>
+<row><entry>142</entry><entry>656</entry><entry> </entry><entry>D</entry><entry>RV_Fact_Acct_Day</entry><entry> </entry><entry> </entry></row>
+<row><entry>53018</entry><entry>53124</entry><entry>List Depreciation_Calaculation_Methods</entry><entry>D</entry><entry>RV_Depreciation_Calculation_Methods</entry><entry> </entry><entry> </entry></row>
+<row><entry>53026</entry><entry>53198</entry><entry> </entry><entry>EE01</entry><entry>PP_Order_BOMLine Packing</entry><entry> </entry><entry>ComponentType IN('PK','TL')</entry></row>
+<row><entry>152</entry><entry>751</entry><entry> </entry><entry>D</entry><entry>RV_InOutDetails Receive</entry><entry> </entry><entry>RV_InOutDetails.IsSOTrx='N'</entry></row>
+<row><entry>151</entry><entry>751</entry><entry> </entry><entry>D</entry><entry>RV_InOutDetails Ship</entry><entry> </entry><entry>RV_InOutDetails.IsSOTrx='Y'</entry></row>
+<row><entry>127</entry><entry>545</entry><entry> </entry><entry>D</entry><entry>T_ReportStatement</entry><entry> </entry><entry> </entry></row>
+<row><entry>111</entry><entry>372</entry><entry> </entry><entry>D</entry><entry>RV_C_Invoice_ProdWeek</entry><entry> </entry><entry> </entry></row>
+<row><entry>115</entry><entry>388</entry><entry> </entry><entry>D</entry><entry>RV_C_Invoice_CustomerVendQtr</entry><entry> </entry><entry> </entry></row>
+<row><entry>124</entry><entry>478</entry><entry>Inventory valuation</entry><entry>D</entry><entry>RV_T_InventoryValue</entry><entry> </entry><entry> </entry></row>
+<row><entry>149</entry><entry>731</entry><entry> </entry><entry>D</entry><entry>RV_InOutLineConfirm Open</entry><entry> </entry><entry>RV_InOutLineConfirm.Processed='N'</entry></row>
+<row><entry>166</entry><entry>830</entry><entry> </entry><entry>D</entry><entry>RV_C_Invoice_ProductMonth</entry><entry> </entry><entry> </entry></row>
+<row><entry>140</entry><entry>654</entry><entry> </entry><entry>D</entry><entry>RV_C_InvoiceTax</entry><entry> </entry><entry> </entry></row>
+<row><entry>165</entry><entry>520</entry><entry> </entry><entry>D</entry><entry>RV_BPartner</entry><entry> </entry><entry> </entry></row>
+<row><entry>53001</entry><entry>53027</entry><entry> </entry><entry>EE01</entry><entry>RV_PP_Order</entry><entry> </entry><entry> </entry></row>
+<row><entry>53002</entry><entry>53032</entry><entry> </entry><entry>EE01</entry><entry>RV_PP_Order_Storage</entry><entry> </entry><entry> </entry></row>
+<row><entry>53003</entry><entry>53033</entry><entry> </entry><entry>EE01</entry><entry>RV_PP_Inventory in Process</entry><entry> </entry><entry> </entry></row>
+<row><entry>53004</entry><entry>53034</entry><entry> </entry><entry>EE01</entry><entry>RV_PP_Order_Transactions</entry><entry> </entry><entry> </entry></row>
+<row><entry>53005</entry><entry>53036</entry><entry> </entry><entry>EE01</entry><entry>RV_PP_Operation _Activity</entry><entry> </entry><entry> </entry></row>
+<row><entry>53007</entry><entry>53063</entry><entry> </entry><entry>EE01</entry><entry>RV_PP_Product_BOMLine</entry><entry> </entry><entry> </entry></row>
+<row><entry>129</entry><entry>622</entry><entry> </entry><entry>D</entry><entry>RV_Asset_Customer</entry><entry> </entry><entry> </entry></row>
+<row><entry>130</entry><entry>621</entry><entry> </entry><entry>D</entry><entry>RV_Asset_Delivery</entry><entry> </entry><entry> </entry></row>
+<row><entry>147</entry><entry>716</entry><entry> </entry><entry>D</entry><entry>RV_Asset_SumMonth</entry><entry> </entry><entry> </entry></row>
+<row><entry>53009</entry><entry>53115</entry><entry>View of Asset Transfer Entry</entry><entry>D</entry><entry>RV_Asset_Transfer_Entry</entry><entry> </entry><entry>A_Depreciation_Exp.A_Entry_Type='TRN'</entry></row>
+<row><entry>53010</entry><entry>53115</entry><entry>View of Asset Split Entry</entry><entry>D</entry><entry>RV_Asset_Split_Entry</entry><entry> </entry><entry>A_Depreciation_Exp.A_Entry_Type='SPL'</entry></row>
+<row><entry>53012</entry><entry>53115</entry><entry>Report of Depreciation Forecast by Asset</entry><entry>D</entry><entry>RV_Asset_Depreciation_Forecast</entry><entry> </entry><entry>A_Depreciation_Exp.A_Entry_Type = 'FOR'</entry></row>
+<row><entry>53013</entry><entry>539</entry><entry>Asset Parent Report</entry><entry>D</entry><entry>RV_Asset_Parent_Report</entry><entry> </entry><entry> </entry></row>
+<row><entry>53014</entry><entry>53114</entry><entry>List of Depreciation Tables</entry><entry>D</entry><entry>RV_Depreciation_Tables</entry><entry> </entry><entry> </entry></row>
+<row><entry>53015</entry><entry>53126</entry><entry>Depreciation Spread Report</entry><entry>D</entry><entry>RV_Asset_Spread_Rpt</entry><entry> </entry><entry> </entry></row>
+<row><entry>53016</entry><entry>53112</entry><entry>Depreciation Methods</entry><entry>D</entry><entry>RV_Asset_Depreciation_Method</entry><entry> </entry><entry> </entry></row>
+<row><entry>53017</entry><entry>53125</entry><entry>Asset Convention Rpt</entry><entry>D</entry><entry>RV_Asset_Convention</entry><entry> </entry><entry> </entry></row>
+<row><entry>53019</entry><entry>53130</entry><entry>List Asset Group Setting</entry><entry>D</entry><entry>RV_Asset_Group_Defaults</entry><entry> </entry><entry> </entry></row>
+<row><entry>53020</entry><entry>53115</entry><entry>View of Asset Split Entry</entry><entry>D</entry><entry>RV_Asset_Inbound_Asset_Entry</entry><entry> </entry><entry>A_Depreciation_Exp.A_Entry_Type='NEW'</entry></row>
+<row><entry>53023</entry><entry>53144</entry><entry> </entry><entry>EE01</entry><entry>RV_DD_OrderDetail</entry><entry> </entry><entry> </entry></row>
+<row><entry>53021</entry><entry>53142</entry><entry>Forecast View</entry><entry>EE01</entry><entry>RV_M_Forecast</entry><entry> </entry><entry> </entry></row>
+<row><entry>53022</entry><entry>53143</entry><entry>Forecast for Period View</entry><entry>EE01</entry><entry>RV_M_Forecast_Period</entry><entry> </entry><entry> </entry></row>
+<row><entry>53025</entry><entry>53161</entry><entry> </entry><entry>EE01</entry><entry>T_BOMLine_Costs</entry><entry> </entry><entry> </entry></row>
+<row><entry>53028</entry><entry>53198</entry><entry> </entry><entry>EE01</entry><entry>PP_Order_BOMLine Components</entry><entry> </entry><entry>ComponentType NOT IN('PK','TL')</entry></row>
+<row><entry>146</entry><entry>711</entry><entry> </entry><entry>D</entry><entry>RV_M_Requisition Open</entry><entry> </entry><entry>Qty&lt;
+&gt;
+QtyOrdered</entry></row>
+<row><entry>53031</entry><entry>53247</entry><entry> </entry><entry>D</entry><entry>RV_Storage_Per_Product</entry><entry> </entry><entry> </entry></row>
+<row><entry>53034</entry><entry>53299</entry><entry> </entry><entry>D</entry><entry>T_CashFlow</entry><entry>DateTrx, CashFlowSource, IsSOTrx DESC</entry><entry> </entry></row>
+<row><entry>53006</entry><entry>53042</entry><entry>RV_PP_Product_Costing</entry><entry>EE01</entry><entry>RV_PP_Product_Costing</entry><entry> </entry><entry> </entry></row>
+<row><entry>53008</entry><entry>53115</entry><entry>View of Asset Disposal Entry</entry><entry>D</entry><entry>RV_Asset_Disposal_Entry</entry><entry> </entry><entry>A_Depreciation_Exp.A_Entry_Type='DIS'</entry></row>
+<row><entry>53011</entry><entry>53115</entry><entry>View of Depreciation Expense Entry</entry><entry>D</entry><entry>RV_Asset_Depreciation_Entry</entry><entry> </entry><entry>A_Depreciation_Exp.A_Entry_Type='DEP'</entry></row>
+<row><entry>155</entry><entry>554</entry><entry>payments where there is an allocation and no charge</entry><entry>D</entry><entry>C_Payment_v UnAllocated</entry><entry> </entry><entry>DocStatus IN ('CO','CL') AND IsAllocated='N'</entry></row>
+<row><entry>53032</entry><entry>53285</entry><entry> </entry><entry>D</entry><entry>RV_Reconciliation</entry><entry> </entry><entry> </entry></row>
+<row><entry>106</entry><entry>364</entry><entry> </entry><entry>D</entry><entry>T_Replenish</entry><entry> </entry><entry> </entry></row>
+<row><entry>53038</entry><entry>325</entry><entry>Production Plan</entry><entry>D</entry><entry>M_Production</entry><entry> </entry><entry> </entry></row>
+<row><entry>53039</entry><entry>53335</entry><entry> </entry><entry>D</entry><entry>T_BOM_Indented</entry><entry> </entry><entry> </entry></row>
+<row><entry>200000</entry><entry>200068</entry><entry> </entry><entry>D</entry><entry>RV_T_1099Extract</entry><entry> </entry><entry> </entry></row>
+<row><entry>200001</entry><entry>200070</entry><entry> </entry><entry>D</entry><entry>T_BankRegister</entry><entry> </entry><entry> </entry></row>
+<row><entry>200002</entry><entry>200071</entry><entry> </entry><entry>D</entry><entry>RV_M_Product_WhereUsed_V</entry><entry> </entry><entry> </entry></row>
+<row><entry>200003</entry><entry>200072</entry><entry> </entry><entry>D</entry><entry>RV_Fact_Simple</entry><entry> </entry><entry> </entry></row>
+<row><entry>200004</entry><entry>200073</entry><entry> </entry><entry>D</entry><entry>RV_Fact_Adaxa</entry><entry> </entry><entry> </entry></row>
+<row><entry>143</entry><entry>655</entry><entry> </entry><entry>D</entry><entry>RV_Fact_Acct_Period</entry><entry> </entry><entry> </entry></row>
+<row><entry>103</entry><entry>554</entry><entry>Payments - Not reconciled and not zero</entry><entry>D</entry><entry>UnReconciled Payments</entry><entry> </entry><entry>IsReconciled='N' AND PayAmt&lt;
+&gt;
+0</entry></row>
+<row><entry>102</entry><entry>210</entry><entry>ProductPO - More then one Vendor</entry><entry>D</entry><entry>Vendor Selection</entry><entry> </entry><entry>EXISTS (SELECT M_Product_ID FROM M_Product_PO pp WHERE M_Product_PO.M_Product_ID=pp.M_Product_ID GROUP BY M_Product_ID HAVING COUNT(*) &gt;
+ 1)</entry></row>
+<row><entry>119</entry><entry>424</entry><entry> </entry><entry>D</entry><entry>RV_C_InvoiceLine</entry><entry> </entry><entry> </entry></row>
+<row><entry>132</entry><entry>434</entry><entry>ProjectLine - PO exists but no Issue</entry><entry>D</entry><entry>C_ProjectLine Not Received POs</entry><entry> </entry><entry>C_ProjectLine.C_OrderPO_ID IS NOT NULL AND C_ProjectLine.C_ProjectIssue_ID IS NULL</entry></row>
+<row><entry>1500169</entry><entry>1501278</entry><entry> </entry><entry>U</entry><entry>Produtos</entry><entry> </entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

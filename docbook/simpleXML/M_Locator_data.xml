@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Localizador</title>
+<tgroup cols='10' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Parceiro de Negócios </entry><entry>Padrão</entry><entry>Localizador</entry><entry>Locator Type</entry><entry>Armazém</entry><entry>Prioridade Relativa</entry><entry>Chave de Busca</entry><entry>Corredor (X)</entry><entry>Estante (Y)</entry><entry>Nível (Z)</entry></row>
+<row><entry> </entry><entry>true</entry><entry>101</entry><entry> </entry><entry>103</entry><entry>50</entry><entry>Default HQ Locator</entry><entry>0</entry><entry>0</entry><entry>0</entry></row>
+<row><entry> </entry><entry>true</entry><entry>50000</entry><entry> </entry><entry>50000</entry><entry>50</entry><entry>HQ Transit</entry><entry>HQ Transit</entry><entry>HQ Transit</entry><entry>HQ Transit</entry></row>
+<row><entry> </entry><entry>true</entry><entry>50003</entry><entry> </entry><entry>50004</entry><entry>50</entry><entry>Store South</entry><entry>Store South</entry><entry>Store South</entry><entry>Store South</entry></row>
+<row><entry> </entry><entry>true</entry><entry>50002</entry><entry> </entry><entry>50003</entry><entry>50</entry><entry>Store North</entry><entry>Store North</entry><entry>Store North</entry><entry>Store North</entry></row>
+<row><entry> </entry><entry>true</entry><entry>50001</entry><entry> </entry><entry>50002</entry><entry>50</entry><entry>Fertilizer</entry><entry>Fertilizer</entry><entry>Fertilizer</entry><entry>Fertilizer</entry></row>
+<row><entry> </entry><entry>true</entry><entry>50004</entry><entry> </entry><entry>50001</entry><entry>50</entry><entry>Furniture</entry><entry>Furniture</entry><entry>Furniture</entry><entry>Furniture</entry></row>
+<row><entry> </entry><entry>true</entry><entry>50005</entry><entry> </entry><entry>50005</entry><entry>50</entry><entry>Store East</entry><entry>Store East</entry><entry>Store East</entry><entry>Store East</entry></row>
+<row><entry> </entry><entry>true</entry><entry>50006</entry><entry> </entry><entry>50006</entry><entry>50</entry><entry>Store West</entry><entry>Store West</entry><entry>Store West</entry><entry>Store West</entry></row>
+<row><entry> </entry><entry>true</entry><entry>102</entry><entry> </entry><entry>104</entry><entry>50</entry><entry>Default Store Locator</entry><entry>0</entry><entry>0</entry><entry>0</entry></row>
+<row><entry> </entry><entry>true</entry><entry>50007</entry><entry> </entry><entry>50007</entry><entry>50</entry><entry>Fertilizer Transit</entry><entry>Fertilizer Transit</entry><entry>Fertilizer Transit</entry><entry>Fertilizer Transit</entry></row>
+<row><entry> </entry><entry>true</entry><entry>50008</entry><entry> </entry><entry>50008</entry><entry>50</entry><entry>Furniture Transit</entry><entry>Furniture Transit</entry><entry>Furniture Transit</entry><entry>Furniture Transit</entry></row>
+<row><entry> </entry><entry>true</entry><entry>1000000</entry><entry> </entry><entry>1000002</entry><entry>50</entry><entry>Padrão</entry><entry>0</entry><entry>0</entry><entry>0</entry></row>
+<row><entry> </entry><entry>true</entry><entry>5000000</entry><entry> </entry><entry>5000002</entry><entry>50</entry><entry>MGS Padrao</entry><entry>1</entry><entry>1</entry><entry>1</entry></row>
+<row><entry> </entry><entry>false</entry><entry>1000003</entry><entry> </entry><entry>1000002</entry><entry>50</entry><entry>2 * 2 * 2</entry><entry>2</entry><entry>2</entry><entry>2</entry></row>
+<row><entry> </entry><entry>false</entry><entry>1000002</entry><entry> </entry><entry>1000002</entry><entry>50</entry><entry>1 * 1 * 0</entry><entry>1</entry><entry>1</entry><entry>0</entry></row>
+<row><entry> </entry><entry>false</entry><entry>1000001</entry><entry> </entry><entry>1000002</entry><entry>50</entry><entry>1 * 0 * 0</entry><entry>1</entry><entry>0</entry><entry>0</entry></row>
+<row><entry> </entry><entry>false</entry><entry>5000001</entry><entry> </entry><entry>5000003</entry><entry>50</entry><entry>UC01</entry><entry>a</entry><entry>b</entry><entry>c</entry></row>
+<row><entry> </entry><entry>false</entry><entry>5000003</entry><entry> </entry><entry>5000003</entry><entry>50</entry><entry>UC02</entry><entry>1</entry><entry>2</entry><entry>3</entry></row>
+<row><entry> </entry><entry>false</entry><entry>5000005</entry><entry> </entry><entry>5000004</entry><entry>50</entry><entry>RV02</entry><entry>A</entry><entry>B</entry><entry>C</entry></row>
+<row><entry> </entry><entry>false</entry><entry>5000007</entry><entry> </entry><entry>5000005</entry><entry>50</entry><entry>FB02</entry><entry>2</entry><entry>3</entry><entry>4</entry></row>
+<row><entry> </entry><entry>false</entry><entry>5000008</entry><entry> </entry><entry>5000006</entry><entry>50</entry><entry>MP01</entry><entry>1</entry><entry>1</entry><entry>1</entry></row>
+<row><entry> </entry><entry>false</entry><entry>5000009</entry><entry> </entry><entry>5000006</entry><entry>50</entry><entry>MP02</entry><entry>1</entry><entry>2</entry><entry>1</entry></row>
+<row><entry> </entry><entry>true</entry><entry>5000004</entry><entry> </entry><entry>5000004</entry><entry>50</entry><entry>RV01</entry><entry>1</entry><entry>2</entry><entry>3</entry></row>
+<row><entry> </entry><entry>false</entry><entry>5000012</entry><entry> </entry><entry>5000008</entry><entry>50</entry><entry>1000001</entry><entry>a</entry><entry>a</entry><entry>a</entry></row>
+<row><entry> </entry><entry>true</entry><entry>5000010</entry><entry> </entry><entry>5000007</entry><entry>50</entry><entry>Armazem PR</entry><entry>a</entry><entry>a</entry><entry>a</entry></row>
+<row><entry> </entry><entry>true</entry><entry>5000013</entry><entry> </entry><entry>5000010</entry><entry>50</entry><entry>Armazém SC</entry><entry>a</entry><entry>a</entry><entry>a</entry></row>
+<row><entry> </entry><entry>true</entry><entry>5000006</entry><entry> </entry><entry>5000005</entry><entry>50</entry><entry>FB01</entry><entry>1</entry><entry>2</entry><entry>3</entry></row>
+<row><entry> </entry><entry>false</entry><entry>5000014</entry><entry> </entry><entry>5000011</entry><entry>50</entry><entry>1000003</entry><entry>1</entry><entry>1</entry><entry>1</entry></row>
+<row><entry> </entry><entry>false</entry><entry>5000015</entry><entry> </entry><entry>5000013</entry><entry>50</entry><entry>1000004</entry><entry>1</entry><entry>1</entry><entry>1</entry></row></tbody>
+</tgroup>
+</table>

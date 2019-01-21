@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Parâmetro do Processador</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Descrição</entry><entry>Processador de Exportação</entry><entry>Parâmetro do Processador</entry><entry>Comentário/Ajuda</entry><entry>Nome</entry><entry>Valor de Parâmetro</entry><entry>Chave de Busca</entry></row>
+<row><entry>Export Processor Parameter Description</entry><entry>50000</entry><entry>50000</entry><entry>Processor Parameter Help</entry><entry>Name of file under which xml will be exported</entry><entry>example-export.xml</entry><entry>fileName</entry></row>
+<row><entry>Export Processor Parameter Description</entry><entry>50000</entry><entry>50001</entry><entry>Processor Parameter Help</entry><entry>Name of folder where file will be exported</entry><entry>C:/temp/</entry><entry>folder</entry></row>
+<row><entry>Export Processor Parameter Description</entry><entry>50001</entry><entry>50002</entry><entry>JMS Topic Export Processor Parameter Help</entry><entry>Name of JMS Topic where xml will be exported</entry><entry>ExampleTopic</entry><entry>topicName</entry></row>
+<row><entry>Export Processor Parameter Description</entry><entry>50001</entry><entry>50003</entry><entry>JMS Topic Export Processor Parameter Help</entry><entry>ClientID which will be set in JMS connection</entry><entry>ExampleClientID</entry><entry>clientID</entry></row>
+<row><entry>Export Processor Parameter Description</entry><entry>50001</entry><entry>50004</entry><entry>JMS Topic Export Processor Parameter Help</entry><entry>protocol which will be used for JMS connection</entry><entry>tcp</entry><entry>protocol</entry></row>
+<row><entry>Export Processor Parameter Description</entry><entry>50001</entry><entry>50005</entry><entry>JMS Topic Export Processor Parameter Help</entry><entry>Time to Live for the JMS Message</entry><entry>10000</entry><entry>timeToLive</entry></row>
+<row><entry>Export Processor Parameter Description</entry><entry>50001</entry><entry>50006</entry><entry>JMS Topic Export Processor Parameter Help</entry><entry>Is JMS Delivery Mode Persistent</entry><entry>true</entry><entry>isDeliveryModePersistent</entry></row></tbody>
+</tgroup>
+</table>

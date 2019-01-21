@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>COF_C_Titulo_Audit_ID</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Usuário/Contato</entry><entry>Nome do Arquivo CNAB</entry><entry>COF_C_Titulo_Audit_ID</entry><entry>Gerar CNAB</entry><entry>CNAB Reprocessado</entry><entry>Retorno de CNAB Processado</entry><entry>Data da Transação</entry><entry>Descrição</entry></row>
+<row><entry>100</entry><entry>CB150218.REM</entry><entry>5000000</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>2018-02-15 10:46:11.812</entry><entry>Form Transaction - CNAB_9ab33926-9c53-43e4-b8c0-525bec6d948c
+Processamento Em - Thu Feb 15 10:46:11 BRST 2018</entry></row>
+<row><entry>100</entry><entry>CB280218.REM</entry><entry>5000001</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>2018-02-28 14:41:16.836</entry><entry>Form Transaction - CNAB_c5de8aa4-2122-49d3-8d03-35567b93a3c5
+Processamento Em - Wed Feb 28 14:41:16 BRT 2018</entry></row></tbody>
+</tgroup>
+</table>

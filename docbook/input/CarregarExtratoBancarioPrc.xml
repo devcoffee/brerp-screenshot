@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2003-12-25 15:10:59.0</para><para> <emphasis>Atualizado:</emphasis>2005-03-03 23:47:09.0</para>
+ 
+ <title>Processo:  Carregar Extrato Bancário</title> 
+ <para><emphasis> Descrição: </emphasis>Carregar Extrato Bancário</para><para><emphasis> Comentário/Ajuda: </emphasis>Carregar o extrato bancário na tabela de importação Os parâmetros utilizados dependem do carregador real.</para>
+<table> 
+ <title>Load_Bank_Statement Parâmetros </title> 
+ <tgroup cols='6' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome</entry><entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores(Padrão)</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row> 
+</thead><tbody><row> 
+ <entry>Carregador de Extrato Bancário</entry><entry> C_BankStatementLoader_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Definição de Carregador de Extrato Bancário (SWIFT, OFX)</entry> 
+<entry>A definição do carregador fornece os parâmetros para carregar extratos bancários de formatos de TEF (Transferência Eletrônica de Fundos - EFT) tais como SWIFT (MT940) ou OFX</entry> 
+</row> 
+<row> 
+ <entry>Nome do Arquivo</entry><entry> FileName</entry> 
+<entry>FileName</entry> 
+ <entry> </entry> 
+<entry>Nome do arquivo local ou URL</entry> 
+<entry>Nome de um arquivo no espaço de diretórios local - ou URL (file://.., http://.., ftp://..)</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

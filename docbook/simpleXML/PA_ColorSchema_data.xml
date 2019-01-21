@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Esquema de Cores</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Cor 1</entry><entry>Cor 2</entry><entry>Cor 3</entry><entry>Cor 4</entry><entry>Descrição</entry><entry>Tipo de Entidade</entry><entry>Mark 1 Percent</entry><entry>Mark 2 Percent</entry><entry>Mark 3 Percent</entry><entry>Mark 4 Percent</entry><entry>Nome</entry><entry>Esquema de Cores</entry></row>
+<row><entry>103</entry><entry>113</entry><entry>102</entry><entry> </entry><entry>&lt;
+ 100% is the goal</entry><entry>D</entry><entry>50</entry><entry>100</entry><entry>9999</entry><entry>0</entry><entry>Green (50) - Yellow (100) - Red</entry><entry>101</entry></row>
+<row><entry>102</entry><entry>113</entry><entry>103</entry><entry> </entry><entry>&gt;
+= 100% is the goal</entry><entry>D</entry><entry>50</entry><entry>100</entry><entry>9999</entry><entry>0</entry><entry>Red (50) - Yellow (100) - Green</entry><entry>100</entry></row>
+<row><entry>102</entry><entry>113</entry><entry>103</entry><entry> </entry><entry>&gt;
+</entry><entry>U</entry><entry>75</entry><entry>125</entry><entry>200</entry><entry>0</entry><entry>Vermelho - Verde</entry><entry>1500014</entry></row>
+<row><entry>103</entry><entry>113</entry><entry>102</entry><entry> </entry><entry>&gt;
+</entry><entry>U</entry><entry>75</entry><entry>125</entry><entry>200</entry><entry>0</entry><entry>Verde-Vermelho</entry><entry>1500013</entry></row></tbody>
+</tgroup>
+</table>

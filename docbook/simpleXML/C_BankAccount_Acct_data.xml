@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>C_BankAccount_Acct</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Ativo Bancário</entry><entry>Despesa de Juros Bancários</entry><entry>Receitas de Juros Bancários</entry><entry>Em Trânsito</entry><entry>Seleção de Pagamento</entry><entry>Verba não alocada</entry><entry>Esquema Contábil</entry><entry>Conta Bancária</entry></row>
+<row><entry>258</entry><entry>261</entry><entry>260</entry><entry>257</entry><entry>287</entry><entry>286</entry><entry>101</entry><entry>100</entry></row>
+<row><entry>258</entry><entry>261</entry><entry>260</entry><entry>257</entry><entry>287</entry><entry>286</entry><entry>101</entry><entry>101</entry></row>
+<row><entry>258</entry><entry>261</entry><entry>260</entry><entry>257</entry><entry>287</entry><entry>286</entry><entry>101</entry><entry>200000</entry></row>
+<row><entry>1000008</entry><entry>5000250</entry><entry>1000069</entry><entry>1000009</entry><entry>1000051</entry><entry>1000013</entry><entry>1000001</entry><entry>1000000</entry></row>
+<row><entry>1000008</entry><entry>5000250</entry><entry>1000069</entry><entry>1000009</entry><entry>1000051</entry><entry>1000013</entry><entry>1000001</entry><entry>5000000</entry></row>
+<row><entry>1000008</entry><entry>5000250</entry><entry>1000069</entry><entry>1000009</entry><entry>1000051</entry><entry>1000013</entry><entry>1000001</entry><entry>5000001</entry></row>
+<row><entry>1000008</entry><entry>5000250</entry><entry>1000069</entry><entry>1000009</entry><entry>1000051</entry><entry>1000013</entry><entry>1000001</entry><entry>5000002</entry></row>
+<row><entry>1000008</entry><entry>5000250</entry><entry>1000069</entry><entry>1000009</entry><entry>1000051</entry><entry>1000013</entry><entry>1000001</entry><entry>5000003</entry></row>
+<row><entry>1000008</entry><entry>5000250</entry><entry>1000069</entry><entry>1000009</entry><entry>1000051</entry><entry>1000013</entry><entry>1000001</entry><entry>5000004</entry></row>
+<row><entry>1000008</entry><entry>5000250</entry><entry>1000069</entry><entry>1000009</entry><entry>1000051</entry><entry>1000013</entry><entry>1000001</entry><entry>5000005</entry></row></tbody>
+</tgroup>
+</table>

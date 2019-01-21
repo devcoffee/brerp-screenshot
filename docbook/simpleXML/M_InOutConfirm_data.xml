@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Confirmação de Envio/Recebimento</title>
+<tgroup cols='17' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Valor da Aprovação</entry><entry>Fatura</entry><entry>Núm. Confirmação</entry><entry>Tipo de Confirmação</entry><entry>Criar Embalagem</entry><entry>Descrição</entry><entry>Ação do Documento</entry><entry>Estado do Documento</entry><entry>Número do Documento</entry><entry>Aprovado</entry><entry>Cancelado</entry><entry>Em Disputa</entry><entry>Confirmação de Envio/Recebimento</entry><entry>Remessa/Recebimento</entry><entry>Estoque Físico</entry><entry>Processado</entry><entry>Processar Agora</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>XC</entry><entry> </entry><entry> </entry><entry>CO</entry><entry>DR</entry><entry>10000000</entry><entry>false</entry><entry>false</entry><entry>false</entry><entry>100</entry><entry>108</entry><entry> </entry><entry>false</entry><entry>false</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>XC</entry><entry> </entry><entry> </entry><entry>CO</entry><entry>DR</entry><entry>1000000</entry><entry>false</entry><entry>false</entry><entry>false</entry><entry>5000000</entry><entry>5000210</entry><entry> </entry><entry>false</entry><entry>false</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>XC</entry><entry> </entry><entry>SuperUser: Aprovado - 2018-02-12 14:27:21.782</entry><entry>CL</entry><entry>CO</entry><entry>1000001</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>5000001</entry><entry>5000270</entry><entry> </entry><entry>true</entry><entry>false</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>XC</entry><entry> </entry><entry>SuperUser: Aprovado - 2018-02-15 10:39:58.555</entry><entry>--</entry><entry>CL</entry><entry>1000002</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>5000002</entry><entry>5000308</entry><entry> </entry><entry>true</entry><entry>false</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>XV</entry><entry> </entry><entry> </entry><entry>CO</entry><entry>DR</entry><entry>1000003</entry><entry>false</entry><entry>false</entry><entry>false</entry><entry>5000003</entry><entry>5000334</entry><entry> </entry><entry>false</entry><entry>false</entry></row>
+<row><entry> </entry><entry> </entry><entry> </entry><entry>XC</entry><entry> </entry><entry>SuperUser: Aprovado - 2018-03-05 09:56:40.322</entry><entry>--</entry><entry>CL</entry><entry>1000004</entry><entry>true</entry><entry>false</entry><entry>false</entry><entry>5000004</entry><entry>5000355</entry><entry> </entry><entry>true</entry><entry>false</entry></row></tbody>
+</tgroup>
+</table>

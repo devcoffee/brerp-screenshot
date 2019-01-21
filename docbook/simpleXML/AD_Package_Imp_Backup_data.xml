@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>AD_Package_Imp_Backup_ID</title>
+<tgroup cols='10' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Coluna</entry><entry>AD_Package_Imp_Backup_ID</entry><entry>AD_Package_Imp_Bck_Dir</entry><entry>AD_Package_Imp_Detail_ID</entry><entry>AD_Package_Imp_ID</entry><entry>AD_Package_Imp_Org_Dir</entry><entry>Referência</entry><entry>Tabela</entry><entry>ColValue</entry><entry>Uninstall</entry></row>
+<row><entry>6483</entry><entry>1000000</entry><entry> </entry><entry>1000000</entry><entry>1000000</entry><entry> </entry><entry>28</entry><entry>101</entry><entry>N</entry><entry> </entry></row>
+<row><entry>181</entry><entry>5000000</entry><entry> </entry><entry>5000796</entry><entry>5000003</entry><entry> </entry><entry>11</entry><entry>107</entry><entry>50</entry><entry> </entry></row>
+<row><entry>181</entry><entry>5000001</entry><entry> </entry><entry>5000797</entry><entry>5000003</entry><entry> </entry><entry>11</entry><entry>107</entry><entry>60</entry><entry> </entry></row>
+<row><entry>181</entry><entry>5000002</entry><entry> </entry><entry>5000798</entry><entry>5000003</entry><entry> </entry><entry>11</entry><entry>107</entry><entry>40</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

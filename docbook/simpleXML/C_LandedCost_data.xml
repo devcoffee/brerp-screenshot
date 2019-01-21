@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Custo Final</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Linha de Fatura</entry><entry>Custo Final</entry><entry>Crédito Fiscal</entry><entry>Descrição</entry><entry>Distribuição de Custos</entry><entry>Elemento de Custo</entry><entry>Remessa/Recebimento</entry><entry>Linha de Remessa/Recebimento</entry><entry>Produto</entry><entry>Processar Agora</entry></row>
+<row><entry>5000054</entry><entry>5000000</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000009</entry><entry> </entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000055</entry><entry>5000001</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000013</entry><entry> </entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000065</entry><entry>5000002</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000009</entry><entry> </entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000066</entry><entry>5000003</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000009</entry><entry> </entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000067</entry><entry>5000004</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000028</entry><entry> </entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000068</entry><entry>5000005</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000028</entry><entry> </entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000069</entry><entry>5000006</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000028</entry><entry> </entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000086</entry><entry>5000007</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000028</entry><entry> </entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000087</entry><entry>5000008</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000028</entry><entry> </entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000347</entry><entry>5000009</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000028</entry><entry> </entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000348</entry><entry>5000010</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry> </entry><entry> </entry><entry>5000004</entry><entry>false</entry></row>
+<row><entry>5000383</entry><entry>5000011</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000085</entry><entry> </entry><entry> </entry><entry>false</entry></row>
+<row><entry>5000385</entry><entry>5000012</entry><entry>0</entry><entry> </entry><entry>Q</entry><entry>5000002</entry><entry>5000085</entry><entry> </entry><entry> </entry><entry>false</entry></row></tbody>
+</tgroup>
+</table>

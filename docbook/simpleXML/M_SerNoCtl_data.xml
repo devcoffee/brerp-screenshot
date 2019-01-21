@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Controle de Número de Série</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Formato</entry><entry>Próximo Número</entry><entry>Descrição</entry><entry>Incremento</entry><entry>Controle de Número de Série</entry><entry>Nome</entry><entry>Prefixo</entry><entry>Núm. Inicial</entry><entry>Sufixo</entry></row>
+<row><entry> </entry><entry>100</entry><entry> </entry><entry>1</entry><entry>100</entry><entry>Serial No Example</entry><entry> </entry><entry>100</entry><entry> </entry></row>
+<row><entry> </entry><entry>100</entry><entry>NÚMERO DE SÉRIE </entry><entry>1</entry><entry>5000000</entry><entry>NÚMERO DE SÉRIE </entry><entry> </entry><entry>100</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Tipo de Projeto</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Tipo de Projeto</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry><entry>Nome</entry><entry>Categoria de Projeto</entry></row>
+<row><entry>100</entry><entry>Implementation Project</entry><entry> </entry><entry>Implementation</entry><entry>S</entry></row>
+<row><entry>101</entry><entry>Consulting Project</entry><entry> </entry><entry>Consulting</entry><entry>S</entry></row>
+<row><entry>103</entry><entry> </entry><entry> </entry><entry>Work Order (Job)</entry><entry>W</entry></row>
+<row><entry>102</entry><entry>Presales Project to implement iDempiere</entry><entry> </entry><entry>iDempiere Presales</entry><entry>N</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,2927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Ordem de Venda</title> 
+ <para> <emphasis>Descrição: </emphasis>  Introduzir e Alterar Ordens de Venda</para><para> <emphasis>Comentário/Ajuda: </emphasis>A Janela "Pedido" permite a você digitar e modificar Ordens de Venda.  </para><para><emphasis> Criado em: </emphasis>1999-08-09 00:00:00.0
+</para><para><emphasis>Atualizado em: </emphasis>2000-01-02 00:00:00.0</para>
+<section> 
+ <title>Tabela: Pedido - C_Order</title> 
+ 
+<ulink url="data/C_Order_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Cabeçalho de Pedido</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Cabeçalho de Pedido" define os parâmetros de um Pedido. Alterar a Organização, Parceiro de Negócios, Armazém, Data Prometida, etc. atualiza estes valores em todas as linhas. </para> 
+<para><emphasis> Relatório: </emphasis>Order Print - Rpt C_Order </para> 
+<para><emphasis>Claúsula Where:</emphasis> C_Order.IsSOTrx='Y'</para> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Order Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Terminal PDV</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cpos_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">Point of Sales Terminal</entry> 
+<entry>The POS Terminal defines the defaults and functions available for the POS Form</entry> 
+</row> 
+<row> 
+ <entry>AmountRefunded</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>AmountTendered</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Order Type</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Type of Order: MRP records grouped by source (Sales Order, Purchase Order, Distribution Order, Requisition)</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Peso</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Weight of a product</entry> 
+<entry>The Weight indicates the weight  of the product in the Weight UOM of the Client</entry> 
+</row> 
+<row> 
+ <entry>Volume</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Volume of a product</entry> 
+<entry>The Volume indicates the volume of the product in the Volume UOM of the Client</entry> 
+</row> 
+<row> 
+ <entry>Pedido</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Order</entry> 
+<entry>The Order is a control document.  The  Order is complete when the quantity ordered is the same as the quantity shipped and invoiced.  When you close an order, unshipped (backordered) quantities are cancelled.</entry> 
+</row> 
+<row> 
+ <entry>Ordem de Processo</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Pedido Referenciado</entry><entry>Procurar</entry> 
+<entry>C_Order</entry> 
+<entry valign="middle">corder_ref</entry> 
+<entry> </entry> 
+<entry valign="middle">Reference to corresponding Sales/Purchase Order</entry> 
+<entry>Reference of the Sales Order Line to the corresponding Purchase Order Line or vice versa.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro do Pagamento</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartnerpay_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner responsible for the payment</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Localização do pagamento</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle">cbplocationpay_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">Location of the Business Partner responsible for the payment</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Pagamento</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cpayment_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">Payment identifier</entry> 
+<entry>The Payment is a unique identifier of this payment.</entry> 
+</row> 
+<row> 
+ <entry>Transação de Vendas</entry><entry>Sim-Não</entry> 
+<entry>(@IsSOTrx@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a Sales Transaction</entry> 
+<entry>The Sales Transaction checkbox indicates if this item is a Sales Transaction.</entry> 
+</row> 
+<row> 
+ <entry>Data de Impressão</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date the document was printed.</entry> 
+<entry>Indicates the Date that a document was printed.</entry> 
+</row> 
+<row> 
+ <entry>Enviar e-mail</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Enable sending Document EMail</entry> 
+<entry>Send emails with document attached (e.g. Invoice, Delivery Note, etc.)</entry> 
+</row> 
+<row> 
+ <entry>Linha de Diário de Caixa</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">ccashline_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">Cash Journal Line</entry> 
+<entry>The Cash Journal Line indicates a unique line in a cash journal.</entry> 
+</row> 
+<row> 
+ <entry>Preço Inclui Imposto</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Tax is included in the price </entry> 
+<entry>The Tax Included checkbox indicates if the prices include tax.  This is also known as the gross price.</entry> 
+</row> 
+<row> 
+ <entry>Selecionado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Condição de Pagamento Auxuliar</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm</entry> 
+<entry valign="middle">COFPaymentTerm_COrder</entry> 
+<entry> </entry> 
+<entry valign="middle">The terms of Payment (timing, discount)</entry> 
+<entry>Payment Terms identify the method and timing of payment.</entry> 
+</row> 
+<row> 
+ <entry>Criado pelo Importador de XML</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Numero NF do Cliente</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @COF_CriadoPeloImportadorXML@ = 'Y' </entry> 
+<entry valign="middle">Number of the Customer NF</entry> 
+<entry>Number of the Customer NF</entry> 
+</row> 
+<row> 
+ <entry>Aprovado</entry><entry>Sim-Não</entry> 
+<entry>(@IsApproved@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if this document requires approval</entry> 
+<entry>The Approved checkbox indicates if this document requires approval before it can be processed.</entry> 
+</row> 
+<row> 
+ <entry>Crédito Aprovado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Credit  has been approved</entry> 
+<entry>Credit Approved indicates if the credit approval was successful for Orders</entry> 
+</row> 
+<row> 
+ <entry>Despachado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Faturado (Nota Emitida)</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Is this invoiced?</entry> 
+<entry>If selected, invoices are created</entry> 
+</row> 
+<row> 
+ <entry>Impresso</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if this document / line is printed</entry> 
+<entry>The Printed checkbox indicates if this document or line will included when printing.</entry> 
+</row> 
+<row> 
+ <entry>Transferido</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Transferred to General Ledger (i.e. accounted)</entry> 
+<entry>The transferred checkbox indicates if the transactions associated with this document should be transferred to the General Ledger.</entry> 
+</row> 
+<row> 
+ <entry>Data da Conta</entry><entry>Data</entry> 
+<entry>(@#Date@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Accounting Date</entry> 
+<entry>The Accounting Date indicates the date to be used on the General Ledger account entries generated from this document. It is also used for any currency conversion.</entry> 
+</row> 
+<row> 
+ <entry>Criar linhas do Pedido</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Process to Create PO Lines from Requisition</entry> 
+<entry>Process to Create PO Lines from Requisition</entry> 
+</row> 
+<row> 
+ <entry>Processado Em</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The date+time (expressed in decimal format) when the document has been processed</entry> 
+<entry>The ProcessedOn Date+Time save the exact moment (nanoseconds precision if allowed by the DB) when a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Ordem Vinculada</entry><entry>Procurar</entry> 
+<entry>C_Order</entry> 
+<entry valign="middle">linkorder_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">This field links a sales order to the purchase order that is generated from it.</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">adorg_corder</entry> 
+<entry>AD_Org.AD_Org_ID &lt;
+&gt;
+ 0  AND AD_Org.IsSummary='N' </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Número do Documento</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Document sequence number of the document</entry> 
+<entry>The document number is usually automatically generated by the system and determined by the document type of the document. If the document is not saved, the preliminary number is displayed in "&lt;
+&gt;
+".
+
+If the document type of your document has no automatic document sequence defined, the field is empty if you create a new document. This is for documents which usually have an external number (like vendor invoice).  If you leave the field empty, the system will generate a document number for you. The document sequence used for this fallback number is defined in the "Maintain Sequence" window with the name "DocumentNo_&lt;
+TableName&gt;
+", where TableName is the actual name of the table (e.g. C_Order).</entry> 
+</row> 
+<row> 
+ <entry>Referência do Pedido</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Transaction Reference Number (Sales Order, Purchase Order) of your Business Partner</entry> 
+<entry>The business partner order reference is the order reference for this specific transaction;
+ Often Purchase Order numbers are given to print on Invoices for easier reference.  A standard number can be defined in the Business Partner (Customer) window.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Documento Alvo</entry><entry>Tabela</entry> 
+<entry>C_DocType</entry> 
+<entry valign="middle">cdoctypetarget_corder</entry> 
+<entry>C_DocType.DocBaseType IN ('SOO', 'POO') AND C_DocType.IsSOTrx='@IsSOTrx@' AND COALESCE(C_DocType.DocSubTypeSO,' ')&lt;
+&gt;
+'RM' AND C_DocType.AD_Client_ID=@#AD_Client_ID@ </entry> 
+<entry valign="middle">Target document type for conversing documents</entry> 
+<entry>You can convert document types (e.g. from Offer to Order or Invoice).  The conversion is then reflected in the current type.  This processing is initiated by selecting the appropriate Document Action.</entry> 
+</row> 
+<row> 
+ <entry>Auto-Serviço</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a Self-Service entry or this entry can be changed via Self-Service</entry> 
+<entry>Self-Service allows users to enter data or update their data.  The flag indicates, that this record was entered or created via Self-Service or that the user can change it via the Self-Service functionality.</entry> 
+</row> 
+<row> 
+ <entry>Data do Pedido</entry><entry>Data</entry> 
+<entry>(@#Date@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date of Order</entry> 
+<entry>Indicates the Date an item was ordered.</entry> 
+</row> 
+<row> 
+ <entry>Data Prometida</entry><entry>Data</entry> 
+<entry>(@#Date@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date Order was promised</entry> 
+<entry>The Date Promised indicates the date, if any, that an Order was promised for.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartner_corder</entry> 
+<entry>C_BPartner.IsActive='Y' AND C_BPartner.IsSummary='N' </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Parceiro da Fatura</entry><entry>Tabela</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry valign="middle">cbpartnerbill_corder</entry> 
+<entry>C_BPartner.IsSummary='N'  AND (C_BPartner.C_BPartner_ID=@C_BPartner_ID@ OR 'N'='@IsSOTrx@'
+OR EXISTS (SELECT * FROM C_BP_Relation r WHERE C_BPartner.C_BPartner_ID=r.C_BPartnerRelation_ID 
+AND r.C_BPartner_ID=@C_BPartner_ID@ AND r.IsBillTo='Y')) </entry> 
+<entry valign="middle">Business Partner to be invoiced</entry> 
+<entry>If empty the shipment business partner will be invoiced</entry> 
+</row> 
+<row> 
+ <entry>Localização do Parceiro</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartnerlocation_corder</entry> 
+<entry>C_BPartner_Location.C_BPartner_ID=@C_BPartner_ID@ AND C_BPartner_Location.IsShipTo='Y' AND C_BPartner_Location.IsActive='Y' </entry> 
+<entry valign="middle">Identifies the (ship to) address for this Business Partner</entry> 
+<entry>The Partner address indicates the location of a Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Local de Fatura</entry><entry>Tabela</entry> 
+<entry>C_BPartner Location</entry> 
+<entry valign="middle">cbplocationbill_corder</entry> 
+<entry>C_BPartner_Location.C_BPartner_ID=@Bill_BPartner_ID@ AND C_BPartner_Location.IsBillTo='Y' AND C_BPartner_Location.IsActive='Y' </entry> 
+<entry valign="middle">Business Partner Location for invoicing</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Usuário/Contato</entry><entry>Tabela Direta</entry> 
+<entry>(-1)</entry> 
+<entry valign="middle">aduser_corder</entry> 
+<entry>AD_User.C_BPartner_ID=@C_BPartner_ID@ </entry> 
+<entry valign="middle">User within the system - Internal or Business Partner Contact</entry> 
+<entry>The User identifies a unique user in the system. This could be an internal user or a business partner contact</entry> 
+</row> 
+<row> 
+ <entry>Contato da Fatura</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry valign="middle">aduserbill_corder</entry> 
+<entry>AD_User.C_BPartner_ID=@Bill_BPartner_ID@ </entry> 
+<entry valign="middle">Business Partner Contact for invoicing</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Regra de Entrega</entry><entry>Lista</entry> 
+<entry>Disponibilidade
+Forçar
+Linha Completa
+Manual
+Pedido Completo
+Após o recebimento
+(F)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the timing of Delivery</entry> 
+<entry>The Delivery Rule indicates when an order should be delivered. For example should the order be delivered when the entire order is complete, when a line is complete or as the products become available.</entry> 
+</row> 
+<row> 
+ <entry>Prioridade</entry><entry>Lista</entry> 
+<entry>Urgente
+Alta
+Média
+Baixa
+Menor Importância
+(5)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Priority of a document</entry> 
+<entry>The Priority indicates the importance (high, medium, low) of this document</entry> 
+</row> 
+<row> 
+ <entry>Armazém</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mwarehouse_corder</entry> 
+<entry>M_Warehouse.AD_Org_ID=@AD_Org_ID@
+ <emphasis>ReadOnly Logic</emphasis>: @IsDropShip@=Y </entry> 
+<entry valign="middle">Storage Warehouse and Service Point</entry> 
+<entry>The Warehouse identifies a unique Warehouse where products are stored or Services are provided.</entry> 
+</row> 
+<row> 
+ <entry>Entrega direta ao consumidor</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Drop Shipments are sent from the Vendor directly to the Customer</entry> 
+<entry>Drop Shipments do not cause any Inventory reservations or movements as the Shipment is from the Vendor's inventory. The Shipment of the Vendor to the Customer must be confirmed.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Expedição Liberado</entry><entry>Procurar</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry valign="middle">dropshipbpartner_corder</entry> 
+<entry>C_BPartner.IsActive='Y' AND C_BPartner.IsSummary='N' </entry> 
+<entry valign="middle">Business Partner to ship to</entry> 
+<entry>If empty the business partner will be shipped to.</entry> 
+</row> 
+<row> 
+ <entry>Localização para Liberar a Expedição</entry><entry>Tabela</entry> 
+<entry>C_BPartner Location</entry> 
+<entry valign="middle">dropshiplocation_corder</entry> 
+<entry>C_BPartner_Location.C_BPartner_ID=@DropShip_BPartner_ID@ AND C_BPartner_Location.IsShipTo='Y' AND C_BPartner_Location.IsActive='Y' </entry> 
+<entry valign="middle">Business Partner Location for shipping to</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Contato Liberar Expedição</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry valign="middle">dropshipuser_corder</entry> 
+<entry>AD_User.C_BPartner_ID=@DropShip_BPartner_ID@ </entry> 
+<entry valign="middle">Business Partner Contact for drop shipment</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Via de Entrega</entry><entry>Lista</entry> 
+<entry>Entrega
+Retirar
+Transportadora
+(P)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">How the order will be delivered</entry> 
+<entry>The Delivery Via indicates how the products should be delivered. For example, will the order be picked up or shipped.</entry> 
+</row> 
+<row> 
+ <entry>Transportadora</entry><entry>Tabela</entry> 
+<entry>M_Shipper</entry> 
+<entry valign="middle">mshipper_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">Method or manner of product delivery</entry> 
+<entry>The Shipper indicates the method of delivering product</entry> 
+</row> 
+<row> 
+ <entry>Regra de Custo de Frete</entry><entry>Lista</entry> 
+<entry>Calculado
+Freight excluded
+Preço fixo
+Frete incluso
+Linha
+(I)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method for charging Freight</entry> 
+<entry>The Freight Cost Rule indicates the method used when charging for freight.</entry> 
+</row> 
+<row> 
+ <entry>Categoria de Frete</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mfreightcategory_order</entry> 
+<entry>M_FreightCategory_ID in (select M_FreightCategory_ID from M_Freight where M_Shipper_ID=@M_Shipper_ID@)
+ <emphasis>ReadOnly Logic</emphasis>: @DocStatus@!=CO </entry> 
+<entry valign="middle">Category of the Freight</entry> 
+<entry>Freight Categories are used to calculate the Freight for the Shipper selected</entry> 
+</row> 
+<row> 
+ <entry>Valor do Frete</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Freight Amount </entry> 
+<entry>The Freight Amount indicates the amount charged for Freight in the document currency.</entry> 
+</row> 
+<row> 
+ <entry>Taxa Privilegiada</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Online Shipping Sales Order Rate Inquiry</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Regra de Fatura</entry><entry>Lista</entry> 
+<entry>Após Entrega
+Imediato
+Após pedido despachado
+Programação do Cliente após entrega
+(I)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Frequency and method of invoicing </entry> 
+<entry>The Invoice Rule defines how a Business Partner is invoiced and the frequency of invoicing.</entry> 
+</row> 
+<row> 
+ <entry>Lista de Preço</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mpricelist_soheader</entry> 
+<entry>M_PriceList.IsSOPriceList = '@IsSOTrx@'  AND (SELECT COUNT(*) FROM M_PriceList_Version WHERE M_PriceList.M_PriceList_ID=M_PriceList_Version.M_PriceList_ID AND M_PriceList_Version.IsActive='Y')&gt;
+0 </entry> 
+<entry valign="middle">Unique identifier of a Price List</entry> 
+<entry>Price Lists are used to determine the pricing, margin and cost of items purchased or sold.</entry> 
+</row> 
+<row> 
+ <entry>Moeda De</entry><entry>Tabela Direta</entry> 
+<entry>(@C_Currency_ID@)</entry> 
+<entry valign="middle">ccurrency_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">The Currency for this record</entry> 
+<entry>Indicates the Currency to be used when processing or reporting on this record</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Conversão</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cconversiontype_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">Currency Conversion Rate Type</entry> 
+<entry>The Currency Conversion Rate Type lets you define different type of rates, e.g. Spot, Corporate and/or Sell/Buy rates.</entry> 
+</row> 
+<row> 
+ <entry>Representante de Vendas</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry valign="middle">aduser_sr_corder</entry> 
+<entry>EXISTS (SELECT * FROM C_BPartner bp WHERE AD_User.C_BPartner_ID=bp.C_BPartner_ID AND bp.IsSalesRep='Y') </entry> 
+<entry valign="middle">Sales Representative or Company Agent</entry> 
+<entry>The Sales Representative indicates the Sales Rep for this Region.  Any Sales Rep must be a valid internal user.</entry> 
+</row> 
+<row> 
+ <entry>Imprimir Descontos</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Print Discount on Invoice and Order</entry> 
+<entry>The Discount Printed Checkbox indicates if the discount will be printed on the document.</entry> 
+</row> 
+<row> 
+ <entry>Finalidade</entry><entry>Tabela</entry> 
+<entry>C_Charge</entry> 
+<entry valign="middle">ccharge_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">Additional document charges</entry> 
+<entry>The Charge indicates a type of Charge (Handling, Shipping, Restocking)</entry> 
+</row> 
+<row> 
+ <entry>Valor da Despesa</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Charge Amount</entry> 
+<entry>The Charge Amount indicates the amount for an additional charge.</entry> 
+</row> 
+<row> 
+ <entry>Regra de Pagamento</entry><entry>Pagamento</entry> 
+<entry>(P)</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @OrderType@='WP' </entry> 
+<entry valign="middle">How you pay the invoice</entry> 
+<entry>The Payment Rule indicates the method of invoice payment.</entry> 
+</row> 
+<row> 
+ <entry>Condição de Pagamento</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cpaymentterm_soheader</entry> 
+<entry>C_PaymentTerm.PaymentTermUsage = 'B' OR
+(C_PaymentTerm.PaymentTermUsage = 'S' AND '@IsSOTrx@'='Y') OR
+(C_PaymentTerm.PaymentTermUsage = 'P' AND '@IsSOTrx@'='N') </entry> 
+<entry valign="middle">The terms of Payment (timing, discount)</entry> 
+<entry>Payment Terms identify the method and timing of payment.</entry> 
+</row> 
+<row> 
+ <entry>Código Promoção</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">User entered promotion code at sales time</entry> 
+<entry>If present, user entered the promotion code at sales time to get this promotion</entry> 
+</row> 
+<row> 
+ <entry>Alterar Condição de Pagamento</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Projeto</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cproject_corder</entry> 
+<entry>C_Project.Processed='N' AND C_Project.IsSummary='N' AND (C_Project.C_BPartner_ID IS NULL OR C_Project.C_BPartner_ID=@C_BPartner_ID@ OR C_Project.C_BPartnerSR_ID=@C_BPartner_ID@) </entry> 
+<entry valign="middle">Financial Project</entry> 
+<entry>A Project allows you to track and control internal or external activities.</entry> 
+</row> 
+<row> 
+ <entry>Atividade</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cactivity_corder</entry> 
+<entry>C_Activity.IsActive='Y' AND C_Activity.IsSummary='N' </entry> 
+<entry valign="middle">Business Activity</entry> 
+<entry>Activities indicate tasks that are performed and used to utilize Activity based Costing</entry> 
+</row> 
+<row> 
+ <entry>Campanha</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ccampaign_corder</entry> 
+<entry>C_Campaign.IsActive='Y' AND C_Campaign.IsSummary='N' </entry> 
+<entry valign="middle">Marketing Campaign</entry> 
+<entry>The Campaign defines a unique marketing program.  Projects can be associated with a pre defined Marketing Campaign.  You can then report based on a specific Campaign.</entry> 
+</row> 
+<row> 
+ <entry>Organização de Transação (Trx)</entry><entry>Tabela</entry> 
+<entry>AD_Org (Trx)</entry> 
+<entry valign="middle">adorgtrx_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">Performing or initiating organization</entry> 
+<entry>The organization which performs or initiates this transaction (for another organization).  The owning Organization may not be the transaction organization in a service bureau environment, with centralized services, and inter-organization transactions.</entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo</entry><entry>Tabela</entry> 
+<entry>Account_ID - User1</entry> 
+<entry valign="middle">celementvalueuser1_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">User defined list element #1</entry> 
+<entry>The user defined element displays the optional elements that have been defined for this account combination.</entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo 2</entry><entry>Tabela</entry> 
+<entry>Account_ID - User2</entry> 
+<entry valign="middle">celemenrvalueuser2_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">User defined list element #2</entry> 
+<entry>The user defined element displays the optional elements that have been defined for this account combination.</entry> 
+</row> 
+<row> 
+ <entry>Total de Linhas</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total of all document lines</entry> 
+<entry>The Total amount displays the total of all lines in document currency</entry> 
+</row> 
+<row> 
+ <entry>Total Geral</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total amount of document</entry> 
+<entry>The Grand Total displays the total amount including Tax and Freight in document currency</entry> 
+</row> 
+<row> 
+ <entry>Estado do Documento</entry><entry>Lista</entry> 
+<entry>Desconhecido
+Aprovado
+Fechado
+Completado
+Esboçado
+Inválido
+Em Progresso
+Não Aprovado
+Estornado
+Anulado
+Aguardando Confirmação
+Esperando pagamento
+(DR)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The current status of the document</entry> 
+<entry>The Document Status indicates the status of a document at this time.  If you want to change the document status, use the Document Action field</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Documento</entry><entry>Tabela Direta</entry> 
+<entry>C_DocType(0)</entry> 
+<entry valign="middle">c_doctype_corder</entry> 
+<entry>(C_DocType.DocBaseType IN ('SOO', 'POO') AND C_DocType.IsSOTrx='@IsSOTrx@' AND COALESCE(C_DocType.DocSubTypeSO,' ')&lt;
+&gt;
+'RM' AND C_DocType.AD_Client_ID=@#AD_Client_ID@) OR C_DocType.C_DocType_ID=0 </entry> 
+<entry valign="middle">Document type or rules</entry> 
+<entry>The Document Type determines document sequence and processing rules</entry> 
+</row> 
+<row> 
+ <entry>Programa de Pagamentos Válido</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Is the Payment Schedule is valid</entry> 
+<entry>Payment Schedules allow to have multiple due dates.</entry> 
+</row> 
+<row> 
+ <entry>Copiar Linhas</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Copy From Record</entry> 
+<entry>Copy From Record</entry> 
+</row> 
+<row> 
+ <entry>Ordem de Processo</entry><entry>Botão</entry> 
+<entry>_Document Action(CO)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The targeted status of the document</entry> 
+<entry>You find the current status in the Document Status field. The options are listed in a popup</entry> 
+</row> 
+<row> 
+ <entry>Origem do Pedido</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">c_order__c_orders_c_ordersou</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Lançado</entry><entry>Botão</entry> 
+<entry>_Posted Status(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Posting status</entry> 
+<entry>The Posted field indicates the status of the Generation of General Ledger Accounting Lines </entry> 
+</row> 
+<row> 
+ <entry>Linha Plano de Caixa</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">ccashplanline_corder</entry> 
+<entry>C_CashPlan_ID IN (SELECT C_CashPlan_ID FROM C_CashPlan WHERE IsSOTrx='@IsSOTrx@') AND DateTrx&gt;
+=TRUNC(SYSDATE) </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quotation</entry><entry>Procurar</entry> 
+<entry>C_Order</entry> 
+<entry valign="middle">QuotationOrder_COrder</entry> 
+<entry> </entry> 
+<entry valign="middle">Quotation used for generating this order</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Transação</entry><entry>Lista</entry> 
+<entry>Consumidor Final
+Exportação Indireta
+Exportação
+Importação
+Uso Interno
+Industrialização
+Outros
+Remessa
+Revenda
+Transferência</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Transaction Type</entry> 
+<entry>Defines the Transaction Type</entry> 
+</row> 
+<row> 
+ <entry>CPF do Cliente</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Used for not identified customers transactions, but with CPF</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nome Consumidor</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Observação Nota Fiscal</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Description Printed on Nota Fiscal</entry> 
+<entry>Description Printed on Nota Fiscal</entry> 
+</row> 
+<row> 
+ <entry>Nota de Expedição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Modalidade do Frete</entry><entry>Lista</entry> 
+<entry>0- Por conta do emitente
+1- Por conta do destinatario/remetente
+2- Por conta de terceiros
+3 - Transporte Próprio por conta do Remetente;
+
+4 - Transporte Próprio por conta do Destinatário;
+
+9- Sem frete
+(1)</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_FreightAmt@ &gt;
+ 0 </entry> 
+<entry> </entry> 
+<entry>0=Por conta do emitente;
+
+1=Por conta do destinatário/remetente;
+
+2=Por conta de terceiros;
+
+9=Sem frete</entry> 
+</row> 
+<row> 
+ <entry>Situação Comercial</entry><entry>Lista</entry> 
+<entry>Parceiro Ativo
+Parceiro Bloqueado Comercial
+Parceiro Bloqueado Crédito
+Parceiro Encerrado
+Parceiro Inativo-Concorrente
+Parceiro Pendente de Análise
+Parceiro em Recuperação</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Frete</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor do Troco</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Valor do Troco</entry> 
+</row> 
+<row> 
+ <entry>Seguro</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Outras Despesas</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Endereço de Cobrança</entry><entry>Tabela</entry> 
+<entry>C_BPartner Location</entry> 
+<entry valign="middle">cofPayFromLocation_COrder</entry> 
+<entry>C_BPartner_Location.C_BPartner_ID=@Bill_BPartner_ID@ AND C_BPartner_Location.IsPayFrom='Y' AND C_BPartner_Location.IsActive='Y' </entry> 
+<entry valign="middle">This location is the address the Business Partner pays from and where dunning letters will be sent to.</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Contrato</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">COFContract_COrder</entry> 
+<entry>COF_Contract.C_BPartner_ID = @C_BPartner_ID@ AND COF_ContractStatus NOT IN ('AD', 'C') AND  (SELECT isSOTrx FROM COF_ContractCategory WHERE COF_ContractCategory_ID = COF_Contract.COF_ContractCategory_ID) = '@IsSOTrx@' </entry> 
+<entry valign="middle">Primary Key : Contract</entry> 
+<entry>Primary Key : Contract</entry> 
+</row> 
+<row> 
+ <entry>Custódia</entry><entry>Tabela</entry> 
+<entry>COF_C_Custody(@SQL=SELECT COF_C_Custody_ID FROM COF_C_Custody WHERE AD_Client_ID IN (0, @#AD_Client_ID@) AND AD_Org_ID IN (0,@#AD_Org_ID@) AND IsDefault='Y' AND COF_C_Custody.SOPOType IN ('B', (CASE WHEN '@IsSOTrx@' = 'Y' THEN 'S' ELSE 'P' END)) ORDER BY AD_Client_ID DESC, AD_Org_ID DESC OFFSET 0 FETCH FIRST 1 ROWS ONLY)</entry> 
+<entry valign="middle">COFCCustody_COrder</entry> 
+<entry>COF_C_Custody.SOPOType IN ('B', (CASE WHEN '@IsSOTrx@' = 'Y' THEN 'S' ELSE 'P' END)) </entry> 
+<entry valign="middle">Primary Key : Custody</entry> 
+<entry>Primary Key : Custody</entry> 
+</row> 
+<row> 
+ <entry>Digitador</entry><entry>Procurar</entry> 
+<entry>AD_User - Internal(@#AD_User_ID@)</entry> 
+<entry valign="middle">COFDigitador_COrder</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Região de Entrega</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">COFMShipRegion_COrder</entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : Shipment Region</entry> 
+<entry>Primary Key : Shipment Region</entry> 
+</row> 
+<row> 
+ <entry>Motivo do encerramento</entry><entry>Procurar</entry> 
+<entry>COF_ReasonClosingOrder</entry> 
+<entry valign="middle">COFReasonClosingOrder_COrder</entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : COF_Reason_Closing_Order_ID</entry> 
+<entry>Primary Key : COF_Reason_Closing_Order_ID</entry> 
+</row> 
+<row> 
+ <entry>Especialista</entry><entry>Procurar</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry valign="middle">COFBPEspecialista_COrder</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Peso Estimado Total</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Observação</entry><entry>Texto Longo (> 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Plano Financeiro</entry><entry>Procurar</entry> 
+<entry>COF_C_PlanoFinanceiro</entry> 
+<entry valign="middle">COFCPlanoFinanceiro_COrder</entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : Plano Financeiro</entry> 
+<entry>Primary Key : Plano Financeiro</entry> 
+</row> 
+<row> 
+ <entry>Inscrição Estadual Substituta</entry><entry>Tabela</entry> 
+<entry>COF_OrgST (IE)</entry> 
+<entry valign="middle"> </entry> 
+<entry>COF_OrgST.AD_Org_ID=@AD_Org_ID@ </entry> 
+<entry valign="middle">Primary Key : ST Organization</entry> 
+<entry>Primary Key : ST Organization</entry> 
+</row> 
+<row> 
+ <entry>Remessa para Industrialização</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">TdD - Shipping Industrialization</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Exportação</entry><entry>Lista</entry> 
+<entry>Direta
+Indireta</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Direta / Indireta</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Markup Mínimo Esperado %</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Os valor acima serão utilizados para calcular o Markup de um preço base de vendas conforme a fórmula : Preço/(1-Markup) . Para obter a margem equivalente ao fator de markup , pode-se utilizar a fórmula 1/((1-(Markup/100))-1)</entry> 
+</row> 
+<row> 
+ <entry>UF de Embarque</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Sigla da UF de Embarque ou de transposição de fronteira</entry> 
+<entry>Não aceita o valor "EX"</entry> 
+</row> 
+<row> 
+ <entry>Local de Embarque</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Descrição do Local de Embarque ou de transposição de fronteira</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Margem Médio Esperado %</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Descrição do local de despacho</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Descrição do local de despacho</entry> 
+<entry>Informação do Recinto Alfandegado</entry> 
+</row> 
+<row> 
+ <entry>Margem Média Real %</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Variação de Margem %</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Markup Variation Applied</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Preço por Margem (Markup)</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Pricing indicator. Traditional or Markup</entry> 
+<entry>Index applied to the cost of product or service to the formation of the sale price</entry> 
+</row> 
+<row> 
+ <entry>Gerar Nota Fiscal de Transporte</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Generate an NF based on an Shipment</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ratear Desconto</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Prorate discount among lines</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ratear Valores (Frete / Seguro / Outras Despesas)</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Transmitir NFC-e</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Process used to Transmit NFe</entry> 
+<entry>Process create Lot of Nfe and transmit automatically</entry> 
+</row> 
+<row> 
+ <entry>Oportunidade de Vendas</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">copportunity_corder</entry> 
+<entry>C_Opportunity.C_BPartner_ID = @C_BPartner_ID@ AND C_Opportunity.IsClosed = 'N' </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Imprimir Pedido</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Exibir em Relatórios</entry><entry>Sim-Não</entry> 
+<entry>('Y')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indica se Documentos deste TdD são ou não exibidos em relatórios do sistema.</entry> 
+<entry>Usado por exemplo para excluir documentos que não compõem receitas de vendas (venda de ativo imobilizado, remessas, etc) ou outras situações. Consultar documentações para saber os relatórios que interpretam ou não esta opção.</entry> 
+</row> 
+<row> 
+ <entry>Tempo Médio</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Juros Mensal</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>After Delivery</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Due after delivery rather than after invoicing</entry> 
+<entry>The After Delivery checkbox indicates that payment is due after delivery as opposed to after invoicing.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Linha de Pedido - C_OrderLine</title> 
+ 
+<ulink url="data/C_OrderLine_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Linha de Pedido</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Linha do Pedido" define os itens de linha individuais que compreendem um Pedido.</para> 
+<para><emphasis>Lógica de somente leitura:</emphasis> @Processed@=Y</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Order Line Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Fase de Projeto</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cprojectphase_corderline</entry> 
+<entry>C_Project_ID=@C_Project_ID@ </entry> 
+<entry valign="middle">Phase of a Project</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Revenue Recognition Amt</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Revenue Recognition Amount</entry> 
+<entry>The amount for revenue recognition calculation.  If empty, the complete invoice amount is used.  The difference between Revenue Recognition Amount and Invoice Line Net Amount is immediately recognized as revenue.</entry> 
+</row> 
+<row> 
+ <entry>Revenue Recognition Start</entry><entry>Data+Hora</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Revenue Recognition Start Date</entry> 
+<entry>The date the revenue recognition starts.</entry> 
+</row> 
+<row> 
+ <entry>Tarefa de Projeto</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cprojecttask_corderline</entry> 
+<entry>C_ProjectPhase_ID=@C_ProjectPhase_ID@ </entry> 
+<entry valign="middle">Actual Project Task in a Phase</entry> 
+<entry>A Project Task in a Project Phase represents the actual work.</entry> 
+</row> 
+<row> 
+ <entry>Preço de Custo</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Price per Unit of Measure including all indirect costs (Freight, etc.)</entry> 
+<entry>Optional Purchase Order Line cost price.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Preço Limite</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Lowest price for a product</entry> 
+<entry>The Price Limit indicates the lowest price for a product stated in the Price List Currency.</entry> 
+</row> 
+<row> 
+ <entry>Linha do Pedido Referenciado</entry><entry>Procurar</entry> 
+<entry>C_OrderLine</entry> 
+<entry valign="middle">corderline_ref</entry> 
+<entry> </entry> 
+<entry valign="middle">Reference to corresponding Sales/Purchase Order</entry> 
+<entry>Reference of the Sales Order Line to the corresponding Purchase Order Line or vice versa.</entry> 
+</row> 
+<row> 
+ <entry>Data Entregue</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date when the product was delivered</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data Faturada</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date printed on Invoice</entry> 
+<entry>The Date Invoice indicates the date printed on the invoice.</entry> 
+</row> 
+<row> 
+ <entry>Linha de Ordem de Vendas</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Sales Order Line</entry> 
+<entry>The Sales Order Line is a unique identifier for a line in an order.</entry> 
+</row> 
+<row> 
+ <entry>Somente Descrição</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">if true, the line is just description and no transaction</entry> 
+<entry>If a line is Description Only, e.g. Product Inventory is not corrected. No accounting transactions are created and the amount or totals are not included in the document.  This for including descriptive detail lines, e.g. for an Work Order.</entry> 
+</row> 
+<row> 
+ <entry>C_OrderLine_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Moeda De</entry><entry>Tabela Direta</entry> 
+<entry>(@C_Currency_ID@)</entry> 
+<entry valign="middle">ccurrency_corderline</entry> 
+<entry> </entry> 
+<entry valign="middle">The Currency for this record</entry> 
+<entry>Indicates the Currency to be used when processing or reporting on this record</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle">adorg_corderline</entry> 
+<entry>AD_Org.AD_Org_ID &lt;
+&gt;
+ 0  AND AD_Org.IsSummary='N' </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Pedido</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">corder_corderline</entry> 
+<entry> </entry> 
+<entry valign="middle">Order</entry> 
+<entry>The Order is a control document.  The  Order is complete when the quantity ordered is the same as the quantity shipped and invoiced.  When you close an order, unshipped (backordered) quantities are cancelled.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry>(@SQL=SELECT C_BPartner_ID AS DefaultValue FROM C_Order WHERE C_Order_ID=@C_Order_ID@)</entry> 
+<entry valign="middle">cbpartner_soline</entry> 
+<entry>C_BPartner.IsActive='Y' AND C_BPartner.IsSummary='N' </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Localização do Parceiro</entry><entry>Tabela Direta</entry> 
+<entry>(@C_BPartner_Location_ID@)</entry> 
+<entry valign="middle">cbpartnerlocation_soline</entry> 
+<entry>C_BPartner_Location.C_BPartner_ID=@C_BPartner_ID@ AND C_BPartner_Location.IsShipTo='Y' AND C_BPartner_Location.IsActive='Y' </entry> 
+<entry valign="middle">Identifies the (ship to) address for this Business Partner</entry> 
+<entry>The Partner address indicates the location of a Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Data Prometida</entry><entry>Data</entry> 
+<entry>(@DatePromised@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date Order was promised</entry> 
+<entry>The Date Promised indicates the date, if any, that an Order was promised for.</entry> 
+</row> 
+<row> 
+ <entry>Data do Pedido</entry><entry>Data</entry> 
+<entry>(@DateOrdered@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date of Order</entry> 
+<entry>Indicates the Date an item was ordered.</entry> 
+</row> 
+<row> 
+ <entry>Linha Núm.</entry><entry>Inteiro</entry> 
+<entry>(@SQL=SELECT COALESCE(MAX(Line),0)+10 AS DefaultValue FROM C_OrderLine WHERE C_Order_ID=@C_Order_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Unique line for this document</entry> 
+<entry>Indicates the unique line for a document.  It will also control the display order of the lines within a document.</entry> 
+</row> 
+<row> 
+ <entry>Armazém</entry><entry>Tabela</entry> 
+<entry>M_Warehouse of Client(@M_Warehouse_ID@)</entry> 
+<entry valign="middle">mwarehouse_corderline</entry> 
+<entry>M_Warehouse.AD_Org_ID=@AD_Org_ID@
+ <emphasis>ReadOnly Logic</emphasis>: @OrderType@!'SO' </entry> 
+<entry valign="middle">Storage Warehouse and Service Point</entry> 
+<entry>The Warehouse identifies a unique Warehouse where products are stored or Services are provided.</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">mproduct_corderline</entry> 
+<entry>M_Product.IsSummary='N' AND M_Product.IsActive='Y' AND (M_Product.Discontinued = 'N' OR (M_Product.Discontinued = 'Y'  AND M_Product.DiscontinuedAt &gt;
+ SYSDATE))	
+ <emphasis>ReadOnly Logic</emphasis>: @S_ResourceAssignment_ID@!0 | @C_Charge_ID@!0 </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Finalidade</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ccharge_corderline</entry> 
+<entry>(C_Charge.C_Charge_ID IN (
+	SELECT c.C_Charge_ID 
+	FROM C_Charge c
+	JOIN C_ChargeType ct ON (ct.C_ChargeType_ID = c.C_ChargeType_ID)
+	JOIN C_ChargeType_Doctype ctd ON (ctd.C_ChargeType_ID = ct.C_ChargeType_ID)
+	JOIN  C_DocType dt ON (dt.C_DocType_ID =ctd.C_DocType_ID)
+	WHERE  ctd.C_DocType_ID = @C_DocTypeTarget_ID@
+	) OR
+ (SELECT COUNT(*) FROM C_ChargeType_DocType WHERE AD_Client_ID=@AD_Client_ID@) = 0)
+ <emphasis>ReadOnly Logic</emphasis>: @M_Product_ID@!0 </entry> 
+<entry valign="middle">Additional document charges</entry> 
+<entry>The Charge indicates a type of Charge (Handling, Shipping, Restocking)</entry> 
+</row> 
+<row> 
+ <entry>Instância do Conjunto de Atributos</entry><entry>Atributo de Produto</entry> 
+<entry></entry> 
+<entry valign="middle">mattrsetinst_corderline</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @C_Charge_ID@!0 </entry> 
+<entry valign="middle">Product Attribute Set Instance</entry> 
+<entry>The values of the actual Product Attribute Instances.  The product level attributes are defined on Product level.</entry> 
+</row> 
+<row> 
+ <entry>Atribuição de Recurso</entry><entry>Tarefa</entry> 
+<entry></entry> 
+<entry valign="middle">sresourceassign_corderline</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @C_Charge_ID@!0 </entry> 
+<entry valign="middle">Resource Assignment</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade</entry><entry>Quantidade</entry> 
+<entry>(1)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The Quantity Entered is based on the selected UoM</entry> 
+<entry>The Quantity Entered is converted to base product UoM quantity</entry> 
+</row> 
+<row> 
+ <entry>UDM</entry><entry>Tabela Direta</entry> 
+<entry>(@#C_UOM_ID@)</entry> 
+<entry valign="middle">cuom_corderline</entry> 
+<entry>(
+EXISTS (
+	/* UOM is a default UOM and no product selected */
+	SELECT * 
+	FROM C_UOM uu 
+	WHERE C_UOM.C_UOM_ID=uu.C_UOM_ID AND IsActive ='Y' AND IsDefault='Y' AND @M_Product_ID@=0
+)
+OR EXISTS (
+	/* UOM is the products UOM */
+	SELECT * 
+	FROM M_Product p 
+	WHERE C_UOM.C_UOM_ID=p.C_UOM_ID AND @M_Product_ID@=p.M_Product_ID
+)
+OR EXISTS (
+	/* For the products UOM there is a conversion that is explicitly bound to the product */
+	SELECT * 
+	FROM M_Product p INNER JOIN C_UOM_Conversion c ON (p.C_UOM_ID=c.C_UOM_ID AND p.M_PRODUCT_ID=c.M_Product_ID AND c.IsActive ='Y' )
+	WHERE C_UOM.C_UOM_ID=c.C_UOM_TO_ID AND @M_Product_ID@=p.M_Product_ID
+)
+OR EXISTS (
+	/* For the products UOM there is a conversion that is not bound to any product explicitly */
+	SELECT * 
+	FROM M_Product p INNER JOIN C_UOM_Conversion c ON (p.C_UOM_ID=c.C_UOM_ID AND c.M_Product_ID IS NULL AND c.IsActive ='Y' )
+	WHERE C_UOM.C_UOM_ID=c.C_UOM_TO_ID AND @M_Product_ID@=p.M_Product_ID
+	AND NOT EXISTS (
+		SELECT *
+		FROM M_Product p1 INNER JOIN C_UOM_Conversion c1 ON (p1.C_UOM_ID=c1.C_UOM_ID AND p1.M_PRODUCT_ID=c1.M_Product_ID AND c1.IsActive ='N' )
+		WHERE c.C_UOM_ID=c1.C_UOM_ID AND c.C_UOM_TO_ID=c1.C_UOM_TO_ID AND p1.M_Product_ID=@M_Product_ID@
+	)
+)
+) </entry> 
+<entry valign="middle">Unit of Measure</entry> 
+<entry>The UOM defines a unique non monetary Unit of Measure</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Requisitada</entry><entry>Quantidade</entry> 
+<entry>(1)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Ordered Quantity</entry> 
+<entry>The Ordered Quantity indicates the quantity of a product that was ordered.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Entregue</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Delivered Quantity</entry> 
+<entry>The Delivered Quantity indicates the quantity of a product that has been delivered.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Reservada</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Reserved Quantity</entry> 
+<entry>The Reserved Quantity indicates the quantity of a product that is currently reserved.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Faturada</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Invoiced Quantity</entry> 
+<entry>The Invoiced Quantity indicates the quantity of a product that have been invoiced.</entry> 
+</row> 
+<row> 
+ <entry>Transportadora</entry><entry>Tabela</entry> 
+<entry>M_Shipper(@M_Shipper_ID@)</entry> 
+<entry valign="middle">mshipper_corderline</entry> 
+<entry> </entry> 
+<entry valign="middle">Method or manner of product delivery</entry> 
+<entry>The Shipper indicates the method of delivering product</entry> 
+</row> 
+<row> 
+ <entry>Preço</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Price Entered - the price based on the selected/base UoM</entry> 
+<entry>The price entered is converted to the actual price based on the UoM conversion</entry> 
+</row> 
+<row> 
+ <entry>Preço Unitário</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Actual Price </entry> 
+<entry>The Actual or Unit Price indicates the Price for a product in source currency.</entry> 
+</row> 
+<row> 
+ <entry>Preço de Lista</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_isMarkup@='Y' </entry> 
+<entry valign="middle">List Price</entry> 
+<entry>The List Price is the official List Price in the document currency.</entry> 
+</row> 
+<row> 
+ <entry>Valor do Frete</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Freight Amount </entry> 
+<entry>The Freight Amount indicates the amount charged for Freight in the document currency.</entry> 
+</row> 
+<row> 
+ <entry>Taxa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ctax_corderline</entry> 
+<entry>C_Tax.IsSummary = 'Y' AND ((CASE WHEN '@IsSOTrx@' = 'Y' THEN C_Tax.SOPOType = 'S' ELSE C_Tax.SOPOType = 'P' END) OR C_Tax.SOPOType = 'B') </entry> 
+<entry valign="middle">Tax identifier</entry> 
+<entry>The Tax indicates the type of tax used in document line.</entry> 
+</row> 
+<row> 
+ <entry>Desconto %</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Discount in percent</entry> 
+<entry>The Discount indicates the discount applied or taken as a percentage.</entry> 
+</row> 
+<row> 
+ <entry>Projeto</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cproject_corderline</entry> 
+<entry>C_Project.Processed='N' AND C_Project.IsSummary='N' AND (C_Project.C_BPartner_ID IS NULL OR C_Project.C_BPartner_ID=@C_BPartner_ID@ OR C_Project.C_BPartnerSR_ID=@C_BPartner_ID@) </entry> 
+<entry valign="middle">Financial Project</entry> 
+<entry>A Project allows you to track and control internal or external activities.</entry> 
+</row> 
+<row> 
+ <entry>Atividade</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cactivity_corderline</entry> 
+<entry>C_Activity.IsActive='Y' AND C_Activity.IsSummary='N' </entry> 
+<entry valign="middle">Business Activity</entry> 
+<entry>Activities indicate tasks that are performed and used to utilize Activity based Costing</entry> 
+</row> 
+<row> 
+ <entry>Campanha</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ccampaign_corderline</entry> 
+<entry>C_Campaign.IsActive='Y' AND C_Campaign.IsSummary='N' </entry> 
+<entry valign="middle">Marketing Campaign</entry> 
+<entry>The Campaign defines a unique marketing program.  Projects can be associated with a pre defined Marketing Campaign.  You can then report based on a specific Campaign.</entry> 
+</row> 
+<row> 
+ <entry>Organização de Transação (Trx)</entry><entry>Tabela</entry> 
+<entry>AD_Org (Trx)</entry> 
+<entry valign="middle">adorgtrx_corderline</entry> 
+<entry> </entry> 
+<entry valign="middle">Performing or initiating organization</entry> 
+<entry>The organization which performs or initiates this transaction (for another organization).  The owning Organization may not be the transaction organization in a service bureau environment, with centralized services, and inter-organization transactions.</entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo</entry><entry>Tabela</entry> 
+<entry>Account_ID - User1</entry> 
+<entry valign="middle">celemenrvalueuser1_corderline</entry> 
+<entry> </entry> 
+<entry valign="middle">User defined list element #1</entry> 
+<entry>The user defined element displays the optional elements that have been defined for this account combination.</entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo 2</entry><entry>Tabela</entry> 
+<entry>Account_ID - User2</entry> 
+<entry valign="middle">celemenrvalueuser2_corderline</entry> 
+<entry> </entry> 
+<entry valign="middle">User defined list element #2</entry> 
+<entry>The user defined element displays the optional elements that have been defined for this account combination.</entry> 
+</row> 
+<row> 
+ <entry>Valor da Linha</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Line Extended Amount (Quantity * Actual Price) without Freight and Charges</entry> 
+<entry>Indicates the extended line amount based on the quantity and the actual price.  Any additional charges or freight are not included.  The Amount may or may not include tax.  If the price list is inclusive tax, the line amount is the same as the line total.</entry> 
+</row> 
+<row> 
+ <entry>Qde Vendas Perdidas</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Quantity of potential sales</entry> 
+<entry>When an order is closed and there is a difference between the ordered quantity and the delivered (invoiced) quantity is the Lost Sales Quantity.  Note that the Lost Sales Quantity is 0 if you void an order, so close the order if you want to track lost opportunities.  [Void = data entry error - Close = the order is finished]</entry> 
+</row> 
+<row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>OrderLine Create Shipment</entry><entry>Botão</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Gerar Produção</entry><entry>Botão</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Outras Despesas</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>CFOP</entry><entry>Procurar</entry> 
+<entry>LBR_CFOP</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Primary key table LBR_CFOP</entry> 
+<entry>Primary key table LBR_CFOP</entry> 
+</row> 
+<row> 
+ <entry>Imposto Brasileiro</entry><entry>Impostos Brasileiros</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Primary key table LBR_Tax</entry> 
+<entry>Primary key table LBR_Tax</entry> 
+</row> 
+<row> 
+ <entry>Mensagem Legal</entry><entry>Procurar</entry> 
+<entry>LBR_LegalMessage</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Legal Message</entry> 
+<entry>Primary key table LBR_LegalMessage</entry> 
+</row> 
+<row> 
+ <entry>Ativos Relacionados?</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Recalcular Impostos</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">AAsset_COrderLine</entry> 
+<entry> </entry> 
+<entry valign="middle">Asset used internally or by customers</entry> 
+<entry>An asset is either created by purchasing or by delivering a product.  An asset can be used internally or be a customer asset.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Ativo</entry><entry>Lista</entry> 
+<entry>Ativo
+Despesa
+('Cap')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>CFOP para Transporte</entry><entry>Procurar</entry> 
+<entry>LBR_CFOP</entry> 
+<entry valign="middle">cofCFOPTransp_COrderLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Mensagem Legal (Remessa)</entry><entry>Procurar</entry> 
+<entry>LBR_LegalMessage</entry> 
+<entry valign="middle">coflegalmessagedelivery_corder</entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Delivery Legal Message</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Referência do Pedido</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Histórico de Regras Tributárias</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Referência da Linha do Pedido</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Peso Estimado</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Situação Comercial</entry><entry>Lista</entry> 
+<entry>Produto Bloqueado
+Produto Descontinuado
+Produto Especial
+Produto Linha
+Produto Promocional
+Produto Ponta de Estoque
+Produto Sazonal</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Frete</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Seguro</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade em Fator de Conversão</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Campo na linha da ordem de venda para digitar a quantidade desejada do fator de conversão (Exemplo: Unidade, barra, etc)</entry> 
+<entry>Campo na linha da ordem de venda para digitar a quantidade desejada do fator de conversão (Exemplo: Unidade, barra, etc)</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Anulada</entry><entry>Quantidade</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Linha de Contrato</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">COFProducts_COrderLine</entry> 
+<entry>COF_Products.COF_Contract_ID = @COF_Contract_ID@ </entry> 
+<entry valign="middle">Linha de Contrato</entry> 
+<entry>Linha de Contrato</entry> 
+</row> 
+<row> 
+ <entry>Preço de Margem</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Price Base to Markup</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Preço Base de Margem</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Margem Real</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Margem Mínima %</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Os valor acima serão utilizados para calcular o Markup de um preço base de vendas conforme a fórmula : Preço/(1-Markup) . Para obter a margem equivalente ao fator de markup , pode-se utilizar a fórmula 1/((1-(Markup/100))-1)</entry> 
+</row> 
+<row> 
+ <entry>Margem Máxima %</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Os valor acima serão utilizados para calcular o Markup de um preço base de vendas conforme a fórmula : Preço/(1-Markup) . Para obter a margem equivalente ao fator de markup , pode-se utilizar a fórmula 1/((1-(Markup/100))-1)</entry> 
+</row> 
+<row> 
+ <entry>Preço de Negociação</entry><entry>Custos+Preços</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">O Preço de Negociação é o preço de abertura da tela de pedido de vendas, preenchido com o valor do preço de lista da lista de preços e editável pelo usuário</entry> 
+<entry>O Preço de Negociação é o preço de abertura da tela de pedido de vendas, preenchido com o valor do preço de lista da lista de preços e editável pelo usuário. Ao ser modificado, altera os valores de preço padrão do sistema para </entry> 
+</row> 
+<row> 
+ <entry>Preço Base</entry><entry>Custos+Preços</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">O Preço Base é o preço de abertura da tela de pedido de vendas, preenchido com o valor do preço de lista da lista de preços</entry> 
+<entry>O Preço Base é o preço de abertura da tela de pedido de vendas, preenchido com o valor do preço de lista da lista de preços</entry> 
+</row> 
+<row> 
+ <entry>Juros Parcela</entry><entry>Custos+Preços</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Impostos da Linha - LBR_TaxLine</title> 
+ 
+<ulink url="data/LBR_TaxLine_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Imposto de Linha do Pedido</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Imposto da Linha" mostra o total de impostos devidos baseado nas Linha do Pedido.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Brazilian Tax</para> 
+<para><emphasis>Lógica de somente leitura:</emphasis> @#COF_ALLOW_MANUAL_TAX@!Y</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>Order Line Tax Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Linha do Imposto</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Primary key table LBR_TaxLine</entry> 
+<entry>Primary key table LBR_TaxLine</entry> 
+</row> 
+<row> 
+ <entry>Imposto Brasileiro</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">lbr_taxline_lbr_tax_fk1</entry> 
+<entry> </entry> 
+<entry valign="middle">Primary key table LBR_Tax</entry> 
+<entry>Primary key table LBR_Tax</entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever Alíquota (%)</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever Red BC (%)</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever CST/CSOSN</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever Mensagem Legal</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever Mod BC</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever Valor de Lista</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever MVA (%)</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever Cód. Enq. Legal</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID=@#AD_Client_ID@ </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>('Y')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Imposto</entry><entry>Procurar</entry> 
+<entry>LBR_TaxName</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Primary key table LBR_TaxName</entry> 
+<entry>Primary key table LBR_TaxName</entry> 
+</row> 
+<row> 
+ <entry>Alíquota (%)</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates the Tax Rate</entry> 
+<entry>Indicates the Tax Rate</entry> 
+</row> 
+<row> 
+ <entry>CST/CSOSN</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>LBR_TaxStatus.LBR_TaxName_ID=@LBR_TaxName_ID@ </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Mensagem Legal</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Legal Message</entry> 
+<entry>Primary key table LBR_LegalMessage</entry> 
+</row> 
+<row> 
+ <entry>Cód. Enq. Legal</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>COF_CEnq.LBR_TaxName_ID=@LBR_TaxName_ID@ </entry> 
+<entry valign="middle">Código de Enquadramento Legal</entry> 
+<entry>Código de Enquadramento Legal</entry> 
+</row> 
+<row> 
+ <entry>Red. BC (%)</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates the Tax Base</entry> 
+<entry>Indicates the Tax Base</entry> 
+</row> 
+<row> 
+ <entry>Valor Base de Cálculo</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Tax Base Amount</entry> 
+<entry>Defines the Tax Base Amount</entry> 
+</row> 
+<row> 
+ <entry>Valor Imposto</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Tax Amount</entry> 
+<entry>Defines the Tax Amount</entry> 
+</row> 
+<row> 
+ <entry>Preço Inclui Imposto</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Tax is included in the price </entry> 
+<entry>The Tax Included checkbox indicates if the prices include tax.  This is also known as the gross price.</entry> 
+</row> 
+<row> 
+ <entry>Manual</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a manual process</entry> 
+<entry>The Manual check box indicates if the process will done manually.</entry> 
+</row> 
+<row> 
+ <entry>Modalidade da BC</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>COF_ModBC.LBR_TaxName_ID=@LBR_TaxName_ID@ </entry> 
+<entry valign="middle">Primary Key : Mode Calculation Base</entry> 
+<entry>Primary Key : Mode Calculation Base</entry> 
+</row> 
+<row> 
+ <entry>MVA (%)</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor de Lista</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Destacar na Remessa</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>CST/CSOSN (Remessa)</entry><entry>Procurar</entry> 
+<entry>LBR_TaxStatus</entry> 
+<entry valign="middle">cofTaxStatusDelivery_LBRTaxLin</entry> 
+<entry>LBR_TaxStatus.LBR_TaxName_ID=@LBR_TaxName_ID@ </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever Fórmula</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Fórmula</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">LBRFormula_LBRTaxLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever Mot Deson</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Motivo de Desoneração</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">COFMotDeson_LBRTaxLine</entry> 
+<entry> </entry> 
+<entry valign="middle">Motivo de Desoneração</entry> 
+<entry>Motivo de Desoneração</entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever Desoneração (%)</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Desoneração (%)</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sobreescrever Diferimento (%)</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Diferimento (%)</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Deson Amt</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor Diferimento</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Exportação - COF_C_ComexInfo</title> 
+ 
+<ulink url="data/COF_C_ComexInfo_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Informações de Comércio Exterior</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Detalhes de exportação</para> 
+<para><emphasis>Coluna linkada: </emphasis> Sales Order Line</para> 
+<para><emphasis>Coluna mãe: </emphasis> Sales Order Line</para> 
+<para><emphasis>Lógica de visualização:</emphasis> @0|lbr_TransactionType@='EXP'</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>Exportação Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Declaração de Importação</entry><entry>Procurar</entry> 
+<entry>COF_C_DI</entry> 
+<entry valign="middle">COFCDI_COFCComexInfo</entry> 
+<entry> </entry> 
+<entry valign="middle">Declaração de Importação</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>COF_C_ComexInfo_ID</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : Informações de Comércio Exterior</entry> 
+<entry>Primary Key : Informações de Comércio Exterior</entry> 
+</row> 
+<row> 
+ <entry>Adição</entry><entry>Tabela</entry> 
+<entry>COF_C_DIAdi</entry> 
+<entry valign="middle">COFCDIAdi_COFCComexInfo</entry> 
+<entry>COF_C_DIAdi.COF_C_DI_ID=@COF_C_DI_ID@ </entry> 
+<entry valign="middle">Adição</entry> 
+<entry>Adição</entry> 
+</row> 
+<row> 
+ <entry>Linha de Fatura</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">CInvoiceLine_COFCComexInfo</entry> 
+<entry> </entry> 
+<entry valign="middle">Invoice Detail Line</entry> 
+<entry>The Invoice Line uniquely identifies a single line of an Invoice.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Linha de Ordem de Vendas</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">COrderLine_COFCComexInfo</entry> 
+<entry> </entry> 
+<entry valign="middle">Sales Order Line</entry> 
+<entry>The Sales Order Line is a unique identifier for a line in an order.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Tipo da Exportação</entry><entry>Lista</entry> 
+<entry>Declaração de Exportação
+Declaração Simplificada de Exportação</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo do Conhecimento de Embarque</entry><entry>Lista</entry> 
+<entry>AWB
+MAWB
+HAWB
+COMAT
+R. EXPRESSAS
+ETIQ. EXPRESSAS
+HR. EXPRESSAS
+AV7
+BL
+MBL
+HBL
+CRT
+DSIC
+COMAT BL
+RWB
+HRWB
+TIF / DTA
+CP2
+NAO IATA
+MNAO IATA
+HNAO IATA
+OUTROS</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data do Conhecimento de Embarque</entry><entry>Data</entry> 
+<entry>(@#Date@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data da Declaração</entry><entry>Data</entry> 
+<entry>(@#Date@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade do item</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Quantidade do item realmente exportado</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Número do ato concessório de Drawback</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Número do Registro de Exportação</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Chave de Acesso da NF-e</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Chave de Acesso da NF-e recebida para exportação</entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Imposto do Pedido - C_OrderTax</title> 
+ 
+<ulink url="data/C_OrderTax_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Imposto do Pedido</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Imposto do Pedido" mostra o montante de impostos associados a um pedido baseado nas linhas digitadas.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Order</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Order Tax Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Org.AD_Org_ID &lt;
+&gt;
+ 0  AND AD_Org.IsSummary='N' </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Pedido</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">corder_cordertax</entry> 
+<entry> </entry> 
+<entry valign="middle">Order</entry> 
+<entry>The Order is a control document.  The  Order is complete when the quantity ordered is the same as the quantity shipped and invoiced.  When you close an order, unshipped (backordered) quantities are cancelled.</entry> 
+</row> 
+<row> 
+ <entry>Taxa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ctax_cordertax</entry> 
+<entry> </entry> 
+<entry valign="middle">Tax identifier</entry> 
+<entry>The Tax indicates the type of tax used in document line.</entry> 
+</row> 
+<row> 
+ <entry>Provedor de Impostos</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ctaxprovider_cordertax</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor do Imposto</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Tax Amount for a document</entry> 
+<entry>The Tax Amount displays the total tax amount for a document.</entry> 
+</row> 
+<row> 
+ <entry>Valor da Base de Imposto</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Base for calculating the tax amount</entry> 
+<entry>The Tax Base Amount indicates the base amount used for calculating the tax amount.</entry> 
+</row> 
+<row> 
+ <entry>Preço Inclui Imposto</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Tax is included in the price </entry> 
+<entry>The Tax Included checkbox indicates if the prices include tax.  This is also known as the gross price.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Programação de Pagamento - C_OrderPaySchedule</title> 
+ 
+<ulink url="data/C_OrderPaySchedule_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Programação de Pagamento de Ordem de Venda</para> 
+<para><emphasis>Coluna linkada: </emphasis> Order</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Payment Schedule Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Ordenar Calendário de Pagamentos</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>C_OrderPaySchedule_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Pedido</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">corder_corderpayschedule</entry> 
+<entry> </entry> 
+<entry valign="middle">Order</entry> 
+<entry>The Order is a control document.  The  Order is complete when the quantity ordered is the same as the quantity shipped and invoiced.  When you close an order, unshipped (backordered) quantities are cancelled.</entry> 
+</row> 
+<row> 
+ <entry>Programação de Pagamentos</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cpayschedule_corderpayschedule</entry> 
+<entry> </entry> 
+<entry valign="middle">Payment Schedule Template</entry> 
+<entry>Information when parts of the payment are due</entry> 
+</row> 
+<row> 
+ <entry>Custódia</entry><entry>Tabela</entry> 
+<entry>COF_C_Custody(@SQL=SELECT COF_C_Custody_ID FROM C_Order WHERE C_Order_ID=@C_Order_ID@)</entry> 
+<entry valign="middle">COFCCustody_COrderPaySchedule</entry> 
+<entry>COF_C_Custody.SOPOType IN ('B', (CASE WHEN '@IsSOTrx@' = 'Y' THEN 'S' ELSE 'P' END)) </entry> 
+<entry valign="middle">Primary Key : Custody</entry> 
+<entry>Primary Key : Custody</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Atualiza Data de Vencimento</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Dias a Deslocar</entry><entry>Inteiro</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data do Vencimento</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date when the payment is due</entry> 
+<entry>Date when the payment is due without deductions or discount</entry> 
+</row> 
+<row> 
+ <entry>Valor devido</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Amount of the payment due</entry> 
+<entry>Full amount of the payment due</entry> 
+</row> 
+<row> 
+ <entry>Data de Desconto</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Last Date for payments with discount</entry> 
+<entry>Last Date where a deduction of the payment discount is allowed</entry> 
+</row> 
+<row> 
+ <entry>Valor do Desconto</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Calculated amount of discount</entry> 
+<entry>The Discount Amount indicates the discount amount for a document or line.</entry> 
+</row> 
+<row> 
+ <entry>Validar</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Válido</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Element is valid</entry> 
+<entry>The element passed the validation check</entry> 
+</row> 
+<row> 
+ <entry>Forma de Pagamento</entry><entry>Lista</entry> 
+<entry>01 - Dinheiro
+02 - Cheque
+03 - Cartão de Crédito
+04 - Cartão de Débito
+05 - Crédito Loja
+10 - Vale Alimentação
+11 - Vale Refeição
+12 - Vale Presente
+13 - Vale Combustível
+14 - Duplicata Mercantil
+15 - Boleto Bancário
+90 - Sem Pagamento
+99 - Outros</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>01=Dinheiro
+02=Cheque
+03=Cartão de Crédito
+04=Cartão de Débito
+05=Crédito Loja
+10=Vale Alimentação
+11=Vale Refeição
+12=Vale Presente
+13=Vale Combustível
+14=Duplicata Mercantil
+15=Boleto Bancário
+90= Sem pagamento
+99=Outros
+
+Ref: YA02</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Integração para pagamento</entry><entry>Lista</entry> 
+<entry>1 - Pagamento Integrado
+2 - Pagamento não integrado</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Operadora de Cartão de Cédito</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">COFCCardNetwork_COrderPaySched</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>They handle the worldwide processing of credit card transactions, acting as a gateway between merchants and credit card companies for authorizing and processing each transaction as well as setting the terms of those transactions</entry> 
+</row> 
+<row> 
+ <entry>Número de Autorização</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Número de autorização da operação cartão de crédito e/ou débito</entry> 
+<entry>Identifica o número da autorização da transação da operação com cartão de crédito e/ou débito
+
+Ref: YA07</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: POS Payment - C_POSPayment</title> 
+ <para><emphasis>Coluna linkada: </emphasis> Order</para> 
+<para><emphasis>Lógica de visualização:</emphasis> @PaymentRule@=M</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>POS Payment Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>POS Pagamento</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Pedido</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">corder_cpospayment</entry> 
+<entry> </entry> 
+<entry valign="middle">Order</entry> 
+<entry>The Order is a control document.  The  Order is complete when the quantity ordered is the same as the quantity shipped and invoiced.  When you close an order, unshipped (backordered) quantities are cancelled.</entry> 
+</row> 
+<row> 
+ <entry>Pagamento</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cpayment_cpospayment</entry> 
+<entry> </entry> 
+<entry valign="middle">Payment identifier</entry> 
+<entry>The Payment is a unique identifier of this payment.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Pagamento PDV</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cpostendertype_cpospayment</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Pagamento</entry><entry>Lista</entry> 
+<entry>Depósito Direto
+Cartão de Crédito
+Débito Direto
+Cheque
+Conta Bancária
+Dinheiro</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method of Payment</entry> 
+<entry>The Tender Type indicates the method of payment (ACH or Direct Deposit, Credit Card, Check, Direct Debit)</entry> 
+</row> 
+<row> 
+ <entry>Valor do Pagamento</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Amount being paid</entry> 
+<entry>Indicates the amount this payment is for.  The payment amount can be for single or multiple invoices or a partial payment for an invoice.</entry> 
+</row> 
+<row> 
+ <entry>Nome da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Name on Credit Card or Account holder</entry> 
+<entry>The Name of the Credit Card or Account holder.</entry> 
+</row> 
+<row> 
+ <entry>Número de Rastreio</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Bank Routing Number</entry> 
+<entry>The Bank Routing Number (ABA Number) identifies a legal Bank.  It is used in routing checks and electronic transactions.</entry> 
+</row> 
+<row> 
+ <entry>Núm.Cheque</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Check Number</entry> 
+<entry>The Check Number indicates the number on the check.</entry> 
+</row> 
+<row> 
+ <entry>Núm. Conta</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Account Number</entry> 
+<entry>The Account Number indicates the Number assigned to this bank account. </entry> 
+</row> 
+<row> 
+ <entry>Micr</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Combination of routing no, account and check no</entry> 
+<entry>The Micr number is the combination of the bank routing number, account number and check number</entry> 
+</row> 
+<row> 
+ <entry>Pós-Datado</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data Prometida</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date Order was promised</entry> 
+<entry>The Date Promised indicates the date, if any, that an Order was promised for.</entry> 
+</row> 
+<row> 
+ <entry>Cheque Status</entry><entry>Lista</entry> 
+<entry>Charged
+Delayed
+Replaced
+Received
+Returned</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cartão de Crédito</entry><entry>Lista</entry> 
+<entry>Amex
+Cabal
+ATM
+Diners
+Elo
+Hipercard
+MasterCard
+Discover
+Outros
+Cartão de Compras
+Sorocred
+Aura
+Visa</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Credit Card (Visa, MC, AmEx)</entry> 
+<entry>The Credit Card drop down list box is used for selecting the type of Credit Card presented for payment.</entry> 
+</row> 
+<row> 
+ <entry>Número</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Credit Card Number </entry> 
+<entry>The Credit Card number indicates the number on the credit card, without blanks or spaces.</entry> 
+</row> 
+<row> 
+ <entry>Código de Autorização Verbal</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Voice Authorization Code from credit card company</entry> 
+<entry>The Voice Authorization Code indicates the code received from the Credit Card Company.</entry> 
+</row> 
+<row> 
+ <entry>Grupo de Depósito</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: N </entry> 
+<entry valign="middle">The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Conta Bancária</entry><entry>Tabela</entry> 
+<entry>C_BankAccount</entry> 
+<entry valign="middle">cofBankAccount_CPOSPayment</entry> 
+<entry> </entry> 
+<entry valign="middle">Account at the Bank</entry> 
+<entry>The Bank Account identifies an account at this Bank.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

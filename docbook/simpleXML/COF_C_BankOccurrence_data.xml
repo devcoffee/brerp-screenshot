@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Ocorrência Bancária</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Banco</entry><entry>Ocorrência Bancária</entry><entry>Código da Ocorrência</entry><entry>Tipo da Ocorrência</entry><entry>Descrição</entry><entry>Nome</entry><entry>Chave de Busca</entry></row>
+<row><entry>1000000</entry><entry>1000001</entry><entry>02</entry><entry>O</entry><entry> </entry><entry>02..Entrada Confirmada (verificar motivo na posição 319 a 32</entry><entry>02</entry></row>
+<row><entry>1000000</entry><entry>1000002</entry><entry>03</entry><entry>O</entry><entry> </entry><entry>03..Entrada Rejeitada ( verificar motivo na posição 319 a 32</entry><entry>03</entry></row>
+<row><entry>1000000</entry><entry>1000000</entry><entry>06</entry><entry>L</entry><entry> </entry><entry>06..Liquidação normal (sem motivo)</entry><entry>06</entry></row>
+<row><entry>1000000</entry><entry>1000004</entry><entry>09</entry><entry>L</entry><entry> </entry><entry>09..Baixado Automat. via Arquivo (verificar motivo posição 3</entry><entry>09</entry></row>
+<row><entry>1000000</entry><entry>1000005</entry><entry>10</entry><entry>O</entry><entry> </entry><entry>10..Baixado conforme instruções da Agência(verificar motivo </entry><entry>10</entry></row>
+<row><entry>1000000</entry><entry>1000006</entry><entry>11</entry><entry>O</entry><entry> </entry><entry>11..Em Ser - Arquivo de Títulos pendentes (sem motivo)</entry><entry>11</entry></row>
+<row><entry>1000000</entry><entry>1000007</entry><entry>12</entry><entry>O</entry><entry> </entry><entry>12..Abatimento Concedido (sem motivo)</entry><entry>12</entry></row>
+<row><entry>1000000</entry><entry>1000008</entry><entry>13</entry><entry>O</entry><entry> </entry><entry>13..Abatimento Cancelado (sem motivo)</entry><entry>13</entry></row>
+<row><entry>1000000</entry><entry>1000009</entry><entry>14</entry><entry>O</entry><entry> </entry><entry>14..Vencimento Alterado (sem motivo)</entry><entry>14</entry></row>
+<row><entry>5000003</entry><entry>5000000</entry><entry>02</entry><entry>E</entry><entry>ENTRADA CONFIRMADA COM POSSIBILIDADE DE MENSAGEM
+</entry><entry>ENTRADA CONFIRMADA COM POSSIBILIDADE DE MENSAGEM</entry><entry>02</entry></row>
+<row><entry>5000000</entry><entry>5000001</entry><entry>6</entry><entry>M</entry><entry> </entry><entry>BAIXA MANUAL</entry><entry>6</entry></row>
+<row><entry>5000003</entry><entry>5000002</entry><entry>6</entry><entry>M</entry><entry> </entry><entry>BAIXA MANUAL</entry><entry>6</entry></row>
+<row><entry>5000003</entry><entry>5000003</entry><entry>01</entry><entry>M</entry><entry> </entry><entry> </entry><entry>1000000</entry></row>
+<row><entry> </entry><entry>5000004</entry><entry>02</entry><entry>M</entry><entry> </entry><entry> </entry><entry>1000001</entry></row></tbody>
+</tgroup>
+</table>

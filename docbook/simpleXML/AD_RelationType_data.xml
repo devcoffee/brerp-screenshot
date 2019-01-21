@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Tipo de Relação</title>
+<tgroup cols='10' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Fonte de Referência</entry><entry>Meta Referência</entry><entry>Tipo de Relação</entry><entry>Descrição</entry><entry>Tipo de Entidade</entry><entry>Dirigido</entry><entry>Nome</entry><entry>Regra da Fonte</entry><entry>Perfil de Destino</entry><entry>Tipo</entry></row>
+<row><entry>1500420</entry><entry>1500423</entry><entry>5000002</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>DocFiscalLine &lt;
+-&gt;
+ TaxDeterminationLine (Saida)</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500284</entry><entry>1500285</entry><entry>1000001</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>Packing List &lt;
+-&gt;
+ InOut</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500416</entry><entry>1500419</entry><entry>5000000</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>Payment &lt;
+-&gt;
+ BankStatementLine</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>53352</entry><entry>53353</entry><entry>50005</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>BPartner&lt;
+-&gt;
+Customer Return</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500420</entry><entry>1500421</entry><entry>5000001</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>DocFiscalLine &lt;
+-&gt;
+ TaxDeterminationLine (Entrada)</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>53352</entry><entry>53354</entry><entry>50004</entry><entry> </entry><entry>D</entry><entry>false</entry><entry>BPartner&lt;
+-&gt;
+VendorReturn</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500602</entry><entry>1500602</entry><entry>1500003</entry><entry> </entry><entry>U</entry><entry>false</entry><entry>C_DocType(InvoiceShipment) &lt;
+-&gt;
+ C_DocType</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500654</entry><entry>1500653</entry><entry>1500007</entry><entry> </entry><entry>U</entry><entry>true</entry><entry>Order Ref (Sales) &lt;
+&gt;
+ Invoice (Customer)</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500691</entry><entry>1500691</entry><entry>1500008</entry><entry> </entry><entry>U</entry><entry>false</entry><entry>Contrato Original &lt;
+-&gt;
+ Contratos Aditados</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500653</entry><entry>1500654</entry><entry>1500005</entry><entry> </entry><entry>U</entry><entry>true</entry><entry>Invoice (Customer) &lt;
+&gt;
+ Order Ref (Sales)</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>53349</entry><entry>53347</entry><entry>50002</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>Order (Sales) &lt;
+-&gt;
+InOut (Shipment)</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>53348</entry><entry>53345</entry><entry>50003</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>Invoice (Customer) &lt;
+-&gt;
+InOut (Shipment)</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500713</entry><entry>1500714</entry><entry>1500009</entry><entry> </entry><entry>U</entry><entry>true</entry><entry>Order Ref (Purchase) &lt;
+&gt;
+ Invoice (Provider)</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500714</entry><entry>1500713</entry><entry>1500010</entry><entry> </entry><entry>U</entry><entry>true</entry><entry>Invoice (Provider) &lt;
+&gt;
+ Order Ref (Purchase)</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500715</entry><entry>1500716</entry><entry>1500011</entry><entry> </entry><entry>U</entry><entry>true</entry><entry>Invoice (Provider) &lt;
+-&gt;
+InOut (Receipt)</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500716</entry><entry>1500715</entry><entry>1500012</entry><entry> </entry><entry>U</entry><entry>true</entry><entry>InOut (Receipt) &lt;
+-&gt;
+ Invoice (Provider)</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500720</entry><entry>1500721</entry><entry>1500013</entry><entry> </entry><entry>U</entry><entry>true</entry><entry>Order (Purchase) &lt;
+-&gt;
+InOut (Receiving)</entry><entry> </entry><entry> </entry><entry>I</entry></row>
+<row><entry>1500721</entry><entry>1500720</entry><entry>1500014</entry><entry> </entry><entry>U</entry><entry>true</entry><entry>InOut (Receiving) &lt;
+-&gt;
+ Order (Purchase)</entry><entry> </entry><entry> </entry><entry>I</entry></row></tbody>
+</tgroup>
+</table>

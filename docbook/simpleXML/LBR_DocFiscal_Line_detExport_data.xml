@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>LBR_DocFiscal_Line_detExport_ID</title>
+<tgroup cols='13' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Data do Conhecimento de Embarque</entry><entry>Data da Declaração</entry><entry>Data de Registro</entry><entry>Tipo da Exportação</entry><entry>Natureza da Exportação</entry><entry>Tipo do Conhecimento de Embarque</entry><entry>Chave de Acesso da NF-e</entry><entry>Número do Registro de Exportação</entry><entry>Quantidade do Item Realmente Exportado</entry><entry>Número do ato concessório de Drawback</entry><entry>LBR_DocFiscal_Line_detExport_ID</entry><entry>Doc. Fiscal - Linhas</entry></row>
+<row><entry>2018-01-11 00:00:00.0</entry><entry>2018-01-11 00:00:00.0</entry><entry>2018-01-11 00:00:00.0</entry><entry>0</entry><entry>D</entry><entry>10</entry><entry> </entry><entry> </entry><entry> </entry><entry>0</entry><entry>5000000</entry><entry>5000107</entry></row>
+<row><entry>2018-01-11 00:00:00.0</entry><entry>2018-01-11 00:00:00.0</entry><entry>2018-01-11 00:00:00.0</entry><entry>0</entry><entry>D</entry><entry>10</entry><entry> </entry><entry> </entry><entry> </entry><entry>0</entry><entry>5000002</entry><entry>5000109</entry></row></tbody>
+</tgroup>
+</table>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2008-03-05 00:52:04.0</para><para> <emphasis>Atualizado:</emphasis>2008-03-05 21:55:31.0</para>
+<title>Workflow: Configurar Replicação</title> 
+ <para><emphasis> Descrição: </emphasis>  Configurar dados para replicação</para><para><emphasis> Comentário/Ajuda: </emphasis>Data Replication allows you to synchronize data of remote instances with a central office.  All actions are initialized from the central office.&lt;
+p&gt;
+
+&lt;
+b&gt;
+Central System:&lt;
+/b&gt;
+
+- setup system with all organizations, roles, etc.
+- run the migration to make sure that it is up-to-date
+- export the central system
+&lt;
+p&gt;
+
+&lt;
+b&gt;
+Remote System:&lt;
+/b&gt;
+
+- install the exact version as Central System
+- import data from Central System in the remote locations
+&lt;
+p&gt;
+
+&lt;
+b&gt;
+Central System:&lt;
+/b&gt;
+
+- Replication Strategy
+- Define Export Format
+- Config Export Processor
+- Start JMS Server
+&lt;
+p&gt;
+
+** Enter Transactions **
+&lt;
+p&gt;
+
+&lt;
+b&gt;
+Remote System:&lt;
+/b&gt;
+
+- Config Import Processor</para>
+<para><emphasis> Nó inicial: </emphasis>Replication Strategy</para>
+<para><emphasis> WorkFlowType: </emphasis>G</para> 
+<table> 
+ <title>Configurar Replicação Workflow Transitions</title> 
+ <tgroup cols='5' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/> 
+<thead><row><entry>Nó</entry><entry>Descrição</entry><entry>Ação</entry><entry>Próximo nó</entry><entry>Condição</entry></row>
+</thead><tbody>
+<row> <entry>Replication Strategy</entry><entry>Replication Strategy</entry><entry>UserWindow</entry><entry>Export Format</entry><entry> </entry></row> 
+<row> <entry>Export Format</entry><entry>Export Format</entry><entry>UserWindow</entry><entry>Export Processor Type</entry><entry> </entry></row> 
+<row> <entry>Export Processor Type</entry><entry>Export Processor Type</entry><entry>UserWindow</entry><entry>Export Processor</entry><entry> </entry></row> 
+<row> <entry>Export Processor</entry><entry>Export Processor</entry><entry>UserWindow</entry><entry>Import Processor Type</entry><entry> </entry></row> 
+<row> <entry>Import Processor Type</entry><entry>Import Processor Type</entry><entry>UserWindow</entry><entry>Import Proccesor</entry><entry> </entry></row> 
+<row> <entry>Import Proccesor</entry><entry>Import Proccesor</entry><entry>UserWindow</entry><entry> </entry><entry> </entry></row> 
+</tbody>  </tgroup> </table> 
+ </chapter>

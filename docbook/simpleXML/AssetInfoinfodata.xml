@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Informações de Ativo</title>
+<tgroup cols='18' align='center' colsep='1' rowsep='1'> 
+
+ <tbody><row><entry>Chave de Busca</entry><entry>Nome</entry><entry>Produto</entry><entry>Parceiro de Negócios </entry><entry>Usuário/Contato</entry><entry>Data de Entrada em Serviço</entry><entry>Vencimento da Garantia</entry><entry>Núm. da Versão</entry><entry>Organização</entry><entry>No do Inventário</entry><entry>Grupo de Ativo</entry><entry>Data de Ativação</entry><entry>Data de Ativação</entry><entry>Status do Ativo</entry><entry>Em Posse</entry><entry>Em Poder</entry><entry>Totalmente depreciado</entry><entry>Descartado</entry></row>
+<row><entry>1000000</entry><entry>Produto teste Ativo</entry><entry>5000052</entry><entry>null</entry><entry>null</entry><entry>2018-01-23 00:00:00</entry><entry>null</entry><entry>null</entry><entry>1000001</entry><entry>5000000</entry><entry>5000000</entry><entry>2018-01-23 00:00:00</entry><entry>2018-01-23 00:00:00</entry><entry>NW</entry><entry>Y</entry><entry>Y</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000002</entry><entry>Maquina 1</entry><entry>5000057</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>null</entry><entry>1000001</entry><entry>5000002</entry><entry>5000001</entry><entry>null</entry><entry>null</entry><entry>NW</entry><entry>N</entry><entry>N</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000001</entry><entry>teste</entry><entry>5000052</entry><entry>null</entry><entry>null</entry><entry>2018-01-23 00:00:00</entry><entry>null</entry><entry>null</entry><entry>1000001</entry><entry>5000001</entry><entry>5000000</entry><entry>2018-01-23 00:00:00</entry><entry>2018-01-23 00:00:00</entry><entry>DI</entry><entry>Y</entry><entry>Y</entry><entry>N</entry><entry>Y</entry>
+</row>
+<row><entry>1000000</entry><entry>ATIVO</entry><entry>5000052</entry><entry>null</entry><entry>null</entry><entry>2018-02-17 00:00:00</entry><entry>null</entry><entry>null</entry><entry>1000001</entry><entry>5000000</entry><entry>5000000</entry><entry>2018-01-23 00:00:00</entry><entry>2018-01-23 00:00:00</entry><entry>NW</entry><entry>Y</entry><entry>Y</entry><entry>N</entry><entry>N</entry>
+</row>
+<row><entry>1000003</entry><entry>VW JETTA</entry><entry>5000052</entry><entry>null</entry><entry>null</entry><entry>2018-02-17 00:00:00</entry><entry>null</entry><entry>null</entry><entry>1000001</entry><entry>5000004</entry><entry>5000000</entry><entry>2018-02-17 00:00:00</entry><entry>2018-02-17 00:00:00</entry><entry>AC</entry><entry>Y</entry><entry>Y</entry><entry>N</entry><entry>N</entry>
+</row></tbody>
+</tgroup>
+</table>

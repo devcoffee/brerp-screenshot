@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>AD_Scheduler_Para</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Parâmetro de Processo</entry><entry>Agendador</entry><entry>Descrição</entry><entry>Parâmetro Padrão</entry><entry>Default To Parameter</entry></row>
+<row><entry>405</entry><entry>100</entry><entry> </entry><entry> </entry><entry> </entry></row>
+<row><entry>53130</entry><entry>100</entry><entry> </entry><entry>7</entry><entry> </entry></row>
+<row><entry>53257</entry><entry>50000</entry><entry>AD_HouseKeeping_ID=T_Aging</entry><entry>50000</entry><entry> </entry></row>
+<row><entry>53257</entry><entry>50002</entry><entry>AD_HouseKeeping_ID=T_InventoryValue</entry><entry>50002</entry><entry> </entry></row>
+<row><entry>53257</entry><entry>50003</entry><entry>AD_HouseKeeping_ID=T_InvoiceGL</entry><entry>50003</entry><entry> </entry></row>
+<row><entry>53257</entry><entry>50004</entry><entry>AD_HouseKeeping_ID=T_Replenish</entry><entry>50004</entry><entry> </entry></row>
+<row><entry>53257</entry><entry>50006</entry><entry>AD_HouseKeeping_ID=T_Report</entry><entry>50006</entry><entry> </entry></row>
+<row><entry>53257</entry><entry>50005</entry><entry>AD_HouseKeeping_ID=T_ReportStatement</entry><entry>50005</entry><entry> </entry></row>
+<row><entry>53257</entry><entry>50007</entry><entry>AD_HouseKeeping_ID=T_Spool</entry><entry>50007</entry><entry> </entry></row>
+<row><entry>53257</entry><entry>50008</entry><entry>AD_HouseKeeping_ID=T_Transaction</entry><entry>50008</entry><entry> </entry></row>
+<row><entry>53257</entry><entry>50009</entry><entry>AD_HouseKeeping_ID=T_TrialBalance</entry><entry>50009</entry><entry> </entry></row>
+<row><entry>1501190</entry><entry>5000000</entry><entry>System</entry><entry>0</entry><entry> </entry></row>
+<row><entry>1501191</entry><entry>5000000</entry><entry>*</entry><entry>0</entry><entry> </entry></row>
+<row><entry>1502807</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry></row>
+<row><entry>1501186</entry><entry>5000000</entry><entry>Não</entry><entry>N</entry><entry> </entry></row>
+<row><entry>1502797</entry><entry>5000000</entry><entry>01/01/2018, 31/12/2018</entry><entry>2018-01-01 00:00:00.0</entry><entry>2018-12-31 00:00:00.0</entry></row>
+<row><entry>1502798</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry></row>
+<row><entry>1501192</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry></row>
+<row><entry>1502799</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry></row>
+<row><entry>1502800</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry></row>
+<row><entry>1502801</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry></row>
+<row><entry>1502802</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry></row>
+<row><entry>1502803</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry></row>
+<row><entry>1502804</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry></row>
+<row><entry>1502805</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry></row>
+<row><entry>1502806</entry><entry>5000000</entry><entry> </entry><entry> </entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

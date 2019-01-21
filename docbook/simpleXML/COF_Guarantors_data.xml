@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>COF_Guarantors_ID</title>
+<tgroup cols='7' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>COF_CreditAnalysis_ID</entry><entry>COF_Guarantors_ID</entry><entry>Profissão</entry><entry>Descrição</entry><entry>CPF</entry><entry>RG</entry><entry>Nome</entry></row>
+<row><entry>5000003</entry><entry>5000000</entry><entry>hdhghd</entry><entry>eeee</entry><entry>22105523897</entry><entry>455637474</entry><entry>dddd</entry></row></tbody>
+</tgroup>
+</table>

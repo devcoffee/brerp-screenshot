@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Valor da Comissão</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Quantidade Real</entry><entry>Valor da Comissão</entry><entry>Linha de Comissão</entry><entry>Cálculo de Comissão</entry><entry>Valor da Comissão</entry><entry>Valor Convertido</entry></row>
+<row><entry>0.0</entry><entry>5000002</entry><entry>5000000</entry><entry>5000002</entry><entry>0.0</entry><entry>0.0</entry></row></tbody>
+</tgroup>
+</table>

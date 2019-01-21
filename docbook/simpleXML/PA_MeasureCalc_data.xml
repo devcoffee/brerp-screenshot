@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Cálculo de Medição</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Tabela</entry><entry>Coluna Parc.Negócios</entry><entry>Coluna de Data</entry><entry>Descrição</entry><entry>Tipo de Entidade</entry><entry>Coluna Chave</entry><entry>Nome</entry><entry>Coluna da Org.</entry><entry>Cálculo de Medição</entry><entry>Coluna de Produto</entry><entry>Sql SELECT</entry><entry>Sql WHERE</entry></row>
+<row><entry>318</entry><entry>C_Invoice.C_BPartner_ID</entry><entry>C_Invoice.DateInvoiced</entry><entry>Invoiced net revenue, without tax and charges</entry><entry>D</entry><entry>C_Invoice.C_Invoice_ID</entry><entry>Invoiced Net Revenue</entry><entry>C_Invoice.AD_Org_ID</entry><entry>100</entry><entry>il.M_Product_ID</entry><entry>SELECT SUM(il.LineNetAmt) 
+FROM RV_C_Invoice C_Invoice
+  INNER JOIN RV_C_InvoiceLine il ON (C_Invoice.C_Invoice_ID=il.C_Invoice_ID)</entry><entry>WHERE C_Invoice.IsSOTrx='Y' AND C_Invoice.Processed='Y'</entry></row>
+<row><entry>318</entry><entry>C_BPartner_ID</entry><entry>DateInvoiced</entry><entry>Invoice gross amount including tax;
+ Does not allow selection by product (Category)</entry><entry>D</entry><entry>C_Invoice_ID</entry><entry>Invoiced Gross Revenue</entry><entry>AD_Org_ID</entry><entry>101</entry><entry> </entry><entry>SELECT SUM(GrandTotal) 
+FROM RV_C_Invoice C_Invoice</entry><entry>WHERE IsSOTrx='Y' AND Processed='Y'</entry></row>
+<row><entry>318</entry><entry>C_Invoice.C_BPartner_ID</entry><entry>C_Invoice.DateInvoiced</entry><entry>Difference between Limit and Actual price</entry><entry>D</entry><entry>C_Invoice.C_Invoice_ID</entry><entry>Invoiced Sales Margin</entry><entry>C_Invoice.AD_Org_ID</entry><entry>102</entry><entry>il.M_Product_ID</entry><entry>SELECT SUM((il.PriceActual-il.PriceLimit)*QtyInvoiced) 
+FROM RV_C_Invoice C_Invoice
+  INNER JOIN RV_C_InvoiceLine il ON (C_Invoice.C_Invoice_ID=il.C_Invoice_ID)</entry><entry>WHERE C_Invoice.IsSOTrx='Y' AND C_Invoice.Processed='Y'</entry></row>
+<row><entry>291</entry><entry>C_BPartner_ID</entry><entry>Created</entry><entry>Number of (new) customers</entry><entry>D</entry><entry>C_BPartner_ID</entry><entry>Number of Customers</entry><entry>AD_Org_ID</entry><entry>103</entry><entry> </entry><entry>SELECT COUNT(*) 
+FROM C_BPartner</entry><entry>WHERE IsCustomer='Y'</entry></row>
+<row><entry>318</entry><entry>C_Invoice.C_BPartner_ID</entry><entry>C_Invoice.DateInvoiced</entry><entry>Invoiced paid quantities</entry><entry>D</entry><entry>C_Invoice.C_Invoice_ID</entry><entry>Invoiced Paid Quantities</entry><entry>C_Invoice.AD_Org_ID</entry><entry>104</entry><entry>il.M_Product_ID</entry><entry>SELECT SUM(il.QtyInvoiced) 
+FROM RV_C_Invoice C_Invoice
+  INNER JOIN RV_C_InvoiceLine il ON (C_Invoice.C_Invoice_ID=il.C_Invoice_ID)</entry><entry>WHERE C_Invoice.IsSOTrx='Y' AND C_Invoice.Processed='Y' AND C_Invoice.IsPaid='Y'
+</entry></row>
+<row><entry>318</entry><entry>C_BPartner_ID</entry><entry>DateInvoiced</entry><entry>Open Invoice Amount  in Accounting Currency</entry><entry>D</entry><entry>C_Invoice_ID</entry><entry>Open Invoice Amount</entry><entry>AD_Org_ID</entry><entry>105</entry><entry> </entry><entry>SELECT COALESCE(SUM(currencyBase(invoiceOpen(C_Invoice_ID, C_InvoicePaySchedule_ID),C_Currency_ID, DateAcct, AD_Client_ID, AD_Org_ID)),0)
+FROM C_Invoice_v C_Invoice</entry><entry>WHERE IsSOTrx='Y' AND Processed='Y'</entry></row>
+<row><entry>1120289</entry><entry> </entry><entry>LBR_DocFiscal.ide_dhemi</entry><entry> </entry><entry>U</entry><entry>LBR_DocFiscal.LBR_DocFiscal_ID</entry><entry>Meta de Faturamento </entry><entry>LBR_DocFiscal.AD_Org_ID</entry><entry>1500027</entry><entry> </entry><entry>SELECT SUM(total_icmstotal_vNF) as valor FROM LBR_DocFiscal</entry><entry>WHERE LBR_DocFiscal.lbr_NFeStatus = '100' AND LBR_DocFiscal.ide_tpNF = '1' and LBR_DocFiscal.ide_finNFe = '1'</entry></row></tbody>
+</tgroup>
+</table>

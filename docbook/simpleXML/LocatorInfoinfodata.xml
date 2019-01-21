@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Localizador</title>
+<tgroup cols='6' align='center' colsep='1' rowsep='1'> 
+
+ <tbody><row><entry>Chave de Busca</entry><entry>Prioridade Relativa</entry><entry>Corredor (X)</entry><entry>Estante (Y)</entry><entry>Nível (Z)</entry><entry>Armazém</entry></row>
+<row><entry>Default HQ Locator</entry><entry>50</entry><entry>0</entry><entry>0</entry><entry>0</entry><entry>103</entry>
+</row>
+<row><entry>HQ Transit</entry><entry>50</entry><entry>HQ Transit</entry><entry>HQ Transit</entry><entry>HQ Transit</entry><entry>50000</entry>
+</row>
+<row><entry>Store South</entry><entry>50</entry><entry>Store South</entry><entry>Store South</entry><entry>Store South</entry><entry>50004</entry>
+</row>
+<row><entry>Store North</entry><entry>50</entry><entry>Store North</entry><entry>Store North</entry><entry>Store North</entry><entry>50003</entry>
+</row>
+<row><entry>Fertilizer</entry><entry>50</entry><entry>Fertilizer</entry><entry>Fertilizer</entry><entry>Fertilizer</entry><entry>50002</entry>
+</row>
+<row><entry>Furniture</entry><entry>50</entry><entry>Furniture</entry><entry>Furniture</entry><entry>Furniture</entry><entry>50001</entry>
+</row>
+<row><entry>Store East</entry><entry>50</entry><entry>Store East</entry><entry>Store East</entry><entry>Store East</entry><entry>50005</entry>
+</row>
+<row><entry>Store West</entry><entry>50</entry><entry>Store West</entry><entry>Store West</entry><entry>Store West</entry><entry>50006</entry>
+</row>
+<row><entry>Default Store Locator</entry><entry>50</entry><entry>0</entry><entry>0</entry><entry>0</entry><entry>104</entry>
+</row>
+<row><entry>Fertilizer Transit</entry><entry>50</entry><entry>Fertilizer Transit</entry><entry>Fertilizer Transit</entry><entry>Fertilizer Transit</entry><entry>50007</entry>
+</row>
+<row><entry>Furniture Transit</entry><entry>50</entry><entry>Furniture Transit</entry><entry>Furniture Transit</entry><entry>Furniture Transit</entry><entry>50008</entry>
+</row>
+<row><entry>Padrão</entry><entry>50</entry><entry>0</entry><entry>0</entry><entry>0</entry><entry>1000002</entry>
+</row>
+<row><entry>MGS Padrao</entry><entry>50</entry><entry>1</entry><entry>1</entry><entry>1</entry><entry>5000002</entry>
+</row>
+<row><entry>2 * 2 * 2</entry><entry>50</entry><entry>2</entry><entry>2</entry><entry>2</entry><entry>1000002</entry>
+</row>
+<row><entry>1 * 1 * 0</entry><entry>50</entry><entry>1</entry><entry>1</entry><entry>0</entry><entry>1000002</entry>
+</row>
+<row><entry>1 * 0 * 0</entry><entry>50</entry><entry>1</entry><entry>0</entry><entry>0</entry><entry>1000002</entry>
+</row>
+<row><entry>UC01</entry><entry>50</entry><entry>a</entry><entry>b</entry><entry>c</entry><entry>5000003</entry>
+</row>
+<row><entry>UC02</entry><entry>50</entry><entry>1</entry><entry>2</entry><entry>3</entry><entry>5000003</entry>
+</row>
+<row><entry>RV02</entry><entry>50</entry><entry>A</entry><entry>B</entry><entry>C</entry><entry>5000004</entry>
+</row>
+<row><entry>FB02</entry><entry>50</entry><entry>2</entry><entry>3</entry><entry>4</entry><entry>5000005</entry>
+</row>
+<row><entry>MP01</entry><entry>50</entry><entry>1</entry><entry>1</entry><entry>1</entry><entry>5000006</entry>
+</row>
+<row><entry>MP02</entry><entry>50</entry><entry>1</entry><entry>2</entry><entry>1</entry><entry>5000006</entry>
+</row>
+<row><entry>RV01</entry><entry>50</entry><entry>1</entry><entry>2</entry><entry>3</entry><entry>5000004</entry>
+</row>
+<row><entry>1000001</entry><entry>50</entry><entry>a</entry><entry>a</entry><entry>a</entry><entry>5000008</entry>
+</row>
+<row><entry>Armazem PR</entry><entry>50</entry><entry>a</entry><entry>a</entry><entry>a</entry><entry>5000007</entry>
+</row>
+<row><entry>Armazém SC</entry><entry>50</entry><entry>a</entry><entry>a</entry><entry>a</entry><entry>5000010</entry>
+</row>
+<row><entry>FB01</entry><entry>50</entry><entry>1</entry><entry>2</entry><entry>3</entry><entry>5000005</entry>
+</row>
+<row><entry>1000003</entry><entry>50</entry><entry>1</entry><entry>1</entry><entry>1</entry><entry>5000011</entry>
+</row>
+<row><entry>1000004</entry><entry>50</entry><entry>1</entry><entry>1</entry><entry>1</entry><entry>5000013</entry>
+</row></tbody>
+</tgroup>
+</table>

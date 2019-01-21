@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Programar</title>
+<tgroup cols='12' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Programar</entry><entry>Padrão de Agendamento do Cron</entry><entry>Descrição</entry><entry>Freqüência</entry><entry>Tipo de Freqüência</entry><entry>Ignore o Tempo de Processamento</entry><entry>Agendamento de Sistema</entry><entry>Dia do Mês</entry><entry>Nome</entry><entry>Executado apenas em IP</entry><entry>Tipo Programação</entry><entry>Dia da Semana</entry></row>
+<row><entry>200000</entry><entry> </entry><entry> </entry><entry>1</entry><entry>D</entry><entry>false</entry><entry>false</entry><entry>0</entry><entry>1 Day</entry><entry> </entry><entry>F</entry><entry> </entry></row>
+<row><entry>200001</entry><entry> </entry><entry> </entry><entry>7</entry><entry>D</entry><entry>false</entry><entry>false</entry><entry>0</entry><entry>7 Days</entry><entry> </entry><entry>F</entry><entry> </entry></row>
+<row><entry>200002</entry><entry> </entry><entry>(do not delete, used in Initial Client Setup)</entry><entry>10</entry><entry>M</entry><entry>false</entry><entry>false</entry><entry>0</entry><entry>10 Minutes</entry><entry> </entry><entry>F</entry><entry> </entry></row>
+<row><entry>200003</entry><entry> </entry><entry>(do not delete, used in Initial Client Setup)</entry><entry>15</entry><entry>M</entry><entry>false</entry><entry>false</entry><entry>0</entry><entry>15 Minutes</entry><entry> </entry><entry>F</entry><entry> </entry></row>
+<row><entry>200004</entry><entry> </entry><entry> </entry><entry>2</entry><entry>H</entry><entry>false</entry><entry>false</entry><entry>0</entry><entry>2 Hours</entry><entry> </entry><entry>F</entry><entry> </entry></row></tbody>
+</tgroup>
+</table>

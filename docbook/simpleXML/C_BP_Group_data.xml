@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Grupo de Parceiros</title>
+<tgroup cols='15' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Cor de Impressão</entry><entry>Grupo de Parceiros</entry><entry>Cobrança</entry><entry>Observar Crédito %</entry><entry>Descrição</entry><entry>Inform. Confidencial</entry><entry>Padrão</entry><entry>Esquema de Descontos</entry><entry>Lista de Preço</entry><entry>Nome</entry><entry>Esquema de Descontos do PC</entry><entry>Lista de Preço de Compra</entry><entry>Tolerância de Coincidência de Preço</entry><entry>Base de Prioridade</entry><entry>Chave de Busca</entry></row>
+<row><entry> </entry><entry>103</entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry> </entry><entry>Standard Customers</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>Standard</entry></row>
+<row><entry>110</entry><entry>104</entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>false</entry><entry> </entry><entry> </entry><entry>Vendors</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>Vendor</entry></row>
+<row><entry>117</entry><entry>105</entry><entry> </entry><entry>0</entry><entry> </entry><entry>false</entry><entry>false</entry><entry> </entry><entry> </entry><entry>Staff</entry><entry> </entry><entry> </entry><entry> </entry><entry> </entry><entry>Staff</entry></row>
+<row><entry> </entry><entry>1000000</entry><entry> </entry><entry> </entry><entry> </entry><entry>false</entry><entry>true</entry><entry> </entry><entry> </entry><entry>Padrão</entry><entry> </entry><entry> </entry><entry> </entry><entry>S</entry><entry>Padrão</entry></row>
+<row><entry>100</entry><entry>1000001</entry><entry> </entry><entry>0</entry><entry> </entry><entry>false</entry><entry>false</entry><entry> </entry><entry>1000004</entry><entry>Clientes</entry><entry> </entry><entry> </entry><entry>0</entry><entry>S</entry><entry>Clientes</entry></row>
+<row><entry>100</entry><entry>1000002</entry><entry> </entry><entry>0</entry><entry> </entry><entry>false</entry><entry>false</entry><entry> </entry><entry>1000004</entry><entry>Fornecedores</entry><entry> </entry><entry> </entry><entry>0</entry><entry>S</entry><entry>Fornecedores</entry></row>
+<row><entry>100</entry><entry>1000003</entry><entry> </entry><entry>0</entry><entry> </entry><entry>false</entry><entry>false</entry><entry> </entry><entry>1000004</entry><entry>Funcionários</entry><entry> </entry><entry> </entry><entry>0</entry><entry>S</entry><entry>Funcionários</entry></row>
+<row><entry>100</entry><entry>1000004</entry><entry> </entry><entry>0</entry><entry> </entry><entry>false</entry><entry>false</entry><entry> </entry><entry>1000004</entry><entry>Representantes</entry><entry> </entry><entry> </entry><entry>0</entry><entry>S</entry><entry>Representantes</entry></row></tbody>
+</tgroup>
+</table>

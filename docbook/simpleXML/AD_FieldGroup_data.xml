@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>Grupo de Campo</title>
+<tgroup cols='5' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Grupo de Campo</entry><entry>Tipo de Entidade</entry><entry>Field Group Type</entry><entry>Recolhida por Padrão</entry><entry>Nome</entry></row>
+<row><entry>128</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Calculations</entry></row>
+<row><entry>130</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Delivery</entry></row>
+<row><entry>131</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Invoicing</entry></row>
+<row><entry>129</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Proxy</entry></row>
+<row><entry>124</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Shipment</entry></row>
+<row><entry>118</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Defaults</entry></row>
+<row><entry>119</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Request Management</entry></row>
+<row><entry>102</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Quantities</entry></row>
+<row><entry>103</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Amounts</entry></row>
+<row><entry>105</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>History</entry></row>
+<row><entry>106</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Product</entry></row>
+<row><entry>107</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Business Partner</entry></row>
+<row><entry>108</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Warehouse</entry></row>
+<row><entry>113</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>General</entry></row>
+<row><entry>114</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Action</entry></row>
+<row><entry>115</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Standard Cost</entry></row>
+<row><entry>116</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Actual Costs</entry></row>
+<row><entry>117</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Statistics</entry></row>
+<row><entry>120</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Web Store</entry></row>
+<row><entry>125</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Document</entry></row>
+<row><entry>121</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Internal</entry></row>
+<row><entry>122</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>External</entry></row>
+<row><entry>123</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Common</entry></row>
+<row><entry>126</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Line</entry></row>
+<row><entry>134</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Workflow</entry></row>
+<row><entry>135</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Access</entry></row>
+<row><entry>132</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Only ..</entry></row>
+<row><entry>133</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Selection</entry></row>
+<row><entry>127</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Simulation</entry></row>
+<row><entry>50000</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Allow Info In Role</entry></row>
+<row><entry>50007</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>General Ledger</entry></row>
+<row><entry>50008</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>Machines</entry></row>
+<row><entry>50009</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>Database</entry></row>
+<row><entry>50012</entry><entry>D</entry><entry>T</entry><entry>false</entry><entry>Logo</entry></row>
+<row><entry>104</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Reference</entry></row>
+<row><entry>50001</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Accounts</entry></row>
+<row><entry>50002</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Setup</entry></row>
+<row><entry>50004</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Revaluation Accounts</entry></row>
+<row><entry>50003</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Dates</entry></row>
+<row><entry>50005</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Contract</entry></row>
+<row><entry>50016</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Location</entry></row>
+<row><entry>50006</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Options</entry></row>
+<row><entry>101</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Status</entry></row>
+<row><entry>50017</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Fixed Asset</entry></row>
+<row><entry>50018</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Maintenance</entry></row>
+<row><entry>50019</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Funding</entry></row>
+<row><entry>50020</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Depreciation</entry></row>
+<row><entry>109</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Bank Accounts</entry></row>
+<row><entry>50010</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Manufacturing Accounts</entry></row>
+<row><entry>110</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Cash Book Accounts</entry></row>
+<row><entry>112</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Project Accounts</entry></row>
+<row><entry>200016</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Foreign Key</entry></row>
+<row><entry>1120024</entry><entry>LBRA</entry><entry>C</entry><entry>false</entry><entry>Nota Fiscal</entry></row>
+<row><entry>1120025</entry><entry>LBRA</entry><entry>C</entry><entry>false</entry><entry>Nota Fiscal de Produtor Rural</entry></row>
+<row><entry>1120026</entry><entry>LBRA</entry><entry>C</entry><entry>false</entry><entry>CT-e (Conhecimento de Transporte Eletronico)</entry></row>
+<row><entry>1120027</entry><entry>LBRA</entry><entry>C</entry><entry>false</entry><entry>ECF</entry></row>
+<row><entry>1100000</entry><entry>LBRA</entry><entry>C</entry><entry>false</entry><entry>Envio de Lote</entry></row>
+<row><entry>200003</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>User Locking</entry></row>
+<row><entry>200004</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Overwritten From Column</entry></row>
+<row><entry>200000</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Swing Position</entry></row>
+<row><entry>200005</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Customer Information</entry></row>
+<row><entry>200006</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Vendor Information</entry></row>
+<row><entry>200001</entry><entry>D</entry><entry> </entry><entry>false</entry><entry>Web Position</entry></row>
+<row><entry>200007</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Sales Information</entry></row>
+<row><entry>200008</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Document Preferences</entry></row>
+<row><entry>200012</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Warehouse Accounts</entry></row>
+<row><entry>200009</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Charge Account</entry></row>
+<row><entry>200011</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Product Accounts</entry></row>
+<row><entry>200013</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Product Category Accounts</entry></row>
+<row><entry>200010</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Business Partner Accounts</entry></row>
+<row><entry>200014</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Business Partner Group Accounts</entry></row>
+<row><entry>200015</entry><entry>D</entry><entry>C</entry><entry>true</entry><entry>Technical</entry></row>
+<row><entry>1120030</entry><entry>COFF</entry><entry>C</entry><entry>false</entry><entry>CR</entry></row>
+<row><entry>1100001</entry><entry>LBRA</entry><entry>C</entry><entry>false</entry><entry>Resposta do Lote</entry></row>
+<row><entry>1100002</entry><entry>LBRA</entry><entry>C</entry><entry>false</entry><entry>NF-e</entry></row>
+<row><entry>1106000</entry><entry>LBRA</entry><entry>C</entry><entry>false</entry><entry>Validation</entry></row>
+<row><entry>1120014</entry><entry>LBRA</entry><entry>C</entry><entry>false</entry><entry>Calculo do Imposto</entry></row>
+<row><entry>1120023</entry><entry>LBRA</entry><entry>C</entry><entry>false</entry><entry>NF-e (Nota Fiscal Eletronica)</entry></row>
+<row><entry>1120031</entry><entry>COFF</entry><entry>C</entry><entry>false</entry><entry>DR</entry></row>
+<row><entry>1120034</entry><entry>COFF</entry><entry>C</entry><entry>false</entry><entry>Finalidade</entry></row>
+<row><entry>1120035</entry><entry>COFF</entry><entry>C</entry><entry>false</entry><entry>Período</entry></row>
+<row><entry>1120037</entry><entry>COFF</entry><entry>C</entry><entry>false</entry><entry>Geração do Arquivo</entry></row>
+<row><entry>1120036</entry><entry>COFF</entry><entry>C</entry><entry>false</entry><entry>Registros</entry></row>
+<row><entry>200018</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Background Job</entry></row>
+<row><entry>1120028</entry><entry>BRERP0001</entry><entry>C</entry><entry>false</entry><entry>Outras Informações</entry></row>
+<row><entry>1500018</entry><entry>BRERP0100</entry><entry>C</entry><entry>false</entry><entry>Agência Bancária</entry></row>
+<row><entry>1500019</entry><entry>BRERP0100</entry><entry>C</entry><entry>false</entry><entry>Sacado</entry></row>
+<row><entry>1500020</entry><entry>BRERP0100</entry><entry>C</entry><entry>false</entry><entry>Cedente</entry></row>
+<row><entry>1500021</entry><entry>BRERP0100</entry><entry>C</entry><entry>false</entry><entry>Cheque</entry></row>
+<row><entry>1500022</entry><entry>BRERP0100</entry><entry>C</entry><entry>false</entry><entry>Trocas / Devoluções</entry></row>
+<row><entry>111</entry><entry>D</entry><entry>C</entry><entry>false</entry><entry>Tax Accounts</entry></row>
+<row><entry>1500029</entry><entry>BRERP0200</entry><entry>C</entry><entry>false</entry><entry>BrERP - Markup</entry></row>
+<row><entry>1500035</entry><entry>BRERP0100</entry><entry>C</entry><entry>false</entry><entry>Emissor</entry></row>
+<row><entry>1500036</entry><entry>BRERP0100</entry><entry>C</entry><entry>false</entry><entry>Beneficiário</entry></row>
+<row><entry>1500040</entry><entry>BRERP0001</entry><entry>C</entry><entry>false</entry><entry>Importer</entry></row>
+<row><entry>1500041</entry><entry>BRERP0001</entry><entry>C</entry><entry>false</entry><entry>Purchaser</entry></row>
+<row><entry>1500042</entry><entry>BRERP0001</entry><entry>C</entry><entry>false</entry><entry>Legal Representative</entry></row>
+<row><entry>1500043</entry><entry>BRERP0001</entry><entry>C</entry><entry>false</entry><entry>Cargo</entry></row>
+<row><entry>1500044</entry><entry>COFF</entry><entry>C</entry><entry>false</entry><entry>From</entry></row>
+<row><entry>1500045</entry><entry>COFF</entry><entry>C</entry><entry>false</entry><entry>To</entry></row></tbody>
+</tgroup>
+</table>

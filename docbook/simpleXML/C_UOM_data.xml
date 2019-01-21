@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>UDM</title>
+<tgroup cols='9' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Precisão do Custeio</entry><entry>UDM</entry><entry>Descrição</entry><entry>Padrão</entry><entry>Nome</entry><entry>Precisão Padrão</entry><entry>Símbolo</entry><entry>Tipo de UdM</entry><entry>Código UDM</entry></row>
+<row><entry>4</entry><entry>109</entry><entry> </entry><entry>false</entry><entry>6-Pack</entry><entry>0</entry><entry>6Pk</entry><entry> </entry><entry>6PK</entry></row>
+<row><entry>4</entry><entry>50000</entry><entry> </entry><entry>false</entry><entry>Mililiter</entry><entry>4</entry><entry>ml</entry><entry> </entry><entry>ml</entry></row>
+<row><entry>0</entry><entry>50001</entry><entry> </entry><entry>false</entry><entry>kilogram</entry><entry>2</entry><entry>Kg</entry><entry> </entry><entry>Kg</entry></row>
+<row><entry>6</entry><entry>50002</entry><entry> </entry><entry>false</entry><entry>milligram</entry><entry>6</entry><entry>mg</entry><entry> </entry><entry>mg</entry></row>
+<row><entry>0</entry><entry>50003</entry><entry> </entry><entry>false</entry><entry>litre</entry><entry>2</entry><entry>L</entry><entry> </entry><entry>L</entry></row>
+<row><entry>2</entry><entry>1000000</entry><entry> </entry><entry>false</entry><entry>Ampère(s)</entry><entry>2</entry><entry>A</entry><entry>EN</entry><entry>A</entry></row>
+<row><entry>2</entry><entry>1000001</entry><entry> </entry><entry>false</entry><entry>Ampère(s)Hora</entry><entry>2</entry><entry>Ah</entry><entry>EN</entry><entry>Ah</entry></row>
+<row><entry>2</entry><entry>1000003</entry><entry> </entry><entry>false</entry><entry>Becquerel</entry><entry>2</entry><entry>Bq</entry><entry>EN</entry><entry>Bq</entry></row>
+<row><entry>2</entry><entry>1000004</entry><entry> </entry><entry>false</entry><entry>Grau(s) Celsius</entry><entry>2</entry><entry>ºC</entry><entry>TE</entry><entry>ºC</entry></row>
+<row><entry>2</entry><entry>1000006</entry><entry> </entry><entry>false</entry><entry>Centigrama(s)</entry><entry>2</entry><entry>Cg</entry><entry>DE</entry><entry>Cg</entry></row>
+<row><entry>2</entry><entry>1000007</entry><entry> </entry><entry>false</entry><entry>Centímetro(s)</entry><entry>2</entry><entry>Cm</entry><entry>LE</entry><entry>Cm</entry></row>
+<row><entry>2</entry><entry>1000008</entry><entry> </entry><entry>false</entry><entry>Centímetro(s) Quadrado(s)</entry><entry>2</entry><entry>Cm²</entry><entry>LE</entry><entry>Cm²</entry></row>
+<row><entry>2</entry><entry>1000009</entry><entry> </entry><entry>false</entry><entry>Centímetro(s) Cúbico(s)</entry><entry>2</entry><entry>Cm³</entry><entry>LE</entry><entry>Cm³</entry></row>
+<row><entry>2</entry><entry>1000010</entry><entry> </entry><entry>false</entry><entry>Centinewton(s)</entry><entry>2</entry><entry>cN</entry><entry>LE</entry><entry>cN</entry></row>
+<row><entry>2</entry><entry>1000011</entry><entry> </entry><entry>false</entry><entry>Centistokes</entry><entry>2</entry><entry>cSt</entry><entry>LE</entry><entry>cSt</entry></row>
+<row><entry>2</entry><entry>1000012</entry><entry> </entry><entry>false</entry><entry>Denominacao Comum Internacional</entry><entry>2</entry><entry>DCI</entry><entry>OT</entry><entry>DCI</entry></row>
+<row><entry>2</entry><entry>1000013</entry><entry> </entry><entry>false</entry><entry>Grama(s)</entry><entry>2</entry><entry>G</entry><entry>WE</entry><entry>G</entry></row>
+<row><entry>2</entry><entry>1000014</entry><entry> </entry><entry>false</entry><entry>Gigabit(s)</entry><entry>2</entry><entry>Gbit</entry><entry>DV</entry><entry>Gbit</entry></row>
+<row><entry>2</entry><entry>1000015</entry><entry> </entry><entry>false</entry><entry>GigaBit(s)</entry><entry>2</entry><entry>GHZ</entry><entry>DV</entry><entry>GHZ</entry></row>
+<row><entry>2</entry><entry>1000016</entry><entry> </entry><entry>false</entry><entry>Hora(s)</entry><entry>2</entry><entry>H</entry><entry>TM</entry><entry>H</entry></row>
+<row><entry>2</entry><entry>1000018</entry><entry> </entry><entry>false</entry><entry>Rockwell C</entry><entry>2</entry><entry>HRC</entry><entry>DE</entry><entry>HRC</entry></row>
+<row><entry>2</entry><entry>1000019</entry><entry> </entry><entry>false</entry><entry>Hertz</entry><entry>2</entry><entry>Hz</entry><entry>FR</entry><entry>Hz</entry></row>
+<row><entry>2</entry><entry>1000020</entry><entry> </entry><entry>false</entry><entry>Organizacao Internation de Normalizacao</entry><entry>2</entry><entry>ISO</entry><entry>OT</entry><entry>ISO</entry></row>
+<row><entry>2</entry><entry>1000021</entry><entry> </entry><entry>false</entry><entry>Infravermelho</entry><entry>2</entry><entry>IV</entry><entry>EN</entry><entry>IV</entry></row>
+<row><entry>2</entry><entry>1000022</entry><entry> </entry><entry>false</entry><entry>Quilo Bit(s)</entry><entry>2</entry><entry>Kbit</entry><entry>DV</entry><entry>Kbit</entry></row>
+<row><entry>2</entry><entry>1000023</entry><entry> </entry><entry>false</entry><entry>Quilocaloria(s)</entry><entry>2</entry><entry>Kcal</entry><entry>WE</entry><entry>Kcal</entry></row>
+<row><entry>2</entry><entry>1000024</entry><entry> </entry><entry>false</entry><entry>Quilograma(s)</entry><entry>2</entry><entry>Kg</entry><entry>WE</entry><entry>Kg</entry></row>
+<row><entry>2</entry><entry>1000025</entry><entry> </entry><entry>false</entry><entry>Quilograma(s)-Força</entry><entry>2</entry><entry>Kgf</entry><entry>WE</entry><entry>Kgf</entry></row>
+<row><entry>2</entry><entry>1000026</entry><entry> </entry><entry>false</entry><entry>Quilo Hertz</entry><entry>2</entry><entry>KHz</entry><entry>FR</entry><entry>KHz</entry></row>
+<row><entry>2</entry><entry>1000027</entry><entry> </entry><entry>false</entry><entry>Quilo Newton(s)</entry><entry>2</entry><entry>KN</entry><entry>WE</entry><entry>KN</entry></row>
+<row><entry>2</entry><entry>1000028</entry><entry> </entry><entry>false</entry><entry>QuiloPascal(is)</entry><entry>2</entry><entry>KPa</entry><entry>LE</entry><entry>KPa</entry></row>
+<row><entry>2</entry><entry>1000029</entry><entry> </entry><entry>false</entry><entry>Quilovolt(s)</entry><entry>2</entry><entry>KV</entry><entry>EN</entry><entry>KV</entry></row>
+<row><entry>2</entry><entry>1000030</entry><entry> </entry><entry>false</entry><entry>Quilo Volt(s)-Ampere(s)</entry><entry>2</entry><entry>KVA</entry><entry>EN</entry><entry>KVA</entry></row>
+<row><entry>2</entry><entry>1000031</entry><entry> </entry><entry>false</entry><entry>Quilovolt(s)-Ampere(s) Reativo(s)</entry><entry>2</entry><entry>Kvar</entry><entry>EN</entry><entry>Kvar</entry></row>
+<row><entry>2</entry><entry>1000032</entry><entry> </entry><entry>false</entry><entry>Quilowatt(s)</entry><entry>2</entry><entry>KW</entry><entry>EN</entry><entry>KW</entry></row>
+<row><entry>2</entry><entry>1000033</entry><entry> </entry><entry>false</entry><entry>Litros(s)</entry><entry>2</entry><entry>L</entry><entry>VL</entry><entry>L</entry></row>
+<row><entry>2</entry><entry>1000034</entry><entry> </entry><entry>false</entry><entry>Metro(s)</entry><entry>2</entry><entry>M</entry><entry>LE</entry><entry>M</entry></row>
+<row><entry>2</entry><entry>1000035</entry><entry> </entry><entry>false</entry><entry>Meta-</entry><entry>2</entry><entry>M-</entry><entry>OT</entry><entry>M-</entry></row>
+<row><entry>2</entry><entry>1000036</entry><entry> </entry><entry>false</entry><entry>Metro(s) Quadrado(s)</entry><entry>2</entry><entry>M²</entry><entry>LE</entry><entry>M²</entry></row>
+<row><entry>2</entry><entry>1000037</entry><entry> </entry><entry>false</entry><entry>Milibar(es)</entry><entry>2</entry><entry>Mbar</entry><entry>PR</entry><entry>Mbar</entry></row>
+<row><entry>2</entry><entry>1000038</entry><entry> </entry><entry>false</entry><entry>Megabit(s)</entry><entry>2</entry><entry>Mbit</entry><entry>DV</entry><entry>Mbit</entry></row>
+<row><entry>2</entry><entry>1000039</entry><entry> </entry><entry>false</entry><entry>Microcurie(s)</entry><entry>2</entry><entry>µCi</entry><entry>LE</entry><entry>µCi</entry></row>
+<row><entry>2</entry><entry>1000040</entry><entry> </entry><entry>false</entry><entry>Miligrama(s)</entry><entry>2</entry><entry>Mg</entry><entry>WE</entry><entry>Mg</entry></row>
+<row><entry>2</entry><entry>1000041</entry><entry> </entry><entry>false</entry><entry>Megahertz</entry><entry>2</entry><entry>MHZ</entry><entry>FR</entry><entry>MHZ</entry></row>
+<row><entry>2</entry><entry>1000042</entry><entry> </entry><entry>false</entry><entry>Minuto(s)</entry><entry>2</entry><entry>Min</entry><entry>TM</entry><entry>Min</entry></row>
+<row><entry>2</entry><entry>1000043</entry><entry> </entry><entry>false</entry><entry>Milímetro(s)</entry><entry>2</entry><entry>MM</entry><entry>LE</entry><entry>MM</entry></row>
+<row><entry>2</entry><entry>1000044</entry><entry> </entry><entry>false</entry><entry>Milinewton(s)</entry><entry>2</entry><entry>mN</entry><entry>FO</entry><entry>mN</entry></row>
+<row><entry>2</entry><entry>1000045</entry><entry> </entry><entry>false</entry><entry>Megapascal(is)</entry><entry>2</entry><entry>MPa</entry><entry>PR</entry><entry>MPa</entry></row>
+<row><entry>2</entry><entry>1000046</entry><entry> </entry><entry>false</entry><entry>MegaWarr(s)</entry><entry>2</entry><entry>MW</entry><entry>EN</entry><entry>MW</entry></row>
+<row><entry>2</entry><entry>1000047</entry><entry> </entry><entry>false</entry><entry>Newton(s)</entry><entry>2</entry><entry>N</entry><entry>FO</entry><entry>N</entry></row>
+<row><entry>2</entry><entry>1000048</entry><entry> </entry><entry>false</entry><entry>Número</entry><entry>2</entry><entry>Nº</entry><entry>OT</entry><entry>Nº</entry></row>
+<row><entry>2</entry><entry>1000049</entry><entry> </entry><entry>false</entry><entry>NanoMetro(s)</entry><entry>2</entry><entry>nm</entry><entry>LE</entry><entry>nm</entry></row>
+<row><entry>2</entry><entry>1000005</entry><entry> </entry><entry>false</entry><entry>Charge Coupled Device</entry><entry>2</entry><entry>CCD</entry><entry>OT</entry><entry>CCD</entry></row>
+<row><entry>2</entry><entry>1000017</entry><entry> </entry><entry>false</entry><entry>Horse-Power</entry><entry>2</entry><entry>HP</entry><entry>LE</entry><entry>HP</entry></row>
+<row><entry>2</entry><entry>1000050</entry><entry> </entry><entry>false</entry><entry>Newton(s) Metro</entry><entry>2</entry><entry>Nm</entry><entry>LE</entry><entry>Nm</entry></row>
+<row><entry>2</entry><entry>1000051</entry><entry> </entry><entry>false</entry><entry>Nanosegundo(s)</entry><entry>2</entry><entry>NS</entry><entry>TM</entry><entry>NS</entry></row>
+<row><entry>2</entry><entry>1000052</entry><entry> </entry><entry>false</entry><entry>Orto-</entry><entry>2</entry><entry>O-</entry><entry>WE</entry><entry>O-</entry></row>
+<row><entry>2</entry><entry>1000053</entry><entry> </entry><entry>false</entry><entry>Para-</entry><entry>2</entry><entry>P-</entry><entry>OT</entry><entry>P-</entry></row>
+<row><entry>2</entry><entry>1000054</entry><entry> </entry><entry>false</entry><entry>Potencial Hidrogenionico</entry><entry>2</entry><entry>pH</entry><entry>DE</entry><entry>pH</entry></row>
+<row><entry>2</entry><entry>1000055</entry><entry> </entry><entry>false</entry><entry>Segundos(s)</entry><entry>2</entry><entry>S</entry><entry>TM</entry><entry>S</entry></row>
+<row><entry>2</entry><entry>1000056</entry><entry> </entry><entry>false</entry><entry>Tonelada(s)</entry><entry>2</entry><entry>T</entry><entry>WE</entry><entry>T</entry></row>
+<row><entry>2</entry><entry>1000057</entry><entry> </entry><entry>false</entry><entry>Ultravioleta</entry><entry>2</entry><entry>UV</entry><entry>EN</entry><entry>UV</entry></row>
+<row><entry>2</entry><entry>1000058</entry><entry> </entry><entry>false</entry><entry>Volt(s)</entry><entry>2</entry><entry>V</entry><entry>EN</entry><entry>V</entry></row>
+<row><entry>2</entry><entry>1000059</entry><entry> </entry><entry>false</entry><entry>Volume</entry><entry>2</entry><entry>Vol</entry><entry>DE</entry><entry>Vol</entry></row>
+<row><entry>2</entry><entry>1000060</entry><entry> </entry><entry>false</entry><entry>Watt(s)</entry><entry>2</entry><entry>W</entry><entry>EN</entry><entry>W</entry></row>
+<row><entry>2</entry><entry>1000061</entry><entry> </entry><entry>false</entry><entry>X Grau(s)</entry><entry>2</entry><entry>Xº</entry><entry>AN</entry><entry>Xº</entry></row>
+<row><entry>2</entry><entry>1000062</entry><entry> </entry><entry>false</entry><entry>Por Cento</entry><entry>2</entry><entry>%</entry><entry>OT</entry><entry>%</entry></row>
+<row><entry>2</entry><entry>1000002</entry><entry>American Society for Testing Materials</entry><entry>false</entry><entry>American Society for Testing Materials</entry><entry>2</entry><entry>ASTM</entry><entry>OT</entry><entry>ASTM</entry></row>
+<row><entry>2</entry><entry>102</entry><entry> </entry><entry>false</entry><entry>Dia</entry><entry>2</entry><entry>d  </entry><entry> </entry><entry>d</entry></row>
+<row><entry>4</entry><entry>100</entry><entry> </entry><entry>true</entry><entry>Cada (Por Unidade)</entry><entry>0</entry><entry>Un</entry><entry> </entry><entry>Un</entry></row>
+<row><entry>2</entry><entry>101</entry><entry> </entry><entry>false</entry><entry>Hora</entry><entry>2</entry><entry>h  </entry><entry> </entry><entry>HR</entry></row>
+<row><entry>0</entry><entry>103</entry><entry>(menor unidade para designação de recursos)</entry><entry>false</entry><entry>Minutos</entry><entry>0</entry><entry>m  </entry><entry> </entry><entry>MJ</entry></row>
+<row><entry>2</entry><entry>106</entry><entry>30 days</entry><entry>false</entry><entry>Mês</entry><entry>2</entry><entry>m  </entry><entry> </entry><entry>MO</entry></row>
+<row><entry>2</entry><entry>105</entry><entry> </entry><entry>false</entry><entry>Semana</entry><entry>2</entry><entry>w  </entry><entry> </entry><entry>WK</entry></row>
+<row><entry>2</entry><entry>104</entry><entry>8 horas</entry><entry>false</entry><entry>Dia de Trabalho</entry><entry>2</entry><entry>D  </entry><entry> </entry><entry>WD</entry></row>
+<row><entry>2</entry><entry>107</entry><entry>20 dias</entry><entry>false</entry><entry>Mês de Trabalho</entry><entry>2</entry><entry>M  </entry><entry> </entry><entry>WM</entry></row>
+<row><entry>2</entry><entry>108</entry><entry> </entry><entry>false</entry><entry>Ano</entry><entry>2</entry><entry>y  </entry><entry> </entry><entry>YR</entry></row></tbody>
+</tgroup>
+</table>

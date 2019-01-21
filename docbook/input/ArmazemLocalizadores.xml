@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Armazém %26 Localizadores</title> 
+ <para> <emphasis>Descrição: </emphasis>  Gerenciamento de Armazéns e Localizadores</para><para> <emphasis>Comentário/Ajuda: </emphasis>A Janela "Armazéns e Localizadores" define cada Armazém, quaisquer Localizadores para esse Armazém e os Parâmetros Contábeis a serem utilizados para inventário nesse Armazém.</para><para><emphasis> Criado em: </emphasis>1999-08-09 00:00:00.0
+</para><para><emphasis>Atualizado em: </emphasis>2000-01-02 00:00:00.0</para>
+<section> 
+ <title>Tabela: Armazém - M_Warehouse</title> 
+ 
+<ulink url="data/M_Warehouse_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Armazém</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Armazém" define cada Armazém que é usado para armazenar produtos.  Se um armazém de origem for selecionado, todo o reabastecimento de produtos será feito a partir daquele armazém.  Se você usar algorítimos de reabastecimento personalizados, você precisa definir a classe utilizada por cada armazém.</para> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Warehouse Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Armazém</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Storage Warehouse and Service Point</entry> 
+<entry>The Warehouse identifies a unique Warehouse where products are stored or Services are provided.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">m_warehouse_client</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">m_warehouse_org</entry> 
+<entry>AD_Org.AD_Org_ID &lt;
+&gt;
+ 0  AND AD_Org.IsSummary='N' </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Chave de Busca</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Em Trânsito</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Movement is in transit</entry> 
+<entry>Material Movement is in transit - shipped, but not received.
+The transaction is completed, if confirmed.</entry> 
+</row> 
+<row> 
+ <entry>Endereço</entry><entry>Localização (Endereço)</entry> 
+<entry></entry> 
+<entry valign="middle">c_location_warehouse</entry> 
+<entry> </entry> 
+<entry valign="middle">Location or Address</entry> 
+<entry>The Location / Address field defines the location of an entity.</entry> 
+</row> 
+<row> 
+ <entry>Separador de Elementos</entry><entry>Texto Curto (String)</entry> 
+<entry>(*)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Element Separator</entry> 
+<entry>The Element Separator defines the delimiter printed between elements of the structure</entry> 
+</row> 
+<row> 
+ <entry>Armazém de Origem</entry><entry>Tabela</entry> 
+<entry>M_Warehouse of Client</entry> 
+<entry valign="middle">mwarehousesource_mwarehouse</entry> 
+<entry> </entry> 
+<entry valign="middle">Optional Warehouse to replenish from</entry> 
+<entry>If defined, the warehouse selected is used to replenish the product(s)</entry> 
+</row> 
+<row> 
+ <entry>Classe de Reabastecimento</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Custom class to calculate Quantity to Order</entry> 
+<entry>If you select a custom replenishment type, you need to create a class implementing org.compiere.util.ReplenishInterface and set that on warehouse level.</entry> 
+</row> 
+<row> 
+ <entry>Não Permitir Estoque Negativo</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Negative Inventory is not allowed in this warehouse</entry> 
+<entry>If checked, any transaction that results in the onhand inventory being driven negative will be prevented.</entry> 
+</row> 
+<row> 
+ <entry>Reservar Localizador</entry><entry>Tabela</entry> 
+<entry>M_Locator</entry> 
+<entry valign="middle">mreservelocator_mwarehouse</entry> 
+<entry>M_Locator.M_Warehouse_ID=@0|M_Warehouse_ID@ </entry> 
+<entry valign="middle">Reservation Locator (just for reporting purposes)</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Em poder de terceiro</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if this warehouse holds third party locators</entry> 
+<entry>Indicates if this warehouse holds third party locators</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Depósito</entry><entry>Lista</entry> 
+<entry>Terceiros em Nosso Poder
+Nosso em Poder de Terceiros
+Próprio
+('OWN')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Warehouse Type</entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Localizador - M_Locator</title> 
+ 
+<ulink url="data/M_Locator_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Localizador</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Localizador" define quaisquer localizadores para aquele Armazém.</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Locator Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Localizador</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Warehouse Locator</entry> 
+<entry>The Locator indicates where in a Warehouse a product is located.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle">m_wh_locator_client</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle">m_wh_locator_org</entry> 
+<entry>AD_Org.AD_Org_ID &lt;
+&gt;
+ 0  AND AD_Org.IsSummary='N' </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Armazém</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">m_warehouse_locator</entry> 
+<entry> </entry> 
+<entry valign="middle">Storage Warehouse and Service Point</entry> 
+<entry>The Warehouse identifies a unique Warehouse where products are stored or Services are provided.</entry> 
+</row> 
+<row> 
+ <entry>Chave de Busca</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Locator Type</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">MLocatorType_MLocator</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Prioridade Relativa</entry><entry>Inteiro</entry> 
+<entry>(50)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Where inventory should be picked from first</entry> 
+<entry>The Relative Priority indicates the location to pick from first if an product is stored in more than one location.  (100 = highest priority, 0 = lowest).  For outgoing shipments, the location is picked with the highest priority where the entire quantity can be shipped from.  If there is no location, the location with the highest priority is used.
+The Priority is ignored for products with Guarantee Date (always the oldest first) or if a specific instance is selected.
+Incoming receipts are stored at the location with the highest priority, if not explicitly selected.</entry> 
+</row> 
+<row> 
+ <entry>Padrão</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Default value</entry> 
+<entry>The Default Checkbox indicates if this record will be used as a default value.</entry> 
+</row> 
+<row> 
+ <entry>Corredor (X)</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">X dimension, e.g., Aisle</entry> 
+<entry>The X dimension indicates the Aisle a product is located in.</entry> 
+</row> 
+<row> 
+ <entry>Estante (Y)</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Y dimension, e.g., Bin</entry> 
+<entry>The Y dimension indicates the Bin a product is located in</entry> 
+</row> 
+<row> 
+ <entry>Nível (Z)</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Z dimension, e.g., Level</entry> 
+<entry>The Z dimension indicates the Level a product is located in.</entry> 
+</row> 
+<row> 
+ <entry>M_Locator_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Armazenagem - M_Storage</title> 
+ <para><emphasis>Descrição:</emphasis> Informação Detalhada de Armazenagem</para> 
+<para><emphasis>Coluna linkada: </emphasis> Locator</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>Storage Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Org.AD_Org_ID &lt;
+&gt;
+ 0  AND AD_Org.IsSummary='N' </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Localizador</entry><entry>Locator (Armazém)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Warehouse Locator</entry> 
+<entry>The Locator indicates where in a Warehouse a product is located.</entry> 
+</row> 
+<row> 
+ <entry>Data da Política de Materiais</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Time used for LIFO and FIFO Material Policy</entry> 
+<entry>This field is used to record time used for LIFO and FIFO material policy</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>M_Product.IsSummary='N' AND M_Product.IsActive='Y' AND (M_Product.Discontinued = 'N' OR (M_Product.Discontinued = 'Y'  AND M_Product.DiscontinuedAt &gt;
+ SYSDATE))	 </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Instância do Conjunto de Atributos</entry><entry>Atributo de Produto</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Product Attribute Set Instance</entry> 
+<entry>The values of the actual Product Attribute Instances.  The product level attributes are defined on Product level.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Quantidade em Estoque</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">On Hand Quantity</entry> 
+<entry>The On Hand Quantity indicates the quantity of a product that is on hand in a warehouse.</entry> 
+</row> 
+<row> 
+ <entry>Data da última contagem de estoque</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date of Last Inventory Count</entry> 
+<entry>The Date Last Inventory Count indicates the last time an Inventory count was done.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Reservada</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Reserved Quantity</entry> 
+<entry>The Reserved Quantity indicates the quantity of a product that is currently reserved.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Requisitada</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Ordered Quantity</entry> 
+<entry>The Ordered Quantity indicates the quantity of a product that was ordered.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Reabastecer - M_Replenish</title> 
+ 
+<ulink url="data/M_Replenish_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir Reabastecimento de Produto</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Reabastecimento" define o tipo das quantidades de reabastecimento.  Isto é usado para a geração de pedidos automáticos.  Se você selecionar um tipo de reabastecimento personalizado, você precisa criar uma classe implementando org.adempiere.util.ReplenishInterface e selecioná-la no nível do armazém.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Warehouse</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Replenish Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Armazém</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">m_warehouse_replenish</entry> 
+<entry> </entry> 
+<entry valign="middle">Storage Warehouse and Service Point</entry> 
+<entry>The Warehouse identifies a unique Warehouse where products are stored or Services are provided.</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">m_product_replenish</entry> 
+<entry>M_Product.IsSummary='N' AND M_Product.IsActive='Y' AND (M_Product.Discontinued = 'N' OR (M_Product.Discontinued = 'Y'  AND M_Product.DiscontinuedAt &gt;
+ SYSDATE))	 </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Reabastecimento</entry><entry>Lista</entry> 
+<entry>Manual
+Emitir pedido de compras abaixo do nível mínimo
+Gerenciamento de Nível Máximo
+Personalizado</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method for re-ordering a product</entry> 
+<entry>The Replenish Type indicates if this product will be manually re-ordered, ordered when the quantity is below the minimum quantity or ordered when it is below the maximum quantity. If you select a custom replenishment type, you need to create a class implementing org.compiere.util.ReplenishInterface and set that on warehouse level.</entry> 
+</row> 
+<row> 
+ <entry>Nível Mínimo</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Minimum Inventory level for this product</entry> 
+<entry>Indicates the minimum quantity of this product to be stocked in inventory.
+</entry> 
+</row> 
+<row> 
+ <entry>Nível Máximo</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Maximum Inventory level for this product</entry> 
+<entry>Indicates the maximum quantity of this product to be stocked in inventory.</entry> 
+</row> 
+<row> 
+ <entry>Armazém de Origem</entry><entry>Tabela</entry> 
+<entry>M_Warehouse of Client</entry> 
+<entry valign="middle">mwarehousesource_mreplenish</entry> 
+<entry> </entry> 
+<entry valign="middle">Optional Warehouse to replenish from</entry> 
+<entry>If defined, the warehouse selected is used to replenish the product(s)</entry> 
+</row> 
+<row> 
+ <entry>Qtd Tamanho do Lote</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Localizador</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mlocator_mreplenish</entry> 
+<entry>M_Locator.M_Warehouse_ID=@M_Warehouse_ID@ </entry> 
+<entry valign="middle">Warehouse Locator</entry> 
+<entry>The Locator indicates where in a Warehouse a product is located.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Contabilidade - M_Warehouse_Acct</title> 
+ 
+<ulink url="data/M_Warehouse_Acct_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Contabilidade</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Contabilidade" define os parâmetros contábeis a serem usados para controle de Estoques em um dado Armazém.</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Accounting Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Armazém</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">m_warehouse_warehouse_acct</entry> 
+<entry> </entry> 
+<entry valign="middle">Storage Warehouse and Service Point</entry> 
+<entry>The Warehouse identifies a unique Warehouse where products are stored or Services are provided.</entry> 
+</row> 
+<row> 
+ <entry>Esquema Contábil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cacctschema_mwarehouseacct</entry> 
+<entry> </entry> 
+<entry valign="middle">Rules for accounting</entry> 
+<entry>An Accounting Schema defines the rules used in accounting such as costing method, currency and calendar</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>(Not Used)</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">vc_winventory_mwarehouse</entry> 
+<entry> </entry> 
+<entry valign="middle">Warehouse Inventory Asset Account - Currently not used</entry> 
+<entry>The Warehouse Inventory Asset Account identifies the account used for recording the value of your inventory. This is the counter account for inventory revaluation differences. The Product Asset account maintains the product asset value.</entry> 
+</row> 
+<row> 
+ <entry>Inventory Adjustment</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">vc_winvactualadjust_mwarehouse</entry> 
+<entry> </entry> 
+<entry valign="middle">Account for Inventory value adjustments for Actual Costing</entry> 
+<entry>In actual costing systems, this account is used to post Inventory value adjustments. You could set it to the standard Inventory Asset account.</entry> 
+</row> 
+<row> 
+ <entry>Diferenças de Estoque</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">vc_wdifferences_mwarehouse</entry> 
+<entry> </entry> 
+<entry valign="middle">Warehouse Differences Account</entry> 
+<entry>The Warehouse Differences Account indicates the account used recording differences identified during inventory counts.</entry> 
+</row> 
+<row> 
+ <entry>Inventory Revaluation</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">vc_wrevaluation_mwarehouse</entry> 
+<entry> </entry> 
+<entry valign="middle">Account for Inventory Revaluation</entry> 
+<entry>The Inventory Revaluation Account identifies the account used to records changes in inventory value due to currency revaluation.</entry> 
+</row> 
+<row> 
+ <entry>M_Warehouse_Acct_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Transações de Produtos - M_Transaction</title> 
+ 
+<ulink url="data/M_Transaction_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Transações para Produtos armazenados</para> 
+<para><emphasis>Coluna linkada: </emphasis> Product</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Product Transactions Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Transação de Estoque</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Org.AD_Org_ID &lt;
+&gt;
+ 0  AND AD_Org.IsSummary='N' </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Localizador</entry><entry>Locator (Armazém)</entry> 
+<entry></entry> 
+<entry valign="middle">mlocator_minventorycount</entry> 
+<entry> </entry> 
+<entry valign="middle">Warehouse Locator</entry> 
+<entry>The Locator indicates where in a Warehouse a product is located.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">mproduct_minventorycount</entry> 
+<entry>M_Product.IsSummary='N' AND M_Product.IsActive='Y' AND (M_Product.Discontinued = 'N' OR (M_Product.Discontinued = 'Y'  AND M_Product.DiscontinuedAt &gt;
+ SYSDATE))	 </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Instância do Conjunto de Atributos</entry><entry>Atributo de Produto</entry> 
+<entry></entry> 
+<entry valign="middle">mattrsetinst_mtransaction</entry> 
+<entry> </entry> 
+<entry valign="middle">Product Attribute Set Instance</entry> 
+<entry>The values of the actual Product Attribute Instances.  The product level attributes are defined on Product level.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Movimentada</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Quantity of a product moved.</entry> 
+<entry>The Movement Quantity indicates the quantity of a product that has been moved.</entry> 
+</row> 
+<row> 
+ <entry>Data da Movimentação</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date a product was moved in or out of inventory</entry> 
+<entry>The Movement Date indicates the date that a product moved in or out of inventory.  This is the result of a shipment, receipt or inventory movement.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Movimentação</entry><entry>Lista</entry> 
+<entry>Saldo Inicial
+Entrega para Cliente
+Devolução de cliente
+Saída de Estoque
+Entrada de Estoque
+Movimento de
+Movimento para
+Produção -
+Produção +
+Devoluções a Fornecedor
+Recebimentos de Fornecedor
+Ordem de Serviço -
+Ordem de Serviço +</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method of moving the inventory</entry> 
+<entry>The Movement Type indicates the type of movement (in, out, to production, etc)</entry> 
+</row> 
+<row> 
+ <entry>Linha de Remessa/Recebimento</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">minoutline_mtransaction</entry> 
+<entry> </entry> 
+<entry valign="middle">Line on Shipment or Receipt document</entry> 
+<entry>The Shipment/Receipt Line indicates a unique line in a Shipment/Receipt document</entry> 
+</row> 
+<row> 
+ <entry>Linha de Estoque Físico</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">minventoryline_mtransaction</entry> 
+<entry> </entry> 
+<entry valign="middle">Unique line in an Inventory document</entry> 
+<entry>The Physical Inventory Line indicates the inventory document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>Linha de Movimento</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">mmovementline_mtransaction</entry> 
+<entry> </entry> 
+<entry valign="middle">Inventory Move document Line</entry> 
+<entry>The Movement Line indicates the inventory movement document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>Linha de Produção</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">mproductionline_mtransaction</entry> 
+<entry> </entry> 
+<entry valign="middle">Document Line representing a production</entry> 
+<entry>The Production Line indicates the production document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>Emissão do Projeto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cprojectissue_mtransaction</entry> 
+<entry> </entry> 
+<entry valign="middle">Project Issues (Material, Labor)</entry> 
+<entry>Issues to the project initiated by the "Issue to Project" process. You can issue Receipts, Time and Expenses, or Stock.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Armazém de Reposição - COF_SpareWarehouse</title> 
+ <para><emphasis>Descrição:</emphasis> Armazém de Reposição</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Armazém de Reposição</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Spare Warehouse Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Armazém</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">MWarehouse_COFSpareWarehouse</entry> 
+<entry> </entry> 
+<entry valign="middle">Storage Warehouse and Service Point</entry> 
+<entry>The Warehouse identifies a unique Warehouse where products are stored or Services are provided.</entry> 
+</row> 
+<row> 
+ <entry>COF_SpareWarehouse_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>COF_SpareWarehouse_ID</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : Spare Warehouse</entry> 
+<entry>Primary Key : Spare Warehouse</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Armazém</entry><entry>Tabela</entry> 
+<entry>COF_Warehouse</entry> 
+<entry valign="middle">COFWarehouse_COFSpareWarehouse</entry> 
+<entry> </entry> 
+<entry valign="middle">Storage Warehouse and Service Point</entry> 
+<entry>The Warehouse identifies a unique Warehouse where products are stored or Services are provided.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

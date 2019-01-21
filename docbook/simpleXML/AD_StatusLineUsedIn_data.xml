@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<table>
+<title>AD_StatusLineUsedIn</title>
+<tgroup cols='8' align='center' colsep='1' rowsep='1'>
+
+<tbody><row><entry>Linha de Estado</entry><entry>AD_StatusLineUsedIn</entry><entry>Aba</entry><entry>Tabela</entry><entry>Janela</entry><entry>Tipo de Entidade</entry><entry>Linha de Estado</entry><entry>Seqüência</entry></row>
+<row><entry>1500001</entry><entry>1000000</entry><entry> </entry><entry>1120289</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>200000</entry><entry>200002</entry><entry> </entry><entry>200103</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>200000</entry><entry>200000</entry><entry> </entry><entry>259</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>200002</entry><entry>200011</entry><entry> </entry><entry>334</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>1500019</entry><entry>5000002</entry><entry>1500524</entry><entry> </entry><entry>1500201</entry><entry>D</entry><entry>false</entry><entry>0</entry></row>
+<row><entry>1500003</entry><entry>1000002</entry><entry>1500173</entry><entry> </entry><entry>1500044</entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>200000</entry><entry>200004</entry><entry> </entry><entry>53296</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>1500008</entry><entry>1000005</entry><entry>200008</entry><entry> </entry><entry>200005</entry><entry>D</entry><entry>false</entry><entry>10</entry></row>
+<row><entry>200000</entry><entry>200001</entry><entry> </entry><entry>260</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>200002</entry><entry>200008</entry><entry> </entry><entry>318</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>200000</entry><entry>200005</entry><entry> </entry><entry>314</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>200001</entry><entry>200006</entry><entry> </entry><entry>767</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>200002</entry><entry>200009</entry><entry> </entry><entry>333</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>1500002</entry><entry>1000001</entry><entry>1500171</entry><entry> </entry><entry>1500042</entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>1500019</entry><entry>5000003</entry><entry>1500527</entry><entry> </entry><entry>1500203</entry><entry>D</entry><entry>false</entry><entry>0</entry></row>
+<row><entry>200003</entry><entry>200012</entry><entry>412</entry><entry> </entry><entry>235</entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>1500006</entry><entry>1000004</entry><entry> </entry><entry> </entry><entry>143</entry><entry>D</entry><entry>false</entry><entry>1</entry></row>
+<row><entry>200001</entry><entry>200007</entry><entry> </entry><entry>768</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>200000</entry><entry>200003</entry><entry> </entry><entry>200104</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>200002</entry><entry>200010</entry><entry> </entry><entry>551</entry><entry> </entry><entry>D</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>1500011</entry><entry>5000001</entry><entry>634</entry><entry> </entry><entry>321</entry><entry>D</entry><entry>false</entry><entry>20</entry></row>
+<row><entry>1500010</entry><entry>5000000</entry><entry>634</entry><entry> </entry><entry>321</entry><entry>D</entry><entry>false</entry><entry>10</entry></row>
+<row><entry>1500004</entry><entry>1000003</entry><entry>1100001</entry><entry> </entry><entry>1100001</entry><entry>D</entry><entry>false</entry><entry>0</entry></row>
+<row><entry>1500022</entry><entry>1500002</entry><entry>53431</entry><entry> </entry><entry>53155</entry><entry>BRERP0001</entry><entry>false</entry><entry>10</entry></row>
+<row><entry>1500024</entry><entry>1500004</entry><entry>270</entry><entry> </entry><entry>167</entry><entry>U</entry><entry>false</entry><entry>0</entry></row>
+<row><entry>1500024</entry><entry>1500005</entry><entry>291</entry><entry> </entry><entry>183</entry><entry>U</entry><entry>false</entry><entry>0</entry></row>
+<row><entry>1500024</entry><entry>1500007</entry><entry>293</entry><entry> </entry><entry>181</entry><entry>U</entry><entry>false</entry><entry>0</entry></row>
+<row><entry>1500024</entry><entry>1500006</entry><entry>187</entry><entry> </entry><entry>143</entry><entry>U</entry><entry>false</entry><entry>0</entry></row>
+<row><entry>1500030</entry><entry>1500013</entry><entry> </entry><entry>1500759</entry><entry> </entry><entry>BRERP0001</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>1500031</entry><entry>1500014</entry><entry> </entry><entry>53322</entry><entry> </entry><entry>BRERP0201</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>1500032</entry><entry>1500015</entry><entry>317</entry><entry> </entry><entry>140</entry><entry>BRERP0001</entry><entry>false</entry><entry>0</entry></row>
+<row><entry>1500037</entry><entry>1500020</entry><entry> </entry><entry>1500763</entry><entry> </entry><entry>BRERP0001</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>1500038</entry><entry>1500021</entry><entry> </entry><entry>1500762</entry><entry> </entry><entry>BRERP0001</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>1500040</entry><entry>1500023</entry><entry> </entry><entry>251</entry><entry> </entry><entry>BRERP0001</entry><entry>false</entry><entry>0</entry></row>
+<row><entry>1500039</entry><entry>1500022</entry><entry> </entry><entry>703</entry><entry> </entry><entry>BRERP0001</entry><entry>false</entry><entry>0</entry></row>
+<row><entry>1500044</entry><entry>1500027</entry><entry>1500901</entry><entry> </entry><entry>1500318</entry><entry>BRERP0102</entry><entry>true</entry><entry>0</entry></row>
+<row><entry>1500046</entry><entry>1500029</entry><entry> </entry><entry>1500178</entry><entry> </entry><entry>BRERP0001</entry><entry>true</entry><entry>0</entry></row></tbody>
+</tgroup>
+</table>
