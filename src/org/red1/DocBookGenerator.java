@@ -83,7 +83,7 @@ public class DocBookGenerator {
 	private static CLogger log = CLogger.getCLogger(DocBookGenerator.class);
 
 	private static JSONObject docJSON = new JSONObject();
-	private static JSONObject menuJanelasJSON = new JSONObject();
+	private static JSONObject menuJanelaJSON = new JSONObject();
 	private static JSONObject menuRelatoriosJSON = new JSONObject();
 	private static JSONObject menuProcessosJSON = new JSONObject();
 	private static JSONObject menuWorkflowJSON = new JSONObject();
@@ -1278,14 +1278,13 @@ public class DocBookGenerator {
 		}
 
 
-		menuJanelasJSON.put("Janelas", menuJanelasArray);
 		menuRelatoriosJSON.put("Relatorios", menuRelatoriosArray);
 		menuWorkflowJSON.put("Workflows", menuWorkflowArray);
 		menuProcessosJSON.put("Processos", menuProcessosArray);
 		menuFormularioJSON.put("Formularios", menuFormularioArray);
 		menuInfoPanelJSON.put("Info", menuInfoPanelArray);
 
-		docJSON.put("manual_janela", menuJanelasJSON);
+		docJSON.put("manual_janela", menuJanelaJSON);
 		docJSON.put("manual_workflow", menuWorkflowJSON);
 		docJSON.put("manual_formulario", menuFormularioJSON);
 		docJSON.put("manual_processos", menuProcessosJSON);

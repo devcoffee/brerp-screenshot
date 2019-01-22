@@ -1,7 +1,7 @@
 #!/bin/bash
 # HTML to Markdown script converter
 # for BrERP Manual
-# Author: Jon Silvestrini
+# Author: Jon Silvestrini 
 
 titleMD() 
 {
