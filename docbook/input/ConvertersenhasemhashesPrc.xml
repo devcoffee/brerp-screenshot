@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
-<chapter><para><emphasis> Criado:</emphasis>2011-06-29 16:59:41.0</para><para> <emphasis>Atualizado:</emphasis>2011-06-29 16:59:41.0</para>
- 
- <title>Processo:  Converter senhas em hashes</title> 
- <para><emphasis> Descrição: </emphasis>Converter senhas existentes em hashes</para><para><emphasis> Comentário/Ajuda: </emphasis>This process will overwrite existing user passwords with a salted SHA-512 hash of the password so that they cannot be recovered if your database is compromised.
-(Note: If your password column is currently encrypted, the hash will also be encrypted.)</para>
-<para> SEM PARÂMETROS </para>
- </chapter>

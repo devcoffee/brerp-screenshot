@@ -13,9 +13,6 @@ titleMD()
 	mv ./Docusaurus/docs/manual/tmp ./Docusaurus/docs/manual/$2.md
 }
 
-echo "Defina o diretório de instalacao do Pandoc: "; 
-read PANDOC_HOME;
-
 mv ./Docusaurus/website/*.html ./HTML/
 
 echo "Convertendo as páginas de informacões do sistema"
@@ -23,7 +20,7 @@ echo "Convertendo as páginas de informacões do sistema"
 for file in ./HTML/*.html; do
 
 	FILENAME=$(basename $file .html);
-	$PANDOC_HOME/bin/pandoc --from html --to gfm $file -o ./Docusaurus/docs/manual/$FILENAME.md;
+	./pandoc/pandoc --from html --to gfm $file -o ./Docusaurus/docs/manual/$FILENAME.md;
 
 	cat $file | grep -o '## InfoPanel'
 	
@@ -64,6 +61,6 @@ echo "Convertendo as informacões do Banco de Dados"
 
 for file in ./ExampleData/*.html; do
 	FILENAME=$(basename $file .html);
-	$PANDOC_HOME/bin/pandoc --from html --to gfm $file -o ./Docusaurus/docs/manual/data/$FILENAME.md;
+	./pandoc/pandoc --from html --to gfm $file -o ./Docusaurus/docs/manual/data/$FILENAME.md;
 	echo "Tabela $FILENAME";
 done

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
-<chapter><para><emphasis> Criado:</emphasis>2003-10-11 00:14:52.0</para><para> <emphasis>Atualizado:</emphasis>2006-03-14 17:46:19.0</para>
- 
- <title>Processo:  Verificar Tipos de Documentos</title> 
- <para><emphasis> Descrição: </emphasis>Verify Document Types and Period Controls</para><para><emphasis> Comentário/Ajuda: </emphasis>Certifica que existe um "DocumentType" para todos os Tipos de Documentos Base Cria Controles de Período faltantes para Tipo de Documento (Você pode ter que abrí-los)</para>
-<para> SEM PARÂMETROS </para>
- </chapter>

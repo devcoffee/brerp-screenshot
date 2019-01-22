@@ -35,6 +35,7 @@ import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
 import java.util.List;
 import java.util.logging.Level;
+
 import org.compiere.model.I_AD_ReportView;
 import org.compiere.model.MColumn;
 import org.compiere.model.MField;
@@ -82,9 +83,15 @@ public class DocBookGenerator {
 	private static CLogger log = CLogger.getCLogger(DocBookGenerator.class);
 
 	private static JSONObject docJSON = new JSONObject();
-	private static JSONObject menuJSON = new JSONObject();
+	private static JSONObject menuJanelasJSON = new JSONObject();
+	private static JSONObject menuRelatoriosJSON = new JSONObject();
+	private static JSONObject menuProcessosJSON = new JSONObject();
+	private static JSONObject menuWorkflowJSON = new JSONObject();
+	private static JSONObject menuFormularioJSON = new JSONObject();
+	private static JSONObject menuInfoPanelJSON = new JSONObject();
 	private static JSONArray menuJanelasArray = new JSONArray();
 	private static JSONArray menuRelatoriosArray = new JSONArray();
+	private static JSONArray menuProcessosArray = new JSONArray();
 	private static JSONArray menuWorkflowArray = new JSONArray();
 	private static JSONArray menuFormularioArray = new JSONArray();
 	private static JSONArray menuInfoPanelArray = new JSONArray();
@@ -92,14 +99,15 @@ public class DocBookGenerator {
 
 	private static StringBuilder menuHTML = new StringBuilder("<ul> \n");
 	private static StringBuilder menuJanelas = new StringBuilder("<ul> \n");
+	private static StringBuilder menuProcessos = new StringBuilder("<ul> \n");
 	private static StringBuilder menuRelatorios = new StringBuilder("<ul> \n");
 	private static StringBuilder menuWorkFlow = new StringBuilder("<ul> \n");
 	private static StringBuilder menuFormulario = new StringBuilder("<ul> \n");
 	private static StringBuilder menuInfoPane = new StringBuilder("<ul> \n");
 
 
-	private static int formCount, infoCount, winCount, reportCount, processCount, wfCount = 0;
-	private static int allCount = 0;
+
+
 	private static int started = 0;
 
 	private static StringBuilder folder;
@@ -124,23 +132,15 @@ public class DocBookGenerator {
 
 		tabName = RemoverAcentos.remover(tabName);
 
-		writeToFile(sb, directory + "/org.brerp.docbook/input/" + tabName + ".xml");
-		winCount++;
-		allCount++;
+		writeToFile(sb, directory + "/brerp-saas.docbook/docbook/input/" + tabName + ".xml");
 
-		/*JSONObject janelaSubMenu = new JSONObject();
-		janelaSubMenu.put("type", "subcategory");
-		janelaSubMenu.put("label", " - Janela - " + winCount + ": " + tabName);
-		JSONArray janelaObj = new JSONArray();
-		janelaObj.put(tabName);
-		janelaSubMenu.put("ids", janelaObj);*/
 
-		menuJanelasArray.put(tabName);
+		menuJanelasArray.put("manual/" + tabName);
 
 
 
-		menuHTML.append("<li><a href=\"" + tabName + "\">" + allCount + " - Janela - " + winCount + ": " + nomeHTML + "</a> </li> \n");
-		menuJanelas.append("<li><a href=\"" + tabName + "\">" + allCount + " - Janela - " + winCount + ": " + nomeHTML + "</a> </li> \n");
+		menuHTML.append("<li><a href=\"" + tabName + "\"> Janela: " + nomeHTML + "</a> </li> \n");
+		menuJanelas.append("<li><a href=\"" + tabName + "\"> Janela: " + nomeHTML + "</a> </li> \n");
 		//
 	}
 
@@ -165,13 +165,19 @@ public class DocBookGenerator {
 
 		tabName = RemoverAcentos.remover(tabName);
 
-		writeToFile(sb, directory + "/org.brerp.docbook/input/" + tabName + ".xml");
-		reportCount++;
-		allCount++;
+		writeToFile(sb, directory + "/brerp-saas.docbook/docbook/input/" + tabName + ".xml");
+
 //		menuJSON.append("\"Relatório - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
-		menuRelatoriosArray.put(tabName);
-		menuHTML .append("<li><a href=\""+tabName+"\">" + (process.isReport()? allCount + " - Relatório " + reportCount + ": " : allCount + " - Processo " + processCount++ + ": ")+ nomeHTML +"</a> </li> \n");
-		menuRelatorios.append("<li><a href=\"" + tabName + "\">" + allCount + " - Relatório - " + reportCount + ": " + nomeHTML + "</a> </li> \n");
+
+		menuHTML .append("<li><a href=\""+tabName+"\">" + (process.isReport()? "Relatório: " : "Processo: ")+ nomeHTML +"</a> </li> \n");
+
+		if (!process.isReport()) {
+			menuProcessos.append("<li><a href=\"" + tabName + "\">Processo: " + nomeHTML + "</a> </li> \n");
+			menuProcessosArray.put("manual/" + tabName);
+		} else {
+			menuRelatorios.append("<li><a href=\"" + tabName + "\">Relatório: " + nomeHTML + "</a> </li> \n");
+			menuRelatoriosArray.put("manual/" + tabName);
+		}
 	}
 
 	public DocBookGenerator(String directory, MWorkflow wf) {
@@ -188,13 +194,11 @@ public class DocBookGenerator {
 
 		tabName = RemoverAcentos.remover(tabName);
 
-		writeToFile(sb, directory + "/org.brerp.docbook/input/" + tabName + ".xml");
-		wfCount++;
-		allCount++;
+		writeToFile(sb, directory + "/brerp-saas.docbook/docbook/input/" + tabName + ".xml");
 //		menuJSON.append("\"Workflow - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
-		menuWorkflowArray.put(tabName);
-		menuHTML .append("<li><a href=\"" + tabName + "\">" + allCount + " - Workflow " + wfCount + ": " + nomeHTML + "</a> </li> \n");
-		menuWorkFlow.append("<li><a href=\"" + tabName + "\">" + allCount + " - Workflow - " + wfCount + ": " + nomeHTML + "</a> </li> \n");
+		menuWorkflowArray.put("manual/" + tabName);
+		menuHTML .append("<li><a href=\"" + tabName + "\">Workflow: " + nomeHTML + "</a> </li> \n");
+		menuWorkFlow.append("<li><a href=\"" + tabName + "\">Workflow: " + nomeHTML + "</a> </li> \n");
 	}
 
 	public DocBookGenerator(String directory, MForm form) {
@@ -212,13 +216,11 @@ public class DocBookGenerator {
 
 		tabName = RemoverAcentos.remover(tabName);
 
-		writeToFile(sb, directory + "/org.brerp.docbook/input/"+tabName + ".xml");
-		formCount++;
-		allCount++;
+		writeToFile(sb, directory + "/brerp-saas.docbook/docbook/input/"+tabName + ".xml");
 //		menuJSON.append("\"Formulário - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
-		menuFormularioArray.put(tabName);
-		menuHTML .append("<li><a href=\"" + tabName + "\">" + allCount + " - Formulário " + formCount + ":  " + nomeHTML + "</a> </li> \n");
-		menuFormulario.append("<li><a href=\"" + tabName + "\">" + allCount + " - Formulário - " + formCount + ": " + nomeHTML + "</a> </li> \n");
+		menuFormularioArray.put("manual/" + tabName);
+		menuHTML .append("<li><a href=\"" + tabName + "\">Formulário:  " + nomeHTML + "</a> </li> \n");
+		menuFormulario.append("<li><a href=\"" + tabName + "\">Formulário: " + nomeHTML + "</a> </li> \n");
 		}
 
 	public DocBookGenerator(String directory, MInfoWindow info) {
@@ -235,13 +237,11 @@ public class DocBookGenerator {
 
 		tabName = RemoverAcentos.remover(tabName);
 
-		writeToFile(sb, directory + "/org.brerp.docbook/input/" + tabName + ".xml");
-		infoCount++;
-		allCount++;
+		writeToFile(sb, directory + "/brerp-saas.docbook/docbook/input/" + tabName + ".xml");
 //		menuJSON.append("\"InfoPanel - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
-		menuInfoPanelArray.put(tabName);
-		menuHTML .append("<li><a href=\"" + tabName + "\">" + allCount + " -  InfoPanel " + infoCount + ": " + nomeHTML + "</a> </li> \n");
-		menuInfoPane.append("<li><a href=\"" + tabName + "\">" + allCount + " - InfoPanel - " + infoCount + ": " + nomeHTML + "</a> </li> \n");
+		menuInfoPanelArray.put("manual/" + tabName);
+		menuHTML .append("<li><a href=\"" + tabName + "\">InfoPanel: " + nomeHTML + "</a> </li> \n");
+		menuInfoPane.append("<li><a href=\"" + tabName + "\">InfoPanel: " + nomeHTML + "</a> </li> \n");
 		}
 
 	private StringBuilder createColumnsInfo(MInfoWindow info) {
@@ -267,7 +267,7 @@ public class DocBookGenerator {
 			sb.append("<emphasis> Valor Padrão </emphasis>");
 		sb.append("</para>"+NL);
 
-		sb.append("<table> \n <emphasis>" + infoCount + " InfoPanel Columns </emphasis> \n <tgroup cols='6' align='center' colsep='1' rowsep='1'>");
+		sb.append("<table> \n <title> InfoPanel Columns </title> \n <tgroup cols='6' align='center' colsep='1' rowsep='1'>");
 		sb.append("<colspec colname='c1'  colwidth=\"1*\"/>");
 		sb.append("<colspec colname='c2'  colwidth=\"1*\"/>");
 		sb.append("<colspec colname='c3'  colwidth=\"1*\"/>");
@@ -295,7 +295,11 @@ public class DocBookGenerator {
         	infoColumnString.append(column.getSelectClause() + ",");
 			buffer = stripBadChars(column.get_Translation(MInfoWindow.COLUMNNAME_Name));
 			sb.append("<row> <entry>" + buffer + "</entry>");
-			sb.append("<entry>" + column.getAD_Reference().getName() + "</entry>");
+			//sb.append("<entry>" + column.getAD_Reference().getName() + "</entry>");
+
+
+			sb.append("<entry>" + this.getTrlCampo(column.getAD_Reference_ID()) + "</entry>");
+
 			buffer = stripBadChars(column.getSelectClause());
 			sb.append("<entry>" + buffer + "</entry>");
 			if (column.isQueryCriteria()){
@@ -329,7 +333,7 @@ public class DocBookGenerator {
 		StringBuilder infocontent = new StringBuilder(XMLBegin);
 		int fullcols=cols.length;
 
-		infocontent.append("<table>\n<emphasis>" + stripBadChars(info.get_Translation(MInfoWindow.COLUMNNAME_Name)) + "</emphasis>\n<tgroup cols='" + fullcols + "'");
+		infocontent.append("<table>\n<title>" + stripBadChars(info.get_Translation(MInfoWindow.COLUMNNAME_Name)) + "</title>\n<tgroup cols='" + fullcols + "'");
 		infocontent.append(" align='center' colsep='1' rowsep='1'> \n\n <tbody><row>");
 		for (MInfoColumn col:cols){
 			infocontent.append("<entry>" + stripBadChars(col.get_Translation(MInfoWindow.COLUMNNAME_Name)) + "</entry>");
@@ -364,7 +368,10 @@ public class DocBookGenerator {
 			datalink = info.getName()+"_infodata";
 			datalink = datalink.replace(" ", "");
 			infocontent.append("</tbody>\n</tgroup>\n</table>");
-			writeToFile(infocontent, folder + "/org.brerp.docbook/simpleXML/" + datalink + ".xml");
+
+			datalink = RemoverAcentos.remover(datalink);
+
+			writeToFile(infocontent, folder + "/brerp-saas.docbook/docbook/simpleXML/" + datalink + ".xml");
 
 		} catch (SQLException e) {
 			//ADialog.error(WindowNo, c, AD_Message)
@@ -386,7 +393,7 @@ public class DocBookGenerator {
 		String buffer = stripBadChars(form.get_Translation(MForm.COLUMNNAME_Name));
 
 		sb.append("<chapter><para><emphasis> Criado:</emphasis>" + form.getCreated() + "</para><para> <emphasis>Atualizado:</emphasis>" + form.getUpdated() + "</para>" + NL);
-		sb.append("<title>Formulário: " + buffer + "</title> \n");
+		sb.append("<title>Formulário: " + buffer + "</title> \n ");
 		if (form.getDescription() != null) {
 		    buffer = stripBadChars(form.get_Translation(MForm.COLUMNNAME_Description));
 			sb.append("<para><emphasis> Descrição: </emphasis>" + buffer + "</para>");
@@ -395,7 +402,7 @@ public class DocBookGenerator {
 			buffer = stripBadChars(form.get_Translation(MForm.COLUMNNAME_Help));
 			sb.append("<para><emphasis>Comentário/Ajuda:</emphasis>" + buffer + "</para>" + NL);
 		}
-		String classname = form.getClassname().replace(".", "/");
+		//String classname = form.getClassname().replace(".", "/");
 		//sb.append("<para><emphasis> Classe: </emphasis><ulink url=\"../javadoc/" + classname + ".html\">" + form.getClassname() + "</ulink></para> \n");
 		return sb;
 	}
@@ -406,7 +413,7 @@ public class DocBookGenerator {
 		String buffer = stripBadChars(wf.get_Translation(MWorkflow.COLUMNNAME_Name));
 
 		sb.append("<chapter><para><emphasis> Criado:</emphasis>" + wf.getCreated() + "</para><para> <emphasis>Atualizado:</emphasis>" + wf.getUpdated() + "</para>"+ NL);
-		sb.append("<title>Workflow: " + buffer + "</title> \n");
+		sb.append("<title>Workflow: " + buffer + "</title> \n ");
 		if (wf.getDescription() != null){
 		    buffer = stripBadChars(wf.get_Translation(MWorkflow.COLUMNNAME_Description));
 			sb.append("<para><emphasis> Descrição: </emphasis>  " + buffer + "</para>");
@@ -418,11 +425,15 @@ public class DocBookGenerator {
 		buffer = stripBadChars(wf.getFirstNode().get_Translation(MWorkflow.COLUMNNAME_Name));
 		windowName = wf.get_Translation(MWorkflow.COLUMNNAME_Name).replace(" ", "_");
 
+		/*WebDriver driver = new FirefoxDriver();
+		driver.get("http://dev14.devcoffee.com.br/erp");
+		driver.quit();*/
+
 		//sb.append("\n <para> <ulink url=\"http://wiki.idempiere.org/en/File:" + windowName + "_-_Workflow_%28iDempiere_1.0.0%29.png\">[IMAGEM]</ulink></para> \n");
 		sb.append("<para><emphasis> Nó inicial: </emphasis>" + buffer + "</para>"+NL);
 		sb.append("<para><emphasis> WorkFlowType: </emphasis>" + wf.getWorkflowType() + "</para> \n");
 
-		sb.append("<table> \n <emphasis>" + wf.get_Translation(MWorkflow.COLUMNNAME_Name) + " Workflow Transitions</emphasis> \n <tgroup cols='5' align='center' colsep='1' rowsep='1'>");
+		sb.append("<table> \n <title>" + wf.get_Translation(MWorkflow.COLUMNNAME_Name) + " Workflow Transitions</title> \n <tgroup cols='5' align='center' colsep='1' rowsep='1'>");
 		sb.append("<colspec colname='c1'  colwidth=\"1*\"/>");
 		sb.append("<colspec colname='c2'  colwidth=\"1*\"/>");
 		sb.append("<colspec colname='c3'  colwidth=\"1*\"/>");
@@ -499,7 +510,7 @@ public class DocBookGenerator {
 		String buffer = stripBadChars(process.get_Translation(MProcess.COLUMNNAME_Name));
 
 		sb.append("<chapter><para><emphasis> Criado:</emphasis>" + process.getCreated() + "</para><para> <emphasis>Atualizado:</emphasis>" + process.getUpdated() + "</para>" + NL);
-		sb.append(" \n <title>" + (process.isReport() ? "Relatório:  " : "Processo:  ") + buffer + "</title> \n");
+		sb.append(" \n <title>" + (process.isReport() ? "Relatório:  " : "Processo:  ") + buffer + "</title> \n ");
 		if (process.getDescription() != null) {
 		    buffer = stripBadChars(process.get_Translation(MProcess.COLUMNNAME_Description));
 			sb.append("<para><emphasis> Descrição: </emphasis>" + buffer + "</para>");
@@ -510,10 +521,10 @@ public class DocBookGenerator {
 		}
 
 		sb.append((process.isReport() ? "<para><emphasis> ReportView: </emphasis>" + process.getAD_ReportView().getName() + "</para>" : ""));
-		if (process.getClassname() != null){
+		/*if (process.getClassname() != null){
 			String classname = process.getClassname().replace(".", "/");
 			sb.append("<para><emphasis> Classe: </emphasis> <ulink url=\"../javadoc/" + classname + ".html\">" + process.getClassname() + "</ulink></para> \n");
-		}
+		}*/
 
 		windowName = process.getName();
 		if (windowName.contains("&")){
@@ -533,7 +544,7 @@ public class DocBookGenerator {
 
 		if (paras != null) {
 			if (paras.size() > 0){
-				sb.append("<table> \n <emphasis>" + windowName + " Parâmetros </emphasis> \n <tgroup cols='6' align='center' colsep='1' rowsep='1'>");
+				sb.append("<table> \n <title>" + windowName + " Parâmetros </title> \n <tgroup cols='6' align='center' colsep='1' rowsep='1'>");
 				sb.append("<colspec colname='c1'  colwidth=\"1*\"/>");
 				sb.append("<colspec colname='c2'  colwidth=\"1*\"/>");
 				sb.append("<colspec colname='c3'  colwidth=\"1*\"/>");
@@ -555,8 +566,12 @@ public class DocBookGenerator {
 					buffer = stripBadChars(para.get_Translation(MProcessPara.COLUMNNAME_Name));
 					sb.append("<row> \n <entry>" + buffer + "</entry>");
 					sb.append("<entry> " + para.getColumnName() + "</entry> \n");
-					sb.append("<entry>" + (para.getAD_Reference() != null ? para.getAD_Reference().getName() : para.getAD_Reference_Value().getName())
+
+
+					sb.append("<entry>" + (para.getAD_Reference() != null ? this.getTrlCampo(para.getAD_Reference_ID()) : para.getAD_Reference_Value().getName())
 							+ "</entry> \n ");
+
+
 					if (para.getAD_Reference().getName().equals("List")) {
 						StringBuilder names = new StringBuilder();
 						List<MRefList> list = new Query(Env.getCtx(), MRefList.Table_Name, MRefList.COLUMNNAME_AD_Reference_ID+"=?", null)
@@ -597,7 +612,7 @@ public class DocBookGenerator {
 
 			if (columns.length > 0) {
 				buffer = stripBadChars(view.getName());
-				sb.append("<table> \n <emphasis>" + buffer + " - Colunas</emphasis> \n <tgroup cols='7' align='center' colsep='1' rowsep='1'>");
+				sb.append("<table> \n <title>" + buffer + " - Colunas</title> \n <tgroup cols='7' align='center' colsep='1' rowsep='1'>");
 				sb.append("<colspec colname='c1'  colwidth=\"1*\"/>");
 				sb.append("<colspec colname='c2'  colwidth=\"1*\"/>");
 				sb.append("<colspec colname='c3'  colwidth=\"1*\"/>");
@@ -620,7 +635,10 @@ public class DocBookGenerator {
 				for (MColumn column:columns) {
 					buffer = stripBadChars(column.get_Translation(MColumn.COLUMNNAME_Name));
 					sb.append("<row> \n <entry>" + buffer + "</entry>");
-					buffer = stripBadChars(column.getAD_Reference().getName());
+					//buffer = stripBadChars(column.getAD_Reference().getName());
+
+					buffer = this.getTrlCampo(column.getAD_Reference_ID());
+
 					sb.append("<entry>" + buffer + "</entry> \n");
 					StringBuilder names = new StringBuilder();
 
@@ -726,7 +744,7 @@ public class DocBookGenerator {
 		StringBuilder start = new StringBuilder()
 			.append (XMLBegin);
 
-		String end = "</chapter>";
+		String end = " </chapter>\n";
 
 		sb.insert(0, start);
 		sb.append(end);
@@ -772,7 +790,7 @@ public class DocBookGenerator {
 		windowName = win.get_Translation(MWindow.COLUMNNAME_Name).replace(" ", "_");
 		String buffer = stripBadChars(win.get_Translation(MWindow.COLUMNNAME_Name));
 
-		sb.append("<chapter> \n <title>Janela:  "  + buffer + "</title> \n");
+		sb.append("<chapter> \n <title>Janela:  "  + buffer + "</title> \n ");
 	    buffer = stripBadChars(win.get_Translation(MWindow.COLUMNNAME_Description));
 		sb.append("<para> <emphasis>Descrição: </emphasis>  " + buffer + "</para>");
 		buffer = stripBadChars(win.get_Translation(MWindow.COLUMNNAME_Help));
@@ -789,7 +807,7 @@ public class DocBookGenerator {
 		tabName = tab.get_Translation(MTab.COLUMNNAME_Name).replace(" ", "_");
 		String buffer = "";
 		buffer = stripBadChars(tab.get_Translation(MTab.COLUMNNAME_Name));
-		sb.append("<section> \n <subtitle>Tabela: " +buffer+" - "+tab.getAD_Table().getTableName()+"</subtitle> \n ");
+		sb.append("<section> \n <title>Tabela: " +buffer+" - "+tab.getAD_Table().getTableName()+"</title> \n ");
 
 		if (windowName.contains("&")) {
 			int a = windowName.lastIndexOf("&");
@@ -832,8 +850,8 @@ public class DocBookGenerator {
 			sb.append("<para><emphasis>Coluna mãe: </emphasis> " + buffer + "</para> \n");
 		}
 		if (tab.getAD_Process().getName() != null){
-			sb.append("<para><emphasis> Processo: </emphasis>" + tab.getAD_Process().getName() + " - " + tab.getAD_Process().getValue());
-			MProcess process = new Query(Env.getCtx(),MProcess.Table_Name, MProcess.COLUMNNAME_AD_Process_ID + "=?", null)
+			sb.append("<para><emphasis> Relatório: </emphasis>" + tab.getAD_Process().getName() + " - " + tab.getAD_Process().getValue() + " </para> \n");
+			/*MProcess process = new Query(Env.getCtx(),MProcess.Table_Name, MProcess.COLUMNNAME_AD_Process_ID + "=?", null)
 				.setParameters(tab.getAD_Process_ID())
 				.first();
 
@@ -843,7 +861,7 @@ public class DocBookGenerator {
 						+ classname + ".html\">" + process.getClassname() + "</ulink></para> \n");
 			} else {
 				sb.append("</para> \n");
-			}
+			}*/
 		}
 
 		if (tab.getReadOnlyLogic() != null) {
@@ -878,7 +896,7 @@ public class DocBookGenerator {
 		MField[] fields = tab.getFields(true, null);
 		if (fields.length > 0){
 			buffer = stripBadChars(tab.getName());
-			sb.append("<table> \n <emphasis>"+buffer+" Fields</emphasis> \n <tgroup cols='7' align='center' colsep='1' rowsep='1'>");
+			sb.append("<table> \n <title>"+buffer+" Fields</title> \n <tgroup cols='7' align='center' colsep='1' rowsep='1'>");
 			sb.append("<colspec colname='c1'  colwidth=\"1*\"/>");
 			sb.append("<colspec colname='c2'  colwidth=\"1*\"/>");
 			sb.append("<colspec colname='c3'  colwidth=\"2*\"/>");
@@ -904,9 +922,13 @@ public class DocBookGenerator {
 					.setParameters(column_id)
 					.first();
 
+
 				buffer = stripBadChars(field.get_Translation(MField.COLUMNNAME_Name));
 				sb.append("<row> \n <entry>"+buffer+"</entry>");
-				buffer = stripBadChars(column.getAD_Reference().getName());
+				//buffer = stripBadChars(column.getAD_Reference().getName());
+
+				buffer = this.getTrlCampo(column.getAD_Reference_ID());
+
 				sb.append("<entry>"+buffer+"</entry> \n");
 				StringBuilder names = new StringBuilder();
 					if (column.getAD_Reference().getName().equals("List")) {
@@ -925,9 +947,13 @@ public class DocBookGenerator {
 				}
 
 				buffer = buffer + (column.getDefaultValue() == null? "" : "(" + column.getDefaultValue() + ")");
+
+				buffer = RemoverAcentos.removerMaiorMenor(buffer);
+
 				sb.append("<entry>" + buffer + "</entry> \n");
 				buffer = (column.getFKConstraintName() == null ? "" : column.getFKConstraintName());
 				buffer = stripBadChars(buffer);
+
 				sb.append("<entry valign=\"middle\">" + buffer + "</entry> \n");
 				buffer = "";
 				if (column.getAD_Val_Rule().getName() != null) {
@@ -936,7 +962,7 @@ public class DocBookGenerator {
 						.first();
 					buffer = stripBadChars(rule.getCode());
 				}
-				if (column.getCallout()!=null) {
+				/*if (column.getCallout()!=null) {
 					String classname = column.getCallout().replace(".", "/");
 					int last = classname.lastIndexOf("/");
 
@@ -944,7 +970,7 @@ public class DocBookGenerator {
 						String calloutname = stripBadChars(classname.substring(0, last));
 						buffer = buffer + "<emphasis>Callout: </emphasis><ulink url=\"../javadoc/" + calloutname + ".html\">" + column.getCallout() + "</ulink> \n";
 					}
-				}
+				}*/
 				buffer = buffer + (column.getReadOnlyLogic() == null ? "": "\n <emphasis>ReadOnly Logic</emphasis>: " + stripBadChars(column.getReadOnlyLogic()));
 				sb.append("<entry>" + buffer + " </entry> \n");
 				if (column.getDescription() != null) {
@@ -1048,7 +1074,7 @@ public class DocBookGenerator {
 
 		String datalink = table.getTableName() + "_data";
 		content.append("</tbody>\n</tgroup>\n</table>");
-		writeToFile(content, folder +"/org.brerp.docbook/simpleXML/" + datalink + ".xml");
+		writeToFile(content, folder +"/brerp-saas.docbook/docbook/simpleXML/" + datalink + ".xml");
 		return datalink;
 	}
 
@@ -1252,36 +1278,68 @@ public class DocBookGenerator {
 		}
 
 
-		menuJanelasArray.put("IndiceJanelas");
-		menuJSON.put("Janelas do Sistema", menuJanelasArray);
-		menuJSON.put("Relatorios do Sistema", menuRelatoriosArray);
-		menuJSON.put("Workflows do Sistema", menuWorkflowArray);
-		menuJSON.put("Formularios do Sistema", menuFormularioArray);
-		menuJSON.put("Infos do Sistema", menuInfoPanelArray);
-		docJSON.put("brerp", menuJSON);
+		menuJanelasJSON.put("Janelas", menuJanelasArray);
+		menuRelatoriosJSON.put("Relatorios", menuRelatoriosArray);
+		menuWorkflowJSON.put("Workflows", menuWorkflowArray);
+		menuProcessosJSON.put("Processos", menuProcessosArray);
+		menuFormularioJSON.put("Formularios", menuFormularioArray);
+		menuInfoPanelJSON.put("Info", menuInfoPanelArray);
+
+		docJSON.put("manual_janela", menuJanelasJSON);
+		docJSON.put("manual_workflow", menuWorkflowJSON);
+		docJSON.put("manual_formulario", menuFormularioJSON);
+		docJSON.put("manual_processos", menuProcessosJSON);
+		docJSON.put("manual_relatorios", menuRelatoriosJSON);
+		docJSON.put("manual_info", menuInfoPanelJSON);
 
 		menuHTML.append("</ul>");
 		menuJanelas.append("</ul>");
+		menuProcessos.append("</ul>");
 		menuRelatorios.append("</ul>");
 		menuWorkFlow.append("</ul>");
 		menuInfoPane.append("</ul>");
 		menuFormulario.append("</ul>");
-		writeToFile(new StringBuilder(docJSON.toString()), directory + "/org.brerp.docbook/Docusaurus/website/sidebars.json");
-		writeToFile(menuHTML, directory + "/org.brerp.docbook/Docusaurus/website/IndiceGeral.html");
-		writeToFile(menuJanelas, directory + "/org.brerp.docbook/Docusaurus/website/IndiceJanelas.html");
-		writeToFile(menuRelatorios, directory + "/org.brerp.docbook/Docusaurus/website/IndiceRelatorios.html");
-		writeToFile(menuWorkFlow, directory + "/org.brerp.docbook/Docusaurus/website/IndiceWorkFlow.html");
-		writeToFile(menuInfoPane, directory + "/org.brerp.docbook/Docusaurus/website/IndiceInfoPane.html");
-		writeToFile(menuFormulario, directory + "/org.brerp.docbook/Docusaurus/website/IndiceFormulario.html");
+
+		writeToFile(new StringBuilder(docJSON.toString()), directory + "/brerp-saas.docbook/docbook/Docusaurus/website/sidebars.json");
+		writeToFile(menuHTML, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceGeral.html");
+		writeToFile(menuJanelas, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceJanelas.html");
+		writeToFile(menuProcessos, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceProcessos.html");
+		writeToFile(menuRelatorios, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceRelatorios.html");
+		writeToFile(menuWorkFlow, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceWorkFlow.html");
+		writeToFile(menuInfoPane, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceInfoPane.html");
+		writeToFile(menuFormulario, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceFormulario.html");
 
 		String menuManual = "<ul> <li><h1><a href=\"IndiceWorkFlow\">WorkFlow do Sistema</a> </h1>  </li><br>"
+							+ "<li><h1><a href=\"IndiceProcessos\">Processos do Sistema</a> </h1>  </li><br>"
 							+ "<li><h1><a href=\"IndiceRelatorios\">Relatórios do Sistema</a> </h1>  </li><br>"
 							+ "<li><h1><a href=\"IndiceJanelas\">Janelas do Sistema</a> </h1> </li><br>"
 							+ "<li><h1><a href=\"IndiceFormulario\">Formulários do Sistema</a> </h1> </li><br>"
-							+ "<li><h1><a href=\"IndiceInfoPane\">Infos do Sistema</a> </h1></li></ul>";
+							+ "<li><h1><a href=\"IndiceInfoPane\">Informações do Sistema</a> </h1></li><br>"
+							+ "<li><h1><a href=\"IndiceInfoPane\">Indice Geral</a> </h1></li></ul>";
 
-		writeToFile(new StringBuilder(menuManual), directory + "/org.brerp.docbook/Docusaurus/website/menuManual.html");
+		writeToFile(new StringBuilder(menuManual), directory + "/brerp-saas.docbook/docbook/Docusaurus/website/menuManual.html");
 
+	}
+
+	private String getTrlCampo (int $idCampo) {
+
+		String sql = "select name from ad_reference_trl where ad_language='pt_BR' and ad_reference_id=" + $idCampo, result = null;
+
+		PreparedStatement stmt = DB.prepareStatement(sql, null);
+		ResultSet rs = null;
+
+		try {
+			rs = stmt.executeQuery();
+			while (rs.next()) {
+				result = rs.getString("name");
+			}
+
+		} catch (Exception e) {
+			System.out.println(e);
+		} finally {
+			DB.close(rs, stmt);
+		}
+		return result;
 	}
 
 	public static String forHTML(String aText){

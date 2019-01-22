@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
-<chapter><para><emphasis> Criado:</emphasis>2005-01-10 19:02:49.0</para><para> <emphasis>Atualizado:</emphasis>2005-02-09 22:52:23.0</para>
-<title>Formulário: Visualizador de Arquivos</title> 
- <para><emphasis> Descrição: </emphasis>Visualizar automaticamente documentos arquivados</para><para><emphasis>Comentário/Ajuda:</emphasis>Dependendo do "Nível de Arquivamento Automático da Empresa" os documentos e relatórios são salvos e disponibilizados para visualização. No "Visualizador de Relatório" você pode arquivar manualmente documentos ou relatórios.  Você só pode visualizar arquivos, se você tiver acesso ao documento original.</para>
- </chapter>

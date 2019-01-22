@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
-<chapter><para><emphasis> Criado:</emphasis>2001-11-18 18:28:44.0</para><para> <emphasis>Atualizado:</emphasis>2008-03-26 13:35:36.0</para>
- 
- <title>Processo:  Sincronização de Terminologia</title> 
- <para><emphasis> Descrição: </emphasis>Sincronizar a terminologia dentro do sistema.</para><para><emphasis> Comentário/Ajuda: </emphasis>Baseado nos registros na Janela "Elemento", os campos nas janelas, em parâmetros, etc. serão sincronizados, se eles forem mantidos centralizadamente.  Também sincroniza as traduções de idioma.</para>
-<para> SEM PARÂMETROS </para>
- </chapter>

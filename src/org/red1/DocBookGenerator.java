@@ -83,9 +83,15 @@ public class DocBookGenerator {
 	private static CLogger log = CLogger.getCLogger(DocBookGenerator.class);
 
 	private static JSONObject docJSON = new JSONObject();
-	private static JSONObject menuJSON = new JSONObject();
+	private static JSONObject menuJanelasJSON = new JSONObject();
+	private static JSONObject menuRelatoriosJSON = new JSONObject();
+	private static JSONObject menuProcessosJSON = new JSONObject();
+	private static JSONObject menuWorkflowJSON = new JSONObject();
+	private static JSONObject menuFormularioJSON = new JSONObject();
+	private static JSONObject menuInfoPanelJSON = new JSONObject();
 	private static JSONArray menuJanelasArray = new JSONArray();
 	private static JSONArray menuRelatoriosArray = new JSONArray();
+	private static JSONArray menuProcessosArray = new JSONArray();
 	private static JSONArray menuWorkflowArray = new JSONArray();
 	private static JSONArray menuFormularioArray = new JSONArray();
 	private static JSONArray menuInfoPanelArray = new JSONArray();
@@ -126,10 +132,10 @@ public class DocBookGenerator {
 
 		tabName = RemoverAcentos.remover(tabName);
 
-		writeToFile(sb, directory + "/docbookgenerator/docbook/input/" + tabName + ".xml");
+		writeToFile(sb, directory + "/brerp-saas.docbook/docbook/input/" + tabName + ".xml");
 
 
-		menuJanelasArray.put(tabName);
+		menuJanelasArray.put("manual/" + tabName);
 
 
 
@@ -159,16 +165,19 @@ public class DocBookGenerator {
 
 		tabName = RemoverAcentos.remover(tabName);
 
-		writeToFile(sb, directory + "/docbookgenerator/docbook/input/" + tabName + ".xml");
+		writeToFile(sb, directory + "/brerp-saas.docbook/docbook/input/" + tabName + ".xml");
 
 //		menuJSON.append("\"Relatório - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
-		menuRelatoriosArray.put(tabName);
+
 		menuHTML .append("<li><a href=\""+tabName+"\">" + (process.isReport()? "Relatório: " : "Processo: ")+ nomeHTML +"</a> </li> \n");
 
-		if (!process.isReport())
+		if (!process.isReport()) {
 			menuProcessos.append("<li><a href=\"" + tabName + "\">Processo: " + nomeHTML + "</a> </li> \n");
-		else
+			menuProcessosArray.put("manual/" + tabName);
+		} else {
 			menuRelatorios.append("<li><a href=\"" + tabName + "\">Relatório: " + nomeHTML + "</a> </li> \n");
+			menuRelatoriosArray.put("manual/" + tabName);
+		}
 	}
 
 	public DocBookGenerator(String directory, MWorkflow wf) {
@@ -185,9 +194,9 @@ public class DocBookGenerator {
 
 		tabName = RemoverAcentos.remover(tabName);
 
-		writeToFile(sb, directory + "/docbookgenerator/docbook/input/" + tabName + ".xml");
+		writeToFile(sb, directory + "/brerp-saas.docbook/docbook/input/" + tabName + ".xml");
 //		menuJSON.append("\"Workflow - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
-		menuWorkflowArray.put(tabName);
+		menuWorkflowArray.put("manual/" + tabName);
 		menuHTML .append("<li><a href=\"" + tabName + "\">Workflow: " + nomeHTML + "</a> </li> \n");
 		menuWorkFlow.append("<li><a href=\"" + tabName + "\">Workflow: " + nomeHTML + "</a> </li> \n");
 	}
@@ -207,9 +216,9 @@ public class DocBookGenerator {
 
 		tabName = RemoverAcentos.remover(tabName);
 
-		writeToFile(sb, directory + "/docbookgenerator/docbook/input/"+tabName + ".xml");
+		writeToFile(sb, directory + "/brerp-saas.docbook/docbook/input/"+tabName + ".xml");
 //		menuJSON.append("\"Formulário - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
-		menuFormularioArray.put(tabName);
+		menuFormularioArray.put("manual/" + tabName);
 		menuHTML .append("<li><a href=\"" + tabName + "\">Formulário:  " + nomeHTML + "</a> </li> \n");
 		menuFormulario.append("<li><a href=\"" + tabName + "\">Formulário: " + nomeHTML + "</a> </li> \n");
 		}
@@ -228,9 +237,9 @@ public class DocBookGenerator {
 
 		tabName = RemoverAcentos.remover(tabName);
 
-		writeToFile(sb, directory + "/docbookgenerator/docbook/input/" + tabName + ".xml");
+		writeToFile(sb, directory + "/brerp-saas.docbook/docbook/input/" + tabName + ".xml");
 //		menuJSON.append("\"InfoPanel - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
-		menuInfoPanelArray.put(tabName);
+		menuInfoPanelArray.put("manual/" + tabName);
 		menuHTML .append("<li><a href=\"" + tabName + "\">InfoPanel: " + nomeHTML + "</a> </li> \n");
 		menuInfoPane.append("<li><a href=\"" + tabName + "\">InfoPanel: " + nomeHTML + "</a> </li> \n");
 		}
@@ -362,7 +371,7 @@ public class DocBookGenerator {
 
 			datalink = RemoverAcentos.remover(datalink);
 
-			writeToFile(infocontent, folder + "/docbookgenerator/docbook/simpleXML/" + datalink + ".xml");
+			writeToFile(infocontent, folder + "/brerp-saas.docbook/docbook/simpleXML/" + datalink + ".xml");
 
 		} catch (SQLException e) {
 			//ADialog.error(WindowNo, c, AD_Message)
@@ -1065,7 +1074,7 @@ public class DocBookGenerator {
 
 		String datalink = table.getTableName() + "_data";
 		content.append("</tbody>\n</tgroup>\n</table>");
-		writeToFile(content, folder +"/docbookgenerator/docbook/simpleXML/" + datalink + ".xml");
+		writeToFile(content, folder +"/brerp-saas.docbook/docbook/simpleXML/" + datalink + ".xml");
 		return datalink;
 	}
 
@@ -1269,13 +1278,19 @@ public class DocBookGenerator {
 		}
 
 
-		menuJanelasArray.put("IndiceJanelas");
-		menuJSON.put("Janelas do Sistema", menuJanelasArray);
-		menuJSON.put("Relatorios do Sistema", menuRelatoriosArray);
-		menuJSON.put("Workflows do Sistema", menuWorkflowArray);
-		menuJSON.put("Formularios do Sistema", menuFormularioArray);
-		menuJSON.put("Infos do Sistema", menuInfoPanelArray);
-		docJSON.put("brerp", menuJSON);
+		menuJanelasJSON.put("Janelas", menuJanelasArray);
+		menuRelatoriosJSON.put("Relatorios", menuRelatoriosArray);
+		menuWorkflowJSON.put("Workflows", menuWorkflowArray);
+		menuProcessosJSON.put("Processos", menuProcessosArray);
+		menuFormularioJSON.put("Formularios", menuFormularioArray);
+		menuInfoPanelJSON.put("Info", menuInfoPanelArray);
+
+		docJSON.put("manual_janela", menuJanelasJSON);
+		docJSON.put("manual_workflow", menuWorkflowJSON);
+		docJSON.put("manual_formulario", menuFormularioJSON);
+		docJSON.put("manual_processos", menuProcessosJSON);
+		docJSON.put("manual_relatorios", menuRelatoriosJSON);
+		docJSON.put("manual_info", menuInfoPanelJSON);
 
 		menuHTML.append("</ul>");
 		menuJanelas.append("</ul>");
@@ -1285,14 +1300,14 @@ public class DocBookGenerator {
 		menuInfoPane.append("</ul>");
 		menuFormulario.append("</ul>");
 
-		writeToFile(new StringBuilder(docJSON.toString()), directory + "/docbookgenerator/docbook/Docusaurus/website/sidebars.json");
-		writeToFile(menuHTML, directory + "/docbookgenerator/docbook/Docusaurus/website/IndiceGeral.html");
-		writeToFile(menuJanelas, directory + "/docbookgenerator/docbook/Docusaurus/website/IndiceJanelas.html");
-		writeToFile(menuProcessos, directory + "/docbookgenerator/docbook/Docusaurus/website/IndiceProcessos.html");
-		writeToFile(menuRelatorios, directory + "/docbookgenerator/docbook/Docusaurus/website/IndiceRelatorios.html");
-		writeToFile(menuWorkFlow, directory + "/docbookgenerator/docbook/Docusaurus/website/IndiceWorkFlow.html");
-		writeToFile(menuInfoPane, directory + "/docbookgenerator/docbook/Docusaurus/website/IndiceInfoPane.html");
-		writeToFile(menuFormulario, directory + "/docbookgenerator/docbook/Docusaurus/website/IndiceFormulario.html");
+		writeToFile(new StringBuilder(docJSON.toString()), directory + "/brerp-saas.docbook/docbook/Docusaurus/website/sidebars.json");
+		writeToFile(menuHTML, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceGeral.html");
+		writeToFile(menuJanelas, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceJanelas.html");
+		writeToFile(menuProcessos, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceProcessos.html");
+		writeToFile(menuRelatorios, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceRelatorios.html");
+		writeToFile(menuWorkFlow, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceWorkFlow.html");
+		writeToFile(menuInfoPane, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceInfoPane.html");
+		writeToFile(menuFormulario, directory + "/brerp-saas.docbook/docbook/Docusaurus/website/IndiceFormulario.html");
 
 		String menuManual = "<ul> <li><h1><a href=\"IndiceWorkFlow\">WorkFlow do Sistema</a> </h1>  </li><br>"
 							+ "<li><h1><a href=\"IndiceProcessos\">Processos do Sistema</a> </h1>  </li><br>"
@@ -1302,7 +1317,7 @@ public class DocBookGenerator {
 							+ "<li><h1><a href=\"IndiceInfoPane\">Informações do Sistema</a> </h1></li><br>"
 							+ "<li><h1><a href=\"IndiceInfoPane\">Indice Geral</a> </h1></li></ul>";
 
-		writeToFile(new StringBuilder(menuManual), directory + "/docbookgenerator/docbook/Docusaurus/website/menuManual.html");
+		writeToFile(new StringBuilder(menuManual), directory + "/brerp-saas.docbook/docbook/Docusaurus/website/menuManual.html");
 
 	}
 
