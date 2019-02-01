@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Registro</title> 
+ <para> <emphasis>Descrição: </emphasis>  Registro de Ativos do Usuário</para><para> <emphasis>Comentário/Ajuda: </emphasis>Registro de Usuário de um Ativo</para><para><emphasis> Criado em: </emphasis>2004-01-08 21:10:19.0
+</para><para><emphasis>Atualizado em: </emphasis>2012-03-09 15:15:56.0</para>
+<imagedata fileref="/img/manual/Registro.png" format="PNG" /><section> 
+ <title>Tabela: Registro - A_Registration</title> 
+ <para><emphasis>Descrição:</emphasis> Registro de Usuário de Ativo</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Registro de Usuário de um Ativo</para> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Registration Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Registro</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">User Asset Registration</entry> 
+<entry>User Registration of an Asset</entry> 
+</row> 
+<row> 
+ <entry>Processar Agora</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartner_aregistration</entry> 
+<entry>C_BPartner.IsActive='Y' AND C_BPartner.IsSummary='N' </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Usuário/Contato</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">aduser_aregistration</entry> 
+<entry>AD_User.C_BPartner_ID=@C_BPartner_ID@ </entry> 
+<entry valign="middle">User within the system - Internal or Business Partner Contact</entry> 
+<entry>The User identifies a unique user in the system. This could be an internal user or a business partner contact</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">mproduct_aregistration</entry> 
+<entry>M_Product.IsSummary='N' AND M_Product.IsActive='Y' AND (M_Product.Discontinued = 'N' OR (M_Product.Discontinued = 'Y'  AND M_Product.DiscontinuedAt &gt;
+ SYSDATE))	 </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">aasset_aregistration</entry> 
+<entry> </entry> 
+<entry valign="middle">Asset used internally or by customers</entry> 
+<entry>An asset is either created by purchasing or by delivering a product.  An asset can be used internally or be a customer asset.</entry> 
+</row> 
+<row> 
+ <entry>Registrado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The application is registered.</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Publicação Permitida</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">You allow to publish the information, not just statistical summary info</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Em Produção</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The system is in production</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data de Entrada em Serviço</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date when Asset was put into service</entry> 
+<entry>The date when the asset was put into service - usually used as start date for depreciation.</entry> 
+</row> 
+<row> 
+ <entry>Nota</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional additional user defined information</entry> 
+<entry>The Note field allows for optional entry of user defined information regarding this record</entry> 
+</row> 
+<row> 
+ <entry>Hospedeiro Remoto</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Remote host Info</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>End.Remoto</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Remote Address</entry> 
+<entry>The Remote Address indicates an alternative or external address.</entry> 
+</row> 
+<row> 
+ <entry>A_Registration_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Valor - A_RegistrationValue</title> 
+ <para><emphasis>Descrição:</emphasis> Valores de Registro</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Valores individuais de Atributo de Registro</para> 
+<para><emphasis>Coluna linkada: </emphasis> Registration</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Value Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Registro</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">aregistration_aregvalue</entry> 
+<entry> </entry> 
+<entry valign="middle">User Asset Registration</entry> 
+<entry>User Registration of an Asset</entry> 
+</row> 
+<row> 
+ <entry>Atributo de Registro</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">aregattribute_aregvalue</entry> 
+<entry> </entry> 
+<entry valign="middle">Asset Registration Attribute</entry> 
+<entry>Define the individual values for the Asset Registration</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

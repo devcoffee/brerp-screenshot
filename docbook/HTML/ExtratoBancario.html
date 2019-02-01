@@ -1,0 +1,759 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Janela: Extrato Banc&aacute;rio</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d93932e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Janela:  Extrato Banc&aacute;rio</h2>
+               </div>
+            </div>
+         </div>
+         <div class="toc">
+            <div class="toc-title">Conte&uacute;do: </div>
+            <ul class="toc">
+               <li><span class="section"><a href="#d93932e22">1. Tabela: Extrato Banc&aacute;rio - C_BankStatement</a></span></li>
+               <li><span class="section"><a href="#d93932e443">2. Tabela: Linha de Extrato - C_BankStatementLine</a></span></li>
+            </ul>
+         </div>
+         <p> <span class="emphasis"><em>Descri&ccedil;&atilde;o: </em></span>  Processar Extratos Banc&aacute;rios
+         </p>
+         <p> <span class="emphasis"><em>Coment&aacute;rio/Ajuda: </em></span>a Janela "Processar Extratos Banc&aacute;rios" permite a voc&ecirc; reconciliar seus Extratos Banc&aacute;rios.  Voc&ecirc; pode digitar os itens a
+            partir do extrato na Aba "Linha de Extrato" ou selecionar o bot&atilde;o 'Criar de' para gerar automaticamente o extrato de todos
+            os pagamentos n&atilde;o reconciliados a esta conta banc&aacute;ria.  Assim que voc&ecirc; tiver completado a reconcilia&ccedil;&atilde;o, selecione o bot&atilde;o
+            'Processar Extrato' para marcar os pagamentos como reconciliados e atualizar as contas apropriadas do RG (Raz&atilde;o Geral).
+         </p>
+         <p><span class="emphasis"><em> Criado em: </em></span>2000-12-18 23:32:45.0
+            
+         </p>
+         <p><span class="emphasis"><em>Atualizado em: </em></span>2013-06-26 10:11:04.0
+         </p>
+         <section class="section" id="d93932e22">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">1.&nbsp;Tabela: Extrato Banc&aacute;rio - C_BankStatement</h2>
+                  </div>
+               </div>
+            </div><a class="ulink" href="data/C_BankStatement_data" target="_top">[DADOS DE EXEMPLO]</a><p><span class="emphasis"><em>Descri&ccedil;&atilde;o:</em></span> Extrato Banc&aacute;rio
+            </p>
+            <p><span class="emphasis"><em>Coment&aacute;rio/Ajuda: </em></span> A Aba "Extrato Banc&aacute;rio" define o extrato banc&aacute;rio a ser reconciliado.
+            </p>
+            <p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>0
+            </p>
+         </section>
+         <div class="table" id="d93932e39">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;Bank/Cash Statement Fields</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do campo</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores (Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave restritiva</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Extrato Banc&aacute;rio</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bank Statement of account</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Bank Statement identifies a unique Bank Statement for a defined time period.  The statement defines all transactions that
+                           occurred
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Processado Em</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">The date+time (expressed in decimal format) when the document has been processed</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The ProcessedOn Date+Time save the exact moment (nanoseconds precision if allowed by the DB) when a document has been processed.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Processar Agora</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Processado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">The document has been processed</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Processed checkbox indicates that a document has been processed.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Client_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Org_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Org.AD_Org_ID &lt;
+                           &gt;
+                            0  AND AD_Org.IsSummary='N' 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Conta Banc&aacute;ria</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">cbankaccount_cbankstatement</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Account at the Bank</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Bank Account identifies an account at this Bank.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#Date@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Alphanumeric identifier of the entity</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters
+                           in length.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data do Extrato</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@Date@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Date of the statement</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Statement Date field defines the date of the statement.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data da Conta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Accounting Date</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Accounting Date indicates the date to be used on the General Ledger account entries generated from this document. It is
+                           also used for any currency conversion.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Optional short description of the record</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A description is limited to 255 characters.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Manual</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">This is a manual process</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Manual check box indicates if the process will done manually.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Saldo Inicial</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@SQL=SELECT COALESCE(MIN(CurrentBalance),0) FROM C_BankAccount WHERE C_BankAccount_ID=@C_BankAccount_ID:0@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Balance prior to any transactions</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Beginning Balance is the balance prior to making any adjustments for payments or disbursements.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Criar linhas a partir de</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Process which will generate a new document lines based on an existing document</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Create From process will create a new document based on information in an existing document selected by the user.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bank Statement Create From Batch</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Diferen&ccedil;a de Declara&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Difference between statement ending balance and actual ending balance</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Statement Difference reflects the difference between the Statement Ending Balance and the Actual Ending Balance.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Confrontar Extrato Banc&aacute;rio</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Copiar Linhas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(N)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Copy From Record</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Copy From Record</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Saldo Final</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ending  or closing balance</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Ending Balance is the result of adjusting the Beginning Balance by any payments or disbursements.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia do Extrato da TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Statement Reference</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data do Extrato da TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Statement Date</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Estado do Documento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Desconhecido
+                           Aprovado
+                           Fechado
+                           Completado
+                           Esbo&ccedil;ado
+                           Inv&aacute;lido
+                           Em Progresso
+                           N&atilde;o Aprovado
+                           Estornado
+                           Anulado
+                           Aguardando Confirma&ccedil;&atilde;o
+                           Esperando pagamento
+                           (DR)
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">The current status of the document</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Document Status indicates the status of a document at this time.  If you want to change the document status, use the Document
+                           Action field
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Processar Extrato</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">_Document Action(CO)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">The targeted status of the document</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">You find the current status in the Document Status field. The options are listed in a popup</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Aprovado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(N)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Indicates if this document requires approval</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Approved checkbox indicates if this document requires approval before it can be processed.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Lan&ccedil;ado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">_Posted Status(N)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; ">Posting status</td>
+                        <td style="text-align: center; ">The Posted field indicates the status of the Generation of General Ledger Accounting Lines </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br><section class="section" id="d93932e443">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">2.&nbsp;Tabela: Linha de Extrato - C_BankStatementLine</h2>
+                  </div>
+               </div>
+            </div><a class="ulink" href="data/C_BankStatementLine_data" target="_top">[DADOS DE EXEMPLO]</a><p><span class="emphasis"><em>Descri&ccedil;&atilde;o:</em></span> Linha de Extrato
+            </p>
+            <p><span class="emphasis"><em>Coment&aacute;rio/Ajuda: </em></span> A Aba "Linha de Extrato" define a linha de itens individuais no Extrato Banc&aacute;rio.  Eles podem ser digitados manualmente ou
+               gerados a partir dos pagamentos digitados. A Conta Banc&aacute;ria da Organiza&ccedil;&atilde;o &eacute; utilizada para a contabiliza&ccedil;&atilde;o, se n&atilde;o for uma
+               despesa.
+            </p>
+            <p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>1
+            </p>
+         </section>
+         <div class="table" id="d93932e460">
+            <div class="table-title">Table&nbsp;1.2.&nbsp;Statement Line Fields</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do campo</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores (Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave restritiva</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Processado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">The document has been processed</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Processed checkbox indicates that a document has been processed.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Estornar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">This is a reversing transaction</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Reversal check box indicates if this is a reversal of a prior transaction.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Linha de Extrato Banc&aacute;rio</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Line on a statement from this Bank</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Bank Statement Line identifies a unique transaction (Payment, Withdrawal, Charge) for the defined time period at this
+                           Bank.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@AD_Client_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@AD_Org_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Org.AD_Org_ID &lt;
+                           &gt;
+                            0  AND AD_Org.IsSummary='N' 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Extrato Banc&aacute;rio</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">cbstatement_cbstatementline</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bank Statement of account</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Bank Statement identifies a unique Bank Statement for a defined time period.  The statement defines all transactions that
+                           occurred
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Linha N&uacute;m.</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Inteiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@SQL=SELECT COALESCE(MAX(Line),0)+10 FROM C_BankStatementLine WHERE C_BankStatement_ID=@C_BankStatement_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Unique line for this document</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Indicates the unique line for a document.  It will also control the display order of the lines within a document.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Optional short description of the record</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A description is limited to 255 characters.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Manual</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">This is a manual process</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Manual check box indicates if the process will done manually.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data da Linha de Extrato</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@StatementLineDate@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Date of the Statement Line</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data da Conta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@DateAcct@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Accounting Date</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Accounting Date indicates the date to be used on the General Ledger account entries generated from this document. It is
+                           also used for any currency conversion.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data de Vig&ecirc;ncia</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@StatementDate@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Date when money is available</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Effective Date indicates the date that money is available from the bank.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor do Extrato</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Statement Amount</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Statement Amount indicates the amount of a single statement line.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Pagamento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">cpayment_cbankstmtline</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">NOT EXISTS (SELECT * FROM C_BankStatementLine bsl INNER JOIN C_BankStatement bs ON (bsl.C_BankStatement_ID=bs.C_BankStatement_ID)
+                           WHERE bsl.C_Payment_ID=C_Payment.C_Payment_ID AND bs.DocStatus&lt;
+                           &gt;
+                           'VO') AND C_Payment.DocStatus IN ('CO','CL','RE') AND C_Payment.PayAmt&lt;
+                           &gt;
+                           0 AND C_Payment.IsReconciled='N' AND C_Payment.C_BankAccount_ID=@C_BankAccount_ID@ 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Payment identifier</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Payment is a unique identifier of this payment.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor da Transa&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Amount of a transaction</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Transaction Amount indicates the amount for a single transaction.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Moeda De</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@SQL=SELECT C_Currency_ID FROM C_BankAccount WHERE C_BankAccount_ID=@C_BankAccount_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ccurrency_cbankstmtline</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">The Currency for this record</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Indicates the Currency to be used when processing or reporting on this record</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor da Despesa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Charge Amount</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Charge Amount indicates the amount for an additional charge.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Finalidade</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Charge</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ccharge_cbankstmtlime</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(C_Charge.C_Charge_ID IN (
+                           	SELECT c.C_Charge_ID 
+                           	FROM C_Charge c
+                           	JOIN C_ChargeType ct ON (ct.C_ChargeType_ID = c.C_ChargeType_ID)
+                           	JOIN C_ChargeType_Doctype ctd ON (ctd.C_ChargeType_ID = ct.C_ChargeType_ID)
+                           	JOIN  C_DocType dt ON (dt.C_DocType_ID =ctd.C_DocType_ID AND dt.AD_Client_ID= ctd.AD_Client_ID  AND dt.DocBaseType= 'CMB')
+                           	) OR
+                            (SELECT COUNT(*) FROM C_ChargeType_DocType WHERE AD_Client_ID=@AD_Client_ID@) = 0) 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Additional document charges</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Charge indicates a type of Charge (Handling, Shipping, Restocking)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor dos Juros</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Interest Amount</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Interest Amount indicates any interest charged or received on a Bank Statement.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;m. Refer&ecirc;ncia</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Your customer or vendor number at the Business Partner's site</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The reference number can be printed on orders and invoices to allow your business partner to faster identify your records.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Memorando</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Memo Text</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Confrontar Extrato Banc&aacute;rio</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @C_Payment_ID@!0 
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Criar Pagamento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @C_Payment_ID@!0 
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Parceiro de Neg&oacute;cios </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">cbpartner_cbankstatementline</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_BPartner.IsActive='Y' AND C_BPartner.IsSummary='N'
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @C_Payment_ID@!0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifies a Business Partner</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Fatura</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">cinvoice_cbankstatementline</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @C_Payment_ID@!0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Invoice Identifier</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Invoice Document.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID de Trx de TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Transaction ID</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Trx de TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Transaction Type</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;m. Cheque de TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Check No</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia de TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Reference</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Memo TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Memo</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Benefici&aacute;rio da TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Payee information</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Conta do Benefici&aacute;rio da TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Payee Account Information</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data da Linha do Extrato da TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Statement Line Date</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data Efetiva da TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Valuta (effective) Date</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Moeda da TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Currency</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Information from EFT media</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor da TEF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Electronic Funds Transfer Amount</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">C_BankStatementLine_UU</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; "> </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

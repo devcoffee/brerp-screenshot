@@ -1,0 +1,646 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Relat&oacute;rio: Lan&ccedil;amentos cont&aacute;beis n&atilde;o conciliados</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d135183e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Relat&oacute;rio:  Lan&ccedil;amentos cont&aacute;beis n&atilde;o conciliados</h2>
+               </div>
+            </div>
+         </div>
+         <p><span class="emphasis"><em> Criado:</em></span>2010-09-02 17:55:52.0
+         </p>
+         <p> <span class="emphasis"><em>Atualizado:</em></span>2010-09-02 17:55:52.0
+         </p>
+         <p><span class="emphasis"><em> ReportView: </em></span>RV_Reconciliation
+         </p><img src="/img/manual/Lancamentoscontabeisnaoconciliados.png"></img><div class="table" id="d135183e18">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;Lancamentoscontabeisnaoconciliados Par&acirc;metros </div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome da coluna</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores(Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Conta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> Account_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Account_ID (Trx)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Conta utilizada</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A Conta (natural) utilizada</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Data da Conta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> DateAcct</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> (@#Date@-3000)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Data Cont&aacute;bil</td>
+                        <td style="text-align: center; ">A "Data Cont&aacute;bil" indica a data a ser usada nos registros do livro de raz&atilde;o geral gerados a partir deste documento. &Eacute; tamb&eacute;m
+                           usada para qualquer convers&atilde;o de moeda.
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br><div class="table" id="d135183e69">
+            <div class="table-title">Table&nbsp;1.2.&nbsp;RV_Reconciliation - Colunas</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome da coluna</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores padr&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor de restri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Asset used internally or by customers</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">An asset is either created by purchasing or by delivering a product.  An asset can be used internally or be a customer asset.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Conta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Account_ID (Trx)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Account used</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The (natural) account used</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Conta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Indicates the type of account</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Valid account types are A - Asset, E - Expense, L - Liability, O- Owner's Equity, R -Revenue and M- Memo.  The account type
+                           is used to determine what taxes, if any are applicable, validating payables and receivables for business partners.  Note:
+                            Memo account amounts are ignored when checking for balancing
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave de Contabilidade</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Key of Account Element</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> (@#AD_Client_ID@)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(ver acima)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> (@#AD_Org_ID@)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(ver acima)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o de Transa&ccedil;&atilde;o (Trx)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Org (Trx)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Performing or initiating organization</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The organization which performs or initiates this transaction (for another organization).  The owning Organization may not
+                           be the transaction organization in a service bureau environment, with centralized services, and inter-organization transactions.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Inst&acirc;ncia de Processo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Instance of the process</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">EXISTS (SELECT * FROM AD_Column c WHERE AD_Table.AD_Table_ID=c.AD_Table_ID AND c.IsActive='Y' AND c.ColumnName='Posted') AND
+                           AD_Table.IsView='N' 
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Database Table information</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Database Table provides the information of the table definition</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor Contabilizado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Amount Balance in Currency of Accounting Schema</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Cr&eacute;dito Contabilizado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Accounted Credit Amount</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Account Credit Amount indicates the transaction amount converted to this organization's accounting currency</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D&eacute;bito Contabilizado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Accounted Debit Amount</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Account Debit Amount indicates the transaction amount converted to this organization's accounting currency</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor de Origem</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Amount Balance in Source Currency</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Cr&eacute;dito de Origem</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Source Credit Amount</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Source Credit Amount indicates the credit amount for this line in the source currency.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D&eacute;bito de Origem</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Source Debit Amount</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Source Debit Amount indicates the credit amount for this line in the source currency.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave de Parceiro de Neg&oacute;cios</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Key of the Business Partner</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do PN</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Esquema Cont&aacute;bil</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Rules for accounting</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">An Accounting Schema defines the rules used in accounting such as costing method, currency and calendar</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Atividade</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Business Activity</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Activities indicate tasks that are performed and used to utilize Activity based Costing</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Parceiro de Neg&oacute;cios </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifies a Business Partner</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Grupo de Parceiros</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Business Partner Group</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Business Partner Group provides a method of defining defaults to be used for individual Business Partners.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Campanha</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Marketing Campaign</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Campaign defines a unique marketing program.  Projects can be associated with a pre defined Marketing Campaign.  You can
+                           then report based on a specific Campaign.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Moeda De</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">The Currency for this record</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Indicates the Currency to be used when processing or reporting on this record</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Localiza&ccedil;&atilde;o de Origem</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Location</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Location that inventory was moved from</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Location From indicates the location that a product was moved from.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Localiza&ccedil;&atilde;o de Destino</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Location</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Location that inventory was moved to</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Location To indicates the location that a product was moved to.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Per&iacute;odo (Ano Fiscal)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Period of the Calendar</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Period indicates an exclusive range of dates for a calendar.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Projeto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Financial Project</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A Project allows you to track and control internal or external activities.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Criado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data+Hora</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> (SYSDATE)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Date this record was created</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Created field indicates the date that this record was created.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Criado por</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_User</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">User who created this records</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Created By field indicates the user who created this record.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regi&atilde;o de Vendas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sales coverage region</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Sales Region indicates a specific area of sales coverage.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Taxa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tax identifier</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Tax indicates the type of tax used in document line.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">UDM</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Unit of Measure</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The UOM defines a unique non monetary Unit of Measure</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data da Conta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Accounting Date</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Accounting Date indicates the date to be used on the General Ledger account entries generated from this document. It is
+                           also used for any currency conversion.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data da Transa&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Transaction Date</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Transaction Date indicates the date of the transaction.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Optional short description of the record</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A description is limited to 255 characters.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Fato Cont&aacute;bil</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Or&ccedil;amento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">General Ledger Budget</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The General Ledger Budget identifies a user defined budget.  These can be used in reporting as a comparison against your actual
+                           amounts.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Categoria de Raz&atilde;o Geral</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">General Ledger Category</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The General Ledger Category is an optional, user defined method of grouping journal lines.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> (Y)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(ver acima)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID de Linha</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Transaction line ID (internal)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Internal link</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Corresponde ao C&oacute;digo </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">String identifying related accounting facts</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Localizador</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Warehouse Locator</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Locator indicates where in a Warehouse a product is located.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Categoria de Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Category of a Product</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Identifies the category which this product belongs to.  Product categories are used for pricing and selection.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Product, Service, Item</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Identifies an item which is either purchased or sold in this organization.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Alphanumeric identifier of the entity</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters
+                           in length.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome da Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Name of the Organization</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave da Org.</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Key of the Organization</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Lan&ccedil;amento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Real
+                           Or&ccedil;amento
+                           Encerramento
+                           Comprometimento
+                           Reservas
+                           Estat&iacute;sticas
+                           
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">The type of posted amount for the transaction</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Posting Type indicates the type of amount (Actual, Budget, Reservation, Commitment, Statistical) the transaction.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Name of the Product</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave de Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Key of the Product</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantity</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Quantity indicates the number of a specific product or item for this document.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Taxa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Rate or Tax or Exchange</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Rate indicates the percentage to be multiplied by the source to arrive at the tax or exchange amount.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID do Registro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Direct internal record ID</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Record ID is the internal unique identifier of a record. Please note that zooming to the record may not be successful
+                           for Orders, Invoices and Shipment/Receipts as sometimes the Sales Order type is not known.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">UPC/EAN</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bar Code (Universal Product Code or its superset European Article Number)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Use this field to enter the bar code for the product in any of the bar code symbologies (Codabar, Code 25, Code 39, Code 93,
+                           Code 128, UPC (A), UPC (E), EAN-13, EAN-8, ITF, ITF-14, ISBN, ISSN, JAN-13, JAN-8, POSTNET and FIM, MSI/Plessey, and Pharmacode)
+                           
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Atualizado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data+Hora</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> (SYSDATE)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Date this record was updated</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Updated field indicates the date that this record was updated.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Atualizado por</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_User</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">User who updated this records</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Updated By field indicates the user who updated this record.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Centro de Custo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Account_ID - User1</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">User defined list element #1</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The user defined element displays the optional elements that have been defined for this account combination.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Centro de Custo 2</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Account_ID - User2</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">User defined list element #2</td>
+                        <td style="text-align: center; ">The user defined element displays the optional elements that have been defined for this account combination.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

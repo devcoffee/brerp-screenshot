@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Acesso a Dados de Função</title> 
+ <para> <emphasis>Descrição: </emphasis>  Gerenciamento de Regras de Acesso a Dados</para><para> <emphasis>Comentário/Ajuda: </emphasis>Gerenciamento de Regras de Acesso a Dados de Papéis (Funções)/Responsabilidades. Note que a informação de acesso é memorizada e requer re-login ou reset da memória cache.</para><para><emphasis> Criado em: </emphasis>2003-05-28 22:59:19.0
+</para><para><emphasis>Atualizado em: </emphasis>2000-01-02 00:00:00.0</para>
+<imagedata fileref="/img/manual/AcessoaDadosdeFuncao.png" format="PNG" /><section> 
+ <title>Tabela: Perfil - AD_Role</title> 
+ 
+<ulink url="data/AD_Role_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Perfil com Restrição de Acesso de Dados</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Selecione o Perfil com Restrição de Acesso de Dados. Note que a informação de acesso é memorizada e requer re-login ou reset da memória cache.</para> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Role Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Aprovar Documentos próprios</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Users with this role can approve their own documents</entry> 
+<entry>If a user cannot approve their own documents (orders, etc.), it needs to be approved by someone else.</entry> 
+</row> 
+<row> 
+ <entry>Manual</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a manual process</entry> 
+<entry>The Manual check box indicates if the process will done manually.</entry> 
+</row> 
+<row> 
+ <entry>Usar Acesso de Usuários à Organização</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Use Org Access defined by user instead of Role Org Access</entry> 
+<entry>You can define the access to Organization either by Role or by User.  You would select this, if you have many organizations.</entry> 
+</row> 
+<row> 
+ <entry>Perfil</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Responsibility Role</entry> 
+<entry>The Role determines security and access a user who has this Role will have in the System.</entry> 
+</row> 
+<row> 
+ <entry>Árvore da Organização</entry><entry>Tabela</entry> 
+<entry>AD_Tree</entry> 
+<entry valign="middle">adtreeorg_adrole</entry> 
+<entry>AD_Tree.TreeType='OO' AND AD_Tree.AD_Client_ID=@AD_Client_ID@ </entry> 
+<entry valign="middle">Trees are used for (financial) reporting and security access (via role)</entry> 
+<entry>Trees are used for (finanial) reporting and security access (via role)</entry> 
+</row> 
+<row> 
+ <entry>Sobrescrever Preço Limite</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Overwrite Price Limit if the Price List  enforces the Price Limit</entry> 
+<entry>The Price List allows to enforce the Price Limit. If set, a user with this role can overwrite the price limit (i.e. enter any price).</entry> 
+</row> 
+<row> 
+ <entry>Supervisor</entry><entry>Procurar</entry> 
+<entry>AD_User - Internal</entry> 
+<entry valign="middle">adusersupervisor_adrole</entry> 
+<entry> </entry> 
+<entry valign="middle">Supervisor for this user/organization - used for escalation and approval</entry> 
+<entry>The Supervisor indicates who will be used for forwarding and escalating issues for this user - or for approvals.</entry> 
+</row> 
+<row> 
+ <entry>Nível do Usuário</entry><entry>Lista</entry> 
+<entry>Empresa
+Empresa+Organização
+Organização
+Sistema</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">System Client Organization</entry> 
+<entry>The User Level field determines if users of this Role will have access to System level data, Organization level data, Client level data or Client and Organization level data.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Moeda De</entry><entry>Tabela Direta</entry> 
+<entry>(@$C_Currency_ID@)</entry> 
+<entry valign="middle">c_currency_ad_role</entry> 
+<entry> </entry> 
+<entry valign="middle">The Currency for this record</entry> 
+<entry>Indicates the Currency to be used when processing or reporting on this record</entry> 
+</row> 
+<row> 
+ <entry>Valor da Aprovação</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The approval amount limit for this role</entry> 
+<entry>The Approval Amount field indicates the amount limit this Role has for approval of documents.</entry> 
+</row> 
+<row> 
+ <entry>Árvore de Menu</entry><entry>Tabela</entry> 
+<entry>AD_Tree</entry> 
+<entry valign="middle">adtree_adrole</entry> 
+<entry>AD_Tree.TreeType='MM' </entry> 
+<entry valign="middle">Tree of the menu</entry> 
+<entry>Menu access tree</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">ad_roleclient</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">ad_roleorg</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Nível de Preferência</entry><entry>Lista</entry> 
+<entry>Empresa
+Nenhum
+Organização
+Usuário
+(O)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Determines what preferences the user can set</entry> 
+<entry>Preferences allow you to define default values.  If set to None, you cannot set any preference nor value preference. Only if set to Client, you can see the Record Info Change Log.</entry> 
+</row> 
+<row> 
+ <entry>Gerenciamento do Registro de Alterações</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Maintain a log of changes</entry> 
+<entry>If selected, a log of all changes is maintained.</entry> 
+</row> 
+<row> 
+ <entry>Exibir Contabilidade</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Users with this role can see accounting information</entry> 
+<entry>This allows to prevent access to any accounting information.</entry> 
+</row> 
+<row> 
+ <entry>Acessar Todas Orgs.</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Access all Organizations (no org access control) of the client</entry> 
+<entry>When selected, the role has access to all organizations of the client automatically. This also increases performance where you have many organizations.</entry> 
+</row> 
+<row> 
+ <entry>Pode Emitir Relatórios</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Users with this role can create reports</entry> 
+<entry>You can restrict the ability to report on data.</entry> 
+</row> 
+<row> 
+ <entry>Pode Exportar</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Users with this role can export data</entry> 
+<entry>You can restrict the ability to export data from iDempiere.</entry> 
+</row> 
+<row> 
+ <entry>Trava Pessoal</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Allow users with role to lock access to personal records</entry> 
+<entry>If enabled, the user with the role can prevent access of others to personal records.  If a record is locked, only the user or people who can read personal locked records can see the record.</entry> 
+</row> 
+<row> 
+ <entry>Acesso Pessoal</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Allow access to all personal records</entry> 
+<entry>Users of this role have access to all records locked as personal.</entry> 
+</row> 
+<row> 
+ <entry>AD_Role_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Acesso de Tabela - AD_Table_Access</title> 
+ 
+<ulink url="data/AD_Table_Access_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Gerenciamento de Acesso de Tabela</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Se listado aqui, o Papel (Função) pode (ou não) acessar todos os dados desta tabela, mesmo se o Papel (Função) tiver acesso à funcionalidade. Se você "Inclui Acesso" a uma Tabela e seleciona "Somente Leitura", você pode somente ler os dados (senão, terá acesso completo). Se você "Exclui Acesso" a uma Tabela e seleciona "Somente Leitura", você pode somente ler os dados (senão, não terá acesso). Por favor, note que as regras de acesso a tabelas aqui são em adição aos Níveis de Acesso de Dados definidos para uma Tabela e o Nível de Usuário definido para um Papel (Função). Estas regras são avaliadas primeiro e você somente precisa definir as exceções a estas regras aqui. &lt;
+p&gt;
+ Note que a informação de acesso é memorizada e requer re-login ou reset da memória cache. Esteja ciente que se você usa "Regras de Inclusão", que você necessita incluir também diversas entidades de apoio. Como uma alternativa, outorgue acesso somente à funcionalidade exigida.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Role</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Table Access Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle">ad_dataaccessclient</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle">ad_dataaccessorg</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Perfil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adrole_adtableaccess</entry> 
+<entry> </entry> 
+<entry valign="middle">Responsibility Role</entry> 
+<entry>The Role determines security and access a user who has this Role will have in the System.</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtable_adtableaccess</entry> 
+<entry> </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Excluir</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Exclude access to the data - if not selected Include access to the data</entry> 
+<entry>If selected (excluded), the role cannot access the data specified.  If not selected (included), the role can ONLY access the data specified. Exclude items represent a negative list (i.e. you don't have access to the listed items). Include items represent a positive list (i.e. you only have access to the listed items).
+You would usually  not mix Exclude and Include. If you have one include rule in your list, you would only have access to that item anyway.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Acesso</entry><entry>Lista</entry> 
+<entry>Acessando
+Exportando
+Gerando o Relatório
+(A)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The type of access for this rule</entry> 
+<entry>If you restrict Access to the entity, you also cannot Report or Export it (i.e. to have access is a requirement that you can report or export the data).  The Report and Export rules are further restrictions if you have access.</entry> 
+</row> 
+<row> 
+ <entry>Somente Leitura</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Field is read only</entry> 
+<entry>The Read Only indicates that this field may only be Read.  It may not be updated.</entry> 
+</row> 
+<row> 
+ <entry>Can Report</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Users with this role can create reports</entry> 
+<entry>You can restrict the ability to report on data.</entry> 
+</row> 
+<row> 
+ <entry>Can Export</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Users with this role can export data</entry> 
+<entry>You can restrict the ability to export data from iDempiere.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Acesso de Coluna - AD_Column_Access</title> 
+ <para><emphasis>Descrição:</emphasis> Gerenciamento de Acesso de Coluna</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Se listado aqui, o Papel (Função) pode (ou não) acessar as colunas desta tabela, mesmo se o Papel (Função) tiver acesso à funcionalidade. Se você "Inclui Acesso" a uma coluna e seleciona "Somente Leitura", você pode somente ler os dados (senão, terá acesso completo). Se você "Exclui Acesso" a uma coluna e seleciona "Somente Leitura", você pode somente ler os dados (senão, não terá acesso). Note que a informação de acesso é memorizada e requer re-login ou reset da memória cache.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Role</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Column Access Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Perfil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adrole_adcolumnaccess</entry> 
+<entry> </entry> 
+<entry valign="middle">Responsibility Role</entry> 
+<entry>The Role determines security and access a user who has this Role will have in the System.</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtable_adcolumnaccess</entry> 
+<entry> </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>Coluna</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adcolumn_adcolumnaccess</entry> 
+<entry>AD_Column.AD_Table_ID=@AD_Table_ID@ </entry> 
+<entry valign="middle">Column in the table</entry> 
+<entry>Link to the database column of the table</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Excluir</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Exclude access to the data - if not selected Include access to the data</entry> 
+<entry>If selected (excluded), the role cannot access the data specified.  If not selected (included), the role can ONLY access the data specified. Exclude items represent a negative list (i.e. you don't have access to the listed items). Include items represent a positive list (i.e. you only have access to the listed items).
+You would usually  not mix Exclude and Include. If you have one include rule in your list, you would only have access to that item anyway.</entry> 
+</row> 
+<row> 
+ <entry>Somente Leitura</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Field is read only</entry> 
+<entry>The Read Only indicates that this field may only be Read.  It may not be updated.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Acesso de Registro - AD_Record_Access</title> 
+ <para><emphasis>Descrição:</emphasis> Gerenciamento de Acesso de Registro</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Você cria registros de "Acesso de Registro" habilitando "Trava Pessoal" para o Papel (Função) administrativo e dando um Ctl-Lock (segurando a tecla Ctrl ao clicar o Botão de Trava). &lt;
+p&gt;
+ Se listado aqui, o Papel (Função) pode (ou não) acessar os registros de dados desta tabela, mesmo se o Papel (Função) tiver acesso à funcionalidade. Se você "Inclui Acesso" a um registro e seleciona "Somente Leitura", você pode somente ler os dados (senão, terá acesso completo). Se você "Exclui Acesso" a uma registro e seleciona "Somente Leitura", você pode somente ler os dados (senão, não terá acesso). Note que a informação de acesso é memorizada e requer re-login ou reset da memória cache.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Role</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Record Access Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Perfil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adrole_ardecordaccess</entry> 
+<entry> </entry> 
+<entry valign="middle">Responsibility Role</entry> 
+<entry>The Role determines security and access a user who has this Role will have in the System.</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtable_adrecordaccess</entry> 
+<entry> </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>ID do Registro</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Direct internal record ID</entry> 
+<entry>The Record ID is the internal unique identifier of a record. Please note that zooming to the record may not be successful for Orders, Invoices and Shipment/Receipts as sometimes the Sales Order type is not known.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Excluir</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Exclude access to the data - if not selected Include access to the data</entry> 
+<entry>If selected (excluded), the role cannot access the data specified.  If not selected (included), the role can ONLY access the data specified. Exclude items represent a negative list (i.e. you don't have access to the listed items). Include items represent a positive list (i.e. you only have access to the listed items).
+You would usually  not mix Exclude and Include. If you have one include rule in your list, you would only have access to that item anyway.</entry> 
+</row> 
+<row> 
+ <entry>Somente Leitura</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Field is read only</entry> 
+<entry>The Read Only indicates that this field may only be Read.  It may not be updated.</entry> 
+</row> 
+<row> 
+ <entry>Entidades Dependentes</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Also check access in dependent entities</entry> 
+<entry>Also dependent entities are included.  Please be aware, that enabling this rule has severe consequences and that this is only wanted in some circumstances.
+&lt;
+p&gt;
+Example Rule: "Include Payment Term Immediate with Dependent Entities"
+Primary effect: users with this role can only select the payment term Immediate
+Secondary effect (dependent entities): users with this role can see only invoices/orders with the payment term immediate.</entry> 
+</row> 
+<row> 
+ <entry>AD_Record_Access_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

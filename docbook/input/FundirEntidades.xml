@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2003-08-09 13:08:17.0</para><para> <emphasis>Atualizado:</emphasis>2017-12-15 13:49:32.0</para>
+<title>Formulário: Fundir Entidades</title> 
+ <para><emphasis> Descrição: </emphasis>Fundir "de Entidade" para "para Entidade" - Apagar "de"</para><para><emphasis>Comentário/Ajuda:</emphasis>&lt;
+i&gt;
+Perigoso - Tenha certeza do que você está fazendo!&lt;
+/i&gt;
+ Todas as instâncias da entidade de origem (ex. Cliente A) são alteradas para a entidade de destino (ex. Cliente B). A entidade de origem (ex. Cliente A) é apagada. &lt;
+p&gt;
+&lt;
+b&gt;
+ NÃO é possível desfazer, nem haverá registro de rastreamento !  Por favor, faça um backup antes&lt;
+/b&gt;
+ Por favor, esteja ciente que você pode estar alterando registros históricos (ex. faturas, etc.) ! &lt;
+/p&gt;
+ &lt;
+p&gt;
+&lt;
+b&gt;
+Efeitos colaterais:&lt;
+/b&gt;
+ Fundir Produtos poderá distorcer custos de produtos;
+ Fundir Parceiros de Negócios poderá resultar na abertura incorreta do balanço de um item. Confira com o suporte para remediar. &lt;
+p&gt;
+&lt;
+b&gt;
+Restrições:&lt;
+/b&gt;
+ Conflitos de Contabilidade e Estoque não estão resolvidos nesta versão.
+</para>
+ </chapter>

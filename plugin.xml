@@ -10,7 +10,7 @@
             thread="main"
             visible="true">
          <run
-               class="org.red1.DocBookGeneratorApplication">
+               class="org.brerp.docbook.DocBookGeneratorApplication">
          </run>
       </application>
    </extension>

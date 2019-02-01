@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Atributo</title> 
+ <para> <emphasis>Descrição: </emphasis>  Atributo de Produto</para><para> <emphasis>Comentário/Ajuda: </emphasis>Atributo de Produto como Cor, Tamanho, etc.</para><para><emphasis> Criado em: </emphasis>2003-05-06 15:07:15.0
+</para><para><emphasis>Atualizado em: </emphasis>2000-01-02 00:00:00.0</para>
+<imagedata fileref="/img/manual/Atributo.png" format="PNG" /><section> 
+ <title>Tabela: Atributo - M_Attribute</title> 
+ 
+<ulink url="data/M_Attribute_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Atributo de Produto</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Cor, Tamanho, etc. de Atributo de Produto. Se ele for um atributo de Instância, todos os produtos tem o mesmo valor.</para> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Attribute Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Atributo</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Product Attribute</entry> 
+<entry>Product Attribute like Color, Size</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Obrigatório</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Data entry is required in this column</entry> 
+<entry>The field must have a value for the record to be saved to the database.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Valor de Atributo</entry><entry>Lista</entry> 
+<entry>Lista
+Número
+Texto (máx. 40)
+(S)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Type of Attribute Value</entry> 
+<entry>The Attribute Value type determines the data/validation type</entry> 
+</row> 
+<row> 
+ <entry>Atributo de Instância</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The product attribute is specific to the instance (like Serial No, Lot or Guarantee Date)</entry> 
+<entry>If selected, the individual instance of the product has this attribute - like the individual Serial or Lot Numbers or  Guarantee Date of a product instance.  If not selected, all instances of the product share the attribute (e.g. color=green).</entry> 
+</row> 
+<row> 
+ <entry>Procura de Atributo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mattributesearch_mattribute</entry> 
+<entry> </entry> 
+<entry valign="middle">Common Search Attribute </entry> 
+<entry>Attributes are specific to a Product Attribute Set (e.g. Size for T-Shirts: S,M,L). If you have multiple attributes and want to search under a common attribute, you define a search attribute. Example: have one Size search attribute combining the values of all different sizes (Size for Dress Shirt  XL,L,M,S,XS). The Attribute Search allows you to have all values available for selection.  This eases the maintenance of the individual product attribute.</entry> 
+</row> 
+<row> 
+ <entry>M_Attribute_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Valor de Atributo - M_AttributeValue</title> 
+ 
+<ulink url="data/M_AttributeValue_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Valor de Atributo de Produto</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Valor individual de um Atributo de Produto (ex. verde, grande, ..)</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Attribute Value Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Valor de Atributo</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Product Attribute Value</entry> 
+<entry>Individual value of a product attribute (e.g. green, large, ..)</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Atributo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mattribute_mattributevalue</entry> 
+<entry> </entry> 
+<entry valign="middle">Product Attribute</entry> 
+<entry>Product Attribute like Color, Size</entry> 
+</row> 
+<row> 
+ <entry>Chave de Busca</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>M_AttributeValue_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

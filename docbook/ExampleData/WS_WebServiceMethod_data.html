@@ -1,0 +1,113 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Table&nbsp;1.&nbsp;M&eacute;todo de Servi&ccedil;o Web</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <div class="table" id="d558957e1">
+         <div class="table-title">Table&nbsp;1.&nbsp;M&eacute;todo de Servi&ccedil;o Web</div>
+         <div class="table-contents">
+            <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+               <colgroup>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+               </colgroup>
+               <tbody>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave de Busca</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Servi&ccedil;o Web</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">M&eacute;todo de Servi&ccedil;o Web</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">To invoke corresponding methods of documents when changing document action.</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Change DocAction for documents, i.e. Complete a Material Receipt
+                        WARNING! This web service complete documents not via workflow, so it jump over any approval step considered in document workflow.
+                        To complete documents using workflow it's better to use the runProcess web service
+                     </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Set Document Action</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">setDocAction</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">50021</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Run a process or report - if the process is a document workflow a document action can be configured</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Run Process</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">runProcess</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">50022</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Get Reference Lists or Reference Tables</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">getList</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">50023</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Service to create data following the persistence model of Adempiere</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Service to create data following the persistence model of Adempiere, this is calling properly before/afterSave methods
+                        - and configured model validators.
+                     </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Create Data</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">createData</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">50024</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Service to modify data following the persistence model of Adempiere</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Service to modify data following the persistence model of Adempiere, this is calling properly before/afterSave methods
+                        - and configured model validators.
+                     </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Update Data</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">updateData</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">50025</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Service to delete data following the persistence model of Adempiere</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Service to delete data following the persistence model of Adempiere, this is calling properly before/afterDelete methods
+                        - and configured model validators.
+                     </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Delete Data</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">deleteData</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">50026</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Access a record via its ID and return the corresponding data</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Read Data</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">readData</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">50027</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Access records via conditions on columns - return data rows</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Query Data</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">queryData</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">50028</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">composite</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">composite</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">200001</td>
+                     <td style="text-align: center; ">200001</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div><br class="table-break"></br></body>
+</html>

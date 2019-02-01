@@ -1,0 +1,911 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Janela: Empresa</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d84237e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Janela:  Empresa</h2>
+               </div>
+            </div>
+         </div>
+         <div class="toc">
+            <div class="toc-title">Conte&uacute;do: </div>
+            <ul class="toc">
+               <li><span class="section"><a href="#d84237e23">1. Tabela: Empresa - AD_Client</a></span></li>
+               <li><span class="section"><a href="#d84237e570">2. Tabela: Informa&ccedil;&otilde;es da Empresa - AD_ClientInfo</a></span></li>
+               <li><span class="section"><a href="#d84237e1070">3. Tabela: Compartilhamento de Empresa - AD_ClientShare</a></span></li>
+            </ul>
+         </div>
+         <p> <span class="emphasis"><em>Descri&ccedil;&atilde;o: </em></span>  Gerenciamento de Empresas / Locat&aacute;rios
+         </p>
+         <p> <span class="emphasis"><em>Coment&aacute;rio/Ajuda: </em></span>A Empresa &eacute; o maior n&iacute;vel de uma entidade de neg&oacute;cios independente.  Cada Empresa ter&aacute; uma ou mais Organiza&ccedil;&otilde;es reportando-se
+            a ela.  Cada Empresa define os par&acirc;metros cont&aacute;beis (Esquema Cont&aacute;bil, defini&ccedil;&atilde;o da &Aacute;rvore, UDMs n&atilde;o monet&aacute;rias). Para criar
+            novas Empresas, rode a Configura&ccedil;&atilde;o Inicial de Empresas com o Papel de Administrador de Sistema. N&atilde;o crie uma nova empresa
+            nesta janela, mas use "Configura&ccedil;&atilde;o Inicial de Empresas" para configurar a seguran&ccedil;a e as regras de acesso necess&aacute;rias. Se
+            voc&ecirc; criar uma nova empresa aqui, voc&ecirc; n&atilde;o poder&aacute; v&ecirc;-la e a tamb&eacute;m a infra-estrutura essencial da empresa n&atilde;o ser&aacute; configurada.
+         </p>
+         <p><span class="emphasis"><em> Criado em: </em></span>1999-06-11 00:00:00.0
+            
+         </p>
+         <p><span class="emphasis"><em>Atualizado em: </em></span>2000-01-02 00:00:00.0
+         </p><img src="/img/manual/Empresa.png"></img><section class="section" id="d84237e23">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">1.&nbsp;Tabela: Empresa - AD_Client</h2>
+                  </div>
+               </div>
+            </div><a class="ulink" href="data/AD_Client_data" target="_top">[DADOS DE EXEMPLO]</a><p><span class="emphasis"><em>Descri&ccedil;&atilde;o:</em></span> Defini&ccedil;&atilde;o de Empresa/Locat&aacute;rio
+            </p>
+            <p><span class="emphasis"><em>Coment&aacute;rio/Ajuda: </em></span> A Aba "Defini&ccedil;&atilde;o de Empresa" define uma empresa exclusiva. N&atilde;o crie uma nova empresa nesta janela, mas use "Configura&ccedil;&atilde;o
+               Inicial de Empresas" (No papel de Administrador de Sistema) para configurar a seguran&ccedil;a e as regras de acesso necess&aacute;rias.
+               Se voc&ecirc; criar uma nova empresa aqui, voc&ecirc; n&atilde;o poder&aacute; v&ecirc;-la e a tamb&eacute;m a infra-estrutura essencial da empresa n&atilde;o ser&aacute; configurada.
+            </p>
+            <p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>0
+            </p>
+         </section>
+         <div class="table" id="d84237e40">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;Client Fields</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do campo</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores (Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave restritiva</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Client_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Org_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Unix Attachment Path</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Caminho Anexo das Janelas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Store Attachments On File System</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Custo Imediatamente</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(N)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Update Costs immediately for testing</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">If selected, costs are updated immediately when a Cost Detail record is created (by matching or shipping).  Otherwise the
+                           costs are updated by batch or when the costs are needed for posting. You should select this only if you are testing,
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lan&ccedil;ar Imediatamente</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(N)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Post the accounting immediately for testing (Deprecated)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">If selected, the accounting consequences are immediately generated when completing a document.  Otherwise the document is
+                           posted by a batch process.  You should select this only if you are testing.
+                           Deprecated column - use instead the functionality Client Accounting.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Diret&oacute;rio de Documentos</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Directory for documents from the application server</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Directory to store documents by the application server.  The path/directory is accessed by the application server and may
+                           not be accessible to clients.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave de Busca</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Alphanumeric identifier of the entity</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters
+                           in length.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Optional short description of the record</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A description is limited to 255 characters.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Use Fun&ccedil;&otilde;es Beta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Enable the use of Beta Functionality</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The exact scope of Beta Functionality is listed in the release note.  It is usually not recommended to enable Beta functionality
+                           in production environments.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Idioma</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Language System</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adlangu_adclient</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Language for this entity</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Language identifies the language to use for display and formatting</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Documentos Multi-Idiomas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Documents are Multi Lingual</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">If selected, you enable multi lingual documents and need to maintain translations for entities used in documents (examples:
+                           Products, Payment Terms, ...).
+                           Please note, that the base language is always English.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Auto Arquivar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Todos (Relat&oacute;rios, Documentos)
+                           Documentos
+                           Documentos Externos
+                           Nenhum
+                           (N)
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Enable and level of automatic Archive of documents</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">iDempiere allows to automatically create archives of Documents (e.g. Invoices) or Reports. You view the archived material
+                           with the Archive Viewer
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Pol&iacute;tica de Materiais</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">PePs
+                           UePs
+                           (F)
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Material Movement Policy</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Material Movement Policy determines how the stock is flowing (FiFo or LiFo) if a specific Product Instance was not selected.
+                            The policy can not contradict the costing method (e.g. FiFo movement policy and LiFo costing method).
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Servidor de Email</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Hostname of Mail Server for SMTP and IMAP</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The host name of the Mail Server for this client with SMTP services to send mail, and IMAP to process incoming mail.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Autentica&ccedil;&atilde;o SMTP</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(N)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Your mail server requires Authentication</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Some email servers require authentication before sending emails.  If yes, users are required to define their email user name
+                           and password.  If authentication is required and no user name and password is required, delivery will fail.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Porta SMTP</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Inteiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">SMTP Port Number</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">SMTP SSL/TLS</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(N)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Use SSL/TLS for SMTP</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">E-mail</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">EMail address to send automated mails from or receive mails for automated processing (fully qualified)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">EMails for requests, alerts and escalation are sent from this email address as well as delivery information if the sales rep
+                           does not have an email account. The address must be filly qualified (e.g. joe.smith@company.com) and should be a valid address.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Pasta de Solicita&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">EMail folder to process incoming emails;
+                            if empty INBOX is used
+                        </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Email folder used to read emails to process as requests, If left empty the default mailbox (INBOX) will be used. Requires
+                           IMAP services.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Usu&aacute;rio da Solicita&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">User Name (ID) of the email owner</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">EMail user name for requests, alerts and escalation are sent from this email address as well as delivery information if the
+                           sales rep does not have an email account. Required, if your mail server requires authentification as well as for processing
+                           incoming mails.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Senha do Usu&aacute;rio de Solicita&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Password of the user name (ID) for mail processing</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Servidor de email</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Send EMail from Server</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">When selected, mail is sent from the server rather then the client.  This decreases availability.  You would select this when
+                           you do not want to enable email relay for the client addresses in your mail server.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Teste de email</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Test EMail</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Model Validator</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">List of data model validation classes separated by ;
+                           
+                        </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">List of classes implementing the interface org.compiere.model.ModelValidator, separated by semicolon.
+                           The class is called for the client and allows to validate documents in the prepare stage and monitor model changes.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Store Archive On File System</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Utiliza SaaS</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(N)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Estrat&eacute;gia de Replica&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adreplicationstrategy_adclient</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data Replication Strategy</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Data Replication Strategy determines what and how tables are replicated </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Caminho de Arquivo das Janelas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Unix Archive Path</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Pol&iacute;ticas de Senha</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adpasswordrule_adclient</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">AD_Client_UU</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; "> </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br><section class="section" id="d84237e570">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">2.&nbsp;Tabela: Informa&ccedil;&otilde;es da Empresa - AD_ClientInfo</h2>
+                  </div>
+               </div>
+            </div><a class="ulink" href="data/AD_ClientInfo_data" target="_top">[DADOS DE EXEMPLO]</a><p><span class="emphasis"><em>Descri&ccedil;&atilde;o:</em></span> Informa&ccedil;&otilde;es da Empresa
+            </p>
+            <p><span class="emphasis"><em>Coment&aacute;rio/Ajuda: </em></span> A Aba "Informa&ccedil;&otilde;es da Empresa" define os detalhes de cada empresa.  As Regras Cont&aacute;beis e padr&otilde;es de alto n&iacute;vel s&atilde;o definidos
+               aqui. O Calend&aacute;rio &eacute; usado para determinar se um per&iacute;odo est&aacute; aberto ou fechado.
+            </p>
+            <p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>1
+            </p>
+         </section>
+         <div class="table" id="d84237e587">
+            <div class="table-title">Table&nbsp;1.2.&nbsp;Client Info Fields</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do campo</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores (Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave restritiva</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@AD_Org_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@AD_Client_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adclient_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descontos calculados a partir dos Valores das Linhas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @AD_Client_ID=0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Payment Discount calculation does not include Taxes and Charges</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">If the payment discount is calculated from line amounts only, the tax and charge amounts are not included. This is e.g. business
+                           practice in the US.  If not selected the total invoice amount is used to calculate the payment discount.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Calend&aacute;rio</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ccalendar_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @AD_Client_ID=0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Accounting Calendar Name</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Calendar uniquely identifies an accounting calendar.  Multiple calendars can be used.  For example you may need a standard
+                           calendar that runs from Jan 1 to Dec 31 and a fiscal calendar that runs from July 1 to June 30.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Esquema Cont&aacute;bil Prim&aacute;rio</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_AcctSchema</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">cacctschema1_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @AD_Client_ID=0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary rules for accounting</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">An Accounting  Schema defines the rules used accounting such as costing method, currency and calendar.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">UDM para Comprimento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_UOM</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">c_uom_length_ad_clientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @AD_Client_ID=0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Standard Unit of Measure for Length</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Standard UOM for Length indicates the UOM to use for products referenced by length in a document.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">UOM for Volume</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_UOM</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">c_uom_volume_ad_clientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @AD_Client_ID=0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Standard Unit of Measure for Volume</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Standard UOM for Volume indicates the UOM to use for products referenced by volume in a document.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">UDM para Peso</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_UOM</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">c_uom_weight_ad_clientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @AD_Client_ID=0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Standard Unit of Measure for Weight</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Standard UOM for Weight indicates the UOM to use for products referenced by weight in a document.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Modelo de P.Neg&oacute;cios</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_BPartner (Trx)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">cbpartnercashtrx_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @AD_Client_ID=0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Business Partner used for creating new Business Partners on the fly</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">When creating a new Business Partner from the Business Partner Search Field (right-click: Create), the selected business partner
+                           is used as a template, e.g. to define price list, payment terms, etc.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Produto para Frete</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M_Product (no summary)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">mproductfreight_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @AD_Client_ID=0 
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">UOM for Time</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_UOM</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">c_uom_time_ad_clientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @AD_Client_ID=0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Standard Unit of Measure for Time</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Standard UOM for Time indicates the UOM to use for products referenced by time in a document.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Despesa (Frete)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Charge</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">cchargefreight_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Provedor de Armazenamento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adstorageprovider_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Arquivo da Loja</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_StorageProvider_ID</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">storagearchive_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Days to keep Log</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Inteiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Number of days to keep the log entries</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Older Log entries may be deleted</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&Aacute;rvore da Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Tree</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adtreeorg_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Trees are used for (financial) reporting and security access (via role)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Trees are used for (finanial) reporting and security access (via role)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&Aacute;rvore de Menu</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Tree</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adtreemenu_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tree of the menu</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Menu access tree</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&Aacute;rvore Parc.Neg&oacute;cios</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Tree</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adtreebpartner_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Trees are used for (financial) reporting</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Trees are used for (finanial) reporting</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&Aacute;rvore de Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Tree</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adtreeproduct_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Trees are used for (financial) reporting</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Trees are used for (finanial) reporting</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&Aacute;rvore de Projeto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Tree</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adtreeproject_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Trees are used for (financial) reporting</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Trees are used for (finanial) reporting</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&Aacute;rvore de Regi&atilde;o de Vendas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Tree</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adtreesalesreg_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Trees are used for (financial) reporting</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Trees are used for (finanial) reporting</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&Aacute;rvore de Campanha</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Tree</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adtreecampaign_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Trees are used for (financial) reporting</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Trees are used for (finanial) reporting</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&Aacute;rvore de Atividade</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Tree</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adtreeactivity_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Trees are used for (financial) reporting</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Trees are used for (finanial) reporting</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Logo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Imagem</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">logo_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Logo para Relat&oacute;rios</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Imagem</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">logoreport_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Logo para Web</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Imagem</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">logoweb_adclientinfo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Solicitar confirma&ccedil;&atilde;o ao Fechar documentos</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Solicitar confirma&ccedil;&atilde;o ao Anular</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">(N)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; "> </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br><section class="section" id="d84237e1070">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">3.&nbsp;Tabela: Compartilhamento de Empresa - AD_ClientShare</h2>
+                  </div>
+               </div>
+            </div>
+            <p><span class="emphasis"><em>Descri&ccedil;&atilde;o:</em></span> Force (not) sharing of client/org entities
+            </p>
+            <p><span class="emphasis"><em>Coment&aacute;rio/Ajuda: </em></span> Business Partner can be either defined on Client level (shared) or on Org level (not shared).  You can define here of Products
+               are always shared (i.e. always created under Organization "*") or if they are not shared (i.e. you cannot enter them with
+               Organization "*"). The creation of  "Client and Org" shared records is the default and is ignored.
+            </p>
+            <p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>1
+            </p>
+         </section>
+         <div class="table" id="d84237e1085">
+            <div class="table-title">Table&nbsp;1.3.&nbsp;Client Share Fields</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do campo</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores (Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave restritiva</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Compartilhamento de Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Force (not) sharing of client/org entities</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">For entities with data access level of Client+Organization either force to share the entries or not. Example: Product and
+                           Business Partner can be either defined on Client level (shared) or on Org level (not shared).  You can define here of Products
+                           are always shared (i.e. always created under Organization "*") or if they are not shared (i.e. you cannot enter them with
+                           Organization "*")
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adclient_adclientshare</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adorg_adclientshare</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Alphanumeric identifier of the entity</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters
+                           in length.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Optional short description of the record</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A description is limited to 255 characters.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">adtable_adclientshare</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Table.AccessLevel IN ('2','3','6','7') AND AD_Table.IsView='N' </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Database Table information</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Database Table provides the information of the table definition</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Compartilhamento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Client (all shared)
+                           Org (not shared)
+                           Client or Org
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Type of sharing</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Defines if a table is shared within a client or not.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">AD_ClientShare_UU</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; "> </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

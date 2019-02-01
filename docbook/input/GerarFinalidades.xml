@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2001-02-06 18:47:46.0</para><para> <emphasis>Atualizado:</emphasis>2000-01-02 00:00:00.0</para>
+<title>Formulário: Gerar Finalidades</title> 
+ <para><emphasis> Descrição: </emphasis>Gerar Finalidades a partir das Contas Naturais</para><para><emphasis>Comentário/Ajuda:</emphasis>Use a parte superior para criar novas finalidades usando as contas de despesas gerais .  Use a parte inferior para criar finalidades baseadas nas contas naturais.</para>
+<imagedata fileref="/img/manual/GerarFinalidades.png" format="PNG" /> </chapter>

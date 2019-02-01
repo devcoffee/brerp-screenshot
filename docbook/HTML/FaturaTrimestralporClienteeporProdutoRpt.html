@@ -1,0 +1,256 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Relat&oacute;rio: Fatura Trimestral por Cliente e por Produto</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d100901e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Relat&oacute;rio:  Fatura Trimestral por Cliente e por Produto</h2>
+               </div>
+            </div>
+         </div>
+         <p><span class="emphasis"><em> Criado:</em></span>2000-12-04 16:17:11.0
+         </p>
+         <p> <span class="emphasis"><em>Atualizado:</em></span>2005-12-15 12:11:44.0
+         </p>
+         <p><span class="emphasis"><em> Descri&ccedil;&atilde;o: </em></span>Relat&oacute;rio de Faturamento por Cliente e Categoria do Produto por trimestre
+         </p>
+         <p><span class="emphasis"><em> Coment&aacute;rio/Ajuda: </em></span>Valor Faturado por Cliente e Categoria de Produto
+         </p>
+         <p><span class="emphasis"><em> ReportView: </em></span>RV_C_Invoice_CustomerProdQtr
+         </p><img src="/img/manual/FaturaTrimestralporClienteeporProduto.png"></img><div class="table" id="d100901e26">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;FaturaTrimestralporClienteeporProduto Par&acirc;metros </div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome da coluna</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores(Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Transa&ccedil;&atilde;o de Vendas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> IsSOTrx</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> (Y)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Esta &eacute; uma Transa&ccedil;&atilde;o de Vendas</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A caixa de verifica&ccedil;&atilde;o "Transa&ccedil;&atilde;o de Vendas" indica se este item &eacute; uma Transa&ccedil;&atilde;o de Vendas.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Categoria de Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> M_Product_Category_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> (0)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Categoria de um Produto</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Identifica a categoria &agrave; qual este produto pertence.  Categorias de Produto s&atilde;o usadas para forma&ccedil;&atilde;o de pre&ccedil;os e sele&ccedil;&atilde;o.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Parceiro de Neg&oacute;cios </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> C_BPartner_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifica um Parceiro de Neg&oacute;cios.</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Um "Parceiro de Neg&oacute;cios" &eacute; qualquer um com quem voc&ecirc; transaciona.  Isto pode incluir Fornecedores, Clientes, Funcion&aacute;rios,
+                           Vendedores, Representantes de Venda, etc.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> AD_Org_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Entidade organizacional dentro da Empresa</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Uma "Organiza&ccedil;&atilde;o" &eacute; uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos s&atilde;o loja, departamento. Voc&ecirc; pode compartilhar
+                           dados entre organiza&ccedil;&otilde;es.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Data Faturada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> DateInvoiced</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Data impressa na Fatura (Nota Fiscal)</td>
+                        <td style="text-align: center; ">A "Data Faturada" indica a data impressa na nota-fiscal/fatura.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br><div class="table" id="d100901e116">
+            <div class="table-title">Table&nbsp;1.2.&nbsp;RV_C_Invoice_CustomerProdQtr - Colunas</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome da coluna</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores padr&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor de restri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(ver acima)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(ver acima)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Parceiro de Neg&oacute;cios </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifies a Business Partner</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data Faturada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Date printed on Invoice</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Date Invoice indicates the date printed on the invoice.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Transa&ccedil;&atilde;o de Vendas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">This is a Sales Transaction</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Sales Transaction checkbox indicates if this item is a Sales Transaction.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Desconto da Linha %</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Line Discount as a percentage</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Line Discount Percent indicates the discount for this line as a percentage.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Desconto da Linha</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Line Discount Amount</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Indicates the discount for this line as an amount.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor Limite da Linha</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor da Lista de Linha</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor da Linha</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Line Extended Amount (Quantity * Actual Price) without Freight and Charges</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Indicates the extended line amount based on the quantity and the actual price.  Any additional charges or freight are not
+                           included.  The Amount may or may not include tax.  If the price list is inclusive tax, the line amount is the same as the
+                           line total.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Margem Bruta %</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Margem Bruta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Categoria de Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Category of a Product</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Identifies the category which this product belongs to.  Product categories are used for pricing and selection.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Quantidade Faturada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Quantidade</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Invoiced Quantity</td>
+                        <td style="text-align: center; ">The Invoiced Quantity indicates the quantity of a product that have been invoiced.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Janela: Roteiro de Produ&ccedil;&atilde;o</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d208934e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Janela:  Roteiro de Produ&ccedil;&atilde;o</h2>
+               </div>
+            </div>
+         </div>
+         <div class="toc">
+            <div class="toc-title">Conte&uacute;do: </div>
+            <ul class="toc">
+               <li><span class="section"><a href="#d208934e23">1. Tabela: Roteiro de Produ&ccedil;&atilde;o - COF_PP_RoteiroProd</a></span></li>
+               <li><span class="section"><a href="#d208934e375">2. Tabela: Detalhes do Roteiro - COF_PP_RoteiroDetalhe</a></span></li>
+            </ul>
+         </div>
+         <p> <span class="emphasis"><em>Descri&ccedil;&atilde;o: </em></span>  null
+         </p>
+         <p> <span class="emphasis"><em>Coment&aacute;rio/Ajuda: </em></span>null
+         </p>
+         <p><span class="emphasis"><em> Criado em: </em></span>2017-01-19 14:33:19.0
+            
+         </p>
+         <p><span class="emphasis"><em>Atualizado em: </em></span>2017-01-19 14:33:19.0
+         </p><img src="/img/manual/RoteirodeProducao.png"></img><section class="section" id="d208934e23">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">1.&nbsp;Tabela: Roteiro de Produ&ccedil;&atilde;o - COF_PP_RoteiroProd</h2>
+                  </div>
+               </div>
+            </div><a class="ulink" href="data/COF_PP_RoteiroProd_data" target="_top">[DADOS DE EXEMPLO]</a><p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>0
+            </p>
+         </section>
+         <div class="table" id="d208934e32">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;Roteiro de Produ&ccedil;&atilde;o Fields</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do campo</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores (Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave restritiva</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Roteiro de Produ&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Roteiro de Produ&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Roteiro de Produ&ccedil;&atilde;o</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Client_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Org_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C&oacute;digo do Roteiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Roteiro Padr&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Indica se o roteiro &eacute; padr&atilde;o para um produto</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Optional short description of the record</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A description is limited to 255 characters.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">MProduct_COFPPRoteiroProd</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M_Product.IsSummary='N' AND M_Product.IsActive='Y' AND M_Product.IsManufactured='Y' </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Product, Service, Item</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Identifies an item which is either purchased or sold in this organization.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">UDM</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">CUOM_COFPPRoteiroProd</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Unit of Measure</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The UOM defines a unique non monetary Unit of Measure</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Fator de convers&atilde;o (divis&atilde;o)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Fator de Convers&atilde;o (multiplica&ccedil;&atilde;o)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo do Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_ProductType Name Value</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFProductType_COFPPRoteiroPro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Product Type</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Product Type</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Classe do Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_ProductClass Value Name</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFProductClass_COFPPRoteiroPr</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Product Class</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Product Class</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Grupo do Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_ProductGroup Value Name</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFProductGroup_COFPPRoteiroPr</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Product Group</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Product Group</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N. Pe&ccedil;as</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Inteiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Perda (%)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade por Ciclo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Horas Ciclo Estimada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Perda Estimada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">% de perda estimado no processo</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lote Minimo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade mpinima a ser produzida no roteiro</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Qtd Horas Setup</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade em horas de setup processo produtivo</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Instru&ccedil;&otilde;es</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto M&eacute;dio (at&eacute; 2000 caracteres)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Instru&ccedil;&otilde;es para a execu&ccedil;&atilde;o da O.P/Plano Mestre de Produ&ccedil;&atilde;o/Roteiro de Produ&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Instru&ccedil;&otilde;es para a execu&ccedil;&atilde;o da O.P/Plano Mestre de Produ&ccedil;&atilde;o/Roteiro de Produ&ccedil;&atilde;o</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; ">(ver o mesmo acima)</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br><section class="section" id="d208934e375">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">2.&nbsp;Tabela: Detalhes do Roteiro - COF_PP_RoteiroDetalhe</h2>
+                  </div>
+               </div>
+            </div><a class="ulink" href="data/COF_PP_RoteiroDetalhe_data" target="_top">[DADOS DE EXEMPLO]</a><p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>1
+            </p>
+         </section>
+         <div class="table" id="d208934e384">
+            <div class="table-title">Table&nbsp;1.2.&nbsp;Detalhes do Roteiro Fields</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do campo</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores (Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave restritiva</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_PP_RoteiroDetalhe_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Detalhes do Roteiro</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Detalhes do Roteiro</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Client_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Org_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Roteiro de Produ&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFPPRoteiroProd_COFPPRoteiroD</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Roteiro de Produ&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Roteiro de Produ&ccedil;&atilde;o</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Recursos</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_PP_Recursos_ID</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFPPRecursos_COFPPRoteiroDeta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Recursos</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Recursos</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Centro de Trabalho</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_PP_CentroTrabalho Value Name</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFPPCentroTrabalho_COFPPRotei</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Centro Trabalho</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Centro Trabalho</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ferramenta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_PP_Ferramenta name + value</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFPPFerramenta_COFPPRoteiroDe</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_PP_Ferramenta.COF_PP_Ferramenta_ID IN (SELECT rc.COF_PP_Ferramenta_ID FROM COF_PP_RecursosConfig rc WHERE rc.COF_PP_Recursos_ID
+                           = @COF_PP_Recursos_ID@) 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Ferramenta</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Ferramenta</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Qtd Horas Setup</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade em horas de setup processo produtivo</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Horas Ciclo Estimada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; ">(ver o mesmo acima)</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

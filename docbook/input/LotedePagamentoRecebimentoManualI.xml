@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado: </emphasis>2017-05-09 10:10:46.0</para><para> <emphasis> Atualizado: </emphasis>2018-07-02 15:13:45.0</para>
+<title>InfoPanel: Lote de Pagamento/Recebimento (Manual)</title> 
+ <para><emphasis> Tabela: </emphasis>AD_InfoWindow</para>
+<para><emphasis> From (SQL): </emphasis>RV_OpenItem a</para>
+<para><emphasis> Order By :</emphasis>null</para>
+<table> 
+ <title> InfoPanel Columns </title> 
+ <tgroup cols='6' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="3*"/> 
+<thead><row><entry>Nome</entry><entry>Referência</entry><entry>Sql SELECT</entry><entry>QueryCriteria</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row>
+</thead><tbody>
+<row> <entry>Nosso Número</entry><entry>Texto Curto (String)</entry><entry>a.cof_titulo_nossoNumero</entry><entry> </entry><entry>null</entry><entry>null</entry></row> 
+<row> <entry>Número da Parcela</entry><entry>Texto Curto (String)</entry><entry>a.cof_PayScheduleNo</entry><entry> </entry><entry>null</entry><entry>null</entry></row> 
+<row> <entry>Fatura</entry><entry>Procurar</entry><entry>a.C_Invoice_ID</entry><entry><emphasis>Operador:</emphasis>= <emphasis>Função:</emphasis>null</entry><entry>Identificador de Fatura</entry><entry>O Documento da Fatura.</entry></row> 
+<row> <entry>Open Item</entry><entry>ID</entry><entry>a.RV_OpenItem_ID</entry><entry> </entry><entry>null</entry><entry>null</entry></row> 
+<row> <entry>Boleto Impresso</entry><entry>Lista</entry><entry>a.cof_Processed</entry><entry><emphasis>Operador:</emphasis>= <emphasis>Função:</emphasis>null</entry><entry>Boleto Impresso</entry><entry>null</entry></row> 
+<row> <entry>Data do Vencimento</entry><entry>Data</entry><entry>a.DueDate AS DueDateTo</entry><entry><emphasis>Operador:</emphasis>&lt;
+= <emphasis>Função:</emphasis>Trunc</entry><entry>Data em que o pagamento deve ser efetuado</entry><entry>Data em que o pagamento deve ser feito sem deduções ou descontos</entry></row> 
+<row> <entry>Data do Vencimento</entry><entry>Data</entry><entry>a.DueDate AS DueDateFrom</entry><entry><emphasis>Operador:</emphasis>&gt;
+= <emphasis>Função:</emphasis>null</entry><entry>Data em que o pagamento deve ser efetuado</entry><entry>Data em que o pagamento deve ser feito sem deduções ou descontos</entry></row> 
+<row> <entry>Organização</entry><entry>Tabela Direta</entry><entry>a.AD_Org_ID</entry><entry><emphasis>Operador:</emphasis>= <emphasis>Função:</emphasis>null</entry><entry>Entidade organizacional dentro da Empresa</entry><entry>Uma "Organização" é uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos são loja, departamento. Você pode compartilhar dados entre organizações.</entry></row> 
+<row> <entry>Parceiro de Negócios </entry><entry>Procurar</entry><entry>a.C_BPartner_ID</entry><entry><emphasis>Operador:</emphasis>= <emphasis>Função:</emphasis>null</entry><entry>Identifica um Parceiro de Negócios.</entry><entry>Um "Parceiro de Negócios" é qualquer um com quem você transaciona.  Isto pode incluir Fornecedores, Clientes, Funcionários, Vendedores, Representantes de Venda, etc.</entry></row> 
+<row> <entry>Data Faturada</entry><entry>Data</entry><entry>a.DateInvoiced AS DateInvoicedFrom</entry><entry><emphasis>Operador:</emphasis>&gt;
+= <emphasis>Função:</emphasis>Trunc</entry><entry>Data impressa na Fatura (Nota Fiscal)</entry><entry>A "Data Faturada" indica a data impressa na nota-fiscal/fatura.</entry></row> 
+<row> <entry>Data Faturada</entry><entry>Data</entry><entry>a.DateInvoiced AS DateInvoicedTo</entry><entry><emphasis>Operador:</emphasis>&lt;
+= <emphasis>Função:</emphasis>Trunc</entry><entry>Data impressa na Fatura (Nota Fiscal)</entry><entry>A "Data Faturada" indica a data impressa na nota-fiscal/fatura.</entry></row> 
+<row> <entry>Data Faturada</entry><entry>Data</entry><entry>a.DateInvoiced</entry><entry> </entry><entry>Data impressa na Fatura (Nota Fiscal)</entry><entry>A "Data Faturada" indica a data impressa na nota-fiscal/fatura.</entry></row> 
+<row> <entry>Data do Vencimento</entry><entry>Data</entry><entry>a.DueDate</entry><entry> </entry><entry>Data em que o pagamento deve ser efetuado</entry><entry>Data em que o pagamento deve ser feito sem deduções ou descontos</entry></row> 
+<row> <entry>Total Geral</entry><entry>Valor</entry><entry>a.GrandTotal</entry><entry> </entry><entry>Valor Total do documento</entry><entry>O "Total Geral" mostra o valor total incluindo Impostos e Frete na moeda do documento</entry></row> 
+<row> <entry>Valor Aberto</entry><entry>Valor</entry><entry>a.OpenAmt</entry><entry> </entry><entry>Valor do Item em Aberto</entry><entry>null</entry></row> 
+<row> <entry>Documento Fiscal</entry><entry>Texto Curto (String)</entry><entry>(CASE WHEN a.LBR_DocFiscal_ID IS NULL THEN a.lbr_NFEntrada ELSE (select DocumentNo from LBR_DocFiscal df where df.LBR_DocFiscal_ID = a.LBR_DocFiscal_ID) END)</entry><entry> </entry><entry>null</entry><entry>null</entry></row> 
+<row> <entry>Centro de Custo</entry><entry>Tabela</entry><entry>a.User1_ID</entry><entry><emphasis>Operador:</emphasis>= <emphasis>Função:</emphasis>null</entry><entry>Centro de Custo</entry><entry>O "Centro de Custo" exibe os elementos opcionais que tenham sido definidos para esta combinação de contas.</entry></row> 
+<row> <entry>Centro de Custo 2</entry><entry>Tabela</entry><entry>a.User2_ID</entry><entry><emphasis>Operador:</emphasis>= <emphasis>Função:</emphasis>null</entry><entry>Centro de Custo #2</entry><entry>O "Centro de Custo" exibe os elementos opcionais que tenham sido definidos para esta combinação de contas.</entry></row> 
+<row> <entry>Tipo de Documento Alvo</entry><entry>Tabela</entry><entry>a.C_DocTypeTarget_ID</entry><entry><emphasis>Operador:</emphasis>= <emphasis>Função:</emphasis>null</entry><entry>Tipo de Documento Alvo para converter documentos</entry><entry>Você pode converter tipos de documento (por exemplo de Oferta para Pedido ou Fatura).  A conversão é então refletida no tipo atual.  Este processamento é iniciado ao se selecionar a Ação de Documento apropriada.</entry></row> 
+<row> <entry>Transação de Vendas</entry><entry>Sim-Não</entry><entry>a.IsSOTrx</entry><entry><emphasis>Operador:</emphasis>= <emphasis>Função:</emphasis>null</entry><entry>Esta é uma Transação de Vendas</entry><entry>A caixa de verificação "Transação de Vendas" indica se este item é uma Transação de Vendas.</entry></row> 
+</tbody>  </tgroup> </table> 
+<para><ulink url="data/LotedePagamento/RecebimentoManualinfodata.html">[BANCO DE DADOS]</ulink>,</para>
+ </chapter>

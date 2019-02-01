@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2001-07-26 18:27:19.0</para><para> <emphasis>Atualizado:</emphasis>2005-02-24 11:08:12.0</para>
+<title>Formulário: Seleção de Pagamento (manual)</title> 
+ <para><emphasis> Descrição: </emphasis>Seleção de Pagamento Manual</para><para><emphasis>Comentário/Ajuda:</emphasis>Selecione as Faturas de Fornecedor para pagamento. Se você não vir uma fatura, certifique-se que ela não esteja incluida em um Seleção de Pagamento diferente (nprocessed).</para>
+ </chapter>

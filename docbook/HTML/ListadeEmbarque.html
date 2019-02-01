@@ -1,0 +1,722 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Janela: Lista de Embarque</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d136937e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Janela:  Lista de Embarque</h2>
+               </div>
+            </div>
+         </div>
+         <div class="toc">
+            <div class="toc-title">Conte&uacute;do: </div>
+            <ul class="toc">
+               <li><span class="section"><a href="#d136937e23">1. Tabela: Lista de Embarque - COF_PackingList</a></span></li>
+               <li><span class="section"><a href="#d136937e600">2. Tabela: Linhas - Ordena&ccedil;&atilde;o - COF_PackingList_Line</a></span></li>
+               <li><span class="section"><a href="#d136937e613">3. Tabela: Detalhes - COF_PackingList_Line</a></span></li>
+            </ul>
+         </div>
+         <p> <span class="emphasis"><em>Descri&ccedil;&atilde;o: </em></span>  null
+         </p>
+         <p> <span class="emphasis"><em>Coment&aacute;rio/Ajuda: </em></span>null
+         </p>
+         <p><span class="emphasis"><em> Criado em: </em></span>2015-04-23 15:39:22.0
+            
+         </p>
+         <p><span class="emphasis"><em>Atualizado em: </em></span>2018-10-31 14:45:50.0
+         </p><img src="/img/manual/ListadeEmbarque.png"></img><section class="section" id="d136937e23">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">1.&nbsp;Tabela: Lista de Embarque - COF_PackingList</h2>
+                  </div>
+               </div>
+            </div><a class="ulink" href="data/COF_PackingList_data" target="_top">[DADOS DE EXEMPLO]</a><p><span class="emphasis"><em> Relat&oacute;rio: </em></span>Detalhes de Embarque - COF_Rel_DetalheRomaneio 
+            </p>
+            <p><span class="emphasis"><em>L&oacute;gica de somente leitura:</em></span> @Status@!'OP'
+            </p>
+            <p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>0
+            </p>
+         </section>
+         <div class="table" id="d136937e40">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;Packing-List Fields</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do campo</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores (Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave restritiva</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista de Embarque</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Packing-List</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Packing-List</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Client_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Org_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero do Documento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Document sequence number of the document</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The document number is usually automatically generated by the system and determined by the document type of the document.
+                           If the document is not saved, the preliminary number is displayed in "&lt;
+                           &gt;
+                           ".
+                           
+                           If the document type of your document has no automatic document sequence defined, the field is empty if you create a new document.
+                           This is for documents which usually have an external number (like vendor invoice).  If you leave the field empty, the system
+                           will generate a document number for you. The document sequence used for this fallback number is defined in the "Maintain Sequence"
+                           window with the name "DocumentNo_&lt;
+                           TableName&gt;
+                           ", where TableName is the actual name of the table (e.g. C_Order).
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regi&atilde;o de Entrega</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFMShipRegion_COFPackingList</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Shipment Region</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Shipment Region</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo da Lista de Embarque</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Entrega
+                           Retirar
+                           Transportadora
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Transportadora</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M_Shipper</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">MShipper_cofPackingList</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Method or manner of product delivery</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Shipper indicates the method of delivering product</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data de Lista de Embarque</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Peso</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Weight of a product</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Weight indicates the weight  of the product in the Weight UOM of the Client</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data de In&iacute;cio</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data+Hora</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">First effective day (inclusive)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Start Date indicates the first or starting date</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data Final</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data+Hora</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Last effective date (inclusive)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The End Date indicates the last date in this range.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Equipamento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFEquipments_cofPackingList</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Equipments</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Equipments</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Estado Placa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Region</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">cofStatePlate_COFPackingList</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Region.C_Country_ID=139 </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chassi</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Placa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Km Ini. Equipamento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Km Fim Equipamento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Motorista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFDriver_cofPackingList</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Driver</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Driver</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero Habilita&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">CPF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                            <span class="emphasis"><em>ReadOnly Logic</em></span>: @lbr_BPTypeBRIsValid@='Y' 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Used to identify individuals in Brazil</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">&lt;
+                           a href="http://www.serasa.com.br" target="_blank"&gt;
+                           Serasa&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www.sintegra.gov.br" target="_blank"&gt;
+                           Sintegra&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+                           CCF&aacute;cil&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+                           Receita &lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www.sci.com.br/" target="_blank"&gt;
+                           Equifax (SCI)&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+                           Simples Nacional&lt;
+                           /a&gt;
+                           
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Optional short description of the record</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A description is limited to 255 characters.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">LinkURL</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">URL</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Contains URL to a target</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A Link should contain info on how to get to more information</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Estado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Encerrado
+                           Despachado
+                           Finalizado
+                           Aberto
+                           (OP)
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Status of the currently running check</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Status of the currently running check</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Trocar Status de Embarque</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Protocolo de Entrega</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Impresso</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(N)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Porteiro Sa&iacute;da</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_User</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFPorteiroSaida_COFPackingLis</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Porteiro Entrada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_User</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFPorteiroEntrada_COFPackingL</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">KM Sa&iacute;da</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Inteiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">KM Entrada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Inteiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Peso Sa&iacute;da</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Apontamento de Peso</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Peso Entrada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Apontamento de Peso</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Toler&acirc;ncia Adicional Sa&iacute;da</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Toler&acirc;ncia Adicional Entrada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Situa&ccedil;&atilde;o Embarque</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Aprovado
+                           Bloqueado
+                           (AP)
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Tara</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Apontamento de Peso</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; "> </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br><section class="section" id="d136937e600">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">2.&nbsp;Tabela: Linhas - Ordena&ccedil;&atilde;o - COF_PackingList_Line</h2>
+                  </div>
+               </div>
+            </div><a class="ulink" href="data/COF_PackingList_Line_data" target="_top">[DADOS DE EXEMPLO]</a><p><span class="emphasis"><em>L&oacute;gica de somente leitura:</em></span> @Status@!'OP'
+            </p>
+            <p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>1
+            </p>
+         </section>
+         <section class="section" id="d136937e613">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">3.&nbsp;Tabela: Detalhes - COF_PackingList_Line</h2>
+                  </div>
+               </div>
+            </div><a class="ulink" href="data/COF_PackingList_Line_data" target="_top">[DADOS DE EXEMPLO]</a><p><span class="emphasis"><em>L&oacute;gica de somente leitura:</em></span> @Status@!'OP'
+            </p>
+            <p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>1
+            </p>
+         </section>
+         <div class="table" id="d136937e626">
+            <div class="table-title">Table&nbsp;1.2.&nbsp;Detail Fields</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do campo</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores (Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave restritiva</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Linha da Lista de Embarque</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Packing-List Line</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Packing-List Line</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Client_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Org_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista de Embarque</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">cofPackingList_cofPackingListL</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Packing-List</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Packing-List</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Linha N&uacute;m.</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Inteiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@SQL=SELECT COALESCE(MAX(Line),0)+10 AS DefaultValue FROM COF_PackingList_Line WHERE COF_PackingList_ID=@COF_PackingList_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Unique line for this document</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Indicates the unique line for a document.  It will also control the display order of the lines within a document.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Remessa/Recebimento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">MInOut_cofPackingListLine</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Material Shipment Document</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Material Shipment / Receipt </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Pedido</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COrder_COFPackingListLine</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Order</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Order is a control document.  The  Order is complete when the quantity ordered is the same as the quantity shipped and
+                           invoiced.  When you close an order, unshipped (backordered) quantities are cancelled.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Documento Fiscal</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">LBR_DocFiscal</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">LBRDocFiscal_COFPackingListLin</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ARM</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">MRMA_COFPackingListLine</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(IsSOTrx='Y') </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Return Material Authorization</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A Return Material Authorization may be required to accept returns and to create Credit Memos</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto M&eacute;dio (at&eacute; 2000 caracteres)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Alphanumeric identifier of the entity</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters
+                           in length.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Optional short description of the record</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A description is limited to 255 characters.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Peso Bruto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(0)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data de Entrega</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#Date@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Restri&ccedil;&atilde;o de Entrega</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Restri&ccedil;&atilde;o de Entrega</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFDeliveryRestriction_cofPack</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Delivery Restriction</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Delivery Restriction</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Parceiro de Neg&oacute;cios </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">CBPartner_COFPackingListLine</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifies a Business Partner</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Localiza&ccedil;&atilde;o do Parceiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">CBPartnerLocation_COFPackingLi</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifies the (ship to) address for this Business Partner</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Partner address indicates the location of a Business Partner</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ocorr&ecirc;ncia de Entrega</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFDeliveryOccurrence_COFPacki</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Delivery Occurrence</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Delivery Occurrence</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Local de Separa&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Local de Separa&ccedil;&atilde;o</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Local Separation</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Local Separation</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sequ&ecirc;ncia de Entrega</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Inteiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regi&atilde;o de Entrega</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFMShipRegion_COFPackingListL</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Shipment Region</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Shipment Region</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Observa&ccedil;&otilde;es de Apontamento de Embarque</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; "> </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

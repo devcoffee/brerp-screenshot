@@ -1,0 +1,82 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Processo: Importar Tabela IBPT</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d118785e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Processo:  Importar Tabela IBPT</h2>
+               </div>
+            </div>
+         </div>
+         <p><span class="emphasis"><em> Criado:</em></span>2017-12-04 13:25:31.0
+         </p>
+         <p> <span class="emphasis"><em>Atualizado:</em></span>2017-12-13 12:28:41.0
+         </p>
+         <p><span class="emphasis"><em> Descri&ccedil;&atilde;o: </em></span>Importar valores de impostos &agrave; partir da API ou de um CSV gerado peo IBPT
+         </p><img src="/img/manual/ImportarTabelaIBPT.png"></img><div class="table" id="d118785e18">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;ImportarTabelaIBPT Par&acirc;metros </div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome da coluna</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores(Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">DeleteOld</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> DeleteOld</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> ('N')</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> AD_Org_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Org (all but 0)(@#AD_Org_ID@)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Entidade organizacional dentro da Empresa</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Uma "Organiza&ccedil;&atilde;o" &eacute; uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos s&atilde;o loja, departamento. Voc&ecirc; pode compartilhar
+                           dados entre organiza&ccedil;&otilde;es.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do Arquivo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> FileName</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">FileName</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do arquivo local ou URL</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Nome de um arquivo no espa&ccedil;o de diret&oacute;rios local - ou URL (file://.., http://.., ftp://..)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Processamento Online</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> OProcessing</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> ('Y')</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Este pagamento pode ser processado online</td>
+                        <td style="text-align: center; ">O "Processamento Online" indica se o pagamento pode ser processado online.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

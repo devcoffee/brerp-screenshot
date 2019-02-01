@@ -1,0 +1,305 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Janela: Classifica&ccedil;&atilde;o Fiscal</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d21301e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Janela:  Classifica&ccedil;&atilde;o Fiscal</h2>
+               </div>
+            </div>
+         </div>
+         <div class="toc">
+            <div class="toc-title">Conte&uacute;do: </div>
+            <ul class="toc">
+               <li><span class="section"><a href="#d21301e22">1. Tabela: Classifica&ccedil;&atilde;o Fiscal - COF_C_TaxClassification</a></span></li>
+               <li><span class="section"><a href="#d21301e205">2. Tabela: Linhas de Classifica&ccedil;&atilde;o - COF_C_TaxClassificationLine</a></span></li>
+            </ul>
+         </div>
+         <p> <span class="emphasis"><em>Descri&ccedil;&atilde;o: </em></span>  Utilizado para classifica&ccedil;&atilde;o dos CSTs para enquadrar os documenta&ccedil;&otilde;es Fiscais
+         </p>
+         <p> <span class="emphasis"><em>Coment&aacute;rio/Ajuda: </em></span>null
+         </p>
+         <p><span class="emphasis"><em> Criado em: </em></span>2015-08-05 15:18:31.0
+            
+         </p>
+         <p><span class="emphasis"><em>Atualizado em: </em></span>2015-08-05 15:18:31.0
+         </p>
+         <section class="section" id="d21301e22">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">1.&nbsp;Tabela: Classifica&ccedil;&atilde;o Fiscal - COF_C_TaxClassification</h2>
+                  </div>
+               </div>
+            </div><a class="ulink" href="data/COF_C_TaxClassification_data" target="_top">[DADOS DE EXEMPLO]</a><p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>0
+            </p>
+         </section>
+         <div class="table" id="d21301e31">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;Tax Classification Fields</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do campo</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores (Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave restritiva</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Classifica&ccedil;&atilde;o Fiscal</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Tax Classification</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Tax Classification</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Client_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Org_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Simples Nacional</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">('N')</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Is National Simple Classification</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave de Busca</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">V&aacute;lido desde</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#Date@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valid from including this date (first day)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Valid From date indicates the first day of a date range</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">V&aacute;lido at&eacute;</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valid to including this date (last day)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Valid To date indicates the last day of a date range</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Imposto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">LBR_TaxName</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">LBRTaxName_COFCTaxClassificati</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary key table LBR_TaxName</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary key table LBR_TaxName</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Copiar Linhas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Bot&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; "> </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br><section class="section" id="d21301e205">
+            <div class="titlepage">
+               <div>
+                  <div>
+                     <h2 class="title" style="clear: both">2.&nbsp;Tabela: Linhas de Classifica&ccedil;&atilde;o - COF_C_TaxClassificationLine</h2>
+                  </div>
+               </div>
+            </div><a class="ulink" href="data/COF_C_TaxClassificationLine_data" target="_top">[DADOS DE EXEMPLO]</a><p><span class="emphasis"><em>Coluna linkada: </em></span> COF_C_TaxClassification_ID
+            </p>
+            <p><span class="emphasis"><em>N&iacute;vel da tabela: </em></span>1
+            </p>
+         </section>
+         <div class="table" id="d21301e218">
+            <div class="table-title">Table&nbsp;1.2.&nbsp;Tax Classification Line Fields</div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                     <col style="text-align: center; " class="c7"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do campo</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores (Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave restritiva</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de valida&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_C_TaxClassificationLine_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Tax Classification Line</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Tax Classification Line</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Classifica&ccedil;&atilde;o Fiscal</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFCTaxClassification_COFCTaxC</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Tax Classification</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Tax Classification</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Empresa</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Client_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AD_Client.AD_Client_ID &lt;
+                           &gt;
+                            0 
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(@#AD_Org_ID@)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(Y)</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(semelhante ao primeiro relat&oacute;rio)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">(ver o mesmo acima)</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Grupo de Apura&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_C_DeterminationGroup</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFCDeterminationGroup_COFCTax</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_C_Determination_Group.LBR_TaxName_ID=@LBR_TaxName_ID@ </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Determination Group</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Determination Group</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Opera&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0 - Entrada
+                           1 - Sa&iacute;da
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Classifica&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ENTRADA COM CR&Eacute;DITO DE IMPOSTO
+                           ENTRADA SEM CR&Eacute;DITO DE IMPOSTO - ISENTAS OU N&Atilde;O TRIBUTADAS
+                           ENTRADA SEM CR&Eacute;DITO DE IMPOSTO - OUTRAS
+                           SA&Iacute;DA COM D&Eacute;BITO DE IMPOSTO
+                           SAIDA SEM D&Eacute;BITO DE IMPOSTO - ISENTAS OU N&Atilde;O TRIBUTADAS
+                           SAIDA SEM D&Eacute;BITO DE IMPOSTO - OUTRAS
+                        </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista para Tipo de Classifica&ccedil;&atilde;o de CFOP</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Lista para Tipo de Classifica&ccedil;&atilde;o de CFOP</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">CST/CSOSN</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">LBR_TaxStatus</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">LBRTaxStatus_COFCTaxClassifica</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">LBR_TaxStatus.LBR_TaxName_ID=@LBR_TaxName_ID@ </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; "> </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">CFOP</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">LBR_CFOP</td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; ">LBRCFOP_COFCTaxClassificationL</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; vertical-align: middle; border-right: 0.5pt solid ; ">Primary key table LBR_CFOP</td>
+                        <td style="text-align: center; ">Primary key table LBR_CFOP</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

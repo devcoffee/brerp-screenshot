@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2003-12-30 10:42:46.0</para><para> <emphasis>Atualizado:</emphasis>2000-01-02 00:00:00.0</para>
+<title>Formulário: Abrir LDM</title> 
+ <para><emphasis> Descrição: </emphasis>Abrir (expandir) Lista de Materiais</para><para><emphasis>Comentário/Ajuda:</emphasis>Expandir a Lista de Materiais estendida em um Pedido, Fatura, etc.  Os documentos tem de estar em um estágio de rascunho.  Certifique-se que os itens incluídos na LDM estão na lista de preços do Pedido, Fatura, etc. já que de outro modo o preço será zero!</para>
+<imagedata fileref="/img/manual/AbrirLDM.png" format="PNG" /> </chapter>

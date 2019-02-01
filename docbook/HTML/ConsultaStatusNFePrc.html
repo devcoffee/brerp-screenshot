@@ -1,0 +1,91 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Processo: Consulta Status NFe</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d35835e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Processo:  Consulta Status NFe</h2>
+               </div>
+            </div>
+         </div>
+         <p><span class="emphasis"><em> Criado:</em></span>2010-11-25 14:49:29.0
+         </p>
+         <p> <span class="emphasis"><em>Atualizado:</em></span>2018-01-15 16:23:39.0
+         </p>
+         <p><span class="emphasis"><em> Descri&ccedil;&atilde;o: </em></span>Testa o status do servi&ccedil;o da NF-e
+         </p>
+         <p><span class="emphasis"><em> Coment&aacute;rio/Ajuda: </em></span>Servi&ccedil;o destinado &agrave; consulta do status do servi&ccedil;o prestado pelo Portal da Secretaria de Fazenda Estadual. 
+            Links para consulta :
+            http://hom.nfe.fazenda.gov.br/portal/disponibilidade.aspx (Homologa&ccedil;&atilde;o)
+            http://www.nfe.fazenda.gov.br/portal/disponibilidade.aspx (Produ&ccedil;&atilde;o)
+         </p><img src="/img/manual/ConsultaStatusNFe.png"></img><div class="table" id="d35835e22">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;ConsultaStatusNFe Par&acirc;metros </div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome da coluna</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores(Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> AD_Org_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> (@#AD_Org_ID@)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Entidade organizacional dentro da Empresa</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Uma "Organiza&ccedil;&atilde;o" &eacute; uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos s&atilde;o loja, departamento. Voc&ecirc; pode compartilhar
+                           dados entre organiza&ccedil;&otilde;es.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Modelo da NF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> lbr_NFModel</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">55 - NFe
+                           65 - NFCe
+                           (55)
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifica o modelo da Nota Fiscal</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Tipo de Emiss&atilde;o NFe</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> lbr_NFeTpEmi</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Normal
+                           Conting&ecirc;ncia FS
+                           Conting&ecirc;ncia SCAN
+                           Conting&ecirc;ncia DPEC
+                           Conting&ecirc;ncia FSDA
+                           Conting&ecirc;ncia SVCAN
+                           Conting&ecirc;ncia SVCRS
+                           Conting&ecirc;ncia off-line da NFC-e
+                           (@SQL=SELECT lbr_NFeTpEmi FROM AD_OrgInfo WHERE AD_OrgInfo.AD_Org_ID = @AD_Org_ID@)
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; ">null</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

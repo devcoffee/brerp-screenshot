@@ -5,7 +5,10 @@
 <tgroup cols='8' align='center' colsep='1' rowsep='1'>
 
 <tbody><row><entry>Processador de Alertas</entry><entry>Registro (log) do Processador de Alertas</entry><entry>Dados Binários</entry><entry>Descrição</entry><entry>Erro</entry><entry>Referência</entry><entry>Resumo</entry><entry>Texto de Mensagem</entry></row>
-<row><entry>100</entry><entry>5000387</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#0 - 00.253</entry><entry>Total=0 - Logs deleted=2</entry><entry> </entry></row>
-<row><entry>100</entry><entry>5000388</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#0 - 00.68</entry><entry>Total=0 - Logs deleted=1</entry><entry> </entry></row></tbody>
+<row><entry>100</entry><entry>5000391</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#0 - 00.86</entry><entry>Total=0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5000392</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#0 - 00.29</entry><entry>Total=0 - Logs deleted=1</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5000393</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#0 - 00.87</entry><entry>Total=0 - Logs deleted=0</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5000394</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#0 - 00.38</entry><entry>Total=0 - Logs deleted=1</entry><entry> </entry></row>
+<row><entry>100</entry><entry>5000395</entry><entry> </entry><entry> </entry><entry>false</entry><entry>#0 - 00.48</entry><entry>Total=0 - Logs deleted=1</entry><entry> </entry></row></tbody>
 </tgroup>
 </table>

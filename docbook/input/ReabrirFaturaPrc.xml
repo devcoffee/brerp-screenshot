@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2015-12-09 13:52:00.0</para><para> <emphasis>Atualizado:</emphasis>2015-12-09 13:57:33.0</para>
+ 
+ <title>Processo:  Reabrir Fatura</title> 
+ <para><emphasis> Descrição: </emphasis>Abrir Fatura previamente fechada</para><table> 
+ <title>ReabrirFatura Parâmetros </title> 
+ <tgroup cols='6' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome</entry><entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores(Padrão)</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row> 
+</thead><tbody><row> 
+ <entry>Fatura</entry><entry> C_Invoice_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Identificador de Fatura</entry> 
+<entry>O Documento da Fatura.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

@@ -1,0 +1,20 @@
+<div id="d2683e1" class="table">
+
+<div class="table-title">
+
+Table 1. AD\_ClientInfo
+
+</div>
+
+<div class="table-contents">
+
+|                           |                     |                      |                    |                |                       |                   |                   |                            |                           |                      |            |                 |                      |                |                 |               |                          |                                            |                                 |                                                      |                                 |         |                      |               |                    |                 |
+| :-----------------------: | :-----------------: | :------------------: | :----------------: | :------------: | :-------------------: | :---------------: | :---------------: | :------------------------: | :-----------------------: | :------------------: | :--------: | :-------------: | :------------------: | :------------: | :-------------: | :-----------: | :----------------------: | :----------------------------------------: | :-----------------------------: | :--------------------------------------------------: | :-----------------------------: | :-----: | :------------------: | :-----------: | :----------------: | :-------------: |
+| Provedor de Armazenamento | Árvore de Atividade | Árvore Parc.Negócios | Árvore de Campanha | Árvore de Menu | Árvore da Organização | Árvore de Produto | Árvore de Projeto | Árvore de Região de Vendas | Esquema Contábil Primário | Modelo de P.Negócios | Calendário | Despesa (Frete) | UDM para Comprimento | UDM para Tempo | UDM para Volume | UDM para Peso | Financeiro Ano de Início | Solicitar confirmação ao Fechar documentos | Solicitar confirmação ao Anular | Descontos calculados a partir dos Valores das Linhas | Dias para manter registro (log) |  Logo   | Logo para Relatórios | Logo para Web | Produto para Frete | Arquivo da Loja |
+|                           |                     |          40          |                    |       10       |          50           |        30         |        60         |            100             |                           |                      |            |                 |                      |                |                 |               |                          |                   false                    |              false              |                         true                         |                7                |         |                      |               |                    |                 |
+|                           |         110         |         103          |        109         |       10       |          104          |        102        |        105        |            108             |            101            |         112          |    102     |                 |                      |      101       |                 |               |                          |                   false                    |              false              |                         true                         |                                 |         |                      |               |        122         |                 |
+|          1000000          |       1000011       |       1000007        |      1000010       |       10       |        1000008        |      1000006      |      1000015      |          1000009           |          1000001          |       1000000        |  1000000   |                 |                      |                |                 |               |                          |                   false                    |              false              |                        false                         |                                 | 1503522 |       1503523        |    1503524    |      1000000       |                 |
+
+</div>
+
+</div>

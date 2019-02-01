@@ -1,0 +1,2392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2005-02-25 16:17:37.0</para><para> <emphasis>Atualizado:</emphasis>2005-02-25 16:45:31.0</para>
+ 
+ <title>Relatório:  Detalhe de Cálculo de Comissão</title> 
+ <para><emphasis> Descrição: </emphasis>Relatório detalhado de Cálculo de Comissão</para><para><emphasis> Comentário/Ajuda: </emphasis>Cálculo de Comissão, detalhes de valores com detalhes de pedidos/faturas</para>
+<para><emphasis> ReportView: </emphasis>RV_CommissionRunDetail</para><table> 
+ <title>DetalhedeCalculodeComissao Parâmetros </title> 
+ <tgroup cols='6' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome</entry><entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores(Padrão)</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row> 
+</thead><tbody><row> 
+ <entry>P. Negócios Comissionado</entry><entry> Commission_BPartner_ID</entry> 
+<entry>Procurar</entry> 
+ <entry>C_BPartner Vendor or SalesRep</entry> 
+<entry>É o Parceiro de Negócios que recebe a comissão</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry> M_Product_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Produto, Serviço, Item</entry> 
+<entry>Identifica um item que é ou comprado ou vendido por esta organização.</entry> 
+</row> 
+<row> 
+ <entry>Comissão</entry><entry> C_Commission_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Comissão</entry> 
+<entry>Regras de Comissão para vendedor interno ou externo, representante de vendas ou vendedor autônomo.</entry> 
+</row> 
+<row> 
+ <entry>Cálculo de Comissão</entry><entry> C_CommissionRun_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Cálculo de Comissão ou Processo</entry> 
+<entry>O "Cálculo de Comissão" é um identificador único e exclusivo (definido pelo sistema) de uma específica execução de cálculos de comissão.  O Cálculo de Comissão será exibido quando uma Comissão for processada na Tela de Comissão.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry> C_BPartner_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Identifica um Parceiro de Negócios.</entry> 
+<entry>Um "Parceiro de Negócios" é qualquer um com quem você transaciona.  Isto pode incluir Fornecedores, Clientes, Funcionários, Vendedores, Representantes de Venda, etc.</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry> AD_Org_ID</entry> 
+<entry>Tabela</entry> 
+ <entry> (@#AD_Org_ID@)</entry> 
+<entry>Entidade organizacional dentro da Empresa</entry> 
+<entry>Uma "Organização" é uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos são loja, departamento. Você pode compartilhar dados entre organizações.</entry> 
+</row> 
+<row> 
+ <entry>Data de Início</entry><entry> StartDate</entry> 
+<entry>Data</entry> 
+ <entry> </entry> 
+<entry>Primeira data efetiva (inclusive)</entry> 
+<entry>A "Data de Início" indica o primeiro dia ou data inicial</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<table> 
+ <title>RV_CommissionRunDetail - Colunas</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="1*"/><colspec colname='c7'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores padrão</entry><entry>Valor de restrição</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Valor Real</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The actual amount</entry> 
+<entry>Actual amount indicates the agreed upon amount for a document.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Real</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The actual quantity</entry> 
+<entry>The Actual Quantity indicates the quantity as referenced on a document.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Usuário/Contato</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User within the system - Internal or Business Partner Contact</entry> 
+<entry>The User identifies a unique user in the system. This could be an internal user or a business partner contact</entry> 
+</row> 
+<row> 
+ <entry>AmountRefunded</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>AmountTendered</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor Multiplicador</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Multiplier Amount for generating commissions</entry> 
+<entry>The Multiplier Amount indicates the amount to multiply the total amount generated by this commission run by.</entry> 
+</row> 
+<row> 
+ <entry>Valor a Subtrair</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Subtract Amount for generating commissions</entry> 
+<entry>The Subtract Amount indicates the amount to subtract from the total amount prior to multiplication.</entry> 
+</row> 
+<row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Parceiro da Fatura</entry><entry>Tabela</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner to be invoiced</entry> 
+<entry>If empty the shipment business partner will be invoiced</entry> 
+</row> 
+<row> 
+ <entry>Local de Fatura</entry><entry>Tabela</entry> 
+<entry>C_BPartner Location</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner Location for invoicing</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Contato da Fatura</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner Contact for invoicing</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Atividade</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Activity</entry> 
+<entry>Activities indicate tasks that are performed and used to utilize Activity based Costing</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Localização do Parceiro</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies the (ship to) address for this Business Partner</entry> 
+<entry>The Partner address indicates the location of a Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Linha de Diário de Caixa</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Cash Journal Line</entry> 
+<entry>The Cash Journal Line indicates a unique line in a cash journal.</entry> 
+</row> 
+<row> 
+ <entry>Linha Plano de Caixa</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Finalidade</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Additional document charges</entry> 
+<entry>The Charge indicates a type of Charge (Handling, Shipping, Restocking)</entry> 
+</row> 
+<row> 
+ <entry>c_commisionrun_processing</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commission_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commissionamt_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor da Comissão</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Generated Commission Amount </entry> 
+<entry>The Commission Amount indicates the resulting amount from a Commission Run.</entry> 
+</row> 
+<row> 
+ <entry>c_commission_c_currency_id</entry><entry>Tabela</entry> 
+<entry>C_Currencies</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commission_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commission_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commission_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commissiondetail_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commissiondetail_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commissiondetail_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Detalhe de Comissão</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Supporting information for Commission Amounts</entry> 
+<entry>The Commission Detail provides supporting information on a Commission Run.  Each document line that was part of the Commission Run will be reflected here.</entry> 
+</row> 
+<row> 
+ <entry>c_commissiondetail_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commissiondetail_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Comissão</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Commission</entry> 
+<entry>The Commission Rules or internal or external company agents, sales reps or vendors.</entry> 
+</row> 
+<row> 
+ <entry>c_commission_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Linha de Comissão</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Commission Line</entry> 
+<entry>The Commission Line is a unique instance of a Commission Run.  If the commission run was done in summary mode then there will be a single line representing the selected documents totals.  If the commission run was done in detail mode then each document that was included in the run will have its own commission line.</entry> 
+</row> 
+<row> 
+ <entry>c_commission_name</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cálculo de Comissão</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Commission Run or Process</entry> 
+<entry>The Commission Run is a unique system defined identifier of a specific run of commission.  When a Commission is processed on the Commission Screen, the Commission Run will display.</entry> 
+</row> 
+<row> 
+ <entry>c_commission_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commission_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commmissionamt_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commmissionamt_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commmissionamt_isactive</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commmissionamt_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commossiondetail_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_commssionamt_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Conversão</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Currency Conversion Rate Type</entry> 
+<entry>The Currency Conversion Rate Type lets you define different type of rates, e.g. Spot, Corporate and/or Sell/Buy rates.</entry> 
+</row> 
+<row> 
+ <entry>Moeda De</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The Currency for this record</entry> 
+<entry>Indicates the Currency to be used when processing or reporting on this record</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Documento</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Document type or rules</entry> 
+<entry>The Document Type determines document sequence and processing rules</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Documento Alvo</entry><entry>Tabela</entry> 
+<entry>C_DocType</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Target document type for conversing documents</entry> 
+<entry>You can convert document types (e.g. from Offer to Order or Invoice).  The conversion is then reflected in the current type.  This processing is initiated by selecting the appropriate Document Action.</entry> 
+</row> 
+<row> 
+ <entry>Nível de Cobrança</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_inviceline_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_ad_orgtrx_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_c_activity_id</entry><entry>Tabela</entry> 
+<entry>C_Activity (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_c_campaign_id</entry><entry>Tabela</entry> 
+<entry>C_Campaign (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_c_charge_id</entry><entry>Tabela</entry> 
+<entry>C_Charge</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_c_conversiontype_id</entry><entry>Tabela</entry> 
+<entry>C_ConversionType</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_c_currency_id</entry><entry>Tabela</entry> 
+<entry>C_Currencies</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_c_doctypetarget_id</entry><entry>Tabela</entry> 
+<entry>C_DocType</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_chargeamt</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_c_invoice_id</entry><entry>Tabela</entry> 
+<entry>C_Invoice</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_c_order_id</entry><entry>Tabela</entry> 
+<entry>C_Order</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_c_payment_id</entry><entry>Tabela</entry> 
+<entry>C_Payment</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_c_paymentterm_id</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_c_project_id</entry><entry>Tabela</entry> 
+<entry>C_Project (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_dateacct</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_dateordered</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_dateprinted</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_docaction</entry><entry>Lista</entry> 
+<entry></entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_docstatus</entry><entry>Lista</entry> 
+<entry></entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_dunninggrace</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_grandtotal</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Fatura</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Invoice Identifier</entry> 
+<entry>The Invoice Document.</entry> 
+</row> 
+<row> 
+ <entry>c_invoice_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_isapproved</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_isdiscountprinted</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_isindispute</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_ispayschedulevalid</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_isprinted</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_isselfservice</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_issotrx</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_istaxincluded</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_istransferred</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_ad_orgtrx_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_c_activity_id</entry><entry>Tabela</entry> 
+<entry>C_Activity (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_c_compaign_id</entry><entry>Tabela</entry> 
+<entry>C_Campaign (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_c_charge_id</entry><entry>Tabela</entry> 
+<entry>C_Charge</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_c_orderline_id</entry><entry>Tabela</entry> 
+<entry>C_OrderLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_c_project_id</entry><entry>Tabela</entry> 
+<entry>C_Project (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_c_projecttask_id</entry><entry>Tabela</entry> 
+<entry>C_ProjectTask</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_c_projectphase_id</entry><entry>Tabela</entry> 
+<entry>C_ProjectPhase</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_c_tax_id</entry><entry>Tabela</entry> 
+<entry>C_Tax</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_c_uom_id</entry><entry>Tabela</entry> 
+<entry>C_UOM</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Linha de Fatura</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Invoice Detail Line</entry> 
+<entry>The Invoice Line uniquely identifies a single line of an Invoice.</entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_isdescription</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_line</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_linenetamt</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_linetotalamt</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_m_attributesetinstance_id</entry><entry>Atributo de Produto</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_m_rmaline_id</entry><entry>Tabela</entry> 
+<entry>M_RMALine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_priceactual</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_priceentered</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_pricelimit</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_pricelist</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_processed</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_qtyentered</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_qtyinvoiced</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_ref_invoiceline_id</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_rramt</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_rrstartdate</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_s_resourceassignment_id</entry><entry>Tarefa</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_taxamt</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_user1_id</entry><entry>Tabela</entry> 
+<entry>Account_ID - User1</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoiceline_user2_id</entry><entry>Tabela</entry> 
+<entry>Account_ID - User2</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_m_pricelist_id</entry><entry>Tabela</entry> 
+<entry>M_PriceList</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_m_rma_id</entry><entry>Tabela</entry> 
+<entry>M_RMA</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_paymentrule</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_poreference</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_posted</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_processedon</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_processing</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_salesrep_id</entry><entry>Procurar</entry> 
+<entry>AD_User - SalesRep</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_sendemail</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_totallines</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_user1_id</entry><entry>Tabela</entry> 
+<entry>Account_ID - User1</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_invoice_user2_id</entry><entry>Tabela</entry> 
+<entry>Account_ID - User2</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>cof_actualqtycalc</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>cof_convertedamtcalc</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor da Comissão</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Commission Amount</entry> 
+<entry>The Commission Amount is the total calculated commission.  It is based on the parameters as defined for this Commission Run.</entry> 
+</row> 
+<row> 
+ <entry>P. Negócios Comissionado</entry><entry>Tabela</entry> 
+<entry>C_BPartner Vendor or SalesRep</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner receiving the Commission</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor Convertido da Comissão</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Commission calculation basis Converted Amount</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Qde. de comissão</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Commission calculation basis Quantity</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor Convertido</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Converted Amount</entry> 
+<entry>The Converted Amount is the result of multiplying the Source Amount by the Conversion Rate for this target currency.</entry> 
+</row> 
+<row> 
+ <entry>c_order_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_ad_orgtrx_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_ad_user_id</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_c_campaign_id</entry><entry>Tabela</entry> 
+<entry>C_Campaign (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_c_currency_id</entry><entry>Tabela</entry> 
+<entry>C_Currencies</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_chargeamt</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_copyfrom</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_c_order_id</entry><entry>Tabela</entry> 
+<entry>C_Order</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_c_payment_id</entry><entry>Tabela</entry> 
+<entry>C_Payment</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_c_project_id</entry><entry>Tabela</entry> 
+<entry>C_Project (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_dateacct</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_dateprinted</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_datepromised</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_deliveryrule</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_deliveryviarule</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_docaction</entry><entry>Lista</entry> 
+<entry></entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_docstatus</entry><entry>Lista</entry> 
+<entry></entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_documentno</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_freightamt</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_freightcostrule</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_grandtotal</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_isprinted</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_isselected</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_isselfservice</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_issotrx</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_istaxincluded</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_ad_orgtrx_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_activity_id</entry><entry>Tabela</entry> 
+<entry>C_Activity (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_bpartner_id</entry><entry>Tabela</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_bpartner_location_id</entry><entry>Tabela</entry> 
+<entry>C_BPartner Location</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_campaign_id</entry><entry>Tabela</entry> 
+<entry>C_Campaign (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_charge_id</entry><entry>Tabela</entry> 
+<entry>C_Charge</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_currency_id</entry><entry>Tabela</entry> 
+<entry>C_Currencies</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_order_id</entry><entry>Tabela</entry> 
+<entry>C_Order</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_project_id</entry><entry>Tabela</entry> 
+<entry>C_Project (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_projectphase_id</entry><entry>Tabela</entry> 
+<entry>C_ProjectPhase</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_projecttask_id</entry><entry>Tabela</entry> 
+<entry>C_ProjectTask</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_tax_id</entry><entry>Tabela</entry> 
+<entry>C_Tax</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_c_uom_id</entry><entry>Tabela</entry> 
+<entry>C_UOM</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Linha de Ordem de Vendas</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Sales Order Line</entry> 
+<entry>The Sales Order Line is a unique identifier for a line in an order.</entry> 
+</row> 
+<row> 
+ <entry>c_orderline_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_line</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_linenetamt</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_m_attributesetinstance_id</entry><entry>Atributo de Produto</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_m_shipper_id</entry><entry>Tabela</entry> 
+<entry>C_OrderLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_m_warehouse_id</entry><entry>Tabela</entry> 
+<entry>M_Warehouse of Client</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_priceactual</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_priceentered</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_pricelist</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_processed</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_qtyinvoiced</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_ref_orderline_id</entry><entry>Tabela</entry> 
+<entry>C_OrderLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_rramt</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_rrstartsate</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_s_resourceassignment_id</entry><entry>Tarefa</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_user1_id</entry><entry>Tabela</entry> 
+<entry>Account_ID - User1</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_orderline_user2_id</entry><entry>Tabela</entry> 
+<entry>Account_ID - User2</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Transportadora</entry><entry>Tabela</entry> 
+<entry>M_Shipper</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_m_warehouse_id</entry><entry>Tabela</entry> 
+<entry>M_Warehouse of Client</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_paymentterm_id</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_posted</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_processed</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_processedon</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_ref_order_id</entry><entry>Tabela</entry> 
+<entry>C_Order</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_sendemail</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_totallines</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_user1_id</entry><entry>Tabela</entry> 
+<entry>Account_ID - User1</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_order_user2_id</entry><entry>Tabela</entry> 
+<entry>Account_ID - User2</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Terminal PDV</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Point of Sales Terminal</entry> 
+<entry>The POS Terminal defines the defaults and functions available for the POS Form</entry> 
+</row> 
+<row> 
+ <entry>Criado</entry><entry>Data+Hora</entry> 
+<entry> (SYSDATE)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date this record was created</entry> 
+<entry>The Created field indicates the date that this record was created.</entry> 
+</row> 
+<row> 
+ <entry>Criado por</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User who created this records</entry> 
+<entry>The Created By field indicates the user who created this record.</entry> 
+</row> 
+<row> 
+ <entry>Criar linhas a partir de</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Process which will generate a new document lines based on an existing document</entry> 
+<entry>The Create From process will create a new document based on information in an existing document selected by the user.</entry> 
+</row> 
+<row> 
+ <entry>Data Entregue</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date when the product was delivered</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data do Documento</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date of the Document</entry> 
+<entry>The Document Date indicates the date the document was generated.  It may or may not be the same as the accounting date.</entry> 
+</row> 
+<row> 
+ <entry>Data Faturada</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date printed on Invoice</entry> 
+<entry>The Date Invoice indicates the date printed on the invoice.</entry> 
+</row> 
+<row> 
+ <entry>Data do último processamento</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date the process was last run.</entry> 
+<entry>The Date Last Run indicates the last time that a process was run.</entry> 
+</row> 
+<row> 
+ <entry>Data do Pedido</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date of Order</entry> 
+<entry>Indicates the Date an item was ordered.</entry> 
+</row> 
+<row> 
+ <entry>Data Prometida</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date Order was promised</entry> 
+<entry>The Date Promised indicates the date, if any, that an Order was promised for.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Desconto %</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Discount in percent</entry> 
+<entry>The Discount indicates the discount applied or taken as a percentage.</entry> 
+</row> 
+<row> 
+ <entry>Base de Cálculo</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Basis for the calculation the commission</entry> 
+<entry>The Calculation Basis indicates the basis to be used for the commission calculation. </entry> 
+</row> 
+<row> 
+ <entry>Número do Documento</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Document sequence number of the document</entry> 
+<entry>The document number is usually automatically generated by the system and determined by the document type of the document. If the document is not saved, the preliminary number is displayed in "&lt;
+&gt;
+".
+
+If the document type of your document has no automatic document sequence defined, the field is empty if you create a new document. This is for documents which usually have an external number (like vendor invoice).  If you leave the field empty, the system will generate a document number for you. The document sequence used for this fallback number is defined in the "Maintain Sequence" window with the name "DocumentNo_&lt;
+TableName&gt;
+", where TableName is the actual name of the table (e.g. C_Order).</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Expedição Liberado</entry><entry>Tabela</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner to ship to</entry> 
+<entry>If empty the business partner will be shipped to.</entry> 
+</row> 
+<row> 
+ <entry>Localização para Liberar a Expedição</entry><entry>Tabela</entry> 
+<entry>C_BPartner Location</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner Location for shipping to</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Contato Liberar Expedição</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner Contact for drop shipment</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor do Frete</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Freight Amount </entry> 
+<entry>The Freight Amount indicates the amount charged for Freight in the document currency.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Freqüência</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Frequency of event</entry> 
+<entry>The frequency type is used for calculating the date of the next event.</entry> 
+</row> 
+<row> 
+ <entry>Gerar Para</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Generate To</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Total Geral</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Total amount of document</entry> 
+<entry>The Grand Total displays the total amount including Tax and Freight in document currency</entry> 
+</row> 
+<row> 
+ <entry>Informação</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Information</entry> 
+<entry>The Information displays data from the source document line.</entry> 
+</row> 
+<row> 
+ <entry>Estado da Cobrança</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Invoice Collection Status</entry> 
+<entry>Status of the invoice collection process</entry> 
+</row> 
+<row> 
+ <entry>Núm. de Documento de Fatura</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Document Number of the Invoice</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Regra de Fatura</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Frequency and method of invoicing </entry> 
+<entry>The Invoice Rule defines how a Business Partner is invoiced and the frequency of invoicing.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry> (Y)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Aprovado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if this document requires approval</entry> 
+<entry>The Approved checkbox indicates if this document requires approval before it can be processed.</entry> 
+</row> 
+<row> 
+ <entry>Crédito Aprovado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Credit  has been approved</entry> 
+<entry>Credit Approved indicates if the credit approval was successful for Orders</entry> 
+</row> 
+<row> 
+ <entry>Despachado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Somente Descrição</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>if true, the line is just description and no transaction</entry> 
+<entry>If a line is Description Only, e.g. Product Inventory is not corrected. No accounting transactions are created and the amount or totals are not included in the document.  This for including descriptive detail lines, e.g. for an Work Order.</entry> 
+</row> 
+<row> 
+ <entry>Imprimir Descontos</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Print Discount on Invoice and Order</entry> 
+<entry>The Discount Printed Checkbox indicates if the discount will be printed on the document.</entry> 
+</row> 
+<row> 
+ <entry>Entrega direta ao consumidor</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Drop Shipments are sent from the Vendor directly to the Customer</entry> 
+<entry>Drop Shipments do not cause any Inventory reservations or movements as the Shipment is from the Vendor's inventory. The Shipment of the Vendor to the Customer must be confirmed.</entry> 
+</row> 
+<row> 
+ <entry>Faturado (Nota Emitida)</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Is this invoiced?</entry> 
+<entry>If selected, invoices are created</entry> 
+</row> 
+<row> 
+ <entry>Programa de Pagamentos Válido</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Is the Payment Schedule is valid</entry> 
+<entry>Payment Schedules allow to have multiple due dates.</entry> 
+</row> 
+<row> 
+ <entry>Impresso</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if this document / line is printed</entry> 
+<entry>The Printed checkbox indicates if this document or line will included when printing.</entry> 
+</row> 
+<row> 
+ <entry>Transferido</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Transferred to General Ledger (i.e. accounted)</entry> 
+<entry>The transferred checkbox indicates if the transactions associated with this document should be transferred to the General Ledger.</entry> 
+</row> 
+<row> 
+ <entry>Ordem Vinculada</entry><entry>Tabela</entry> 
+<entry>C_Order</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>This field links a sales order to the purchase order that is generated from it.</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Linha de Ordem Vinculada</entry><entry>Tabela</entry> 
+<entry>C_OrderLine</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>This field links a sales order line to the purchase order line that is generated from it.</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Listar Detalhes</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>List document details</entry> 
+<entry>The List Details checkbox indicates that the details for each document line will be displayed.</entry> 
+</row> 
+<row> 
+ <entry>Categoria de Frete</entry><entry>Tabela</entry> 
+<entry>M_FreightCategory</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Category of the Freight</entry> 
+<entry>Freight Categories are used to calculate the Freight for the Shipper selected</entry> 
+</row> 
+<row> 
+ <entry>Linha de Remessa/Recebimento</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Line on Shipment or Receipt document</entry> 
+<entry>The Shipment/Receipt Line indicates a unique line in a Shipment/Receipt document</entry> 
+</row> 
+<row> 
+ <entry>Lista de Preço</entry><entry>Tabela</entry> 
+<entry>M_PriceList</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Unique identifier of a Price List</entry> 
+<entry>Price Lists are used to determine the pricing, margin and cost of items purchased or sold.</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Promoção</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>OrderType</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Type of Order: MRP records grouped by source (Sales Order, Purchase Order, Distribution Order, Requisition)</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Parceiro do Pagamento</entry><entry>Tabela</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner responsible for the payment</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Localização do pagamento</entry><entry>Tabela</entry> 
+<entry>C_BPartner Location</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Location of the Business Partner responsible for the payment</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Regra de Pagamento</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>How you pay the invoice</entry> 
+<entry>The Payment Rule indicates the method of invoice payment.</entry> 
+</row> 
+<row> 
+ <entry>Referência do Pedido</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Transaction Reference Number (Sales Order, Purchase Order) of your Business Partner</entry> 
+<entry>The business partner order reference is the order reference for this specific transaction;
+ Often Purchase Order numbers are given to print on Invoices for easier reference.  A standard number can be defined in the Business Partner (Customer) window.</entry> 
+</row> 
+<row> 
+ <entry>Preço de Custo</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Price per Unit of Measure including all indirect costs (Freight, etc.)</entry> 
+<entry>Optional Purchase Order Line cost price.</entry> 
+</row> 
+<row> 
+ <entry>Prioridade</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Priority of a document</entry> 
+<entry>The Priority indicates the importance (high, medium, low) of this document</entry> 
+</row> 
+<row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Código Promoção</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User entered promotion code at sales time</entry> 
+<entry>If present, user entered the promotion code at sales time to get this promotion</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Entregue</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Delivered Quantity</entry> 
+<entry>The Delivered Quantity indicates the quantity of a product that has been delivered.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The Quantity Entered is based on the selected UoM</entry> 
+<entry>The Quantity Entered is converted to base product UoM quantity</entry> 
+</row> 
+<row> 
+ <entry>Qde Vendas Perdidas</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Quantity of potential sales</entry> 
+<entry>When an order is closed and there is a difference between the ordered quantity and the delivered (invoiced) quantity is the Lost Sales Quantity.  Note that the Lost Sales Quantity is 0 if you void an order, so close the order if you want to track lost opportunities.  [Void = data entry error - Close = the order is finished]</entry> 
+</row> 
+<row> 
+ <entry>Multiplicador de Quantidade</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Value to multiply quantities by for generating commissions.</entry> 
+<entry>The Multiplier Quantity field indicates the amount to multiply the quantities accumulated for this commission run.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Requisitada</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Ordered Quantity</entry> 
+<entry>The Ordered Quantity indicates the quantity of a product that was ordered.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Reservada</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Reserved Quantity</entry> 
+<entry>The Reserved Quantity indicates the quantity of a product that is currently reserved.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade a Deduzir</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Quantity to subtract when generating commissions</entry> 
+<entry>The Quantity Subtract identifies the quantity to be subtracted before multiplication</entry> 
+</row> 
+<row> 
+ <entry>Referência</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Reference for this record</entry> 
+<entry>The Reference displays the source document number.</entry> 
+</row> 
+<row> 
+ <entry>Fatura Referenciada</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ID de Reversão</entry><entry>Tabela</entry> 
+<entry>C_Invoice</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>ID of document reversal</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data de Início</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>First effective day (inclusive)</entry> 
+<entry>The Start Date indicates the first or starting date</entry> 
+</row> 
+<row> 
+ <entry>Atualizado</entry><entry>Data+Hora</entry> 
+<entry> (SYSDATE)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date this record was updated</entry> 
+<entry>The Updated field indicates the date that this record was updated.</entry> 
+</row> 
+<row> 
+ <entry>Atualizado por</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User who updated this records</entry> 
+<entry>The Updated By field indicates the user who updated this record.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

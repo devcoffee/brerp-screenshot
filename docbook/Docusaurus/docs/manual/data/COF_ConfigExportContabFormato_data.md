@@ -1,0 +1,37 @@
+<div id="d130946e1" class="table">
+
+<div class="table-title">
+
+Table 1. COF\_ConfigExportContabFormato\_ID
+
+</div>
+
+<div class="table-contents">
+
+|       |             |                                    |                                                    |                     |                |                    |                  |                         |               |                 |                |               |           |       |              |
+| :---: | :---------: | :--------------------------------: | :------------------------------------------------: | :-----------------: | :------------: | :----------------: | :--------------: | :---------------------: | :-----------: | :-------------: | :------------: | :-----------: | :-------: | :---: | :----------: |
+| Campo | COF\_Campos | COF\_ConfigExportContabFormato\_ID | Configuração de Exportação de Movimentos Contábeis | Caractere Separador | Remove Special | Alinhar à Esquerda | Preencher Quando | Tipo de Quebra de Linha | Tipo de Dados | Formato de Data | Padrão Decimal | Lógica Padrão | Núm.Final | Linha | Núm. Inicial |
+|       |             |              5000006               |                      5000000                       |                     |     false      |       false        |        AM        |           DO            |       C       |                 |                |               |     1     |   5   |      1       |
+| 3888  |             |              5000000               |                      5000000                       |                     |     false      |       false        |        AM        |           DO            |       D       |   dd/MM/YYYY    |                |               |    11     |  10   |      2       |
+|       |             |              5000001               |                      5000000                       |                     |     false      |       false        |        AM        |           DO            |       C       |                 |                |               |    12     |  20   |      12      |
+| 2346  |             |              5000002               |                      5000000                       |                     |      true      |       false        |        AM        |           DO            |       S       |                 |                |               |    13     |  30   |      13      |
+|       |             |              5000003               |                      5000000                       |                     |     false      |       false        |        AM        |           DO            |       C       |                 |                |               |    14     |  40   |      14      |
+|       |             |              5000005               |                      5000000                       |                     |     false      |       false        |        AM        |           DO            |       Q       |                 |                |               |    65     |  60   |      65      |
+| 2342  |      N      |              5000004               |                      5000000                       |                     |      true      |       false        |        AM        |           DO            |       S       |                 |                |               |    64     |  50   |      15      |
+|       |             |              5000007               |                      5000001                       |                     |     false      |       false        |        AM        |           DO            |       C       |                 |                |               |     1     |   5   |      1       |
+| 3888  |             |              5000008               |                      5000001                       |                     |     false      |       false        |        AM        |           DO            |       D       |   dd/MM/YYYY    |                |               |    11     |  10   |      2       |
+|       |             |              5000009               |                      5000001                       |                     |     false      |       false        |        AM        |           DO            |       C       |                 |                |               |    12     |  20   |      12      |
+| 2346  |             |              5000010               |                      5000001                       |                     |      true      |       false        |        AM        |           DO            |       S       |                 |                |               |    13     |  30   |      13      |
+|       |             |              5000011               |                      5000001                       |                     |     false      |       false        |        AM        |           DO            |       C       |                 |                |               |    14     |  40   |      14      |
+|       |             |              5000012               |                      5000001                       |                     |     false      |       false        |        AM        |           DO            |       Q       |                 |                |               |    65     |  60   |      65      |
+| 2342  |      N      |              5000013               |                      5000001                       |                     |      true      |       false        |        AM        |           DO            |       S       |                 |                |               |    64     |  50   |      15      |
+|       |             |              5000014               |                      5000002                       |                     |     false      |       false        |        AM        |           DO            |       C       |                 |                |               |     0     |  10   |      0       |
+| 3888  |             |              5000015               |                      5000002                       |                     |     false      |       false        |        AM        |           DO            |       D       |   dd/MM/YYYY    |                |               |     0     |  20   |      0       |
+|       |             |              5000016               |                      5000002                       |                     |     false      |       false        |        AM        |           DO            |       C       |                 |                |               |     0     |  30   |      0       |
+| 2346  |             |              5000017               |                      5000002                       |                     |     false      |       false        |        AM        |           DO            |       S       |                 |                |               |     0     |  40   |      0       |
+|       |             |              5000018               |                      5000002                       |                     |     false      |       false        |        AM        |           DO            |       C       |                 |                |               |     0     |  50   |      0       |
+| 2342  |      N      |              5000019               |                      5000002                       |                     |     false      |       false        |        AM        |           DO            |       S       |                 |                |               |     0     |  60   |      0       |
+
+</div>
+
+</div>

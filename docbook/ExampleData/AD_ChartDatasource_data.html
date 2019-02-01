@@ -1,0 +1,324 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Table&nbsp;1.&nbsp;Fonte de Dados do Gr&aacute;fico</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <div class="table" id="d2068e1">
+         <div class="table-title">Table&nbsp;1.&nbsp;Fonte de Dados do Gr&aacute;fico</div>
+         <div class="table-contents">
+            <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+               <colgroup>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+               </colgroup>
+               <tbody>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Fonte de Dados do Gr&aacute;fico</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Gr&aacute;fico</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Coluna de Categoria</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Coluna de Data</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Entidade</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sql FROM</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Coluna Chave</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Coluna S&eacute;rie</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Time Offset</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Value Column</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">Sql WHERE</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">274</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">c.Name</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Opportunity o
+                        INNER JOIN C_SalesStage s ON (s.C_SalesStage_ID=o.C_SalesStage_ID)
+                        INNER JOIN C_Campaign c ON (o.C_Campaign_ID=c.C_Campaign_ID)
+                     </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">o.C_Campaign_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Opportunity</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(o.OpportunityAmt)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">o.SalesRep_ID=@#AD_User_ID@ AND o.IsActive='Y' AND s.IsClosed='N' AND c.IsActive='Y'</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50002</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50000</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">53337</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">s.Value || '. ' || s.Name</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Opportunity o
+                        INNER JOIN C_SalesStage s ON (s.C_SalesStage_ID=o.C_SalesStage_ID)
+                     </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Opportunity_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Expected</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(o.OpportunityAmt * o.Probability/100)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">o.IsActive='Y' AND s.IsClosed='N' and o.SalesRep_ID=@#AD_User_ID@</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50005</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50003</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">417</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">rt.Name</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">R_Request r
+                        INNER JOIN R_RequestType rt ON (rt.R_RequestType_ID=r.R_RequestType_ID)
+                        INNER JOIN R_Status rs ON (r.R_Status_ID=rs.R_Status_ID)
+                        INNER JOIN AD_Ref_List l ON (l.AD_Reference_ID=154 AND l.Value=r.Priority)
+                     </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">r.R_Request_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Number of Requests</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(l.Value || ' ' || l.Name)</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">count(r.R_Request_ID)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">r.IsActive = 'Y' AND r.SalesRep_ID=@#AD_User_ID@ AND rs.IsOpen='Y'</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50000</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50000</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">53337</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">s.Value || '. ' || s.Name</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Opportunity o
+                        INNER JOIN C_SalesStage s ON (s.C_SalesStage_ID=o.C_SalesStage_ID)
+                     </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Opportunity_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Total</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(o.OpportunityAmt)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">o.IsActive='Y' AND s.IsClosed='N 'and o.SalesRep_ID=@#AD_User_ID@</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500015</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500013</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">190</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">pc.name</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">U</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">rv_storage st join M_Product P On (st.m_product_id = p.m_product_id)
+                        join m_product_category pc on (p.M_Product_Category_ID = pc.M_Product_Category_ID)
+                     </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">St.m_warehouse_id</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Estoque Por Categoria</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(st.qtyonhand)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">st.ad_org_id=@#AD_Org_ID@ AND P.IsSold ='Y'</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50003</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50002</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">259</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">o.DateOrdered</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Order o</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">o.C_Order_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Atual</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(o.GrandTotal)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">o.DocStatus IN ('CO','CL') AND o.AD_Client_ID=@#AD_Client_ID@ AND o.IsSOTrx='Y'</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50004</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50002</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">259</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">o.DateOrdered</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_Order o</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">o.C_Order_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Anterior</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">-12</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(o.GrandTotal)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">o.DocStatus IN ('CO','CL') AND o.AD_Client_ID=@#AD_Client_ID@ AND o.IsSOTrx='Y'</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500051</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500042</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">291</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.c_region_description</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">U</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">rv_bpartner bp</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.ad_org_id</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Clientes por Estado</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">count(bp.name)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">bp.ad_org_id=@#AD_Org_ID@ AND bp.iscustomer = 'Y'</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500057</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500047</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">318</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">qtyentered</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">U</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">rv_c_invoiceline</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">rv_c_invoiceline.C_Invoice_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Maiores Pedidos Hora x Dia</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">linenetamt</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(linenetamt)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">ad_org_id=@#AD_Org_ID@ and linenetamt &gt;
+                         0
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500056</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500046</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">318</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">oi.DueDate</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">U</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">rv_openitem oi</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">oi.C_Invoice_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Analise de Curvatura de Fluxo </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">90</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(oi.grandtotal) * -1</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">oi.ad_org_id=@#AD_Org_ID@</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500053</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500044</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">318</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">oi.DueDate</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">U</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">rv_openitem oi</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">oi.C_Invoice_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Fluxo de Caixa 30 Dias - Receber</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">30</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(oi.grandtotal)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">oi.ad_org_id=@#AD_Org_ID@ and oi.IsSoTrx = 'Y'</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500054</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500044</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">318</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">oi.DueDate</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">U</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">rv_openitem oi</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">oi.C_Invoice_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Fluxo de Caixa 30 Dias - Pagar</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">30</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(oi.grandtotal)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">oi.ad_org_id=@#AD_Org_ID@ and oi.IsSoTrx = 'N'</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500049</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500040</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">318</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">TO_CHAR(I.DateInvoiced,'MM')</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">U</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">c_invoice_v i LEFT Join AD_User U ON (i.SalesRep_ID = U.Ad_User_ID)</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">I.C_Invoice_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ranking de Vendedores</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">U.Name</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">SUM(i.grandtotal)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">i.ad_org_id=@#AD_Org_ID@ AND i.issotrx = 'Y' AND (select max(il.m_product_id) from c_invoiceline il where il.c_invoice_id
+                        = i.c_invoice_id) &gt;
+                         0 AND i.DocStatus IN ('CO','CL')
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500055</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500045</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">318</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">i.regionname</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">U</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">rv_c_invoice i</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">i.C_Invoice_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Vendas por Estado</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">i.city</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(i.grandtotal)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">i.ad_org_id=@#AD_Org_ID@ AND i.regionname IS NOT NULL AND i.city IS NOT NULL</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500052</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500043</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">318</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">il.DateInvoiced</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">U</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">rv_c_invoiceline il
+                        LEFT JOIN m_product_category pc ON (pc.m_product_category_id = il.m_product_category_id)
+                     </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">il.C_Invoice_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Vendas Por Categoria 30 dias</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">pc.Value</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">sum(il.qtyinvoiced)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">il.ad_org_id=@#AD_Org_ID@</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">1500048</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">1500039</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">318</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">Categoria</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">U</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">cof_dash_vendascategoria</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">C_Invoice_ID</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">Top 5 por Categoria de Produto</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">serie</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">0</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">sum(value)</td>
+                     <td style="text-align: center; ">AD_Org_ID=@#AD_Org_ID@ </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div><br class="table-break"></br></body>
+</html>

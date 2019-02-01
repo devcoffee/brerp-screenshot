@@ -1,0 +1,76 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Table&nbsp;1.&nbsp;Buscar Defini&ccedil;&atilde;o</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <div class="table" id="d71128e1">
+         <div class="table-title">Table&nbsp;1.&nbsp;Buscar Defini&ccedil;&atilde;o</div>
+         <div class="table-contents">
+            <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+               <colgroup>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+               </colgroup>
+               <tbody>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Coluna</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Buscar Defini&ccedil;&atilde;o</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Janela</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Dados</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Padr&atilde;o</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Janela de PC</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Consulta</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Pesquisar Tipo</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">C&oacute;digo da Transa&ccedil;&atilde;o</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2169</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50000</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">259</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">143</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">S</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Searches for an order with a fitting documentNo</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">true</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Order Search</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">181</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">T</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">O</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">291</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">123</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">S</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">Searches for a Business Partner with fitting BPName or ContactName</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">false</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">Business Partner Search</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">SELECT b.C_BPartner_ID FROM C_BPartner b
+                        INNER JOIN AD_User u ON (b.C_BPartner_ID = u.C_BPartner_ID)
+                        WHERE (UPPER(b.name) LIKE UPPER(?) OR UPPER(u.name) LIKE UPPER(?))
+                        AND b.AD_Client_ID=@#AD_Client_ID@
+                     </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">Q</td>
+                     <td style="text-align: center; ">BP</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div><br class="table-break"></br></body>
+</html>

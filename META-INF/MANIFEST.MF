@@ -9,5 +9,8 @@ Require-Bundle: org.adempiere.base;bundle-version="6.2.0",
  org.eclipse.equinox.app;bundle-version="1.4.0",
  org.json;bundle-version="1.0.0",
  json,
- org.eclipse.core.resources;bundle-version="3.13.200"
+ org.eclipse.core.resources;bundle-version="3.13.200",
+ org.idempiere.fitnesse.server,
+ org.junit,
+ org.eclipse.osgi
 Bundle-ClassPath: .

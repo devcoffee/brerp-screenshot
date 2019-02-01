@@ -1,0 +1,4833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Parceiro de Negócios</title> 
+ <para> <emphasis>Descrição: </emphasis>  Gerenciamento de Parceiros de Negócios</para><para> <emphasis>Comentário/Ajuda: </emphasis>A Janela "Parceiro de Negócios" permite definir parceiros com os quais a sua Empresa irá interagir.  Isto inclui clientes, fornecedores e funcionários.  Antes de digitar ou de importar produtos, você deve definir seus fornecedores.  Antes de gerar Pedidos você deve definir seus clientes.  Esta janela contém todas as informações sobre seu Parceiro de Negócios e os valores digitados serão usados gerar todas as transações de documentos</para><para><emphasis> Criado em: </emphasis>1999-06-11 00:00:00.0
+</para><para><emphasis>Atualizado em: </emphasis>2005-02-09 22:02:07.0</para>
+<section> 
+ <title>Tabela: Parceiro de Negócios - C_BPartner</title> 
+ 
+<ulink url="data/C_BPartner_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Parceiro de Negócios</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Parceiro de Negócios" define qualquer Entidade com a qual uma Organização transaciona.</para> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Business Partner Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Crédito Utilizado</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Current open balance</entry> 
+<entry>The Credit Used indicates the total amount of open or unpaid invoices in primary accounting currency for the Business Partner. Credit Management is based on the Total Open Amount, which includes Vendor activities.</entry> 
+</row> 
+<row> 
+ <entry>Regra de Custo de Frete</entry><entry>Lista</entry> 
+<entry>Calculado
+Freight excluded
+Preço fixo
+Frete incluso
+Linha
+(I)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method for charging Freight</entry> 
+<entry>The Freight Cost Rule indicates the method used when charging for freight.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Enviar e-mail</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Enable sending Document EMail</entry> 
+<entry>Send emails with document attached (e.g. Invoice, Delivery Note, etc.)</entry> 
+</row> 
+<row> 
+ <entry>Pai do Parceiro</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartner_cpbartnerparent</entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Parent</entry> 
+<entry>The parent (organization) of the Business Partner for reporting purposes.</entry> 
+</row> 
+<row> 
+ <entry>Transação Única</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ID do Perfil do Cliente</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">adclient_cbpartner</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">adorg_cbpartner</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Logo</entry><entry>Imagem</entry> 
+<entry></entry> 
+<entry valign="middle">logo_cbpartner</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Chave de Busca</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Grupo de Parceiros</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cbpgroup_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Group</entry> 
+<entry>The Business Partner Group provides a method of defining defaults to be used for individual Business Partners.</entry> 
+</row> 
+<row> 
+ <entry>Cliente</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if this Business Partner is a Customer</entry> 
+<entry>The Customer checkbox indicates if this Business Partner is a customer.  If it is select additional fields will display which further define this customer.</entry> 
+</row> 
+<row> 
+ <entry>Fornecedor</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if this Business Partner is a Vendor</entry> 
+<entry>The Vendor checkbox indicates if this Business Partner is a Vendor.  If it is selected, additional fields will display which further identify this vendor.</entry> 
+</row> 
+<row> 
+ <entry>Razão Social / Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Funcionário</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if  this Business Partner is an employee</entry> 
+<entry>The Employee checkbox indicates if this Business Partner is an Employee.  If it is selected, additional fields will display which further identify this employee.</entry> 
+</row> 
+<row> 
+ <entry>Perspectiva</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates this is a Prospect</entry> 
+<entry>The Prospect checkbox indicates an entity that is an active prospect.</entry> 
+</row> 
+<row> 
+ <entry>Nome Fantasia / Apelido</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Additional Name</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Representante (Interno)</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if  the business partner is a sales representative or company agent</entry> 
+<entry>The Sales Rep checkbox indicates if this business partner is a sales representative. A sales representative may also be an employee, but does not need to be.</entry> 
+</row> 
+<row> 
+ <entry>Núm. Referência</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Your customer or vendor number at the Business Partner's site</entry> 
+<entry>The reference number can be printed on orders and invoices to allow your business partner to faster identify your records.</entry> 
+</row> 
+<row> 
+ <entry>Classificação</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Classification or Importance</entry> 
+<entry>The Rating is used to differentiate the importance</entry> 
+</row> 
+<row> 
+ <entry>Representante (Interno)</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry valign="middle">adusersalesrep_cbpartner</entry> 
+<entry>EXISTS (SELECT * FROM C_BPartner bp WHERE AD_User.C_BPartner_ID=bp.C_BPartner_ID AND bp.IsSalesRep='Y') </entry> 
+<entry valign="middle">Sales Representative or Company Agent</entry> 
+<entry>The Sales Representative indicates the Sales Rep for this Region.  Any Sales Rep must be a valid internal user.</entry> 
+</row> 
+<row> 
+ <entry>Limite de Crédito de Cheque Próprio</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Limite de Crédito de Cheque Terceiro</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tax Group</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ctaxgroup_cbpartner</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Limite de Crédito Boleto</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Limite Outros</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Estado de Crédito</entry><entry>Lista</entry> 
+<entry>Segurar Crédito
+Crédito OK
+Cancelar Crédito
+Observar Crédito
+Sem Verificação de Crédito
+('H')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Credit Status</entry> 
+<entry>Credit Management is inactive if Credit Status is No Credit Check, Credit Stop or if the Credit Limit is 0.
+If active, the status is set automatically set to Credit Hold, if the Total Open Balance (including Vendor activities)  is higher then the Credit Limit. It is set to Credit Watch, if above 90% of the Credit Limit and Credit OK otherwise.</entry> 
+</row> 
+<row> 
+ <entry>Limite de Crédito</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total outstanding invoice amounts allowed</entry> 
+<entry>The Credit Limit indicates the total amount allowed "on account" in primary accounting currency.  If the Credit Limit is 0, no check is performed.  Credit Management is based on the Total Open Amount, which includes Vendor activities.</entry> 
+</row> 
+<row> 
+ <entry>Saldo em Aberto</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Open Balance Amount in primary Accounting Currency</entry> 
+<entry>The Total Open Balance Amount is the calculated open item amount for Customer and Vendor activity.  If the Balance is below zero, we owe the Business Partner.  The amount is used for Credit Management.
+Invoices and Payment Allocations determine the Open Balance (i.e. not Orders or Payments).</entry> 
+</row> 
+<row> 
+ <entry>Score</entry><entry>Inteiro</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ID de Imposto</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Tax Identification</entry> 
+<entry>The Tax ID field identifies the legal Identification number of this Entity.</entry> 
+</row> 
+<row> 
+ <entry>Vincular Organização</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle">adorg_cbpartnerorg</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @AD_OrgBP_ID@!0 </entry> 
+<entry valign="middle">The Business Partner is another Organization for explicit Inter-Org transactions</entry> 
+<entry>The business partner is another organization in the system. So when performing transactions, the counter-document is created automatically. Example: You have BPartnerA linked to OrgA and BPartnerB linked to OrgB.  If you create a sales order for BPartnerB in OrgA a purchase order is created for BPartnerA in OrgB.  This allows to have explicit documents for Inter-Org transactions.</entry> 
+</row> 
+<row> 
+ <entry>Isento de Imposto (Vendas)</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business partner is exempt from tax on sales</entry> 
+<entry>If a business partner is exempt from tax on sales, the exempt tax rate is used. For this, you need to set up a tax rate with a 0% rate and indicate that this is your tax exempt rate.  This is required for tax reporting, so that you can track tax exempt transactions.</entry> 
+</row> 
+<row> 
+ <entry>Isento de Imposto (Compras)</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business partner is exempt from tax on purchases</entry> 
+<entry>If a business partner is exempt from tax on purchases, the exempt tax rate is used. For this, you need to set up a tax rate with a 0% rate and indicate that this is your tax exempt rate.  This is required for tax reporting, so that you can track tax exempt transactions.</entry> 
+</row> 
+<row> 
+ <entry>URL</entry><entry>URL</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Full URL address - e.g. http://www.idempiere.org</entry> 
+<entry>The URL defines an fully qualified web address like http://www.idempiere.org</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Nível de Resumo</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a summary entity</entry> 
+<entry>A summary entity represents a branch in a tree rather than an end-node. Summary entities are used for reporting and do not have own values.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Regra de Fatura</entry><entry>Lista</entry> 
+<entry>Após Entrega
+Imediato
+Após pedido despachado
+Programação do Cliente após entrega</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Frequency and method of invoicing </entry> 
+<entry>The Invoice Rule defines how a Business Partner is invoiced and the frequency of invoicing.</entry> 
+</row> 
+<row> 
+ <entry>Programação de Faturamento</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cinvoiceschedule_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schedule for generating Invoices</entry> 
+<entry>The Invoice Schedule identifies the frequency used when generating invoices.</entry> 
+</row> 
+<row> 
+ <entry>Regra de Pagamento</entry><entry>Lista</entry> 
+<entry>Dinheiro
+Débito Direto
+Cartão de Crédito
+Mixed
+Em Crédito
+Cheque
+Depósito Direto
+(P)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Ref_List.Value &lt;
+&gt;
+ 'M' </entry> 
+<entry valign="middle">How you pay the invoice</entry> 
+<entry>The Payment Rule indicates the method of invoice payment.</entry> 
+</row> 
+<row> 
+ <entry>Condição de Pagamento</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm Sales</entry> 
+<entry valign="middle">cpaymentterm_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">The terms of Payment (timing, discount)</entry> 
+<entry>Payment Terms identify the method and timing of payment.</entry> 
+</row> 
+<row> 
+ <entry>Regra de Entrega</entry><entry>Lista</entry> 
+<entry>Disponibilidade
+Forçar
+Linha Completa
+Manual
+Pedido Completo
+Após o recebimento</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the timing of Delivery</entry> 
+<entry>The Delivery Rule indicates when an order should be delivered. For example should the order be delivered when the entire order is complete, when a line is complete or as the products become available.</entry> 
+</row> 
+<row> 
+ <entry>Via de Entrega</entry><entry>Lista</entry> 
+<entry>Entrega
+Retirar
+Transportadora</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">How the order will be delivered</entry> 
+<entry>The Delivery Via indicates how the products should be delivered. For example, will the order be picked up or shipped.</entry> 
+</row> 
+<row> 
+ <entry>Lista de Preço</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mpricelist_cbpartner</entry> 
+<entry>M_PriceList.IsSOPriceList = 'Y'  AND (SELECT COUNT(*) FROM M_PriceList_Version WHERE M_PriceList.M_PriceList_ID=M_PriceList_Version.M_PriceList_ID AND M_PriceList_Version.IsActive='Y')&gt;
+0 </entry> 
+<entry valign="middle">Unique identifier of a Price List</entry> 
+<entry>Price Lists are used to determine the pricing, margin and cost of items purchased or sold.</entry> 
+</row> 
+<row> 
+ <entry>Mín. Vida de Prateleira %</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Minimum Shelf Life in percent based on Product Instance Guarantee Date</entry> 
+<entry>Minimum Shelf Life of products with Guarantee Date instance. If &gt;
+ 0 you cannot select products with a shelf life ((Guarantee Date-Today) / Guarantee Days) less than the minimum shelf life, unless you select "Show All"</entry> 
+</row> 
+<row> 
+ <entry>Esquema de Descontos</entry><entry>Tabela</entry> 
+<entry>M_DiscountSchema not PL</entry> 
+<entry valign="middle">mdiscounts_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schema to calculate the trade discount percentage</entry> 
+<entry>After calculation of the (standard) price, the trade discount percentage is calculated and applied resulting in the final price.</entry> 
+</row> 
+<row> 
+ <entry>Desconto Fixo %</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Flat discount percentage </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cobrança</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cdunning_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Dunning Rules for overdue invoices</entry> 
+<entry>The Dunning indicates the rules and method of dunning for past due payments.</entry> 
+</row> 
+<row> 
+ <entry>Carência de Cobrança</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Documento de Venda</entry><entry>Tabela</entry> 
+<entry>C_DocType</entry> 
+<entry valign="middle">cofDocTypeSale_CBPartner</entry> 
+<entry>C_DocType.DocBaseType='SOO' </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Regra de Pagamento</entry><entry>Lista</entry> 
+<entry>Dinheiro
+Débito Direto
+Cartão de Crédito
+Mixed
+Em Crédito
+Cheque
+Depósito Direto</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Ref_List.Value &lt;
+&gt;
+ 'B' AND AD_Ref_List.Value &lt;
+&gt;
+ 'M' </entry> 
+<entry valign="middle">Purchase payment option</entry> 
+<entry>The Payment Rule indicates the method of purchase payment.</entry> 
+</row> 
+<row> 
+ <entry>Termo de Pagamento do PC</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm Purchases</entry> 
+<entry valign="middle">cpopaymentterm_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Payment rules for a purchase order</entry> 
+<entry>The PO Payment Term indicates the payment term that will be used when this purchase order becomes an invoice.</entry> 
+</row> 
+<row> 
+ <entry>Fabricante</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicate role of this Business partner as Manufacturer</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Lista de Preço de Compra</entry><entry>Tabela</entry> 
+<entry>M_PriceList</entry> 
+<entry valign="middle">mpricelistpo_cbuspartner</entry> 
+<entry>M_PriceList.IsSOPriceList = 'N'  AND (SELECT COUNT(*) FROM M_PriceList_Version WHERE M_PriceList.M_PriceList_ID=M_PriceList_Version.M_PriceList_ID AND M_PriceList_Version.IsActive='Y')&gt;
+0 </entry> 
+<entry valign="middle">Price List used by this Business Partner</entry> 
+<entry>Identifies the price list used by a Vendor for products purchased by this organization.</entry> 
+</row> 
+<row> 
+ <entry>Esquema de Descontos do PC</entry><entry>Tabela</entry> 
+<entry>M_DiscountSchema not PL</entry> 
+<entry valign="middle">mdiscountspo_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schema to calculate the purchase trade discount percentage</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>1099 Vendor</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Default 1099 Box</entry><entry>Tabela</entry> 
+<entry>ASU_1099Box</entry> 
+<entry valign="middle">default1099box_cbpartner</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Documento de Compra</entry><entry>Tabela</entry> 
+<entry>C_DocType</entry> 
+<entry valign="middle">cofDocTypePurchase_CBPartner</entry> 
+<entry>C_DocType.DocBaseType='POO' </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Referência do Pedido</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Transaction Reference Number (Sales Order, Purchase Order) of your Business Partner</entry> 
+<entry>The business partner order reference is the order reference for this specific transaction;
+ Often Purchase Order numbers are given to print on Invoices for easier reference.  A standard number can be defined in the Business Partner (Customer) window.</entry> 
+</row> 
+<row> 
+ <entry>Idioma</entry><entry>Tabela</entry> 
+<entry>AD_Language System</entry> 
+<entry valign="middle">ad_language_c_buspartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Language for this entity</entry> 
+<entry>The Language identifies the language to use for display and formatting</entry> 
+</row> 
+<row> 
+ <entry>Saudação</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cgreeting_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Greeting to print on correspondence</entry> 
+<entry>The Greeting identifies the greeting to print on correspondence.</entry> 
+</row> 
+<row> 
+ <entry>Descrição do Pedido</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Description to be used on orders</entry> 
+<entry>The Order Description identifies the standard description to use on orders for this Customer.</entry> 
+</row> 
+<row> 
+ <entry>Formato de Impressão de Fatura</entry><entry>Tabela</entry> 
+<entry>AD_PrintFormat Invoice</entry> 
+<entry valign="middle">adprintformatinv_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Print Format for printing Invoices</entry> 
+<entry>You need to define a Print Format to print the document.</entry> 
+</row> 
+<row> 
+ <entry>Cópias de Documentos</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of copies to be printed</entry> 
+<entry>The Document Copies indicates the number of copies of each document that will be generated.</entry> 
+</row> 
+<row> 
+ <entry>Imprimir Descontos</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Print Discount on Invoice and Order</entry> 
+<entry>The Discount Printed Checkbox indicates if the discount will be printed on the document.</entry> 
+</row> 
+<row> 
+ <entry>Parcela</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Share of Customer's business as a percentage</entry> 
+<entry>The Share indicates the percentage of this Business Partner's volume of the products supplied.</entry> 
+</row> 
+<row> 
+ <entry>D-U-N-S</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Dun %26 Bradstreet Number</entry> 
+<entry>Used for EDI - For details see   www.dnb.com/dunsno/list.htm</entry> 
+</row> 
+<row> 
+ <entry>NAICS/SIC</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Standard Industry Code or its successor NAIC - http://www.osha.gov/oshstats/sicser.html</entry> 
+<entry>The NAICS/SIC identifies either of these codes that may be applicable to this Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Custo de Aquisição</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The cost of gaining the prospect as a customer</entry> 
+<entry>The Acquisition Cost identifies the cost associated with making this prospect a customer.</entry> 
+</row> 
+<row> 
+ <entry>Funcionários</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of employees</entry> 
+<entry>Indicates the number of employees for this Business Partner.  This field displays only for Prospects.</entry> 
+</row> 
+<row> 
+ <entry>Volume de Vendas em 1.000</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Volume of Sales in Thousands of Currency</entry> 
+<entry>The Sales Volume indicates the total volume of sales for a Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Valor Potencial</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Revenue expected</entry> 
+<entry>The Potential Life Time Value is the anticipated revenue in primary accounting currency to be generated by the Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Valor Real</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Actual Life Time Revenue</entry> 
+<entry>The Actual Life Time Value is the recorded revenue in primary accounting currency generated by the Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Permite Substituição de Item</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicar se o PN, o TdD e o Documento permitem ajustes OP x CNPJ (troca de produtos e/ou serviços)</entry> 
+<entry>Indicar se o PN, o TdD e o Documento permitem ajustes OP x CNPJ (troca de produtos e/ou serviços).</entry> 
+</row> 
+<row> 
+ <entry>CNPJ</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @lbr_BPTypeBRIsValid@='Y' </entry> 
+<entry valign="middle">Used to identify Legal Entities in Brazil</entry> 
+<entry>&lt;
+a href="http://www.serasa.com.br" target="_blank"&gt;
+Serasa&lt;
+/a&gt;
+
+&lt;
+a href="http://www.sintegra.gov.br" target="_blank"&gt;
+Sintegra&lt;
+/a&gt;
+
+&lt;
+a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+CCFácil&lt;
+/a&gt;
+
+&lt;
+a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+Receita &lt;
+/a&gt;
+
+&lt;
+a href="http://www.sci.com.br/" target="_blank"&gt;
+Equifax (SCI)&lt;
+/a&gt;
+
+&lt;
+a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+Simples Nacional&lt;
+/a&gt;
+</entry> 
+</row> 
+<row> 
+ <entry>Primeira Venda</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date of First Sale</entry> 
+<entry>The First Sale Date identifies the date of the first sale to this Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Parceiro</entry><entry>Lista</entry> 
+<entry>PF - Pessoa Física
+PJ - Pessoa Jurídica</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @lbr_BPTypeBRIsValid='Y' </entry> 
+<entry valign="middle">Brazilian BP Type (Identifies if the BP is a Legal Entity or an Individual)</entry> 
+<entry>Used to identify if the Business partner is a legal entity or an individual</entry> 
+</row> 
+<row> 
+ <entry>CCM</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">City Identification Code used in Brazil (City Tax ID)</entry> 
+<entry>City Identification Code used in Brazil (City Tax ID)</entry> 
+</row> 
+<row> 
+ <entry>Vendedor Interno</entry><entry>Procurar</entry> 
+<entry>AD_User - Internal</entry> 
+<entry valign="middle">COFVendedorInterno_CBPartner</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Parceiro Válido</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Brazilian BP is Valid</entry> 
+<entry>Indicates that the CNPJ or CPF is valid and there are no duplicates in the database. It is not possible to change the CNPJ or CPF after the validation.</entry> 
+</row> 
+<row> 
+ <entry>Indicador da IE</entry><entry>Lista</entry> 
+<entry>Contribuinte ICMS
+Contribuinte Isento
+Não Contribuinte
+(2)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Grupo de Fornecedores</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">COFGrupoFornecedor_CBPartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Grupo de Fornecedores</entry> 
+<entry>Grupo de Fornecedores</entry> 
+</row> 
+<row> 
+ <entry>IE</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Used to Identify the IE (State Tax ID)</entry> 
+<entry>Used to Identify the IE (State Tax ID)</entry> 
+</row> 
+<row> 
+ <entry>Suframa</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Brazilian SUFRAMA Identification Number</entry> 
+<entry>Brazilian SUFRAMA Identification Number</entry> 
+</row> 
+<row> 
+ <entry>Incentivos Fiscais</entry><entry>Lista</entry> 
+<entry>Áreas de Livre Comércio
+Amazônia Ocidental
+Zona Franca de Manaus</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Descrimina se a empresa faz parte de algum programa especial de Incentivos Fiscais</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Desconto de ICMS %</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Desconto de ICMS % concedido por incentivos fiscais</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Desconto PIS %</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Desconto de PIS % concedido por incentivos fiscais</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Desconto COFINS %</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Desconto de COFINS % concedido por incentivos fiscais</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>CPF</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @lbr_BPTypeBRIsValid@='Y' </entry> 
+<entry valign="middle">Used to identify individuals in Brazil</entry> 
+<entry>&lt;
+a href="http://www.serasa.com.br" target="_blank"&gt;
+Serasa&lt;
+/a&gt;
+
+&lt;
+a href="http://www.sintegra.gov.br" target="_blank"&gt;
+Sintegra&lt;
+/a&gt;
+
+&lt;
+a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+CCFácil&lt;
+/a&gt;
+
+&lt;
+a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+Receita &lt;
+/a&gt;
+
+&lt;
+a href="http://www.sci.com.br/" target="_blank"&gt;
+Equifax (SCI)&lt;
+/a&gt;
+
+&lt;
+a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+Simples Nacional&lt;
+/a&gt;
+</entry> 
+</row> 
+<row> 
+ <entry>RG</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Used to identify individuals in Brazil</entry> 
+<entry>Used to identify individuals in Brazil</entry> 
+</row> 
+<row> 
+ <entry>Substituição Tributária</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines if the record has Substituion</entry> 
+<entry>Defines if the record has Substituion</entry> 
+</row> 
+<row> 
+ <entry>Cod. Regime Trib.</entry><entry>Lista</entry> 
+<entry>1- Simples Nacional
+2 - Simples Nacional – Excesso de Sublimite de Receita Bruta
+3 - Regime Normal</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @lbr_BPTypeBR@=PF </entry> 
+<entry valign="middle">Este campo será obrigatoriamente preenchido com: 1 – Simples Nacional;
+ 2 – Simples Nacional – excesso de sublimite de receita bruta;
+ 3 – Regime Normal. </entry> 
+<entry>&lt;
+a href="http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/aplicacoes.aspx?id=21" target="_blank"&gt;
+Consulta Optantes&lt;
+/a&gt;
+
+
+Este campo será obrigatoriamente preenchido com: 1 – Simples Nacional;
+ 2 – Simples Nacional – excesso de sublimite de receita bruta;
+ 3 – Regime Normal. Ref.: C21</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Transação</entry><entry>Lista</entry> 
+<entry>Consumidor Final
+Exportação Indireta
+Exportação
+Importação
+Uso Interno
+Industrialização
+Outros
+Remessa
+Revenda
+Transferência</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Transaction Type</entry> 
+<entry>Defines the Transaction Type</entry> 
+</row> 
+<row> 
+ <entry>Cobrança Bloqueada (Boleto/CNAB)</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Categoria do Cliente (CFOP)</entry><entry>Tabela</entry> 
+<entry>LBR_BPartnerCategory</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Customer Category</entry> 
+<entry>Defines the Customer Category</entry> 
+</row> 
+<row> 
+ <entry>Grupo de Tributação (Cliente)</entry><entry>Tabela</entry> 
+<entry>LBR_FiscalGroup_BPartner</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Fiscal Group - Customer</entry> 
+<entry>Defines the Fiscal Group - Customer</entry> 
+</row> 
+<row> 
+ <entry>Categoria do Fornecedor (CFOP)</entry><entry>Tabela</entry> 
+<entry>LBR_BPartnerCategory</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Vendor Category</entry> 
+<entry>Defines the Vendor Category</entry> 
+</row> 
+<row> 
+ <entry>CNAE</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Classificação Nacional de Atividades Econômicas</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Grupo de Tributação (Fornecedor)</entry><entry>Tabela</entry> 
+<entry>LBR_FiscalGroup_BPartner</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Fiscal Group - Vendor</entry> 
+<entry>Defines the Fiscal Group - Vendor</entry> 
+</row> 
+<row> 
+ <entry>Modelo da NF</entry><entry>Lista</entry> 
+<entry>00 - Nota Fiscal Serviço
+01 - Nota Fiscal
+02 - Nota Fiscal de Venda a Consumidor
+04 - Nota Fiscal de Produtor
+06 - Nota Fiscal/Conta de Energia Elétrica
+07 - Nota Fiscal de Serviço de Transporte
+08 - Conhecimento de Transporte Rodoviário de Cargas
+09 - Conhecimento de Transporte Aquaviário de Cargas
+10 - Conhecimento Aéreo
+11 - Conhecimento de Transporte Ferroviário de Cargas
+13 - Bilhete de Passagem Rodoviário
+14 - Bilhete de Passagem Aquaviário
+15 - Bilhete de Passagem e Nota de Bagagem
+16 - Bilhete de Passagem Ferroviário
+17 - Despacho de Transporte
+18 - Resumo de Movimento Diário
+1B - Nota Fiscal Avulsa
+20 - Ordem de Coleta de Cargas
+21 - Nota Fiscal de Serviço de Comunicação
+22 - Nota Fiscal de Serviço de Telecomunicação
+23 - GNRE
+24 - Autorização de Carregamento e Transporte
+25 - Manifesto de Carga
+26 - Conhecimento de Transporte Multimodal de Cargas
+27 - Nota Fiscal de Transporte Ferroviário de Cargas
+28 - Nota Fiscal/Conta de Fornecimento de Gás Canalizado
+29 - Nota Fiscal/Conta de Fornecimento de Água Canalizada
+2D - Cupom Fiscal emitido por ECF
+2E - Bilhete de Passagem emitido por ECF
+30 - Bilhete/Recibo do Passageiro
+55 - Nota Fiscal Eletrônica
+57 - Conhecimento de Transporte Eletrônico – CT-e
+59 - Cupom Fiscal Eletrônico – CF-e-SAT
+60 - Cupom Fiscal Eletrônico CF-e - ECD
+65 - Nota Fiscal Eletrônica ao Consumidor Final – NFC-e
+8B - Conhecimento de Transporte de Cargas Avulso</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies the model of Nota Fiscal</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Observação Nota Fiscal</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Description Printed on Nota Fiscal</entry> 
+<entry>Description Printed on Nota Fiscal</entry> 
+</row> 
+<row> 
+ <entry>Data de Admissão</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Situação Comercial</entry><entry>Lista</entry> 
+<entry>Parceiro Ativo
+Parceiro Bloqueado Comercial
+Parceiro Bloqueado Crédito
+Parceiro Encerrado
+Parceiro Inativo-Concorrente
+Parceiro Pendente de Análise
+Parceiro em Recuperação
+(PA)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data de Demissão</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Observações</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Revisão Cadastral</entry><entry>Data+Hora</entry> 
+<entry>(@#Date@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The last review date of partner registration</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Custódia</entry><entry>Tabela</entry> 
+<entry>COF_C_Custody</entry> 
+<entry valign="middle">COFCCustody_CBPartner</entry> 
+<entry>COF_C_Custody.SOPOType IN ('B', 'S') </entry> 
+<entry valign="middle">Primary Key : Custody</entry> 
+<entry>Primary Key : Custody</entry> 
+</row> 
+<row> 
+ <entry>Saldo Incluindo Cheques</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Balance Including Checks</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Percentual de Juros (Mês)</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Juros Mensal</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Observação para Equipe</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Contato (Usuário) - AD_User</title> 
+ 
+<ulink url="data/AD_User_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Gerenciamento de Usuário dentro do Sistema - Interno ou Contato de Parceiro de Negócios</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> O Usuário identifica um usuário único e exclusivo dentro do sistema. Este poderia ser um usuário interno ou um contato de parceiro de negócios</para> 
+<para><emphasis>Coluna linkada: </emphasis> Business Partner </para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Contact (User) Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Organização de Transação (Trx)</entry><entry>Tabela</entry> 
+<entry>AD_Org (Trx)</entry> 
+<entry valign="middle">adorgtrx_aduser</entry> 
+<entry> </entry> 
+<entry valign="middle">Performing or initiating organization</entry> 
+<entry>The organization which performs or initiates this transaction (for another organization).  The owning Organization may not be the transaction organization in a service bureau environment, with centralized services, and inter-organization transactions.</entry> 
+</row> 
+<row> 
+ <entry>Supervisor</entry><entry>Procurar</entry> 
+<entry>AD_User</entry> 
+<entry valign="middle">aduser_supervisor</entry> 
+<entry> </entry> 
+<entry valign="middle">Supervisor for this user/organization - used for escalation and approval</entry> 
+<entry>The Supervisor indicates who will be used for forwarding and escalating issues for this user - or for approvals.</entry> 
+</row> 
+<row> 
+ <entry>Converter Lead</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ID do usuário de email</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">User Name (ID) in the Mail System</entry> 
+<entry>The user name in the mail system is usually the string before the @ of your email address.  Required if the mail server requires authentification to send emails.</entry> 
+</row> 
+<row> 
+ <entry>Senha do usuário de email</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Password of your email user id</entry> 
+<entry>Required if the mail server requires authentification to send emails.</entry> 
+</row> 
+<row> 
+ <entry>Usuário/Contato</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">User within the system - Internal or Business Partner Contact</entry> 
+<entry>The User identifies a unique user in the system. This could be an internal user or a business partner contact</entry> 
+</row> 
+<row> 
+ <entry>Nome de usuário LDAP</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">User Name used for authorization via LDAP (directory) services</entry> 
+<entry>Optional LDAP system user name for the user. If not defined, the normal Name of the user is used. This allows to use the internal (LDAP) user id (e.g. jjanke) and the normal display name (e.g. Jorg Janke).  The LDAP User Name can also be used without LDAP enables (see system window).  This would allow to sign in as jjanke and use the display name of Jorg Janke.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">ad_user_client</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle">ad_user_org</entry> 
+<entry>(AD_Org.AD_Client_ID=@AD_Client_ID@ OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartner_aduser</entry> 
+<entry>C_BPartner.IsActive='Y' AND C_BPartner.IsSummary='N'
+ <emphasis>ReadOnly Logic</emphasis>: @C_BPartner_ID@!0 </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Comentários</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comments or additional information</entry> 
+<entry>The Comments field allows for free form entry of additional information.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Endereço de e-mail</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Electronic Mail Address</entry> 
+<entry>The Email Address is the Electronic Mail ID for this User and should be fully qualified (e.g. joe.smith@company.com). The Email Address is used to access the self service application functionality from the web.</entry> 
+</row> 
+<row> 
+ <entry>Senha</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @AD_User_ID@=0 </entry> 
+<entry valign="middle">Password of any length (case sensitive)</entry> 
+<entry>The Password for this User.  Passwords are required to identify authorized users.  For iDempiere Users, you can change the password via the Process "Reset Password".</entry> 
+</row> 
+<row> 
+ <entry>Saudação</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cgreeting_aduser</entry> 
+<entry> </entry> 
+<entry valign="middle">Greeting to print on correspondence</entry> 
+<entry>The Greeting identifies the greeting to print on correspondence.</entry> 
+</row> 
+<row> 
+ <entry>Localização do Parceiro</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cbplocation_aduser</entry> 
+<entry>C_BPartner_Location.C_BPartner_ID=@C_BPartner_ID@ </entry> 
+<entry valign="middle">Identifies the (ship to) address for this Business Partner</entry> 
+<entry>The Partner address indicates the location of a Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Título</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Name this entity is referred to as</entry> 
+<entry>The Title indicates the name that an entity is referred to as.</entry> 
+</row> 
+<row> 
+ <entry>Aniversário</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Birthday or Anniversary day</entry> 
+<entry>Birthday or Anniversary day</entry> 
+</row> 
+<row> 
+ <entry>Fone</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a telephone number</entry> 
+<entry>The Phone field identifies a telephone number</entry> 
+</row> 
+<row> 
+ <entry>2º Fone</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies an alternate telephone number.</entry> 
+<entry>The 2nd Phone field identifies an alternate telephone number.</entry> 
+</row> 
+<row> 
+ <entry>Fax</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Facsimile number</entry> 
+<entry>The Fax identifies a facsimile number for this Business Partner or  Location</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Notificação</entry><entry>Lista</entry> 
+<entry>EMail+Aviso
+Email
+Aviso
+Nenhum
+(E)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Type of Notifications</entry> 
+<entry>Emails or Notification sent out for Request Updates, etc.</entry> 
+</row> 
+<row> 
+ <entry>Posição</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cjob_aduser</entry> 
+<entry>((C_Job.IsEmployee=(SELECT IsEmployee FROM C_BPartner WHERE C_BPartner_ID=@C_BPartner_ID:0@)) OR (C_Job.IsEmployee='N' AND @C_BPartner_ID:0@=0)) </entry> 
+<entry valign="middle">Job Position</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Acesso Total PN</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The user/contact has full access to Business Partner information and resources</entry> 
+<entry>If selected, the user has full access to the Business Partner (BP) information (Business Documents like Orders, Invoices - Requests) or resources (Assets, Downloads). If you deselect it, the user has no access rights unless, you explicitly grant it in tab "BP Access"</entry> 
+</row> 
+<row> 
+ <entry>Email Verificado</entry><entry>Data+Hora</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date Email was verified</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Informação de Verificação</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Verification information of EMail Address</entry> 
+<entry>The field contains additional information how the EMail Address has been verified</entry> 
+</row> 
+<row> 
+ <entry>Último Contato</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date this individual was last contacted</entry> 
+<entry>The Last Contact indicates the date that this Business Partner Contact was last contacted.</entry> 
+</row> 
+<row> 
+ <entry>Último Resultado</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Result of last contact</entry> 
+<entry>The Last Result identifies the result of the last contact made.</entry> 
+</row> 
+<row> 
+ <entry>Contato NFe</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">User is NFe Contact (receive email automatically)</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Email do XML</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">O email compõe a Tag Email no XML do Documento Fical</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>CPF</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Used to identify individuals in Brazil</entry> 
+<entry>&lt;
+a href="http://www.serasa.com.br" target="_blank"&gt;
+Serasa&lt;
+/a&gt;
+
+&lt;
+a href="http://www.sintegra.gov.br" target="_blank"&gt;
+Sintegra&lt;
+/a&gt;
+
+&lt;
+a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+CCFácil&lt;
+/a&gt;
+
+&lt;
+a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+Receita &lt;
+/a&gt;
+
+&lt;
+a href="http://www.sci.com.br/" target="_blank"&gt;
+Equifax (SCI)&lt;
+/a&gt;
+
+&lt;
+a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+Simples Nacional&lt;
+/a&gt;
+</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Contato</entry><entry>Lista</entry> 
+<entry>Empregado
+Familiar
+Filhos
+Outros</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor Liberado</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Validade da Liberação</entry><entry>Data</entry> 
+<entry>(@#Date@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Observações</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Observation for Tax Determination</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Notificar Compra</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>AD_User_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Área de Interesse - R_ContactInterest</title> 
+ 
+<ulink url="data/R_ContactInterest_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Área de interesse de contato de um Parceiro de Negócios</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Áreas de interesse podem ser utilizadas em Campanhas de Marketing</para> 
+<para><emphasis>Coluna linkada: </emphasis> User/Contact</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>Interest Area Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Usuário/Contato</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_User_ID@)</entry> 
+<entry valign="middle">aduser_rcontactinterest</entry> 
+<entry>AD_User.C_BPartner_ID=@C_BPartner_ID@ </entry> 
+<entry valign="middle">User within the system - Internal or Business Partner Contact</entry> 
+<entry>The User identifies a unique user in the system. This could be an internal user or a business partner contact</entry> 
+</row> 
+<row> 
+ <entry>Área de Interesse</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">rinterestarea_rcontactinterest</entry> 
+<entry> </entry> 
+<entry valign="middle">Interest Area or Topic</entry> 
+<entry>Interest Areas reflect interest in a topic by a contact. Interest areas can be used for marketing campaigns.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Data da Assinatura</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date the contact actively subscribed</entry> 
+<entry>Date the contact subscribe the interest area</entry> 
+</row> 
+<row> 
+ <entry>Data da desistência</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date the contact opted out</entry> 
+<entry>If the field has a date, the customer opted out (unsubscribed) and cannot receive mails for the Interest Area</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Acesso ao PN - AD_UserBPAccess</title> 
+ <para><emphasis>Descrição:</emphasis> Acesso do usuário/contato aos recursos e informações do parceiro de negócios</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Se no Nível de Usuário NÃO for selecionado "Acesso Total PN", você terá de dar acesso explícito aqui. </para> 
+<para><emphasis>Lógica de somente leitura:</emphasis> @IsFullBPAccess@!Y</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>BP Access Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>User BP Access</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">User/contact access to Business Partner information and resources</entry> 
+<entry>If on User level, "Full BP Access" is NOT selected, you need to give access explicitly here. </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Usuário/Contato</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">aduser_aduserbpaccess</entry> 
+<entry> </entry> 
+<entry valign="middle">User within the system - Internal or Business Partner Contact</entry> 
+<entry>The User identifies a unique user in the system. This could be an internal user or a business partner contact</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Acesso</entry><entry>Lista</entry> 
+<entry>Ativos, Download
+Documentos da Negociação
+Solicitações</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Type of Access of the user/contact to Business Partner information and resources</entry> 
+<entry>If on User level, "Full BP Access" is NOT selected, give access explicitly</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Base de Documento</entry><entry>Lista</entry> 
+<entry>Ajuste Estoque Previsto
+Memorando de Crédito AP
+Fatura AP
+Pagamento AP
+Memorando de Crédito AR
+Fatura Pro Forma AR
+Fatura AR
+Recibo AR
+Alocação de Pagamentos
+Extrato Bancário
+Diário de Caixa (Cash Journal)
+Ordem de Distribuição
+Documento de Ordem de Serviço
+Lançamento de Ativo Fixo
+Baixa de Ativo Fixo
+Depreciação de Ativo Fixo
+Documento de Razão Geral
+Diário de Razão Geral
+Folha de Pagamento
+Coletor de Custos de Produção
+Estoque Físico de Material
+Movimentação de Material
+Produção de Material
+Recebimento de Material
+Despacho de Material
+Ordem de Manutenção
+Ordem de Produção
+Ordem de Qualidade
+Confrontar Fatura
+Confrontar PC (Pedido de Compra)
+Nota Fiscal Brasil
+Emissão do Projeto
+Plano Mestre de Produção
+Pedido de Compra
+Requisição de Compras
+RPS / NFS
+Ordem de Venda
+Apuração de Impostos</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Logical type of document</entry> 
+<entry>The Document Base Type identifies the base or starting point for a document.  Multiple document types may share a single document base type.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Solicitação</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">rrequesttype_aduserbpaccess</entry> 
+<entry> </entry> 
+<entry valign="middle">Type of request (e.g. Inquiry, Complaint, ..)</entry> 
+<entry>Request Types are used for processing and categorizing requests. Options are Account Inquiry, Warranty Issue, etc.</entry> 
+</row> 
+<row> 
+ <entry>AD_UserBPAccess_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Localização - C_BPartner_Location</title> 
+ 
+<ulink url="data/C_BPartner_Location_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir Localização</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Localização" define a localização física de um parceiro de negócios.  Um parceiro de negócios pode ter múltiplos registros de localização.</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Location Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Localização do Parceiro</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies the (ship to) address for this Business Partner</entry> 
+<entry>The Partner address indicates the location of a Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle">c_buspartner_locationclient</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle">c_buspartner_locationorg</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartner_cbplocation</entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry>(.)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Não alterar Nome</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Endereço</entry><entry>Localização (Endereço)</entry> 
+<entry></entry> 
+<entry valign="middle">clocation_cbplocation</entry> 
+<entry> </entry> 
+<entry valign="middle">Location or Address</entry> 
+<entry>The Location / Address field defines the location of an entity.</entry> 
+</row> 
+<row> 
+ <entry>Fone</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a telephone number</entry> 
+<entry>The Phone field identifies a telephone number</entry> 
+</row> 
+<row> 
+ <entry>2º Fone</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies an alternate telephone number.</entry> 
+<entry>The 2nd Phone field identifies an alternate telephone number.</entry> 
+</row> 
+<row> 
+ <entry>Fax</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Facsimile number</entry> 
+<entry>The Fax identifies a facsimile number for this Business Partner or  Location</entry> 
+</row> 
+<row> 
+ <entry>ISDN</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">ISDN or modem line</entry> 
+<entry>The ISDN identifies a ISDN or Modem line number.</entry> 
+</row> 
+<row> 
+ <entry>Endereço de Entrega</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Shipment Address</entry> 
+<entry>If the Ship Address is selected, the location is used to ship goods to a customer or receive goods from a vendor.</entry> 
+</row> 
+<row> 
+ <entry>Endereço de Fatura</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Invoice/Bill Address</entry> 
+<entry>If the Invoice Address is selected, the location is used to send invoices to a customer or receive invoices from a vendor.</entry> 
+</row> 
+<row> 
+ <entry>Endereço de Cobrança</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner pays from that address and we'll send dunning letters there</entry> 
+<entry>If the Pay-From Address is selected, this location is the address the Business Partner pays from and where dunning letters will be sent to.</entry> 
+</row> 
+<row> 
+ <entry>Endereço de Pagamento</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner payment address</entry> 
+<entry>If the Remit-To Address is selected, the location is used to send payments to the vendor.</entry> 
+</row> 
+<row> 
+ <entry>Região de Vendas</entry><entry>Tabela</entry> 
+<entry>C_Sales Region (No summary)</entry> 
+<entry valign="middle">csalesregion_bpartnerlocation</entry> 
+<entry> </entry> 
+<entry valign="middle">Sales coverage region</entry> 
+<entry>The Sales Region indicates a specific area of sales coverage.</entry> 
+</row> 
+<row> 
+ <entry>ID do Endereço do Cliente</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Região de Entrega</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">COFMShipRegion_CBPartnerLocati</entry> 
+<entry>COF_M_ShipRegion_ID in (select cof_m_shipregion_id from cof_m_shipregion_city where C_City_ID = (select c_location.c_city_id from c_location where c_location_id = @C_Location_ID@)) </entry> 
+<entry valign="middle">Primary Key : Shipment Region</entry> 
+<entry>Primary Key : Shipment Region</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Modalidade do Frete</entry><entry>Lista</entry> 
+<entry>0- Por conta do emitente
+1- Por conta do destinatario/remetente
+2- Por conta de terceiros
+3 - Transporte Próprio por conta do Remetente;
+
+4 - Transporte Próprio por conta do Destinatário;
+
+9- Sem frete
+(1)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>0=Por conta do emitente;
+
+1=Por conta do destinatário/remetente;
+
+2=Por conta de terceiros;
+
+9=Sem frete</entry> 
+</row> 
+<row> 
+ <entry>Transportadora</entry><entry>Tabela</entry> 
+<entry>Shipper_ID</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method or manner of product delivery</entry> 
+<entry>The Shipper indicates the method of delivering product</entry> 
+</row> 
+<row> 
+ <entry>Sequência de Entrega</entry><entry>Inteiro</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sequência de Entrega da Região</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Sequência de Entrega da Cidade</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Conta Bancária - C_BP_BankAccount</title> 
+ 
+<ulink url="data/C_BP_BankAccount_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir Conta Bancária</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Definir Conta Bancária" define as informações bancárias para este parceiro de negócios.  Este dado é usado para processar pagamentos e remessas de valores.</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Bank Account Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Conta Bancária de Parceiro</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Bank Account of the Business Partner</entry> 
+<entry>The Partner Bank Account identifies the bank account to be used for this Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartner_cbpbankaccount</entry> 
+<entry>C_BPartner.IsActive='Y' AND C_BPartner.IsSummary='N' </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Usuário/Contato</entry><entry>Tabela Direta</entry> 
+<entry>(-1)</entry> 
+<entry valign="middle">aduser_cbpbankaccount</entry> 
+<entry>AD_User.C_BPartner_ID=@C_BPartner_ID@ </entry> 
+<entry valign="middle">User within the system - Internal or Business Partner Contact</entry> 
+<entry>The User identifies a unique user in the system. This could be an internal user or a business partner contact</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>CCA</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Automatic Clearing House</entry> 
+<entry>The ACH checkbox indicates if this Bank Account accepts ACH transactions.</entry> 
+</row> 
+<row> 
+ <entry>Uso Conta</entry><entry>Lista</entry> 
+<entry>Ambos
+Débito Direto
+Nenhum
+Depósito Direto
+(B)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Bank Account usage</entry> 
+<entry>Determines how the bank account is used.</entry> 
+</row> 
+<row> 
+ <entry>Banco</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cbank_cbpbankaccount</entry> 
+<entry> </entry> 
+<entry valign="middle">Bank</entry> 
+<entry>The Bank is a unique identifier of a Bank for this Organization or for a Business Partner with whom this Organization transacts.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Conta Bancária</entry><entry>Lista</entry> 
+<entry>Dinheiro
+Conta Corrente
+Cartão
+Poupança</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Bank Account Type</entry> 
+<entry>The Bank Account Type field indicates the type of account (savings, checking etc) this account  is defined as.</entry> 
+</row> 
+<row> 
+ <entry>Número de Rastreio</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Bank Routing Number</entry> 
+<entry>The Bank Routing Number (ABA Number) identifies a legal Bank.  It is used in routing checks and electronic transactions.</entry> 
+</row> 
+<row> 
+ <entry>Núm. Conta</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Account Number</entry> 
+<entry>The Account Number indicates the Number assigned to this bank account. </entry> 
+</row> 
+<row> 
+ <entry>IBAN</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">International Bank Account Number</entry> 
+<entry>If your bank provides an International Bank Account Number, enter it here
+Details ISO 13616 and http://www.ecbs.org. The account number has the maximum length of 22 characters (without spaces). The IBAN is often printed with a apace after 4 characters. Do not enter the spaces in iDempiere.</entry> 
+</row> 
+<row> 
+ <entry>Cartão de Crédito</entry><entry>Lista</entry> 
+<entry>Amex
+Cabal
+ATM
+Diners
+Elo
+Hipercard
+MasterCard
+Discover
+Outros
+Cartão de Compras
+Sorocred
+Aura
+Visa</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @CustomerPaymentProfileID@!'' </entry> 
+<entry valign="middle">Credit Card (Visa, MC, AmEx)</entry> 
+<entry>The Credit Card drop down list box is used for selecting the type of Credit Card presented for payment.</entry> 
+</row> 
+<row> 
+ <entry>Número</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @CustomerPaymentProfileID@!'' </entry> 
+<entry valign="middle">Credit Card Number </entry> 
+<entry>The Credit Card number indicates the number on the credit card, without blanks or spaces.</entry> 
+</row> 
+<row> 
+ <entry>Código de Verificação</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Credit Card Verification code on credit card</entry> 
+<entry>The Credit Card Verification indicates the verification code on the credit card (AMEX 4 digits on front;
+ MC,Visa 3 digits back)</entry> 
+</row> 
+<row> 
+ <entry>Validade Mês</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Expiry Month</entry> 
+<entry>The Expiry Month indicates the expiry month for this credit card.</entry> 
+</row> 
+<row> 
+ <entry>Validade Ano</entry><entry>Inteiro</entry> 
+<entry>(2000)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Expiry Year</entry> 
+<entry>The Expiry Year indicates the expiry year for this credit card.</entry> 
+</row> 
+<row> 
+ <entry>Nome da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @CustomerPaymentProfileID@!'' </entry> 
+<entry valign="middle">Name on Credit Card or Account holder</entry> 
+<entry>The Name of the Credit Card or Account holder.</entry> 
+</row> 
+<row> 
+ <entry>Rua da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Street address of the Credit Card or Account holder</entry> 
+<entry>The Street Address of the Credit Card or Account holder.</entry> 
+</row> 
+<row> 
+ <entry>Cidade da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">City or the Credit Card or Account Holder</entry> 
+<entry>The Account City indicates the City of the Credit Card or Account holder</entry> 
+</row> 
+<row> 
+ <entry>CEP da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Zip Code of the Credit Card or Account Holder</entry> 
+<entry>The Zip Code of the Credit Card or Account Holder.</entry> 
+</row> 
+<row> 
+ <entry>Estado da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">State of the Credit Card or Account holder</entry> 
+<entry>The State of the Credit Card or Account holder</entry> 
+</row> 
+<row> 
+ <entry>País da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Country</entry> 
+<entry>Account Country Name</entry> 
+</row> 
+<row> 
+ <entry>Carteira de Motorista</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Payment Identification - Driver License</entry> 
+<entry>The Driver's License being used as identification.</entry> 
+</row> 
+<row> 
+ <entry>Núm.de Seguridade Social (INSS)</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Payment Identification - Social Security No</entry> 
+<entry>The Social Security number being used as identification.</entry> 
+</row> 
+<row> 
+ <entry>Email da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Email Address</entry> 
+<entry>The EMail Address indicates the EMail address off the Credit Card or Account holder.</entry> 
+</row> 
+<row> 
+ <entry>Endereço Verificado</entry><entry>Lista</entry> 
+<entry>Não Coincide
+Indisponível
+Confrontar</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This address has been verified</entry> 
+<entry>The Address Verified indicates if the address has been verified by the Credit Card Company.</entry> 
+</row> 
+<row> 
+ <entry>CEP Verificado</entry><entry>Lista</entry> 
+<entry>Não Coincide
+Indisponível
+Confrontar</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The Zip Code has been verified</entry> 
+<entry>The Zip Verified indicates if the zip code has been verified by the Credit Card Company.</entry> 
+</row> 
+<row> 
+ <entry>ID do Perfil de Pagamento do Cliente</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Processador de Pagamento</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cpaymentprocessor_cbpbankaccou</entry> 
+<entry> </entry> 
+<entry valign="middle">Payment processor for electronic payments</entry> 
+<entry>The Payment Processor indicates the processor to be used for electronic payments</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Conta de Transporte - C_BP_ShippingAcct</title> 
+ <para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Shipping Accounts Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Conta de Entrega</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartner_cbpshippingacct</entry> 
+<entry>C_BPartner.IsActive='Y' AND C_BPartner.IsSummary='N' </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Número da Conta do Transportador</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Medidor do Transportador</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Conta de Impostos do Transportador</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Localização do Parceiro</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartnerlocation_cbpshippinga</entry> 
+<entry>C_BPartner_Location.C_BPartner_ID=@C_BPartner_ID@ </entry> 
+<entry valign="middle">Identifies the (ship to) address for this Business Partner</entry> 
+<entry>The Partner address indicates the location of a Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Processo do Remetente</entry><entry>Tabela</entry> 
+<entry>M_ShippingProcessor</entry> 
+<entry valign="middle">mshippingprocessor_cbpshipping</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Contabilidade de Clientes - C_BP_Customer_Acct</title> 
+ 
+<ulink url="data/C_BP_Customer_Acct_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir Contabilidade de Clientes</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Contabilidade de Clientes" define as contas padrão a serem usadas quando este parceiro de negócios for referenciado em uma transação de contas a receber.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Business Partner </para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Customer Accounting Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Serviços a Receber</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">creceivableservices_cbpcustome</entry> 
+<entry> </entry> 
+<entry valign="middle">Customer Accounts Receivables Services Account</entry> 
+<entry>Account to post services related Accounts Receivables if you want to differentiate between Services and Product related revenue. This account is only used, if posting to service accounts is enabled in the accounting schema.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cbuspartner_cbpcustomer_acct</entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Esquema Contábil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cacctschema_cbpcustomeracct</entry> 
+<entry> </entry> 
+<entry valign="middle">Rules for accounting</entry> 
+<entry>An Accounting Schema defines the rules used in accounting such as costing method, currency and calendar</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Recebíveis de Clientes</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">vc_creceivable_cbpcustomer</entry> 
+<entry> </entry> 
+<entry valign="middle">Account for Customer Receivables</entry> 
+<entry>The Customer Receivables Accounts indicates the account to be used for recording transaction for customers receivables.</entry> 
+</row> 
+<row> 
+ <entry>Pré-Pagamento de Cliente</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">vc_cprepayment_cbpcustomer</entry> 
+<entry> </entry> 
+<entry valign="middle">Account for customer prepayments</entry> 
+<entry>The Customer Prepayment account indicates the account to be used for recording prepayments from a customer.</entry> 
+</row> 
+<row> 
+ <entry>C_BP_Customer_Acct_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Contabilidade de Fornecedores - C_BP_Vendor_Acct</title> 
+ 
+<ulink url="data/C_BP_Vendor_Acct_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir Contabilidade de Fornecedores</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Contabilidade de Fornecedores" define as contas padrão a serem usadas quando este parceiro de negócios for referenciado em uma transação de contas a pagar.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Business Partner </para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Vendor Accounting Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Exigível de Serviços de Fornecedor</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">vc_vliabilityservices_cbpvendo</entry> 
+<entry> </entry> 
+<entry valign="middle">Account for Vendor Service Liability</entry> 
+<entry>The Vendor Service Liability account indicates the account to use for recording service liabilities.  It is used if you need to distinguish between Liability for products and services. This account is only used, if posting to service accounts is enabled in the accounting schema.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">c_buspartner_c_bp_vendor_acct</entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Esquema Contábil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cacctschema_cbpvendoracct</entry> 
+<entry> </entry> 
+<entry valign="middle">Rules for accounting</entry> 
+<entry>An Accounting Schema defines the rules used in accounting such as costing method, currency and calendar</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Exigível de Fornecedor</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">vc_vliability_cbpvendor</entry> 
+<entry> </entry> 
+<entry valign="middle">Account for Vendor Liability</entry> 
+<entry>The Vendor Liability account indicates the account used for recording transactions for vendor liabilities</entry> 
+</row> 
+<row> 
+ <entry>Adiantamento de Fornecedor</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">vc_vprepayment_cbpvendor</entry> 
+<entry> </entry> 
+<entry valign="middle">Account for Vendor Prepayments</entry> 
+<entry>The Vendor Prepayment Account indicates the account used to record prepayments from a vendor.</entry> 
+</row> 
+<row> 
+ <entry>C_BP_Vendor_Acct_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Contabilidade de Funcionários - C_BP_Employee_Acct</title> 
+ 
+<ulink url="data/C_BP_Employee_Acct_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir Contabilidade de Funcionários</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Contabilidade de Funcionários" define as contas padrão a serem usadas quando este parceiro de negócios for referenciado em uma transação de reembolso de despesas.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Business Partner </para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Employee Accounting Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Client</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organization</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Business Partner </entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cbuspartner_c_bpemployeeacct</entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Accounting Schema</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cacctschema_cbpemployeeacct</entry> 
+<entry> </entry> 
+<entry valign="middle">Rules for accounting</entry> 
+<entry>An Accounting Schema defines the rules used in accounting such as costing method, currency and calendar</entry> 
+</row> 
+<row> 
+ <entry>Active</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Employee Expense</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">vc_eexpense_cbpemployee</entry> 
+<entry> </entry> 
+<entry valign="middle">Account for Employee Expenses</entry> 
+<entry>The Employee Expense Account identifies the account to use for recording expenses for this employee.</entry> 
+</row> 
+<row> 
+ <entry>Employee Prepayment</entry><entry>Conta</entry> 
+<entry></entry> 
+<entry valign="middle">vc_eprepayment_cbpemployee</entry> 
+<entry> </entry> 
+<entry valign="middle">Account for Employee Expense Prepayments</entry> 
+<entry>The Employee Prepayment Account identifies the account to use for recording expense advances made to this employee.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Cliente - C_BPartner</title> 
+ 
+<ulink url="data/C_BPartner_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir Parâmetros de Cliente</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Cliente" define um Parceiro de Negócios que é um cliente desta organização.  Se a caixa de verificação "Cliente" for selecionada, então os campos necessários serão mostrados. </para> 
+<para><emphasis>Coluna linkada: </emphasis> Business Partner </para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Customer Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Tax Group</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ctaxgroup_cbpartner</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Purchase Pricelist</entry><entry>Tabela</entry> 
+<entry>M_PriceList</entry> 
+<entry valign="middle">mpricelistpo_cbuspartner</entry> 
+<entry>M_PriceList.IsSOPriceList = 'N'  AND (SELECT COUNT(*) FROM M_PriceList_Version WHERE M_PriceList.M_PriceList_ID=M_PriceList_Version.M_PriceList_ID AND M_PriceList_Version.IsActive='Y')&gt;
+0 </entry> 
+<entry valign="middle">Price List used by this Business Partner</entry> 
+<entry>Identifies the price list used by a Vendor for products purchased by this organization.</entry> 
+</row> 
+<row> 
+ <entry>One time transaction</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>URL</entry><entry>URL</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Full URL address - e.g. http://www.idempiere.org</entry> 
+<entry>The URL defines an fully qualified web address like http://www.idempiere.org</entry> 
+</row> 
+<row> 
+ <entry>SO Tax exempt</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business partner is exempt from tax on sales</entry> 
+<entry>If a business partner is exempt from tax on sales, the exempt tax rate is used. For this, you need to set up a tax rate with a 0% rate and indicate that this is your tax exempt rate.  This is required for tax reporting, so that you can track tax exempt transactions.</entry> 
+</row> 
+<row> 
+ <entry>Rating</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Classification or Importance</entry> 
+<entry>The Rating is used to differentiate the importance</entry> 
+</row> 
+<row> 
+ <entry>Payment Rule</entry><entry>Lista</entry> 
+<entry>Dinheiro
+Débito Direto
+Cartão de Crédito
+Mixed
+Em Crédito
+Cheque
+Depósito Direto</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Ref_List.Value &lt;
+&gt;
+ 'B' AND AD_Ref_List.Value &lt;
+&gt;
+ 'M' </entry> 
+<entry valign="middle">Purchase payment option</entry> 
+<entry>The Payment Rule indicates the method of purchase payment.</entry> 
+</row> 
+<row> 
+ <entry>Name 2</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Additional Name</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Greeting</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cgreeting_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Greeting to print on correspondence</entry> 
+<entry>The Greeting identifies the greeting to print on correspondence.</entry> 
+</row> 
+<row> 
+ <entry>Freight Cost Rule</entry><entry>Lista</entry> 
+<entry>Calculado
+Freight excluded
+Preço fixo
+Frete incluso
+Linha
+(I)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method for charging Freight</entry> 
+<entry>The Freight Cost Rule indicates the method used when charging for freight.</entry> 
+</row> 
+<row> 
+ <entry>Business Partner Group</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cbpgroup_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Group</entry> 
+<entry>The Business Partner Group provides a method of defining defaults to be used for individual Business Partners.</entry> 
+</row> 
+<row> 
+ <entry>PO Payment Term</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm Purchases</entry> 
+<entry valign="middle">cpopaymentterm_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Payment rules for a purchase order</entry> 
+<entry>The PO Payment Term indicates the payment term that will be used when this purchase order becomes an invoice.</entry> 
+</row> 
+<row> 
+ <entry>PO Discount Schema</entry><entry>Tabela</entry> 
+<entry>M_DiscountSchema not PL</entry> 
+<entry valign="middle">mdiscountspo_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schema to calculate the purchase trade discount percentage</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Send EMail</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Enable sending Document EMail</entry> 
+<entry>Send emails with document attached (e.g. Invoice, Delivery Note, etc.)</entry> 
+</row> 
+<row> 
+ <entry>Partner Parent</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartner_cpbartnerparent</entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Parent</entry> 
+<entry>The parent (organization) of the Business Partner for reporting purposes.</entry> 
+</row> 
+<row> 
+ <entry>Credit Status</entry><entry>Lista</entry> 
+<entry>Segurar Crédito
+Crédito OK
+Cancelar Crédito
+Observar Crédito
+Sem Verificação de Crédito
+('H')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Credit Status</entry> 
+<entry>Credit Management is inactive if Credit Status is No Credit Check, Credit Stop or if the Credit Limit is 0.
+If active, the status is set automatically set to Credit Hold, if the Total Open Balance (including Vendor activities)  is higher then the Credit Limit. It is set to Credit Watch, if above 90% of the Credit Limit and Credit OK otherwise.</entry> 
+</row> 
+<row> 
+ <entry>Link Organization</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle">adorg_cbpartnerorg</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @AD_OrgBP_ID@!0 </entry> 
+<entry valign="middle">The Business Partner is another Organization for explicit Inter-Org transactions</entry> 
+<entry>The business partner is another organization in the system. So when performing transactions, the counter-document is created automatically. Example: You have BPartnerA linked to OrgA and BPartnerB linked to OrgB.  If you create a sales order for BPartnerB in OrgA a purchase order is created for BPartnerA in OrgB.  This allows to have explicit documents for Inter-Org transactions.</entry> 
+</row> 
+<row> 
+ <entry>Open Balance</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Open Balance Amount in primary Accounting Currency</entry> 
+<entry>The Total Open Balance Amount is the calculated open item amount for Customer and Vendor activity.  If the Balance is below zero, we owe the Business Partner.  The amount is used for Credit Management.
+Invoices and Payment Allocations determine the Open Balance (i.e. not Orders or Payments).</entry> 
+</row> 
+<row> 
+ <entry>Business Partner </entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Logo</entry><entry>Imagem</entry> 
+<entry></entry> 
+<entry valign="middle">logo_cbpartner</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>PO Tax exempt</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business partner is exempt from tax on purchases</entry> 
+<entry>If a business partner is exempt from tax on purchases, the exempt tax rate is used. For this, you need to set up a tax rate with a 0% rate and indicate that this is your tax exempt rate.  This is required for tax reporting, so that you can track tax exempt transactions.</entry> 
+</row> 
+<row> 
+ <entry>Is Manufacturer</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicate role of this Business partner as Manufacturer</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Parceiro</entry><entry>Lista</entry> 
+<entry>PF - Pessoa Física
+PJ - Pessoa Jurídica</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @lbr_BPTypeBRIsValid='Y' </entry> 
+<entry valign="middle">Brazilian BP Type (Identifies if the BP is a Legal Entity or an Individual)</entry> 
+<entry>Used to identify if the Business partner is a legal entity or an individual</entry> 
+</row> 
+<row> 
+ <entry>CNPJ</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @lbr_BPTypeBRIsValid@='Y' </entry> 
+<entry valign="middle">Used to identify Legal Entities in Brazil</entry> 
+<entry>&lt;
+a href="http://www.serasa.com.br" target="_blank"&gt;
+Serasa&lt;
+/a&gt;
+
+&lt;
+a href="http://www.sintegra.gov.br" target="_blank"&gt;
+Sintegra&lt;
+/a&gt;
+
+&lt;
+a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+CCFácil&lt;
+/a&gt;
+
+&lt;
+a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+Receita &lt;
+/a&gt;
+
+&lt;
+a href="http://www.sci.com.br/" target="_blank"&gt;
+Equifax (SCI)&lt;
+/a&gt;
+
+&lt;
+a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+Simples Nacional&lt;
+/a&gt;
+</entry> 
+</row> 
+<row> 
+ <entry>CPF</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @lbr_BPTypeBRIsValid@='Y' </entry> 
+<entry valign="middle">Used to identify individuals in Brazil</entry> 
+<entry>&lt;
+a href="http://www.serasa.com.br" target="_blank"&gt;
+Serasa&lt;
+/a&gt;
+
+&lt;
+a href="http://www.sintegra.gov.br" target="_blank"&gt;
+Sintegra&lt;
+/a&gt;
+
+&lt;
+a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+CCFácil&lt;
+/a&gt;
+
+&lt;
+a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+Receita &lt;
+/a&gt;
+
+&lt;
+a href="http://www.sci.com.br/" target="_blank"&gt;
+Equifax (SCI)&lt;
+/a&gt;
+
+&lt;
+a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+Simples Nacional&lt;
+/a&gt;
+</entry> 
+</row> 
+<row> 
+ <entry>RG</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Used to identify individuals in Brazil</entry> 
+<entry>Used to identify individuals in Brazil</entry> 
+</row> 
+<row> 
+ <entry>CCM</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">City Identification Code used in Brazil (City Tax ID)</entry> 
+<entry>City Identification Code used in Brazil (City Tax ID)</entry> 
+</row> 
+<row> 
+ <entry>Suframa</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Brazilian SUFRAMA Identification Number</entry> 
+<entry>Brazilian SUFRAMA Identification Number</entry> 
+</row> 
+<row> 
+ <entry>IE</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Used to Identify the IE (State Tax ID)</entry> 
+<entry>Used to Identify the IE (State Tax ID)</entry> 
+</row> 
+<row> 
+ <entry>Parceiro Válido</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Brazilian BP is Valid</entry> 
+<entry>Indicates that the CNPJ or CPF is valid and there are no duplicates in the database. It is not possible to change the CNPJ or CPF after the validation.</entry> 
+</row> 
+<row> 
+ <entry>Categoria do Fornecedor (CFOP)</entry><entry>Tabela</entry> 
+<entry>LBR_BPartnerCategory</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Vendor Category</entry> 
+<entry>Defines the Vendor Category</entry> 
+</row> 
+<row> 
+ <entry>Grupo de Tributação (Fornecedor)</entry><entry>Tabela</entry> 
+<entry>LBR_FiscalGroup_BPartner</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Fiscal Group - Vendor</entry> 
+<entry>Defines the Fiscal Group - Vendor</entry> 
+</row> 
+<row> 
+ <entry>Substituição Tributária</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines if the record has Substituion</entry> 
+<entry>Defines if the record has Substituion</entry> 
+</row> 
+<row> 
+ <entry>Description</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Sales Volume in 1.000</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Volume of Sales in Thousands of Currency</entry> 
+<entry>The Sales Volume indicates the total volume of sales for a Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Reference No</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Your customer or vendor number at the Business Partner's site</entry> 
+<entry>The reference number can be printed on orders and invoices to allow your business partner to faster identify your records.</entry> 
+</row> 
+<row> 
+ <entry>D-U-N-S</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Dun %26 Bradstreet Number</entry> 
+<entry>Used for EDI - For details see   www.dnb.com/dunsno/list.htm</entry> 
+</row> 
+<row> 
+ <entry>Employees</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of employees</entry> 
+<entry>Indicates the number of employees for this Business Partner.  This field displays only for Prospects.</entry> 
+</row> 
+<row> 
+ <entry>Tax ID</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Tax Identification</entry> 
+<entry>The Tax ID field identifies the legal Identification number of this Entity.</entry> 
+</row> 
+<row> 
+ <entry>NAICS/SIC</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Standard Industry Code or its successor NAIC - http://www.osha.gov/oshstats/sicser.html</entry> 
+<entry>The NAICS/SIC identifies either of these codes that may be applicable to this Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Summary Level</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a summary entity</entry> 
+<entry>A summary entity represents a branch in a tree rather than an end-node. Summary entities are used for reporting and do not have own values.</entry> 
+</row> 
+<row> 
+ <entry>Language</entry><entry>Tabela</entry> 
+<entry>AD_Language System</entry> 
+<entry valign="middle">ad_language_c_buspartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Language for this entity</entry> 
+<entry>The Language identifies the language to use for display and formatting</entry> 
+</row> 
+<row> 
+ <entry>Vendor</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if this Business Partner is a Vendor</entry> 
+<entry>The Vendor checkbox indicates if this Business Partner is a Vendor.  If it is selected, additional fields will display which further identify this vendor.</entry> 
+</row> 
+<row> 
+ <entry>Prospect</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates this is a Prospect</entry> 
+<entry>The Prospect checkbox indicates an entity that is an active prospect.</entry> 
+</row> 
+<row> 
+ <entry>First Sale</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date of First Sale</entry> 
+<entry>The First Sale Date identifies the date of the first sale to this Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Acquisition Cost</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The cost of gaining the prospect as a customer</entry> 
+<entry>The Acquisition Cost identifies the cost associated with making this prospect a customer.</entry> 
+</row> 
+<row> 
+ <entry>Potential Life Time Value</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Revenue expected</entry> 
+<entry>The Potential Life Time Value is the anticipated revenue in primary accounting currency to be generated by the Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Actual Life Time Value</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Actual Life Time Revenue</entry> 
+<entry>The Actual Life Time Value is the recorded revenue in primary accounting currency generated by the Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Share</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Share of Customer's business as a percentage</entry> 
+<entry>The Share indicates the percentage of this Business Partner's volume of the products supplied.</entry> 
+</row> 
+<row> 
+ <entry>Employee</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if  this Business Partner is an employee</entry> 
+<entry>The Employee checkbox indicates if this Business Partner is an Employee.  If it is selected, additional fields will display which further identify this employee.</entry> 
+</row> 
+<row> 
+ <entry>Sales Representative</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if  the business partner is a sales representative or company agent</entry> 
+<entry>The Sales Rep checkbox indicates if this business partner is a sales representative. A sales representative may also be an employee, but does not need to be.</entry> 
+</row> 
+<row> 
+ <entry>Client</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">adclient_cbpartner</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organization</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">adorg_cbpartner</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Search Key</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Name</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Active</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Customer</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if this Business Partner is a Customer</entry> 
+<entry>The Customer checkbox indicates if this Business Partner is a customer.  If it is select additional fields will display which further define this customer.</entry> 
+</row> 
+<row> 
+ <entry>Document Copies</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of copies to be printed</entry> 
+<entry>The Document Copies indicates the number of copies of each document that will be generated.</entry> 
+</row> 
+<row> 
+ <entry>Invoice Rule</entry><entry>Lista</entry> 
+<entry>Após Entrega
+Imediato
+Após pedido despachado
+Programação do Cliente após entrega</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Frequency and method of invoicing </entry> 
+<entry>The Invoice Rule defines how a Business Partner is invoiced and the frequency of invoicing.</entry> 
+</row> 
+<row> 
+ <entry>Invoice Schedule</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cinvoiceschedule_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schedule for generating Invoices</entry> 
+<entry>The Invoice Schedule identifies the frequency used when generating invoices.</entry> 
+</row> 
+<row> 
+ <entry>Delivery Rule</entry><entry>Lista</entry> 
+<entry>Disponibilidade
+Forçar
+Linha Completa
+Manual
+Pedido Completo
+Após o recebimento</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the timing of Delivery</entry> 
+<entry>The Delivery Rule indicates when an order should be delivered. For example should the order be delivered when the entire order is complete, when a line is complete or as the products become available.</entry> 
+</row> 
+<row> 
+ <entry>Delivery Via</entry><entry>Lista</entry> 
+<entry>Entrega
+Retirar
+Transportadora</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">How the order will be delivered</entry> 
+<entry>The Delivery Via indicates how the products should be delivered. For example, will the order be picked up or shipped.</entry> 
+</row> 
+<row> 
+ <entry>Price List</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mpricelist_cbpartner</entry> 
+<entry>M_PriceList.IsSOPriceList = 'Y'  AND (SELECT COUNT(*) FROM M_PriceList_Version WHERE M_PriceList.M_PriceList_ID=M_PriceList_Version.M_PriceList_ID AND M_PriceList_Version.IsActive='Y')&gt;
+0 </entry> 
+<entry valign="middle">Unique identifier of a Price List</entry> 
+<entry>Price Lists are used to determine the pricing, margin and cost of items purchased or sold.</entry> 
+</row> 
+<row> 
+ <entry>Discount Schema</entry><entry>Tabela</entry> 
+<entry>M_DiscountSchema not PL</entry> 
+<entry valign="middle">mdiscounts_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schema to calculate the trade discount percentage</entry> 
+<entry>After calculation of the (standard) price, the trade discount percentage is calculated and applied resulting in the final price.</entry> 
+</row> 
+<row> 
+ <entry>Flat Discount %</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Flat discount percentage </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Payment Rule</entry><entry>Lista</entry> 
+<entry>Dinheiro
+Débito Direto
+Cartão de Crédito
+Mixed
+Em Crédito
+Cheque
+Depósito Direto
+(P)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Ref_List.Value &lt;
+&gt;
+ 'M' </entry> 
+<entry valign="middle">How you pay the invoice</entry> 
+<entry>The Payment Rule indicates the method of invoice payment.</entry> 
+</row> 
+<row> 
+ <entry>Payment Term</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm Sales</entry> 
+<entry valign="middle">cpaymentterm_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">The terms of Payment (timing, discount)</entry> 
+<entry>Payment Terms identify the method and timing of payment.</entry> 
+</row> 
+<row> 
+ <entry>Sales Representative</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry valign="middle">adusersalesrep_cbpartner</entry> 
+<entry>EXISTS (SELECT * FROM C_BPartner bp WHERE AD_User.C_BPartner_ID=bp.C_BPartner_ID AND bp.IsSalesRep='Y') </entry> 
+<entry valign="middle">Sales Representative or Company Agent</entry> 
+<entry>The Sales Representative indicates the Sales Rep for this Region.  Any Sales Rep must be a valid internal user.</entry> 
+</row> 
+<row> 
+ <entry>Dunning</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cdunning_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Dunning Rules for overdue invoices</entry> 
+<entry>The Dunning indicates the rules and method of dunning for past due payments.</entry> 
+</row> 
+<row> 
+ <entry>Order Reference</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Transaction Reference Number (Sales Order, Purchase Order) of your Business Partner</entry> 
+<entry>The business partner order reference is the order reference for this specific transaction;
+ Often Purchase Order numbers are given to print on Invoices for easier reference.  A standard number can be defined in the Business Partner (Customer) window.</entry> 
+</row> 
+<row> 
+ <entry>Discount Printed</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Print Discount on Invoice and Order</entry> 
+<entry>The Discount Printed Checkbox indicates if the discount will be printed on the document.</entry> 
+</row> 
+<row> 
+ <entry>Order Description</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Description to be used on orders</entry> 
+<entry>The Order Description identifies the standard description to use on orders for this Customer.</entry> 
+</row> 
+<row> 
+ <entry>Invoice Print Format</entry><entry>Tabela</entry> 
+<entry>AD_PrintFormat Invoice</entry> 
+<entry valign="middle">adprintformatinv_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Print Format for printing Invoices</entry> 
+<entry>You need to define a Print Format to print the document.</entry> 
+</row> 
+<row> 
+ <entry>Min Shelf Life %</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Minimum Shelf Life in percent based on Product Instance Guarantee Date</entry> 
+<entry>Minimum Shelf Life of products with Guarantee Date instance. If &gt;
+ 0 you cannot select products with a shelf life ((Guarantee Date-Today) / Guarantee Days) less than the minimum shelf life, unless you select "Show All"</entry> 
+</row> 
+<row> 
+ <entry>Credit Limit</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total outstanding invoice amounts allowed</entry> 
+<entry>The Credit Limit indicates the total amount allowed "on account" in primary accounting currency.  If the Credit Limit is 0, no check is performed.  Credit Management is based on the Total Open Amount, which includes Vendor activities.</entry> 
+</row> 
+<row> 
+ <entry>Credit Used</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Current open balance</entry> 
+<entry>The Credit Used indicates the total amount of open or unpaid invoices in primary accounting currency for the Business Partner. Credit Management is based on the Total Open Amount, which includes Vendor activities.</entry> 
+</row> 
+<row> 
+ <entry>Dunning Grace Date</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Customer Profile ID</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Transação</entry><entry>Lista</entry> 
+<entry>Consumidor Final
+Exportação Indireta
+Exportação
+Importação
+Uso Interno
+Industrialização
+Outros
+Remessa
+Revenda
+Transferência</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Transaction Type</entry> 
+<entry>Defines the Transaction Type</entry> 
+</row> 
+<row> 
+ <entry>Categoria do Cliente (CFOP)</entry><entry>Tabela</entry> 
+<entry>LBR_BPartnerCategory</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Customer Category</entry> 
+<entry>Defines the Customer Category</entry> 
+</row> 
+<row> 
+ <entry>Grupo de Tributação (Cliente)</entry><entry>Tabela</entry> 
+<entry>LBR_FiscalGroup_BPartner</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Fiscal Group - Customer</entry> 
+<entry>Defines the Fiscal Group - Customer</entry> 
+</row> 
+<row> 
+ <entry>Observação Nota Fiscal</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Description Printed on Nota Fiscal</entry> 
+<entry>Description Printed on Nota Fiscal</entry> 
+</row> 
+<row> 
+ <entry>Cobrança Bloqueada (Boleto/CNAB)</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Fornecedor - C_BPartner</title> 
+ 
+<ulink url="data/C_BPartner_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir Parâmetros de Fornecedor</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Fornecedor" define um Parceiro de Negócios que é um fornecedor desta organização.  Se a caixa de verificação "Fornecedor" for selecionada, então os campos necessários serão mostrados.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Business Partner </para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Vendor Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Isento de Imposto (Compras)</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business partner is exempt from tax on purchases</entry> 
+<entry>If a business partner is exempt from tax on purchases, the exempt tax rate is used. For this, you need to set up a tax rate with a 0% rate and indicate that this is your tax exempt rate.  This is required for tax reporting, so that you can track tax exempt transactions.</entry> 
+</row> 
+<row> 
+ <entry>Open Balance</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Open Balance Amount in primary Accounting Currency</entry> 
+<entry>The Total Open Balance Amount is the calculated open item amount for Customer and Vendor activity.  If the Balance is below zero, we owe the Business Partner.  The amount is used for Credit Management.
+Invoices and Payment Allocations determine the Open Balance (i.e. not Orders or Payments).</entry> 
+</row> 
+<row> 
+ <entry>Carência de Cobrança</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Taxa Grupo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ctaxgroup_cbpartner</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Logo</entry><entry>Imagem</entry> 
+<entry></entry> 
+<entry valign="middle">logo_cbpartner</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Business Partner </entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>ID do Perfil do Cliente</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Parceiro</entry><entry>Lista</entry> 
+<entry>PF - Pessoa Física
+PJ - Pessoa Jurídica</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @lbr_BPTypeBRIsValid='Y' </entry> 
+<entry valign="middle">Brazilian BP Type (Identifies if the BP is a Legal Entity or an Individual)</entry> 
+<entry>Used to identify if the Business partner is a legal entity or an individual</entry> 
+</row> 
+<row> 
+ <entry>CNPJ</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @lbr_BPTypeBRIsValid@='Y' </entry> 
+<entry valign="middle">Used to identify Legal Entities in Brazil</entry> 
+<entry>&lt;
+a href="http://www.serasa.com.br" target="_blank"&gt;
+Serasa&lt;
+/a&gt;
+
+&lt;
+a href="http://www.sintegra.gov.br" target="_blank"&gt;
+Sintegra&lt;
+/a&gt;
+
+&lt;
+a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+CCFácil&lt;
+/a&gt;
+
+&lt;
+a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+Receita &lt;
+/a&gt;
+
+&lt;
+a href="http://www.sci.com.br/" target="_blank"&gt;
+Equifax (SCI)&lt;
+/a&gt;
+
+&lt;
+a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+Simples Nacional&lt;
+/a&gt;
+</entry> 
+</row> 
+<row> 
+ <entry>CPF</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @lbr_BPTypeBRIsValid@='Y' </entry> 
+<entry valign="middle">Used to identify individuals in Brazil</entry> 
+<entry>&lt;
+a href="http://www.serasa.com.br" target="_blank"&gt;
+Serasa&lt;
+/a&gt;
+
+&lt;
+a href="http://www.sintegra.gov.br" target="_blank"&gt;
+Sintegra&lt;
+/a&gt;
+
+&lt;
+a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+CCFácil&lt;
+/a&gt;
+
+&lt;
+a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+Receita &lt;
+/a&gt;
+
+&lt;
+a href="http://www.sci.com.br/" target="_blank"&gt;
+Equifax (SCI)&lt;
+/a&gt;
+
+&lt;
+a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+Simples Nacional&lt;
+/a&gt;
+</entry> 
+</row> 
+<row> 
+ <entry>RG</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Used to identify individuals in Brazil</entry> 
+<entry>Used to identify individuals in Brazil</entry> 
+</row> 
+<row> 
+ <entry>CCM</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">City Identification Code used in Brazil (City Tax ID)</entry> 
+<entry>City Identification Code used in Brazil (City Tax ID)</entry> 
+</row> 
+<row> 
+ <entry>Suframa</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Brazilian SUFRAMA Identification Number</entry> 
+<entry>Brazilian SUFRAMA Identification Number</entry> 
+</row> 
+<row> 
+ <entry>IE</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Used to Identify the IE (State Tax ID)</entry> 
+<entry>Used to Identify the IE (State Tax ID)</entry> 
+</row> 
+<row> 
+ <entry>Parceiro Válido</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Brazilian BP is Valid</entry> 
+<entry>Indicates that the CNPJ or CPF is valid and there are no duplicates in the database. It is not possible to change the CNPJ or CPF after the validation.</entry> 
+</row> 
+<row> 
+ <entry>Categoria do Cliente (CFOP)</entry><entry>Tabela</entry> 
+<entry>LBR_BPartnerCategory</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Customer Category</entry> 
+<entry>Defines the Customer Category</entry> 
+</row> 
+<row> 
+ <entry>Grupo de Tributação (Cliente)</entry><entry>Tabela</entry> 
+<entry>LBR_FiscalGroup_BPartner</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Fiscal Group - Customer</entry> 
+<entry>Defines the Fiscal Group - Customer</entry> 
+</row> 
+<row> 
+ <entry>Observação Nota Fiscal</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Description Printed on Nota Fiscal</entry> 
+<entry>Description Printed on Nota Fiscal</entry> 
+</row> 
+<row> 
+ <entry>Substituição Tributária</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines if the record has Substituion</entry> 
+<entry>Defines if the record has Substituion</entry> 
+</row> 
+<row> 
+ <entry>Description</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Sales Volume in 1.000</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Volume of Sales in Thousands of Currency</entry> 
+<entry>The Sales Volume indicates the total volume of sales for a Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Reference No</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Your customer or vendor number at the Business Partner's site</entry> 
+<entry>The reference number can be printed on orders and invoices to allow your business partner to faster identify your records.</entry> 
+</row> 
+<row> 
+ <entry>D-U-N-S</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Dun %26 Bradstreet Number</entry> 
+<entry>Used for EDI - For details see   www.dnb.com/dunsno/list.htm</entry> 
+</row> 
+<row> 
+ <entry>Employees</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of employees</entry> 
+<entry>Indicates the number of employees for this Business Partner.  This field displays only for Prospects.</entry> 
+</row> 
+<row> 
+ <entry>Tax ID</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Tax Identification</entry> 
+<entry>The Tax ID field identifies the legal Identification number of this Entity.</entry> 
+</row> 
+<row> 
+ <entry>NAICS/SIC</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Standard Industry Code or its successor NAIC - http://www.osha.gov/oshstats/sicser.html</entry> 
+<entry>The NAICS/SIC identifies either of these codes that may be applicable to this Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Summary Level</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a summary entity</entry> 
+<entry>A summary entity represents a branch in a tree rather than an end-node. Summary entities are used for reporting and do not have own values.</entry> 
+</row> 
+<row> 
+ <entry>Language</entry><entry>Tabela</entry> 
+<entry>AD_Language System</entry> 
+<entry valign="middle">ad_language_c_buspartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Language for this entity</entry> 
+<entry>The Language identifies the language to use for display and formatting</entry> 
+</row> 
+<row> 
+ <entry>Customer</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if this Business Partner is a Customer</entry> 
+<entry>The Customer checkbox indicates if this Business Partner is a customer.  If it is select additional fields will display which further define this customer.</entry> 
+</row> 
+<row> 
+ <entry>Invoice Schedule</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cinvoiceschedule_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schedule for generating Invoices</entry> 
+<entry>The Invoice Schedule identifies the frequency used when generating invoices.</entry> 
+</row> 
+<row> 
+ <entry>Prospect</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates this is a Prospect</entry> 
+<entry>The Prospect checkbox indicates an entity that is an active prospect.</entry> 
+</row> 
+<row> 
+ <entry>First Sale</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date of First Sale</entry> 
+<entry>The First Sale Date identifies the date of the first sale to this Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Credit Limit</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total outstanding invoice amounts allowed</entry> 
+<entry>The Credit Limit indicates the total amount allowed "on account" in primary accounting currency.  If the Credit Limit is 0, no check is performed.  Credit Management is based on the Total Open Amount, which includes Vendor activities.</entry> 
+</row> 
+<row> 
+ <entry>Credit Used</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Current open balance</entry> 
+<entry>The Credit Used indicates the total amount of open or unpaid invoices in primary accounting currency for the Business Partner. Credit Management is based on the Total Open Amount, which includes Vendor activities.</entry> 
+</row> 
+<row> 
+ <entry>Acquisition Cost</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The cost of gaining the prospect as a customer</entry> 
+<entry>The Acquisition Cost identifies the cost associated with making this prospect a customer.</entry> 
+</row> 
+<row> 
+ <entry>Potential Life Time Value</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Revenue expected</entry> 
+<entry>The Potential Life Time Value is the anticipated revenue in primary accounting currency to be generated by the Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Payment Term</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm Sales</entry> 
+<entry valign="middle">cpaymentterm_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">The terms of Payment (timing, discount)</entry> 
+<entry>Payment Terms identify the method and timing of payment.</entry> 
+</row> 
+<row> 
+ <entry>Actual Life Time Value</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Actual Life Time Revenue</entry> 
+<entry>The Actual Life Time Value is the recorded revenue in primary accounting currency generated by the Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Share</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Share of Customer's business as a percentage</entry> 
+<entry>The Share indicates the percentage of this Business Partner's volume of the products supplied.</entry> 
+</row> 
+<row> 
+ <entry>Employee</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if  this Business Partner is an employee</entry> 
+<entry>The Employee checkbox indicates if this Business Partner is an Employee.  If it is selected, additional fields will display which further identify this employee.</entry> 
+</row> 
+<row> 
+ <entry>Price List</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mpricelist_cbpartner</entry> 
+<entry>M_PriceList.IsSOPriceList = 'Y'  AND (SELECT COUNT(*) FROM M_PriceList_Version WHERE M_PriceList.M_PriceList_ID=M_PriceList_Version.M_PriceList_ID AND M_PriceList_Version.IsActive='Y')&gt;
+0 </entry> 
+<entry valign="middle">Unique identifier of a Price List</entry> 
+<entry>Price Lists are used to determine the pricing, margin and cost of items purchased or sold.</entry> 
+</row> 
+<row> 
+ <entry>One time transaction</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>URL</entry><entry>URL</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Full URL address - e.g. http://www.idempiere.org</entry> 
+<entry>The URL defines an fully qualified web address like http://www.idempiere.org</entry> 
+</row> 
+<row> 
+ <entry>SO Tax exempt</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business partner is exempt from tax on sales</entry> 
+<entry>If a business partner is exempt from tax on sales, the exempt tax rate is used. For this, you need to set up a tax rate with a 0% rate and indicate that this is your tax exempt rate.  This is required for tax reporting, so that you can track tax exempt transactions.</entry> 
+</row> 
+<row> 
+ <entry>Rating</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Classification or Importance</entry> 
+<entry>The Rating is used to differentiate the importance</entry> 
+</row> 
+<row> 
+ <entry>Payment Rule</entry><entry>Lista</entry> 
+<entry>Dinheiro
+Débito Direto
+Cartão de Crédito
+Mixed
+Em Crédito
+Cheque
+Depósito Direto
+(P)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Ref_List.Value &lt;
+&gt;
+ 'M' </entry> 
+<entry valign="middle">How you pay the invoice</entry> 
+<entry>The Payment Rule indicates the method of invoice payment.</entry> 
+</row> 
+<row> 
+ <entry>Dunning</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cdunning_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Dunning Rules for overdue invoices</entry> 
+<entry>The Dunning indicates the rules and method of dunning for past due payments.</entry> 
+</row> 
+<row> 
+ <entry>Document Copies</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of copies to be printed</entry> 
+<entry>The Document Copies indicates the number of copies of each document that will be generated.</entry> 
+</row> 
+<row> 
+ <entry>Order Reference</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Transaction Reference Number (Sales Order, Purchase Order) of your Business Partner</entry> 
+<entry>The business partner order reference is the order reference for this specific transaction;
+ Often Purchase Order numbers are given to print on Invoices for easier reference.  A standard number can be defined in the Business Partner (Customer) window.</entry> 
+</row> 
+<row> 
+ <entry>Name 2</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Additional Name</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Greeting</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cgreeting_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Greeting to print on correspondence</entry> 
+<entry>The Greeting identifies the greeting to print on correspondence.</entry> 
+</row> 
+<row> 
+ <entry>Discount Printed</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Print Discount on Invoice and Order</entry> 
+<entry>The Discount Printed Checkbox indicates if the discount will be printed on the document.</entry> 
+</row> 
+<row> 
+ <entry>Order Description</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Description to be used on orders</entry> 
+<entry>The Order Description identifies the standard description to use on orders for this Customer.</entry> 
+</row> 
+<row> 
+ <entry>Invoice Rule</entry><entry>Lista</entry> 
+<entry>Após Entrega
+Imediato
+Após pedido despachado
+Programação do Cliente após entrega</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Frequency and method of invoicing </entry> 
+<entry>The Invoice Rule defines how a Business Partner is invoiced and the frequency of invoicing.</entry> 
+</row> 
+<row> 
+ <entry>Delivery Rule</entry><entry>Lista</entry> 
+<entry>Disponibilidade
+Forçar
+Linha Completa
+Manual
+Pedido Completo
+Após o recebimento</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the timing of Delivery</entry> 
+<entry>The Delivery Rule indicates when an order should be delivered. For example should the order be delivered when the entire order is complete, when a line is complete or as the products become available.</entry> 
+</row> 
+<row> 
+ <entry>Sales Representative</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry valign="middle">adusersalesrep_cbpartner</entry> 
+<entry>EXISTS (SELECT * FROM C_BPartner bp WHERE AD_User.C_BPartner_ID=bp.C_BPartner_ID AND bp.IsSalesRep='Y') </entry> 
+<entry valign="middle">Sales Representative or Company Agent</entry> 
+<entry>The Sales Representative indicates the Sales Rep for this Region.  Any Sales Rep must be a valid internal user.</entry> 
+</row> 
+<row> 
+ <entry>Freight Cost Rule</entry><entry>Lista</entry> 
+<entry>Calculado
+Freight excluded
+Preço fixo
+Frete incluso
+Linha
+(I)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method for charging Freight</entry> 
+<entry>The Freight Cost Rule indicates the method used when charging for freight.</entry> 
+</row> 
+<row> 
+ <entry>Delivery Via</entry><entry>Lista</entry> 
+<entry>Entrega
+Retirar
+Transportadora</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">How the order will be delivered</entry> 
+<entry>The Delivery Via indicates how the products should be delivered. For example, will the order be picked up or shipped.</entry> 
+</row> 
+<row> 
+ <entry>Business Partner Group</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cbpgroup_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Group</entry> 
+<entry>The Business Partner Group provides a method of defining defaults to be used for individual Business Partners.</entry> 
+</row> 
+<row> 
+ <entry>Discount Schema</entry><entry>Tabela</entry> 
+<entry>M_DiscountSchema not PL</entry> 
+<entry valign="middle">mdiscounts_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schema to calculate the trade discount percentage</entry> 
+<entry>After calculation of the (standard) price, the trade discount percentage is calculated and applied resulting in the final price.</entry> 
+</row> 
+<row> 
+ <entry>Send EMail</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Enable sending Document EMail</entry> 
+<entry>Send emails with document attached (e.g. Invoice, Delivery Note, etc.)</entry> 
+</row> 
+<row> 
+ <entry>Partner Parent</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartner_cpbartnerparent</entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Parent</entry> 
+<entry>The parent (organization) of the Business Partner for reporting purposes.</entry> 
+</row> 
+<row> 
+ <entry>Invoice Print Format</entry><entry>Tabela</entry> 
+<entry>AD_PrintFormat Invoice</entry> 
+<entry valign="middle">adprintformatinv_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Print Format for printing Invoices</entry> 
+<entry>You need to define a Print Format to print the document.</entry> 
+</row> 
+<row> 
+ <entry>Credit Status</entry><entry>Lista</entry> 
+<entry>Segurar Crédito
+Crédito OK
+Cancelar Crédito
+Observar Crédito
+Sem Verificação de Crédito
+('H')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Credit Status</entry> 
+<entry>Credit Management is inactive if Credit Status is No Credit Check, Credit Stop or if the Credit Limit is 0.
+If active, the status is set automatically set to Credit Hold, if the Total Open Balance (including Vendor activities)  is higher then the Credit Limit. It is set to Credit Watch, if above 90% of the Credit Limit and Credit OK otherwise.</entry> 
+</row> 
+<row> 
+ <entry>Min Shelf Life %</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Minimum Shelf Life in percent based on Product Instance Guarantee Date</entry> 
+<entry>Minimum Shelf Life of products with Guarantee Date instance. If &gt;
+ 0 you cannot select products with a shelf life ((Guarantee Date-Today) / Guarantee Days) less than the minimum shelf life, unless you select "Show All"</entry> 
+</row> 
+<row> 
+ <entry>Link Organization</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle">adorg_cbpartnerorg</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @AD_OrgBP_ID@!0 </entry> 
+<entry valign="middle">The Business Partner is another Organization for explicit Inter-Org transactions</entry> 
+<entry>The business partner is another organization in the system. So when performing transactions, the counter-document is created automatically. Example: You have BPartnerA linked to OrgA and BPartnerB linked to OrgB.  If you create a sales order for BPartnerB in OrgA a purchase order is created for BPartnerA in OrgB.  This allows to have explicit documents for Inter-Org transactions.</entry> 
+</row> 
+<row> 
+ <entry>Flat Discount %</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Flat discount percentage </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Client</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">adclient_cbpartner</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organization</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">adorg_cbpartner</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Search Key</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Name</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Active</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Vendor</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if this Business Partner is a Vendor</entry> 
+<entry>The Vendor checkbox indicates if this Business Partner is a Vendor.  If it is selected, additional fields will display which further identify this vendor.</entry> 
+</row> 
+<row> 
+ <entry>Sales Representative</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if  the business partner is a sales representative or company agent</entry> 
+<entry>The Sales Rep checkbox indicates if this business partner is a sales representative. A sales representative may also be an employee, but does not need to be.</entry> 
+</row> 
+<row> 
+ <entry>Payment Rule</entry><entry>Lista</entry> 
+<entry>Dinheiro
+Débito Direto
+Cartão de Crédito
+Mixed
+Em Crédito
+Cheque
+Depósito Direto</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Ref_List.Value &lt;
+&gt;
+ 'B' AND AD_Ref_List.Value &lt;
+&gt;
+ 'M' </entry> 
+<entry valign="middle">Purchase payment option</entry> 
+<entry>The Payment Rule indicates the method of purchase payment.</entry> 
+</row> 
+<row> 
+ <entry>PO Payment Term</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm Purchases</entry> 
+<entry valign="middle">cpopaymentterm_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Payment rules for a purchase order</entry> 
+<entry>The PO Payment Term indicates the payment term that will be used when this purchase order becomes an invoice.</entry> 
+</row> 
+<row> 
+ <entry>Purchase Pricelist</entry><entry>Tabela</entry> 
+<entry>M_PriceList</entry> 
+<entry valign="middle">mpricelistpo_cbuspartner</entry> 
+<entry>M_PriceList.IsSOPriceList = 'N'  AND (SELECT COUNT(*) FROM M_PriceList_Version WHERE M_PriceList.M_PriceList_ID=M_PriceList_Version.M_PriceList_ID AND M_PriceList_Version.IsActive='Y')&gt;
+0 </entry> 
+<entry valign="middle">Price List used by this Business Partner</entry> 
+<entry>Identifies the price list used by a Vendor for products purchased by this organization.</entry> 
+</row> 
+<row> 
+ <entry>PO Discount Schema</entry><entry>Tabela</entry> 
+<entry>M_DiscountSchema not PL</entry> 
+<entry valign="middle">mdiscountspo_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schema to calculate the purchase trade discount percentage</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Is Manufacturer</entry><entry>Sim-Não</entry> 
+<entry>('N')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicate role of this Business partner as Manufacturer</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>1099 Vendor</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Default 1099 Box</entry><entry>Tabela</entry> 
+<entry>ASU_1099Box</entry> 
+<entry valign="middle">default1099box_cbpartner</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Transação</entry><entry>Lista</entry> 
+<entry>Consumidor Final
+Exportação Indireta
+Exportação
+Importação
+Uso Interno
+Industrialização
+Outros
+Remessa
+Revenda
+Transferência</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Transaction Type</entry> 
+<entry>Defines the Transaction Type</entry> 
+</row> 
+<row> 
+ <entry>Categoria do Fornecedor (CFOP)</entry><entry>Tabela</entry> 
+<entry>LBR_BPartnerCategory</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Vendor Category</entry> 
+<entry>Defines the Vendor Category</entry> 
+</row> 
+<row> 
+ <entry>Grupo de Tributação (Fornecedor)</entry><entry>Tabela</entry> 
+<entry>LBR_FiscalGroup_BPartner</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Fiscal Group - Vendor</entry> 
+<entry>Defines the Fiscal Group - Vendor</entry> 
+</row> 
+<row> 
+ <entry>Modelo da NF</entry><entry>Lista</entry> 
+<entry>00 - Nota Fiscal Serviço
+01 - Nota Fiscal
+02 - Nota Fiscal de Venda a Consumidor
+04 - Nota Fiscal de Produtor
+06 - Nota Fiscal/Conta de Energia Elétrica
+07 - Nota Fiscal de Serviço de Transporte
+08 - Conhecimento de Transporte Rodoviário de Cargas
+09 - Conhecimento de Transporte Aquaviário de Cargas
+10 - Conhecimento Aéreo
+11 - Conhecimento de Transporte Ferroviário de Cargas
+13 - Bilhete de Passagem Rodoviário
+14 - Bilhete de Passagem Aquaviário
+15 - Bilhete de Passagem e Nota de Bagagem
+16 - Bilhete de Passagem Ferroviário
+17 - Despacho de Transporte
+18 - Resumo de Movimento Diário
+1B - Nota Fiscal Avulsa
+20 - Ordem de Coleta de Cargas
+21 - Nota Fiscal de Serviço de Comunicação
+22 - Nota Fiscal de Serviço de Telecomunicação
+23 - GNRE
+24 - Autorização de Carregamento e Transporte
+25 - Manifesto de Carga
+26 - Conhecimento de Transporte Multimodal de Cargas
+27 - Nota Fiscal de Transporte Ferroviário de Cargas
+28 - Nota Fiscal/Conta de Fornecimento de Gás Canalizado
+29 - Nota Fiscal/Conta de Fornecimento de Água Canalizada
+2D - Cupom Fiscal emitido por ECF
+2E - Bilhete de Passagem emitido por ECF
+30 - Bilhete/Recibo do Passageiro
+55 - Nota Fiscal Eletrônica
+57 - Conhecimento de Transporte Eletrônico – CT-e
+59 - Cupom Fiscal Eletrônico – CF-e-SAT
+60 - Cupom Fiscal Eletrônico CF-e - ECD
+65 - Nota Fiscal Eletrônica ao Consumidor Final – NFC-e
+8B - Conhecimento de Transporte de Cargas Avulso</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies the model of Nota Fiscal</entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Funcionário - C_BPartner</title> 
+ 
+<ulink url="data/C_BPartner_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir Parâmetros de Funcionário</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Funcionário" define um Parceiro de Negócios que é um Funcionário desta organização.  Se o Funcionário for também um Representante de Vendas então a caixa de verificação correspondente deve ser selecionada.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Business Partner </para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Employee Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Freight Cost Rule</entry><entry>Lista</entry> 
+<entry>Calculado
+Freight excluded
+Preço fixo
+Frete incluso
+Linha
+(I)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method for charging Freight</entry> 
+<entry>The Freight Cost Rule indicates the method used when charging for freight.</entry> 
+</row> 
+<row> 
+ <entry>Discount Schema</entry><entry>Tabela</entry> 
+<entry>M_DiscountSchema not PL</entry> 
+<entry valign="middle">mdiscounts_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schema to calculate the trade discount percentage</entry> 
+<entry>After calculation of the (standard) price, the trade discount percentage is calculated and applied resulting in the final price.</entry> 
+</row> 
+<row> 
+ <entry>PO Discount Schema</entry><entry>Tabela</entry> 
+<entry>M_DiscountSchema not PL</entry> 
+<entry valign="middle">mdiscountspo_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schema to calculate the purchase trade discount percentage</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Send EMail</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Enable sending Document EMail</entry> 
+<entry>Send emails with document attached (e.g. Invoice, Delivery Note, etc.)</entry> 
+</row> 
+<row> 
+ <entry>Partner Parent</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartner_cpbartnerparent</entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Parent</entry> 
+<entry>The parent (organization) of the Business Partner for reporting purposes.</entry> 
+</row> 
+<row> 
+ <entry>Invoice Print Format</entry><entry>Tabela</entry> 
+<entry>AD_PrintFormat Invoice</entry> 
+<entry valign="middle">adprintformatinv_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Print Format for printing Invoices</entry> 
+<entry>You need to define a Print Format to print the document.</entry> 
+</row> 
+<row> 
+ <entry>Credit Status</entry><entry>Lista</entry> 
+<entry>Segurar Crédito
+Crédito OK
+Cancelar Crédito
+Observar Crédito
+Sem Verificação de Crédito
+('H')</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Credit Status</entry> 
+<entry>Credit Management is inactive if Credit Status is No Credit Check, Credit Stop or if the Credit Limit is 0.
+If active, the status is set automatically set to Credit Hold, if the Total Open Balance (including Vendor activities)  is higher then the Credit Limit. It is set to Credit Watch, if above 90% of the Credit Limit and Credit OK otherwise.</entry> 
+</row> 
+<row> 
+ <entry>Min Shelf Life %</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Minimum Shelf Life in percent based on Product Instance Guarantee Date</entry> 
+<entry>Minimum Shelf Life of products with Guarantee Date instance. If &gt;
+ 0 you cannot select products with a shelf life ((Guarantee Date-Today) / Guarantee Days) less than the minimum shelf life, unless you select "Show All"</entry> 
+</row> 
+<row> 
+ <entry>Link Organization</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle">adorg_cbpartnerorg</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @AD_OrgBP_ID@!0 </entry> 
+<entry valign="middle">The Business Partner is another Organization for explicit Inter-Org transactions</entry> 
+<entry>The business partner is another organization in the system. So when performing transactions, the counter-document is created automatically. Example: You have BPartnerA linked to OrgA and BPartnerB linked to OrgB.  If you create a sales order for BPartnerB in OrgA a purchase order is created for BPartnerA in OrgB.  This allows to have explicit documents for Inter-Org transactions.</entry> 
+</row> 
+<row> 
+ <entry>Flat Discount %</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Flat discount percentage </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Open Balance</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Open Balance Amount in primary Accounting Currency</entry> 
+<entry>The Total Open Balance Amount is the calculated open item amount for Customer and Vendor activity.  If the Balance is below zero, we owe the Business Partner.  The amount is used for Credit Management.
+Invoices and Payment Allocations determine the Open Balance (i.e. not Orders or Payments).</entry> 
+</row> 
+<row> 
+ <entry>Description</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Sales Volume in 1.000</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Volume of Sales in Thousands of Currency</entry> 
+<entry>The Sales Volume indicates the total volume of sales for a Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Reference No</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Your customer or vendor number at the Business Partner's site</entry> 
+<entry>The reference number can be printed on orders and invoices to allow your business partner to faster identify your records.</entry> 
+</row> 
+<row> 
+ <entry>D-U-N-S</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Dun %26 Bradstreet Number</entry> 
+<entry>Used for EDI - For details see   www.dnb.com/dunsno/list.htm</entry> 
+</row> 
+<row> 
+ <entry>Employees</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of employees</entry> 
+<entry>Indicates the number of employees for this Business Partner.  This field displays only for Prospects.</entry> 
+</row> 
+<row> 
+ <entry>Tax ID</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Tax Identification</entry> 
+<entry>The Tax ID field identifies the legal Identification number of this Entity.</entry> 
+</row> 
+<row> 
+ <entry>NAICS/SIC</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Standard Industry Code or its successor NAIC - http://www.osha.gov/oshstats/sicser.html</entry> 
+<entry>The NAICS/SIC identifies either of these codes that may be applicable to this Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Summary Level</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a summary entity</entry> 
+<entry>A summary entity represents a branch in a tree rather than an end-node. Summary entities are used for reporting and do not have own values.</entry> 
+</row> 
+<row> 
+ <entry>Language</entry><entry>Tabela</entry> 
+<entry>AD_Language System</entry> 
+<entry valign="middle">ad_language_c_buspartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Language for this entity</entry> 
+<entry>The Language identifies the language to use for display and formatting</entry> 
+</row> 
+<row> 
+ <entry>Vendor</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if this Business Partner is a Vendor</entry> 
+<entry>The Vendor checkbox indicates if this Business Partner is a Vendor.  If it is selected, additional fields will display which further identify this vendor.</entry> 
+</row> 
+<row> 
+ <entry>Customer</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if this Business Partner is a Customer</entry> 
+<entry>The Customer checkbox indicates if this Business Partner is a customer.  If it is select additional fields will display which further define this customer.</entry> 
+</row> 
+<row> 
+ <entry>Invoice Schedule</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cinvoiceschedule_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Schedule for generating Invoices</entry> 
+<entry>The Invoice Schedule identifies the frequency used when generating invoices.</entry> 
+</row> 
+<row> 
+ <entry>Prospect</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates this is a Prospect</entry> 
+<entry>The Prospect checkbox indicates an entity that is an active prospect.</entry> 
+</row> 
+<row> 
+ <entry>First Sale</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date of First Sale</entry> 
+<entry>The First Sale Date identifies the date of the first sale to this Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Credit Limit</entry><entry>Valor</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total outstanding invoice amounts allowed</entry> 
+<entry>The Credit Limit indicates the total amount allowed "on account" in primary accounting currency.  If the Credit Limit is 0, no check is performed.  Credit Management is based on the Total Open Amount, which includes Vendor activities.</entry> 
+</row> 
+<row> 
+ <entry>Credit Used</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Current open balance</entry> 
+<entry>The Credit Used indicates the total amount of open or unpaid invoices in primary accounting currency for the Business Partner. Credit Management is based on the Total Open Amount, which includes Vendor activities.</entry> 
+</row> 
+<row> 
+ <entry>Acquisition Cost</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The cost of gaining the prospect as a customer</entry> 
+<entry>The Acquisition Cost identifies the cost associated with making this prospect a customer.</entry> 
+</row> 
+<row> 
+ <entry>Potential Life Time Value</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Revenue expected</entry> 
+<entry>The Potential Life Time Value is the anticipated revenue in primary accounting currency to be generated by the Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Payment Term</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm Sales</entry> 
+<entry valign="middle">cpaymentterm_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">The terms of Payment (timing, discount)</entry> 
+<entry>Payment Terms identify the method and timing of payment.</entry> 
+</row> 
+<row> 
+ <entry>Actual Life Time Value</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Actual Life Time Revenue</entry> 
+<entry>The Actual Life Time Value is the recorded revenue in primary accounting currency generated by the Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Share</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Share of Customer's business as a percentage</entry> 
+<entry>The Share indicates the percentage of this Business Partner's volume of the products supplied.</entry> 
+</row> 
+<row> 
+ <entry>Price List</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mpricelist_cbpartner</entry> 
+<entry>M_PriceList.IsSOPriceList = 'Y'  AND (SELECT COUNT(*) FROM M_PriceList_Version WHERE M_PriceList.M_PriceList_ID=M_PriceList_Version.M_PriceList_ID AND M_PriceList_Version.IsActive='Y')&gt;
+0 </entry> 
+<entry valign="middle">Unique identifier of a Price List</entry> 
+<entry>Price Lists are used to determine the pricing, margin and cost of items purchased or sold.</entry> 
+</row> 
+<row> 
+ <entry>Purchase Pricelist</entry><entry>Tabela</entry> 
+<entry>M_PriceList</entry> 
+<entry valign="middle">mpricelistpo_cbuspartner</entry> 
+<entry>M_PriceList.IsSOPriceList = 'N'  AND (SELECT COUNT(*) FROM M_PriceList_Version WHERE M_PriceList.M_PriceList_ID=M_PriceList_Version.M_PriceList_ID AND M_PriceList_Version.IsActive='Y')&gt;
+0 </entry> 
+<entry valign="middle">Price List used by this Business Partner</entry> 
+<entry>Identifies the price list used by a Vendor for products purchased by this organization.</entry> 
+</row> 
+<row> 
+ <entry>One time transaction</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>URL</entry><entry>URL</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Full URL address - e.g. http://www.idempiere.org</entry> 
+<entry>The URL defines an fully qualified web address like http://www.idempiere.org</entry> 
+</row> 
+<row> 
+ <entry>SO Tax exempt</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Business partner is exempt from tax on sales</entry> 
+<entry>If a business partner is exempt from tax on sales, the exempt tax rate is used. For this, you need to set up a tax rate with a 0% rate and indicate that this is your tax exempt rate.  This is required for tax reporting, so that you can track tax exempt transactions.</entry> 
+</row> 
+<row> 
+ <entry>Rating</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Classification or Importance</entry> 
+<entry>The Rating is used to differentiate the importance</entry> 
+</row> 
+<row> 
+ <entry>Payment Rule</entry><entry>Lista</entry> 
+<entry>Dinheiro
+Débito Direto
+Cartão de Crédito
+Mixed
+Em Crédito
+Cheque
+Depósito Direto
+(P)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Ref_List.Value &lt;
+&gt;
+ 'M' </entry> 
+<entry valign="middle">How you pay the invoice</entry> 
+<entry>The Payment Rule indicates the method of invoice payment.</entry> 
+</row> 
+<row> 
+ <entry>Dunning</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cdunning_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Dunning Rules for overdue invoices</entry> 
+<entry>The Dunning indicates the rules and method of dunning for past due payments.</entry> 
+</row> 
+<row> 
+ <entry>Document Copies</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of copies to be printed</entry> 
+<entry>The Document Copies indicates the number of copies of each document that will be generated.</entry> 
+</row> 
+<row> 
+ <entry>Payment Rule</entry><entry>Lista</entry> 
+<entry>Dinheiro
+Débito Direto
+Cartão de Crédito
+Mixed
+Em Crédito
+Cheque
+Depósito Direto</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Ref_List.Value &lt;
+&gt;
+ 'B' AND AD_Ref_List.Value &lt;
+&gt;
+ 'M' </entry> 
+<entry valign="middle">Purchase payment option</entry> 
+<entry>The Payment Rule indicates the method of purchase payment.</entry> 
+</row> 
+<row> 
+ <entry>Order Reference</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Transaction Reference Number (Sales Order, Purchase Order) of your Business Partner</entry> 
+<entry>The business partner order reference is the order reference for this specific transaction;
+ Often Purchase Order numbers are given to print on Invoices for easier reference.  A standard number can be defined in the Business Partner (Customer) window.</entry> 
+</row> 
+<row> 
+ <entry>Name 2</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Additional Name</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Greeting</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cgreeting_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Greeting to print on correspondence</entry> 
+<entry>The Greeting identifies the greeting to print on correspondence.</entry> 
+</row> 
+<row> 
+ <entry>Discount Printed</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Print Discount on Invoice and Order</entry> 
+<entry>The Discount Printed Checkbox indicates if the discount will be printed on the document.</entry> 
+</row> 
+<row> 
+ <entry>Order Description</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Description to be used on orders</entry> 
+<entry>The Order Description identifies the standard description to use on orders for this Customer.</entry> 
+</row> 
+<row> 
+ <entry>Invoice Rule</entry><entry>Lista</entry> 
+<entry>Após Entrega
+Imediato
+Após pedido despachado
+Programação do Cliente após entrega</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Frequency and method of invoicing </entry> 
+<entry>The Invoice Rule defines how a Business Partner is invoiced and the frequency of invoicing.</entry> 
+</row> 
+<row> 
+ <entry>Delivery Rule</entry><entry>Lista</entry> 
+<entry>Disponibilidade
+Forçar
+Linha Completa
+Manual
+Pedido Completo
+Após o recebimento</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the timing of Delivery</entry> 
+<entry>The Delivery Rule indicates when an order should be delivered. For example should the order be delivered when the entire order is complete, when a line is complete or as the products become available.</entry> 
+</row> 
+<row> 
+ <entry>Sales Representative</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry valign="middle">adusersalesrep_cbpartner</entry> 
+<entry>EXISTS (SELECT * FROM C_BPartner bp WHERE AD_User.C_BPartner_ID=bp.C_BPartner_ID AND bp.IsSalesRep='Y') </entry> 
+<entry valign="middle">Sales Representative or Company Agent</entry> 
+<entry>The Sales Representative indicates the Sales Rep for this Region.  Any Sales Rep must be a valid internal user.</entry> 
+</row> 
+<row> 
+ <entry>Business Partner </entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Delivery Via</entry><entry>Lista</entry> 
+<entry>Entrega
+Retirar
+Transportadora</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">How the order will be delivered</entry> 
+<entry>The Delivery Via indicates how the products should be delivered. For example, will the order be picked up or shipped.</entry> 
+</row> 
+<row> 
+ <entry>Business Partner Group</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cbpgroup_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Business Partner Group</entry> 
+<entry>The Business Partner Group provides a method of defining defaults to be used for individual Business Partners.</entry> 
+</row> 
+<row> 
+ <entry>PO Payment Term</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm Purchases</entry> 
+<entry valign="middle">cpopaymentterm_cbpartner</entry> 
+<entry> </entry> 
+<entry valign="middle">Payment rules for a purchase order</entry> 
+<entry>The PO Payment Term indicates the payment term that will be used when this purchase order becomes an invoice.</entry> 
+</row> 
+<row> 
+ <entry>Client</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">adclient_cbpartner</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organization</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">adorg_cbpartner</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Search Key</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Name</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Active</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Employee</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if  this Business Partner is an employee</entry> 
+<entry>The Employee checkbox indicates if this Business Partner is an Employee.  If it is selected, additional fields will display which further identify this employee.</entry> 
+</row> 
+<row> 
+ <entry>Sales Representative</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if  the business partner is a sales representative or company agent</entry> 
+<entry>The Sales Rep checkbox indicates if this business partner is a sales representative. A sales representative may also be an employee, but does not need to be.</entry> 
+</row> 
+<row> 
+ <entry>Data de Admissão</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data de Demissão</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Observações</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Dossiê Financeiro - COF_C_Dossier</title> 
+ 
+<ulink url="data/COF_C_Dossier_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Dossier Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>COF_C_Dossier_ID</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : Dossier Financial</entry> 
+<entry>Primary Key : Dossier Financial</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">CBPartner_COFCDossier</entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Data do Documento</entry><entry>Data</entry> 
+<entry>(@#Date@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date of the Document</entry> 
+<entry>The Document Date indicates the date the document was generated.  It may or may not be the same as the accounting date.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

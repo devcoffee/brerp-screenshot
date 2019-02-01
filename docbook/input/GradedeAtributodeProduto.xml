@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2006-03-11 11:41:48.0</para><para> <emphasis>Atualizado:</emphasis>2006-03-11 11:41:48.0</para>
+<title>Formulário: Grade de Atributo de Produto</title> 
+ <para><emphasis> Descrição: </emphasis>Gerenciamento de Produtos com Atributos em uma Grade de Tabela</para><para><emphasis>Comentário/Ajuda:</emphasis>Selecione um ou dois atributos de um Atributo de Produto e exiba/gerencie os produto em uma linha ou uma grade de tabela.</para>
+<imagedata fileref="/img/manual/GradedeAtributodeProduto.png" format="PNG" /> </chapter>

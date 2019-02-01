@@ -45,17 +45,17 @@
 <row><entry> </entry><entry>1000045</entry><entry> </entry><entry>100</entry><entry>101</entry><entry>104|DetailPane.Height</entry><entry>W</entry><entry>400px</entry></row>
 <row><entry> </entry><entry>1000044</entry><entry> </entry><entry>100</entry><entry>101</entry><entry>102|DetailPane.Height</entry><entry>W</entry><entry>495px</entry></row>
 <row><entry> </entry><entry>1000049</entry><entry> </entry><entry>100</entry><entry>53026</entry><entry>53087|DetailPane.Height</entry><entry>W</entry><entry>397px</entry></row>
-<row><entry> </entry><entry>1000014</entry><entry> </entry><entry>100</entry><entry> </entry><entry>Language</entry><entry>W</entry><entry>Portuguese (BR)</entry></row>
 <row><entry> </entry><entry>1000050</entry><entry> </entry><entry>100</entry><entry>285</entry><entry>524|DetailPane.Height</entry><entry>W</entry><entry>220px</entry></row>
 <row><entry> </entry><entry>1000051</entry><entry> </entry><entry>100</entry><entry>1000003</entry><entry>1000005|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
 <row><entry> </entry><entry>1000040</entry><entry> </entry><entry>100</entry><entry>250</entry><entry>445|DetailPane.Height</entry><entry>W</entry><entry>527px</entry></row>
 <row><entry> </entry><entry>1000052</entry><entry> </entry><entry>100</entry><entry>1500100</entry><entry>1500272|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
 <row><entry> </entry><entry>1000046</entry><entry> </entry><entry>100</entry><entry>102</entry><entry>107|DetailPane.Height</entry><entry>W</entry><entry>244px</entry></row>
 <row><entry> </entry><entry>5000001</entry><entry> </entry><entry>100</entry><entry>104</entry><entry>109|DetailPane.Height</entry><entry>W</entry><entry>376px</entry></row>
-<row><entry> </entry><entry>1000022</entry><entry> </entry><entry>100</entry><entry> </entry><entry>HelpCollapsed</entry><entry>W</entry><entry>N</entry></row>
 <row><entry> </entry><entry>5000002</entry><entry> </entry><entry>100</entry><entry>110</entry><entry>143|TreePanel.Width</entry><entry>W</entry><entry>300px</entry></row>
 <row><entry> </entry><entry>1000047</entry><entry> </entry><entry>100</entry><entry>151</entry><entry>203|DetailPane.Height</entry><entry>W</entry><entry>197px</entry></row>
+<row><entry> </entry><entry>1000022</entry><entry> </entry><entry>100</entry><entry> </entry><entry>HelpCollapsed</entry><entry>W</entry><entry>Y</entry></row>
 <row><entry> </entry><entry>1000042</entry><entry> </entry><entry>100</entry><entry>102</entry><entry>105|DetailPane.Height</entry><entry>W</entry><entry>360px</entry></row>
+<row><entry> </entry><entry>1000014</entry><entry> </entry><entry>100</entry><entry> </entry><entry>Language</entry><entry>W</entry><entry>Portuguese (BR)</entry></row>
 <row><entry> </entry><entry>5000003</entry><entry> </entry><entry>100</entry><entry>118</entry><entry>153|DetailPane.Height</entry><entry>W</entry><entry>298px</entry></row>
 <row><entry> </entry><entry>5000005</entry><entry> </entry><entry>100</entry><entry>200043</entry><entry>200102|DetailPane.Height</entry><entry>W</entry><entry>197px</entry></row>
 <row><entry> </entry><entry>5000007</entry><entry> </entry><entry>100</entry><entry>1500044</entry><entry>1500173|DetailPane.Height</entry><entry>W</entry><entry>201px</entry></row>
@@ -68,7 +68,6 @@
 <row><entry> </entry><entry>5000014</entry><entry> </entry><entry>100</entry><entry>344</entry><entry>701|DetailPane.Height</entry><entry>W</entry><entry>284px</entry></row>
 <row><entry> </entry><entry>5000016</entry><entry> </entry><entry>100</entry><entry>152</entry><entry>206|TreePanel.Width</entry><entry>W</entry><entry>300px</entry></row>
 <row><entry> </entry><entry>5000017</entry><entry> </entry><entry>100</entry><entry>118</entry><entry>132|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
-<row><entry> </entry><entry>5000004</entry><entry> </entry><entry>100</entry><entry>118</entry><entry>132|TreePanel.Width</entry><entry>W</entry><entry>636px</entry></row>
 <row><entry> </entry><entry>5000018</entry><entry> </entry><entry>100</entry><entry>117</entry><entry>129|DetailPane.Height</entry><entry>W</entry><entry>440px</entry></row>
 <row><entry> </entry><entry>5000019</entry><entry> </entry><entry>100</entry><entry>117</entry><entry>130|DetailPane.Height</entry><entry>W</entry><entry>303px</entry></row>
 <row><entry> </entry><entry>5000025</entry><entry> </entry><entry>100</entry><entry>53124</entry><entry>53339|DetailPane.Height</entry><entry>W</entry><entry>408px</entry></row>
@@ -104,6 +103,7 @@
 <row><entry> </entry><entry>5000074</entry><entry> </entry><entry>100</entry><entry>183</entry><entry>290|DetailPane.IsOpen</entry><entry>W</entry><entry>Y</entry></row>
 <row><entry> </entry><entry>5000072</entry><entry> </entry><entry>100</entry><entry>344</entry><entry>700|DetailPane.IsOpen</entry><entry>W</entry><entry>N</entry></row>
 <row><entry> </entry><entry>5000000</entry><entry> </entry><entry>100</entry><entry>100</entry><entry>101|DetailPane.Height</entry><entry>W</entry><entry>296px</entry></row>
+<row><entry> </entry><entry>5000004</entry><entry> </entry><entry>100</entry><entry>118</entry><entry>132|TreePanel.Width</entry><entry>W</entry><entry>300px</entry></row>
 <row><entry> </entry><entry>5000055</entry><entry> </entry><entry>100</entry><entry>181</entry><entry>293|DetailPane.Height</entry><entry>W</entry><entry>322px</entry></row></tbody>
 </tgroup>
 </table>

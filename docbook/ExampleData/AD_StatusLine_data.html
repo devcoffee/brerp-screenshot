@@ -1,0 +1,337 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Table&nbsp;1.&nbsp;Linha de Estado</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <div class="table" id="d74708e1">
+         <div class="table-title">Table&nbsp;1.&nbsp;Linha de Estado</div>
+         <div class="table-contents">
+            <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+               <colgroup>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+               </colgroup>
+               <tbody>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Mensagem</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Linha de Estado</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Entidade</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SQLStatement</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">828</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">200001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">InvoiceBatchSummary</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT COUNT(*), NVL(SUM(LineNetAmt),0), NVL(SUM(LineTotalAmt),0)
+                        FROM C_InvoiceBatchLine
+                        WHERE C_InvoiceBatch_ID=@C_InvoiceBatch_ID@ AND IsActive='Y'
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">623</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">200003</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ExpenseSummary</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT COUNT(*) AS Lines, SUM(ConvertedAmt*Qty), ' '
+                        FROM S_TimeExpenseLine
+                        WHERE S_TimeExpense_ID=@S_TimeExpense_ID@
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500055</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500002</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0100</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bank Title Summary</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT 
+                        concat(t.cof_titulo_nossonumero, '-' , t.cof_titulo_dignossonumero) :: text as nossonumero,
+                        t.cof_titulo_DataVencimento AS datavencimento,
+                        SUM(t.cof_titulo_Valor) AS valortitulo
+                        FROM COF_Titulo t
+                        WHERE COF_Titulo_ID=@COF_Titulo_ID@
+                        GROUP BY t.cof_titulo_nossonumero, t.cof_titulo_dignossonumero, t.cof_titulo_DataVencimento
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500056</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500003</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0100</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Check Summary</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT 
+                        c.DateTo AS bompara,
+                        c.ChequeNo :: Text AS numerocheque,
+                        c.TotalAmt AS valorcheque
+                        FROM 
+                        COF_C_ControlCheck c
+                        WHERE 
+                        COF_C_ControlCheck_ID=@COF_C_ControlCheck_ID@
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500057</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500004</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0102</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">LoteNFeSummary</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT 
+                        (SELECT COUNT(*) FROM LBR_DocFiscal WHERE LBR_DocFiscal.LBR_NFeLot_ID=@LBR_NFeLot_ID@) AS qtyTot,
+                        (SELECT COUNT(*) FROM LBR_DocFiscal WHERE LBR_DocFiscal.LBR_NFeLot_ID=@LBR_NFeLot_ID@ AND LBR_DocFiscal.lbr_NFeStatus = '100')
+                        AS qtyAut,
+                        (SELECT COUNT(*) FROM LBR_DocFiscal WHERE LBR_DocFiscal.LBR_NFeLot_ID=@LBR_NFeLot_ID@ AND LBR_DocFiscal.lbr_NFeStatus != '100')
+                        AS qtyNotAut
+                        FROM
+                        LBR_DocFiscal 
+                        WHERE 
+                        LBR_DocFiscal.LBR_NFeLot_ID=@LBR_NFeLot_ID@
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500061</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500008</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">JournalSummary</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT 
+                        SUM(COALESCE(AmtAcctDr,0)) AS AmtAcctDr,
+                        SUM(COALESCE(AmtAcctCr,0)) AS AmtAcctCr 
+                        FROM 
+                        GL_JournalLine
+                        WHERE 
+                        GL_Journal_ID=@GL_Journal_ID@
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500063</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500010</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Dunning Entry Details</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT COALESCE(bpl.Phone,'') ,COALESCE(bpl.Phone2,''), COALESCE(bpl.Fax,'') FROM C_BPartner_Location bpl WHERE bpl.C_BPartner_Location_ID
+                        = @C_BPartner_Location_ID@
+                        
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500104</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500011</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Dunning Entry Details2</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT created,amt,note,cof_dunningstatus,cof_datescheduled FROM C_DunningRunEntry WHERE C_BPartner_ID = @C_BPartner_ID@ 
+                        AND C_DunningRunEntry_ID != @C_DunningRunEntry_ID@   ORDER BY created DESC
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500468</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500019</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">QuickInfo_RoteiroProducao</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT COALESCE(p.COF_QtyMinComercial, 0), COALESCE(r.Level_Min, 0)
+                        FROM M_Product p
+                        LEFT JOIN M_Replenish r ON p.M_Product_ID = r.M_Product_ID
+                        WHERE p.M_Product_ID =  @M_Product_ID@
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500506</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500022</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFOpportunity</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT COALESCE(sum(o.grandtotal), 0)
+                        FROM C_Order o
+                        WHERE IsSOTrx = 'Y' AND C_Opportunity_ID = @C_Opportunity_ID@ AND o.DocStatus IN ('CO','CL')
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500008</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0102</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">DocFiscalSummary</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT COUNT(DISTINCT df.LBR_DocFiscal_ID) AS Lines,
+                        df.total_ICMSTotal_VProd,df.total_ICMSTotal_VNF,c.ISO_Code, currencyBase(df.total_ICMSTotal_VNF,df.C_Currency_ID,df.ide_dSaiEnt,
+                        df.AD_Client_ID,df.AD_Org_ID) AS ConvAmt 
+                        FROM LBR_DocFiscal df 
+                        INNER JOIN C_Currency c ON (df.C_Currency_ID =c.C_Currency_ID) 
+                        WHERE df.LBR_DocFiscal_ID=@LBR_DocFiscal_ID@ 
+                        GROUP BY df.C_Currency_ID, c.ISO_Code, df.total_ICMSTotal_VProd, df.total_ICMSTotal_VNF, df.ide_dSaiEnt, df.AD_Client_ID,
+                        df.AD_Org_ID
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500059</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500006</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">OrderSummary (Freight, Discount, Insurance, Others)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT 
+                        SUM(COALESCE((oL.PriceList - oL.PriceEntered)  * oL.QtyEntered,0)) AS discount, 
+                        o.cof_InsuranceAmt, 
+                        o.cof_OtherAmt,
+                        CASE WHEN o.cof_ModFrete = '0' THEN 'Por Conta do Emitente ' WHEN o.cof_ModFrete = '1' THEN 'Por Conta do Destinat&aacute;rio/Remetente'
+                        WHEN o.cof_ModFrete = '2' THEN 'Por Conta de Terceiros'
+                        ELSE 'Sem Frete' END AS ModFrete,
+                        SUM(COALESCE(oL.cof_FreightAmt,0)) AS cof_FreightAmt
+                        
+                        FROM C_Order o 
+                        LEFT JOIN C_OrderLine oL ON (o.C_Order_ID=oL.C_Order_ID)
+                        WHERE o.C_Order_ID=@C_Order_ID@
+                        GROUP BY o.cof_ModFrete, o.cof_InsuranceAmt, o.cof_OtherAmt
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500524</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500024</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">QuickInfo_Discount</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT ((@QtyEntered@ * @PriceList@) - (@QtyEntered@ * @PriceEntered@))</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500558</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500030</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Total Ordem de Servi&ccedil;o</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT
+                        CASE
+                         WHEN DocStatus = 'IP' AND COF_MotivoParalisacao_ID &gt;
+                         0
+                        THEN 'PARALISADO -'
+                        ELSE
+                        ''
+                        END,
+                        (COALESCE(COF_ValorTotalProdutos,0::numeric) + COALESCE(COF_ValorTotalServicos,0::numeric)) as Total
+                        FROM COF_OrdemServico
+                        WHERE COF_OrdemServico_ID = @COF_OrdemServico_ID@
+                        
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500567</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500031</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0201</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AssetMeterAmt</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT
+                        (SELECT COALESCE(SUM(Amt),0) FROM MP_AssetMeter_Log WHERE MP_AssetMeter_ID = @MP_AssetMeter_ID@ AND MP_OT_ID IS NULL),
+                        (SELECT COALESCE(SUM(Amt),0) FROM MP_AssetMeter_Log WHERE MP_AssetMeter_ID = @MP_AssetMeter_ID@)
+                        
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500650</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500032</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_CustoLDM</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT string_agg( '&lt;
+                        b&gt;
+                        ' ||ce.Name ||'&lt;
+                        /b&gt;
+                         : ' || c.currentcostprice, ' ') FROM M_Cost c LEFT JOIN m_costelement ce ON c.m_costelement_id = ce.m_costelement_id WHERE
+                        c.AD_Org_ID  = @#AD_Org_ID@ AND c.M_Product_ID = @M_ProductBOM_ID@
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500673</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500037</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ordem Servico Informa&ccedil;&otilde;es Produto e Servi&ccedil;o</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT
+                        (@Qty@ * @COF_ValorUnitario@) as valorProduto,
+                        (@COF_QtyServico@ * @COF_ValorServico@) as valorServico
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500674</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500038</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Ordem Servico Informa&ccedil;&otilde;es Servi&ccedil;o Incorporado</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT
+                        SUM(COALESCE(GrandTotal, 0::numeric)) as totalIncorporado, 
+                        (@Qty@ * @COF_ValorUnitario@) as valorServico
+                        FROM COF_OSProduto
+                        WHERE COF_OrdemServico_ID = @COF_OrdemServico_ID@ AND COF_Servico_ID = @COF_Servico_ID@ AND COF_IncorporarServico = 'Y'
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">377</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">200002</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">InvoiceSummary</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT COUNT(DISTINCT C_InvoiceLine_ID) AS Lines,o.TotalLines,o.GrandTotal,c.ISO_Code,
+                        currencyConvert(o.GrandTotal,o.C_Currency_ID,ac.C_Currency_ID,o.DateAcct,o.C_ConversionType_ID,o.AD_Client_ID,o.AD_Org_ID)
+                        AS ConvAmt
+                        FROM C_Invoice o
+                        INNER JOIN C_Currency c ON (o.C_Currency_ID=c.C_Currency_ID)
+                        LEFT JOIN C_InvoiceLine l ON (o.C_Invoice_ID=l.C_Invoice_ID)
+                        LEFT JOIN AD_ClientInfo ci ON (ci.AD_Client_ID=o.AD_Client_ID)
+                        LEFT JOIN C_AcctSchema ac ON (ci.C_AcctSchema1_ID=ac.C_AcctSchema_ID)
+                        WHERE o.C_Invoice_ID=@C_Invoice_ID@
+                        GROUP BY o.C_Currency_ID, ac.C_Currency_ID, o.C_ConversionType_ID, c.ISO_Code, o.TotalLines, o.GrandTotal, o.DateAcct, o.AD_Client_ID,
+                        o.AD_Org_ID
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500675</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500039</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COF_ExibeEstoque</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">select brerp.bomqtyonhand(@M_Product_ID@, @0|M_Warehouse_ID@, 0)</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500685</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500044</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0102</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ResumoRPS</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT rps.cof_ValorServicos,
+                        rps.cof_ValorLiquidoNfse,
+                        c.ISO_Code, currencyBase(rps.cof_ValorLiquidoNfse,rps.C_Currency_ID,rps.cof_DataEmissao, rps.AD_Client_ID,rps.AD_Org_ID) AS
+                        ConvAmt 
+                        FROM COF_RPS rps 
+                        INNER JOIN C_Currency c ON (rps.C_Currency_ID =c.C_Currency_ID) 
+                        WHERE rps.COF_RPS_ID=@COF_RPS_ID@ 
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500676</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500040</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFSituacaoComercialProduto</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT cof_getreflistvalue('M_Product', 'COF_SituacaoComercial', p.COF_SituacaoComercial) FROM M_product p WHERE p.M_Product_ID
+                        = @M_Product_ID@
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500694</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1500046</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">BRERP0001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COFTotalFaturaListaEmbarque</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">SELECT COALESCE(count(*), 0), COALESCE(sum(iol.qtyentered*ol.priceentered), 0) 
+                        FROM cof_packinglist pl 
+                        LEFT JOIN cof_packinglist_line pll ON (pll.cof_packinglist_id = pl.cof_packinglist_id)
+                        LEFT JOIN m_inout io ON (io.m_inout_id = pll.m_inout_id)
+                        LEFT JOIN m_inoutline iol ON (iol.m_inout_id = io.m_inout_id)
+                        LEFT JOIN c_orderline ol ON (ol.c_orderline_id = iol.c_orderline_id)
+                        WHERE pl.cof_packinglist_id = @COF_PackingList_ID@
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">377</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">200000</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">OrderSummary</td>
+                     <td style="text-align: center; ">SELECT COUNT(DISTINCT C_OrderLine_ID) AS Lines,o.TotalLines,o.GrandTotal,c.ISO_Code, 
+                        currencyConvert(o.GrandTotal,o.C_Currency_ID,ac.C_Currency_ID,o.DateAcct,o.C_ConversionType_ID,o.AD_Client_ID,o.AD_Org_ID)
+                        AS ConvAmt
+                        FROM C_Order o
+                        INNER JOIN C_Currency c ON (o.C_Currency_ID=c.C_Currency_ID)
+                        LEFT JOIN C_OrderLine l ON (o.C_Order_ID=l.C_Order_ID)
+                        LEFT JOIN AD_ClientInfo ci ON (ci.AD_Client_ID=o.AD_Client_ID)
+                        LEFT JOIN C_AcctSchema ac ON (ci.C_AcctSchema1_ID=ac.C_AcctSchema_ID)
+                        WHERE o.C_Order_ID=@C_Order_ID@
+                        GROUP BY o.C_Currency_ID, ac.C_Currency_ID, o.C_ConversionType_ID, c.ISO_Code, o.TotalLines, o.GrandTotal, o.DateAcct, o.AD_Client_ID,
+                        o.AD_Org_ID
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div><br class="table-break"></br></body>
+</html>

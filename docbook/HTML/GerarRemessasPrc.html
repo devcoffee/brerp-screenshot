@@ -1,0 +1,132 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Processo: Gerar Remessas</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d109826e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Processo:  Gerar Remessas</h2>
+               </div>
+            </div>
+         </div>
+         <p><span class="emphasis"><em> Criado:</em></span>2000-04-26 21:34:07.0
+         </p>
+         <p> <span class="emphasis"><em>Atualizado:</em></span>2005-01-05 21:31:14.0
+         </p>
+         <p><span class="emphasis"><em> Descri&ccedil;&atilde;o: </em></span>Gerar e imprimir Expedi&ccedil;&otilde;es a partir dos Pedidos em aberto
+         </p>
+         <p><span class="emphasis"><em> Coment&aacute;rio/Ajuda: </em></span>Expedi&ccedil;&otilde;es para Pedidos em Aberto s&atilde;o criados com base nas Regras de Entrega e na prioridade relativa desse Pedido.  Se uma
+            "Data Prometida" for selecionada, somente pedidos at&eacute; essa data (inclusive) ser&atilde;o selecionados. Se diversos pedidos de um
+            parceiro de neg&oacute;cios tem a mesma localiza&ccedil;&atilde;o, os pedidos podem ser consolidados em um &uacute;nico embarque. Voc&ecirc; tamb&eacute;m pode incluir
+            pedidos cuja confirma&ccedil;&atilde;o ainda esteja pendente  (ex. pedido=10 - entregas n&atilde;o confirmadas=4 - iria criar uma nova remessa
+            de 6 se dispon&iacute;vel).
+         </p>
+         <div class="table" id="d109826e21">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;GerarRemessas Par&acirc;metros </div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome da coluna</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores(Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Parceiro de Neg&oacute;cios </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> C_BPartner_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifica um Parceiro de Neg&oacute;cios.</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Um "Parceiro de Neg&oacute;cios" &eacute; qualquer um com quem voc&ecirc; transaciona.  Isto pode incluir Fornecedores, Clientes, Funcion&aacute;rios,
+                           Vendedores, Representantes de Venda, etc.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Consolidar em um &uacute;nico documento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> ConsolidateDocument</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> (Y)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Consolida diversas linhas em um &uacute;nico documento</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Armaz&eacute;m</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> M_Warehouse_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> (@#M_Warehouse_ID@)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Armaz&eacute;m de estocagem e Ponto de Servi&ccedil;o</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O "Armaz&eacute;m" identifica um armaz&eacute;m ou local em particular onde os produtos s&atilde;o armazenados ou s&atilde;o prestados servi&ccedil;os.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data Prometida</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> DatePromised</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data que o Pedido foi prometido</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A "Data Prometida" indica a data, se existir, que um Pedido foi prometido.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Shipment Date</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> MovementDate</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Date printed on shipment</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">The Shipment Date indicates the date printed on the shipment.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">A&ccedil;&atilde;o do Documento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> DocAction</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&lt;
+                           Nenhum&gt;
+                           
+                           Aprovar
+                           Fechar
+                           Completo
+                           Invalidar
+                           Lan&ccedil;ar
+                           Preparar
+                           Estornar - Provis&atilde;o
+                           Estornar - Corrigir
+                           Reativar
+                           Rejeitar
+                           Anulado
+                           Espere Completar
+                           Destravar
+                           (CO)
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">O estado de destino do documento</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Voc&ecirc; pode ver o estado atual do documento no campo Estado do Documento. As op&ccedil;&otilde;es poss&iacute;veis ser&atilde;o listadas em um di&aacute;logo.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Pedidos com entregas n&atilde;o-confirmadas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> IsUnconfirmedInOut</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> (N)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Gerar entregas para Pedidos com confirma&ccedil;&otilde;es de entrega em aberto?</td>
+                        <td style="text-align: center; ">Voc&ecirc; tamb&eacute;m pode incluir pedidos que tenham confirma&ccedil;&otilde;es pendentes (ex. pedido=10 - entregas n&atilde;o confirmadas=4 - iria criar
+                           uma nova remessa de 6 se dispon&iacute;vel).
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

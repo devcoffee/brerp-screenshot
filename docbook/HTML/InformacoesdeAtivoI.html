@@ -1,0 +1,232 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>InfoPanel: Informa&ccedil;&otilde;es de Ativo</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d124519e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">InfoPanel: Informa&ccedil;&otilde;es de Ativo</h2>
+               </div>
+            </div>
+         </div>
+         <p><span class="emphasis"><em> Criado: </em></span>2013-02-01 20:54:36.0
+         </p>
+         <p> <span class="emphasis"><em> Atualizado: </em></span>2017-06-14 14:42:52.0
+         </p>
+         <p><span class="emphasis"><em> Tabela: </em></span>AD_InfoWindow
+         </p>
+         <p><span class="emphasis"><em> From (SQL): </em></span>A_ASSET a
+            LEFT OUTER JOIN M_Product p ON (a.M_Product_ID=p.M_Product_ID)
+            LEFT OUTER JOIN C_BPartner bp ON (a.C_BPartner_ID=bp.C_BPartner_ID)
+            LEFT OUTER JOIN AD_User u ON (a.AD_User_ID=u.AD_User_ID)
+         </p>
+         <p><span class="emphasis"><em> Order By :</em></span>a.Value<span class="emphasis"><em> Valor Padr&atilde;o </em></span></p>
+         <div class="table" id="d124519e27">
+            <div class="table-title">Table&nbsp;1.1.&nbsp; InfoPanel Columns </div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sql SELECT</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">QueryCriteria</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave de Busca</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.Value</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave de pesquisa para o registro no formato necess&aacute;rio - tem que ser &uacute;nico e exclusivo</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Uma "Chave de Busca" fornece a voc&ecirc; um m&eacute;todo r&aacute;pido de encontrar um registro em particular. Se voc&ecirc; deixar a chave de busca
+                           vazia, o sistema automaticamente cria um valor num&eacute;rico.  A seq&uuml;&ecirc;ncia de documento usada por este n&uacute;mero de recupera&ccedil;&atilde;o &eacute;
+                           definida na janela "Gerenciamento de Seq&uuml;&ecirc;ncia" com o nome "DocumentNo_&lt;
+                           TableName&gt;
+                           ", onde TableName &eacute; o nome real da tabela (ex: C_Order).
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.Name</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identificador Alfanum&eacute;rico da entidade</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O nome de uma entidade (registro) &eacute; usado como uma op&ccedil;&atilde;o de pesquisa padr&atilde;o em adi&ccedil;&atilde;o &agrave; chave de pesquisa. O nome pode ter
+                           at&eacute; 60 caracteres de comprimento.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Parceiro de Neg&oacute;cios </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.C_BPartner_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifica um Parceiro de Neg&oacute;cios.</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Um "Parceiro de Neg&oacute;cios" &eacute; qualquer um com quem voc&ecirc; transaciona.  Isto pode incluir Fornecedores, Clientes, Funcion&aacute;rios,
+                           Vendedores, Representantes de Venda, etc.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Usu&aacute;rio/Contato</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.AD_User_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Usu&aacute;rio dentro do Sistema - Interno ou Contato de Parceiro de Neg&oacute;cios</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O Usu&aacute;rio identifica um usu&aacute;rio &uacute;nico e exclusivo dentro do sistema. Este poderia ser um usu&aacute;rio interno ou um contato de
+                           parceiro de neg&oacute;cios
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data de Entrada em Servi&ccedil;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.AssetServiceDate</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data quando o ativo foi posto em servi&ccedil;o</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A data em que o ativo foi posto em servi&ccedil;o - usado geralmente como data inicial para deprecia&ccedil;&atilde;o.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Vencimento da Garantia</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.GuaranteeDate</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data em que a garantia expira</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Data de vencimento da disponibilidade ou da garantia normal</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;m. da Vers&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.VersionNo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero da Vers&atilde;o</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.AD_Org_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Entidade organizacional dentro da Empresa</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Uma "Organiza&ccedil;&atilde;o" &eacute; uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos s&atilde;o loja, departamento. Voc&ecirc; pode compartilhar
+                           dados entre organiza&ccedil;&otilde;es.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">No do Invent&aacute;rio</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.InventoryNo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Grupo de Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.A_Asset_Group_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Grupo de Ativos</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O grupo de ativos determina as contas padr&atilde;o.  Se um grupo de ativo for selecionado na categoria de produto, os ativos ser&atilde;o
+                           criados ao entregar o ativo.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data de Ativa&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.AssetActivationDate</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>&gt;
+                           = <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data de Ativa&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.AssetActivationDate</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>&lt;
+                           = <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Status do Ativo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.A_Asset_Status</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Em Posse</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.IsInPosession</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">O ativo est&aacute; em posse da organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Ativos que n&atilde;o est&atilde;o em posse, est&atilde;o por exemplo em poder de um cliente e podem ou n&atilde;o ser de propriedade da companhia.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Em Poder</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.IsOwned</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">O ativo &eacute; de propriedade da organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O ativo pode n&atilde;o estar em posse, mas &eacute; legalmente de propriedade da organiza&ccedil;&atilde;o</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Totalmente depreciado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.IsFullyDepreciated</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">O ativo est&aacute; totalmente depreciado</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O custos do ativo foram totalmente amortizados.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descartado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.IsDisposed</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">O ativo est&aacute; descartado</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O ativo n&atilde;o &eacute; mais utilizado e foi descartado</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">a.M_Product_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Produto, Servi&ccedil;o, Item</td>
+                        <td style="text-align: center; ">Identifica um item que &eacute; ou comprado ou vendido por esta organiza&ccedil;&atilde;o.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br><p><a class="ulink" href="data/AssetInfoinfodata.html" target="_top">[BANCO DE DADOS]</a>,
+         </p>
+      </section>
+   </body>
+</html>

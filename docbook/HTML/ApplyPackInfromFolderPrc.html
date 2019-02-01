@@ -1,0 +1,123 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Processo: Apply Pack In from Folder</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d6489e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Processo:  Apply Pack In from Folder</h2>
+               </div>
+            </div>
+         </div>
+         <p><span class="emphasis"><em> Criado:</em></span>2018-03-15 16:09:44.0
+         </p>
+         <p> <span class="emphasis"><em>Atualizado:</em></span>2018-03-15 16:43:24.0
+         </p>
+         <p><span class="emphasis"><em> Descri&ccedil;&atilde;o: </em></span>Apply all zip files from a folder following the rules and conventions of Automatic Pack In process
+         </p>
+         <p><span class="emphasis"><em> Coment&aacute;rio/Ajuda: </em></span>&lt;
+            p&gt;
+            This process apply all the pack in files found in a folder recursively - ordered by timestamp.&lt;
+            br /&gt;
+            
+            The filename of the pack in files is important, it must follow the following convention:&lt;
+            br /&gt;
+            
+            [Timestamp]_[ClientValue][_AdditionalInformation].zip&lt;
+            /p&gt;
+            
+            
+            &lt;
+            ul&gt;
+            
+            	&lt;
+            li&gt;
+            &lt;
+            strong&gt;
+            Timestamp:&lt;
+            /strong&gt;
+            must be in the format yyyymmddHHMM&lt;
+            /li&gt;
+            
+            	&lt;
+            li&gt;
+            &lt;
+            strong&gt;
+            ClientValue:&lt;
+            /strong&gt;
+            case sensitive and compared against AD_Client.Value to find the tenant where the pack in must be applied&lt;
+            /li&gt;
+            
+            	&lt;
+            li&gt;
+            &lt;
+            strong&gt;
+            AdditionalInformation:&lt;
+            /strong&gt;
+            Any additional information to identify the zip file&lt;
+            /li&gt;
+            
+            &lt;
+            /ul&gt;
+            
+            
+            &lt;
+            p&gt;
+            NOTE that AD_Client.Value must not contain underscore in order for this process to work.&lt;
+            br /&gt;
+            
+            There is a special case for ClientValue, if the ClientValue is ALL-CLIENTS then the 2pack is intended to be applied in all
+            active non-system clients.&lt;
+            br /&gt;
+            
+            If there is a need to apply initially in a seed tenant then the ClientValue must take the form ALL-CLIENTS-Seed.&lt;
+            br /&gt;
+            
+            For example:&lt;
+            br /&gt;
+            
+            201803151607_ALL-CLIENTS-GardenWorld_Test123.zip&lt;
+            /p&gt;
+            
+            
+         </p>
+         <div class="table" id="d6489e21">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;ApplyPackInfromFolder Par&acirc;metros </div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome da coluna</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores(Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Folder</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> Folder</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Path on the server where the pack in files are located</td>
+                        <td style="text-align: center; ">null</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

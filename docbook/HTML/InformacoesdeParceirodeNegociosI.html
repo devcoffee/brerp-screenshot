@@ -1,0 +1,322 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>InfoPanel: Informa&ccedil;&otilde;es de Parceiro de Neg&oacute;cios</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d125570e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">InfoPanel: Informa&ccedil;&otilde;es de Parceiro de Neg&oacute;cios</h2>
+               </div>
+            </div>
+         </div>
+         <p><span class="emphasis"><em> Criado: </em></span>2013-01-25 17:00:39.0
+         </p>
+         <p> <span class="emphasis"><em> Atualizado: </em></span>2018-02-14 15:51:08.0
+         </p>
+         <p><span class="emphasis"><em> Tabela: </em></span>AD_InfoWindow
+         </p>
+         <p><span class="emphasis"><em> From (SQL): </em></span>C_BPartner bp
+            LEFT OUTER JOIN C_BPartner_Location l ON (bp.C_BPartner_ID=l.C_BPartner_ID AND l.IsActive='Y')
+            LEFT OUTER JOIN AD_User c ON (bp.C_BPartner_ID=c.C_BPartner_ID AND (c.C_BPartner_Location_ID IS NULL OR c.C_BPartner_Location_ID=l.C_BPartner_Location_ID)
+            AND c.IsActive='Y')
+            LEFT OUTER JOIN C_Location a ON (l.C_Location_ID=a.C_Location_ID)
+         </p>
+         <p><span class="emphasis"><em> Order By :</em></span>bp.Value<span class="emphasis"><em> Valor Padr&atilde;o </em></span></p>
+         <div class="table" id="d125570e27">
+            <div class="table-title">Table&nbsp;1.1.&nbsp; InfoPanel Columns </div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sql SELECT</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">QueryCriteria</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.Name</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identificador Alfanum&eacute;rico da entidade</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O nome de uma entidade (registro) &eacute; usado como uma op&ccedil;&atilde;o de pesquisa padr&atilde;o em adi&ccedil;&atilde;o &agrave; chave de pesquisa. O nome pode ter
+                           at&eacute; 60 caracteres de comprimento.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Cr&eacute;dito Dispon&iacute;vel</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.SO_CreditLimit-bp.SO_CreditUsed AS SO_CreditAvailable</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Cr&eacute;dito Dispon&iacute;vel baseado no Limite de Cr&eacute;dito (e n&atilde;o no Saldo Total em Aberto) e no Cr&eacute;dito Usado</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Cr&eacute;dito Utilizado</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.SO_CreditUsed</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Saldo em aberto atual</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O "Cr&eacute;dito Utilizado" indica o valor total de faturas abertas ou n&atilde;o pagas por este Parceiro de Neg&oacute;cios na moeda cont&aacute;bil
+                           prim&aacute;ria. A Administra&ccedil;&atilde;o de Cr&eacute;dito &eacute; baseada no Valor Total em Aberto, o que inclui as atividades do Fornecedor.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Fone</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">c.Phone</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifica um n&uacute;mero de telefone</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O campo "Fone" identifica um n&uacute;mero de telefone</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">CEP</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.Postal</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C&oacute;digo Postal</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O campo "C&oacute;digo Postal ou CEP" identifica o c&oacute;digo postal do endere&ccedil;o desta entidade.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Revenue</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.ActualLifetimeValue</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Endere&ccedil;o de Entrega</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">l.IsShipTo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Endere&ccedil;o de Entrega do  Parceiro de Neg&oacute;cios</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Se caixa de verifica&ccedil;&atilde;o "Endere&ccedil;o de Entrega" for selecionada, a localiza&ccedil;&atilde;o &eacute; utilizada para enviar bens para um cliente
+                           ou receber bens de um fornecedor.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Endere&ccedil;o de Fatura</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">l.IsBillTo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Endere&ccedil;o de Fatura/Cobran&ccedil;a do Parceiro de Neg&oacute;cios</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Se o Endere&ccedil;o de Fatura for selecionado, a localiza&ccedil;&atilde;o &eacute; usada para enviar faturas para um cliente ou receber faturas de um
+                           fornecedor.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Cidade</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.City</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifica uma Cidade</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A "Cidade" Identifica uma Cidade &uacute;nica para o Pa&iacute;s ou Regi&atilde;o (Estado).</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do Contato</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">c.Name AS ContactName</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome do Contato do Parceiro de Neg&oacute;cios</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Endere&ccedil;o de e-mail</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">c.EMail</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Endere&ccedil;o de Correio Eletr&ocirc;nico</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O "e-mail" &eacute; o ID de correio eletr&ocirc;nico para este usu&aacute;rio e deve ser totalmente qualificado (ex. hilario.silveira@soliton.com.br).
+                           O endere&ccedil;o de e-mail &eacute; usado para acessar a funcionalidade de aplica&ccedil;&atilde;o de auto-servi&ccedil;o a partir da internet.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave de Busca</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.Value</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Chave de pesquisa para o registro no formato necess&aacute;rio - tem que ser &uacute;nico e exclusivo</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Uma "Chave de Busca" fornece a voc&ecirc; um m&eacute;todo r&aacute;pido de encontrar um registro em particular. Se voc&ecirc; deixar a chave de busca
+                           vazia, o sistema automaticamente cria um valor num&eacute;rico.  A seq&uuml;&ecirc;ncia de documento usada por este n&uacute;mero de recupera&ccedil;&atilde;o &eacute;
+                           definida na janela "Gerenciamento de Seq&uuml;&ecirc;ncia" com o nome "DocumentNo_&lt;
+                           TableName&gt;
+                           ", onde TableName &eacute; o nome real da tabela (ex: C_Order).
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Saldo em Aberto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.TotalOpenBalance</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valor Total do Saldo em Aberto na Moeda Cont&aacute;bil Prim&aacute;ria</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O Valor Total do Saldo em Aberto &eacute; o valor dos itens em aberto calculado para a atividade de Cliente e Fornecedor.  Se o valor
+                           for abaixo de zero, n&oacute;s devemos ao Parceiro de Neg&oacute;cios.  O valor &eacute; utilizado para Gerenciamento de Cr&eacute;dito. Faturas e Aloca&ccedil;&otilde;es
+                           de Pagamentos determinam o Balan&ccedil;o em Aberto (ou seja nem Pedidos nem Pagamentos).
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Usu&aacute;rio/Contato</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">c.AD_User_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Usu&aacute;rio dentro do Sistema - Interno ou Contato de Parceiro de Neg&oacute;cios</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O Usu&aacute;rio identifica um usu&aacute;rio &uacute;nico e exclusivo dentro do sistema. Este poderia ser um usu&aacute;rio interno ou um contato de
+                           parceiro de neg&oacute;cios
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Localiza&ccedil;&atilde;o do Parceiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">l.C_BPartner_Location_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifica o endere&ccedil;o (de remessa para) este Parceiro de Neg&oacute;cios.</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O "Endere&ccedil;o do Parceiro" indica a localiza&ccedil;&atilde;o de um Parceiro de Neg&oacute;cios.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Endere&ccedil;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">a.Address1</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Endere&ccedil;o (Rua, Avenida)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Identifica o Endere&ccedil;o do Parceiro de Neg&oacute;cios</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">CNPJ</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.lbr_CNPJ</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Cadastro Nacional da Pessoa Jur&iacute;dica</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">&lt;
+                           a href="http://www.serasa.com.br" target="_blank"&gt;
+                           Serasa&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www.sintegra.gov.br" target="_blank"&gt;
+                           Sintegra&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+                           CCF&aacute;cil&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+                           Receita &lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www.sci.com.br/" target="_blank"&gt;
+                           Equifax (SCI)&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+                           Simples Nacional&lt;
+                           /a&gt;
+                           
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">CPF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.lbr_CPF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>Like <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Upper
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Cadastro de Pessoas F&iacute;sicas</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">&lt;
+                           a href="http://www.serasa.com.br" target="_blank"&gt;
+                           Serasa&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www.sintegra.gov.br" target="_blank"&gt;
+                           Sintegra&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+                           CCF&aacute;cil&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+                           Receita &lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www.sci.com.br/" target="_blank"&gt;
+                           Equifax (SCI)&lt;
+                           /a&gt;
+                           
+                           &lt;
+                           a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+                           Simples Nacional&lt;
+                           /a&gt;
+                           
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Cliente</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.IsCustomer</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Indica se este Parceiro de Neg&oacute;cios &eacute; um Cliente</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A caixa de verifica&ccedil;&atilde;o "Cliente" indica se este Parceiro de Neg&oacute;cios &eacute; um cliente.  Se ela for selecionada, ser&atilde;o mostrados
+                           campos adicionais os quais ir&atilde;o definir melhor este cliente.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Fornecedor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">bp.IsVendor</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Indica se este Parceiro de Neg&oacute;cios &eacute; um Fornecedor</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A caixa de verifica&ccedil;&atilde;o "Fornecedor" indica se este Parceiro de Neg&oacute;cios &eacute; um fornecedor.  Se ela for selecionada, ser&atilde;o mostrados
+                           campos adicionais os quais ir&atilde;o identificar melhor este fornecedor.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Situa&ccedil;&atilde;o Comercial</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">bp.COF_SituacaoComercial</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; ">null</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br><p><a class="ulink" href="data/BusinessPartnerInfoinfodata.html" target="_top">[BANCO DE DADOS]</a>,
+         </p>
+      </section>
+   </body>
+</html>

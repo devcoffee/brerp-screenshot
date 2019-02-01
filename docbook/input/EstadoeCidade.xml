@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Estado e Cidade</title> 
+ <para> <emphasis>Descrição: </emphasis>  Gerenciamento de Estados e Cidades</para><para> <emphasis>Comentário/Ajuda: </emphasis>A Janela "Países, Estados e Cidades" define as diferentes entidades que podem ser usadas em qualquer campo de endereço.  Ela define o formato do endereço assim como associa Estados (ou Regiões) a Países e Cidades a Estados ou Países. &lt;
+p&gt;
+Você deveria definir Países usualmente no Nível do Sistema.</para><para><emphasis> Criado em: </emphasis>1999-06-11 00:00:00.0
+</para><para><emphasis>Atualizado em: </emphasis>2000-01-02 00:00:00.0</para>
+<section> 
+ <title>Tabela: País - C_Country</title> 
+ 
+<ulink url="data/C_Country_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir País</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "País" define qualquer país com o qual você negocia.  Valores digitados aqui são referenciados em registros de localização de Parceiros de Negócios.</para> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Country Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>C_Country_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>País</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ccountry_ccountry</entry> 
+<entry> </entry> 
+<entry valign="middle">Country </entry> 
+<entry>The Country defines a Country.  Each Country must be defined before it can be used in any document.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">c_countryclient</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">c_countryorg</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Código ISO de País</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Upper-case two-letter alphanumeric ISO Country code according to ISO 3166-1 - http://www.chemie.fu-berlin.de/diverse/doc/ISO_3166.html</entry> 
+<entry>For details - http://www.din.de/gremien/nas/nabd/iso3166ma/codlstp1.html or - http://www.unece.org/trade/rec/rec03en.htm</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>País possui Regiões (Estados)</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Country contains Regions</entry> 
+<entry>The Country has Region checkbox is selected if the Country being defined is divided into regions.  If this checkbox is selected, the Region Tab is accessible.</entry> 
+</row> 
+<row> 
+ <entry>Região</entry><entry>Texto Curto (String)</entry> 
+<entry>(State)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Name of the Region</entry> 
+<entry>The Region Name defines the name that will print when this region is used in a document.</entry> 
+</row> 
+<row> 
+ <entry>Formato de Impressão de Endereço</entry><entry>Texto Curto (String)</entry> 
+<entry>(@C@, @R@ @P@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Format for printing this Address</entry> 
+<entry>The Address Print format defines the format to be used when this address prints.  The following notations are used: @C@=City  @P@=Postal  @A@=PostalAdd  @R@=Region</entry> 
+</row> 
+<row> 
+ <entry>Reverter Linhas de Endereço</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Print Address in reverse Order</entry> 
+<entry>If NOT selected the sequence is Address 1, Address 2, Address 3, Address 4, City/Region/Postal, Country.
+If selected the sequence is Country, City/Region/Postal, Address 4, Address 3, Address 2, Address 1.
+The sequence of City/Region/Postal is determined by the address format.</entry> 
+</row> 
+<row> 
+ <entry>Seqüência de Captura </entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The Capture Sequence defines the fields to be used when capturing an address on this country.  The following notations are used: @CO@=Country, @C@=City, @P@=Postal, @A@=PostalAdd, @R@=Region, @A1@=Address 1 to @A4@=Address 4.  Country is always mandatory, add a bang ! to make another field mandatory, for example @C!@ makes city mandatory, @A1!@ makes Address 1 mandatory.</entry> 
+</row> 
+<row> 
+ <entry>Formato Local de Endereço</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Format for printing this Address locally</entry> 
+<entry>The optional Local Address Print format defines the format to be used when this address prints for the Country.  If defined, this format is used for printing the address for the country rather then the standard address format.
+ The following notations are used: @C@=City  @P@=Postal  @A@=PostalAdd  @R@=Region</entry> 
+</row> 
+<row> 
+ <entry>Reverter Linhas de Endereço Local</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Print Local Address in reverse Order</entry> 
+<entry>If NOT selected the local sequence is Address 1, Address 2, Address 3, Address 4, City/Region/Postal, Country.
+If selected the local sequence is Country, City/Region/Postal, Address 4, Address 3, Address 2, Address 1.
+The sequence of City/Region/Postal is determined by the local address format.</entry> 
+</row> 
+<row> 
+ <entry>Formato do Código Postal</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Format of the postal code;
+ Can contain fixed format elements, Variables: "_lLoOaAcCa09"</entry> 
+<entry>&lt;
+B&gt;
+Validation elements:&lt;
+/B&gt;
+
+ 	(Space) any character
+_	Space (fixed character)
+l	any Letter a..Z NO space
+L	any Letter a..Z NO space converted to upper case
+o	any Letter a..Z or space
+O	any Letter a..Z or space converted to upper case
+a	any Letters %26 Digits NO space
+A	any Letters %26 Digits NO space converted to upper case
+c	any Letters %26 Digits or space
+C	any Letters %26 Digits or space converted to upper case
+0	Digits 0..9 NO space
+9	Digits 0..9 or space
+
+Example of format "(000)_000-0000"</entry> 
+</row> 
+<row> 
+ <entry>Código Postal Adicional</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Has Additional Postal Code</entry> 
+<entry>The Additional Postal Code checkbox indicates if this address uses an additional Postal Code.  If it is selected an additional field displays for entry of the additional Postal Code.</entry> 
+</row> 
+<row> 
+ <entry>Formato Postal Adicional</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Format of the value;
+ Can contain fixed format elements, Variables: "_lLoOaAcCa09"</entry> 
+<entry>&lt;
+B&gt;
+Validation elements:&lt;
+/B&gt;
+
+ 	(Space) any character
+_	Space (fixed character)
+l	any Letter a..Z NO space
+L	any Letter a..Z NO space converted to upper case
+o	any Letter a..Z or space
+O	any Letter a..Z or space converted to upper case
+a	any Letters %26 Digits NO space
+A	any Letters %26 Digits NO space converted to upper case
+c	any Letters %26 Digits or space
+C	any Letters %26 Digits or space converted to upper case
+0	Digits 0..9 NO space
+9	Digits 0..9 or space
+
+Example of format "(000)_000-0000"</entry> 
+</row> 
+<row> 
+ <entry>Formato de Telefone</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Format of the phone;
+ Can contain fixed format elements, Variables: "_lLoOaAcCa09"</entry> 
+<entry>&lt;
+B&gt;
+Validation elements:&lt;
+/B&gt;
+
+ 	(Space) any character
+_	Space (fixed character)
+l	any Letter a..Z NO space
+L	any Letter a..Z NO space converted to upper case
+o	any Letter a..Z or space
+O	any Letter a..Z or space converted to upper case
+a	any Letters %26 Digits NO space
+A	any Letters %26 Digits NO space converted to upper case
+c	any Letters %26 Digits or space
+C	any Letters %26 Digits or space converted to upper case
+0	Digits 0..9 NO space
+9	Digits 0..9 or space
+
+Example of format "(000)_000-0000"</entry> 
+</row> 
+<row> 
+ <entry>Tamanho do Papel</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Java Media Size</entry> 
+<entry>The Java Media Size. Example: "MediaSize.ISO.A4" (the package javax.print.attribute.standard is assumed). If you define your own media size, use the fully qualified name.
+If the pattern for your language is not correct, please create a iDempiere support request with the correct information</entry> 
+</row> 
+<row> 
+ <entry>Formato do Núm. do Rastreador Bancário</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Format of the Bank Routing Number</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Formato do Núm. da Conta Bancária</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Format of the Bank Account</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Idioma</entry><entry>Tabela</entry> 
+<entry>AD_Language</entry> 
+<entry valign="middle">adlanguage_ccountry</entry> 
+<entry> </entry> 
+<entry valign="middle">Language for this entity</entry> 
+<entry>The Language identifies the language to use for display and formatting</entry> 
+</row> 
+<row> 
+ <entry>Moeda De</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ccurrency_ccountry</entry> 
+<entry> </entry> 
+<entry valign="middle">The Currency for this record</entry> 
+<entry>Indicates the Currency to be used when processing or reporting on this record</entry> 
+</row> 
+<row> 
+ <entry>IsPostcodeLookup</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Does this country have a post code web service</entry> 
+<entry>Enable the IsPostcodeLookup if you wish to configure a post code lookup web service</entry> 
+</row> 
+<row> 
+ <entry>Permitir cidades fora da lista</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">A flag to allow cities, currently not in the list, to be entered</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>LookupUrl</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The URL of the web service that the plugin connects to in order to retrieve postcode data</entry> 
+<entry>Enter the URL of the web service that the plugin connects to in order to retrieve postcode data</entry> 
+</row> 
+<row> 
+ <entry>LookupClientID</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The ClientID or Login submitted to the Lookup URL</entry> 
+<entry>Enter the ClientID or Login for your account provided by the post code web service provider</entry> 
+</row> 
+<row> 
+ <entry>LookupPassword</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The password submitted to the Lookup URL</entry> 
+<entry>Enter the password for your account provided by the post code web service provider</entry> 
+</row> 
+<row> 
+ <entry>LookupClassName</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The class name of the postcode lookup plugin</entry> 
+<entry>Enter the class name of the post code lookup plugin for your postcode web service provider</entry> 
+</row> 
+<row> 
+ <entry>Placeholder for Address 1</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for Address 2</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for Address 3</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for Address 4</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for Address 5</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for postal</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for additional zip</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for city</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for comments</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Código do País</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Country Code used for issue Nota Fiscal</entry> 
+<entry>Country Code used for issue Nota Fiscal. Codes from BCB (Banco Central do Brasil)</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Região - C_Region</title> 
+ 
+<ulink url="data/C_Region_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir Regiões</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Região" define uma Região dentro de um País.  Esta Aba é habilitada somente se a caixa de verificação Tem Região for selecionada para o país.</para> 
+<para><emphasis>Lógica de visualização:</emphasis> @HasRegion@='Y'</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Region Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Região</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a geographical Region</entry> 
+<entry>The Region identifies a unique Region for this Country.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle">c_regionclient</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle">c_regionorg</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>País</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ccountry_cregion</entry> 
+<entry> </entry> 
+<entry valign="middle">Country </entry> 
+<entry>The Country defines a Country.  Each Country must be defined before it can be used in any document.</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Padrão</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Default value</entry> 
+<entry>The Default Checkbox indicates if this record will be used as a default value.</entry> 
+</row> 
+<row> 
+ <entry>Código da UF</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>C_Region_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Cidade - C_City</title> 
+ 
+<ulink url="data/C_City_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definir Cidades</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> A Aba "Cidades" define as Cidades dentro de um País ou Região (Estado).  As Cidades introduzidas aqui não são referenciadas ao se introduzir o endereço.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Region</para> 
+<para><emphasis>Lógica de visualização:</emphasis> @HasRegion@='Y'</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>City Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Cidade</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">City</entry> 
+<entry>City in a country</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle">c_cityclient</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle">c_cityorg</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>País</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ccountry_ccity</entry> 
+<entry> </entry> 
+<entry valign="middle">Country </entry> 
+<entry>The Country defines a Country.  Each Country must be defined before it can be used in any document.</entry> 
+</row> 
+<row> 
+ <entry>Região</entry><entry>Tabela</entry> 
+<entry>C_Region</entry> 
+<entry valign="middle">cregion_ccity</entry> 
+<entry>C_Region.C_Country_ID=@C_Country_ID@ </entry> 
+<entry valign="middle">Identifies a geographical Region</entry> 
+<entry>The Region identifies a unique Region for this Country.</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>CEP</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Postal code</entry> 
+<entry>The Postal Code or ZIP identifies the postal code for this entity's address.</entry> 
+</row> 
+<row> 
+ <entry>Código de Área</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Phone Area Code</entry> 
+<entry>Phone Area Code</entry> 
+</row> 
+<row> 
+ <entry>Código de Localização</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Location code - UN/LOCODE </entry> 
+<entry>UN/Locode is a combination of a 2-character country code and a 3-character location code, e.g. BEANR is known as the city of Antwerp (ANR) which is located in Belgium (BE).
+&lt;
+p&gt;
+See: http://www.unece.org/cefact/locode/service/main.htm</entry> 
+</row> 
+<row> 
+ <entry>Coordenadas</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Location coordinate</entry> 
+<entry>This column contains the geographical coordinates (latitude/longitude) of the location.&lt;
+p&gt;
+
+In order to avoid unnecessary use of non-standard characters and space, the following standard presentation is used:
+0000N 00000W 0000S 00000E 
+where the two last digits refer to minutes and the two or three first digits indicate the degrees</entry> 
+</row> 
+<row> 
+ <entry>Cod. Cidade</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>C_City_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Translation - C_Region_Trl</title> 
+ 
+<ulink url="data/C_Region_Trl_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Coluna linkada: </emphasis> Region</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>Translation Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">ADClient_CRegionTrl</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0
+ <emphasis>ReadOnly Logic</emphasis>: 1=1 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ADOrg_CRegionTrl</entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Região</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">CRegion_CRegionTrl</entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a geographical Region</entry> 
+<entry>The Region identifies a unique Region for this Country.</entry> 
+</row> 
+<row> 
+ <entry>Idioma</entry><entry>Tabela</entry> 
+<entry>AD_Language</entry> 
+<entry valign="middle">ADLanguage_CRegionTrl</entry> 
+<entry> </entry> 
+<entry valign="middle">Language for this entity</entry> 
+<entry>The Language identifies the language to use for display and formatting</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Traduzida</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This column is translated</entry> 
+<entry>The Translated checkbox indicates if this column is translated.</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Cidade (sem regiões) - C_City</title> 
+ 
+<ulink url="data/C_City_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Cidades sem Região</para> 
+<para><emphasis>Coluna linkada: </emphasis> Country</para> 
+<para><emphasis>Claúsula Where:</emphasis> C_Region_ID IS NULL AND C_Country_ID = @C_Country_ID@</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>City (Without Regions) Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Cidade</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">City</entry> 
+<entry>City in a country</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle">c_cityclient</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle">c_cityorg</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>País</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ccountry_ccity</entry> 
+<entry> </entry> 
+<entry valign="middle">Country </entry> 
+<entry>The Country defines a Country.  Each Country must be defined before it can be used in any document.</entry> 
+</row> 
+<row> 
+ <entry>Região</entry><entry>Tabela</entry> 
+<entry>C_Region</entry> 
+<entry valign="middle">cregion_ccity</entry> 
+<entry>C_Region.C_Country_ID=@C_Country_ID@ </entry> 
+<entry valign="middle">Identifies a geographical Region</entry> 
+<entry>The Region identifies a unique Region for this Country.</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>CEP</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Postal code</entry> 
+<entry>The Postal Code or ZIP identifies the postal code for this entity's address.</entry> 
+</row> 
+<row> 
+ <entry>Código de Área</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Phone Area Code</entry> 
+<entry>Phone Area Code</entry> 
+</row> 
+<row> 
+ <entry>Código de Localização</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Location code - UN/LOCODE </entry> 
+<entry>UN/Locode is a combination of a 2-character country code and a 3-character location code, e.g. BEANR is known as the city of Antwerp (ANR) which is located in Belgium (BE).
+&lt;
+p&gt;
+See: http://www.unece.org/cefact/locode/service/main.htm</entry> 
+</row> 
+<row> 
+ <entry>Coordenadas</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Location coordinate</entry> 
+<entry>This column contains the geographical coordinates (latitude/longitude) of the location.&lt;
+p&gt;
+
+In order to avoid unnecessary use of non-standard characters and space, the following standard presentation is used:
+0000N 00000W 0000S 00000E 
+where the two last digits refer to minutes and the two or three first digits indicate the degrees</entry> 
+</row> 
+<row> 
+ <entry>Cod. Cidade</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>C_City_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Tradução - C_Country_Trl</title> 
+ 
+<ulink url="data/C_Country_Trl_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Coluna linkada: </emphasis> Country</para> 
+<para><emphasis>Claúsula Where:</emphasis> AD_Language NOT IN (SELECT AD_Language FROM AD_Client WHERE AD_Client_ID=@#AD_Client_ID@)</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Translation Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>C_Country_Trl_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>País</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ccountry_ccountrytrl</entry> 
+<entry> </entry> 
+<entry valign="middle">Country </entry> 
+<entry>The Country defines a Country.  Each Country must be defined before it can be used in any document.</entry> 
+</row> 
+<row> 
+ <entry>Idioma</entry><entry>Tabela</entry> 
+<entry>AD_Language</entry> 
+<entry valign="middle">adlanguage_ccountrytrl</entry> 
+<entry> </entry> 
+<entry valign="middle">Language for this entity</entry> 
+<entry>The Language identifies the language to use for display and formatting</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Traduzida</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This column is translated</entry> 
+<entry>The Translated checkbox indicates if this column is translated.</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Região</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Name of the Region</entry> 
+<entry>The Region Name defines the name that will print when this region is used in a document.</entry> 
+</row> 
+<row> 
+ <entry>Placeholder for Address 1</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for Address 2</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for Address 3</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for Address 4</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for Address 5</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for postal</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for additional zip</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for city</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Placeholder for comments</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Country Group - C_CountryGroupCountry</title> 
+ <para><emphasis>Coluna linkada: </emphasis> Country</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Country Group Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Country on Country Group</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">ADClient_CCountryGroupCountry</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">ADOrg_CCountryGroupCountry</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>País</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">CCountry_CCountryGroupCountry</entry> 
+<entry> </entry> 
+<entry valign="middle">Country </entry> 
+<entry>The Country defines a Country.  Each Country must be defined before it can be used in any document.</entry> 
+</row> 
+<row> 
+ <entry>Country Group</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">CCountryGroup_CCountryGroupCou</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Do dia</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Starting date for a range</entry> 
+<entry>The Date From indicates the starting date of a range.</entry> 
+</row> 
+<row> 
+ <entry>Ao dia</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">End date of a date range</entry> 
+<entry>The Date To indicates the end date of a range (inclusive)</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Processador de Contabilidade</title> 
+ <para> <emphasis>Descrição: </emphasis>  Gerenciamento do Processador de Contabilidade e Registros (logs)</para><para> <emphasis>Comentário/Ajuda: </emphasis>Parâmetros e Registros (logs) do Processador/Servidor de Contabilidade</para><para><emphasis> Criado em: </emphasis>2004-02-19 13:00:41.0
+</para><para><emphasis>Atualizado em: </emphasis>2000-01-02 00:00:00.0</para>
+<section> 
+ <title>Tabela: Processador de Contabilidade - C_AcctProcessor</title> 
+ 
+<ulink url="data/C_AcctProcessor_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Gerenciamento dos Parâmetros do Processador/Servidor de Contabilidade</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Parâmetros do Processador/Servidor de Contabilidade. Se não for selecionado um esquema de contabilidade , todos os esquemas contábeis serão processados. Se não for selecionada uma tabela de transação, serão criadas contabilidades para todas as transações.</para> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Accounting Processor Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Processar Agora</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Freqüência</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Frequency of events</entry> 
+<entry>The frequency is used in conjunction with the frequency type in determining an event. Example: If the Frequency Type is Week and the Frequency is 2 - it is every two weeks.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Freqüência</entry><entry>Lista</entry> 
+<entry>Dia
+Hora
+Minuto</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Frequency of event</entry> 
+<entry>The frequency type is used for calculating the date of the next event.</entry> 
+</row> 
+<row> 
+ <entry>Processador de Contabilidade</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Accounting Processor/Server Parameters</entry> 
+<entry>Accounting Processor/Server Parameters</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Esquema Contábil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cacctschema_cacctprocessor</entry> 
+<entry> </entry> 
+<entry valign="middle">Rules for accounting</entry> 
+<entry>An Accounting Schema defines the rules used in accounting such as costing method, currency and calendar</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtable_cacctprocessor</entry> 
+<entry>EXISTS (SELECT * FROM AD_Column c WHERE AD_Table.AD_Table_ID=c.AD_Table_ID AND c.IsActive='Y' AND c.ColumnName='Posted') AND AD_Table.IsView='N' </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>Programar</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adschedule_cacctprocessor</entry> 
+<entry>AD_Schedule.IsSystemSchedule='N' OR @AD_Client_ID@=0 </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Supervisor</entry><entry>Tabela</entry> 
+<entry>AD_User - Internal</entry> 
+<entry valign="middle">aduser_cacctprocessor</entry> 
+<entry> </entry> 
+<entry valign="middle">Supervisor for this user/organization - used for escalation and approval</entry> 
+<entry>The Supervisor indicates who will be used for forwarding and escalating issues for this user - or for approvals.</entry> 
+</row> 
+<row> 
+ <entry>Dias para manter registro (log)</entry><entry>Inteiro</entry> 
+<entry>(7)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of days to keep the log entries</entry> 
+<entry>Older Log entries may be deleted</entry> 
+</row> 
+<row> 
+ <entry>Data do último processamento</entry><entry>Data+Hora</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date the process was last run.</entry> 
+<entry>The Date Last Run indicates the last time that a process was run.</entry> 
+</row> 
+<row> 
+ <entry>Data da Próxima Execução</entry><entry>Data+Hora</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date the process will run next</entry> 
+<entry>The Date Next Run indicates the next time this process will run.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Registro - C_AcctProcessorLog</title> 
+ 
+<ulink url="data/C_AcctProcessorLog_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Resultado da execução do Processador de Contabilidade</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Resultado da execução do Processador de Contabilidade</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Log Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Registro diário (log) do Processador de Contabilidade</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Result of the execution of the Accounting Processor</entry> 
+<entry>Result of the execution of the Accounting Processor</entry> 
+</row> 
+<row> 
+ <entry>Dados Binários</entry><entry>Binário</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Binary Data</entry> 
+<entry>The Binary field stores binary data.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Processador de Contabilidade</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cacctprocessor_log</entry> 
+<entry> </entry> 
+<entry valign="middle">Accounting Processor/Server Parameters</entry> 
+<entry>Accounting Processor/Server Parameters</entry> 
+</row> 
+<row> 
+ <entry>Criado</entry><entry>Data+Hora</entry> 
+<entry>(SYSDATE)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date this record was created</entry> 
+<entry>The Created field indicates the date that this record was created.</entry> 
+</row> 
+<row> 
+ <entry>Resumo</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Textual summary of this request</entry> 
+<entry>The Summary allows free form text entry of a recap of this request.</entry> 
+</row> 
+<row> 
+ <entry>Erro</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">An Error occurred in the execution</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Referência</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Reference for this record</entry> 
+<entry>The Reference displays the source document number.</entry> 
+</row> 
+<row> 
+ <entry>Texto de Mensagem</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Text Message</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>C_AcctProcessorLog_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

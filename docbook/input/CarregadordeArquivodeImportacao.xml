@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2000-09-15 16:32:44.0</para><para> <emphasis>Atualizado:</emphasis>2000-01-02 00:00:00.0</para>
+<title>Formulário: Carregador de Arquivo de Importação</title> 
+ <para><emphasis> Descrição: </emphasis>Carregar arquivos planos nas tabelas de importação</para><para><emphasis>Comentário/Ajuda:</emphasis>O Carregador de Arquivo de Importação analisa o conteúdo de um arquivo plano e o carrega nas tabelas de importação. Comentários começam com um '[' e terminam com um ']' e são ignorados;
+ exemplo: [Algum Título].</para>
+<imagedata fileref="/img/manual/CarregadordeArquivodeImportacao.png" format="PNG" /> </chapter>

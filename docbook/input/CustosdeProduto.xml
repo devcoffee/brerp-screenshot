@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Custos de Produto</title> 
+ <para> <emphasis>Descrição: </emphasis>  Gerenciamento de Custo de Produto</para><para> <emphasis>Comentário/Ajuda: </emphasis>Gerenciamento de Elementos de Custo de Produto</para><para><emphasis> Criado em: </emphasis>2005-04-24 22:26:46.0
+</para><para><emphasis>Atualizado em: </emphasis>2005-07-26 14:03:49.0</para>
+<imagedata fileref="/img/manual/CustosdeProduto.png" format="PNG" /><section> 
+ <title>Tabela: Selecione o Produto - M_Product</title> 
+ 
+<ulink url="data/M_Product_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Selecione o produto</para> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Select Product Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Modelo de Correspondência</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">rmailtext_mproduct</entry> 
+<entry> </entry> 
+<entry valign="middle">Text templates for mailings</entry> 
+<entry>The Mail Template indicates the mail template for return messages. Mail text can include variables.  The priority of parsing is User/Contact, Business Partner and then the underlying business object (like Request, Dunning, Workflow object).
+So, @Name@ would resolve into the User name (if user is defined defined), then Business Partner name (if business partner is defined) and then the Name of the business object if it has a Name.
+For Multi-Lingual systems, the template is translated based on the Business Partner's language selection.</entry> 
+</row> 
+<row> 
+ <entry>URL da Imagem</entry><entry>URL</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">URL of  image</entry> 
+<entry>URL of image;
+ The image is not stored in the database, but retrieved at runtime. The image can be a gif, jpeg or png.</entry> 
+</row> 
+<row> 
+ <entry>URL da Descrição</entry><entry>URL</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">URL for the description</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Núm. da Versão</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Version Number</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Prazo de Validade</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Number of days the product is guaranteed or available</entry> 
+<entry>If the value is 0, there is no limit to the availability or guarantee, otherwise the guarantee date is calculated by adding the days to the delivery date.</entry> 
+</row> 
+<row> 
+ <entry>Conjunto de Atributos</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mattributeset_mproduct</entry> 
+<entry> </entry> 
+<entry valign="middle">Product Attribute Set</entry> 
+<entry>Define Product Attribute Sets to add additional attributes and values to the product. You need to define a Attribute Set if you want to enable Serial and Lot Number tracking.</entry> 
+</row> 
+<row> 
+ <entry>Instância do Conjunto de Atributos</entry><entry>Atributo de Produto</entry> 
+<entry></entry> 
+<entry valign="middle">mattrsetinst_mproduct</entry> 
+<entry> </entry> 
+<entry valign="middle">Product Attribute Set Instance</entry> 
+<entry>The values of the actual Product Attribute Instances.  The product level attributes are defined on Product level.</entry> 
+</row> 
+<row> 
+ <entry>Categoria de Frete</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mfreightcategory_mproduct</entry> 
+<entry> </entry> 
+<entry valign="middle">Category of the Freight</entry> 
+<entry>Freight Categories are used to calculate the Freight for the Shipper selected</entry> 
+</row> 
+<row> 
+ <entry>Localizador</entry><entry>Locator (Armazém)</entry> 
+<entry></entry> 
+<entry valign="middle">mlocator_mproduct</entry> 
+<entry> </entry> 
+<entry valign="middle">Warehouse Locator</entry> 
+<entry>The Locator indicates where in a Warehouse a product is located.</entry> 
+</row> 
+<row> 
+ <entry>Prazo de Validade Mín.</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Minimum number of guarantee days</entry> 
+<entry>When selecting batch/products with a guarantee date, the minimum left guarantee days for automatic picking.  You can pick any batch/product manually. </entry> 
+</row> 
+<row> 
+ <entry>Promovido na Loja Virtual da Web</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">If selected, the product is displayed in the initial or any empty search</entry> 
+<entry>In the display of products in the Web Store, the product is displayed in the initial view or if no search criteria are entered. To be displayed, the product must be in the price list used.</entry> 
+</row> 
+<row> 
+ <entry>Auto-Serviço</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a Self-Service entry or this entry can be changed via Self-Service</entry> 
+<entry>Self-Service allows users to enter data or update their data.  The flag indicates, that this record was entered or created via Self-Service or that the user can change it via the Self-Service functionality.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Assinatura</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">csubscriptiontype_mproduct</entry> 
+<entry> </entry> 
+<entry valign="middle">Type of subscription</entry> 
+<entry>Subscription type and renewal frequency</entry> 
+</row> 
+<row> 
+ <entry>Entrega direta ao consumidor</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Drop Shipments are sent from the Vendor directly to the Customer</entry> 
+<entry>Drop Shipments do not cause any Inventory reservations or movements as the Shipment is from the Vendor's inventory. The Shipment of the Vendor to the Customer must be confirmed.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Nível de Resumo</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a summary entity</entry> 
+<entry>A summary entity represents a branch in a tree rather than an end-node. Summary entities are used for reporting and do not have own values.</entry> 
+</row> 
+<row> 
+ <entry>Comprado</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Organization purchases this product</entry> 
+<entry>The Purchased check box indicates if this product is purchased by this organization.</entry> 
+</row> 
+<row> 
+ <entry>Vendido</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Organization sells this product</entry> 
+<entry>The Sold check box indicates if this product is sold by this organization.</entry> 
+</row> 
+<row> 
+ <entry>Volume</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Volume of a product</entry> 
+<entry>The Volume indicates the volume of the product in the Volume UOM of the Client</entry> 
+</row> 
+<row> 
+ <entry>Peso</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Weight of a product</entry> 
+<entry>The Weight indicates the weight  of the product in the Weight UOM of the Client</entry> 
+</row> 
+<row> 
+ <entry>Categoria de Imposto</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ctaxcategory_mproduct</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @ProductType@=R | @ProductType@=E | @ProductType@=O </entry> 
+<entry valign="middle">Tax Category</entry> 
+<entry>The Tax Category provides a method of grouping similar taxes.  For example, Sales Tax or Value Added Tax.</entry> 
+</row> 
+<row> 
+ <entry>Largura da Prateleira</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Shelf width required</entry> 
+<entry>The Shelf Width indicates the width dimension required on a shelf for a product</entry> 
+</row> 
+<row> 
+ <entry>Altura da Prateleira</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Shelf height required</entry> 
+<entry>The Shelf Height indicates the height dimension required on a shelf for a product</entry> 
+</row> 
+<row> 
+ <entry>Profundidade da Prateleira</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Shelf depth required</entry> 
+<entry>The Shelf Depth indicates the depth dimension required on a shelf for a product </entry> 
+</row> 
+<row> 
+ <entry>Unidades por Pallet</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Units Per Pallet</entry> 
+<entry>The Units per Pallet indicates the number of units of this product which fit on a pallet.</entry> 
+</row> 
+<row> 
+ <entry>Descontinuado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This product is no longer available</entry> 
+<entry>The Discontinued check box indicates a product that has been discontinued.</entry> 
+</row> 
+<row> 
+ <entry>Descontinuado Em</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Discontinued At indicates Date when product was discontinued</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nota de Documento</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Additional information for a Document</entry> 
+<entry>The Document Note is used for recording any additional information regarding this product.</entry> 
+</row> 
+<row> 
+ <entry>Classificação</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Classification for grouping</entry> 
+<entry>The Classification can be used to optionally group products.</entry> 
+</row> 
+<row> 
+ <entry>Reconhecimento de Receitas</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">crevrecognition_mproduct</entry> 
+<entry> </entry> 
+<entry valign="middle">Method for recording revenue</entry> 
+<entry>The Revenue Recognition indicates how revenue will be recognized for this product</entry> 
+</row> 
+<row> 
+ <entry>Lista de Materiais</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @ProductType@=R | @ProductType@=E | @ProductType@=O </entry> 
+<entry valign="middle">Bill of Materials</entry> 
+<entry>The Bill of Materials check box indicates if this product consists of a bill of materials.</entry> 
+</row> 
+<row> 
+ <entry>Imprimir Registros detalhados na Fatura </entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Print detail BOM elements on the invoice</entry> 
+<entry>The Print Details on Invoice indicates that the BOM element products will print on the Invoice as opposed to this product.</entry> 
+</row> 
+<row> 
+ <entry>Imprimir registros detalhados na Lista de Separação</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Print detail BOM elements on the pick list</entry> 
+<entry>The Print Details on Pick List indicates that the BOM element products will print on the Pick List as opposed to this product.</entry> 
+</row> 
+<row> 
+ <entry>Verificado</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The BOM configuration has been verified</entry> 
+<entry>The Verified check box indicates if the configuration of this product has been verified.  This is used for products that consist of a bill of materials</entry> 
+</row> 
+<row> 
+ <entry>Verificar Estrutura de LDM</entry><entry>Botão</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Despesa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">sexpensetype_mproduct</entry> 
+<entry> </entry> 
+<entry valign="middle">Expense report type</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Recurso</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">sresource_mproduct</entry> 
+<entry> </entry> 
+<entry valign="middle">Resource</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">adclient_mproduct</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">ad_org_mproduct</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Chave de Busca</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @ProductType@=R | @ProductType@=E | @ProductType@=O </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @ProductType@=R | @ProductType@=E | @ProductType@=O </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @ProductType@=R | @ProductType@=E | @ProductType@=O </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>Categoria de Produto</entry><entry>Tabela Direta</entry> 
+<entry>M_Product Category</entry> 
+<entry valign="middle">mproduct_mproductcategory</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @ProductType@=R | @ProductType@=E | @ProductType@=O </entry> 
+<entry valign="middle">Category of a Product</entry> 
+<entry>Identifies the category which this product belongs to.  Product categories are used for pricing and selection.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Produto</entry><entry>Lista</entry> 
+<entry>Ativo
+Tipo de Despesa
+Item
+Online
+Recurso
+Serviços
+(I)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Type of product</entry> 
+<entry>The type of product also determines accounting consequences.</entry> 
+</row> 
+<row> 
+ <entry>UPC/EAN</entry><entry>Texto Curto (String)</entry> 
+<entry>(SEM GTIN)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Bar Code (Universal Product Code or its superset European Article Number)</entry> 
+<entry>Use this field to enter the bar code for the product in any of the bar code symbologies (Codabar, Code 25, Code 39, Code 93, Code 128, UPC (A), UPC (E), EAN-13, EAN-8, ITF, ITF-14, ISBN, ISSN, JAN-13, JAN-8, POSTNET and FIM, MSI/Plessey, and Pharmacode) </entry> 
+</row> 
+<row> 
+ <entry>UCE</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Stock Keeping Unit</entry> 
+<entry>The SKU indicates a user defined stock keeping unit.  It may be used for an additional bar code symbols or your own schema.</entry> 
+</row> 
+<row> 
+ <entry>UDM</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cuom_mproduct</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @ProductType@=R | @ProductType@=E | @ProductType@=O </entry> 
+<entry valign="middle">Unit of Measure</entry> 
+<entry>The UOM defines a unique non monetary Unit of Measure</entry> 
+</row> 
+<row> 
+ <entry>Estocado</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @ProductType@=R | @ProductType@=E | @ProductType@=O </entry> 
+<entry valign="middle">Organization stocks this product</entry> 
+<entry>The Stocked check box indicates if this product is stocked by this Organization.</entry> 
+</row> 
+<row> 
+ <entry>Agente da Companhia</entry><entry>Tabela</entry> 
+<entry>AD_User - SalesRep</entry> 
+<entry valign="middle">salesrep_mproduct</entry> 
+<entry> </entry> 
+<entry valign="middle">Sales Representative or Company Agent</entry> 
+<entry>The Sales Representative indicates the Sales Rep for this Region.  Any Sales Rep must be a valid internal user.</entry> 
+</row> 
+<row> 
+ <entry>M_Product_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Custos de Produto - M_Cost</title> 
+ 
+<ulink url="data/M_Cost_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Gerenciamento de Custo de Produto</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Product Costs Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">adclient_mcost</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">adorg_m_cost</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">mproduct_mcost</entry> 
+<entry>M_Product.IsSummary='N' AND M_Product.IsActive='Y' AND (M_Product.Discontinued = 'N' OR (M_Product.Discontinued = 'Y'  AND M_Product.DiscontinuedAt &gt;
+ SYSDATE))	 </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Instância do Conjunto de Atributos</entry><entry>Atributo de Produto</entry> 
+<entry></entry> 
+<entry valign="middle">masi_mcost</entry> 
+<entry> </entry> 
+<entry valign="middle">Product Attribute Set Instance</entry> 
+<entry>The values of the actual Product Attribute Instances.  The product level attributes are defined on Product level.</entry> 
+</row> 
+<row> 
+ <entry>Esquema Contábil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cacctschema_mcost</entry> 
+<entry> </entry> 
+<entry valign="middle">Rules for accounting</entry> 
+<entry>An Accounting Schema defines the rules used in accounting such as costing method, currency and calendar</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Custo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mcosttype_mcost</entry> 
+<entry> </entry> 
+<entry valign="middle">Type of Cost (e.g. Current, Plan, Future)</entry> 
+<entry>You can define multiple cost types. A cost type selected in an Accounting Schema is used for accounting.</entry> 
+</row> 
+<row> 
+ <entry>Elemento de Custo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mcostelement_mcost</entry> 
+<entry>(CostingMethod IS NULL OR CostingMethod='S') </entry> 
+<entry valign="middle">Product Cost Element</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Método de Formação de Custo</entry><entry>Lista</entry> 
+<entry>PC Médio
+Peps (Fifo)
+Última Fatura
+Fatura Média
+Ueps (Lifo)
+Preço do Último PC
+Custeio Padrão
+Definido pelo usuário
+_
+(x)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates how Costs will be calculated</entry> 
+<entry>The Costing Method indicates how costs will be calculated (Standard, Average, Lifo, FiFo).  The default costing method is defined on accounting schema level and can be optionally overwritten in the product category.  The costing method cannot conflict with the Material Movement Policy (defined on Product Category).</entry> 
+</row> 
+<row> 
+ <entry>Preço de Custo Atual</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @CostingMethod@!x </entry> 
+<entry valign="middle">The currently used cost price</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Preços de Custos do Mais Baixo Nível</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @CostingMethod@!x </entry> 
+<entry valign="middle">Current Price Lower Level Is the sum of the costs of the components of this product manufactured for this level.</entry> 
+<entry>Current Price Lower Level is used for get the total costs for lower level the a product manufactured.
+
+The Current Price Lower Level always will be calculated.
+
+You can see the Current Cost Price and Current Cost Price Lower Level with Cost  Bill of Material %26 Formula Detail Report.
+ 
+The sum the Current Cost Price + Current Cost Price Lower Level is the total cost to a product manufactured.
+</entry> 
+</row> 
+<row> 
+ <entry>Preço de Custo Futuro</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @CostingMethod@!S </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Custo Futuro Preço Baixo Nível</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @CostingMethod@!S </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Porcentagem</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Percentage</entry> 
+<entry>The Percent indicates the percentage used.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Atual</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Current Quantity</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Custo Congelado</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicated that the Standard Cost is frozen</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor Acumulado</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Amount</entry> 
+<entry>Sum of all amounts</entry> 
+</row> 
+<row> 
+ <entry>Qde Acumulada</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Quantity</entry> 
+<entry>Sum of the quantities</entry> 
+</row> 
+<row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Movimento de Custo - M_CostMovement_v</title> 
+ <para><emphasis>Descrição:</emphasis> Mostra o movimento do custo por transação</para> 
+<para><emphasis>Coluna linkada: </emphasis> Organization</para> 
+<para><emphasis>Claúsula Where:</emphasis> M_CostMovement_v.AD_Client_ID=@AD_Client_ID@ AND M_CostMovement_v.M_Product_ID=@M_Product_ID@ AND M_CostMovement_v.M_CostType_ID=@M_CostType_ID@ AND M_CostMovement_v.C_AcctSchema_ID=@C_AcctSchema_ID@ AND M_CostMovement_v.M_CostElement_ID=@M_CostElement_ID@ AND M_CostMovement_v.M_AttributeSetInstance_ID=@M_AttributeSetInstance_ID@</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>Cost Movement Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Histórico de Custo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Movement history for M_Cost</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Esquema Contábil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Rules for accounting</entry> 
+<entry>An Accounting Schema defines the rules used in accounting such as costing method, currency and calendar</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Custo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Type of Cost (e.g. Current, Plan, Future)</entry> 
+<entry>You can define multiple cost types. A cost type selected in an Accounting Schema is used for accounting.</entry> 
+</row> 
+<row> 
+ <entry>Elemento de Custo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Product Cost Element</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Detalhe de Custo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Cost Detail Information</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Instância do Conjunto de Atributos</entry><entry>Atributo de Produto</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Product Attribute Set Instance</entry> 
+<entry>The values of the actual Product Attribute Instances.  The product level attributes are defined on Product level.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Quantity</entry> 
+<entry>The Quantity indicates the number of a specific product or item for this document.</entry> 
+</row> 
+<row> 
+ <entry>Valor</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Amount</entry> 
+<entry>Amount</entry> 
+</row> 
+<row> 
+ <entry>Delta de Valor</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Difference Amount</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Delta de Quantidade</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Quantity Difference</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Antiga Quantidade Atual</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Old current quantity before the processing of M_CostDetail</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Antigo Preço de Custo Atual</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Old current cost price before the processing of M_CostDetail</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Antiga Qtd. Acumulada</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Old accumulated qty before the processing of M_CostDetail</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor Antigo Acumulado</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Old accumulated amt before the processing of M_CostDetail</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nova Quantidade Atual</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">New current quantity after processing of M_CostDetail</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Novo Preço de Custo</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">New current cost price after processing of M_CostDetail</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nova Quantidade Acumulada</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">New Accumulated Qty after processing of M_CostDetail</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Novo Valor Acumulado</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Accumulated Amt after processing of M_CostDetail</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Linha de Movimento</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Inventory Move document Line</entry> 
+<entry>The Movement Line indicates the inventory movement document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>Linha de Fatura</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Invoice Detail Line</entry> 
+<entry>The Invoice Line uniquely identifies a single line of an Invoice.</entry> 
+</row> 
+<row> 
+ <entry>Linha de Estoque Físico</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Unique line in an Inventory document</entry> 
+<entry>The Physical Inventory Line indicates the inventory document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>Linha de Produção</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Document Line representing a production</entry> 
+<entry>The Production Line indicates the production document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>Emissão do Projeto</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Project Issues (Material, Labor)</entry> 
+<entry>Issues to the project initiated by the "Issue to Project" process. You can issue Receipts, Time and Expenses, or Stock.</entry> 
+</row> 
+<row> 
+ <entry>Linha de Pedido de Compra</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Sales Order Line</entry> 
+<entry>The Sales Order Line is a unique identifier for a line in an order.</entry> 
+</row> 
+<row> 
+ <entry>Linha de Recebimento</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Line on Shipment or Receipt document</entry> 
+<entry>The Shipment/Receipt Line indicates a unique line in a Shipment/Receipt document</entry> 
+</row> 
+<row> 
+ <entry>Confrontar Fatura</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Match Shipment/Receipt to Invoice</entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Detalhes de Custo - M_CostDetail</title> 
+ 
+<ulink url="data/M_CostDetail_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Visualizar Detalhes de Custo de Produto</para> 
+<para><emphasis>Coluna linkada: </emphasis> Product</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Cost Details Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Detalhe de Custo</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Cost Detail Information</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adclient_mcostdetail</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adorg_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Esquema Contábil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cacctschema_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">Rules for accounting</entry> 
+<entry>An Accounting Schema defines the rules used in accounting such as costing method, currency and calendar</entry> 
+</row> 
+<row> 
+ <entry>Elemento de Custo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mcostelement_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">Product Cost Element</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">mproduct_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Instância do Conjunto de Atributos</entry><entry>Atributo de Produto</entry> 
+<entry></entry> 
+<entry valign="middle">masi_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">Product Attribute Set Instance</entry> 
+<entry>The values of the actual Product Attribute Instances.  The product level attributes are defined on Product level.</entry> 
+</row> 
+<row> 
+ <entry>Preço</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Price</entry> 
+<entry>The Price indicates the Price for a product or service.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Quantity</entry> 
+<entry>The Quantity indicates the number of a specific product or item for this document.</entry> 
+</row> 
+<row> 
+ <entry>Valor</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Amount</entry> 
+<entry>Amount</entry> 
+</row> 
+<row> 
+ <entry>Delta de Quantidade</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Quantity Difference</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Delta de Valor</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Difference Amount</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Criado</entry><entry>Data+Hora</entry> 
+<entry>(SYSDATE)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date this record was created</entry> 
+<entry>The Created field indicates the date that this record was created.</entry> 
+</row> 
+<row> 
+ <entry>Linha de Pedido de Compra</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">corderline_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">Sales Order Line</entry> 
+<entry>The Sales Order Line is a unique identifier for a line in an order.</entry> 
+</row> 
+<row> 
+ <entry>Linha de Fatura</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">minvoiceline_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">Invoice Detail Line</entry> 
+<entry>The Invoice Line uniquely identifies a single line of an Invoice.</entry> 
+</row> 
+<row> 
+ <entry>Linha de Recebimento</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">minoutline_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">Line on Shipment or Receipt document</entry> 
+<entry>The Shipment/Receipt Line indicates a unique line in a Shipment/Receipt document</entry> 
+</row> 
+<row> 
+ <entry>Linha de Movimento</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">mmovementline_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">Inventory Move document Line</entry> 
+<entry>The Movement Line indicates the inventory movement document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>Linha de Estoque Físico</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">minventoryline_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">Unique line in an Inventory document</entry> 
+<entry>The Physical Inventory Line indicates the inventory document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>Emissão do Projeto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cprojectissue_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">Project Issues (Material, Labor)</entry> 
+<entry>Issues to the project initiated by the "Issue to Project" process. You can issue Receipts, Time and Expenses, or Stock.</entry> 
+</row> 
+<row> 
+ <entry>Linha de Produção</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">mproductionline_mcostdetail</entry> 
+<entry> </entry> 
+<entry valign="middle">Document Line representing a production</entry> 
+<entry>The Production Line indicates the production document line (if applicable) for this transaction</entry> 
+</row> 
+<row> 
+ <entry>Transação de Vendas</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a Sales Transaction</entry> 
+<entry>The Sales Transaction checkbox indicates if this item is a Sales Transaction.</entry> 
+</row> 
+<row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Preço de Custo Atual</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The currently used cost price</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade Atual</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Current Quantity</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valor Acumulado</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Amount</entry> 
+<entry>Sum of all amounts</entry> 
+</row> 
+<row> 
+ <entry>Qde Acumulada</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total Quantity</entry> 
+<entry>Sum of the quantities</entry> 
+</row> 
+<row> 
+ <entry>M_CostDetail_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Cost Queue - M_CostQueue</title> 
+ 
+<ulink url="data/M_CostQueue_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Fila de Custos para UePs/PePs (Lifo/Fifo)</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Note que a fila de custos pode não ser a mesma que a fila de custo da movimentação física devido a diferenças no nível de custeio e na prioridade do armazém.</para> 
+<para><emphasis>Coluna linkada: </emphasis> Product</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Cost Queue Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Esquema Contábil</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cacctschema_mcostqueue</entry> 
+<entry> </entry> 
+<entry valign="middle">Rules for accounting</entry> 
+<entry>An Accounting Schema defines the rules used in accounting such as costing method, currency and calendar</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Custo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mcosttype_mcostqueue</entry> 
+<entry> </entry> 
+<entry valign="middle">Type of Cost (e.g. Current, Plan, Future)</entry> 
+<entry>You can define multiple cost types. A cost type selected in an Accounting Schema is used for accounting.</entry> 
+</row> 
+<row> 
+ <entry>Elemento de Custo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">mcostelement_mcostqueue</entry> 
+<entry> </entry> 
+<entry valign="middle">Product Cost Element</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">mproduct_mcostqueue</entry> 
+<entry> </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Instância do Conjunto de Atributos</entry><entry>Atributo de Produto</entry> 
+<entry></entry> 
+<entry valign="middle">masi_mcostqueue</entry> 
+<entry> </entry> 
+<entry valign="middle">Product Attribute Set Instance</entry> 
+<entry>The values of the actual Product Attribute Instances.  The product level attributes are defined on Product level.</entry> 
+</row> 
+<row> 
+ <entry>Preço de Custo Atual</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The currently used cost price</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Quantidade Atual</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Current Quantity</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>M_CostQueue_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

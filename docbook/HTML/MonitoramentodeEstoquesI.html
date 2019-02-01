@@ -1,0 +1,296 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>InfoPanel: Monitoramento de Estoques</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d148329e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">InfoPanel: Monitoramento de Estoques</h2>
+               </div>
+            </div>
+         </div>
+         <p><span class="emphasis"><em> Criado: </em></span>2017-07-01 15:48:45.0
+         </p>
+         <p> <span class="emphasis"><em> Atualizado: </em></span>2018-08-10 15:13:22.0
+         </p>
+         <p><span class="emphasis"><em> Tabela: </em></span>AD_InfoWindow
+         </p>
+         <p><span class="emphasis"><em> From (SQL): </em></span>cof_inoutline_candidate_v iol
+         </p>
+         <p><span class="emphasis"><em> Order By :</em></span>null<span class="emphasis"><em> SELECT Distinct </em></span></p><img src="/img/manual/MonitoramentodeEstoques.png"></img><div class="table" id="d148329e28">
+            <div class="table-title">Table&nbsp;1.1.&nbsp; InfoPanel Columns </div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sql SELECT</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">QueryCriteria</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade a Entregar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.QtyToDeliver</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data Prometida</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.DatePromised</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>&gt;
+                           = <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Trunc
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data que o Pedido foi prometido</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A "Data Prometida" indica a data, se existir, que um Pedido foi prometido.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Organiza&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.AD_Org_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Entidade organizacional dentro da Empresa</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Uma "Organiza&ccedil;&atilde;o" &eacute; uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos s&atilde;o loja, departamento. Voc&ecirc; pode compartilhar
+                           dados entre organiza&ccedil;&otilde;es.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Parceiro de Neg&oacute;cios </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.C_BPartner_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifica um Parceiro de Neg&oacute;cios.</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Um "Parceiro de Neg&oacute;cios" &eacute; qualquer um com quem voc&ecirc; transaciona.  Isto pode incluir Fornecedores, Clientes, Funcion&aacute;rios,
+                           Vendedores, Representantes de Venda, etc.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Pedido</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.C_Order_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Pedido</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O "Pedido" &eacute; um documento de controle.  O "Pedido" est&aacute; completo quando a quantidade pedida for a mesma que a quantidade enviada
+                           e faturada.  Quando voc&ecirc; fecha um pedido, as quantidades n&atilde;o entregues (pendentes) s&atilde;o canceladas.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data Prometida</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.DatePromised</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>&lt;
+                           = <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Trunc
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data que o Pedido foi prometido</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A "Data Prometida" indica a data, se existir, que um Pedido foi prometido.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Documento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.C_DocType_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Documento ou regras</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O "Tipo de Documento" determina a seq&uuml;&ecirc;ncia do documento e as regras de processamento</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia do Pedido</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.POReference</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero de Refer&ecirc;ncia da Transa&ccedil;&atilde;o (Pedido de Vendas, Pedido de Compras) do seu Parceiro de Neg&oacute;cios</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A "Refer&ecirc;ncia de Pedido" do Parceiro de Neg&oacute;cios &eacute; o n&uacute;mero do pedido para esta transa&ccedil;&atilde;o espec&iacute;fica;
+                            Frequentemente n&uacute;meros de Pedidos de Compra s&atilde;o fornecidos para imprimir nas faturas para facilitar a refer&ecirc;ncia.  Um n&uacute;mero
+                           padr&atilde;o pode ser definido na janela de Parceiro de Neg&oacute;cios (Cliente).
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Texto M&eacute;dio (at&eacute; 2000 caracteres)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.Description</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o resumida opcional do registro</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Uma descri&ccedil;&atilde;o &eacute; limitada a 255 caracteres.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Representante de Vendas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.SalesRep_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Representante de Vendas ou Promotor de Vendas da Companhia</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O campo "Representante de Vendas" indica o representante de vendas para esta regi&atilde;o.  Qualquer Representante de Vendas tem
+                           que ser um usu&aacute;rio interno v&aacute;lido.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Armaz&eacute;m</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.M_Warehouse_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Armaz&eacute;m de estocagem e Ponto de Servi&ccedil;o</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O "Armaz&eacute;m" identifica um armaz&eacute;m ou local em particular onde os produtos s&atilde;o armazenados ou s&atilde;o prestados servi&ccedil;os.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Localiza&ccedil;&atilde;o do Parceiro</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.C_Bpartner_Location_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifica o endere&ccedil;o (de remessa para) este Parceiro de Neg&oacute;cios.</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O "Endere&ccedil;o do Parceiro" indica a localiza&ccedil;&atilde;o de um Parceiro de Neg&oacute;cios.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Usu&aacute;rio/Contato</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.AD_User_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Usu&aacute;rio dentro do Sistema - Interno ou Contato de Parceiro de Neg&oacute;cios</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O Usu&aacute;rio identifica um usu&aacute;rio &uacute;nico e exclusivo dentro do sistema. Este poderia ser um usu&aacute;rio interno ou um contato de
+                           parceiro de neg&oacute;cios
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Produto</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.M_Product_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Produto, Servi&ccedil;o, Item</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Identifica um item que &eacute; ou comprado ou vendido por esta organiza&ccedil;&atilde;o.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade Requisitada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.QtyOrdered</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade Requisitada</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A "Quantidade Requisitada" indica a quantidade de um produto que foi requisitada.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Linha de Ordem de Vendas</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.C_OrderLine_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Linha de Ordem de Vendas</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A "Linha de Ordem de Vendas" &eacute; um identificador exclusivo para uma linha em uma ordem.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data do Pedido</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.DateOrdered</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>&gt;
+                           = <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Trunc
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data do Pedido</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Indica a Data que um item foi pedido.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data do Pedido</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.DateOrdered</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>&lt;
+                           = <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>Trunc
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data do Pedido</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Indica a Data que um item foi pedido.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade em Estoque</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.QtyOnHand</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade Real Dispon&iacute;vel em Estoque</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A "Quantidade em Estoque" Indica a Quantidade Real Existente em um Determinado Armaz&eacute;m.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade Reservada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.QtyReserved</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade Reservada</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A "Quantidade Reservada" indica a quantidade de um produto que est&aacute; reservada atualmente em Pedidos.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade Movimentada N&atilde;o Confirmada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.QtyUnconfirmedMove</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade N&atilde;o Confirmada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.QtyUnconfirmed</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade Requisitada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&uacute;mero</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.bomQtyOrdered</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Quantidade Requisitada</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A "Quantidade Requisitada" indica a quantidade de um produto que foi requisitada.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regi&atilde;o de Entrega</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">iol.cof_m_shipregion_id</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Primary Key : Shipment Region</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Primary Key : Shipment Region</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Movimenta&ccedil;&otilde;es em Progresso</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">(CASE WHEN (SELECT count(M_MovementLine_ID) FROM  M_MovementLine ml LEFT JOIN m_movement m ON (ml.m_movement_id = m.m_movement_id)
+                           WHERE m.docstatus = 'IP' AND ml.cof_orderline_id = iol.c_orderline_id) &gt;
+                            0 THEN 'Y' ELSE 'N' END) AS COF_MovimentacoesProgresso
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Poss&iacute;vel Movimentar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">(CASE WHEN (SELECT sum(bomqtyonhand(iol.m_product_id, sw.cof_warehouse_id, 0)) FROM cof_sparewarehouse sw WHERE sw.m_warehouse_id
+                           = iol.m_warehouse_id) &gt;
+                            0 THEN 'Y' ELSE 'N' END) AS COF_PossivelMovimentar
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "><span class="emphasis"><em>Operador:</em></span>= <span class="emphasis"><em>Fun&ccedil;&atilde;o:</em></span>null
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">null</td>
+                        <td style="text-align: center; ">null</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br><p><a class="ulink" href="data/MonitoramentodeEstoquesinfodata.html" target="_top">[BANCO DE DADOS]</a>,
+         </p>
+      </section>
+   </body>
+</html>

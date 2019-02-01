@@ -1,0 +1,156 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Table&nbsp;1.&nbsp;Regra</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <div class="table" id="d69851e1">
+         <div class="table-title">Table&nbsp;1.&nbsp;Regra</div>
+         <div class="table-contents">
+            <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+               <colgroup>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+                  <col></col>
+               </colgroup>
+               <tbody>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&iacute;vel de Acesso de Dados</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Entidade</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Evento</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Regra</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Roteiro (Script)</td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">Chave de Busca</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">7</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50003</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">R</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Payment Clearing (unallocated cash/payment selection)</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Q</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> SELECT (CASE WHEN fa.AD_Table_ID = 335 /*C_Payment*/
+                        THEN (SELECT (CASE WHEN p.DocStatus IN ('VO','RE') AND p.Reversal_ID &gt;
+                        0
+                        THEN 'Auto C_Payment Reversed:' || least(p.C_Payment_ID, p.Reversal_ID)
+                        WHEN p.DocStatus = 'VO'
+                        THEN 'Auto C_Payment Voided:' || p.C_Payment_ID
+                        ELSE 'Auto C_Payment:' || fa.Record_ID END)
+                        FROM C_Payment p
+                        WHERE p.C_Payment_ID=fa.Record_ID)   
+                        WHEN fa.AD_Table_ID = 735 /*C_AllocationHdr*/ 
+                        THEN (SELECT 'Auto C_Payment:' || al.C_Payment_ID FROM C_AllocationLine al 
+                         WHERE al.C_AllocationHdr_ID = fa.Record_ID 
+                         AND al.C_AllocationLine_ID = fa.Line_ID ) END) 
+                        FROM Fact_Acct fa WHERE fa.Fact_Acct_id=Fact_Reconciliation.Fact_Acct_ID
+                     </td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">GL_Rec_Pay</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">7</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50001</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">R</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AR/AP Trade (Receivables/Vendor Liability</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Q</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> SELECT (CASE WHEN fa.AD_Table_ID =  318 /* C_Invoice */ 
+                        THEN (SELECT (CASE WHEN i.DocStatus IN ('VO','RE') AND i.Reversal_ID &gt;
+                         0
+                                                    THEN 'Auto C_Invoice Reversed:' || least(i.C_Invoice_ID, i.Reversal_ID)
+                                                     WHEN i.DocStatus = 'VO'
+                                                     THEN 'Auto C_Invoice Voided:' || i.C_Invoice_ID
+                                                     ELSE 'Auto C_Invoice:' || fa.Record_ID END)
+                                      FROM C_Invoice i
+                                      WHERE i.C_Invoice_ID=fa.Record_ID)  
+                         WHEN fa.AD_Table_ID = 735 /* C_AllocationHdr */ 
+                         THEN (SELECT 'Auto C_Invoice:' || al.C_Invoice_ID FROM C_AllocationLine al 
+                         WHERE al.C_AllocationHdr_ID = fa.Record_ID 
+                         AND al.C_AllocationLine_ID = fa.Line_ID ) END)  FROM Fact_Acct fa WHERE fa.Fact_Acct_id=Fact_Reconciliation.Fact_Acct_ID
+                     </td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">GL_Rec_ARAP</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">7</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">50002</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">R</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Bank in Transit</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Q</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> SELECT (CASE WHEN fa.AD_Table_ID = 335 /*C_Payment*/ 
+                         THEN (SELECT (CASE WHEN p.DocStatus IN ('VO','RE') AND p.Reversal_ID &gt;
+                         0
+                                                    THEN 'Auto C_Payment Reversed:' || least(p.C_Payment_ID, p.Reversal_ID)
+                                                     WHEN p.DocStatus = 'VO'
+                                                     THEN 'Auto C_Payment Voided:' || p.C_Payment_ID
+                                                     ELSE 'Auto C_Payment:' || fa.Record_ID END)
+                                      FROM C_Payment p
+                                      WHERE p.C_Payment_ID=fa.Record_ID)   
+                         WHEN fa.AD_Table_ID = 392 /*C_BankStatement*/ 
+                         THEN (SELECT 'Auto C_Payment:' || bsl.C_Payment_ID FROM C_BankStatementLine bsl 
+                         WHERE bsl.C_BankStatement_ID = fa.Record_ID 
+                         AND bsl.C_BankStatementLine_ID = fa.Line_ID ) END)
+                        FROM Fact_Acct fa WHERE fa.Fact_Acct_id=Fact_Reconciliation.Fact_Acct_ID
+                     </td>
+                     <td style="text-align: center; border-bottom: 0.5pt solid ; ">GL_Rec_Bank</td>
+                  </tr>
+                  <tr>
+                     <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">50004</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">D</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">R</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">Not Invoiced Receipts</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">Q</td>
+                     <td style="text-align: center; border-right: 0.5pt solid ; ">SELECT (CASE WHEN fa.AD_Table_ID =  319 /* M_InOut */ 
+                        THEN (SELECT (CASE WHEN io.DocStatus IN ('VO','RE') AND io.Reversal_ID &gt;
+                         0 
+                                                    THEN 'Auto M_InOut Reversed:' || least(io.M_InOut_ID, io.Reversal_ID)
+                                                    WHEN io.DocStatus = 'VO'
+                                                    THEN 'Auto M_InOut Voided:' || io.M_InOut_ID
+                                                    ELSE 'Auto M_InOut:' || fa.Record_ID || ' Line:' || fa.Line_ID END)
+                                    FROM M_InOut io
+                                    WHERE io.M_InOut_ID = fa.Record_ID)
+                        WHEN fa.AD_Table_ID = 318 /* C_Invoice */ 
+                        THEN (SELECT MAX(CASE WHEN i.DocStatus IN ('VO', 'RE') AND i.Reversal_ID &gt;
+                         0 
+                                                   THEN 'Auto C_Invoice Reversed:' || least(i.C_Invoice_ID, i.Reversal_ID)
+                                                   WHEN i.DocStatus = 'VO'
+                                                   THEN 'Auto C_Invoice Voided:' || i.C_Invoice_ID
+                                                    ELSE 'Auto M_InOut:' || iol.M_InOut_ID || ' Line:' || m.M_InOutLine_ID END)
+                                     FROM C_InvoiceLine il
+                                     INNER JOIN C_Invoice i ON (i.C_Invoice_ID=il.C_Invoice_ID)
+                                     LEFT OUTER JOIN M_MatchInv m ON (il.C_InvoiceLine_ID=m.C_InvoiceLine_ID)
+                                     LEFT OUTER JOIN M_InOutLine iol ON (iol.M_InOutLine_ID=m.M_InOutLine_ID) 
+                                     WHERE il.C_InvoiceLine_ID = fa.Line_ID )
+                         WHEN fa.AD_Table_ID = 472 /* M_MatchInv */ 
+                         THEN (SELECT 'Auto M_InOut:' || iol.M_InOut_ID || ' Line:' || m.M_InOutLine_ID
+                         FROM M_MatchInv m
+                         INNER JOIN M_InOutLine iol ON (iol.M_InOutLine_ID=m.M_InOutLine_ID) 
+                         WHERE m.M_MatchInv_ID = fa.Record_ID ) END) 
+                        FROM Fact_Acct fa WHERE fa.Fact_Acct_id=Fact_Reconciliation.Fact_Acct_ID
+                     </td>
+                     <td style="text-align: center; ">GL_Rec_Receipts</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div><br class="table-break"></br></body>
+</html>

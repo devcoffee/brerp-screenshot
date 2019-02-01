@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2011-07-27 16:24:35.0</para><para> <emphasis>Atualizado:</emphasis>2011-07-27 16:24:35.0</para>
+<title>Formulário: Visualização de LdM</title> 
+ <para><emphasis> Descrição: </emphasis>Mostra a lista de materiais de um produto</para><para><emphasis>Comentário/Ajuda:</emphasis>Ao selecionar um produto, irá exibir a hierarquia de componentes para o mesmo. Se selecionar "One é utilizado", irá mostrar as LDM que usam este produto.</para>
+<imagedata fileref="/img/manual/VisualizacaodeLdM.png" format="PNG" /> </chapter>

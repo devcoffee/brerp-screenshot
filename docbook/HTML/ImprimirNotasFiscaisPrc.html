@@ -1,0 +1,188 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Processo: Imprimir Notas Fiscais</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></meta>
+   </head>
+   <body>
+      <section class="chapter" id="d121119e1">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h2 class="title">Processo:  Imprimir Notas Fiscais</h2>
+               </div>
+            </div>
+         </div>
+         <p><span class="emphasis"><em> Criado:</em></span>2003-01-29 21:10:38.0
+         </p>
+         <p> <span class="emphasis"><em>Atualizado:</em></span>2005-07-07 11:38:34.0
+         </p>
+         <p><span class="emphasis"><em> Descri&ccedil;&atilde;o: </em></span>Imprimir Notas Fiscais / Fatura em papel ou enviar PDF
+         </p>
+         <p><span class="emphasis"><em> Coment&aacute;rio/Ajuda: </em></span>(Re)Imprimir Faturas ou envi&aacute;-las como anexos em formato PDF ao Contato do Parceiro de Neg&oacute;cios com um endere&ccedil;o de email v&aacute;lido.
+            Observa&ccedil;&atilde;o: Se voc&ecirc; apenas digitar um N&uacute;mero de documento no Campo "De", todas as faturas maiores ou iguais ao n&uacute;mero de documento
+            ser&atilde;o impressas;
+            voc&ecirc; pode alternativamente usar o caractere % como coringa.
+         </p><img src="/img/manual/ImprimirNotasFiscais.png"></img><div class="table" id="d121119e22">
+            <div class="table-title">Table&nbsp;1.1.&nbsp;ImprimirNotasFiscais Par&acirc;metros </div>
+            <div class="table-contents">
+               <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                  <colgroup>
+                     <col style="text-align: center; " class="c1"></col>
+                     <col style="text-align: center; " class="c2"></col>
+                     <col style="text-align: center; " class="c3"></col>
+                     <col style="text-align: center; " class="c4"></col>
+                     <col style="text-align: center; " class="c5"></col>
+                     <col style="text-align: center; " class="c6"></col>
+                  </colgroup>
+                  <thead>
+                     <tr>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Nome da coluna</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Refer&ecirc;ncia</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Valores(Padr&atilde;o)</th>
+                        <th style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Descri&ccedil;&atilde;o</th>
+                        <th style="text-align: center; border-bottom: 0.5pt solid ; ">Coment&aacute;rio/Ajuda</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Email PDF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> EMailPDF</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Sim-N&atilde;o</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Enviar documentos em formato PDF ao parceiro de neg&oacute;cios</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Fatura</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> C_Invoice_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identificador de Fatura</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O Documento da Fatura.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Parceiro de Neg&oacute;cios </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> C_BPartner_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Procurar</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Identifica um Parceiro de Neg&oacute;cios.</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">Um "Parceiro de Neg&oacute;cios" &eacute; qualquer um com quem voc&ecirc; transaciona.  Isto pode incluir Fornecedores, Clientes, Funcion&aacute;rios,
+                           Vendedores, Representantes de Venda, etc.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Modelo de Correspond&ecirc;ncia</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> R_MailText_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Modelos de texto para correspond&ecirc;ncias</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O "Modelo de Correspond&ecirc;ncia" indica o modelo de texto utilizado nas resposta a mensagens de e-mail. Mail text can include
+                           variables.  The priority of parsing is User/Contact, Business Partner and then the underlying business object (like Request,
+                           Dunning, Workflow object). So, @Name@ would resolve into the User name (if user is defined defined), then Business Partner
+                           name (if business partner is defined) and then the Name of the business object if it has a Name. For Multi-Lingual systems,
+                           the template is translated based on the Business Partner's language selection.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Documento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> C_DocType_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C_DocType</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tipo de Documento ou regras</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O "Tipo de Documento" determina a seq&uuml;&ecirc;ncia do documento e as regras de processamento</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Pago</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> IsPaid</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&atilde;o
+                           Sim
+                           
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">O documento est&aacute; pago</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">null</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Impresso</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> IsPrinted</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">N&atilde;o
+                           Sim
+                           
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Indica se este documento / linha ser&aacute; impresso</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A caixa de verifica&ccedil;&atilde;o "Impresso" indica se este documento ou linha ser&aacute; inclu&iacute;do ao imprimir.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Regra de Pagamento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> PaymentRule</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Pagamento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Como voc&ecirc; paga a fatura</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A Regra de Pagamento indica o m&eacute;todo de pagamento de faturas.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Condi&ccedil;&atilde;o de Pagamento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> C_PaymentTerm_ID</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Tabela Direta</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">S&atilde;o as condi&ccedil;&otilde;es de pagamento (prazo, descontos)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">"Condi&ccedil;&atilde;o de Pagamento" identifica o m&eacute;todo e o prazo de pagamento.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Estado do Documento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> DocStatus</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lista</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Desconhecido
+                           Aprovado
+                           Fechado
+                           Completado
+                           Esbo&ccedil;ado
+                           Inv&aacute;lido
+                           Em Progresso
+                           N&atilde;o Aprovado
+                           Estornado
+                           Anulado
+                           Aguardando Confirma&ccedil;&atilde;o
+                           Esperando pagamento
+                           
+                        </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">O estado atual do documento</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">O "Estado do Documento" indica o estado de um documento neste momento.  Se voc&ecirc; deseja alterar o Estado do Documento, use
+                           o campo "A&ccedil;&atilde;o do Documento"
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data Faturada</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> DateInvoiced</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data impressa na Fatura (Nota Fiscal)</td>
+                        <td style="text-align: center; border-bottom: 0.5pt solid ; ">A "Data Faturada" indica a data impressa na nota-fiscal/fatura.</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">N&uacute;mero do Documento</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> DocumentNo</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Texto Curto (String)</td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; "> </td>
+                        <td style="text-align: center; border-right: 0.5pt solid ; ">Documenta o n&uacute;mero seq&uuml;encial dos documentos</td>
+                        <td style="text-align: center; ">O n&uacute;mero do documento &eacute; usualmente gerado automaticamente pelo sistema e determinado pelo tipo de documento. Se o documento
+                           n&atilde;o for salvo, o n&uacute;mero preliminar &eacute; mostrado em "&lt;
+                           &gt;
+                           ".
+                           
+                           Se o tipo do seu documento n&atilde;o tiver uma seq&uuml;&ecirc;ncia de documenta&ccedil;&atilde;o autom&aacute;tica definida, o campo estar&aacute; vazio ao criar um novo
+                           documento. Isto &eacute; para documentos que usualmente tem um n&uacute;mero externo (como fatura do fornecedor).  Se voc&ecirc; deixar o campo
+                           vazio, o sistema vai gerar um n&uacute;mero de documento por voc&ecirc;. A seq&uuml;&ecirc;ncia de documento usada por este n&uacute;mero de recupera&ccedil;&atilde;o
+                           &eacute; definida na janela "Gerenciamento de Seq&uuml;&ecirc;ncia" com o nome "DocumentNo_&lt;
+                           TableName&gt;
+                           ", onde TableName &eacute; o nome real da tabela (ex: C_Order).
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div><br class="table-break"></br></section>
+   </body>
+</html>

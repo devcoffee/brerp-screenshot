@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2000-09-24 18:54:54.0</para><para> <emphasis>Atualizado:</emphasis>2005-12-25 17:17:13.0</para>
+<title>Workflow: Revisão da Configuração Inicial da Empresa</title> 
+ <para><emphasis> Descrição: </emphasis>  Revisão em nível de sistema da configuração de uma nova Empresa</para><para><emphasis> Comentário/Ajuda: </emphasis>This workflow reviews the system setup of a new client as performed by the automatic Initial Client Setup.
+You may want to check also the following Workflows:
+- Accounting Setup
+- Business Partner Setup
+- Product Setup
+- Price list Setup
+- Warehouse Setup
+- Tax Setup</para>
+<para><emphasis> Nó inicial: </emphasis>Empresa</para>
+<para><emphasis> WorkFlowType: </emphasis>W</para> 
+<imagedata fileref="/img/manual/RevisaodaConfiguracaoInicialdaEmpresa.png" format="PNG" /><table> 
+ <title>Revisão da Configuração Inicial da Empresa Workflow Transitions</title> 
+ <tgroup cols='5' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/> 
+<thead><row><entry>Nó</entry><entry>Descrição</entry><entry>Ação</entry><entry>Próximo nó</entry><entry>Condição</entry></row>
+</thead><tbody>
+<row> <entry>Empresa</entry><entry>Gerenciamento de Empresas / Locatários</entry><entry>UserWindow</entry><entry>Organization</entry><entry> </entry></row> 
+<row> <entry>Organização</entry><entry>Gerenciamento das Organizações</entry><entry>UserWindow</entry><entry>Role</entry><entry> </entry></row> 
+<row> <entry>Perfil</entry><entry>Gerenciamento das Responsabilidades dos Usuários</entry><entry>UserWindow</entry><entry>User</entry><entry> </entry></row> 
+<row> <entry>Usuário</entry><entry>Gerenciamento dos Usuários do Sistema</entry><entry>UserWindow</entry><entry>Import File Loader</entry><entry> </entry></row> 
+<row> <entry>Carregador de Arquivo de Importação</entry><entry>Carregar arquivos planos nas tabelas de importação</entry><entry>UserForm</entry><entry>Import Account</entry><entry> </entry></row> 
+<row> <entry>Importar Conta</entry><entry>Importação de Valores de Contas Naturais</entry><entry>UserWindow</entry><entry>Calendar Year and Period</entry><entry> </entry></row> 
+<row> <entry>Período e Ano Civil</entry><entry>Gerenciamento de Períodos e Anos Civís</entry><entry>UserWindow</entry><entry> </entry><entry> </entry></row> 
+</tbody>  </tgroup> </table> 
+ </chapter>

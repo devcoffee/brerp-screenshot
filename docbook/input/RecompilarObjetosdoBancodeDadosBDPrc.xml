@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2002-06-23 00:54:14.0</para><para> <emphasis>Atualizado:</emphasis>2000-01-02 00:00:00.0</para>
+ 
+ <title>Processo:  Recompilar Objetos do Banco de Dados (BD)</title> 
+ <para><emphasis> Descrição: </emphasis>Recompilar Objetos do Banco de Dados (BD)</para><para><emphasis> Comentário/Ajuda: </emphasis>Recompilar Funções, Procedimentos, Gatilhos (disparadores), Visualizações, etc.</para>
+<para> SEM PARÂMETROS </para>
+ </chapter>

@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Contrato</title> 
+ <para> <emphasis>Descrição: </emphasis>  Contrato</para><para> <emphasis>Comentário/Ajuda: </emphasis>null</para><para><emphasis> Criado em: </emphasis>2016-06-06 14:18:07.0
+</para><para><emphasis>Atualizado em: </emphasis>2016-06-06 14:18:07.0</para>
+<section> 
+ <title>Tabela: Contrato - COF_Contract</title> 
+ <para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Contrato Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Contrato</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : Contract</entry> 
+<entry>Primary Key : Contract</entry> 
+</row> 
+<row> 
+ <entry>COF_Contract_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Chave de Busca</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Número do Contrato</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Situação do contrato</entry><entry>Lista</entry> 
+<entry>Ativo
+Aditado
+Bloqueado
+Encerrado
+Esboçado
+(E)</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Alterar Situação do Contrato</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry valign="middle">CBPartner_COFContract</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Endereço</entry><entry>Tabela</entry> 
+<entry>C_BPartner Location</entry> 
+<entry valign="middle">CLocation_COFContract</entry> 
+<entry>C_BPartner_Location.C_BPartner_ID=@C_BPartner_ID@
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">Location or Address</entry> 
+<entry>The Location / Address field defines the location of an entity.</entry> 
+</row> 
+<row> 
+ <entry>Usuário/Contato</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_User.C_BPartner_ID=@C_BPartner_ID@ </entry> 
+<entry valign="middle">User within the system - Internal or Business Partner Contact</entry> 
+<entry>The User identifies a unique user in the system. This could be an internal user or a business partner contact</entry> 
+</row> 
+<row> 
+ <entry>Data de Emissão</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Data da emissão do RPS</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Grupo do Contrato</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">cofcontractgroup_cofcontract</entry> 
+<entry>cof_ContractGroup.C_BPartner_ID = @C_BPartner_ID@ </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Processado</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: 1=1 </entry> 
+<entry valign="middle">The document has been processed</entry> 
+<entry>The Processed checkbox indicates that a document has been processed.</entry> 
+</row> 
+<row> 
+ <entry>Do dia</entry><entry>Data</entry> 
+<entry>(@#Date@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">Starting date for a range</entry> 
+<entry>The Date From indicates the starting date of a range.</entry> 
+</row> 
+<row> 
+ <entry>Ao dia</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">End date of a date range</entry> 
+<entry>The Date To indicates the end date of a range (inclusive)</entry> 
+</row> 
+<row> 
+ <entry>Classificação do Contrato</entry><entry>Lista</entry> 
+<entry>Evento
+Fixo
+(FI)</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Contrato</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">COFContractCategory_COFContrac</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">Primary Key : Contract Category</entry> 
+<entry>Primary Key : Contract Category</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Documento</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">CDocType_COFContract</entry> 
+<entry>(C_DocType.DocBaseType IN ('SOO', 'POO') AND C_DocType.IsSOTrx=(SELECT IsSOTrx FROM COF_ContractCategory WHERE COF_ContractCategory_ID = @COF_ContractCategory_ID@) AND COALESCE(C_DocType.DocSubTypeSO,' ')&lt;
+&gt;
+'RM' AND C_DocType.AD_Client_ID=@#AD_Client_ID@) </entry> 
+<entry valign="middle">Document type or rules</entry> 
+<entry>The Document Type determines document sequence and processing rules</entry> 
+</row> 
+<row> 
+ <entry>Recorrente</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Recurring Document</entry> 
+<entry>Recurring Documents</entry> 
+</row> 
+<row> 
+ <entry>Endereço de Cobrança</entry><entry>Tabela</entry> 
+<entry>C_BPartner Location</entry> 
+<entry valign="middle">cofPayFromLocation_COFContract</entry> 
+<entry>C_BPartner_Location.C_BPartner_ID=@C_BPartner_ID@ AND C_BPartner_Location.IsPayFrom='Y' AND C_BPartner_Location.IsActive='Y' </entry> 
+<entry valign="middle">This location is the address the Business Partner pays from and where dunning letters will be sent to.</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Custódia</entry><entry>Tabela</entry> 
+<entry>COF_C_Custody(@SQL=SELECT COF_C_Custody_ID FROM COF_C_Custody WHERE AD_Client_ID IN (0, @#AD_Client_ID@) AND AD_Org_ID IN (0,@#AD_Org_ID@) AND IsDefault='Y'  ORDER BY AD_Client_ID DESC, AD_Org_ID DESC OFFSET 0 FETCH FIRST 1 ROWS ONLY)</entry> 
+<entry valign="middle">COFCCustody_COFContract</entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : Custody</entry> 
+<entry>Primary Key : Custody</entry> 
+</row> 
+<row> 
+ <entry>Lista de Preço</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">Unique identifier of a Price List</entry> 
+<entry>Price Lists are used to determine the pricing, margin and cost of items purchased or sold.</entry> 
+</row> 
+<row> 
+ <entry>Regra de Fatura</entry><entry>Lista</entry> 
+<entry>Após Entrega
+Imediato
+Após pedido despachado
+Programação do Cliente após entrega</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Frequency and method of invoicing </entry> 
+<entry>The Invoice Rule defines how a Business Partner is invoiced and the frequency of invoicing.</entry> 
+</row> 
+<row> 
+ <entry>Regra de Pagamento</entry><entry>Pagamento</entry> 
+<entry>(P)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">How you pay the invoice</entry> 
+<entry>The Payment Rule indicates the method of invoice payment.</entry> 
+</row> 
+<row> 
+ <entry>Regra de Entrega</entry><entry>Lista</entry> 
+<entry>Disponibilidade
+Forçar
+Linha Completa
+Manual
+Pedido Completo
+Após o recebimento</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the timing of Delivery</entry> 
+<entry>The Delivery Rule indicates when an order should be delivered. For example should the order be delivered when the entire order is complete, when a line is complete or as the products become available.</entry> 
+</row> 
+<row> 
+ <entry>Condição de Pagamento</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">CPaymentTerm_COFContract</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">The terms of Payment (timing, discount)</entry> 
+<entry>Payment Terms identify the method and timing of payment.</entry> 
+</row> 
+<row> 
+ <entry>Valor</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">Amount in a defined currency</entry> 
+<entry>The Amount indicates the amount for this document line.</entry> 
+</row> 
+<row> 
+ <entry>Representante de Vendas</entry><entry>Tabela</entry> 
+<entry>AD_User - SalesRep</entry> 
+<entry valign="middle">SalesRep_COFContract</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">Sales Representative or Company Agent</entry> 
+<entry>The Sales Representative indicates the Sales Rep for this Region.  Any Sales Rep must be a valid internal user.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Transação</entry><entry>Lista</entry> 
+<entry>Consumidor Final
+Exportação Indireta
+Exportação
+Importação
+Uso Interno
+Industrialização
+Outros
+Remessa
+Revenda
+Transferência</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines the Transaction Type</entry> 
+<entry>Defines the Transaction Type</entry> 
+</row> 
+<row> 
+ <entry>Fator Limite do Contrato</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry valign="middle">Percentage</entry> 
+<entry>The Percent indicates the percentage used.</entry> 
+</row> 
+<row> 
+ <entry>Fator de Reajuste</entry><entry>Número</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo</entry><entry>Tabela</entry> 
+<entry>Account_ID - User1</entry> 
+<entry valign="middle">User1_COFContract</entry> 
+<entry> </entry> 
+<entry valign="middle">User defined list element #1</entry> 
+<entry>The user defined element displays the optional elements that have been defined for this account combination.</entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo 2</entry><entry>Tabela</entry> 
+<entry>Account_ID - User2</entry> 
+<entry valign="middle">User2_COFContract</entry> 
+<entry> </entry> 
+<entry valign="middle">User defined list element #2</entry> 
+<entry>The user defined element displays the optional elements that have been defined for this account combination.</entry> 
+</row> 
+<row> 
+ <entry>Atividade</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">CActivity_COFContract</entry> 
+<entry> </entry> 
+<entry valign="middle">Business Activity</entry> 
+<entry>Activities indicate tasks that are performed and used to utilize Activity based Costing</entry> 
+</row> 
+<row> 
+ <entry>Projeto</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">CProject_COFContract</entry> 
+<entry> </entry> 
+<entry valign="middle">Financial Project</entry> 
+<entry>A Project allows you to track and control internal or external activities.</entry> 
+</row> 
+<row> 
+ <entry>Bloquear ao atingir limites</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Responsável 1</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Documento do Responsável 1</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Responsável 2</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Documento do Responsável 2</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Testemunha 1</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Documento da Testemunha 1</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Testemunha 2</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Documento da Testemunha 2</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Contrato Original</entry><entry>Tabela</entry> 
+<entry>COF_ContractOriginal</entry> 
+<entry valign="middle">COFContractOriginal_COFContrac</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Aditivo Contrato</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Revisão</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @cof_ContractStatus@ = 'C' </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Número da Revisão</entry><entry>Inteiro</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Produto/Serviço/Ativo - COF_Products</title> 
+ <para><emphasis>Coluna linkada: </emphasis> COF_Contract_ID</para> 
+<para><emphasis>Lógica de somente leitura:</emphasis> @cof_ContractStatus@ = 'C'</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Produtos Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Linha de Contrato</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Linha de Contrato</entry> 
+<entry>Linha de Contrato</entry> 
+</row> 
+<row> 
+ <entry>COF_Products_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Contrato</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">COFContract_COFProducts</entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : Contract</entry> 
+<entry>Primary Key : Contract</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Versão da Lista de Preço</entry><entry>Tabela</entry> 
+<entry>M_PriceList Version(@SQL= SELECT M_PriceList_Version_ID FROM M_PriceList_Version WHERE M_PriceList_ID = @M_PriceList@ AND IsActive = 'Y' ORDER BY M_PriceList_Version.ValidFrom DESC FETCH FIRST 1 ROWS ONLY)</entry> 
+<entry valign="middle">MPriceListVersion_COFProducts</entry> 
+<entry>M_PriceList_Version.M_PriceList_ID = @M_PriceList_ID@ AND M_PriceList_Version.IsActive = 'Y' </entry> 
+<entry valign="middle">Identifies a unique instance of a Price List</entry> 
+<entry>Each Price List can have multiple versions.  The most common use is to indicate the dates that a Price List is valid for.</entry> 
+</row> 
+<row> 
+ <entry>Preço de Lista</entry><entry>Custos+Preços</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">List Price</entry> 
+<entry>The List Price is the official List Price in the document currency.</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">MProduct_COFProducts</entry> 
+<entry>M_Product.IsSummary='N' AND M_Product.IsActive='Y' AND (M_Product.Discontinued = 'N' OR (M_Product.Discontinued = 'Y'  AND M_Product.DiscontinuedAt &gt;
+ SYSDATE))	 </entry> 
+<entry valign="middle">Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">AAsset_COFProducts</entry> 
+<entry>A_Asset.M_Product_ID = @M_Product_ID@ </entry> 
+<entry valign="middle">Asset used internally or by customers</entry> 
+<entry>An asset is either created by purchasing or by delivering a product.  An asset can be used internally or be a customer asset.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade</entry><entry>Quantidade</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Quantity</entry> 
+<entry>The Quantity indicates the number of a specific product or item for this document.</entry> 
+</row> 
+<row> 
+ <entry>Preço Unitário</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Actual Price </entry> 
+<entry>The Actual or Unit Price indicates the Price for a product in source currency.</entry> 
+</row> 
+<row> 
+ <entry>Desconto %</entry><entry>Número</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Discount in percent</entry> 
+<entry>The Discount indicates the discount applied or taken as a percentage.</entry> 
+</row> 
+<row> 
+ <entry>Preço Total</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Valore Limite</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Saldo a Faturar</entry><entry>Quantidade</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Cronograma - COF_schedule</title> 
+ <para><emphasis>Coluna linkada: </emphasis> COF_Contract_ID</para> 
+<para><emphasis>Lógica de somente leitura:</emphasis> @cof_ContractStatus@ = 'C'</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Schedule Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>COF_schedule_ID</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : schedule</entry> 
+<entry>Primary Key : schedule</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Contrato</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">COFContract_COFschedule</entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : Contract</entry> 
+<entry>Primary Key : Contract</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Chave de Busca</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Do dia</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Starting date for a range</entry> 
+<entry>The Date From indicates the starting date of a range.</entry> 
+</row> 
+<row> 
+ <entry>Ao dia</entry><entry>Data</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">End date of a date range</entry> 
+<entry>The Date To indicates the end date of a range (inclusive)</entry> 
+</row> 
+<row> 
+ <entry>Preço</entry><entry>Custos+Preços</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Price</entry> 
+<entry>The Price indicates the Price for a product or service.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Faturamentos - C_Invoice</title> 
+ 
+<ulink url="data/C_Invoice_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Coluna linkada: </emphasis> COF_Contract_ID</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Faturamentos Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">adorg_cinvoice</entry> 
+<entry>AD_Org.AD_Org_ID &lt;
+&gt;
+ 0  AND AD_Org.IsSummary='N' </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Fatura</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Invoice Identifier</entry> 
+<entry>The Invoice Document.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Documento Alvo</entry><entry>Tabela</entry> 
+<entry>C_DocType</entry> 
+<entry valign="middle">cdoctypetarget_cinvoice</entry> 
+<entry>C_DocType.DocBaseType IN ('ARI', 'API','ARC','APC') AND C_DocType.IsSOTrx='@IsSOTrx@'  AND C_DocType.AD_Client_ID=@#AD_Client_ID@ </entry> 
+<entry valign="middle">Target document type for conversing documents</entry> 
+<entry>You can convert document types (e.g. from Offer to Order or Invoice).  The conversion is then reflected in the current type.  This processing is initiated by selecting the appropriate Document Action.</entry> 
+</row> 
+<row> 
+ <entry>Número do Documento</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Document sequence number of the document</entry> 
+<entry>The document number is usually automatically generated by the system and determined by the document type of the document. If the document is not saved, the preliminary number is displayed in "&lt;
+&gt;
+".
+
+If the document type of your document has no automatic document sequence defined, the field is empty if you create a new document. This is for documents which usually have an external number (like vendor invoice).  If you leave the field empty, the system will generate a document number for you. The document sequence used for this fallback number is defined in the "Maintain Sequence" window with the name "DocumentNo_&lt;
+TableName&gt;
+", where TableName is the actual name of the table (e.g. C_Order).</entry> 
+</row> 
+<row> 
+ <entry>Data Faturada</entry><entry>Data</entry> 
+<entry>(@#Date@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Date printed on Invoice</entry> 
+<entry>The Date Invoice indicates the date printed on the invoice.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">cbpartner_cinvoice</entry> 
+<entry>C_BPartner.IsActive='Y' AND C_BPartner.IsSummary='N' </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Localização do Parceiro</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">c_bplocation_cinvoice</entry> 
+<entry>C_BPartner_Location.C_BPartner_ID=@C_BPartner_ID@ AND C_BPartner_Location.IsBillTo='Y' AND C_BPartner_Location.IsActive='Y' </entry> 
+<entry valign="middle">Identifies the (ship to) address for this Business Partner</entry> 
+<entry>The Partner address indicates the location of a Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Total Geral</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Total amount of document</entry> 
+<entry>The Grand Total displays the total amount including Tax and Freight in document currency</entry> 
+</row> 
+<row> 
+ <entry>Estado do Documento</entry><entry>Lista</entry> 
+<entry>Desconhecido
+Aprovado
+Fechado
+Completado
+Esboçado
+Inválido
+Em Progresso
+Não Aprovado
+Estornado
+Anulado
+Aguardando Confirmação
+Esperando pagamento
+(DR)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The current status of the document</entry> 
+<entry>The Document Status indicates the status of a document at this time.  If you want to change the document status, use the Document Action field</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Participantes - COF_ContractParticipantes</title> 
+ <para><emphasis>Coluna linkada: </emphasis> COF_Contract_ID</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Participantes Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>COF_ContractParticipantes_ID</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : Participantes</entry> 
+<entry>Primary Key : Participantes</entry> 
+</row> 
+<row> 
+ <entry>COF_ContractParticipantes_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Contrato</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">COFContract_COFContractPartici</entry> 
+<entry> </entry> 
+<entry valign="middle">Primary Key : Contract</entry> 
+<entry>Primary Key : Contract</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">CBPartner_COFContractParticipa</entry> 
+<entry> </entry> 
+<entry valign="middle">Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Participação</entry><entry>Lista</entry> 
+<entry>Avalistas
+Coligadas
+Contratante
+Garantidores</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

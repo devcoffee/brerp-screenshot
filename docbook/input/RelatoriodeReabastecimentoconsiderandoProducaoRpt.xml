@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2011-07-27 16:24:17.0</para><para> <emphasis>Atualizado:</emphasis>2016-08-09 18:38:12.344</para>
+ 
+ <title>Relatório:  Relatório de Reabastecimento (considerando Produção)</title> 
+ <para><emphasis> Descrição: </emphasis>Relatório de Reabastecimento (considerando Produção)</para><para><emphasis> Comentário/Ajuda: </emphasis>O relatório mostra os produtos à serem reabastecidos (considerando produção)</para>
+<para><emphasis> ReportView: </emphasis>T_Replenish</para><imagedata fileref="/img/manual/RelatoriodeReabastecimentoconsiderandoProducao.png" format="PNG" /><table> 
+ <title>RelatoriodeReabastecimentoconsiderandoProducao Parâmetros </title> 
+ <tgroup cols='6' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome</entry><entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores(Padrão)</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row> 
+</thead><tbody><row> 
+ <entry>Tipo de Documento</entry><entry> C_DocType_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Tipo de Documento ou regras</entry> 
+<entry>O "Tipo de Documento" determina a seqüência do documento e as regras de processamento</entry> 
+</row> 
+<row> 
+ <entry>Categoria de Produto</entry><entry> M_Product_Category_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> (-1)</entry> 
+<entry>Categoria de um Produto</entry> 
+<entry>Identifica a categoria à qual este produto pertence.  Categorias de Produto são usadas para formação de preços e seleção.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry> C_BPartner_ID</entry> 
+<entry>Tabela</entry> 
+ <entry>C_BPartner Vendors Avtive</entry> 
+<entry>Identifica um Parceiro de Negócios.</entry> 
+<entry>Um "Parceiro de Negócios" é qualquer um com quem você transaciona.  Isto pode incluir Fornecedores, Clientes, Funcionários, Vendedores, Representantes de Venda, etc.</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry> AD_Org_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> (@#AD_Org_ID@)</entry> 
+<entry>Entidade organizacional dentro da Empresa</entry> 
+<entry>Uma "Organização" é uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos são loja, departamento. Você pode compartilhar dados entre organizações.</entry> 
+</row> 
+<row> 
+ <entry>Criar</entry><entry> ReplenishmentCreate</entry> 
+<entry>Lista</entry> 
+ <entry>Ordem de Distribuição
+Movimentação de Estoque
+Pedido de Compra
+Requisição
+Produção
+</entry> 
+<entry>Criar a partir do Reabastecimento</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Armazém</entry><entry> M_Warehouse_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Armazém de estocagem e Ponto de Serviço</entry> 
+<entry>O "Armazém" identifica um armazém ou local em particular onde os produtos são armazenados ou são prestados serviços.</entry> 
+</row> 
+<row> 
+ <entry>Tipo do Produto</entry><entry> COF_ProductType_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Coluna de relação com a tabela de tipo de produto</entry> 
+<entry>Primary Key : Product Type</entry> 
+</row> 
+<row> 
+ <entry>Grupo do Produto</entry><entry> COF_ProductGroup_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Coluna de relação com a tabela de grupo do produto</entry> 
+<entry>Primary Key : Product Group</entry> 
+</row> 
+<row> 
+ <entry>Classe do Produto</entry><entry> COF_ProductClass_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Coluna de relação com a tabela de classe de produto</entry> 
+<entry>Primary Key : Product Class</entry> 
+</row> 
+<row> 
+ <entry>Classificação ABC</entry><entry> COF_ABC</entry> 
+<entry>Lista</entry> 
+ <entry>A
+B
+C
+</entry> 
+<entry>null</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Controlado por Kanban</entry><entry> IsKanban</entry> 
+<entry>Lista</entry> 
+ <entry>Não
+Sim
+(N)</entry> 
+<entry>Esta parte é Controlado por Kanban</entry> 
+<entry>null</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<table> 
+ <title>T_Replenish - Colunas</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="1*"/><colspec colname='c7'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores padrão</entry><entry>Valor de restrição</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Instância de Processo</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry>adpinstance_treplenish</entry> 
+<entry> </entry> 
+<entry>Instance of the process</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Documento</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry>cdoctype_treplenish</entry> 
+<entry> </entry> 
+<entry>Document type or rules</entry> 
+<entry>The Document Type determines document sequence and processing rules</entry> 
+</row> 
+<row> 
+ <entry>Classificação ABC</entry><entry>Lista</entry> 
+<entry>A
+B
+C
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Classe do Produto</entry><entry>Tabela</entry> 
+<entry>COF_ProductClass Value Name</entry> 
+<entry>COFProductClass_TReplenish</entry> 
+<entry> </entry> 
+<entry>Primary Key : Product Class</entry> 
+<entry>Primary Key : Product Class</entry> 
+</row> 
+<row> 
+ <entry>Grupo do Produto</entry><entry>Tabela</entry> 
+<entry>COF_ProductGroup Value Name</entry> 
+<entry>COFProductGroup_TReplenish</entry> 
+<entry> </entry> 
+<entry>Primary Key : Product Group</entry> 
+<entry>Primary Key : Product Group</entry> 
+</row> 
+<row> 
+ <entry>Tipo do Produto</entry><entry>Tabela</entry> 
+<entry>COF_ProductType Name Value</entry> 
+<entry>COFProductType_TReplenish</entry> 
+<entry> </entry> 
+<entry>Primary Key : Product Type</entry> 
+<entry>Primary Key : Product Type</entry> 
+</row> 
+<row> 
+ <entry>Nível Máximo</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Maximum Inventory level for this product</entry> 
+<entry>Indicates the maximum quantity of this product to be stocked in inventory.</entry> 
+</row> 
+<row> 
+ <entry>Nível Mínimo</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Minimum Inventory level for this product</entry> 
+<entry>Indicates the minimum quantity of this product to be stocked in inventory.
+</entry> 
+</row> 
+<row> 
+ <entry>Produto</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry>mproduct_treplenish</entry> 
+<entry> </entry> 
+<entry>Product, Service, Item</entry> 
+<entry>Identifies an item which is either purchased or sold in this organization.</entry> 
+</row> 
+<row> 
+ <entry>Armazém</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry>mwarehouse_treplenish</entry> 
+<entry> </entry> 
+<entry>Storage Warehouse and Service Point</entry> 
+<entry>The Warehouse identifies a unique Warehouse where products are stored or Services are provided.</entry> 
+</row> 
+<row> 
+ <entry>Armazém de Origem</entry><entry>Tabela</entry> 
+<entry>M_Warehouse of Client</entry> 
+<entry>mwarehousesource_treplenish</entry> 
+<entry> </entry> 
+<entry>Optional Warehouse to replenish from</entry> 
+<entry>If defined, the warehouse selected is used to replenish the product(s)</entry> 
+</row> 
+<row> 
+ <entry>Qde Mínima de Pedido</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Minimum order quantity in UOM</entry> 
+<entry>The Minimum Order Quantity indicates the smallest quantity of this product which can be ordered.</entry> 
+</row> 
+<row> 
+ <entry>Qde por Pacote do Pedido</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Package order size in UOM (e.g. order set of 5 units)</entry> 
+<entry>The Order Pack Quantity indicates the number of units in each pack of this product.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade em Estoque</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>On Hand Quantity</entry> 
+<entry>The On Hand Quantity indicates the quantity of a product that is on hand in a warehouse.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Requisitada</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Ordered Quantity</entry> 
+<entry>The Ordered Quantity indicates the quantity of a product that was ordered.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade Reservada</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Reserved Quantity</entry> 
+<entry>The Reserved Quantity indicates the quantity of a product that is currently reserved.</entry> 
+</row> 
+<row> 
+ <entry>Quantidade a Pedir</entry><entry>Quantidade</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Criar</entry><entry>Lista</entry> 
+<entry>Distribution Order
+Movimentação de Estoque
+Pedido de Compra
+Requisição
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Create from Replenishment</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Reabastecimento</entry><entry>Lista</entry> 
+<entry>Manual
+Emitir pedido de compras abaixo do nível mínimo
+Gerenciamento de Nível Máximo
+Personalizado
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Method for re-ordering a product</entry> 
+<entry>The Replenish Type indicates if this product will be manually re-ordered, ordered when the quantity is below the minimum quantity or ordered when it is below the maximum quantity. If you select a custom replenishment type, you need to create a class implementing org.compiere.util.ReplenishInterface and set that on warehouse level.</entry> 
+</row> 
+<row> 
+ <entry>T_Replenish_UU</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Atualizado</entry><entry>Data+Hora</entry> 
+<entry> (SYSDATE)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date this record was updated</entry> 
+<entry>The Updated field indicates the date that this record was updated.</entry> 
+</row> 
+<row> 
+ <entry>Atualizado por</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User who updated this records</entry> 
+<entry>The Updated By field indicates the user who updated this record.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2005-08-27 09:39:55.0</para><para> <emphasis>Atualizado:</emphasis>2006-01-04 14:42:35.0</para>
+ 
+ <title>Relatório:  Detalhes do Parceiro de Negócios</title> 
+ <para><emphasis> Descrição: </emphasis>Relatório de Detalhes do Parceiro de Negócios</para><para><emphasis> Comentário/Ajuda: </emphasis>O relatório lista os detalhes do parceiro de negócio(inclui contatos e endereços)</para>
+<para><emphasis> ReportView: </emphasis>RV_BPartner</para><table> 
+ <title>DetalhesdoParceirodeNegocios Parâmetros </title> 
+ <tgroup cols='6' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome</entry><entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores(Padrão)</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row> 
+</thead><tbody><row> 
+ <entry>Endereço de e-mail</entry><entry> EMail</entry> 
+<entry>Texto Curto (String)</entry> 
+ <entry> </entry> 
+<entry>Endereço de Correio Eletrônico</entry> 
+<entry>O "e-mail" é o ID de correio eletrônico para este usuário e deve ser totalmente qualificado (ex. hilario.silveira@soliton.com.br). O endereço de e-mail é usado para acessar a funcionalidade de aplicação de auto-serviço a partir da internet.</entry> 
+</row> 
+<row> 
+ <entry>Nome do Contato</entry><entry> ContactName</entry> 
+<entry>Texto Curto (String)</entry> 
+ <entry> </entry> 
+<entry>Nome do Contato do Parceiro de Negócios</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry> Name</entry> 
+<entry>Texto Curto (String)</entry> 
+ <entry> </entry> 
+<entry>Identificador Alfanumérico da entidade</entry> 
+<entry>O nome de uma entidade (registro) é usado como uma opção de pesquisa padrão em adição à chave de pesquisa. O nome pode ter até 60 caracteres de comprimento.</entry> 
+</row> 
+<row> 
+ <entry>Cidade</entry><entry> C_City_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Cidade</entry> 
+<entry>Cidade em um país</entry> 
+</row> 
+<row> 
+ <entry>Representante de Vendas</entry><entry> SalesRep_ID</entry> 
+<entry>Tabela</entry> 
+ <entry>AD_User - SalesRep</entry> 
+<entry>Representante de Vendas ou Promotor de Vendas da Companhia</entry> 
+<entry>O campo "Representante de Vendas" indica o representante de vendas para esta região.  Qualquer Representante de Vendas tem que ser um usuário interno válido.</entry> 
+</row> 
+<row> 
+ <entry>Grupo de Parceiros</entry><entry> C_BP_Group_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> (-1)</entry> 
+<entry>Grupo de Parceiros de Negócios</entry> 
+<entry>O "Grupo de Parceiros de Negócios" oferece um método de definição dos padrões a serem usados por Parceiros de Negócios individuais.</entry> 
+</row> 
+<row> 
+ <entry>Região de Entrega</entry><entry> COF_M_ShipRegion_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Primary Key : Shipment Region</entry> 
+<entry>Primary Key : Shipment Region</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry> AD_Org_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Entidade organizacional dentro da Empresa</entry> 
+<entry>Uma "Organização" é uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos são loja, departamento. Você pode compartilhar dados entre organizações.</entry> 
+</row> 
+<row> 
+ <entry>Região</entry><entry> C_Region_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Identifica uma região geográfica</entry> 
+<entry>A "Região" identifica uma região única e exclusiva para este país.</entry> 
+</row> 
+<row> 
+ <entry>Região de Vendas</entry><entry> C_SalesRegion_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> </entry> 
+<entry>Cobertura da Região de Vendas</entry> 
+<entry>A "Região de Vendas" indica uma área específica de cobertura de vendas.</entry> 
+</row> 
+<row> 
+ <entry>Estado de Crédito</entry><entry> SOCreditStatus</entry> 
+<entry>Lista</entry> 
+ <entry>Segurar Crédito
+Crédito OK
+Cancelar Crédito
+Observar Crédito
+Sem Verificação de Crédito
+</entry> 
+<entry>Estado do Crédito do Parceiro de Negócios</entry> 
+<entry>O Gerenciamento de Crédito estará inativo se o Estado do Crédito for "Sem Verificação de Crédito", "Crédito Parado" ou se o Limite de Crédito for 0. Se ativo, o estado é automaticamente configurado para "Crédito Congelado" se o Saldo total em Aberto (incluindo atividades do fornecedor) for maior que o Limite de Crédito. Ele é configurado para "Observação de Crédito" se estiver acima de 90% do Limite de Crédito. De outro modo o Crédito será considerado OK.</entry> 
+</row> 
+<row> 
+ <entry>Criado</entry><entry> Created</entry> 
+<entry>Data</entry> 
+ <entry> </entry> 
+<entry>Data de criação deste registro</entry> 
+<entry>O Campo "Criado" indica a data em que este registro foi criado.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<table> 
+ <title>RV_BPartner - Colunas</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="1*"/><colspec colname='c7'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores padrão</entry><entry>Valor de restrição</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Custo de Aquisição</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The cost of gaining the prospect as a customer</entry> 
+<entry>The Acquisition Cost identifies the cost associated with making this prospect a customer.</entry> 
+</row> 
+<row> 
+ <entry>Valor Real</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Actual Life Time Revenue</entry> 
+<entry>The Actual Life Time Value is the recorded revenue in primary accounting currency generated by the Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Endereço</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Address line 1 for this location</entry> 
+<entry>The Address 1 identifies the address for an entity's location</entry> 
+</row> 
+<row> 
+ <entry>Número</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Address line 2 for this location</entry> 
+<entry>The Address 2 provides additional address information for an entity.  It can be used for building location, apartment number or similar information.</entry> 
+</row> 
+<row> 
+ <entry>Bairro</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Address Line 3 for the location</entry> 
+<entry>The Address 2 provides additional address information for an entity.  It can be used for building location, apartment number or similar information.</entry> 
+</row> 
+<row> 
+ <entry>Complemento</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Address Line 4 for the location</entry> 
+<entry>The Address 4 provides additional address information for an entity.  It can be used for building location, apartment number or similar information.</entry> 
+</row> 
+<row> 
+ <entry>Idioma</entry><entry>Tabela</entry> 
+<entry>AD_Language</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Language for this entity</entry> 
+<entry>The Language identifies the language to use for display and formatting</entry> 
+</row> 
+<row> 
+ <entry>Organização Vinculada</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The Business Partner is another Organization for explicit Inter-Org transactions</entry> 
+<entry>The business partner is another organization in the system. So when performing transactions, the counter-document is created automatically. Example: You have BPartnerA linked to OrgA and BPartnerB linked to OrgB.  If you create a sales order for BPartnerB in OrgA a purchase order is created for BPartnerA in OrgB.  This allows to have explicit documents for Inter-Org transactions.</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização de Transação (Trx)</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Performing or initiating organization</entry> 
+<entry>The organization which performs or initiates this transaction (for another organization).  The owning Organization may not be the transaction organization in a service bureau environment, with centralized services, and inter-organization transactions.</entry> 
+</row> 
+<row> 
+ <entry>ad_user_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ad_user_c_bpartner_id</entry><entry>Tabela</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ad_user_c_bpartner_location_id</entry><entry>Tabela</entry> 
+<entry>C_BPartner Location</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ad_user_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ad_user_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Usuário/Contato</entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User within the system - Internal or Business Partner Contact</entry> 
+<entry>The User identifies a unique user in the system. This could be an internal user or a business partner contact</entry> 
+</row> 
+<row> 
+ <entry>ad_user_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ad_user_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ad_user_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ad_user_value</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Aniversário</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Birthday or Anniversary day</entry> 
+<entry>Birthday or Anniversary day</entry> 
+</row> 
+<row> 
+ <entry>Pai do Parceiro</entry><entry>Procurar</entry> 
+<entry>C_BPartner Parent</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner Parent</entry> 
+<entry>The parent (organization) of the Business Partner for reporting purposes.</entry> 
+</row> 
+<row> 
+ <entry>Saudação do contato do PN</entry><entry>Tabela</entry> 
+<entry>C_Greeting</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Greeting for Business Partner Contact</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>ID</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Localização do Parceiro</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies the (ship to) address for this Business Partner</entry> 
+<entry>The Partner address indicates the location of a Business Partner</entry> 
+</row> 
+<row> 
+ <entry>c_bp_c_taxgroup_id</entry><entry>Tabela</entry> 
+<entry>C_TaxGroup</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_dunninggrace</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Grupo de Parceiros</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner Group</entry> 
+<entry>The Business Partner Group provides a method of defining defaults to be used for individual Business Partners.</entry> 
+</row> 
+<row> 
+ <entry>c_bp_ismanufacturer</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_ispotaxexempt</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bpartner_location_c_bpartner_id</entry><entry>Tabela</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_c_location_id</entry><entry>Localização (Endereço)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_cof_m_shipregion_id</entry><entry>Tabela</entry> 
+<entry>COF_M_ShipRegion</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_fax</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_isbillto</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_isdn</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_ispayfrom</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_isremitto</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_isshipto</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_name</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_phone</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_phone2</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_salesregion_id</entry><entry>Tabela</entry> 
+<entry>C_Sales Region (No summary)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_location_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_bp_logo_id</entry><entry>Imagem</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cidade</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>City</entry> 
+<entry>City in a country</entry> 
+</row> 
+<row> 
+ <entry>c_country_ad_language</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_country_c_currency_id</entry><entry>Tabela</entry> 
+<entry>C_Currencies</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_country_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>País</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Country </entry> 
+<entry>The Country defines a Country.  Each Country must be defined before it can be used in any document.</entry> 
+</row> 
+<row> 
+ <entry>c_country_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cobrança</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Dunning Rules for overdue invoices</entry> 
+<entry>The Dunning indicates the rules and method of dunning for past due payments.</entry> 
+</row> 
+<row> 
+ <entry>Saudação</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Greeting to print on correspondence</entry> 
+<entry>The Greeting identifies the greeting to print on correspondence.</entry> 
+</row> 
+<row> 
+ <entry>Programação de Faturamento</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Schedule for generating Invoices</entry> 
+<entry>The Invoice Schedule identifies the frequency used when generating invoices.</entry> 
+</row> 
+<row> 
+ <entry>Cidade</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies a City</entry> 
+<entry>The City identifies a unique City for this Country or Region.</entry> 
+</row> 
+<row> 
+ <entry>c_location_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_location_created</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_location_createdby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Endereço</entry><entry>Localização (Endereço)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Location or Address</entry> 
+<entry>The Location / Address field defines the location of an entity.</entry> 
+</row> 
+<row> 
+ <entry>c_location_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_location_updated</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_location_updatedby</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Indicador da IE</entry><entry>Lista</entry> 
+<entry>Contribuinte ICMS
+Contribuinte Isento
+Não Contribuinte
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Latitude</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Longitude</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Região de Entrega</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Primary Key : Shipment Region</entry> 
+<entry>Primary Key : Shipment Region</entry> 
+</row> 
+<row> 
+ <entry>Revisão Cadastral</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The last review date of partner registration</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Situação Comercial</entry><entry>Lista</entry> 
+<entry>Parceiro Ativo
+Parceiro Bloqueado Comercial
+Parceiro Bloqueado Crédito
+Parceiro Encerrado
+Parceiro Inativo-Concorrente
+Parceiro Pendente de Análise
+Parceiro em Recuperação
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cod. Regime Trib.</entry><entry>Lista</entry> 
+<entry>1- Simples Nacional
+2 - Simples Nacional – Excesso de Sublimite de Receita Bruta
+3 - Regime Normal
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Este campo será obrigatoriamente preenchido com: 1 – Simples Nacional;
+ 2 – Simples Nacional – excesso de sublimite de receita bruta;
+ 3 – Regime Normal. </entry> 
+<entry>&lt;
+a href="http://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/aplicacoes.aspx?id=21" target="_blank"&gt;
+Consulta Optantes&lt;
+/a&gt;
+
+
+Este campo será obrigatoriamente preenchido com: 1 – Simples Nacional;
+ 2 – Simples Nacional – excesso de sublimite de receita bruta;
+ 3 – Regime Normal. Ref.: C21</entry> 
+</row> 
+<row> 
+ <entry>Comentários</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Comments or additional information</entry> 
+<entry>The Comments field allows for free form entry of additional information.</entry> 
+</row> 
+<row> 
+ <entry>Descrição de Contato</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Description of Contact</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nome do Contato</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner Contact Name</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Código ISO de País</entry><entry>Lista</entry> 
+<entry></entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Upper-case two-letter alphanumeric ISO Country code according to ISO 3166-1 - http://www.chemie.fu-berlin.de/diverse/doc/ISO_3166.html</entry> 
+<entry>For details - http://www.din.de/gremien/nas/nabd/iso3166ma/codlstp1.html or - http://www.unece.org/trade/rec/rec03en.htm</entry> 
+</row> 
+<row> 
+ <entry>País</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Country Name</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Condição de Pagamento</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>The terms of Payment (timing, discount)</entry> 
+<entry>Payment Terms identify the method and timing of payment.</entry> 
+</row> 
+<row> 
+ <entry>Criado</entry><entry>Data+Hora</entry> 
+<entry> (SYSDATE)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date this record was created</entry> 
+<entry>The Created field indicates the date that this record was created.</entry> 
+</row> 
+<row> 
+ <entry>Criado por</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User who created this records</entry> 
+<entry>The Created By field indicates the user who created this record.</entry> 
+</row> 
+<row> 
+ <entry>c_region_ad_org_id</entry><entry>Tabela</entry> 
+<entry>AD_Org (all)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_region_c_country_id</entry><entry>Tabela</entry> 
+<entry>C_Country</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>c_region_description</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Região</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies a geographical Region</entry> 
+<entry>The Region identifies a unique Region for this Country.</entry> 
+</row> 
+<row> 
+ <entry>c_region_isactive</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Região de Vendas</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Sales coverage region</entry> 
+<entry>The Sales Region indicates a specific area of sales coverage.</entry> 
+</row> 
+<row> 
+ <entry>Regra de Entrega</entry><entry>Lista</entry> 
+<entry>Disponibilidade
+Forçar
+Linha Completa
+Manual
+Pedido Completo
+Após o recebimento
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Defines the timing of Delivery</entry> 
+<entry>The Delivery Rule indicates when an order should be delivered. For example should the order be delivered when the entire order is complete, when a line is complete or as the products become available.</entry> 
+</row> 
+<row> 
+ <entry>Via de Entrega</entry><entry>Lista</entry> 
+<entry>Entrega
+Retirar
+Transportadora
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>How the order will be delivered</entry> 
+<entry>The Delivery Via indicates how the products should be delivered. For example, will the order be picked up or shipped.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Cópias de Documentos</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Number of copies to be printed</entry> 
+<entry>The Document Copies indicates the number of copies of each document that will be generated.</entry> 
+</row> 
+<row> 
+ <entry>D-U-N-S</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Dun %26 Bradstreet Number</entry> 
+<entry>Used for EDI - For details see   www.dnb.com/dunsno/list.htm</entry> 
+</row> 
+<row> 
+ <entry>Endereço de e-mail</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Electronic Mail Address</entry> 
+<entry>The Email Address is the Electronic Mail ID for this User and should be fully qualified (e.g. joe.smith@company.com). The Email Address is used to access the self service application functionality from the web.</entry> 
+</row> 
+<row> 
+ <entry>ID do usuário de email</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User Name (ID) in the Mail System</entry> 
+<entry>The user name in the mail system is usually the string before the @ of your email address.  Required if the mail server requires authentification to send emails.</entry> 
+</row> 
+<row> 
+ <entry>Informação de Verificação</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Verification information of EMail Address</entry> 
+<entry>The field contains additional information how the EMail Address has been verified</entry> 
+</row> 
+<row> 
+ <entry>Email Verificado</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date Email was verified</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Fax</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Facsimile number</entry> 
+<entry>The Fax identifies a facsimile number for this Business Partner or  Location</entry> 
+</row> 
+<row> 
+ <entry>Primeira Venda</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date of First Sale</entry> 
+<entry>The First Sale Date identifies the date of the first sale to this Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Desconto Fixo %</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Flat discount percentage </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Regra de Custo de Frete</entry><entry>Lista</entry> 
+<entry>Calculado
+Freight excluded
+Preço fixo
+Frete incluso
+Linha
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Method for charging Freight</entry> 
+<entry>The Freight Cost Rule indicates the method used when charging for freight.</entry> 
+</row> 
+<row> 
+ <entry>Formato de Impressão de Fatura</entry><entry>Tabela</entry> 
+<entry>AD_PrintFormat</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Print Format for printing Invoices</entry> 
+<entry>You need to define a Print Format to print the document.</entry> 
+</row> 
+<row> 
+ <entry>Regra de Fatura</entry><entry>Lista</entry> 
+<entry>Após Entrega
+Imediato
+Após pedido despachado
+Programação do Cliente após entrega
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Frequency and method of invoicing </entry> 
+<entry>The Invoice Rule defines how a Business Partner is invoiced and the frequency of invoicing.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry> (Y)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Cliente</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if this Business Partner is a Customer</entry> 
+<entry>The Customer checkbox indicates if this Business Partner is a customer.  If it is select additional fields will display which further define this customer.</entry> 
+</row> 
+<row> 
+ <entry>Padrão</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Default value</entry> 
+<entry>The Default Checkbox indicates if this record will be used as a default value.</entry> 
+</row> 
+<row> 
+ <entry>Imprimir Descontos</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Print Discount on Invoice and Order</entry> 
+<entry>The Discount Printed Checkbox indicates if the discount will be printed on the document.</entry> 
+</row> 
+<row> 
+ <entry>Funcionário</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if  this Business Partner is an employee</entry> 
+<entry>The Employee checkbox indicates if this Business Partner is an Employee.  If it is selected, additional fields will display which further identify this employee.</entry> 
+</row> 
+<row> 
+ <entry>Transação Única</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Perspectiva</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates this is a Prospect</entry> 
+<entry>The Prospect checkbox indicates an entity that is an active prospect.</entry> 
+</row> 
+<row> 
+ <entry>Representante de Vendas</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if  the business partner is a sales representative or company agent</entry> 
+<entry>The Sales Rep checkbox indicates if this business partner is a sales representative. A sales representative may also be an employee, but does not need to be.</entry> 
+</row> 
+<row> 
+ <entry>Nível de Resumo</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>This is a summary entity</entry> 
+<entry>A summary entity represents a branch in a tree rather than an end-node. Summary entities are used for reporting and do not have own values.</entry> 
+</row> 
+<row> 
+ <entry>Isento de Imposto (Vendas)</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business partner is exempt from tax on sales</entry> 
+<entry>If a business partner is exempt from tax on sales, the exempt tax rate is used. For this, you need to set up a tax rate with a 0% rate and indicate that this is your tax exempt rate.  This is required for tax reporting, so that you can track tax exempt transactions.</entry> 
+</row> 
+<row> 
+ <entry>Fornecedor</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Indicates if this Business Partner is a Vendor</entry> 
+<entry>The Vendor checkbox indicates if this Business Partner is a Vendor.  If it is selected, additional fields will display which further identify this vendor.</entry> 
+</row> 
+<row> 
+ <entry>Último Contato</entry><entry>Data+Hora</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date this individual was last contacted</entry> 
+<entry>The Last Contact indicates the date that this Business Partner Contact was last contacted.</entry> 
+</row> 
+<row> 
+ <entry>Último Resultado</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Result of last contact</entry> 
+<entry>The Last Result identifies the result of the last contact made.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Parceiro</entry><entry>Lista</entry> 
+<entry>PF - Pessoa Física
+PJ - Pessoa Jurídica
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Brazilian BP Type (Identifies if the BP is a Legal Entity or an Individual)</entry> 
+<entry>Used to identify if the Business partner is a legal entity or an individual</entry> 
+</row> 
+<row> 
+ <entry>CCM</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>City Identification Code used in Brazil (City Tax ID)</entry> 
+<entry>City Identification Code used in Brazil (City Tax ID)</entry> 
+</row> 
+<row> 
+ <entry>CNPJ</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Used to identify Legal Entities in Brazil</entry> 
+<entry>&lt;
+a href="http://www.serasa.com.br" target="_blank"&gt;
+Serasa&lt;
+/a&gt;
+
+&lt;
+a href="http://www.sintegra.gov.br" target="_blank"&gt;
+Sintegra&lt;
+/a&gt;
+
+&lt;
+a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+CCFácil&lt;
+/a&gt;
+
+&lt;
+a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+Receita &lt;
+/a&gt;
+
+&lt;
+a href="http://www.sci.com.br/" target="_blank"&gt;
+Equifax (SCI)&lt;
+/a&gt;
+
+&lt;
+a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+Simples Nacional&lt;
+/a&gt;
+</entry> 
+</row> 
+<row> 
+ <entry>CPF</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Used to identify individuals in Brazil</entry> 
+<entry>&lt;
+a href="http://www.serasa.com.br" target="_blank"&gt;
+Serasa&lt;
+/a&gt;
+
+&lt;
+a href="http://www.sintegra.gov.br" target="_blank"&gt;
+Sintegra&lt;
+/a&gt;
+
+&lt;
+a href="https://www.ccfacil.com.br/Login.asp?ret_link=%2FConsulta%2Easp%3FCodConsulta%3D34" target="_blank"&gt;
+CCFácil&lt;
+/a&gt;
+
+&lt;
+a href="http://www.receita.fazenda.gov.br/PessoaJuridica/CNPJ/cnpjreva/Cnpjreva_Solicitacao.asp" target="_blank"&gt;
+Receita &lt;
+/a&gt;
+
+&lt;
+a href="http://www.sci.com.br/" target="_blank"&gt;
+Equifax (SCI)&lt;
+/a&gt;
+
+&lt;
+a href="http://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATBHE/ConsultaOptantes.app/ConsultarOpcao.aspx" target="_blank"&gt;
+Simples Nacional&lt;
+/a&gt;
+</entry> 
+</row> 
+<row> 
+ <entry>IE</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Used to Identify the IE (State Tax ID)</entry> 
+<entry>Used to Identify the IE (State Tax ID)</entry> 
+</row> 
+<row> 
+ <entry>Contato NFe</entry><entry>Sim-Não</entry> 
+<entry> (N)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User is NFe Contact (receive email automatically)</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Suframa</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Brazilian SUFRAMA Identification Number</entry> 
+<entry>Brazilian SUFRAMA Identification Number</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Transação</entry><entry>Lista</entry> 
+<entry>Consumidor Final
+Exportação Indireta
+Exportação
+Importação
+Uso Interno
+Industrialização
+Outros
+Remessa
+Revenda
+Transferência
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Defines the Transaction Type</entry> 
+<entry>Defines the Transaction Type</entry> 
+</row> 
+<row> 
+ <entry>Nome de usuário LDAP</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User Name used for authorization via LDAP (directory) services</entry> 
+<entry>Optional LDAP system user name for the user. If not defined, the normal Name of the user is used. This allows to use the internal (LDAP) user id (e.g. jjanke) and the normal display name (e.g. Jorg Janke).  The LDAP User Name can also be used without LDAP enables (see system window).  This would allow to sign in as jjanke and use the display name of Jorg Janke.</entry> 
+</row> 
+<row> 
+ <entry>Esquema de Descontos</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Schema to calculate the trade discount percentage</entry> 
+<entry>After calculation of the (standard) price, the trade discount percentage is calculated and applied resulting in the final price.</entry> 
+</row> 
+<row> 
+ <entry>Lista de Preço</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Unique identifier of a Price List</entry> 
+<entry>Price Lists are used to determine the pricing, margin and cost of items purchased or sold.</entry> 
+</row> 
+<row> 
+ <entry>NAICS/SIC</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Standard Industry Code or its successor NAIC - http://www.osha.gov/oshstats/sicser.html</entry> 
+<entry>The NAICS/SIC identifies either of these codes that may be applicable to this Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Nome 2</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Additional Name</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo de Notificação</entry><entry>Lista</entry> 
+<entry>EMail+Aviso
+Email
+Aviso
+Nenhum
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Type of Notifications</entry> 
+<entry>Emails or Notification sent out for Request Updates, etc.</entry> 
+</row> 
+<row> 
+ <entry>Funcionários</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Number of employees</entry> 
+<entry>Indicates the number of employees for this Business Partner.  This field displays only for Prospects.</entry> 
+</row> 
+<row> 
+ <entry>Regra de Pagamento</entry><entry>Lista</entry> 
+<entry>Dinheiro
+Débito Direto
+Cartão de Crédito
+Mixed
+Em Crédito
+Cheque
+Depósito Direto
+</entry> 
+<entry> </entry> 
+<entry>AD_Ref_List.Value &lt;
+&gt;
+ 'M' </entry> 
+<entry>How you pay the invoice</entry> 
+<entry>The Payment Rule indicates the method of invoice payment.</entry> 
+</row> 
+<row> 
+ <entry>Regra de Pagamento</entry><entry>Lista</entry> 
+<entry>Dinheiro
+Débito Direto
+Cartão de Crédito
+Mixed
+Em Crédito
+Cheque
+Depósito Direto
+</entry> 
+<entry> </entry> 
+<entry>AD_Ref_List.Value &lt;
+&gt;
+ 'M' </entry> 
+<entry>Purchase payment option</entry> 
+<entry>The Payment Rule indicates the method of purchase payment.</entry> 
+</row> 
+<row> 
+ <entry>Fone</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies a telephone number</entry> 
+<entry>The Phone field identifies a telephone number</entry> 
+</row> 
+<row> 
+ <entry>2º Fone</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies an alternate telephone number.</entry> 
+<entry>The 2nd Phone field identifies an alternate telephone number.</entry> 
+</row> 
+<row> 
+ <entry>Esquema de Descontos do PC</entry><entry>Tabela</entry> 
+<entry>M_DiscountSchema</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Schema to calculate the purchase trade discount percentage</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Termo de Pagamento do PC</entry><entry>Tabela</entry> 
+<entry>C_PaymentTerm</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment rules for a purchase order</entry> 
+<entry>The PO Payment Term indicates the payment term that will be used when this purchase order becomes an invoice.</entry> 
+</row> 
+<row> 
+ <entry>Lista de Preço de Compra</entry><entry>Tabela</entry> 
+<entry>M_PriceList</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Price List used by this Business Partner</entry> 
+<entry>Identifies the price list used by a Vendor for products purchased by this organization.</entry> 
+</row> 
+<row> 
+ <entry>Referência do Pedido</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Transaction Reference Number (Sales Order, Purchase Order) of your Business Partner</entry> 
+<entry>The business partner order reference is the order reference for this specific transaction;
+ Often Purchase Order numbers are given to print on Invoices for easier reference.  A standard number can be defined in the Business Partner (Customer) window.</entry> 
+</row> 
+<row> 
+ <entry>CEP</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Postal code</entry> 
+<entry>The Postal Code or ZIP identifies the postal code for this entity's address.</entry> 
+</row> 
+<row> 
+ <entry>-</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Additional ZIP or Postal code</entry> 
+<entry>The Additional ZIP or Postal Code identifies, if appropriate, any additional Postal Code information.</entry> 
+</row> 
+<row> 
+ <entry>Valor Potencial</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Total Revenue expected</entry> 
+<entry>The Potential Life Time Value is the anticipated revenue in primary accounting currency to be generated by the Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Classificação</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Classification or Importance</entry> 
+<entry>The Rating is used to differentiate the importance</entry> 
+</row> 
+<row> 
+ <entry>Núm. Referência</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Your customer or vendor number at the Business Partner's site</entry> 
+<entry>The reference number can be printed on orders and invoices to allow your business partner to faster identify your records.</entry> 
+</row> 
+<row> 
+ <entry>Região</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Name of the Region</entry> 
+<entry>The Region Name defines the name that will print when this region is used in a document.</entry> 
+</row> 
+<row> 
+ <entry>Representante de Vendas</entry><entry>Tabela</entry> 
+<entry>AD_User - SalesRep</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Sales Representative or Company Agent</entry> 
+<entry>The Sales Representative indicates the Sales Rep for this Region.  Any Sales Rep must be a valid internal user.</entry> 
+</row> 
+<row> 
+ <entry>Volume de Vendas em 1.000</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Total Volume of Sales in Thousands of Currency</entry> 
+<entry>The Sales Volume indicates the total volume of sales for a Business Partner.</entry> 
+</row> 
+<row> 
+ <entry>Enviar e-mail</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Enable sending Document EMail</entry> 
+<entry>Send emails with document attached (e.g. Invoice, Delivery Note, etc.)</entry> 
+</row> 
+<row> 
+ <entry>Parcela</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Share of Customer's business as a percentage</entry> 
+<entry>The Share indicates the percentage of this Business Partner's volume of the products supplied.</entry> 
+</row> 
+<row> 
+ <entry>Mín. Vida de Prateleira %</entry><entry>Inteiro</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Minimum Shelf Life in percent based on Product Instance Guarantee Date</entry> 
+<entry>Minimum Shelf Life of products with Guarantee Date instance. If &gt;
+ 0 you cannot select products with a shelf life ((Guarantee Date-Today) / Guarantee Days) less than the minimum shelf life, unless you select "Show All"</entry> 
+</row> 
+<row> 
+ <entry>Crédito Disponível</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Available Credit based on Credit Limit (not Total Open Balance) and Credit Used</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Limite de Crédito</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Total outstanding invoice amounts allowed</entry> 
+<entry>The Credit Limit indicates the total amount allowed "on account" in primary accounting currency.  If the Credit Limit is 0, no check is performed.  Credit Management is based on the Total Open Amount, which includes Vendor activities.</entry> 
+</row> 
+<row> 
+ <entry>Estado de Crédito</entry><entry>Lista</entry> 
+<entry>Segurar Crédito
+Crédito OK
+Cancelar Crédito
+Observar Crédito
+Sem Verificação de Crédito
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Business Partner Credit Status</entry> 
+<entry>Credit Management is inactive if Credit Status is No Credit Check, Credit Stop or if the Credit Limit is 0.
+If active, the status is set automatically set to Credit Hold, if the Total Open Balance (including Vendor activities)  is higher then the Credit Limit. It is set to Credit Watch, if above 90% of the Credit Limit and Credit OK otherwise.</entry> 
+</row> 
+<row> 
+ <entry>Crédito Utilizado</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Current open balance</entry> 
+<entry>The Credit Used indicates the total amount of open or unpaid invoices in primary accounting currency for the Business Partner. Credit Management is based on the Total Open Amount, which includes Vendor activities.</entry> 
+</row> 
+<row> 
+ <entry>Descrição do Pedido</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Description to be used on orders</entry> 
+<entry>The Order Description identifies the standard description to use on orders for this Customer.</entry> 
+</row> 
+<row> 
+ <entry>Supervisor</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Supervisor for this user/organization - used for escalation and approval</entry> 
+<entry>The Supervisor indicates who will be used for forwarding and escalating issues for this user - or for approvals.</entry> 
+</row> 
+<row> 
+ <entry>ID de Imposto</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Tax Identification</entry> 
+<entry>The Tax ID field identifies the legal Identification number of this Entity.</entry> 
+</row> 
+<row> 
+ <entry>Título</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Name this entity is referred to as</entry> 
+<entry>The Title indicates the name that an entity is referred to as.</entry> 
+</row> 
+<row> 
+ <entry>Saldo em Aberto</entry><entry>Valor</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Total Open Balance Amount in primary Accounting Currency</entry> 
+<entry>The Total Open Balance Amount is the calculated open item amount for Customer and Vendor activity.  If the Balance is below zero, we owe the Business Partner.  The amount is used for Credit Management.
+Invoices and Payment Allocations determine the Open Balance (i.e. not Orders or Payments).</entry> 
+</row> 
+<row> 
+ <entry>Atualizado</entry><entry>Data+Hora</entry> 
+<entry> (SYSDATE)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date this record was updated</entry> 
+<entry>The Updated field indicates the date that this record was updated.</entry> 
+</row> 
+<row> 
+ <entry>Atualizado por</entry><entry>Tabela</entry> 
+<entry>AD_User</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User who updated this records</entry> 
+<entry>The Updated By field indicates the user who updated this record.</entry> 
+</row> 
+<row> 
+ <entry>URL</entry><entry>URL</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Full URL address - e.g. http://www.idempiere.org</entry> 
+<entry>The URL defines an fully qualified web address like http://www.idempiere.org</entry> 
+</row> 
+<row> 
+ <entry>Chave de Busca</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(ver acima)</entry> 
+<entry>A search key allows you a fast method of finding a particular record.
+If you leave the search key empty, the system automatically creates a numeric number.  The document sequence used for this fallback number is defined in the "Maintain Sequence" window with the name "DocumentNo_&lt;
+TableName&gt;
+", where TableName is the actual name of the table (e.g. C_Order).</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter><para><emphasis> Criado:</emphasis>2017-10-04 11:22:49.0</para><para> <emphasis>Atualizado:</emphasis>2017-10-04 11:22:49.0</para>
+ 
+ <title>Relatório:  Relatório de Cheques Geral (Cubo)</title> 
+ <para><emphasis> ReportView: </emphasis>COF_RV_ControlCheck</para><imagedata fileref="/img/manual/RelatoriodeChequesGeralCubo.png" format="PNG" /><table> 
+ <title>RelatoriodeChequesGeralCubo Parâmetros </title> 
+ <tgroup cols='6' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome</entry><entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores(Padrão)</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row> 
+</thead><tbody><row> 
+ <entry>Cheque Trocado</entry><entry> cof_IsChangeCheck</entry> 
+<entry>Sim-Não</entry> 
+ <entry> </entry> 
+<entry>Indica que o cheque bancário foi trocado.</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Portador</entry><entry> COF_C_CheckCustody_ID</entry> 
+<entry>Tabela</entry> 
+ <entry>COF_C_CheckCustody</entry> 
+<entry>Tipo de Portador / Custodia do Cheque</entry> 
+<entry>Primary Key : Check Custody</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry> AD_Client_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> (@#AD_Client_ID@)</entry> 
+<entry>Empresa/Locatário para esta instalação.</entry> 
+<entry>Uma Empresa é uma Companhia ou uma Entidade Legal (pessoa jurídica). Dados não podem ser compartilhados entre Empresas. Locatário é um sinônimo para Empresa (Client).</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry> AD_Org_ID</entry> 
+<entry>Tabela Direta</entry> 
+ <entry> (@#AD_Org_ID@)</entry> 
+<entry>Entidade organizacional dentro da Empresa</entry> 
+<entry>Uma "Organização" é uma unidade de sua "Empresa" ou "Entidade Legal" - os exemplos são loja, departamento. Você pode compartilhar dados entre organizações.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry> C_BPartner_ID</entry> 
+<entry>Procurar</entry> 
+ <entry> </entry> 
+<entry>Identifica um Parceiro de Negócios.</entry> 
+<entry>Um "Parceiro de Negócios" é qualquer um com quem você transaciona.  Isto pode incluir Fornecedores, Clientes, Funcionários, Vendedores, Representantes de Venda, etc.</entry> 
+</row> 
+<row> 
+ <entry>Cheque Compensado</entry><entry> cof_IsClearedCheck</entry> 
+<entry>Sim-Não</entry> 
+ <entry> </entry> 
+<entry>Define se o Cheque foi Compensado</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Cheque de Terceiros</entry><entry> cof_ThirdCheck</entry> 
+<entry>Lista</entry> 
+ <entry>Não
+Sim
+</entry> 
+<entry>Indica que o Cheque foi Obtido por Terceiros.</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Permitir Repasse</entry><entry> cof_UseForPayment</entry> 
+<entry>Lista</entry> 
+ <entry>Não
+Sim
+</entry> 
+<entry>Permitir repasse, ou seja, cheque pode ser usado para efetuar pagamentos</entry> 
+<entry>null</entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo 2</entry><entry> User2_ID</entry> 
+<entry>Tabela</entry> 
+ <entry>Account_ID - User2</entry> 
+<entry>Centro de Custo #2</entry> 
+<entry>O "Centro de Custo" exibe os elementos opcionais que tenham sido definidos para esta combinação de contas.</entry> 
+</row> 
+<row> 
+ <entry>Date To</entry><entry> DateTo</entry> 
+<entry>Data</entry> 
+ <entry> </entry> 
+<entry>End date of a date range</entry> 
+<entry>The Date To indicates the end date of a range (inclusive)</entry> 
+</row> 
+<row> 
+ <entry>Data do Documento</entry><entry> DateDoc</entry> 
+<entry>Data</entry> 
+ <entry> </entry> 
+<entry>Data do Documento</entry> 
+<entry>A "Data do Documento" indica a data em que o documento foi gerado.  Ela pode ser ou não a mesma da data contábil.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<table> 
+ <title>COF_RV_ControlCheck - Colunas</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="1*"/><colspec colname='c4'  colwidth="1*"/><colspec colname='c5'  colwidth="1*"/><colspec colname='c6'  colwidth="1*"/><colspec colname='c7'  colwidth="2*"/><thead> 
+<row> 
+<entry>Nome da coluna</entry><entry>Referência</entry><entry>Valores padrão</entry><entry>Valor de restrição</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry> (@#AD_Client_ID@)</entry> 
+<entry> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Endereço</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Address line 1 for this location</entry> 
+<entry>The Address 1 identifies the address for an entity's location</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry> (@#AD_Org_ID@)</entry> 
+<entry> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>BancoNome</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Conta Bancária</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Account at the Bank</entry> 
+<entry>The Bank Account identifies an account at this Bank.</entry> 
+</row> 
+<row> 
+ <entry>Banco</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Bank</entry> 
+<entry>The Bank is a unique identifier of a Bank for this Organization or for a Business Partner with whom this Organization transacts.</entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócios </entry><entry>Procurar</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Localização do Parceiro</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies the (ship to) address for this Business Partner</entry> 
+<entry>The Partner address indicates the location of a Business Partner</entry> 
+</row> 
+<row> 
+ <entry>Data da Troca</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Altera o Tipo</entry><entry>Lista</entry> 
+<entry>Cheque
+Dinheiro
+</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>ChequeNo</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Dígito</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Número da Conta</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Dígito</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Número da Agência</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Parceiro de Negócio</entry><entry>Procurar</entry> 
+<entry>C_BPartner (Trx)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identifies a Business Partner</entry> 
+<entry>A Business Partner is anyone with whom you transact.  This can include Vendor, Customer, Employee or Salesperson</entry> 
+</row> 
+<row> 
+ <entry>Alínea 2</entry><entry>Procurar</entry> 
+<entry>COF_Alinea</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Identificador de Devolução</entry> 
+<entry>Alínea é um identificador de devolução, para cada motivo recebe um numero, que serve pra fazer uma leitura rápida dentro do meio bancário. Ex. 12 – Cheque sem fundos.</entry> 
+</row> 
+<row> 
+ <entry>Alínea</entry><entry>Procurar</entry> 
+<entry>COF_Alinea</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Primary Key : Alíneas de Devolução Bancária</entry> 
+<entry>Primary Key : Alíneas de Devolução Bancária</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Portador</entry><entry>Tabela</entry> 
+<entry>COF_C_CheckCustody</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Primary Key : Check Custody</entry> 
+<entry>Primary Key : Check Custody</entry> 
+</row> 
+<row> 
+ <entry>Controle de Cheque</entry><entry>Tabela</entry> 
+<entry>COF_C_ControlCheck</entry> 
+<entry> </entry> 
+<entry>(
+	(
+		'@IsReceipt@' = 'Y' AND COF_C_ControlCheck.C_Payment_ID IS NULL AND COF_C_ControlCheck.C_BPartner_ID=@C_BPartner_ID@
+	)
+	OR
+	(
+		'@IsReceipt@' = 'N' AND COF_C_ControlCheck.COF_Payment_ID IS NULL AND (COF_C_ControlCheck.cof_UseForPayment = 'Y' OR COF_C_ControlCheck.cof_IsOwnCheck = 'Y')
+	)
+) </entry> 
+<entry>Primary Key : Check Control</entry> 
+<entry>Primary Key : Check Control</entry> 
+</row> 
+<row> 
+ <entry>CPF / CNPJ</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>CPF ou CNPJ do Cedente</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cheque Substituto</entry><entry>Tabela</entry> 
+<entry>COF_C_ControlCheck</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Check Change To</entry> 
+<entry>Bank checks can be replaced by other checks</entry> 
+</row> 
+<row> 
+ <entry>Código de Barras do Cheque</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data de Compesação</entry><entry>Data</entry> 
+<entry> (@#Date@)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data de Reapresentação</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date Resubmit</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Data de Reapresentação</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date Resubmit</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cheque Trocado</entry><entry>Sim-Não</entry> 
+<entry> ('N')</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cheque Compensado</entry><entry>Sim-Não</entry> 
+<entry> (N)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cheque de Emissão Própria</entry><entry>Sim-Não</entry> 
+<entry> ('N')</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Reconciliado</entry><entry>Sim-Não</entry> 
+<entry> ('N')</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment is reconciled with bank statement</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Nome do Emissor</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Pagamento</entry><entry>Procurar</entry> 
+<entry>C_Payment</entry> 
+<entry> </entry> 
+<entry>C_Payment.IsReceipt='N' </entry> 
+<entry>Payment identifier</entry> 
+<entry>The Payment is a unique identifier of this payment.</entry> 
+</row> 
+<row> 
+ <entry>Motivo da Troca</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Série</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Número de Série</entry> 
+<entry>Série / Serial</entry> 
+</row> 
+<row> 
+ <entry>Cheque de Terceiros</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Permitir Repasse</entry><entry>Sim-Não</entry> 
+<entry> ('N')</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Comentários</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Comments or additional information</entry> 
+<entry>The Comments field allows for free form entry of additional information.</entry> 
+</row> 
+<row> 
+ <entry>Pagamento</entry><entry>Tabela Direta</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment identifier</entry> 
+<entry>The Payment is a unique identifier of this payment.</entry> 
+</row> 
+<row> 
+ <entry>Data do Documento</entry><entry>Data</entry> 
+<entry> (@#Date@)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Date of the Document</entry> 
+<entry>The Document Date indicates the date the document was generated.  It may or may not be the same as the accounting date.</entry> 
+</row> 
+<row> 
+ <entry>Ao dia</entry><entry>Data</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>End date of a date range</entry> 
+<entry>The Date To indicates the end date of a range (inclusive)</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry> (Y)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>(ver acima)</entry> 
+<entry>(ver acima)</entry> 
+</row> 
+<row> 
+ <entry>Recibo</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>This is a sales transaction (receipt)</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Reconciliado</entry><entry>Sim-Não</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Payment is reconciled with bank statement</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Referência</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Reference for this record</entry> 
+<entry>The Reference displays the source document number.</entry> 
+</row> 
+<row> 
+ <entry>Número de Rastreio</entry><entry>Texto Curto (String)</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Bank Routing Number</entry> 
+<entry>The Bank Routing Number (ABA Number) identifies a legal Bank.  It is used in routing checks and electronic transactions.</entry> 
+</row> 
+<row> 
+ <entry>Valor Total</entry><entry>Número</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>Total Amount</entry> 
+<entry>The Total Amount indicates the total document amount.</entry> 
+</row> 
+<row> 
+ <entry>Centro de Custo 2</entry><entry>Tabela</entry> 
+<entry>Account_ID - User2</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry>User defined list element #2</entry> 
+<entry>The user defined element displays the optional elements that have been defined for this account combination.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>

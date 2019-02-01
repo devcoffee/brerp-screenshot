@@ -1,0 +1,1758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<chapter> 
+ <title>Janela:  Tabela e Coluna</title> 
+ <para> <emphasis>Descrição: </emphasis>  Gerenciamento de Tabelas e Colunas</para><para> <emphasis>Comentário/Ajuda: </emphasis>A Janela "Tabela e Coluna" define todas as tabelas com suas colunas</para><para><emphasis> Criado em: </emphasis>1999-05-21 00:00:00.0
+</para><para><emphasis>Atualizado em: </emphasis>2000-01-02 00:00:00.0</para>
+<section> 
+ <title>Tabela: Tabela - AD_Table</title> 
+ 
+<ulink url="data/AD_Table_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definições de Tabela</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Definição de Tabela (Cabeçalho) - Note que o nome da maioria das tabelas é sincronizado automaticamente.</para> 
+<para><emphasis>Nível da tabela: </emphasis>0</para> 
+ </section> 
+ <table> 
+ <title>Table Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Tabela</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>Validação Dinâmica</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ad_valrule_table</entry> 
+<entry> </entry> 
+<entry valign="middle">Dynamic Validation Rule</entry> 
+<entry>These rules define how an entry is determined to valid. You can use variables for dynamic (context sensitive) validation.</entry> 
+</row> 
+<row> 
+ <entry>Seqüência</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Segurança Habilitada</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">If security is enabled, user access to data can be restricted via Roles</entry> 
+<entry>The Security Enabled checkbox indicates that user access to the data in this table can be restricted using Roles.</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle">tableclient</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle">tableorg</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Nome da Tabela no BD</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Name of the table in the database</entry> 
+<entry>The DB Table Name indicates the name of the table in database.</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Exibir</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This is a view</entry> 
+<entry>This is a view rather than a table.  A view is always treated as read only in the system.</entry> 
+</row> 
+<row> 
+ <entry>Nível de Acesso de Dados</entry><entry>Lista</entry> 
+<entry>Organização
+Somente Cliente
+Empresa+Organização
+Somente Sistema
+Sistema+Cliente (Empresa)
+Todos
+(4)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Access Level required</entry> 
+<entry>Indicates the access level required for this record or process.</entry> 
+</row> 
+<row> 
+ <entry>Gerenciamento do Registro de Alterações</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Maintain a log of changes</entry> 
+<entry>If selected, a log of all changes is maintained.</entry> 
+</row> 
+<row> 
+ <entry>Lista de Replicação</entry><entry>Lista</entry> 
+<entry>Broadcast
+Local
+Fusão
+Referência
+(L)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Type of Data Replication</entry> 
+<entry>The Type of data Replication determines the direction of the data replication.  
+Reference means that the data in this system is read only -&gt;
+ 
+Local means that the data in this system is not replicated to other systems - 
+Merge means that the data in this system is synchronized with the other system &lt;
+-&gt;
+ </entry> 
+</row> 
+<row> 
+ <entry>Janela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ad_window_table</entry> 
+<entry> </entry> 
+<entry valign="middle">Data entry or display window</entry> 
+<entry>The Window field identifies a unique Window in the system.</entry> 
+</row> 
+<row> 
+ <entry>Janela de PC</entry><entry>Tabela</entry> 
+<entry>AD_Window</entry> 
+<entry valign="middle">adwindowpo_adtable</entry> 
+<entry> </entry> 
+<entry valign="middle">Purchase Order Window</entry> 
+<entry>Window for Purchase Order (AP) Zooms</entry> 
+</row> 
+<row> 
+ <entry>Registros Excluíveis</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Indicates if records can be deleted from the database</entry> 
+<entry>The Records Deletable checkbox indicates if a record can be deleted from the database.  If records cannot be deleted, you can only deselect the Active flag</entry> 
+</row> 
+<row> 
+ <entry>Alto Volume</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Use Search instead of Pick list</entry> 
+<entry>The High Volume Checkbox indicates if a search screen will display as opposed to a pick list for selecting records from this table.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Entidade</entry><entry>Tabela</entry> 
+<entry>_EntityTypeNew(@SQL=select get_sysconfig('DEFAULT_ENTITYTYPE','U',0,0) from dual)</entry> 
+<entry valign="middle">entityt_adtable</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @EntityType@=D </entry> 
+<entry valign="middle">Dictionary Entity Type;
+ Determines ownership and synchronization</entry> 
+<entry>The Entity Types "Dictionary", "iDempiere" and "Application" might be automatically synchronized and customizations deleted or overwritten.  
+
+For customizations, copy the entity and select "User"!</entry> 
+</row> 
+<row> 
+ <entry>Criar Colunas a partir do Banco de Dados</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Import Table Columns from Database</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Copiar Colunas da Tabela</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Mantido Centralizadamente</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Information maintained in System Element table</entry> 
+<entry>The Centrally Maintained checkbox indicates if the Name, Description and Help maintained in 'System Element' table  or 'Window' table.</entry> 
+</row> 
+<row> 
+ <entry>Válidar View</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Copy Components From View</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Excluir View</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Cria Colunas Padrão</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Coluna - AD_Column</title> 
+ 
+<ulink url="data/AD_Column_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Definições de Colunas de Tabelas</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Define as colunas de uma tabela. Note que o nome da coluna é sincronizado automaticamente.</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Column Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Coluna</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Column in the table</entry> 
+<entry>Link to the database column of the table</entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle">columnclient</entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle">columnorg</entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ad_table_column</entry> 
+<entry> </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>Elemento do Sistema</entry><entry>Procurar</entry> 
+<entry></entry> 
+<entry valign="middle">ad_element_ad_column</entry> 
+<entry> </entry> 
+<entry valign="middle">System Element enables the central maintenance of column description and help.</entry> 
+<entry>The System Element allows for the central maintenance of help, descriptions and terminology for a database column.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Entidade</entry><entry>Tabela</entry> 
+<entry>_EntityTypeNew(@SQL=select get_sysconfig('DEFAULT_ENTITYTYPE','U',0,0) from dual)</entry> 
+<entry valign="middle">entityt_adcolumn</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @EntityType@=D </entry> 
+<entry valign="middle">Dictionary Entity Type;
+ Determines ownership and synchronization</entry> 
+<entry>The Entity Types "Dictionary", "iDempiere" and "Application" might be automatically synchronized and customizations deleted or overwritten.  
+
+For customizations, copy the entity and select "User"!</entry> 
+</row> 
+<row> 
+ <entry>Nome da Coluna BD</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Name of the column in the database</entry> 
+<entry>The Column Name indicates the name of a column on a table as defined in the database.</entry> 
+</row> 
+<row> 
+ <entry>Coluna SQL</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Virtual Column (r/o)</entry> 
+<entry>You can define virtual columns (not stored in the database). If defined, the Column name is the synonym of the SQL expression defined here. The SQL expression must be valid.
+Example: "Updated-Created" would list the age of the entry in days</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>Placeholder</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Versão</entry><entry>Valor</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Version of the table definition</entry> 
+<entry>The Version indicates the version of this table definition.</entry> 
+</row> 
+<row> 
+ <entry>Comprimento</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Length of the column in the database</entry> 
+<entry>The Length indicates the length of a column as defined in the database.</entry> 
+</row> 
+<row> 
+ <entry>Referência</entry><entry>Tabela</entry> 
+<entry>AD_Reference Data Types</entry> 
+<entry valign="middle">ad_reference_columndatatype</entry> 
+<entry> </entry> 
+<entry valign="middle">System Reference and Validation</entry> 
+<entry>The Reference could be a display type, list or table validation.</entry> 
+</row> 
+<row> 
+ <entry>Validação Dinâmica</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ad_valrule_column</entry> 
+<entry> </entry> 
+<entry valign="middle">Dynamic Validation Rule</entry> 
+<entry>These rules define how an entry is determined to valid. You can use variables for dynamic (context sensitive) validation.</entry> 
+</row> 
+<row> 
+ <entry>Formato Padrão</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The pattern used to format a number or date.</entry> 
+<entry>A string complying with either Java SimpleDateFormat or DecimalFormat pattern syntax used to override the default presentation format of a date or number type field.</entry> 
+</row> 
+<row> 
+ <entry>Formato do Valor</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Format of the value;
+ Can contain fixed format elements, Variables: "_lLoOaAcCa09"</entry> 
+<entry>&lt;
+B&gt;
+Validation elements:&lt;
+/B&gt;
+
+ 	(Space) any character
+_	Space (fixed character)
+l	any Letter a..Z NO space
+L	any Letter a..Z NO space converted to upper case
+o	any Letter a..Z or space
+O	any Letter a..Z or space converted to upper case
+a	any Letters %26 Digits NO space
+A	any Letters %26 Digits NO space converted to upper case
+c	any Letters %26 Digits or space
+C	any Letters %26 Digits or space converted to upper case
+0	Digits 0..9 NO space
+9	Digits 0..9 or space
+
+Example of format "(000)_000-0000"</entry> 
+</row> 
+<row> 
+ <entry>Processo</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adprocess_adcolumn</entry> 
+<entry> </entry> 
+<entry valign="middle">Process or Report</entry> 
+<entry>The Process field identifies a unique Process or Report in the system.</entry> 
+</row> 
+<row> 
+ <entry>Gráfico</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adchart_adcolumn</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>PA_DashboardContent_ID</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">PADashboardContent_ADColumn</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Chave de Referência</entry><entry>Tabela</entry> 
+<entry>AD_Reference Values</entry> 
+<entry valign="middle">ad_reference_columnvalue</entry> 
+<entry>AD_Reference.ValidationType=CASE WHEN  @AD_Reference_ID@ IN (17,28) THEN 'L' ELSE 'T' END </entry> 
+<entry valign="middle">Required to specify, if data type is Table or List</entry> 
+<entry>The Reference Value indicates where the reference values are stored.  It must be specified if the data type is Table or List.  </entry> 
+</row> 
+<row> 
+ <entry>Info Factory Class</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Fully qualified class name that implements the InfoFactory interface</entry> 
+<entry>Fully qualified class name that implements the InfoFactory interface. This can be use to provide custom Info class for column.</entry> 
+</row> 
+<row> 
+ <entry>Autocompletar</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Automatic completion for textfields</entry> 
+<entry>The autocompletion uses all existing values (from the same client and organization) of the field.</entry> 
+</row> 
+<row> 
+ <entry>Mín. Valor</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Minimum Value for a field</entry> 
+<entry>The Minimum Value indicates the lowest  allowable value for a field.</entry> 
+</row> 
+<row> 
+ <entry>Máx. Valor</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Maximum Value for a field</entry> 
+<entry>The Maximum Value indicates the highest allowable value for a field</entry> 
+</row> 
+<row> 
+ <entry>Nome da Restrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Tipo da Restrição</entry><entry>Lista</entry> 
+<entry>Cascade
+Do Not Create
+Model Cascade
+No Action
+Set Null
+(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Ref_List.Value!='M' OR @AD_Reference_ID@ IN (18,19,30)) </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Lógica Padrão</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Default value hierarchy, separated by ;
+</entry> 
+<entry>The defaults are evaluated in the order of definition, the first not null value becomes the default value of the column. The values are separated by comma or semicolon. a) Literals:. 'Text' or 123 b) Variables - in format @Variable@ - Login e.g. #Date, #AD_Org_ID, #AD_Client_ID - Accounting Schema: e.g. $C_AcctSchema_ID, $C_Calendar_ID - Global defaults: e.g. DateFormat - Window values (all Picks, CheckBoxes, RadioButtons, and DateDoc/DateAcct) c) SQL code with the tag: @SQL=SELECT something AS DefaultValue FROM ... The SQL statement can contain variables.  There can be no other value other than the SQL statement. The default is only evaluated, if no user preference is defined.  Default definitions are ignored for record columns as Key, Parent, Client as well as Buttons.</entry> 
+</row> 
+<row> 
+ <entry>Coluna Chave</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This column is the key in this table</entry> 
+<entry>The key column must also be display sequence 0 in the field definition and may be hidden.</entry> 
+</row> 
+<row> 
+ <entry>Coluna de Vínculo com o Pai</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This column is a link to the parent table (e.g. header from lines) - incl. Association key columns</entry> 
+<entry>The Parent checkbox indicates if this column is a link to the parent table.</entry> 
+</row> 
+<row> 
+ <entry>Obrigatório</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Data entry is required in this column</entry> 
+<entry>The field must have a value for the record to be saved to the database.</entry> 
+</row> 
+<row> 
+ <entry>Sincronizar Coluna</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Change database table definition when changing dictionary definition</entry> 
+<entry>When selected, the database column definition is updated based on your entries in the Column definition of the Application Dictionary.</entry> 
+</row> 
+<row> 
+ <entry>Criptografar Colunas</entry><entry>Botão</entry> 
+<entry>AD_Column Encrypted(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @IsKey@=Y | @IsParent@=Y | @IsIdentifier@=Y | @IsTranslated@=Y | @ColumnName@=AD_Client_ID | @ColumnName@=AD_Client_ID | @ColumnName@=AD_Org_ID | @ColumnName@=IsActive | @ColumnName@=Created | @ColumnName@=Updated | @ColumnName@=DocumentNo | @ColumnName@=Value | @ColumnName@=Name | @AD_Reference_ID@=23 | @AD_Reference_ID@=36 | @ColumnSQL@!'' </entry> 
+<entry valign="middle">Display or Storage is encrypted</entry> 
+<entry>Display encryption (in Window/Tab/Field) - all characters are displayed as '*' - in the database it is stored in clear text. You will not be able to report on these columns.
+Data storage encryption (in Table/Column) - data is stored encrypted in the database (dangerous!) and you will not be able to report on those columns. Independent from Display encryption.</entry> 
+</row> 
+<row> 
+ <entry>Atualizável</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Determines, if the field can be updated</entry> 
+<entry>The Updatable checkbox indicates if a field can be updated by the user.</entry> 
+</row> 
+<row> 
+ <entry>Sempre Atualizável</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">The column is always updateable, even if the record is not active or processed</entry> 
+<entry>If selected and if the window / tab is not read only, you can always update the column.  This might be useful for comments, etc.</entry> 
+</row> 
+<row> 
+ <entry>Lógica Somente de Leitura</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Logic to determine if field is read only (applies only when field is read-write)</entry> 
+<entry>format := 
+{
+expression}
+ [
+{
+logic}
+ 
+{
+expression}
+] 
+expression := @
+{
+context}
+@
+{
+operand}
+
+{
+value}
+ or @
+{
+context}
+@
+{
+operand}
+
+{
+value}
+ 
+logic := 
+{
+|}
+|
+{
+%26}
+
+context := any global or window context 
+value := strings or numbers
+logic operators	:= AND or OR with the previous result from left to right 
+operand := eq
+{
+=}
+, gt
+{
+%26gt;
+}
+, le
+{
+%26lt;
+}
+, not
+{
+~^!}
+ 
+Examples: 
+@AD_Table_ID@=14 | @Language@!GERGER 
+@PriceLimit@&gt;
+10 | @PriceList@&gt;
+@PriceActual@
+@Name@&gt;
+J
+Strings may be in single quotes (optional)</entry> 
+</row> 
+<row> 
+ <entry>Lógica de Obrigatório</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Identificador</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This column is part of the record identifier</entry> 
+<entry>The Identifier checkbox indicates that this column is part of the identifier or key for this table.  </entry> 
+</row> 
+<row> 
+ <entry>Seqüência</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method of ordering records;
+ lowest number comes first</entry> 
+<entry>The Sequence indicates the order of records</entry> 
+</row> 
+<row> 
+ <entry>Coluna de Seleção</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Is this column used for finding rows in windows</entry> 
+<entry>If selected, the column is listed in the first find window tab and in the selection part of the window</entry> 
+</row> 
+<row> 
+ <entry>Seqüência de Seleção da Coluna</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Selection Column Sequence</entry> 
+<entry>For ordering sequence of selection column</entry> 
+</row> 
+<row> 
+ <entry>Botão da Barra de Ferramentas</entry><entry>Lista</entry> 
+<entry>Both
+Window
+Toolbar
+(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Show the button on the toolbar, the window, or both</entry> 
+<entry>The IsToolbarButton field indicates if this button is part of the toolbar's process button popup list, or render as field in window, or both.</entry> 
+</row> 
+<row> 
+ <entry>Conteúdo Seguro</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Defines whether content must be treated as secure</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Permitir Logging</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Determine if a column must be recorded into the change log</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Permitir Copia</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Determine if a column must be copied when pushing the button to copy record</entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Traduzida</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This column is translated</entry> 
+<entry>The Translated checkbox indicates if this column is translated.</entry> 
+</row> 
+<row> 
+ <entry>Callout</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Fully qualified class names and method - separated by semicolons</entry> 
+<entry>A Callout allow you to create Java extensions to perform certain tasks always after a value changed. Callouts should not be used for validation but consequences of a user selecting a certain value.
+The callout is a Java class implementing org.compiere.model.Callout and a method name to call.  Example: "org.compiere.model.CalloutRequest.copyText" instantiates the class "CalloutRequest" and calls the method "copyText". You can have multiple callouts by separating them via a semicolon</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Tradução de Coluna - AD_Column_Trl</title> 
+ 
+<ulink url="data/AD_Column_Trl_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Tradução de Coluna</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Não Traduzir - sobrescrita / traduzida automaticamente</para> 
+<para><emphasis>Claúsula Where:</emphasis> AD_Language NOT IN (SELECT AD_Language FROM AD_Client WHERE AD_Client_ID=@#AD_Client_ID@)</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>Column Translation Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>AD_Column_Trl_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Coluna</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adcolumn_adcolumntrl</entry> 
+<entry> </entry> 
+<entry valign="middle">Column in the table</entry> 
+<entry>Link to the database column of the table</entry> 
+</row> 
+<row> 
+ <entry>Idioma</entry><entry>Tabela</entry> 
+<entry>AD_Language</entry> 
+<entry valign="middle">adlanguage_adcolumntrl</entry> 
+<entry> </entry> 
+<entry valign="middle">Language for this entity</entry> 
+<entry>The Language identifies the language to use for display and formatting</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Placeholder</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Traduzida</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This column is translated</entry> 
+<entry>The Translated checkbox indicates if this column is translated.</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Used in Field - AD_Field</title> 
+ 
+<ulink url="data/AD_Field_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Coluna linkada: </emphasis> Column</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>Used in Field Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Aba</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">ad_tab_field</entry> 
+<entry> </entry> 
+<entry valign="middle">Tab within a Window</entry> 
+<entry>The Tab indicates a tab that displays within a window.</entry> 
+</row> 
+<row> 
+ <entry>Campo</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Field on a database table</entry> 
+<entry>The Field identifies a field on a database table.</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>AD_Field_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Condição de Zoom - AD_ZoomCondition</title> 
+ 
+<ulink url="data/AD_ZoomCondition_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Zoom Condition Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Condição do Zoom</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0
+ <emphasis>ReadOnly Logic</emphasis>: 1=1 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtable_adzoomcondition</entry> 
+<entry> </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>Seqüência</entry><entry>Inteiro</entry> 
+<entry>(@SQL=SELECT COALESCE(MAX(SeqNo),0)+10 AS DefaultValue FROM AD_ZoomCondition WHERE AD_Table_ID=@AD_Table_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method of ordering records;
+ lowest number comes first</entry> 
+<entry>The Sequence indicates the order of records</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Lógica de Zoom</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">the result determines if the zoom condition is applied</entry> 
+<entry>format := 
+{
+expression}
+ [
+{
+logic}
+ 
+{
+expression}
+] 
+expression := @
+{
+context}
+@
+{
+operand}
+
+{
+value}
+ or @
+{
+context}
+@
+{
+operand}
+
+{
+value}
+ 
+logic := 
+{
+|}
+|
+{
+%26}
+
+context := any global or window context 
+value := strings or numbers
+logic operators	:= AND or OR with the previous result from left to right 
+operand := eq
+{
+=}
+, gt
+{
+%26gt;
+}
+, le
+{
+%26lt;
+}
+, not
+{
+~^!}
+ 
+Examples: 
+@AD_Table_ID@=14 | @Language@!GERGER 
+@PriceLimit@&gt;
+10 | @PriceList@&gt;
+@PriceActual@
+@Name@&gt;
+J
+Strings may be in single quotes (optional)</entry> 
+</row> 
+<row> 
+ <entry>Sql WHERE</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Fully qualified SQL WHERE clause</entry> 
+<entry>The Where Clause indicates the SQL WHERE clause to use for record selection. The WHERE clause is added to the query. Fully qualified means "tablename.columnname".</entry> 
+</row> 
+<row> 
+ <entry>Janela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adwindow_adzoomcondition</entry> 
+<entry> </entry> 
+<entry valign="middle">Data entry or display window</entry> 
+<entry>The Window field identifies a unique Window in the system.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Script Validador de Tabela - AD_Table_ScriptValidator</title> 
+ <para><emphasis>Coluna linkada: </emphasis> Table</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Table Script Validator Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Tabela Script Validador</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtable_adtablescriptvalidator</entry> 
+<entry> </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>Evento do Modelo Validador</entry><entry>Lista</entry> 
+<entry>Document After Reactivate
+Document After Close
+Document After Complete
+Document After Post
+Document After Prepare
+Document After Reverse Accrual
+Document After Reverse Correct
+Document After Void
+Document Before Reactivate
+Document Before Close
+Document Before Complete
+Document Before Post
+Document Before Prepare
+Document Before Reverse Accrual
+Document Before Reverse Correct
+Document Before Void
+Table After Change
+Table After Change Replication
+Table After Delete
+Table After New
+Table After New Replication
+Table Before Change
+Table Before Delete
+Table Before Delete Replication
+Table Before New</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Regra</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adrule_adtablescriptvalidator</entry> 
+<entry>EventType IN ('D', 'T') </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Seqüência</entry><entry>Inteiro</entry> 
+<entry>(0)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method of ordering records;
+ lowest number comes first</entry> 
+<entry>The Sequence indicates the order of records</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>AD_Table_ScriptValidator_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Tradução de Tabelas - AD_Table_Trl</title> 
+ 
+<ulink url="data/AD_Table_Trl_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Descrição:</emphasis> Tradução de Tabelas</para> 
+<para><emphasis>Comentário/Ajuda: </emphasis> Note que muitos nomes de Tabelas serão sobrescritos / traduzidos automaticamente</para> 
+<para><emphasis>Claúsula Where:</emphasis> AD_Language NOT IN (SELECT AD_Language FROM AD_Client WHERE AD_Client_ID=@#AD_Client_ID@)</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Table Translation Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Client_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry>(@#AD_Org_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry>(AD_Org.IsSummary='N' OR AD_Org.AD_Org_ID=0) </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtable_adtabletrl</entry> 
+<entry> </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>Idioma</entry><entry>Tabela</entry> 
+<entry>AD_Language</entry> 
+<entry valign="middle">adlanguage_adtabletrl</entry> 
+<entry> </entry> 
+<entry valign="middle">Language for this entity</entry> 
+<entry>The Language identifies the language to use for display and formatting</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry>(Y)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Traduzida</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This column is translated</entry> 
+<entry>The Translated checkbox indicates if this column is translated.</entry> 
+</row> 
+<row> 
+ <entry>AD_Table_Trl_UU</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Índice de Tabela - AD_TableIndex</title> 
+ 
+<ulink url="data/AD_TableIndex_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Coluna linkada: </emphasis> Table</para> 
+<para><emphasis>Lógica de visualização:</emphasis> @IsView@!'Y'</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>Table Index Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Índice da Tabela</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtable_adtableindex</entry> 
+<entry> </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Criar Restrição</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Único</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Coluna Chave</entry><entry>Sim-Não</entry> 
+<entry>(N)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">This column is the key in this table</entry> 
+<entry>The key column must also be display sequence 0 in the field definition and may be hidden.</entry> 
+</row> 
+<row> 
+ <entry>Mensagem</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">admessage_adtableindex</entry> 
+<entry> </entry> 
+<entry valign="middle">System Message</entry> 
+<entry>Information and Error messages</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Entidade</entry><entry>Tabela</entry> 
+<entry>_EntityTypeNew(@SQL=select get_sysconfig('DEFAULT_ENTITYTYPE','U',0,0) from dual)</entry> 
+<entry valign="middle">entityt_adtableindex</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @EntityType@=D </entry> 
+<entry valign="middle">Dictionary Entity Type;
+ Determines ownership and synchronization</entry> 
+<entry>The Entity Types "Dictionary", "iDempiere" and "Application" might be automatically synchronized and customizations deleted or overwritten.  
+
+For customizations, copy the entity and select "User"!</entry> 
+</row> 
+<row> 
+ <entry>Validar Índice</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Excluir Índice de Tabela</entry><entry>Botão</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Índice de Coluna - AD_IndexColumn</title> 
+ 
+<ulink url="data/AD_IndexColumn_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Coluna linkada: </emphasis> Table Index</para> 
+<para><emphasis>Lógica de visualização:</emphasis> @IsView@!'Y'</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>Index Column Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Índice da Coluna da Tabel</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Índice da Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtableindex_adindexcolumn</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Coluna</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adcolumn_adindexcolumn</entry> 
+<entry>AD_Column.AD_Table_ID=@AD_Table_ID@ </entry> 
+<entry valign="middle">Column in the table</entry> 
+<entry>Link to the database column of the table</entry> 
+</row> 
+<row> 
+ <entry>Coluna SQL</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Virtual Column (r/o)</entry> 
+<entry>You can define virtual columns (not stored in the database). If defined, the Column name is the synonym of the SQL expression defined here. The SQL expression must be valid.
+Example: "Updated-Created" would list the age of the entry in days</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Seqüência</entry><entry>Inteiro</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method of ordering records;
+ lowest number comes first</entry> 
+<entry>The Sequence indicates the order of records</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Entidade</entry><entry>Tabela</entry> 
+<entry>_EntityTypeNew(@SQL=select get_sysconfig('DEFAULT_ENTITYTYPE','U',0,0) from dual)</entry> 
+<entry valign="middle">entityt_adindexcolumn</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @EntityType@=D </entry> 
+<entry valign="middle">Dictionary Entity Type;
+ Determines ownership and synchronization</entry> 
+<entry>The Entity Types "Dictionary", "iDempiere" and "Application" might be automatically synchronized and customizations deleted or overwritten.  
+
+For customizations, copy the entity and select "User"!</entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Visualizar Componente - AD_ViewComponent</title> 
+ 
+<ulink url="data/AD_ViewComponent_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Coluna linkada: </emphasis> Table</para> 
+<para><emphasis>Lógica de visualização:</emphasis> @IsView@='Y'</para> 
+<para><emphasis>Nível da tabela: </emphasis>1</para> 
+ </section> 
+ <table> 
+ <title>View Component Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Componente da View no Banco de Dados</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Tabela</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adtable_adviewcomponent</entry> 
+<entry> </entry> 
+<entry valign="middle">Database Table information</entry> 
+<entry>The Database Table provides the information of the table definition</entry> 
+</row> 
+<row> 
+ <entry>Nome</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Alphanumeric identifier of the entity</entry> 
+<entry>The name of an entity (record) is used as an default search option in addition to the search key. The name is up to 60 characters in length.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Seqüência</entry><entry>Inteiro</entry> 
+<entry>(@SQL=SELECT COALESCE(MAX(SeqNo),0)+10 AS DefaultValue FROM AD_ViewComponent WHERE AD_Table_ID=@AD_Table_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method of ordering records;
+ lowest number comes first</entry> 
+<entry>The Sequence indicates the order of records</entry> 
+</row> 
+<row> 
+ <entry>Sql FROM</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">SQL FROM clause</entry> 
+<entry>The Select Clause indicates the SQL FROM clause to use for selecting the record for a measure calculation. It can have JOIN clauses. Do not include the FROM itself.</entry> 
+</row> 
+<row> 
+ <entry>Sql WHERE</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Fully qualified SQL WHERE clause</entry> 
+<entry>The Where Clause indicates the SQL WHERE clause to use for record selection. The WHERE clause is added to the query. Fully qualified means "tablename.columnname".</entry> 
+</row> 
+<row> 
+ <entry>Outra Cláusula SQL</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Other SQL Clause</entry> 
+<entry>Any other complete clause like GROUP BY, HAVING, ORDER BY, etc. after WHERE clause.</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Entidade</entry><entry>Tabela</entry> 
+<entry>_EntityTypeNew(@SQL=select get_sysconfig('DEFAULT_ENTITYTYPE','U',0,0) from dual)</entry> 
+<entry valign="middle">entityt_adviewcomponent</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @EntityType@=D </entry> 
+<entry valign="middle">Dictionary Entity Type;
+ Determines ownership and synchronization</entry> 
+<entry>The Entity Types "Dictionary", "iDempiere" and "Application" might be automatically synchronized and customizations deleted or overwritten.  
+
+For customizations, copy the entity and select "User"!</entry> 
+</row> 
+<row> 
+ <entry>Tabela Referenciada</entry><entry>Tabela</entry> 
+<entry>AD_Table TableName</entry> 
+<entry valign="middle">referencedtable_adviewcomponen</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+<section> 
+ <title>Tabela: Visualizar Coluna - AD_ViewColumn</title> 
+ 
+<ulink url="data/AD_ViewColumn_data">[DADOS DE EXEMPLO]</ulink> 
+<para><emphasis>Coluna linkada: </emphasis> Database View Component</para> 
+<para><emphasis>Lógica de visualização:</emphasis> @IsView@='Y'</para> 
+<para><emphasis>Nível da tabela: </emphasis>2</para> 
+ </section> 
+ <table> 
+ <title>View Column Fields</title> 
+ <tgroup cols='7' align='center' colsep='1' rowsep='1'><colspec colname='c1'  colwidth="1*"/><colspec colname='c2'  colwidth="1*"/><colspec colname='c3'  colwidth="2*"/><colspec colname='c4'  colwidth="2*"/><colspec colname='c5'  colwidth="2*"/><colspec colname='c6'  colwidth="2*"/><colspec colname='c7'  colwidth="3*"/><thead> 
+<row> 
+<entry>Nome do campo</entry><entry>Referência</entry><entry>Valores (Padrão)</entry><entry>Chave restritiva</entry><entry>Regra de validação</entry><entry>Descrição</entry><entry>Comentário/Ajuda</entry></row></thead><tbody><row> 
+ <entry>Database View Column</entry><entry>ID</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Empresa</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry>AD_Client.AD_Client_ID &lt;
+&gt;
+ 0 </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Organização</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Componente da View no Banco de Dados</entry><entry>Tabela Direta</entry> 
+<entry></entry> 
+<entry valign="middle">adviewcomponent_adviewcolumn</entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+<row> 
+ <entry>Coluna SQL</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Virtual Column (r/o)</entry> 
+<entry>You can define virtual columns (not stored in the database). If defined, the Column name is the synonym of the SQL expression defined here. The SQL expression must be valid.
+Example: "Updated-Created" would list the age of the entry in days</entry> 
+</row> 
+<row> 
+ <entry>Nome da Coluna BD</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Name of the column in the database</entry> 
+<entry>The Column Name indicates the name of a column on a table as defined in the database.</entry> 
+</row> 
+<row> 
+ <entry>Descrição</entry><entry>Texto Curto (String)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Optional short description of the record</entry> 
+<entry>A description is limited to 255 characters.</entry> 
+</row> 
+<row> 
+ <entry>Comentário/Ajuda</entry><entry>Texto Médio (até 2000 caracteres)</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Comment or Hint</entry> 
+<entry>The Help field contains a hint, comment or help about the use of this item.</entry> 
+</row> 
+<row> 
+ <entry>Ativo</entry><entry>Sim-Não</entry> 
+<entry></entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">(semelhante ao primeiro relatório)</entry> 
+<entry>(ver o mesmo acima)</entry> 
+</row> 
+<row> 
+ <entry>Seqüência</entry><entry>Inteiro</entry> 
+<entry>(@SQL=SELECT COALESCE(MAX(SeqNo),0)+10 AS DefaultValue FROM AD_ViewColumn WHERE AD_ViewComponent_ID=@AD_ViewComponent_ID@)</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry valign="middle">Method of ordering records;
+ lowest number comes first</entry> 
+<entry>The Sequence indicates the order of records</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Entidade</entry><entry>Tabela</entry> 
+<entry>_EntityTypeNew(@SQL=select get_sysconfig('DEFAULT_ENTITYTYPE','U',0,0) from dual)</entry> 
+<entry valign="middle">entityt_adviewcolumn</entry> 
+<entry>
+ <emphasis>ReadOnly Logic</emphasis>: @EntityType@=D </entry> 
+<entry valign="middle">Dictionary Entity Type;
+ Determines ownership and synchronization</entry> 
+<entry>The Entity Types "Dictionary", "iDempiere" and "Application" might be automatically synchronized and customizations deleted or overwritten.  
+
+For customizations, copy the entity and select "User"!</entry> 
+</row> 
+<row> 
+ <entry>Tipo de Dado no BD</entry><entry>Lista</entry> 
+<entry>Binary LOB
+Character Fixed
+Decimal
+Integer
+Character LOB
+Number
+Timestamp
+Character Variable</entry> 
+<entry valign="middle"> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+<entry> </entry> 
+</row> 
+</tbody> 
+ </tgroup> 
+</table> 
+ </chapter>
