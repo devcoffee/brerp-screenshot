@@ -64,3 +64,9 @@ for file in ./ExampleData/*.html; do
 	./pandoc/pandoc --from html --to gfm $file -o ./Docusaurus/docs/manual/data/$FILENAME.md;
 	echo "Tabela $FILENAME";
 done
+
+if [ -e ./Docusaurus.tar.gz ]; then
+	rm ./Docusaurus.tar.gz
+fi
+
+tar -zcf Docusaurus.tar.gz Docusaurus/
