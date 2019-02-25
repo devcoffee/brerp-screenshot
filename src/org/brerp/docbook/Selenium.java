@@ -5,6 +5,7 @@ import static org.junit.Assert.fail;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+import org.compiere.db.CConnection;
 import org.idempiere.ui.zk.selenium.Widget;
 import org.idempiere.ui.zk.selenium.Zk;
 import org.junit.After;
@@ -27,6 +28,7 @@ public class Selenium {
 	protected StringBuffer verificationErrors = new StringBuffer();
 	private String baseUrl;
 	protected Actions actions;
+	private CConnection info = CConnection.get();
 	//private final String URL =
 
 	@Before
@@ -38,7 +40,8 @@ public class Selenium {
 		driver = new FirefoxDriver(options);
 		actions = new Actions(driver);
 //		driver = new ChromeDriver();
-		baseUrl = "http://localhost:6014/erp/";
+		String port = Integer.toString(info.getWebPort());
+		baseUrl = "http://localhost:" + port +"/erp/";
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
@@ -203,7 +206,8 @@ public class Selenium {
 		type("$loginPanel $txtUserId", "superuser @ brerp.com.br", false);
 
 		// enter password
-		type("$loginPanel $txtPassword", "js_brerp-5.1R1_031218", false);
+		String bdname = info.getDbName();
+		type("$loginPanel $txtPassword", bdname, false);
 
 		//type("$loginPanel $lstLanguage", "English");
 
