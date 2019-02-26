@@ -28,7 +28,6 @@ public class Selenium {
 	protected StringBuffer verificationErrors = new StringBuffer();
 	private String baseUrl;
 	protected Actions actions;
-	private CConnection info = CConnection.get();
 	//private final String URL =
 
 	@Before
@@ -36,12 +35,13 @@ public class Selenium {
 		String path = new File(".").getAbsolutePath();
 		System.setProperty("webdriver.gecko.driver", path + "/brerp-saas.docbook/selenium/geckodriver");
 		var options = new FirefoxOptions();
-		options.setCapability("marionette", false);
+		//options.setHeadless(true);
+		options.setCapability("marionette", true);
+		//options.setBinary("/home/jonatas/Downloads/firefox/firefox");
 		driver = new FirefoxDriver(options);
 		actions = new Actions(driver);
 //		driver = new ChromeDriver();
-		String port = Integer.toString(info.getWebPort());
-		baseUrl = "http://localhost:" + port +"/erp/";
+		baseUrl = "http://localhost:" + CConnection.get().getWebPort() +"/erp/";
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
@@ -108,7 +108,7 @@ public class Selenium {
 	}
 
 	protected void selectCheckbox(String locator, boolean select) {
-		var selector = new StringBuilder();
+		StringBuilder selector = new StringBuilder();
 		selector.append(locator.startsWith("$")? "" : "$").append(locator).append("~ input");
 		final WebElement element = driver.findElement(Zk.jq(selector.toString()));
 		if (element.isSelected()) {
@@ -206,8 +206,7 @@ public class Selenium {
 		type("$loginPanel $txtUserId", "superuser @ brerp.com.br", false);
 
 		// enter password
-		String bdname = info.getDbName();
-		type("$loginPanel $txtPassword", bdname, false);
+		type("$loginPanel $txtPassword", CConnection.get().getDbName(), false);
 
 		//type("$loginPanel $lstLanguage", "English");
 

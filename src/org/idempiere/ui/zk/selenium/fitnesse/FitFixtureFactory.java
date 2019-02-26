@@ -27,9 +27,9 @@ import fit.FixtureName;
 public class FitFixtureFactory implements IFitFixtureFactory {
 
 	private final static String DEFAULT_PACKAGE = "org.idempiere.fitnesse.fixture";
-	
+
 	/**
-	 * default constructor 
+	 * default constructor
 	 */
 	public FitFixtureFactory() {
 	}
@@ -49,7 +49,7 @@ public class FitFixtureFactory implements IFitFixtureFactory {
 		} catch (InstantiationException e) {
 		} catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
 		}
-		
+
 		if (!fixtureName.isFullyQualified()) {
 			className = DEFAULT_PACKAGE + "." + fixtureName.toString();
 			try {
