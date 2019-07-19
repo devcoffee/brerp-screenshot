@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
-<chapter><para><emphasis> Criado:</emphasis>2005-03-10 21:58:50.0</para><para> <emphasis>Atualizado:</emphasis>2013-03-27 22:15:13.0</para>
- 
- <title>Processo:  Sincronizar Tradução de Documento</title> 
- <para><emphasis> Descrição: </emphasis>Sincronizar a tradução de documentos</para><para><emphasis> Comentário/Ajuda: </emphasis>Se a empresa atual não tiver documentos multi-idiomas habilitados, as traduções de documentos serão sincronizadas com o registro principal (i.e. ele copia o conteúdo do registro principal nos registros de tradução).  Este processo é necessário ao se passar a um ambiente mono-idioma já que a terminologia não é gerenciada nos registros de tradução. Isto se aplica às traduções de documentos definidas pela empresa, por ex. para UDM, Termos de Pagamento, Informações de Produto, etc.</para>
-<imagedata fileref="/img/manual/SincronizarTraducaodeDocumento.png" format="PNG" /><para> SEM PARÂMETROS </para>
- </chapter>

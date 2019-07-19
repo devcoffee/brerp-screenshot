@@ -1,0 +1,8 @@
+syntax: glob
+
+*.class
+docbook/Docusaurus/website/static/img/manual/*.png
+docbook/input/*.xml
+docbook/HTML/*.html
+docbook/simpleXML/*.xml
+docbook/ExampleData/*.html

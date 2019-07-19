@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
-<chapter><para><emphasis> Criado:</emphasis>2004-03-05 23:40:48.0</para><para> <emphasis>Atualizado:</emphasis>2008-03-26 13:36:27.0</para>
- 
- <title>Processo:  Verificação Seqüencial</title> 
- <para><emphasis> Descrição: </emphasis>Verificar Seqüências de Documento e Sistema</para><para><emphasis> Comentário/Ajuda: </emphasis>Confira se as seqüências de Sistema e Documentos estão corretas.  Rode este processo se você receber mensagens de erro de Chave Duplicada.</para>
-<para> SEM PARÂMETROS </para>
- </chapter>

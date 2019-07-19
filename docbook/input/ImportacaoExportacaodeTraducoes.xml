@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
-<chapter><para><emphasis> Criado:</emphasis>2003-01-04 15:19:26.0</para><para> <emphasis>Atualizado:</emphasis>2000-01-02 00:00:00.0</para>
-<title>Formulário: Importação/Exportação de Traduções</title> 
- <para><emphasis> Descrição: </emphasis>Importar ou Exportar Traduções de Idiomas</para><para><emphasis>Comentário/Ajuda:</emphasis>Exportar/Importar Informações de Tradução de/para arquivos xml para tradução em uma ferramenta externa. Note que o Idioma TEM que ser um Idioma de Sistema liberado e verificado.</para>
- </chapter>

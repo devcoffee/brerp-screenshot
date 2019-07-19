@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
-<chapter><para><emphasis> Criado:</emphasis>2018-10-06 23:05:15.0</para><para> <emphasis>Atualizado:</emphasis>2018-10-06 23:05:15.0</para>
- 
- <title>Processo:  Clean Orphan Cascade Records</title> 
- <para><emphasis> Comentário/Ajuda: </emphasis>Some processes accessing directly the database can leave orphan records, this process clean those orphan records deleting them</para>
-<para> SEM PARÂMETROS </para>
- </chapter>
