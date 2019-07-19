@@ -32,10 +32,10 @@ public class Selenium {
 
 	@Before
 	public void setUp() throws Exception {
-		String path = new File(".").getAbsolutePath();
-		System.setProperty("webdriver.gecko.driver", path + "/brerp-saas.docbook/selenium/geckodriver");
+		String path = new File("").getAbsolutePath();
+		System.setProperty("webdriver.gecko.driver", path + "/docbook/selenium/geckodriver");
 		var options = new FirefoxOptions();
-		//options.setHeadless(true);
+//		options.setHeadless(true);
 		options.setCapability("marionette", true);
 		//options.setBinary("/home/jonatas/Downloads/firefox/firefox");
 		driver = new FirefoxDriver(options);
@@ -124,6 +124,10 @@ public class Selenium {
 
 	protected void clickButton(String locator) {
 		driver.findElement(Zk.jq(locator)).click();
+	}
+
+	protected void clearElement(String locator) {
+		driver.findElement(Zk.jq(locator)).clear();
 	}
 
 	public void closeWindow(String $label) {
@@ -224,13 +228,17 @@ public class Selenium {
 
 		}
 
-		comboboxSelectItem("$rolePanel $lstClient", "Mundo do Café S/A");
+//		clearElement("$rolePanel $lstClient");
 
-		comboboxSelectItem("$rolePanel $lstRole", "Mundo do Café S/A Admin");
+//		comboboxSelectItem("$rolePanel $lstClient", "Mundo do Café S/A");
+
+//		clearElement("$rolePanel $lstRole");
+
+//		comboboxSelectItem("$rolePanel $lstRole", "Administrador do Sistema");
 
 		clickButton("$rolePanel $Ok");
 
-		//selectRole("Mundo do Café S/A", "Mundo do Café S/A Admin", "Filial PR", "Armazem PR");
+//		selectRole("Mundo do Café S/A", "Administrador do Sistema", "Matriz Torrefação (SP)", "MT-MSP-Revenda");
 
 
 		// wait for home page
