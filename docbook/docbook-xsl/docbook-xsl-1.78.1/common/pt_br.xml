@@ -270,7 +270,7 @@
 <l:template name="book" text="%t"/>
 <l:template name="calloutlist" text="%t"/>
 <l:template name="caution" text="%t"/>
-<l:template name="chapter" text="Capítulo %n. %t"/>
+<l:template name="chapter" text="%t"/>
 <l:template name="colophon" text="%t"/>
 <l:template name="dedication" text="%t"/>
 <l:template name="equation" text="Equação %n. %t"/>
@@ -351,7 +351,7 @@
 <l:context name="title-numbered"><l:template name="appendix" text="Apêndice %n. %t"/>
 <l:template name="article/appendix" text="%n. %t" lang="en"/>
 <l:template name="bridgehead" text="%t"/>
-<l:template name="chapter" text="Capítulo %n. %t"/>
+<l:template name="chapter" text="%t"/>
 <l:template name="part" text="Parte %n. %t"/>
 <l:template name="sect1" text="%n. %t"/>
 <l:template name="sect2" text="%n. %t"/>
@@ -512,7 +512,7 @@
 </l:context>
 <l:context name="xref-number-and-title"><l:template name="appendix" text="Apêndice %n, %t"/>
 <l:template name="bridgehead" text="Seção %n, “%t”"/>
-<l:template name="chapter" text="Capítulo %n, %t"/>
+<l:template name="chapter" text="%t"/>
 <l:template name="equation" text="Equação %n, “%t”"/>
 <l:template name="example" text="Exemplo %n, “%t”"/>
 <l:template name="figure" text="Figura %n, “%t”"/>

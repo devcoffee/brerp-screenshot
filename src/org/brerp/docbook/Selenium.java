@@ -11,6 +11,7 @@ import org.idempiere.ui.zk.selenium.Zk;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -35,7 +36,7 @@ public class Selenium {
 		String path = new File("").getAbsolutePath();
 		System.setProperty("webdriver.gecko.driver", path + "/docbook/selenium/geckodriver");
 		var options = new FirefoxOptions();
-//		options.setHeadless(true);
+		options.setHeadless(true);
 		options.setCapability("marionette", true);
 		//options.setBinary("/home/jonatas/Downloads/firefox/firefox");
 		driver = new FirefoxDriver(options);
@@ -44,6 +45,7 @@ public class Selenium {
 		baseUrl = "http://localhost:" + CConnection.get().getWebPort() +"/erp/";
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		driver.manage().window().setSize(new Dimension(1920, 1080));
 	}
 
 	protected void type(WebElement element, String value, Boolean sendEnter) {
@@ -78,6 +80,7 @@ public class Selenium {
 
 		do {
 			actions.sendKeys(Keys.BACK_SPACE).perform();
+			actions.sendKeys(Keys.DELETE).perform();
 		}while(element.getAttribute("value").length() >0 );
 
 		waitResponse();
@@ -201,7 +204,7 @@ public class Selenium {
 		}
 	}
 
-	public void login() throws Exception {
+	public void login(boolean system) throws Exception {
 		driver.get(baseUrl);
 
 		waitResponse();
@@ -218,7 +221,7 @@ public class Selenium {
 		comboboxSelectItem("$loginPanel $lstLanguage", "Portuguese (BR)");
 
 		// check select role
-		//selectCheckbox("$loginPanel $chkSelectRole", true);
+		selectCheckbox("$loginPanel $chkSelectRole", true);
 		// click ok button
 		clickButton("$loginPanel $Ok");
 
@@ -228,13 +231,13 @@ public class Selenium {
 
 		}
 
-//		clearElement("$rolePanel $lstClient");
-
-//		comboboxSelectItem("$rolePanel $lstClient", "Mundo do Café S/A");
-
-//		clearElement("$rolePanel $lstRole");
-
-//		comboboxSelectItem("$rolePanel $lstRole", "Administrador do Sistema");
+		if (system) {
+			comboboxSelectItem("$rolePanel $lstClient", "System");
+			comboboxSelectItem("$rolePanel $lstRole", "System Administrator");
+		} else {
+			comboboxSelectItem("$rolePanel $lstClient", "Mundo do Café S/A");
+			comboboxSelectItem("$rolePanel $lstRole", "Administrador do Sistema");
+		}
 
 		clickButton("$rolePanel $Ok");
 
@@ -295,7 +298,6 @@ public class Selenium {
 
 
 	protected void openWindow(String label) {
-		label = label.substring(0, label.length() - 1);
 		comboboxSelectItem("$treeSearchCombo", label);
 		actions.sendKeys(Keys.ENTER).perform();
 		waitResponse(1000);
