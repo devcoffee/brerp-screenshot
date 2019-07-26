@@ -36,7 +36,7 @@ public class Selenium {
 		String path = new File("").getAbsolutePath();
 		System.setProperty("webdriver.gecko.driver", path + "/docbook/selenium/geckodriver");
 		var options = new FirefoxOptions();
-		options.setHeadless(true);
+//		options.setHeadless(true);
 		options.setCapability("marionette", true);
 		//options.setBinary("/home/jonatas/Downloads/firefox/firefox");
 		driver = new FirefoxDriver(options);

@@ -289,7 +289,7 @@ public class DocBookGenerator {
 			try {
 				prtScr.setUp();
 				prtScr.login(false);
-//				Thread.sleep(13000);
+				Thread.sleep(13000);
 			} catch (Exception e1) {
 				e1.printStackTrace();
 			}
@@ -482,6 +482,13 @@ public class DocBookGenerator {
 
 		prtScr.closeHellButton();
 
+		if (form.getClassname() != null) {
+
+			String classname = form.getClassname().replace(".", "/");
+			sb.append("<para><emphasis role=\"strong\"> Classe: </emphasis><ulink url=\"https://javadoc.brerp.com.br/API/"
+					+ classname + ".html\">" + form.getClassname() + "</ulink> </para>\n");
+		}
+
 		try {
 			prtScr.openWindow(searchName);
 		} catch (Exception e) {
@@ -489,7 +496,7 @@ public class DocBookGenerator {
 			try {
 				prtScr.setUp();
 				prtScr.login(false);
-//				Thread.sleep(13000);
+				Thread.sleep(13000);
 			} catch (Exception e1) {
 				e1.printStackTrace();
 			}
@@ -533,9 +540,7 @@ public class DocBookGenerator {
 			sysPrtScr.quit();
 
 		}
-		String classname = form.getClassname().replace(".", "/");
-		sb.append("<para><emphasis> Classe: </emphasis><ulink url=\"http://javadoc.brerp.com.br/API/" + classname
-				+ ".html\">" + form.getClassname() + "</ulink></para> \n");
+
 		return sb;
 	}
 
@@ -577,7 +582,7 @@ public class DocBookGenerator {
 			try {
 				prtScr.setUp();
 				prtScr.login(false);
-//				Thread.sleep(13000);
+				Thread.sleep(13000);
 			} catch (Exception e1) {
 				e1.printStackTrace();
 			}
@@ -726,6 +731,14 @@ public class DocBookGenerator {
 
 		prtScr.closeHellButton();
 
+		if (process.getClassname() != null) {
+
+			String classname = process.getClassname().replace(".", "/");
+			sb.append("<para><emphasis role=\"strong\"> Classe: </emphasis> <ulink url=\"https://javadoc.brerp.com.br/API/"
+					+ classname + ".html\">" + process.getClassname() + "</ulink></para>\n");
+
+		}
+
 		try {
 			prtScr.openWindow(searchName);
 		} catch (Exception e) {
@@ -733,7 +746,7 @@ public class DocBookGenerator {
 			try {
 				prtScr.setUp();
 				prtScr.login(false);
-//				Thread.sleep(13000);
+				Thread.sleep(13000);
 			} catch (Exception e1) {
 				e1.printStackTrace();
 			}
@@ -1045,7 +1058,7 @@ public class DocBookGenerator {
 			try {
 				prtScr.setUp();
 				prtScr.login(false);
-//				Thread.sleep(13000);
+				Thread.sleep(13000);
 			} catch (Exception e1) {
 				e1.printStackTrace();
 			}
@@ -1075,14 +1088,16 @@ public class DocBookGenerator {
 			sysPrtScr.waitResponse();
 			sysPrtScr.openWindow(searchName);
 			imagem = sysPrtScr.printarTela();
-			try {
-				FileHandler.copy(imagem,
-						new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
+			if (imagem != null) {
+				try {
+					FileHandler.copy(imagem,
+							new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
 
-			sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
+				sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
+			}
 
 			sysPrtScr.quit();
 
@@ -1160,16 +1175,9 @@ public class DocBookGenerator {
 			sb.append("<para><emphasis> Relatório: </emphasis>" + tab.getAD_Process().getName() + " - "
 					+ tab.getAD_Process().getValue() + " </para> \n");
 
-			MProcess process = new Query(Env.getCtx(), MProcess.Table_Name, MProcess.COLUMNNAME_AD_Process_ID + "=?",
-					null).setParameters(tab.getAD_Process_ID()).first();
 
-			if (process.getClassname() != null) {
-				String classname = process.getClassname().replace(".", "/");
-				sb.append("<emphasis> - Classe: </emphasis> <ulink url=\"http://javadoc.brerp.com.br/API/" + classname
-						+ ".html\">" + process.getClassname() + "</ulink></para> \n");
-			} else {
-				sb.append("</para> \n");
-			}
+
+
 		}
 
 		if (tab.getReadOnlyLogic() != null) {
@@ -1270,15 +1278,19 @@ public class DocBookGenerator {
 									.first();
 					buffer = stripBadChars(rule.getCode());
 				}
-				/*
-				 * if (column.getCallout()!=null) { String classname =
-				 * column.getCallout().replace(".", "/"); int last = classname.lastIndexOf("/");
-				 *
-				 * if (last > 0) { String calloutname = stripBadChars(classname.substring(0,
-				 * last)); buffer = buffer +
-				 * "<emphasis>Callout: </emphasis><ulink url=\"../javadoc/" + calloutname +
-				 * ".html\">" + column.getCallout() + "</ulink> \n"; } }
-				 */
+
+				if (column.getCallout() != null) {
+					String classname = column.getCallout().replace(".", "/");
+					int last = classname.lastIndexOf("/");
+
+					if (last > 0) {
+						String calloutname = stripBadChars(classname.substring(0, last));
+						buffer = buffer
+								+ "<para><emphasis role=\"strong\">Callout: </emphasis><ulink url=\"https://javadoc.brerp.com.br/API/"
+								+ calloutname + ".html\">" + column.getCallout() + "</ulink> </para>\n";
+					}
+				}
+
 				buffer = buffer + (column.getReadOnlyLogic() == null ? ""
 						: "\n <emphasis>ReadOnly Logic</emphasis>: " + stripBadChars(column.getReadOnlyLogic()));
 				sb.append("<entry>" + buffer + " </entry> \n");
@@ -1481,9 +1493,8 @@ public class DocBookGenerator {
 			e.printStackTrace();
 		}
 		try {
-//			Thread.sleep(13000);
-//		} catch (InterruptedException e) {
-		} catch (Exception e) {
+			Thread.sleep(13000);
+		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		MTab tab = null;
