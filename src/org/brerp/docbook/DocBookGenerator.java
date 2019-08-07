@@ -56,7 +56,6 @@ import org.compiere.model.PO;
 import org.compiere.model.Query;
 import org.compiere.util.CLogger;
 import org.compiere.util.DB;
-import org.compiere.util.DisplayType;
 import org.compiere.util.Env;
 import org.compiere.util.Language;
 import org.compiere.util.Msg;
@@ -110,8 +109,7 @@ public class DocBookGenerator {
 
 	private static Selenium prtScr = new Selenium();
 
-	private SimpleDateFormat m_dateFormat = DisplayType.getDateFormat(DisplayType.DateTime,
-			Env.getLanguage(Env.getCtx()));
+	private SimpleDateFormat m_dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 
 	private static int started = 0;
 
@@ -121,6 +119,8 @@ public class DocBookGenerator {
 	private String tabName;
 
 	private File imagem;
+
+	private static boolean isPrtScr;
 
 	public DocBookGenerator(int AD_Tab_ID, String directory, String winName) {
 
@@ -280,58 +280,64 @@ public class DocBookGenerator {
 		windowName = RemoverAcentos.remover(searchName);
 		windowName = windowName.replace(" ", "");
 
-		prtScr.closeHellButton();
+		if (isPrtScr) {
 
-		try {
-			prtScr.openWindow(searchName);
-		} catch (Exception e) {
-			prtScr.quit();
-			try {
-				prtScr.setUp();
-				prtScr.login(false);
-				Thread.sleep(13000);
-			} catch (Exception e1) {
-				e1.printStackTrace();
-			}
-			prtScr.openWindow(searchName);
-		}
-
-		imagem = prtScr.printarTela();
-
-		if (imagem != null) {
+			prtScr.closeHellButton();
 
 			try {
-				FileHandler.copy(imagem,
-						new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
-
-			sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
-		} else {
-			Selenium sysPrtScr = new Selenium();
-			try {
-				sysPrtScr.setUp();
-				sysPrtScr.login(true);
+				prtScr.openWindow(searchName);
 			} catch (Exception e) {
-				e.printStackTrace();
+				prtScr.quit();
+				try {
+					prtScr.setUp();
+					prtScr.login(false);
+					Thread.sleep(13000);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				prtScr.openWindow(searchName);
 			}
-			sysPrtScr.waitResponse();
-			sysPrtScr.openWindow(searchName);
-			imagem = sysPrtScr.printarTela();
+
+			imagem = prtScr.printarTela();
+
 			if (imagem != null) {
+
 				try {
 					FileHandler.copy(imagem,
-							new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
+							new File("./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png"));
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
 
-				sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
+				sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
+			} else {
+				Selenium sysPrtScr = new Selenium();
+				try {
+					sysPrtScr.setUp();
+					sysPrtScr.login(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				sysPrtScr.waitResponse();
+				sysPrtScr.openWindow(searchName);
+				imagem = sysPrtScr.printarTela();
+				if (imagem != null) {
+					try {
+						FileHandler.copy(imagem, new File(
+								"./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png"));
+					} catch (IOException e1) {
+						e1.printStackTrace();
+					}
+
+					sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
+				}
+
+				sysPrtScr.quit();
+
 			}
-
-			sysPrtScr.quit();
-
+		} else {
+			if (new File("./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png").exists())
+				sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
 		}
 
 		sb.append(
@@ -480,67 +486,72 @@ public class DocBookGenerator {
 		windowName = RemoverAcentos.remover(searchName);
 		windowName = windowName.replace(" ", "");
 
-		prtScr.closeHellButton();
-
 		if (form.getClassname() != null) {
 
 			String classname = form.getClassname().replace(".", "/");
-			sb.append("<para><emphasis role=\"strong\"> Classe: </emphasis><ulink url=\"https://javadoc.brerp.com.br/API/"
-					+ classname + ".html\">" + form.getClassname() + "</ulink> </para>\n");
+			sb.append(
+					"<para><emphasis role=\"strong\"> Classe: </emphasis><ulink url=\"https://javadoc.brerp.com.br/API/"
+							+ classname + ".html\">" + form.getClassname() + "</ulink> </para>\n");
 		}
+		if (isPrtScr) {
 
-		try {
-			prtScr.openWindow(searchName);
-		} catch (Exception e) {
-			prtScr.quit();
-			try {
-				prtScr.setUp();
-				prtScr.login(false);
-				Thread.sleep(13000);
-			} catch (Exception e1) {
-				e1.printStackTrace();
-			}
-			prtScr.openWindow(searchName);
-		}
-
-		imagem = prtScr.printarTela();
-
-		if (imagem != null) {
+			prtScr.closeHellButton();
 
 			try {
-				FileHandler.copy(imagem,
-						new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
-
-			sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
-		} else {
-			Selenium sysPrtScr = new Selenium();
-			try {
-				sysPrtScr.setUp();
-				sysPrtScr.login(true);
+				prtScr.openWindow(searchName);
 			} catch (Exception e) {
-				e.printStackTrace();
+				prtScr.quit();
+				try {
+					prtScr.setUp();
+					prtScr.login(false);
+					Thread.sleep(13000);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				prtScr.openWindow(searchName);
 			}
-			sysPrtScr.waitResponse();
-			sysPrtScr.openWindow(searchName);
-			imagem = sysPrtScr.printarTela();
+
+			imagem = prtScr.printarTela();
+
 			if (imagem != null) {
+
 				try {
 					FileHandler.copy(imagem,
-							new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
+							new File("./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png"));
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
 
-				sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
+				sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
+			} else {
+				Selenium sysPrtScr = new Selenium();
+				try {
+					sysPrtScr.setUp();
+					sysPrtScr.login(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				sysPrtScr.waitResponse();
+				sysPrtScr.openWindow(searchName);
+				imagem = sysPrtScr.printarTela();
+				if (imagem != null) {
+					try {
+						FileHandler.copy(imagem, new File(
+								"./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png"));
+					} catch (IOException e1) {
+						e1.printStackTrace();
+					}
+
+					sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
+				}
+
+				sysPrtScr.quit();
+
 			}
-
-			sysPrtScr.quit();
-
+		} else {
+			if (new File("./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png").exists())
+				sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
 		}
-
 		return sb;
 	}
 
@@ -573,57 +584,62 @@ public class DocBookGenerator {
 		windowName = RemoverAcentos.remover(searchName);
 		windowName = windowName.replace(" ", "");
 
-		prtScr.closeHellButton();
-
-		try {
-			prtScr.openWindow(searchName);
-		} catch (Exception e) {
-			prtScr.quit();
-			try {
-				prtScr.setUp();
-				prtScr.login(false);
-				Thread.sleep(13000);
-			} catch (Exception e1) {
-				e1.printStackTrace();
-			}
-			prtScr.openWindow(searchName);
-		}
-
-		imagem = prtScr.printarTela();
-
-		if (imagem != null) {
+		if (isPrtScr) {
+			prtScr.closeHellButton();
 
 			try {
-				FileHandler.copy(imagem,
-						new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
-
-			sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
-		} else {
-			Selenium sysPrtScr = new Selenium();
-			try {
-				sysPrtScr.setUp();
-				sysPrtScr.login(true);
+				prtScr.openWindow(searchName);
 			} catch (Exception e) {
-				e.printStackTrace();
+				prtScr.quit();
+				try {
+					prtScr.setUp();
+					prtScr.login(false);
+					Thread.sleep(13000);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				prtScr.openWindow(searchName);
 			}
-			sysPrtScr.waitResponse();
-			sysPrtScr.openWindow(searchName);
+
+			imagem = prtScr.printarTela();
+
 			if (imagem != null) {
+
 				try {
 					FileHandler.copy(imagem,
-							new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
+							new File("./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png"));
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
 
-				sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
+				sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
+			} else {
+				Selenium sysPrtScr = new Selenium();
+				try {
+					sysPrtScr.setUp();
+					sysPrtScr.login(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				sysPrtScr.waitResponse();
+				sysPrtScr.openWindow(searchName);
+				if (imagem != null) {
+					try {
+						FileHandler.copy(imagem, new File(
+								"./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png"));
+					} catch (IOException e1) {
+						e1.printStackTrace();
+					}
+
+					sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
+				}
+
+				sysPrtScr.quit();
+
 			}
-
-			sysPrtScr.quit();
-
+		} else {
+			if (new File("./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png").exists())
+				sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
 		}
 
 		sb.append("<table> \n <title>" + wf.get_Translation(MWorkflow.COLUMNNAME_Name)
@@ -729,68 +745,72 @@ public class DocBookGenerator {
 		windowName = RemoverAcentos.remover(searchName);
 		windowName = windowName.replace(" ", "");
 
-		prtScr.closeHellButton();
-
 		if (process.getClassname() != null) {
 
 			String classname = process.getClassname().replace(".", "/");
-			sb.append("<para><emphasis role=\"strong\"> Classe: </emphasis> <ulink url=\"https://javadoc.brerp.com.br/API/"
-					+ classname + ".html\">" + process.getClassname() + "</ulink></para>\n");
+			sb.append(
+					"<para><emphasis role=\"strong\"> Classe: </emphasis> <ulink url=\"https://javadoc.brerp.com.br/API/"
+							+ classname + ".html\">" + process.getClassname() + "</ulink></para>\n");
 
 		}
 
-		try {
-			prtScr.openWindow(searchName);
-		} catch (Exception e) {
-			prtScr.quit();
+		if (isPrtScr) {
+			prtScr.closeHellButton();
 			try {
-				prtScr.setUp();
-				prtScr.login(false);
-				Thread.sleep(13000);
-			} catch (Exception e1) {
-				e1.printStackTrace();
-			}
-			prtScr.openWindow(searchName);
-		}
-
-		imagem = prtScr.printarTela();
-
-		if (imagem != null) {
-
-			try {
-				FileHandler.copy(imagem,
-						new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
-
-			sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
-		} else {
-			Selenium sysPrtScr = new Selenium();
-			try {
-				sysPrtScr.setUp();
-				sysPrtScr.login(true);
+				prtScr.openWindow(searchName);
 			} catch (Exception e) {
-				e.printStackTrace();
+				prtScr.quit();
+				try {
+					prtScr.setUp();
+					prtScr.login(false);
+					Thread.sleep(13000);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				prtScr.openWindow(searchName);
 			}
-			sysPrtScr.waitResponse();
-			sysPrtScr.openWindow(searchName);
-			imagem = sysPrtScr.printarTela();
+
+			imagem = prtScr.printarTela();
+
 			if (imagem != null) {
+
 				try {
 					FileHandler.copy(imagem,
-							new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
+							new File("./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png"));
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
 
-				sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
+				sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
+			} else {
+				Selenium sysPrtScr = new Selenium();
+				try {
+					sysPrtScr.setUp();
+					sysPrtScr.login(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				sysPrtScr.waitResponse();
+				sysPrtScr.openWindow(searchName);
+				imagem = sysPrtScr.printarTela();
+				if (imagem != null) {
+					try {
+						FileHandler.copy(imagem, new File(
+								"./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png"));
+					} catch (IOException e1) {
+						e1.printStackTrace();
+					}
+
+					sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
+				}
+
+				sysPrtScr.quit();
+
 			}
-
-			sysPrtScr.quit();
-
+		} else {
+			if (new File("./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png").exists())
+				sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
 		}
-
 		// get Parameters
 		List<MProcessPara> paras = new Query(Env.getCtx(), MProcessPara.Table_Name,
 				MProcessPara.COLUMNNAME_AD_Process_ID + "=?", null).setParameters(process.getAD_Process_ID()).list();
@@ -1041,66 +1061,73 @@ public class DocBookGenerator {
 		sb.append("<para> <emphasis>Descrição: </emphasis>  " + buffer + "</para>");
 		buffer = stripBadChars(win.get_Translation(MWindow.COLUMNNAME_Help));
 		sb.append("<para> <emphasis>Comentário/Ajuda: </emphasis>" + buffer + "</para>");
-		sb.append("<para><emphasis> Criado em: </emphasis>" + win.getCreated() + NL
-				+ "</para><para><emphasis>Atualizado em: </emphasis>" + win.getUpdated() + "</para>" + NL);
+		sb.append("<para><emphasis> Criado em: </emphasis>" + m_dateFormat.format(win.getCreated()) + NL
+				+ "</para><para><emphasis>Atualizado em: </emphasis>" + m_dateFormat.format(win.getUpdated())
+				+ "</para>" + NL);
 
 		searchName = win.get_Translation(MInfoWindow.COLUMNNAME_Name);
 
 		windowName = RemoverAcentos.remover(searchName);
 		windowName = windowName.replace(" ", "");
 
-		prtScr.closeHellButton();
+		if (isPrtScr) {
 
-		try {
-			prtScr.openWindow(searchName);
-		} catch (Exception e) {
-			prtScr.quit();
-			try {
-				prtScr.setUp();
-				prtScr.login(false);
-				Thread.sleep(13000);
-			} catch (Exception e1) {
-				e1.printStackTrace();
-			}
-			prtScr.openWindow(searchName);
-		}
-
-		imagem = prtScr.printarTela();
-
-		if (imagem != null) {
+			prtScr.closeHellButton();
 
 			try {
-				FileHandler.copy(imagem,
-						new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
-
-			sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
-		} else {
-			Selenium sysPrtScr = new Selenium();
-			try {
-				sysPrtScr.setUp();
-				sysPrtScr.login(true);
+				prtScr.openWindow(searchName);
 			} catch (Exception e) {
-				e.printStackTrace();
+				prtScr.quit();
+				try {
+					prtScr.setUp();
+					prtScr.login(false);
+					Thread.sleep(13000);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+				prtScr.openWindow(searchName);
 			}
-			sysPrtScr.waitResponse();
-			sysPrtScr.openWindow(searchName);
-			imagem = sysPrtScr.printarTela();
+
+			imagem = prtScr.printarTela();
+
 			if (imagem != null) {
+
 				try {
 					FileHandler.copy(imagem,
-							new File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName + ".png"));
+							new File("./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png"));
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
 
-				sb.append("<imagedata fileref=\"/img/manual/" + windowName + ".png\" format=\"PNG\" />");
+				sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
+			} else {
+				Selenium sysPrtScr = new Selenium();
+				try {
+					sysPrtScr.setUp();
+					sysPrtScr.login(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				sysPrtScr.waitResponse();
+				sysPrtScr.openWindow(searchName);
+				imagem = sysPrtScr.printarTela();
+				if (imagem != null) {
+					try {
+						FileHandler.copy(imagem, new File(
+								"./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png"));
+					} catch (IOException e1) {
+						e1.printStackTrace();
+					}
+
+					sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
+				}
+
+				sysPrtScr.quit();
+
 			}
-
-			sysPrtScr.quit();
-
+		} else {
+			if (new File("./docbook/docbook/Docusaurus/website/static/img/manual/brerp6.2/" + windowName + ".png").exists())
+				sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
 		}
 
 	}
@@ -1174,9 +1201,6 @@ public class DocBookGenerator {
 		if (tab.getAD_Process().getName() != null) {
 			sb.append("<para><emphasis> Relatório: </emphasis>" + tab.getAD_Process().getName() + " - "
 					+ tab.getAD_Process().getValue() + " </para> \n");
-
-
-
 
 		}
 
@@ -1485,17 +1509,25 @@ public class DocBookGenerator {
 	 * @param tableLike
 	 * @throws JSONException
 	 */
-	public static void generateSource(String sourceFolder, String winItem, String tabItem) throws JSONException {
-		try {
-			prtScr.setUp();
-			prtScr.login(false);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		try {
-			Thread.sleep(13000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+	public static void generateSource(String sourceFolder, String winItem, String tabItem, boolean $isPrtScr)
+			throws JSONException {
+
+		isPrtScr = $isPrtScr;
+
+		if (isPrtScr) {
+
+			try {
+				prtScr.setUp();
+				prtScr.login(false);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			try {
+				Thread.sleep(13000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
 		}
 		MTab tab = null;
 		if (sourceFolder == null || sourceFolder.trim().length() == 0) {
@@ -1642,7 +1674,8 @@ public class DocBookGenerator {
 
 		writeToFile(new StringBuilder(menuManual), directory + "/docbook/docbook/Docusaurus/website/menuManual.html");
 
-		prtScr.quit();
+		if (isPrtScr)
+			prtScr.quit();
 
 	}
 

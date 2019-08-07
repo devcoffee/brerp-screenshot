@@ -47,11 +47,13 @@ public class DocBookGeneratorApplication implements IApplication {
 			System.out.print(folder);
 			System.out.print(menuItem);
 			System.out.print(tabItem);
-			DocBookGenerator.generateSource(folder, menuItem, tabItem);
-		} else if (commandlineArgs.length != 0) {
+			DocBookGenerator.generateSource(folder, menuItem, tabItem, false);
+		} else if (commandlineArgs.length == 1 && commandlineArgs[0].equals("-selenium")) {
+			DocBookGenerator.generateSource(path, "ALL", "ALL", true);
+		} else  if (commandlineArgs.length != 0) {
 			System.out.println("usage:DocGenerator folder menuItem tabItem");
 		} else {
-			DocBookGenerator.generateSource(path, "ALL", "ALL");
+			DocBookGenerator.generateSource(path, "ALL", "ALL", false);
 		}
 		return IApplication.EXIT_OK;
 	}
