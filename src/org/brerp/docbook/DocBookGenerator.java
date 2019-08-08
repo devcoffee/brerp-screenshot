@@ -109,7 +109,7 @@ public class DocBookGenerator {
 
 	private static Selenium prtScr = new Selenium();
 
-	private SimpleDateFormat m_dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+	private SimpleDateFormat m_dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
 	private static int started = 0;
 
@@ -737,7 +737,7 @@ public class DocBookGenerator {
 		}
 
 		sb.append((process.isReport()
-				? "<para><emphasis> ReportView: </emphasis>" + process.getAD_ReportView().getName() + "</para>"
+				? "<para><emphasis role=\"strong\"> ReportView: </emphasis>" + process.getAD_ReportView().getName() + "</para>"
 				: ""));
 
 		searchName = process.get_Translation(MInfoWindow.COLUMNNAME_Name);
@@ -1058,11 +1058,11 @@ public class DocBookGenerator {
 
 		sb.append("<chapter lang=\"pt_br\"> \n <title>Janela:  " + buffer + "</title> \n ");
 		buffer = stripBadChars(win.get_Translation(MWindow.COLUMNNAME_Description));
-		sb.append("<para> <emphasis>Descrição: </emphasis>  " + buffer + "</para>");
+		sb.append("<para> <emphasis role=\"strong\">Descrição: </emphasis>  " + buffer + "</para>");
 		buffer = stripBadChars(win.get_Translation(MWindow.COLUMNNAME_Help));
-		sb.append("<para> <emphasis>Comentário/Ajuda: </emphasis>" + buffer + "</para>");
-		sb.append("<para><emphasis> Criado em: </emphasis>" + m_dateFormat.format(win.getCreated()) + NL
-				+ "</para><para><emphasis>Atualizado em: </emphasis>" + m_dateFormat.format(win.getUpdated())
+		sb.append("<para> <emphasis role=\"strong\">Comentário/Ajuda: </emphasis>" + buffer + "</para>");
+		sb.append("<para><emphasis role=\"strong\"> Criado em: </emphasis>" + m_dateFormat.format(win.getCreated()) + NL
+				+ "</para><para><emphasis role=\"strong\">Atualizado em: </emphasis>" + m_dateFormat.format(win.getUpdated())
 				+ "</para>" + NL);
 
 		searchName = win.get_Translation(MInfoWindow.COLUMNNAME_Name);
