@@ -38,6 +38,7 @@ import java.text.StringCharacterIterator;
 import java.util.List;
 import java.util.logging.Level;
 
+import org.adempiere.model.MInfoProcess;
 import org.compiere.model.I_AD_ReportView;
 import org.compiere.model.MColumn;
 import org.compiere.model.MField;
@@ -50,6 +51,7 @@ import org.compiere.model.MProcessPara;
 import org.compiere.model.MRefList;
 import org.compiere.model.MTab;
 import org.compiere.model.MTable;
+import org.compiere.model.MToolBarButton;
 import org.compiere.model.MValRule;
 import org.compiere.model.MWindow;
 import org.compiere.model.PO;
@@ -122,7 +124,12 @@ public class DocBookGenerator {
 
 	private static boolean isPrtScr;
 
+	private String innerProcessName, innerProcessLink;
+
+	private static String innerProcessFolder;
+
 	public DocBookGenerator(int AD_Tab_ID, String directory, String winName) {
+		innerProcessFolder = directory;
 
 		MWindow window = new Query(Env.getCtx(), MWindow.Table_Name, MWindow.COLUMNNAME_Name + "=?", null)
 				.setParameters(winName).first();
@@ -154,7 +161,7 @@ public class DocBookGenerator {
 	 * For Process item
 	 */
 
-	public DocBookGenerator(String directory, MProcess process) {
+	public DocBookGenerator(String directory, MProcess process, boolean isInnerProcess) {
 		// create column access methods
 		StringBuilder sb = createColumnsProcess(process);
 
@@ -174,15 +181,23 @@ public class DocBookGenerator {
 
 //		menuJSON.append("\"Relatório - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
 
-		menuHTML.append("<li><a href=\"" + tabName + "\">" + (process.isReport() ? "Relatório: " : "Processo: ")
-				+ nomeHTML + "</a> </li> \n");
+		if (isInnerProcess) {
 
-		if (!process.isReport()) {
-			menuProcessos.append("<li><a href=\"" + tabName + "\">Processo: " + nomeHTML + "</a> </li> \n");
-			menuProcessosArray.put("manual/" + tabName);
+			innerProcessName = nomeHTML;
+			innerProcessLink = tabName;
+
+
 		} else {
-			menuRelatorios.append("<li><a href=\"" + tabName + "\">Relatório: " + nomeHTML + "</a> </li> \n");
-			menuRelatoriosArray.put("manual/" + tabName);
+			menuHTML.append("<li><a href=\"" + tabName + "\">" + (process.isReport() ? "Relatório: " : "Processo: ")
+					+ nomeHTML + "</a> </li> \n");
+
+			if (!process.isReport()) {
+				menuProcessos.append("<li><a href=\"" + tabName + "\">Processo: " + nomeHTML + "</a> </li> \n");
+				menuProcessosArray.put("manual/" + tabName);
+			} else {
+				menuRelatorios.append("<li><a href=\"" + tabName + "\">Relatório: " + nomeHTML + "</a> </li> \n");
+				menuRelatoriosArray.put("manual/" + tabName);
+			}
 		}
 	}
 
@@ -274,6 +289,30 @@ public class DocBookGenerator {
 		if (info.isDefault())
 			sb.append("<emphasis role=\"strong\"> Valor Padrão </emphasis>");
 		sb.append("</para>" + NL);
+
+
+		Query queryInfoProcess = new Query(Env.getCtx(), MInfoProcess.Table_Name, "ad_infowindow.ad_infowindow_id=?", null)
+				.addJoinClause("left join ad_infowindow on ad_infowindow.ad_infowindow_id=ad_infoprocess.ad_infowindow_id");
+
+		List<MInfoProcess> listInfoProcess = queryInfoProcess.setParameters(info.get_ID()).list();
+
+
+		if (!listInfoProcess.isEmpty()) {
+
+			sb.append("<para> <emphasis role=\"strong\">Processos:  </emphasis> </para>");
+
+			for (MInfoProcess infoPrc : listInfoProcess) {
+				int procID = infoPrc.getAD_Process_ID();
+				if (procID != 0) {
+					MProcess process = new MProcess(Env.getCtx(), procID, null);
+					if (!process.isReport()) {
+						String infoProc[] = innerProcess(process);
+						sb.append("<para><ulink url=\""+ infoProc[1]+".html\">"+ infoProc[0]+"</ulink></para>");
+					}
+				}
+			}
+
+		}
 
 		searchName = info.get_Translation(MInfoWindow.COLUMNNAME_Name);
 
@@ -1065,6 +1104,7 @@ public class DocBookGenerator {
 				+ "</para><para><emphasis role=\"strong\">Atualizado em: </emphasis>" + m_dateFormat.format(win.getUpdated())
 				+ "</para>" + NL);
 
+
 		searchName = win.get_Translation(MInfoWindow.COLUMNNAME_Name);
 
 		windowName = RemoverAcentos.remover(searchName);
@@ -1130,6 +1170,49 @@ public class DocBookGenerator {
 				sb.append("<imagedata fileref=\"/img/manual/brerp6.2/" + windowName + ".png\" format=\"PNG\" />");
 		}
 
+
+		Query queryProcTBB = new Query(Env.getCtx(), MToolBarButton.Table_Name, "ad_tab.ad_window_id=?", null)
+				.addJoinClause("left join ad_tab on ad_toolbarbutton.ad_tab_id=ad_tab.ad_tab_id");
+
+		List<MToolBarButton> listTBB = queryProcTBB.setParameters(win.get_ID()).list();
+
+		Query queryProcColumn = new Query(Env.getCtx(), MColumn.Table_Name, "ad_table.ad_window_id=? and ad_column.ad_process_id is not null", null)
+				.addJoinClause("left join ad_table on ad_column.ad_table_id=ad_table.ad_table_id");
+
+		List<MColumn> listColumn = queryProcColumn.setParameters(win.get_ID()).list();
+
+
+		if (!listTBB.isEmpty() || !listColumn.isEmpty()) {
+
+			sb.append("<para> <emphasis role=\"strong\">Processos:  </emphasis> </para>");
+
+			for (MToolBarButton tBB : listTBB) {
+				int procID = tBB.getAD_Process_ID();
+				if (procID != 0) {
+					MProcess process = new MProcess(Env.getCtx(), procID, null);
+					if (!process.isReport()) {
+						String infoProc[] = innerProcess(process);
+						sb.append("<para><ulink url=\""+ infoProc[1]+".html\">"+ infoProc[0]+"</ulink></para>");
+					}
+				}
+			}
+
+			for (MColumn col : listColumn) {
+				int procID = col.getAD_Process_ID();
+				if (procID != 0) {
+					MProcess process = new MProcess(Env.getCtx(), procID, null);
+					if (!process.isReport()) {
+						String infoProc[] = innerProcess(process);
+						sb.append("<para><ulink url=\""+ infoProc[1]+".html\">"+ infoProc[0]+"</ulink></para>");
+					}
+				}
+			}
+
+		}
+
+
+
+
 	}
 
 	private void theLoop(int AD_Tab_ID, StringBuilder sb) {
@@ -1149,27 +1232,7 @@ public class DocBookGenerator {
 
 		tabName = stripBadChars(tabName);
 
-		/*
-		 * windowName = RemoverAcentos.remover(windowName); tabName =
-		 * RemoverAcentos.remover(tabName);
-		 *
-		 * try { prtScr.setUp(); prtScr.login(false); } catch (Exception e2) {
-		 * e2.printStackTrace(); }
-		 *
-		 * prtScr.openWindow(searchName);
-		 *
-		 * try { FileHandler.copy(prtScr.printarTela(), new
-		 * File("./docbook/docbook/Docusaurus/website/static/img/manual/" + windowName +
-		 * ".png")); } catch (IOException e1) { e1.printStackTrace(); }
-		 *
-		 * try { Thread.sleep(15000); } catch (InterruptedException e) {
-		 * e.printStackTrace(); }
-		 *
-		 * prtScr.quit();
-		 *
-		 * sb.append("\n <para> <ulink url=\"/img/manual"+windowName+"_" + tabName +
-		 * ".png\">[IMAGEM]</ulink> \n");
-		 */
+
 
 		if (!tabName.contains("/") && !tabName.equals("Print_Table_Format") && !tabName.equals("Print_Color")) {
 			String datalink = getContent(tab);
@@ -1350,6 +1413,7 @@ public class DocBookGenerator {
 
 				sb.append("</row> \n");
 			}
+
 			sb.append("</tbody> \n </tgroup> \n");
 			sb.append("</table> \n");
 		}
@@ -1586,7 +1650,7 @@ public class DocBookGenerator {
 						MProcess process = new Query(Env.getCtx(), MProcess.Table_Name,
 								MProcess.COLUMNNAME_AD_Process_ID + "=?", null).setParameters(item.getAD_Process_ID())
 										.first();
-						new DocBookGenerator(directory.toString(), process);
+						new DocBookGenerator(directory.toString(), process, false);
 					} else if (item.getAction().equals("W")) {
 						// Window
 						MWindow win = new Query(Env.getCtx(), MWindow.Table_Name,
@@ -1609,7 +1673,7 @@ public class DocBookGenerator {
 			} else if (winItem.equals("Process")) {
 				MProcess process = new Query(Env.getCtx(), MProcess.Table_Name, MProcess.COLUMNNAME_Name + "=?", null)
 						.setParameters(tabItem).first();
-				new DocBookGenerator(directory.toString(), process);
+				new DocBookGenerator(directory.toString(), process, false);
 			} else if (winItem.equals("Workflow")) {
 				MWorkflow workflow = new Query(Env.getCtx(), MWorkflow.Table_Name, MWorkflow.COLUMNNAME_Name + "=?",
 						null).setParameters(tabItem).first();
@@ -1805,5 +1869,11 @@ public class DocBookGenerator {
 		}
 		String number = padding + aIdx.toString();
 		aBuilder.append("&#" + number + ";");
+	}
+
+	private String[] innerProcess(MProcess process) {
+		DocBookGenerator doc = new DocBookGenerator(innerProcessFolder, process, true);
+		String innerProcessInfo[] = {doc.innerProcessName, doc.innerProcessLink};
+		return innerProcessInfo;
 	}
 }
