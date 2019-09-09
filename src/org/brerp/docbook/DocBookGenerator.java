@@ -150,7 +150,7 @@ public class DocBookGenerator {
 
 		writeToFile(sb, directory + "/docbook/docbook/input/" + tabName + ".xml");
 
-		menuJanelasArray.put("manual/" + tabName);
+		menuJanelasArray.put("manual/brerp6.2/" + tabName);
 
 		menuHTML.append("<li><a href=\"" + tabName + "\"> Janela: " + nomeHTML + "</a> </li> \n");
 		menuJanelas.append("<li><a href=\"" + tabName + "\"> Janela: " + nomeHTML + "</a> </li> \n");
@@ -193,10 +193,10 @@ public class DocBookGenerator {
 
 			if (!process.isReport()) {
 				menuProcessos.append("<li><a href=\"" + tabName + "\">Processo: " + nomeHTML + "</a> </li> \n");
-				menuProcessosArray.put("manual/" + tabName);
+				menuProcessosArray.put("manual/brerp6.2/" + tabName);
 			} else {
 				menuRelatorios.append("<li><a href=\"" + tabName + "\">Relatório: " + nomeHTML + "</a> </li> \n");
-				menuRelatoriosArray.put("manual/" + tabName);
+				menuRelatoriosArray.put("manual/brerp6.2/" + tabName);
 			}
 		}
 	}
@@ -217,7 +217,7 @@ public class DocBookGenerator {
 
 		writeToFile(sb, directory + "/docbook/docbook/input/" + tabName + ".xml");
 //		menuJSON.append("\"Workflow - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
-		menuWorkflowArray.put("manual/" + tabName);
+		menuWorkflowArray.put("manual/brerp6.2/" + tabName);
 		menuHTML.append("<li><a href=\"" + tabName + "\">Workflow: " + nomeHTML + "</a> </li> \n");
 		menuWorkFlow.append("<li><a href=\"" + tabName + "\">Workflow: " + nomeHTML + "</a> </li> \n");
 	}
@@ -238,7 +238,7 @@ public class DocBookGenerator {
 
 		writeToFile(sb, directory + "/docbook/docbook/input/" + tabName + ".xml");
 //		menuJSON.append("\"Formulário - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
-		menuFormularioArray.put("manual/" + tabName);
+		menuFormularioArray.put("manual/brerp6.2/" + tabName);
 		menuHTML.append("<li><a href=\"" + tabName + "\">Formulário:  " + nomeHTML + "</a> </li> \n");
 		menuFormulario.append("<li><a href=\"" + tabName + "\">Formulário: " + nomeHTML + "</a> </li> \n");
 	}
@@ -259,7 +259,7 @@ public class DocBookGenerator {
 
 		writeToFile(sb, directory + "/docbook/docbook/input/" + tabName + ".xml");
 //		menuJSON.append("\"InfoPanel - "+ tabName + "\": [ \n \"" + tabName+ "\" \n ], \n");
-		menuInfoPanelArray.put("manual/" + tabName);
+		menuInfoPanelArray.put("manual/brerp6.2/" + tabName);
 		menuHTML.append("<li><a href=\"" + tabName + "\">InfoPanel: " + nomeHTML + "</a> </li> \n");
 		menuInfoPane.append("<li><a href=\"" + tabName + "\">InfoPanel: " + nomeHTML + "</a> </li> \n");
 	}
@@ -1696,7 +1696,7 @@ public class DocBookGenerator {
 			}
 		}
 
-		menuRelatoriosJSON.put("Janelas", menuJanelasArray);
+		menuJanelaJSON.put("Janelas", menuJanelasArray);
 		menuRelatoriosJSON.put("Relatorios", menuRelatoriosArray);
 		menuWorkflowJSON.put("Workflows", menuWorkflowArray);
 		menuProcessosJSON.put("Processos", menuProcessosArray);
