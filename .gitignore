@@ -1,0 +1,8 @@
+*/target
+
+**/bin/*
+
+*.jar
+*.html
+*.png
+
