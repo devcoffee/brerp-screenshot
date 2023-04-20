@@ -1,6 +1,0 @@
-<project>
-  <property name="input-xml" value="input/book.xml"/>
-  <property name="input-images-dirs" value="images/** figures/** graphics/**"/>
-  <property name="output-dir" value="output/"/>
-  <import file="docbook-xsl/docbook-xsl-1.78.1/webhelp/build.xml"/>
-</project>

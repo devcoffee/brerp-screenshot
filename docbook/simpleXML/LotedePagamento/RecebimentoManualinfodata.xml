@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
-<table>
-<title>Lote de Pagamento/Recebimento (Manual)</title>
-<tgroup cols='11' align='center' colsep='1' rowsep='1'> 
-
- <tbody><row><entry>Parceiro de Negócios </entry><entry>Documento Fiscal</entry><entry>Número da Parcela</entry><entry>Nosso Número</entry><entry>Data Faturada</entry><entry>Data do Vencimento</entry><entry>Total Geral</entry><entry>Valor Aberto</entry><entry>Centro de Custo</entry><entry>Centro de Custo 2</entry><entry>Tipo de Documento Alvo</entry></row></tbody>
-</tgroup>
-</table>

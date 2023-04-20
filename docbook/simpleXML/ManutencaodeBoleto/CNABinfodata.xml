@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
-<table>
-<title>Manutenção de Boleto / CNAB</title>
-<tgroup cols='21' align='center' colsep='1' rowsep='1'> 
-
- <tbody><row><entry>Organização</entry><entry>Parceiro de Negócios </entry><entry>Data Faturada</entry><entry>Pedido</entry><entry>Fatura</entry><entry>Documento Fiscal</entry><entry>Parcela</entry><entry>Nosso Número</entry><entry>Digito Nosso Número</entry><entry>Valor do Título</entry><entry>Valor da Multa</entry><entry>Percentual de Multa</entry><entry>Desconto</entry><entry>Data de Vencimento</entry><entry>Boleto Gerado</entry><entry>CNAB Gerado</entry><entry>Integração Bancária</entry><entry>Borderô</entry><entry>Tipo de Carteira</entry><entry>Pago</entry><entry>Gerar CNAB</entry></row></tbody>
-</tgroup>
-</table>
