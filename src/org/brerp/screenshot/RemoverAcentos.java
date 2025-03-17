@@ -62,8 +62,7 @@ public abstract class RemoverAcentos {
 
 		retorno = retorno.replaceAll("½", "1/2").replaceAll("¼", "1/4").replaceAll("¾", "3/4");
 		retorno = retorno.replaceAll("\"", " ").replaceAll("[œ*ßƒµøπæΩØ]", " ");
-		retorno = retorno.replaceAll("[()]", "");
-		retorno = retorno.replaceAll("[+-]", "");
+		retorno = retorno.replaceAll("[()\\+\\- /]", "");
 
 		return retorno.trim();
 	}

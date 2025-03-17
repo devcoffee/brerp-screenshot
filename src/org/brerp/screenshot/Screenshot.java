@@ -26,7 +26,9 @@ package org.brerp.screenshot;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
 
 import org.compiere.model.MForm;
 import org.compiere.model.MInfoWindow;
@@ -35,6 +37,7 @@ import org.compiere.model.MProcess;
 import org.compiere.model.MTask;
 import org.compiere.model.MWindow;
 import org.compiere.model.Query;
+import org.compiere.util.CLogger;
 import org.compiere.util.Env;
 import org.compiere.util.Language;
 import org.compiere.wf.MWorkflow;
@@ -48,78 +51,117 @@ import org.openqa.selenium.io.FileHandler;
  */
 public class Screenshot {
 
+	private static final CLogger log	= CLogger.getCLogger (Screenshot.class);
+
 	private static Selenium prtScr = new Selenium();
 
 	private static void takeScreenshot(String searchName, String type) {
 		takeScreenshot(searchName, type, false);
 	}
 
+	private static final List<RetryItem> retryList = new ArrayList<>();
+
 	private static void takeScreenshot(String searchName, String type, boolean system) {
+		log.setLevel(Level.ALL);
+
 		String windowName = RemoverAcentos.remover(searchName);
-		windowName = windowName.replace(" ", "");
-
-		prtScr.closeHellButton();
-
+		prtScr.closeButton();
+		
 		try {
-			prtScr.openWindow(searchName);
+	        prtScr.openWindow(searchName);
+	    } catch (Exception e) {
+            if (!system) {
+                log.severe("Scheduling retry with System level '" + searchName + "'.");
+                retryList.add(new RetryItem(searchName, type));
+            }
+
+            return;
+	    }
+		
+		File imagem = prtScr.printScreen();
+
+	    if (imagem == null) {
+	        log.warning("Screenshot not captured for '" + searchName + "'.");
+	        return;
+	    }
+
+	    try {
+	        File outputDir = new File(Selenium.outputDir);
+	        if (!outputDir.exists()) {
+	            outputDir.mkdirs();
+	        }
+
+	        File destino = new File(Selenium.outputDir + windowName + "-" + type + Selenium.systemName
+	                + Selenium.version + ".png");
+	        FileHandler.copy(imagem, destino);
+	        log.info("Screenshot saved: " + destino.getAbsolutePath());
+	    } catch (IOException e) {
+	        log.severe("Failed to save screenshot for '" + searchName + "': " + e.getMessage());
+	    }
+	}
+
+	/**
+	 * Executa todas as tentativas pendentes na `retryList` com `system=true`
+	 */
+	public static void processRetryQueue() {
+		if (retryList.isEmpty())
+			return;
+		
+        try {
+    		prtScr.quit();
+			prtScr.setUp();
+			prtScr.login(true);
+	        prtScr.wait(500);
 		} catch (Exception e) {
-			prtScr.quit();
+	        log.severe("Restarting WebDriver.");
+		}
+        
+		for (RetryItem item : retryList) {
 			try {
-				prtScr.setUp();
-				prtScr.login(system);
-				Thread.sleep(500);
-			} catch (Exception e1) {
-				e1.printStackTrace();
+				takeScreenshot(item.searchName, item.type, true);
+			} catch (Exception e) {
+				log.severe("Final failure to open window '" + item.searchName + "'.");
 			}
-			prtScr.openWindow(searchName);
 		}
 
-		File imagem = prtScr.printarTela();
+		retryList.clear();
+	}
 
-		if (imagem != null) {
-			try {
-				FileHandler.copy(imagem, new File(
-						Selenium.outputDir + windowName + "-" + type + "_BrERP_v" + Selenium.version + ".png"));
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
+	private static class RetryItem {
+		String searchName;
+		String type;
 
-		} else {
-			takeScreenshot(searchName, type, !system);
+		RetryItem(String searchName, String type) {
+			this.searchName = searchName;
+			this.type = type;
 		}
 	}
 
 	/**
-	 * @param sourceFolder
 	 * @param winItem
-	 * @param tabItem
-	 * @param tableLike
 	 * @throws JSONException
 	 */
-	public static void generateSource(String sourceFolder, String winItem, String tabItem, boolean $isPrtScr)
+	public static void generateScreenshots()
 			throws JSONException {
 
 		try {
 			prtScr.setUp();
 			prtScr.login(false);
+			Thread.sleep(500);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
 
-		Language tmp = Language.getLanguage("pt_BR");
+		Language tmp = Selenium.language;
 		Language language = new Language(tmp.getName(), tmp.getAD_Language(), tmp.getLocale(), tmp.isDecimalPoint(),
 				tmp.getDateFormat().toPattern(), tmp.getMediaSize());
 		Env.verifyLanguage(Env.getCtx(), language);
 		Env.setContext(Env.getCtx(), Env.LANGUAGE, language.getAD_Language());
 		Env.setContext(Env.getCtx(), "#Locale", language.getLocale().toString());
-
-		List<MMenu> menu = new Query(Env.getCtx(), MMenu.Table_Name, "", null).setOnlyActiveRecords(true)
+		
+		List<MMenu> menu = new Query(Env.getCtx(), MMenu.Table_Name, null, null).setOnlyActiveRecords(true)
 				.setOrderBy(MMenu.COLUMNNAME_Action + "," + MMenu.COLUMNNAME_Name).list();
+		
 		for (MMenu item : menu) {
 			if (item.getAction() == null)
 				continue;
@@ -160,8 +202,8 @@ public class Screenshot {
 			takeScreenshot(info.get_Translation(MInfoWindow.COLUMNNAME_Name), "Info");
 		}
 
+		processRetryQueue();
+
 		prtScr.quit();
-
 	}
-
 }

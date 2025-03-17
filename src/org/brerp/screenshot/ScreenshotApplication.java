@@ -13,10 +13,7 @@
  *****************************************************************************/
 package org.brerp.screenshot;
 
-import java.io.File;
-
 import org.compiere.Adempiere;
-import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.equinox.app.IApplication;
 import org.eclipse.equinox.app.IApplicationContext;
 
@@ -35,13 +32,9 @@ public class ScreenshotApplication implements IApplication {
 	 */
 	@Override
 	public Object start(IApplicationContext context) throws Exception {
-		new ResourcesPlugin();
-		String path = new File(".").getAbsolutePath();
-		// String path =
-		// ResourcesPlugin.getWorkspace().getRoot().getLocation().toString();
+
 		Adempiere.startup(false);
-		// IDEMPIERE-1686 - GenerateModel does not take commandline arguments
-		Screenshot.generateSource(path, "ALL", "ALL", true);
+		Screenshot.generateScreenshots();
 		return IApplication.EXIT_OK;
 	}
 
