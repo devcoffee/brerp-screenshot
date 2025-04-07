@@ -32,16 +32,16 @@ public class Selenium {
 	protected Actions actions;
 
 	// change below for your environment
-	private final String URL = "https://rdp01.devcoffee.cloud/webui";
-	private final String lang = "English";
-	public static final Language language = Language.getLanguage("en_US");
-	private final String user = "SuperUser";
-	private final String userPwd = "System";
+	private final String URL = "localhost:6019";
+	private final String lang = "Portuguese";
+	public static final Language language = Language.getLanguage("pt_BR");
+	private final String user = "superuser @ brerp.com.br";
+	private final String userPwd = "am_brerp0303";
 	private final String clientSystem = "System";
-	private final String client = "GardenWorld";
-	private final String clientRole = "GardenWorld Admin";
-	public static final String outputDir = "/home/muriloht/img/";
-	public static final String systemName = "_iDempiere_v";
+	private final String client = "01- Grupo Mundo do Café S/A";
+	private final String clientRole = "01-Administrador do Sistema";
+	public static final String outputDir = "/home/alberto/workspaces/QA_02242025_1650/idempiere-stuff/genwikipages/img/";
+	public static final String systemName = "_BrERP_v";
 	public static final String version = "12.0.0";
 
 	@Before
@@ -54,7 +54,7 @@ public class Selenium {
 		new WebDriverWait(driver, Duration.ofSeconds(2));
 
 		driver.manage().window().maximize();
-		driver.manage().window().setSize(new Dimension(1920, 1080));
+		driver.manage().window().setSize(new Dimension(1918, 920));
 	}
 
 	protected void type(WebElement element, String value, Boolean sendEnter) {
