@@ -11,7 +11,6 @@ import org.idempiere.ui.zk.selenium.Zk;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -24,38 +23,43 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.bidi.BiDi;
+import org.openqa.selenium.bidi.HasBiDi;
 
 public class Selenium {
 	protected WebDriver driver;
 	protected StringBuffer verificationErrors = new StringBuffer();
 	private String baseUrl;
 	protected Actions actions;
+	private BiDi bidi;
 
 	// change below for your environment
-	private final String URL = "localhost:6019";
-	private final String lang = "Portuguese";
+	private final String URL = "http://localhost:6009";
+	private final String lang = "Portuguese (BR)";
 	public static final Language language = Language.getLanguage("pt_BR");
 	private final String user = "superuser @ brerp.com.br";
-	private final String userPwd = "am_brerp0303";
+	private final String userPwd = "gv_0401";
 	private final String clientSystem = "System";
 	private final String client = "01- Grupo Mundo do Café S/A";
 	private final String clientRole = "01-Administrador do Sistema";
-	public static final String outputDir = "/home/alberto/workspaces/QA_02242025_1650/idempiere-stuff/genwikipages/img/";
+	public static final String outputDir = "/home/guilherme/workspaces/documentacao/idempiere-stuff/genwikipages/img/";
 	public static final String systemName = "_BrERP_v";
-	public static final String version = "12.0.0";
+	public static final String version = "11.0.0";
 
-	@Before
-	public void setUp() throws Exception {
-		var options = new FirefoxOptions();
-		options.addArguments("--headless");
-		driver = new FirefoxDriver(options);
-		actions = new Actions(driver);
-		baseUrl = URL;
-		new WebDriverWait(driver, Duration.ofSeconds(2));
-
-		driver.manage().window().maximize();
-		driver.manage().window().setSize(new Dimension(1918, 920));
-	}
+ @Before
+public void setUp() throws Exception {
+	System.setProperty("webdriver.gecko.driver", "/home/guilherme/.geckodriver");
+	FirefoxOptions options = new FirefoxOptions();
+	options.setCapability("webSocketUrl", true);
+//	options.addArguments("--headless");
+	driver = new FirefoxDriver(options);
+	actions = new Actions(driver);
+	baseUrl = URL;
+	new WebDriverWait(driver, Duration.ofSeconds(2));
+	
+	driver.manage().window().maximize();
+	bidi = ((HasBiDi) driver).maybeGetBiDi().orElseThrow();
+}
 
 	protected void type(WebElement element, String value, Boolean sendEnter) {
 		element.click();
