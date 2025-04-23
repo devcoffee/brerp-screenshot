@@ -18,27 +18,24 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.bidi.BiDi;
-import org.openqa.selenium.bidi.HasBiDi;
 
 public class Selenium {
 	protected WebDriver driver;
 	protected StringBuffer verificationErrors = new StringBuffer();
 	private String baseUrl;
 	protected Actions actions;
-	private BiDi bidi;
 
 	// change below for your environment
 	private final String URL = "http://localhost:6009";
 	private final String lang = "Portuguese (BR)";
 	public static final Language language = Language.getLanguage("pt_BR");
 	private final String user = "superuser @ brerp.com.br";
-	private final String userPwd = "gv_0401";
+	private final String userPwd = "gv_documentacao0411";
 	private final String clientSystem = "System";
 	private final String client = "01- Grupo Mundo do Café S/A";
 	private final String clientRole = "01-Administrador do Sistema";
@@ -48,17 +45,13 @@ public class Selenium {
 
  @Before
 public void setUp() throws Exception {
-	System.setProperty("webdriver.gecko.driver", "/home/guilherme/.geckodriver");
-	FirefoxOptions options = new FirefoxOptions();
-	options.setCapability("webSocketUrl", true);
+	ChromeOptions options = new ChromeOptions();	
 //	options.addArguments("--headless");
-	driver = new FirefoxDriver(options);
+	driver = new ChromeDriver(options);	
 	actions = new Actions(driver);
 	baseUrl = URL;
 	new WebDriverWait(driver, Duration.ofSeconds(2));
-	
 	driver.manage().window().maximize();
-	bidi = ((HasBiDi) driver).maybeGetBiDi().orElseThrow();
 }
 
 	protected void type(WebElement element, String value, Boolean sendEnter) {
