@@ -34,7 +34,7 @@ public class ScreenshotApplication implements IApplication {
 	public Object start(IApplicationContext context) throws Exception {
 
 		Adempiere.startup(false);
-		Screenshot.generateScreenshots();
+		Screenshot.generateScreenshots(0); // define quantos itens do menu serão executados, 0 para todos
 		return IApplication.EXIT_OK;
 	}
 
