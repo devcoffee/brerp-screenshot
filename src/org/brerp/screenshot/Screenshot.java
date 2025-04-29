@@ -62,7 +62,8 @@ public class Screenshot {
 		takeScreenshot(searchName, type, false);
 	}
 
-	private static final List<RetryItem> retryList = new ArrayList<>();
+	private static final List<FailedItem> retryList = new ArrayList<>();
+	private static final List<FailedItem> stillFailedList = new ArrayList<>();
 
 	private static void takeScreenshot(String searchName, String type, boolean system) {
 		log.setLevel(Level.ALL);
@@ -73,24 +74,14 @@ public class Screenshot {
 		try {
 			prtScr.openWindow(searchName);
 		} catch (Exception e) {
-			if (!system) {
-				log.severe("Agendanda nova tentativa de screenshot na System para a janela: '" + searchName
-						+ "' devido falha ao abrir janela.");
-				retryList.add(new RetryItem(searchName, type, fileName));
-			}
+			handleFailedScreenshot(searchName, type, fileName, system);
 			return;
 		}
 
 		File imagem = prtScr.printScreen(fileName);
 
 		if (imagem == null || !imagem.exists()) {
-			log.warning("Screenshot não capturada ou não salva: '" + searchName + "'.");
-
-			if (!system) {
-				log.severe("Agendanda nova tentativa de screenshot na System para a janela: '" + searchName
-						+ "' devido falha ao salvar imagem.");
-				retryList.add(new RetryItem(searchName, type, fileName));
-			}
+			handleFailedScreenshot(searchName, type, fileName, system);
 			return;
 		}
 
@@ -104,7 +95,7 @@ public class Screenshot {
 
 			log.info("Screenshot salva: " + destino.getAbsolutePath());
 		} catch (Exception e) {
-			log.severe("Falha ao salvar screenshot para '" + searchName + "': " + e.getMessage());
+			handleFailedScreenshot(searchName, type, fileName, system);
 		}
 	}
 
@@ -119,6 +110,7 @@ public class Screenshot {
 			prtScr.quit();
 			prtScr.setUp();
 			prtScr.login(true);
+			Thread.sleep(15000);
 			synchronized (prtScr) {
 				prtScr.wait(500);
 			}
@@ -126,25 +118,46 @@ public class Screenshot {
 			log.log(Level.SEVERE, "Erro ao reiniciar WebDriver para tirar as screenshots na System: ", e);
 		}
 
-		for (RetryItem item : retryList) {
+		for (FailedItem item : retryList) {
 			try {
 				System.out.println("Tentando abrir a janela: '" + item.searchName + "' novamente.");
 				takeScreenshot(item.searchName, item.type, true);
 			} catch (Exception e) {
-				log.severe("Falha final ao abrir novamente a janela: '" + item.searchName + "'.");
+				handleFailedScreenshot(item.searchName, item.type, item.fileName, true);
 			}
 		}
 
 		logRetryListToFile();
 		retryList.clear();
+		stillFailedList.clear();
+		try {
+			prtScr.quit();
+		} catch (Exception e) {
+			log.log(Level.SEVERE, "Erro ao fechar WebDriver: ", e);
+		}
 	}
 
-	private static class RetryItem {
+	private static boolean handleFailedScreenshot(String searchName, String type, String fileName, boolean system) {
+
+		if (!system) {
+			log.severe("Screenshot falhou ao ser capturada e/ou salva: '" + searchName
+					+ "'. Agendanda nova tentativa na System.");
+			retryList.add(new FailedItem(searchName, type, fileName));
+		} else {
+			log.severe("Falha final ao abrir novamente a janela: '" + searchName + "'.");
+			stillFailedList.add(new FailedItem(searchName, type, fileName));
+		}
+
+		return false;
+
+	}
+
+	private static class FailedItem {
 		String searchName;
 		String type;
 		String fileName;
 
-		RetryItem(String searchName, String type, String fileName) {
+		FailedItem(String searchName, String type, String fileName) {
 			this.searchName = searchName;
 			this.type = type;
 			this.fileName = fileName;
@@ -160,7 +173,7 @@ public class Screenshot {
 		try {
 			prtScr.setUp();
 			prtScr.login(false);
-			Thread.sleep(5000);
+			Thread.sleep(15000);
 		} catch (Exception e) {
 			log.log(Level.SEVERE, "Erro ao gerar screenshots ", e);
 		}
@@ -213,43 +226,54 @@ public class Screenshot {
 				break;
 			}
 		}
-
-		// get all Info Windows independently
-		List<MInfoWindow> infos = new Query(Env.getCtx(), MInfoWindow.Table_Name, "", null).list();
-		List<MInfoWindow> infosLimit = (menuLimit > 0 && menuLimit < infos.size()) ? infos.subList(0, menuLimit)
-				: infos;
-
-		for (MInfoWindow info : infosLimit) {
-			takeScreenshot(info.get_Translation(MInfoWindow.COLUMNNAME_Name), "Info");
+		
+		// Se for diferente de 0, não salvará screenshots de InfoWindow.
+		if (menuLimit != 0) {
+			// get all Info Windows independently
+			List<MInfoWindow> infos = new Query(Env.getCtx(), MInfoWindow.Table_Name, "", null).list();
+			
+			for (MInfoWindow info : infos) {
+				takeScreenshot(info.get_Translation(MInfoWindow.COLUMNNAME_Name), "Info");
+			}
 		}
 
-		processRetryQueue();
+		try {
+			processRetryQueue();
+		} catch (Exception e) {
+			log.log(Level.SEVERE, "Erro ao processar a fila de retry: ", e);
+		} finally {
+			prtScr.quit();
+		}
 
-		prtScr.quit();
 	}
 
 	public static void logRetryListToFile() {
 
 		String timestamp = new SimpleDateFormat("yyyyMMdd").format(new Date());
-		String logFileName = timestamp + "_retryList.log";
+		String logFileName = timestamp + "_retryList.md";
 		String logFilePath = Selenium.outputDir + logFileName;
 
 		try (BufferedWriter writer = new BufferedWriter(new FileWriter(logFilePath))) {
-			if (retryList.isEmpty()) {
-				writer.write("Sem itens na lista de retry.");
+			if (stillFailedList.isEmpty()) {
+				writer.write("Finalizado sem nenhum item com falha na screenshot.");
 				writer.newLine();
-				System.out.println("Finalizado sem nenhum item na lista de retry.");
+				System.out.println("Finalizado sem nenhum item com falha na screenshot.");
 				return;
 			}
 
-			for (RetryItem item : retryList) {
-				writer.write("Nome: " + item.searchName + " | Tipo: " + item.type + " | Arquivo: " + item.fileName);
+			writer.write("| **Nome da Janela** | **Tipo** | **Caminho do Arquivo** |");
+			writer.newLine();
+			writer.write("|:---|:---|:---|");
+			writer.newLine();
+			for (FailedItem item : stillFailedList) {
+				writer.write("| " + item.searchName + " | " + item.type + " | " + item.fileName + " |");
 				writer.newLine();
 			}
 
-			System.out.println("Itens da lista de retry foram armazenados no arquivo: " + logFilePath);
+			System.out.println(stillFailedList.size() + " itens da lista de retry foram armazenados no arquivo: "
+					+ logFilePath + " com sucesso.");
 		} catch (IOException e) {
-			System.err.println("Erro ao gerar o arquivo de log: " + e.getMessage());
+			System.err.println("Erro ao gerar o arquivo com relação de falhas nas screenshots: " + e.getMessage());
 		}
 	}
 

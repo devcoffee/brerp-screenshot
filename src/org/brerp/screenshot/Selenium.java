@@ -44,8 +44,7 @@ public class Selenium {
 	private final String userPwd = "gv_documentacao0411";
 	private final String clientSystem = "System";
 	private final String client = "01- Grupo Mundo do Café S/A";
-//	private final String clientRole = "01-Administrador do Sistema";
-	private final String clientRole = "13-Capado";
+	private final String clientRole = "01-Administrador do Sistema";
 	public static final String systemName = "_BrERP_v";
 	public static final String version = "11.0.0";
 	public static final String userHome = System.getProperty("user.home");
@@ -57,15 +56,14 @@ public class Selenium {
 		System.setProperty("webdriver.gecko.driver", userHome + "/.geckodriver");
 		System.setProperty("webdriver.firefox.bin", userHome + "/.local/firefox/firefox");
 		options.setBinary(userHome + "/.local/firefox/firefox");
-//		options.addArguments("--headless"); // para executar em background
+		options.addArguments("--headless"); // Executa em background. Comentar linha para rodar no navegador visualmente
 		options.addArguments("--disable-gpu");
 		options.addArguments("--hide-scrollbars");
 		options.addArguments("--ignore-certificate-errors");
 		options.setAcceptInsecureCerts(true);
 
 		driver = new FirefoxDriver(options);
-//		driver.manage().window().setSize(new Dimension(1900, 1000));
-		driver.manage().window().setSize(new Dimension(1000, 500));
+		driver.manage().window().setSize(new Dimension(1900, 1000));
 		wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 		actions = new Actions(driver);
 		baseUrl = URL;
@@ -329,7 +327,7 @@ public class Selenium {
 						btnOk.click();
 					}
 				} catch (TimeoutException e) {
-					// Se a janela de pesquisa não aparecer, continue
+					// Se a janela de pesquisa não aparecer, continua
 				} catch (Exception e) {
 					System.out.println("Erro ao tentar clicar no botão OK da janela:");
 					e.printStackTrace();
