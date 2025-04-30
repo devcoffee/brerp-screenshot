@@ -78,7 +78,7 @@ public class Screenshot {
 			return;
 		}
 
-		File imagem = prtScr.printScreen(fileName);
+		File imagem = prtScr.printScreen(fileName, searchName);
 
 		if (imagem == null || !imagem.exists()) {
 			handleFailedScreenshot(searchName, type, fileName, system);

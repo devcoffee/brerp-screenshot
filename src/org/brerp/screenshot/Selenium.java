@@ -385,7 +385,7 @@ public class Selenium {
 		return role.replace(" ", "\\\\ ");
 	}
 
-	public File printScreen(String filename) {
+	public File printScreen(String fileName, String searchName) {
 		try {
 			waitResponse(3000);
 			byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
@@ -395,11 +395,11 @@ public class Selenium {
 				return null;
 			}
 			
-			Path path = Paths.get(filename);
+			Path path = Paths.get(fileName);
 			Files.createDirectories(path.getParent());
 			Files.write(path, screenshotBytes);
 
-			System.out.println("Screenshot salva em: " + path.toAbsolutePath());
+			System.out.println("Screenshot salva: '" + searchName + "'");
 
 			closeButton();
 			return path.toFile();
