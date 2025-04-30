@@ -54,7 +54,7 @@ import org.json.JSONException;
  */
 public class Screenshot {
 
-	private static final CLogger log = CLogger.getCLogger(Screenshot.class);
+	static final CLogger log = CLogger.getCLogger(Screenshot.class);
 
 	private static Selenium prtScr = new Selenium();
 

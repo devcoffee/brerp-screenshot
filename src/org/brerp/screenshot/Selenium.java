@@ -100,7 +100,7 @@ public class Selenium {
 		try {
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("z-modal-mask")));
 		} catch (Exception e) {
-			System.out.println("Aviso: Nenhuma máscara de bloqueio detectada, seguindo execução.");
+			Screenshot.log.info("Aviso: Nenhuma máscara de bloqueio detectada, seguindo execução.");
 		}
 
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
@@ -227,7 +227,7 @@ public class Selenium {
 		try {
 			Thread.sleep(millis);
 		} catch (InterruptedException e) {
-			System.out.println("Thread interrompida durante o sleep:");
+			System.err.println("Thread interrompida durante o sleep:");
 			e.printStackTrace();
 			Thread.currentThread().interrupt();
 		}
@@ -251,9 +251,9 @@ public class Selenium {
 		try {
 			driver.findElement(By.id("_z_7")).click();
 		} catch (NoSuchElementException e) {
-			System.out.println("Elemento _z_7 não encontrado. Ignorando pois pode ser opcional.");
+			Screenshot.log.info("Elemento _z_7 não encontrado. Ignorando pois pode ser opcional.");
 		} catch (Exception e) {
-			System.out.println("Erro inesperado ao tentar clicar no elemento _z_7:");
+			System.err.println("Erro inesperado ao tentar clicar no elemento _z_7:");
 			e.printStackTrace();
 		}
 
@@ -278,8 +278,7 @@ public class Selenium {
 				if (isElementPresent(loginUserQuery))
 					break;
 			} catch (Exception e) {
-				System.out.println("Erro ignorado:");
-			    e.printStackTrace();
+				Screenshot.log.info("Erro ignorado:");
 			}
 			sleep(500);
 		}
@@ -329,7 +328,7 @@ public class Selenium {
 				} catch (TimeoutException e) {
 					// Se a janela de pesquisa não aparecer, continua
 				} catch (Exception e) {
-					System.out.println("Erro ao tentar clicar no botão OK da janela:");
+					System.err.println("Erro ao tentar clicar no botão OK da janela:");
 					e.printStackTrace();
 				}
 			}
@@ -392,7 +391,7 @@ public class Selenium {
 			byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 
 			if (screenshotBytes == null || screenshotBytes.length == 0) {
-				System.out.println("Screenshot não gerada ou vazia.");
+				Screenshot.log.info("Screenshot não gerada ou vazia.");
 				return null;
 			}
 			
@@ -405,8 +404,7 @@ public class Selenium {
 			closeButton();
 			return path.toFile();
 		} catch (Exception e) {
-			System.out.println("Erro ao capturar screenshot:");
-			e.printStackTrace();
+			Screenshot.log.saveError("Erro ao capturar screenshot:", e);
 			return null;
 		}
 	}
@@ -428,8 +426,7 @@ public class Selenium {
 	}
 
 	protected void logException(String context, Exception e) {
-		System.out.println("Erro durante " + context + ":");
-		e.printStackTrace();
+		Screenshot.log.saveError("Erro durante " + context + ":", e);
 	}
 
 }
