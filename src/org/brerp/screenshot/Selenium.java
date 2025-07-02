@@ -3,6 +3,9 @@ package org.brerp.screenshot;
 import static org.junit.Assert.fail;
 
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 
 import org.compiere.util.Language;
@@ -11,15 +14,17 @@ import org.idempiere.ui.zk.selenium.Zk;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,9 +34,10 @@ public class Selenium {
 	protected StringBuffer verificationErrors = new StringBuffer();
 	private String baseUrl;
 	protected Actions actions;
+	protected WebDriverWait wait;
 
-	// change below for your environment
-	private final String URL = "http://localhost:6009";
+	// alterar dados abaixo para o seu ambiente
+	private final String URL = "http://localhost:6050";
 	private final String lang = "Portuguese (BR)";
 	public static final Language language = Language.getLanguage("pt_BR");
 	private final String user = "superuser @ brerp.com.br";
@@ -39,20 +45,29 @@ public class Selenium {
 	private final String clientSystem = "System";
 	private final String client = "01- Grupo Mundo do Café S/A";
 	private final String clientRole = "01-Administrador do Sistema";
-	public static final String outputDir = "/home/guilherme/workspaces/documentacao/idempiere-stuff/genwikipages/img/";
 	public static final String systemName = "_BrERP_v";
 	public static final String version = "11.0.0";
+	public static final String userHome = System.getProperty("user.home");
+	public static final String outputDir = userHome + "/workspaces/documentacao/idempiere-stuff/genwikipages/img/";
 
- @Before
-public void setUp() throws Exception {
-	ChromeOptions options = new ChromeOptions();	
-//	options.addArguments("--headless");
-	driver = new ChromeDriver(options);	
-	actions = new Actions(driver);
-	baseUrl = URL;
-	new WebDriverWait(driver, Duration.ofSeconds(2));
-	driver.manage().window().maximize();
-}
+	@Before
+	public void setUp() throws Exception {
+		FirefoxOptions options = new FirefoxOptions();
+		System.setProperty("webdriver.gecko.driver", userHome + "/.geckodriver");
+		System.setProperty("webdriver.firefox.bin", userHome + "/.local/firefox/firefox");
+		options.setBinary(userHome + "/.local/firefox/firefox");
+		options.addArguments("--headless"); // Executa em background. Comentar linha para rodar no navegador visualmente
+		options.addArguments("--disable-gpu");
+		options.addArguments("--hide-scrollbars");
+		options.addArguments("--ignore-certificate-errors");
+		options.setAcceptInsecureCerts(true);
+
+		driver = new FirefoxDriver(options);
+		driver.manage().window().setSize(new Dimension(1900, 1000));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+		actions = new Actions(driver);
+		baseUrl = URL;
+	}
 
 	protected void type(WebElement element, String value, Boolean sendEnter) {
 		element.click();
@@ -85,7 +100,7 @@ public void setUp() throws Exception {
 		try {
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("z-modal-mask")));
 		} catch (Exception e) {
-			System.out.println("Aviso: Nenhuma máscara de bloqueio detectada, seguindo execução.");
+			Screenshot.log.info("Aviso: Nenhuma máscara de bloqueio detectada, seguindo execução.");
 		}
 
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
@@ -212,6 +227,9 @@ public void setUp() throws Exception {
 		try {
 			Thread.sleep(millis);
 		} catch (InterruptedException e) {
+			System.err.println("Thread interrompida durante o sleep:");
+			e.printStackTrace();
+			Thread.currentThread().interrupt();
 		}
 	}
 
@@ -221,6 +239,9 @@ public void setUp() throws Exception {
 
 		waitResponse();
 
+		((JavascriptExecutor) driver).executeScript("document.querySelectorAll('input').forEach(function(el) {"
+				+ "    el.setAttribute('autocomplete', 'off');" + "});");
+
 		type("$loginPanel $txtUserId", user, false);
 		type("$loginPanel $txtPassword", userPwd, false);
 		comboboxSelectItem("$loginPanel $lstLanguage", lang);
@@ -229,9 +250,14 @@ public void setUp() throws Exception {
 
 		try {
 			driver.findElement(By.id("_z_7")).click();
+		} catch (NoSuchElementException e) {
+			Screenshot.log.info("Elemento _z_7 não encontrado. Ignorando pois pode ser opcional.");
 		} catch (Exception e) {
-
+			System.err.println("Erro inesperado ao tentar clicar no elemento _z_7:");
+			e.printStackTrace();
 		}
+
+		waitForElement("$rolePanel $lstClient");
 
 		if (system) {
 			comboboxSelectItem("$rolePanel $lstClient", clientSystem);
@@ -247,11 +273,12 @@ public void setUp() throws Exception {
 		By loginUserQuery = Zk.jq(locator);
 		for (int second = 0;; second++) {
 			if (second >= 60)
-				fail("timeout");
+				throw new RuntimeException("Timeout ao esperar pelo elemento: " + locator);
 			try {
 				if (isElementPresent(loginUserQuery))
 					break;
 			} catch (Exception e) {
+				Screenshot.log.info("Erro ignorado:");
 			}
 			sleep(500);
 		}
@@ -283,31 +310,33 @@ public void setUp() throws Exception {
 
 	protected void openWindow(String label) throws Exception {
 		comboboxSelectItem("$globalSearchBox", label);
-		waitResponse(1000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		try {
-			WebElement tabButton = driver.findElement(By.className("z-tab-button"));
+			WebElement tabButton = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(By.className("z-tab-button")));
+
 			if (tabButton != null) {
+				try {			
+					WebElement findWindow = wait
+							.until(ExpectedConditions.visibilityOfElementLocated(By.className("find-window")));
 
-				try {
-					WebElement findWindow = driver.findElement(By.className("find-window"));
 					if (findWindow != null && findWindow.isDisplayed()) {
-						WebElement btnOk = driver.findElement(By.className("btn-ok"));
-						if (btnOk != null) {
-							btnOk.click();
-
-						}
+						WebElement btnOk = wait.until(ExpectedConditions.elementToBeClickable(By.className("btn-ok")));
+						btnOk.click();
 					}
+				} catch (TimeoutException e) {
+					// Se a janela de pesquisa não aparecer, continua
 				} catch (Exception e) {
-
+					System.err.println("Erro ao tentar clicar no botão OK da janela:");
+					e.printStackTrace();
 				}
-
 			}
+
 			waitResponse(1000);
 		} catch (Exception e) {
-			throw new Exception("Window not found: " + label);
+			throw new Exception("Janela não encontrada ou inválida: " + label, e);
 		}
-
 	}
 
 	protected void logout() {
@@ -343,7 +372,9 @@ public void setUp() throws Exception {
 
 	@After
 	public void tearDown() throws Exception {
-		// driver.quit();
+		if (driver != null) {
+			driver.quit();
+		}
 		String verificationErrorString = verificationErrors.toString();
 		if (!"".equals(verificationErrorString)) {
 			fail(verificationErrorString);
@@ -354,15 +385,27 @@ public void setUp() throws Exception {
 		return role.replace(" ", "\\\\ ");
 	}
 
-	public File printScreen() {
+	public File printScreen(String fileName, String searchName) {
 		try {
 			waitResponse(3000);
-			File prt = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
+			if (screenshotBytes == null || screenshotBytes.length == 0) {
+				Screenshot.log.info("Screenshot não gerada ou vazia.");
+				return null;
+			}
+			
+			Path path = Paths.get(fileName);
+			Files.createDirectories(path.getParent());
+			Files.write(path, screenshotBytes);
+
+			System.out.println("Screenshot salva: '" + searchName + "'");
+
 			closeButton();
-			return prt;
+			return path.toFile();
 		} catch (Exception e) {
-			File prt = null;
-			return prt;
+			Screenshot.log.saveError("Erro ao capturar screenshot:", e);
+			return null;
 		}
 	}
 
@@ -372,12 +415,18 @@ public void setUp() throws Exception {
 			driver.findElement(By.className("z-tab-button")).click();
 			waitResponse();
 		} catch (Exception e) {
-
+			// Continuar mesmo se o botão não for encontrado
 		}
 	}
 
 	public void quit() {
-		driver.quit();
+		if (driver != null) {
+			driver.quit();
+		}
+	}
+
+	protected void logException(String context, Exception e) {
+		Screenshot.log.saveError("Erro durante " + context + ":", e);
 	}
 
 }
