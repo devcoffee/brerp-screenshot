@@ -12,14 +12,14 @@ Certifique-se de que o servidor do iDempiere esteja em execução, pois a aplica
 
 ### 3. Configurar Variáveis de Ambiente
 Abra o arquivo Selenium.java (localizado em src/org/brerp/screenshot/) e ajuste as variáveis de acordo com o seu ambiente local:
-    * **URL**: Endereço do seu servidor iDempiere (ex: http://localhost:6080).
-    * **user**: Nome de usuário para login.
-    * **userPwd**: Senha do usuário.
-    * **client**: Empresa que será utilizado.
-    * **clientRole**: Perfil (Role) que será utilizado.
-    * **outputDir**: Diretório onde as imagens geradas serão salvas.
+  * **URL**: Endereço do seu servidor iDempiere (ex: http://localhost:6080).
+  * **user**: Nome de usuário para login.
+  * **userPwd**: Senha do usuário.
+  * **client**: Empresa que será utilizado.
+  * **clientRole**: Perfil (Role) que será utilizado.
+  * **outputDir**: Diretório onde as imagens geradas serão salvas.
 
 ### 4. Executar a Aplicação e Aguardar
 Execute a aplicação a partir do Eclipse (usando a Run Configuration apropriada para a ScreenshotApplication). O processo irá iniciar um navegador, realizar as tarefas e salvar os arquivos no diretório configurado.
 
-Para um tutorial mais detalhado, confira a [Documentação dev&Co.](https://documentacao.devcoffee.com.br/docs/dev-guides/CriacaoDocumentacao)
+Para um tutorial mais detalhado, confira a [Documentação dev&Co.](https://documentacao.devcoffee.com.br/docs/dev-guides/CriacaoDocumentacao#documenta%C3%A7%C3%A3o-autom%C3%A1tica)
