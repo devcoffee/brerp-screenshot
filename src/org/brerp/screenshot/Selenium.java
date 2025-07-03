@@ -37,11 +37,11 @@ public class Selenium {
 	protected WebDriverWait wait;
 
 	// alterar dados abaixo para o seu ambiente
-	private final String URL = "http://localhost:6050";
+	private final String URL = "http://localhost:6098";
 	private final String lang = "Portuguese (BR)";
 	public static final Language language = Language.getLanguage("pt_BR");
 	private final String user = "superuser @ brerp.com.br";
-	private final String userPwd = "gv_documentacao0411";
+	private final String userPwd = "gv_v12";
 	private final String clientSystem = "System";
 	private final String client = "01- Grupo Mundo do Café S/A";
 	private final String clientRole = "01-Administrador do Sistema";
@@ -71,11 +71,10 @@ public class Selenium {
 
 	protected void type(WebElement element, String value, Boolean sendEnter) {
 		element.click();
-		actions.sendKeys(value);
+		element.sendKeys(value);
 		if (sendEnter) {
-			actions.sendKeys(Keys.ENTER);
+			element.sendKeys(Keys.ENTER);
 		}
-		actions.perform();
 	}
 
 	protected void setReadOnlyTextBox(String locator, String value) {
@@ -237,7 +236,14 @@ public class Selenium {
 
 		driver.get(baseUrl);
 
-		waitResponse();
+		try {
+	        By userLocator = Zk.jq("$loginPanel $txtUserId");
+	        WebDriverWait loginWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        loginWait.until(ExpectedConditions.visibilityOfElementLocated(userLocator));
+	    } catch (TimeoutException e) {
+	        System.err.println("Erro: A página de login não carregou ou o campo de usuário não foi encontrado a tempo.");
+	        throw e;
+	    }
 
 		((JavascriptExecutor) driver).executeScript("document.querySelectorAll('input').forEach(function(el) {"
 				+ "    el.setAttribute('autocomplete', 'off');" + "});");
