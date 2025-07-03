@@ -34,11 +34,7 @@ public class ScreenshotApplication implements IApplication {
 	public Object start(IApplicationContext context) throws Exception {
 
 		Adempiere.startup(false);
-		
-//      Define quantos itens do menu serão executados, 0 para todos.
-// 		Se for diferente de 0, não salvará screenshots de InfoWindow
-		Screenshot.generateScreenshots(0);
-		
+		Screenshot.generateScreenshots();
 		return IApplication.EXIT_OK;
 	}
 
