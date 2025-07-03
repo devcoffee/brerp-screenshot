@@ -46,7 +46,7 @@ public class Selenium {
 	private final String client = "01- Grupo Mundo do Café S/A";
 	private final String clientRole = "01-Administrador do Sistema";
 	public static final String systemName = "_BrERP_v";
-	public static final String version = "11.0.0";
+	public static final String version = "12.0.0";
 	public static final String userHome = System.getProperty("user.home");
 	public static final String outputDir = userHome + "/workspaces/documentacao/idempiere-stuff/genwikipages/img/";
 
