@@ -120,7 +120,6 @@ public class Screenshot {
 
 		for (FailedItem item : retryList) {
 			try {
-				System.out.println("Tentando abrir a janela: '" + item.searchName + "' novamente.");
 				takeScreenshot(item.searchName, item.type, true);
 			} catch (Exception e) {
 				handleFailedScreenshot(item.searchName, item.type, item.fileName, true);

@@ -405,8 +405,6 @@ public class Selenium {
 			Files.createDirectories(path.getParent());
 			Files.write(path, screenshotBytes);
 
-			System.out.println("Screenshot salva: '" + searchName + "'");
-
 			closeButton();
 			return path.toFile();
 		} catch (Exception e) {
