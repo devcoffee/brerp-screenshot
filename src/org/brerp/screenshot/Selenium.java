@@ -37,11 +37,11 @@ public class Selenium {
 	protected WebDriverWait wait;
 
 	// alterar dados abaixo para o seu ambiente
-	private final String URL = "http://localhost:6098";
+	private final String URL = "http://localhost:6098/webui";
 	private final String lang = "Portuguese (BR)";
 	public static final Language language = Language.getLanguage("pt_BR");
 	private final String user = "superuser @ brerp.com.br";
-	private final String userPwd = "gv_v12";
+	private final String userPwd = "gv_0319";
 	private final String clientSystem = "System";
 	private final String client = "01- Grupo Mundo do Café S/A";
 	private final String clientRole = "01-Administrador do Sistema";
@@ -56,7 +56,7 @@ public class Selenium {
 		System.setProperty("webdriver.gecko.driver", userHome + "/.geckodriver");
 		System.setProperty("webdriver.firefox.bin", userHome + "/.local/firefox/firefox");
 		options.setBinary(userHome + "/.local/firefox/firefox");
-		options.addArguments("--headless"); // Executa em background. Comentar linha para rodar no navegador visualmente
+//		options.addArguments("--headless"); // Executa em background. Comentar linha para rodar no navegador visualmente
 		options.addArguments("--disable-gpu");
 		options.addArguments("--hide-scrollbars");
 		options.addArguments("--ignore-certificate-errors");
@@ -64,7 +64,7 @@ public class Selenium {
 
 		driver = new FirefoxDriver(options);
 		driver.manage().window().setSize(new Dimension(1900, 1000));
-		wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		actions = new Actions(driver);
 		baseUrl = URL;
 	}
@@ -94,7 +94,7 @@ public class Selenium {
 		Widget widget = new Widget(locator);
 		WebElement element = widget.$n(driver, "real");
 
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
 		try {
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("z-modal-mask")));
@@ -238,7 +238,7 @@ public class Selenium {
 
 		try {
 	        By userLocator = Zk.jq("$loginPanel $txtUserId");
-	        WebDriverWait loginWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        WebDriverWait loginWait = new WebDriverWait(driver, Duration.ofSeconds(15));
 	        loginWait.until(ExpectedConditions.visibilityOfElementLocated(userLocator));
 	    } catch (TimeoutException e) {
 	        System.err.println("Erro: A página de login não carregou ou o campo de usuário não foi encontrado a tempo.");
@@ -316,7 +316,7 @@ public class Selenium {
 
 	protected void openWindow(String label) throws Exception {
 		comboboxSelectItem("$globalSearchBox", label);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
 		try {
 			WebElement tabButton = wait
